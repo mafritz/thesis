@@ -211,7 +211,7 @@ maf.plot_means_comparison(s1.aggregated_emotions, aes(x = group, y = n, color = 
   labs(x = NULL, y = "Number of emotions") +
   theme(legend.position = "none")
 ```
-No detectable difference, neither in the omnibus one-way ANOVA (`r apa_print.afex_aov(s1.anova.expressed_emotions)$full_result`), nor in the pairwise comparisons could be observed. Results of the comparisons are depicted in Table \@ref(tab:s1-expressed-emotions-comparison-table). Hypothesis (*H1*) is therefore rejected: a different access to and use of emotional information did not yield detectable differences in the number of emotion expressed. 
+No detectable difference, neither in the omnibus one-way ANOVA (`r apa_print(s1.anova.expressed_emotions)$full_result`), nor in the pairwise comparisons could be observed. Results of the comparisons are depicted in Table \@ref(tab:s1-expressed-emotions-comparison-table). Hypothesis (*H1*) is therefore rejected: a different access to and use of emotional information did not yield detectable differences in the number of emotion expressed. 
 
 (ref:s1-expressed-emotions-comparison-caption) Pairwise comparisons of the thee conditions with respect to the number of emotions expressed (*p*-values are adjusted with the Tukey method).
 ```{r s1-expressed-emotions-contrats}
@@ -241,7 +241,7 @@ maf.plot_means_comparison(s1.total_visit_duration, aes(x = group, y = value, col
   theme(legend.position = "none")
 ```
 
-An overall effect of the experimental condition on the time spent processing emotional information could be observed (`r apa_print.afex_aov(s1.anova.total_visit_duration)$full_result` in a one-way ANOVA). Pairwise comparisons, depicted in Table \@ref(tab:s1-total-visit-duration-comparison-table), confirm detectable differences between the *Self-Centered* vs *Partner-Oriented*, and *Self-Centered* vs *Mutual-Modeling* conditions, but not between the *Partner-Oriented* and *Mutual-Modeling* conditions. Hypothesis (*H2*) is therefore partially corroborated: the overall effect is detected, but with only two out of three comparisons between conditions.
+An overall effect of the experimental condition on the time spent processing emotional information could be observed (`r apa_print(s1.anova.total_visit_duration)$full_result` in a one-way ANOVA). Pairwise comparisons, depicted in Table \@ref(tab:s1-total-visit-duration-comparison-table), confirm detectable differences between the *Self-Centered* vs *Partner-Oriented*, and *Self-Centered* vs *Mutual-Modeling* conditions, but not between the *Partner-Oriented* and *Mutual-Modeling* conditions. Hypothesis (*H2*) is therefore partially corroborated: the overall effect is detected, but with only two out of three comparisons between conditions.
 
 (ref:s1-total-visit-duration-caption) Pairwise comparisons of the thee interfaces with respect to total time spent looking at the perceiving-monitoring zone of the EAT (*p*-values are adjusted with the Tukey method).
 ```{r s1-total-visit-duration-contrats}
@@ -267,7 +267,7 @@ maf.plot_means_comparison(s1.visit_count, aes(x = group, y = value, color = grou
   theme(legend.position = "none")
 ```
 
-An overall effect of the interface adopted on emotional information seeking could be detected (`r apa_print.afex_aov(s1.anova.visit_count)$full_result` in a one-way ANOVA). Pairwise comparisons, depicted in Table \@ref(tab:s1-visit-count-comparison-table), confirm detectable differences between the *Self-Centered* vs *Partner-Oriented*, and *Self-Centered* vs *Mutual-Modeling* conditions, but not between the *Partner-Oriented* and *Mutual-Modeling* conditions. Hypothesis (*H2*) is therefore partially corroborated: the overall effect is detected, but with only two out of three comparisons between conditions. 
+An overall effect of the interface adopted on emotional information seeking could be detected (`r apa_print(s1.anova.visit_count)$full_result` in a one-way ANOVA). Pairwise comparisons, depicted in Table \@ref(tab:s1-visit-count-comparison-table), confirm detectable differences between the *Self-Centered* vs *Partner-Oriented*, and *Self-Centered* vs *Mutual-Modeling* conditions, but not between the *Partner-Oriented* and *Mutual-Modeling* conditions. Hypothesis (*H2*) is therefore partially corroborated: the overall effect is detected, but with only two out of three comparisons between conditions. 
 
 (ref:s1-visit-count-caption) Pairwise comparisons of the three interfaces with respect to the number of visits at the perceiving-monitoring zone of the EAT (*p*-values are adjusted with the Tukey method).
 ```{r s1-visit-count-contrats}
@@ -302,7 +302,7 @@ All things considering, thus, the present contribution conveys limited and mixed
 
 In the second hypothesis, it has been posited that learners would seek and process the emotional information available on screen depending on the source and the comparison it facilitates. More precisely, it has been stated that participants in the *Self-Centered* condition would seek less often and process for shorter time the information available through the perceiving-monitoring part of the interface, compared to the *Partner-Oriented* and *Mutual-Modeling* conditions. It has also been posited that participants in the *Mutual-Modeling* condition would seek information more often, and process it longer compared to the *Partner-Oriented* condition due to the increased interest enhanced by direct and persistent comparison of emotional information.
 
-Results corroborate the presence of an overall effect of the interface both on emotional information seeking and processing. For information seeking, the experimental condition yielded a generalized effect size [@olejnikGeneralizedEtaOmega2003] of `r apa_print.afex_aov(s1.anova.visit_count)$estimate$group`, and of `r apa_print.afex_aov(s1.anova.total_visit_duration)$estimate$group` for information processing. In both cases, thus, the experimental condition seems to account for a considerable amount of variation in the perceiving-monitoring function of emotional awareness. 
+Results corroborate the presence of an overall effect of the interface both on emotional information seeking and processing. For information seeking, the experimental condition yielded a generalized effect size [@olejnikGeneralizedEtaOmega2003] of `r apa_print(s1.anova.visit_count)$estimate$group`, and of `r apa_print(s1.anova.total_visit_duration)$estimate$group` for information processing. In both cases, thus, the experimental condition seems to account for a considerable amount of variation in the perceiving-monitoring function of emotional awareness. 
 
 On a more fine-grained level, though, the differences between conditions only partially corroborated the directional hypothesis; differences were detected, both for information seeking and processing, only in pairwise comparisons between *Self-Centered* vs. *Partner-Oriented* (Cohen's $d$ > 1 for both measures) and *Self-Centered* vs. *Mutual-Modeling* (again Cohen's $d$ > 1 for both measures), but not between *Partner-Oriented* vs. *Mutual-Modeling*, which was actually a more severe test [@mayoStatisticalInferenceSevere2018]. 
 

@@ -24,7 +24,7 @@ maf.plot_means_comparison <- function(data, mappings) {
 maf.print_m_sd <- function(data, ci = FALSE, wrap_sd = TRUE) {
   # Mean
   if (ci) {
-    m <- apa_print.htest(t.test(data))$estimate
+    m <- apa_print(t.test(data))$estimate
   } else {
     m <- paste0("$M=", mean(data) %>% printnum(), "$")
   }
