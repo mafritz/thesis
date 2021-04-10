@@ -1,0 +1,122 @@
+# Appendices {-}
+
+```{r s1-setup-for-appendices, include=FALSE, echo=FALSE}
+library(tidyverse)
+library(papaja)
+library(here)
+library(knitr)
+library(pander)
+library(kableExtra)
+
+# Load the relevant data and graphs from the study-1 and study-2 folders
+source(here("data", "study-1", "s1-export.R"))
+source(here("data", "study-2", "s2-export.R"))
+```
+
+## Appendix A {-}
+
+### Expressing Emotions {-}
+
+```{r, include=TRUE, echo=FALSE, fig.cap="Repartition of expressed emotions per condition" }
+ggplot(s1.aggregated_emotions, aes(x = group, y = n, color = group)) +
+  geom_boxplot() +
+  geom_jitter(alpha = 0.5) +
+  labs(y = "Number of emotions") +
+  theme(legend.position = "none") +
+  NULL
+
+```
+
+
+```{r, include=TRUE, echo=FALSE}
+pander(s1.anova.expressed_emotions$aov)
+```
+
+
+```{r, include=TRUE, echo=FALSE, fig.cap="Assumptions of the one-way ANOVA for expressing emotions"}
+par(mfrow=c(2,2))
+plot(s1.anova.expressed_emotions$aov)
+```
+
+```{r, include=TRUE, echo=FALSE}
+pander(test_levene(s1.anova.expressed_emotions, center = "median"))
+```
+
+### Processing Emotional Information {-}
+
+```{r, include=TRUE, echo=FALSE, fig.cap="Repartition of total visit duration per condition" }
+ggplot(s1.et_data, aes(x = group, y = Total_Visit_Duration_MONITORING_Mean, color = group)) +
+  geom_boxplot() +
+  geom_jitter(alpha = 0.5) +
+  labs(y = "Total Visit Duration") +
+  theme(legend.position = "none") +
+  NULL
+
+```
+
+
+```{r, include=TRUE, echo=FALSE}
+pander(s1.anova.total_visit_duration$aov)
+```
+
+
+```{r, include=TRUE, echo=FALSE, fig.cap="Assumptions of the one-way ANOVA for processing emotional information"}
+par(mfrow=c(2,2))
+plot(s1.anova.total_visit_duration$aov)
+```
+
+```{r, include=TRUE, echo=FALSE}
+pander(test_levene(s1.anova.total_visit_duration, center = "median"))
+```
+
+### Seeking Emotional Information {-}
+
+```{r, include=TRUE, echo=FALSE, fig.cap="Repartition of visit count per condition" }
+ggplot(s1.et_data, aes(x = group, y = Visit_Count_MONITORING_Sum, color = group)) +
+  geom_boxplot() +
+  geom_jitter(alpha = 0.5) +
+  labs(y = "Visits count") +
+  theme(legend.position = "none") +
+  NULL
+
+```
+
+
+```{r, include=TRUE, echo=FALSE}
+pander(s1.anova.total_visit_duration$aov)
+```
+
+
+```{r, include=TRUE, echo=FALSE, fig.cap="Assumptions of the one-way ANOVA for seeking emotional information"}
+par(mfrow=c(2,2))
+plot(s1.anova.visit_count$aov)
+```
+
+```{r, include=TRUE, echo=FALSE}
+pander(test_levene(s1.anova.visit_count, center = "median"))
+```
+
+### Transitions Between AOI {-}
+(ref:s1-transitions-means-caption) Summary of the number of transitions aggregated per participant, stratified by experimental condition and path.
+```{r s1-transitions-means-table}
+s1.transitions.descriptive %>%
+  as_tibble() %>%
+  select(-transition) %>%
+  kable(
+    digits = 2,
+    caption.short = "Study 1: Pairwise means of transitions between AOI",
+    longtable = FALSE,
+    booktabs = TRUE,
+    linesep = c("", "", "\\addlinespace"),
+    caption = "(ref:s1-transitions-means-caption)\\label{tab:s1-transitions-means-table}",
+  ) %>%
+  kable_styling(
+    latex_options = c("repeat_header")
+  ) %>%
+  pack_rows("Expressing to Perceiving", 1, 3) %>%
+  pack_rows("Perceiving to Expressing", 4, 6) %>%
+  pack_rows("Expressing to Task", 7, 9) %>%
+  pack_rows("Task to Expressing", 10, 12) %>%
+  pack_rows("Perceiving to Task", 13, 15) %>%
+  pack_rows("Task to Perceiving", 16, 18)
+```

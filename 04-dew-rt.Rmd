@@ -1,0 +1,149 @@
+# Introducing a Research Toolbox Built Around the Dynamic Emotion Wheel
+
+```{r dew-rt-setup, include=FALSE, echo=FALSE}
+library(tidyverse)
+library(papaja)
+library(here)
+library(knitr)
+library(kableExtra)
+
+# Load the relevant data and graphs from the study-1 folder
+source(here("data", "dew-rt", "dew-rt-export.R"))
+```
+
+
+
+In this chapter I present the Dynamic Emotion Wheel (DEW), an emotion self-report and awareness tool first developed as part of the EATMINT project [@fritzDynamicEmotionWheel2015; @fritzDynamicEmotionWheel2016; @fritzProvidingEmotionalAwareness2017; @fritzRealTimeEmotionalAwareness2016; @fritzReinventingWheelEmotional2015], and a Research Toolbox (DEW-RT) that has been built around it. The DEW-RT will be used to set-up and collect all the data of the empirical studies illustrated in the remainder of the manuscript and is, therefore, an integral part of the thesis. A more detailed description of the EAT that will be shared by all the studies allows to centralize the information and reduce the length of the methodology sections of the empirical chapters to follow. 
+
+In the meantime, the DEW-RT is also a toolbox that intends to go beyond the specific needs of my research, and this chapter also aims at reaching out to researchers or practitioners in the broader fields of affective, education and learning sciences, which may be interested in adopting it. For this reason, after a general overview, the features of toolbox will be more thoroughly depicted in connection to (1) theory, particularly theory of emotions in psychology; (2) research, as an instrument to collect data in an open science perspective; (3) practice, as a self-report and awareness tool that can be deployed in the context of Social and Emotional Learning (SEL); and (4) technology, as a piece of software that can be extended or adapted. As the toolbox emerges from the intersection of these 4 elements, most of the information is common to all sections, but presented under different angles. Readers should therefore feel free to focus on the overview and then choose the section(s) most relevant to them, without missing information necessary to the remainder of the thesis.
+
+## Overview of the Dynamic Emotion Wheel Research Toolbox
+
+The DEW-RT is an extension and abstraction of the DEW and I will therefore start by briefly illustrating it. A more thorough description of how the DEW has been designed and the details of the empirical test conducted on a prototype to assess its usability are available in Fritz (2015).
+
+### The Dynamic Emotion Wheel: Self-Report and Awaress Tool
+
+(ref:dew-rt-dew-laptop--caption) Representation of the DEW on a laptop screen. The tool occupies the left side of the screen, whereas the right side can be used for any kind of task.
+```{r dew-rt-dew-laptop-figure, fig.cap="(ref:dew-rt-dew-laptop--caption)", fig.align="center", out.width="100%" }
+include_graphics(here("figure/dew-rt/dew-laptop.png"))
+```
+
+### The Research Toolbox
+
+In 2015, as part both of the EATMINT project and my Master's thesis, I developed an adaptation of the GEW as a web-based interface, which I named *Dynamic Emotion Wheel*. Compared to the GEW, the Dynamic Emotion Wheel, as the name suggests, implements a simple computational model based on an underyling *affective space*. The affective space can be depicted either as a *circumplex*, as in the case of the GEW, or as a *Cartesian plan* [@schererGRIDMeetsWheel2013]. In both cases, the uderlying affective space serves as a *database* that can be queried using the two appraisal dimensions as values (see section connecting to theory below for more details). In other words, users of the DEW are prompted to actively rate the two appraisal dimensions, which take the form of *range* inputs on a graphical user interface. According to the cognitive evaluation made of the situation, the DEW subsets the most likely subjective feelings to occur given the underlying affective space and provide them to the user as clickable buttons. The user can either choose one of the suggested subjective feelings or provide another feeling, either listed in the underlying affective space (but not prompted as suggestion) or formulated by participants themselves. Each emotional episode is thus comprised of (1) two dimensional values, determined by each corresponding appraisal criterion; and (2) one categorial values, determined by the natural language word associated to the holistic experience of the subjective feeling (see section connecting to research below for more details).
+
+These measures can then be used as valuable information to convey emotional awareness, both for the user that has expressed them (emotional self-awareness) and for other users than are sharing the same computer-mediated environment (emotional awareness). It is well known that different graphical representations of the same data can convey different meaning to the viewer [*e.g.*, @hegartyCognitiveScienceVisualspatial2011; @larkinWhyDiagramSometimes1987; @pinkerTheoryGraphComprehension1990]. Therefore, the emotional episodes collected through the DEW can be represented in different forms, aiming at different understanding of the emotional information [@bersetVisualisationDonneesRecherche2018; @fritzRealTimeEmotionalAwareness2016; @leonyProvisionAwarenessLearners2013]. For instance, information can be displayed to elicit comparison between users, but also summarised in a common visualization to reinforce group belonging. Priority may be given to the temporal dimension, highlighting the time in which the emotional episode has been reported, or it may aim at enhancing a post-hoc reflection of the emotional experience over a delimited time, plotting for instance the aggregated frequency of different subjective feelings (see the section connecting to practice below).
+
+
+## Connection to Theory
+
+The complexity and diversity in the field of emotion theories is reflected in different approaches on how emotions should be assessed and measured [@boehnerHowEmotionMade2007; @cerneaSurveyTechnologiesRise2015; @maussMeasuresEmotionReview2009; @mortillaroEmotionsMethodsAssessment2015; @schererWhatAreEmotions2005]. In his seminal article *What are emotions? And how can they be measured?*, Scherer [-@schererWhatAreEmotions2005, p. 721] advocates some of the characteristics an emotion self-report tool should have:
+
+* Concentrate on the feeling component of emotion;
+* Avoid the simple valence-arousal space;
+* Rely on natural language labels;
+* Allow the assessment of the intensity of the feeling;
+* Build some emotion structure into the instrument, rather than presenting arbitrary emotion sets;
+* Adopt a user-friendly graphical user interface.
+
+Driven by these tenets, Scherer developed [@schererWhatAreEmotions2005] and refined over the years [@schererGRIDMeetsWheel2013] one of the most widely adopted emotion self-report tool: the Geneva Emotion Wheel (GEW). For instance, the GEW is also presented in an overarching chapter (add reference) about emotion in the *International Handbook of Emotions in Education* [@pekrunInternationalHandbookEmotions2014], which is, to the best of my knowledge, the most up-to-date and comprehensive resource about emotion in education.
+
+The GEW is an instrumental implementation of the Component Process Model theoretical framework. It presents a number of subjective feelings (usually 20) organized in a circumplex, which is determined by two appraisal dimensions as axes: *Valence* on the abscissa and *Control/Power* on the ordinate. Each feeling is positioned according to a value along both axes and belongs thus to one of the four quadrants of the circumplex, determined by the combination of positive or negative Valence, and positive or negative Control/Power. From the origin of the axes stem 5 circles for each of the subjective feelings. The circles grow in size as they get closer to the edge of the circumplex, so that the first circle is the smallest, and the last one the biggest. Users can therefore choose, first, the *row* of circles that corresponds to the subjective feeling they are experiencing and, second, the intensity of the feeling as a function of the circle's size.
+
+Being inspired by the Geneva Emotion Wheel, the DEW is deeply rooted in the Component Process Model (CPM) theoretical framework. Nevertheless, the core of the tool is agnostic to how the underlying affective space is determined. This fact can be exploited as leverage to implement through the same tool different affective spaces, even driven by different theories of emotions, that can be represented -- or at least approximated to -- a bi-dimensional structure, with or without a pre-determined choice of subjective feelings. For instance, appraisal theories of emotions [*e.g.*, @moorsFlavorsAppraisalTheories2014; @sanderAppraisalDrivenComponentialApproach2018; @schererEffectsEmotionProcess; @schererWhatAreEmotions2005; @schorrAppraisalEvolutionIdea2001; @siemerSameSituationdifferentEmotions2007] and core affect theories of emotions [*e.g.*, @barrettSolvingEmotionParadox2006; @russellCircumplexModelAffect1980; @russellCoreAffectPsychological2003] adopt different perspective on what an emotion is, but nevertheless combine some form of dimensional and categorical approaches that can be translated in bi-dimensional affective spaces. 
+
+
+### Core Affect Theories
+
+
+### Appraisal Theories
+
+## Connection to Research
+
+The primary aim of the DEW-RT is to provide researchers with a user-friendly -- but validated and adaptable -- tool to do research in the broader and inter-disciplinary field of the affective sciences. The development of the toolbox has nevertheless been driven mainly by the specific requirement of the thesis and the need for real-time, computer-mediated collaboration. On the other hand, though, the principles underlying the whole toolbox can be abstracted to more fundamental aspects of theories of emotions, as depicted in the previous section. The DEW-RT is therefore an abstraction of the different functions the DEW can accomplish, giving researchers the possibility to customize the tool to their research objectives. This section will (1) give an overview of the main aspects that can be configured; (2) list the measures it is possible to connect through the toolbox; (3) identify research methods in which it can be applied to; and (4) put the toolbox in the perpsective of *Open Science* principles.
+
+### Configuration Options Relevant to Research
+
+### Measures Collected
+
+### Methods
+
+Emotion self-report is used in a wide variety of researches, and there already are a number of widely adopted emotion self-report tools such as the aforementioned Geneva Emotion Wheel [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005], the first and second version of the PrEmo [@desmet2003measuring; @lauransNewDirectionsNonVerbal2012], the AffectButton [@broekensAffectButtonMethodReliable2013], or the Self-Assessment Manikin [@bradleyMeasuringEmotionSelfAssessment1994].
+
+As mentioned, the DEW-RT extends the concept of self-report introducing a time-variant dimension that can be useful in research methods sur as the Experience Samplimg Method (ESM; *e.g.* @csikszentmihalyiValidityReliabilityExperienceSampling2014) or Ecological Momentary Assessment (EMA; *e.g.*, [@shiffmanEcologicalMomentaryAssessment2008]). The aim of both methods is to allow participants to record measures of interest at various moment of time, and in situations that are as close as possible to *reality*. 
+
+### Open Science Principles
+
+In the last decade or so, social sciences -- and psychology in particular -- are reconsidering some of their practices, in particular with respect to the reproducibility and replicability of studies [*e.g.*, @anvariReplicabilityCrisisPublic2019; @chambersSevenDeadlySins2017; @fritzOverviewReplicationCrisis2019; @kerrHARKingHypothesizingResults1998; @opensciencecollaborationEstimatingReproducibilityPsychological2015; @wichertsDegreesFreedomPlanning2016]. As a results, there is nowadays a series of practices -- old and new -- that are being proposed, often under the umbrella term of *Open Science* [*e.g.*, @davidHistoricalOriginsOpen2008; @Nosek1422], in order to increase the trasparency of how studies are conceived and carried out, as well as how data is gathered and analysed [*e.g.*, @benjaminRedefineStatisticalSignificance2018; @cruwellSevenEasySteps2019; @hagerStatisticalTheoriesFisher2013; @lakensJustifyYourAlpha2018; @lowndesOurPathBetter2017; @mayoStatisticalInferenceSevere2018; @rodgersEpistemologyMathematicalStatistical2010; @simmons21WordSolution2012]. 
+
+## Connection to Practice
+
+Even if Emotion Awareness Tools are a recent field of inquiry, there already are in the literature some implementations of tools that can be compared, in aim or form, to the DEW with respect to the use it can be made in real situations (that is, not only relevant to research). One exemple of this is the RULER approach [@brackettEnhancingAcademicPerformance2012:1; @brackettRULERTheoryDrivenSystemic2019; @hoffmannTeachingEmotionRegulation2020; @nathansonCreatingEmotionallyIntelligent2016], which is related to the broader field of Social and Emotional Learning (SEL) and whose aim is the develpment of emotional intelligence [@chernissEmotionalIntelligenceClarification2010; @mayerAbilityModelEmotional2016; @saloveyEmotionalIntelligence1990] or emotional competence [@schererComponentialEmotionTheory2007; @schlegelGenevaEmotionalCompetence2018] skills. In this section we provide an overview of the RULER approach to highlight its similarity to the DEW, and then illustrate how the use of the DEW is closely related to the concept of Emotional Competence.
+
+### The RULER approach
+
+### Dynamic Emotion Wheel and Emotional Competence
+
+
+## Connection to Technology
+
+The DEW-RT is a web-based application developed in JavaScript both at the client- and the server-side. It has been implemented using websockets to create *almost* real-time communication between clients, reducing the latency time between emotion expression to the order of milliseconds. The use of web-based technologies also allows it to be adaptable to different devices. 
+
+### Sorting and Subsetting An Affective Space to Express Emotions
+
+The core of the DEW is the link between the appraisal dimensions and the subjective feelings, which allows to *build some emotion structure into the instrument, rather than presenting aribitrary emotion sets* (*ibid.*). This structure is deeply rooted in the Component Process Model theoretical framework, since it implies that the cognitive evaluation of the situation (appraisal) eventually unfolds in a holistic representation of the whole emotional episode (subjective feeling), represented by a natural language word, often belonging to a *fuzzy* category of *modal* emotions. In this section, we define the general functioning of the algorith with simulations of its behavior with two affective spaces. 
+
+## Discussion
+
+A recent and extensive study using the GRID instrument [@fontaineWhyWhatHow2013] has assessed how people, cross-culturally, interpret recurring emotional words according to 144 features that may be related to different components of appraisal theories of emotions. Results highlight the presence of 4 underlying dimensions (list them all) and confirm previous findings suggesting that the use of only two dimensions is not enough to account for all the variability in emotional experiences [@fontaineWorldEmotionsNot2007].
+
+## Chapter Summary
+
+---
+
+Alternative outline
+
+## Configuration of Bi-Dimensional Affective Spaces
+
+* What is an affective space
+* Circumplex Affective Spaces
+* Cartesian Plane Affective Spaces
+* Existing Affective Spaces
+* Create An Affective Space
+* The EATMINT Affective Space
+
+The core of the DEW is the underlying bi-dimensional affective space, which determines the relationship between the two affective dimensions and the subjective feelings. As illustrated in the previous chapter, in the case of the Geneva Emotion Wheel the two affective dimensions are Valence and Control/Power, which determine the disposition of twenty subjective feelings around a circumplex. The DEW-RT abstracts this structure in two ways. First, it provides the possibility to choose among any composition of two affective dimensions. This means that, even though the tool is deeply rooted in the Component Process Model theoretical framework (see ...), any affective space that is based on, or can approximated to, a bi-dimensional structure can be adopted as an underlying model. Second, the DEW-RT allows any number of subjective feelings, as long as they can be mapped to the underlying bi-dimensional structure. In this regard, there are two possible structures of the affective space, which implement two different algorithms connecting the affective dimensions with the subjective feelings : (1) the circumplex structure, and (2) the Cartesian plane structure. 
+
+This section first proposes some examples of bi-dimensional affective spaces that can be found in the literature, and which are already available *out-of-the-box* in the DEW-RT. Next, using two existing affective spaces -- one circumplex and one Cartesian plane -- as sample, the section simulates the performance of the DEW sub-setting algorithm using a small set of the three subjective feelings and a bigger set of ten subjective feelings. Then, the section considers how new affective spaces can be built and shared through the DEW-RT. Finally, as an example, the construction of the EATMINT circumplex, used in the two empirical contributions of the thesis, is illustrated.
+
+### Existing Affective Spaces
+
+An affective space is a spatial representation of the nature of emotions. As a consequence, the affective space is defined and reflects an underlying perspective of what an emotion is. 
+
+### Simulation of the Sub-Setting Alorithms
+
+```{r}
+dew_rt.sim_gew_graph_3
+```
+
+```{r}
+dew_rt.sim_gew_graph_10
+```
+
+
+### Creating and Sharing New Affective Spaces
+
+### The Example of the EATMINT Circumplex
+
+## Configuration of the Interface
+
+* Displaying-Expressing Emotions (appraisal dimensions, subjective feelings)
+* Monitoring-Perceiving Emotions (graphical representation of emotions)
+* Exporting the Configuration
+
+## Configuration of Experimental Settings
+
+* Login
+* Task
+* Data persitance
+* Data exportation

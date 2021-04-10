@@ -1,0 +1,37 @@
+# General Theoretical Background
+
+## Distance Learning: Pitfalls and Solutions
+
+Topics:
+
+* Distance learning is ubiquitous
+* Two major pitfalls : maintain students engaged and avoid isolation
+* Solutions : scaffolding and awareness tools
+
+## Awareness Tools: Beyond the Face-to-Face Golden Standard
+
+Topics:
+
+* What is awareness ? Double perspective "self-awareness" vs. "other-awareness"
+* The two functions of awareness tools : displaying and monitoring
+* Knowledge awareness tools
+* Groupware tools
+* Affect-aware tools 
+
+## Emotion Awareness Tools: What Do we Know?
+
+Topics:
+
+* Onthology
+* Eligio et al.
+* EATMINT
+
+## The Rationale Behind Emotion Awareness Tools
+
+Topics:
+
+* Emotion and Learning: Learning -> Emotions, Emotions -> Learning, and Learning Emotions (SEL)
+* Intra-personal function of emotions
+* Inter-personal function of emotions
+* Emotional competence
+

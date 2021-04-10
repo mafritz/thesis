@@ -1,0 +1,841 @@
+participant,group,date,survey,dimension,value
+HRH9P,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,8
+R479E,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,1
+XJ25A,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+QUOGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,8
+WPNGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,6
+OIA81,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,9
+F7P3E,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+ATRMN,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,10
+H2IPW,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+Z0KOY,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+I5584,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+5T58D,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,10
+JQQI3,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+5VQBW,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,10
+MCID1,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+ILC91,Class 1,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+TDTPK,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,4
+41DRO,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,4
+WIN3R,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,7
+QXZIZ,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+UO7DJ,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+BV58S,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+MK305,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,3
+KW7I6,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,2
+4873I,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,7
+FEMKP,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+Z68B8,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,3
+4DN3C,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,4
+DT6KT,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,2
+094O8,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+30WP8,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,5
+GA42L,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,8
+IG6VT,Class 2,1980-01-01T00:00:00Z,Expectancy,Frequency,4
+HRH9P,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,8
+R479E,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,5
+XJ25A,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,7
+QUOGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,8
+WPNGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,7
+OIA81,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,5
+F7P3E,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,5
+ATRMN,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,9
+H2IPW,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,6
+Z0KOY,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,8
+I5584,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,7
+5T58D,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,10
+JQQI3,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,8
+5VQBW,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,7
+MCID1,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,8
+ILC91,Class 1,1980-01-01T00:00:00Z,Expectancy,Affordance,3
+TDTPK,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,6
+41DRO,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,6
+WIN3R,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,7
+QXZIZ,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,5
+UO7DJ,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,6
+BV58S,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,7
+MK305,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,5
+KW7I6,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,1
+4873I,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,5
+FEMKP,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,10
+Z68B8,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,4
+4DN3C,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,8
+DT6KT,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,7
+094O8,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,2
+30WP8,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,10
+GA42L,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,9
+IG6VT,Class 2,1980-01-01T00:00:00Z,Expectancy,Affordance,6
+HRH9P,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,9
+R479E,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,1
+XJ25A,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,3
+QUOGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,6
+WPNGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,7
+OIA81,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,2
+F7P3E,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,5
+ATRMN,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,5
+H2IPW,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,4
+Z0KOY,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,7
+I5584,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,3
+5T58D,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,8
+JQQI3,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,1
+5VQBW,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,7
+MCID1,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,8
+ILC91,Class 1,1980-01-01T00:00:00Z,Expectancy,Social Presence,6
+TDTPK,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,7
+41DRO,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,7
+WIN3R,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,5
+QXZIZ,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,7
+UO7DJ,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,4
+BV58S,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,9
+MK305,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,4
+KW7I6,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,8
+4873I,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,3
+FEMKP,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,5
+Z68B8,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,9
+4DN3C,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,8
+DT6KT,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,1
+094O8,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,7
+30WP8,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,8
+GA42L,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,9
+IG6VT,Class 2,1980-01-01T00:00:00Z,Expectancy,Social Presence,7
+HRH9P,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,8
+R479E,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,1
+XJ25A,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,4
+QUOGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,8
+WPNGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,4
+OIA81,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,2
+F7P3E,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,5
+ATRMN,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,6
+H2IPW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,4
+Z0KOY,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,3
+I5584,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,7
+5T58D,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,4
+JQQI3,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,5
+5VQBW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,9
+MCID1,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,5
+ILC91,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,2
+TDTPK,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,5
+41DRO,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,4
+WIN3R,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,2
+QXZIZ,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,7
+UO7DJ,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,4
+BV58S,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,3
+MK305,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,6
+KW7I6,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,1
+4873I,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,8
+FEMKP,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,1
+Z68B8,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,3
+4DN3C,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,4
+DT6KT,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,2
+094O8,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,2
+30WP8,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,5
+GA42L,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,8
+IG6VT,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Understanding,4
+HRH9P,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,9
+R479E,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,1
+XJ25A,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,7
+QUOGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,9
+WPNGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,7
+OIA81,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,8
+F7P3E,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,7
+ATRMN,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,6
+H2IPW,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,5
+Z0KOY,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,8
+I5584,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,6
+5T58D,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,8
+JQQI3,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,10
+5VQBW,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,9
+MCID1,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,5
+ILC91,Class 1,1980-01-01T00:00:00Z,Expectancy,Understanding Others,7
+TDTPK,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,8
+41DRO,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,6
+WIN3R,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,8
+QXZIZ,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,7
+UO7DJ,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,5
+BV58S,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,8
+MK305,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,6
+KW7I6,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,9
+4873I,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,9
+FEMKP,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,7
+Z68B8,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,5
+4DN3C,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,8
+DT6KT,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,1
+094O8,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,8
+30WP8,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,5
+GA42L,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,8
+IG6VT,Class 2,1980-01-01T00:00:00Z,Expectancy,Understanding Others,8
+HRH9P,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,10
+R479E,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,4
+XJ25A,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,7
+QUOGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,9
+WPNGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,9
+OIA81,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,8
+F7P3E,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,7
+ATRMN,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,6
+H2IPW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,5
+Z0KOY,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,9
+I5584,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,8
+5T58D,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,10
+JQQI3,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,10
+5VQBW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,8
+MCID1,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,8
+ILC91,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,8
+TDTPK,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,9
+41DRO,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,4
+WIN3R,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,8
+QXZIZ,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,7
+UO7DJ,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,6
+BV58S,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,9
+MK305,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,5
+KW7I6,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,8
+4873I,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,10
+FEMKP,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,3
+Z68B8,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,6
+4DN3C,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,10
+DT6KT,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,1
+094O8,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,10
+30WP8,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,8
+GA42L,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,9
+IG6VT,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Other Comparison,8
+HRH9P,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,8
+R479E,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,1
+XJ25A,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,1
+QUOGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,2
+WPNGW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,1
+OIA81,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,2
+F7P3E,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,7
+ATRMN,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,6
+H2IPW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,4
+Z0KOY,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,3
+I5584,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,5
+5T58D,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,4
+JQQI3,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,1
+5VQBW,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,8
+MCID1,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,7
+ILC91,Class 1,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,1
+TDTPK,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,3
+41DRO,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,4
+WIN3R,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,3
+QXZIZ,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,7
+UO7DJ,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,4
+BV58S,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,4
+MK305,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,4
+KW7I6,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,1
+4873I,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,8
+FEMKP,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,1
+Z68B8,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,3
+4DN3C,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,6
+DT6KT,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,1
+094O8,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,10
+30WP8,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,5
+GA42L,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,4
+IG6VT,Class 2,1980-01-01T00:00:00Z,Expectancy,Self-Regulation,4
+JQQI3,Class 1,2018-11-02T15:23:35Z,Demo,Frequency,1
+R479E,Class 1,2018-11-02T15:23:23Z,Demo,Frequency,3
+ATRMN,Class 1,2018-11-02T15:23:14Z,Demo,Frequency,9
+I5584,Class 1,2018-11-02T15:22:45Z,Demo,Frequency,4
+MCID1,Class 1,2018-11-02T15:22:49Z,Demo,Frequency,5
+OIA81,Class 1,2018-11-02T15:23:20Z,Demo,Frequency,10
+WPNGW,Class 1,2018-11-02T15:24:09Z,Demo,Frequency,5
+HRH9P,Class 1,2018-11-02T15:22:52Z,Demo,Frequency,7
+5VQBW,Class 1,2018-11-02T15:23:28Z,Demo,Frequency,10
+F7P3E,Class 1,2018-11-02T15:23:31Z,Demo,Frequency,6
+QUOGW,Class 1,2018-11-02T15:23:12Z,Demo,Frequency,8
+5T58D,Class 1,2018-11-02T15:24:00Z,Demo,Frequency,10
+XJ25A,Class 1,2018-11-02T15:24:36Z,Demo,Frequency,6
+ILC91,Class 1,2018-11-02T15:24:17Z,Demo,Frequency,1
+H2IPW,Class 1,2018-11-02T15:23:57Z,Demo,Frequency,6
+Z0KOY,Class 1,2018-11-02T15:24:18Z,Demo,Frequency,5
+4873I,Class 2,2019-10-28T11:21:11Z,Demo,Frequency,7
+FEMKP,Class 2,2019-10-28T11:21:43Z,Demo,Frequency,1
+WIN3R,Class 2,2019-10-28T11:21:02Z,Demo,Frequency,4
+UO7DJ,Class 2,2019-10-28T11:20:45Z,Demo,Frequency,5
+QXZIZ,Class 2,2019-10-28T11:21:00Z,Demo,Frequency,5
+41DRO,Class 2,2019-10-28T11:21:12Z,Demo,Frequency,3
+30WP8,Class 2,2019-10-28T11:22:45Z,Demo,Frequency,8
+GA42L,Class 2,2019-10-28T11:22:18Z,Demo,Frequency,8
+DT6KT,Class 2,2019-10-28T11:21:35Z,Demo,Frequency,1
+KW7I6,Class 2,2019-10-28T11:21:47Z,Demo,Frequency,1
+094O8,Class 2,2019-10-28T11:21:54Z,Demo,Frequency,8
+MK305,Class 2,2019-10-28T11:22:51Z,Demo,Frequency,3
+IG6VT,Class 2,2019-10-28T11:22:33Z,Demo,Frequency,6
+Z68B8,Class 2,2019-10-28T11:22:51Z,Demo,Frequency,4
+4DN3C,Class 2,2019-10-28T11:23:54Z,Demo,Frequency,6
+BV58S,Class 2,2019-10-28T11:24:40Z,Demo,Frequency,3
+JQQI3,Class 1,2018-11-02T15:23:35Z,Demo,Affordance,10
+R479E,Class 1,2018-11-02T15:23:23Z,Demo,Affordance,8
+ATRMN,Class 1,2018-11-02T15:23:14Z,Demo,Affordance,8
+I5584,Class 1,2018-11-02T15:22:45Z,Demo,Affordance,7
+MCID1,Class 1,2018-11-02T15:22:49Z,Demo,Affordance,7
+OIA81,Class 1,2018-11-02T15:23:20Z,Demo,Affordance,5
+WPNGW,Class 1,2018-11-02T15:24:09Z,Demo,Affordance,6
+HRH9P,Class 1,2018-11-02T15:22:52Z,Demo,Affordance,8
+5VQBW,Class 1,2018-11-02T15:23:28Z,Demo,Affordance,8
+F7P3E,Class 1,2018-11-02T15:23:31Z,Demo,Affordance,6
+QUOGW,Class 1,2018-11-02T15:23:12Z,Demo,Affordance,8
+5T58D,Class 1,2018-11-02T15:24:00Z,Demo,Affordance,10
+XJ25A,Class 1,2018-11-02T15:24:36Z,Demo,Affordance,3
+ILC91,Class 1,2018-11-02T15:24:17Z,Demo,Affordance,2
+H2IPW,Class 1,2018-11-02T15:23:57Z,Demo,Affordance,5
+Z0KOY,Class 1,2018-11-02T15:24:18Z,Demo,Affordance,8
+4873I,Class 2,2019-10-28T11:21:11Z,Demo,Affordance,9
+FEMKP,Class 2,2019-10-28T11:21:43Z,Demo,Affordance,10
+WIN3R,Class 2,2019-10-28T11:21:02Z,Demo,Affordance,7
+UO7DJ,Class 2,2019-10-28T11:20:45Z,Demo,Affordance,6
+QXZIZ,Class 2,2019-10-28T11:21:00Z,Demo,Affordance,8
+41DRO,Class 2,2019-10-28T11:21:12Z,Demo,Affordance,4
+30WP8,Class 2,2019-10-28T11:22:45Z,Demo,Affordance,8
+GA42L,Class 2,2019-10-28T11:22:18Z,Demo,Affordance,10
+DT6KT,Class 2,2019-10-28T11:21:35Z,Demo,Affordance,4
+KW7I6,Class 2,2019-10-28T11:21:47Z,Demo,Affordance,1
+094O8,Class 2,2019-10-28T11:21:54Z,Demo,Affordance,2
+MK305,Class 2,2019-10-28T11:22:51Z,Demo,Affordance,5
+IG6VT,Class 2,2019-10-28T11:22:33Z,Demo,Affordance,7
+Z68B8,Class 2,2019-10-28T11:22:51Z,Demo,Affordance,5
+4DN3C,Class 2,2019-10-28T11:23:54Z,Demo,Affordance,8
+BV58S,Class 2,2019-10-28T11:24:40Z,Demo,Affordance,5
+JQQI3,Class 1,2018-11-02T15:23:35Z,Demo,Social Presence,7
+R479E,Class 1,2018-11-02T15:23:23Z,Demo,Social Presence,1
+ATRMN,Class 1,2018-11-02T15:23:14Z,Demo,Social Presence,3
+I5584,Class 1,2018-11-02T15:22:45Z,Demo,Social Presence,7
+MCID1,Class 1,2018-11-02T15:22:49Z,Demo,Social Presence,8
+OIA81,Class 1,2018-11-02T15:23:20Z,Demo,Social Presence,2
+WPNGW,Class 1,2018-11-02T15:24:09Z,Demo,Social Presence,7
+HRH9P,Class 1,2018-11-02T15:22:52Z,Demo,Social Presence,8
+5VQBW,Class 1,2018-11-02T15:23:28Z,Demo,Social Presence,7
+F7P3E,Class 1,2018-11-02T15:23:31Z,Demo,Social Presence,3
+QUOGW,Class 1,2018-11-02T15:23:12Z,Demo,Social Presence,8
+5T58D,Class 1,2018-11-02T15:24:00Z,Demo,Social Presence,5
+XJ25A,Class 1,2018-11-02T15:24:36Z,Demo,Social Presence,2
+ILC91,Class 1,2018-11-02T15:24:17Z,Demo,Social Presence,5
+H2IPW,Class 1,2018-11-02T15:23:57Z,Demo,Social Presence,5
+Z0KOY,Class 1,2018-11-02T15:24:18Z,Demo,Social Presence,8
+4873I,Class 2,2019-10-28T11:21:11Z,Demo,Social Presence,3
+FEMKP,Class 2,2019-10-28T11:21:43Z,Demo,Social Presence,1
+WIN3R,Class 2,2019-10-28T11:21:02Z,Demo,Social Presence,7
+UO7DJ,Class 2,2019-10-28T11:20:45Z,Demo,Social Presence,6
+QXZIZ,Class 2,2019-10-28T11:21:00Z,Demo,Social Presence,9
+41DRO,Class 2,2019-10-28T11:21:12Z,Demo,Social Presence,5
+30WP8,Class 2,2019-10-28T11:22:45Z,Demo,Social Presence,8
+GA42L,Class 2,2019-10-28T11:22:18Z,Demo,Social Presence,9
+DT6KT,Class 2,2019-10-28T11:21:35Z,Demo,Social Presence,1
+KW7I6,Class 2,2019-10-28T11:21:47Z,Demo,Social Presence,1
+094O8,Class 2,2019-10-28T11:21:54Z,Demo,Social Presence,2
+MK305,Class 2,2019-10-28T11:22:51Z,Demo,Social Presence,6
+IG6VT,Class 2,2019-10-28T11:22:33Z,Demo,Social Presence,8
+Z68B8,Class 2,2019-10-28T11:22:51Z,Demo,Social Presence,8
+4DN3C,Class 2,2019-10-28T11:23:54Z,Demo,Social Presence,10
+BV58S,Class 2,2019-10-28T11:24:40Z,Demo,Social Presence,10
+JQQI3,Class 1,2018-11-02T15:23:35Z,Demo,Self-Understanding,1
+R479E,Class 1,2018-11-02T15:23:23Z,Demo,Self-Understanding,1
+ATRMN,Class 1,2018-11-02T15:23:14Z,Demo,Self-Understanding,7
+I5584,Class 1,2018-11-02T15:22:45Z,Demo,Self-Understanding,3
+MCID1,Class 1,2018-11-02T15:22:49Z,Demo,Self-Understanding,5
+OIA81,Class 1,2018-11-02T15:23:20Z,Demo,Self-Understanding,2
+WPNGW,Class 1,2018-11-02T15:24:09Z,Demo,Self-Understanding,7
+HRH9P,Class 1,2018-11-02T15:22:52Z,Demo,Self-Understanding,7
+5VQBW,Class 1,2018-11-02T15:23:28Z,Demo,Self-Understanding,10
+F7P3E,Class 1,2018-11-02T15:23:31Z,Demo,Self-Understanding,4
+QUOGW,Class 1,2018-11-02T15:23:12Z,Demo,Self-Understanding,5
+5T58D,Class 1,2018-11-02T15:24:00Z,Demo,Self-Understanding,5
+XJ25A,Class 1,2018-11-02T15:24:36Z,Demo,Self-Understanding,2
+ILC91,Class 1,2018-11-02T15:24:17Z,Demo,Self-Understanding,2
+H2IPW,Class 1,2018-11-02T15:23:57Z,Demo,Self-Understanding,4
+Z0KOY,Class 1,2018-11-02T15:24:18Z,Demo,Self-Understanding,3
+4873I,Class 2,2019-10-28T11:21:11Z,Demo,Self-Understanding,6
+FEMKP,Class 2,2019-10-28T11:21:43Z,Demo,Self-Understanding,1
+WIN3R,Class 2,2019-10-28T11:21:02Z,Demo,Self-Understanding,2
+UO7DJ,Class 2,2019-10-28T11:20:45Z,Demo,Self-Understanding,6
+QXZIZ,Class 2,2019-10-28T11:21:00Z,Demo,Self-Understanding,7
+41DRO,Class 2,2019-10-28T11:21:12Z,Demo,Self-Understanding,4
+30WP8,Class 2,2019-10-28T11:22:45Z,Demo,Self-Understanding,8
+GA42L,Class 2,2019-10-28T11:22:18Z,Demo,Self-Understanding,7
+DT6KT,Class 2,2019-10-28T11:21:35Z,Demo,Self-Understanding,1
+KW7I6,Class 2,2019-10-28T11:21:47Z,Demo,Self-Understanding,1
+094O8,Class 2,2019-10-28T11:21:54Z,Demo,Self-Understanding,2
+MK305,Class 2,2019-10-28T11:22:51Z,Demo,Self-Understanding,4
+IG6VT,Class 2,2019-10-28T11:22:33Z,Demo,Self-Understanding,5
+Z68B8,Class 2,2019-10-28T11:22:51Z,Demo,Self-Understanding,5
+4DN3C,Class 2,2019-10-28T11:23:54Z,Demo,Self-Understanding,6
+BV58S,Class 2,2019-10-28T11:24:40Z,Demo,Self-Understanding,2
+JQQI3,Class 1,2018-11-02T15:23:35Z,Demo,Understanding Others,9
+R479E,Class 1,2018-11-02T15:23:23Z,Demo,Understanding Others,4
+ATRMN,Class 1,2018-11-02T15:23:14Z,Demo,Understanding Others,7
+I5584,Class 1,2018-11-02T15:22:45Z,Demo,Understanding Others,8
+MCID1,Class 1,2018-11-02T15:22:49Z,Demo,Understanding Others,5
+OIA81,Class 1,2018-11-02T15:23:20Z,Demo,Understanding Others,7
+WPNGW,Class 1,2018-11-02T15:24:09Z,Demo,Understanding Others,7
+HRH9P,Class 1,2018-11-02T15:22:52Z,Demo,Understanding Others,10
+5VQBW,Class 1,2018-11-02T15:23:28Z,Demo,Understanding Others,7
+F7P3E,Class 1,2018-11-02T15:23:31Z,Demo,Understanding Others,4
+QUOGW,Class 1,2018-11-02T15:23:12Z,Demo,Understanding Others,8
+5T58D,Class 1,2018-11-02T15:24:00Z,Demo,Understanding Others,9
+XJ25A,Class 1,2018-11-02T15:24:36Z,Demo,Understanding Others,8
+ILC91,Class 1,2018-11-02T15:24:17Z,Demo,Understanding Others,7
+H2IPW,Class 1,2018-11-02T15:23:57Z,Demo,Understanding Others,7
+Z0KOY,Class 1,2018-11-02T15:24:18Z,Demo,Understanding Others,3
+4873I,Class 2,2019-10-28T11:21:11Z,Demo,Understanding Others,8
+FEMKP,Class 2,2019-10-28T11:21:43Z,Demo,Understanding Others,4
+WIN3R,Class 2,2019-10-28T11:21:02Z,Demo,Understanding Others,8
+UO7DJ,Class 2,2019-10-28T11:20:45Z,Demo,Understanding Others,7
+QXZIZ,Class 2,2019-10-28T11:21:00Z,Demo,Understanding Others,8
+41DRO,Class 2,2019-10-28T11:21:12Z,Demo,Understanding Others,7
+30WP8,Class 2,2019-10-28T11:22:45Z,Demo,Understanding Others,5
+GA42L,Class 2,2019-10-28T11:22:18Z,Demo,Understanding Others,7
+DT6KT,Class 2,2019-10-28T11:21:35Z,Demo,Understanding Others,2
+KW7I6,Class 2,2019-10-28T11:21:47Z,Demo,Understanding Others,7
+094O8,Class 2,2019-10-28T11:21:54Z,Demo,Understanding Others,8
+MK305,Class 2,2019-10-28T11:22:51Z,Demo,Understanding Others,4
+IG6VT,Class 2,2019-10-28T11:22:33Z,Demo,Understanding Others,7
+Z68B8,Class 2,2019-10-28T11:22:51Z,Demo,Understanding Others,6
+4DN3C,Class 2,2019-10-28T11:23:54Z,Demo,Understanding Others,8
+BV58S,Class 2,2019-10-28T11:24:40Z,Demo,Understanding Others,10
+JQQI3,Class 1,2018-11-02T15:23:35Z,Demo,Self-Other Comparison,10
+R479E,Class 1,2018-11-02T15:23:23Z,Demo,Self-Other Comparison,6
+ATRMN,Class 1,2018-11-02T15:23:14Z,Demo,Self-Other Comparison,7
+I5584,Class 1,2018-11-02T15:22:45Z,Demo,Self-Other Comparison,9
+MCID1,Class 1,2018-11-02T15:22:49Z,Demo,Self-Other Comparison,9
+OIA81,Class 1,2018-11-02T15:23:20Z,Demo,Self-Other Comparison,7
+WPNGW,Class 1,2018-11-02T15:24:09Z,Demo,Self-Other Comparison,8
+HRH9P,Class 1,2018-11-02T15:22:52Z,Demo,Self-Other Comparison,10
+5VQBW,Class 1,2018-11-02T15:23:28Z,Demo,Self-Other Comparison,7
+F7P3E,Class 1,2018-11-02T15:23:31Z,Demo,Self-Other Comparison,8
+QUOGW,Class 1,2018-11-02T15:23:12Z,Demo,Self-Other Comparison,8
+5T58D,Class 1,2018-11-02T15:24:00Z,Demo,Self-Other Comparison,10
+XJ25A,Class 1,2018-11-02T15:24:36Z,Demo,Self-Other Comparison,8
+ILC91,Class 1,2018-11-02T15:24:17Z,Demo,Self-Other Comparison,7
+H2IPW,Class 1,2018-11-02T15:23:57Z,Demo,Self-Other Comparison,5
+Z0KOY,Class 1,2018-11-02T15:24:18Z,Demo,Self-Other Comparison,8
+4873I,Class 2,2019-10-28T11:21:11Z,Demo,Self-Other Comparison,9
+FEMKP,Class 2,2019-10-28T11:21:43Z,Demo,Self-Other Comparison,1
+WIN3R,Class 2,2019-10-28T11:21:02Z,Demo,Self-Other Comparison,8
+UO7DJ,Class 2,2019-10-28T11:20:45Z,Demo,Self-Other Comparison,7
+QXZIZ,Class 2,2019-10-28T11:21:00Z,Demo,Self-Other Comparison,6
+41DRO,Class 2,2019-10-28T11:21:12Z,Demo,Self-Other Comparison,6
+30WP8,Class 2,2019-10-28T11:22:45Z,Demo,Self-Other Comparison,8
+GA42L,Class 2,2019-10-28T11:22:18Z,Demo,Self-Other Comparison,10
+DT6KT,Class 2,2019-10-28T11:21:35Z,Demo,Self-Other Comparison,1
+KW7I6,Class 2,2019-10-28T11:21:47Z,Demo,Self-Other Comparison,8
+094O8,Class 2,2019-10-28T11:21:54Z,Demo,Self-Other Comparison,10
+MK305,Class 2,2019-10-28T11:22:51Z,Demo,Self-Other Comparison,6
+IG6VT,Class 2,2019-10-28T11:22:33Z,Demo,Self-Other Comparison,8
+Z68B8,Class 2,2019-10-28T11:22:51Z,Demo,Self-Other Comparison,8
+4DN3C,Class 2,2019-10-28T11:23:54Z,Demo,Self-Other Comparison,10
+BV58S,Class 2,2019-10-28T11:24:40Z,Demo,Self-Other Comparison,10
+JQQI3,Class 1,2018-11-02T15:23:35Z,Demo,Self-Regulation,1
+R479E,Class 1,2018-11-02T15:23:23Z,Demo,Self-Regulation,1
+ATRMN,Class 1,2018-11-02T15:23:14Z,Demo,Self-Regulation,7
+I5584,Class 1,2018-11-02T15:22:45Z,Demo,Self-Regulation,2
+MCID1,Class 1,2018-11-02T15:22:49Z,Demo,Self-Regulation,5
+OIA81,Class 1,2018-11-02T15:23:20Z,Demo,Self-Regulation,2
+WPNGW,Class 1,2018-11-02T15:24:09Z,Demo,Self-Regulation,5
+HRH9P,Class 1,2018-11-02T15:22:52Z,Demo,Self-Regulation,7
+5VQBW,Class 1,2018-11-02T15:23:28Z,Demo,Self-Regulation,10
+F7P3E,Class 1,2018-11-02T15:23:31Z,Demo,Self-Regulation,6
+QUOGW,Class 1,2018-11-02T15:23:12Z,Demo,Self-Regulation,5
+5T58D,Class 1,2018-11-02T15:24:00Z,Demo,Self-Regulation,5
+XJ25A,Class 1,2018-11-02T15:24:36Z,Demo,Self-Regulation,2
+ILC91,Class 1,2018-11-02T15:24:17Z,Demo,Self-Regulation,1
+H2IPW,Class 1,2018-11-02T15:23:57Z,Demo,Self-Regulation,5
+Z0KOY,Class 1,2018-11-02T15:24:18Z,Demo,Self-Regulation,3
+4873I,Class 2,2019-10-28T11:21:11Z,Demo,Self-Regulation,6
+FEMKP,Class 2,2019-10-28T11:21:43Z,Demo,Self-Regulation,1
+WIN3R,Class 2,2019-10-28T11:21:02Z,Demo,Self-Regulation,2
+UO7DJ,Class 2,2019-10-28T11:20:45Z,Demo,Self-Regulation,4
+QXZIZ,Class 2,2019-10-28T11:21:00Z,Demo,Self-Regulation,6
+41DRO,Class 2,2019-10-28T11:21:12Z,Demo,Self-Regulation,3
+30WP8,Class 2,2019-10-28T11:22:45Z,Demo,Self-Regulation,5
+GA42L,Class 2,2019-10-28T11:22:18Z,Demo,Self-Regulation,5
+DT6KT,Class 2,2019-10-28T11:21:35Z,Demo,Self-Regulation,1
+KW7I6,Class 2,2019-10-28T11:21:47Z,Demo,Self-Regulation,1
+094O8,Class 2,2019-10-28T11:21:54Z,Demo,Self-Regulation,8
+MK305,Class 2,2019-10-28T11:22:51Z,Demo,Self-Regulation,3
+IG6VT,Class 2,2019-10-28T11:22:33Z,Demo,Self-Regulation,4
+Z68B8,Class 2,2019-10-28T11:22:51Z,Demo,Self-Regulation,4
+4DN3C,Class 2,2019-10-28T11:23:54Z,Demo,Self-Regulation,6
+BV58S,Class 2,2019-10-28T11:24:40Z,Demo,Self-Regulation,5
+QUOGW,Class 1,2018-12-07T12:17:01Z,Halfway,Frequency,3
+H2IPW,Class 1,2018-12-07T12:16:27Z,Halfway,Frequency,5
+MCID1,Class 1,2018-12-07T12:15:42Z,Halfway,Frequency,6
+OIA81,Class 1,2018-12-07T12:20:26Z,Halfway,Frequency,9
+5VQBW,Class 1,2018-12-07T12:21:09Z,Halfway,Frequency,10
+F7P3E,Class 1,2018-12-07T12:18:17Z,Halfway,Frequency,9
+WPNGW,Class 1,2018-12-07T12:16:58Z,Halfway,Frequency,3
+5T58D,Class 1,2018-12-07T12:19:35Z,Halfway,Frequency,5
+XJ25A,Class 1,2018-12-07T12:19:20Z,Halfway,Frequency,4
+Z0KOY,Class 1,2018-12-07T12:19:38Z,Halfway,Frequency,4
+HRH9P,Class 1,2018-12-07T12:18:02Z,Halfway,Frequency,7
+R479E,Class 1,2018-12-07T12:17:19Z,Halfway,Frequency,5
+ATRMN,Class 1,2018-12-07T12:23:15Z,Halfway,Frequency,5
+XJ25A,Class 1,2019-02-22T15:23:33Z,Halfway,Frequency,4
+4873I,Class 2,2019-12-13T10:32:57Z,Halfway,Frequency,4
+WIN3R,Class 2,2019-12-13T10:33:35Z,Halfway,Frequency,1
+QXZIZ,Class 2,2019-12-13T10:33:11Z,Halfway,Frequency,2
+KW7I6,Class 2,2019-12-13T10:33:15Z,Halfway,Frequency,1
+4DN3C,Class 2,2019-12-13T10:35:54Z,Halfway,Frequency,6
+41DRO,Class 2,2019-12-13T10:32:02Z,Halfway,Frequency,3
+DT6KT,Class 2,2019-12-13T10:35:09Z,Halfway,Frequency,3
+Z68B8,Class 2,2019-12-13T10:34:19Z,Halfway,Frequency,3
+BV58S,Class 2,2019-12-13T10:37:13Z,Halfway,Frequency,2
+TDTPK,Class 2,2019-12-13T10:33:06Z,Halfway,Frequency,2
+IG6VT,Class 2,2019-12-13T10:33:09Z,Halfway,Frequency,10
+094O8,Class 2,2019-12-13T10:34:05Z,Halfway,Frequency,7
+UO7DJ,Class 2,2019-12-13T10:35:45Z,Halfway,Frequency,5
+30WP8,Class 2,2019-12-15T20:35:48Z,Halfway,Frequency,1
+GA42L,Class 2,2019-12-17T10:03:32Z,Halfway,Frequency,8
+QUOGW,Class 1,2018-12-07T12:17:01Z,Halfway,Affordance,5
+H2IPW,Class 1,2018-12-07T12:16:27Z,Halfway,Affordance,6
+MCID1,Class 1,2018-12-07T12:15:42Z,Halfway,Affordance,7
+OIA81,Class 1,2018-12-07T12:20:26Z,Halfway,Affordance,5
+5VQBW,Class 1,2018-12-07T12:21:09Z,Halfway,Affordance,9
+F7P3E,Class 1,2018-12-07T12:18:17Z,Halfway,Affordance,7
+WPNGW,Class 1,2018-12-07T12:16:58Z,Halfway,Affordance,3
+5T58D,Class 1,2018-12-07T12:19:35Z,Halfway,Affordance,10
+XJ25A,Class 1,2018-12-07T12:19:20Z,Halfway,Affordance,3
+Z0KOY,Class 1,2018-12-07T12:19:38Z,Halfway,Affordance,4
+HRH9P,Class 1,2018-12-07T12:18:02Z,Halfway,Affordance,8
+R479E,Class 1,2018-12-07T12:17:19Z,Halfway,Affordance,4
+ATRMN,Class 1,2018-12-07T12:23:15Z,Halfway,Affordance,8
+XJ25A,Class 1,2019-02-22T15:23:33Z,Halfway,Affordance,3
+4873I,Class 2,2019-12-13T10:32:57Z,Halfway,Affordance,7
+WIN3R,Class 2,2019-12-13T10:33:35Z,Halfway,Affordance,1
+QXZIZ,Class 2,2019-12-13T10:33:11Z,Halfway,Affordance,3
+KW7I6,Class 2,2019-12-13T10:33:15Z,Halfway,Affordance,1
+4DN3C,Class 2,2019-12-13T10:35:54Z,Halfway,Affordance,10
+41DRO,Class 2,2019-12-13T10:32:02Z,Halfway,Affordance,6
+DT6KT,Class 2,2019-12-13T10:35:09Z,Halfway,Affordance,1
+Z68B8,Class 2,2019-12-13T10:34:19Z,Halfway,Affordance,7
+BV58S,Class 2,2019-12-13T10:37:13Z,Halfway,Affordance,6
+TDTPK,Class 2,2019-12-13T10:33:06Z,Halfway,Affordance,2
+IG6VT,Class 2,2019-12-13T10:33:09Z,Halfway,Affordance,6
+094O8,Class 2,2019-12-13T10:34:05Z,Halfway,Affordance,3
+UO7DJ,Class 2,2019-12-13T10:35:45Z,Halfway,Affordance,6
+30WP8,Class 2,2019-12-15T20:35:48Z,Halfway,Affordance,1
+GA42L,Class 2,2019-12-17T10:03:32Z,Halfway,Affordance,9
+QUOGW,Class 1,2018-12-07T12:17:01Z,Halfway,Social Presence,6
+H2IPW,Class 1,2018-12-07T12:16:27Z,Halfway,Social Presence,5
+MCID1,Class 1,2018-12-07T12:15:42Z,Halfway,Social Presence,4
+OIA81,Class 1,2018-12-07T12:20:26Z,Halfway,Social Presence,2
+5VQBW,Class 1,2018-12-07T12:21:09Z,Halfway,Social Presence,9
+F7P3E,Class 1,2018-12-07T12:18:17Z,Halfway,Social Presence,1
+WPNGW,Class 1,2018-12-07T12:16:58Z,Halfway,Social Presence,1
+5T58D,Class 1,2018-12-07T12:19:35Z,Halfway,Social Presence,3
+XJ25A,Class 1,2018-12-07T12:19:20Z,Halfway,Social Presence,3
+Z0KOY,Class 1,2018-12-07T12:19:38Z,Halfway,Social Presence,1
+HRH9P,Class 1,2018-12-07T12:18:02Z,Halfway,Social Presence,3
+R479E,Class 1,2018-12-07T12:17:19Z,Halfway,Social Presence,1
+ATRMN,Class 1,2018-12-07T12:23:15Z,Halfway,Social Presence,2
+XJ25A,Class 1,2019-02-22T15:23:33Z,Halfway,Social Presence,3
+4873I,Class 2,2019-12-13T10:32:57Z,Halfway,Social Presence,7
+WIN3R,Class 2,2019-12-13T10:33:35Z,Halfway,Social Presence,1
+QXZIZ,Class 2,2019-12-13T10:33:11Z,Halfway,Social Presence,2
+KW7I6,Class 2,2019-12-13T10:33:15Z,Halfway,Social Presence,1
+4DN3C,Class 2,2019-12-13T10:35:54Z,Halfway,Social Presence,3
+41DRO,Class 2,2019-12-13T10:32:02Z,Halfway,Social Presence,4
+DT6KT,Class 2,2019-12-13T10:35:09Z,Halfway,Social Presence,1
+Z68B8,Class 2,2019-12-13T10:34:19Z,Halfway,Social Presence,4
+BV58S,Class 2,2019-12-13T10:37:13Z,Halfway,Social Presence,4
+TDTPK,Class 2,2019-12-13T10:33:06Z,Halfway,Social Presence,1
+IG6VT,Class 2,2019-12-13T10:33:09Z,Halfway,Social Presence,4
+094O8,Class 2,2019-12-13T10:34:05Z,Halfway,Social Presence,1
+UO7DJ,Class 2,2019-12-13T10:35:45Z,Halfway,Social Presence,5
+30WP8,Class 2,2019-12-15T20:35:48Z,Halfway,Social Presence,1
+GA42L,Class 2,2019-12-17T10:03:32Z,Halfway,Social Presence,8
+QUOGW,Class 1,2018-12-07T12:17:01Z,Halfway,Self-Understanding,3
+H2IPW,Class 1,2018-12-07T12:16:27Z,Halfway,Self-Understanding,7
+MCID1,Class 1,2018-12-07T12:15:42Z,Halfway,Self-Understanding,7
+OIA81,Class 1,2018-12-07T12:20:26Z,Halfway,Self-Understanding,1
+5VQBW,Class 1,2018-12-07T12:21:09Z,Halfway,Self-Understanding,9
+F7P3E,Class 1,2018-12-07T12:18:17Z,Halfway,Self-Understanding,7
+WPNGW,Class 1,2018-12-07T12:16:58Z,Halfway,Self-Understanding,4
+5T58D,Class 1,2018-12-07T12:19:35Z,Halfway,Self-Understanding,1
+XJ25A,Class 1,2018-12-07T12:19:20Z,Halfway,Self-Understanding,3
+Z0KOY,Class 1,2018-12-07T12:19:38Z,Halfway,Self-Understanding,3
+HRH9P,Class 1,2018-12-07T12:18:02Z,Halfway,Self-Understanding,3
+R479E,Class 1,2018-12-07T12:17:19Z,Halfway,Self-Understanding,1
+ATRMN,Class 1,2018-12-07T12:23:15Z,Halfway,Self-Understanding,7
+XJ25A,Class 1,2019-02-22T15:23:33Z,Halfway,Self-Understanding,6
+4873I,Class 2,2019-12-13T10:32:57Z,Halfway,Self-Understanding,4
+WIN3R,Class 2,2019-12-13T10:33:35Z,Halfway,Self-Understanding,1
+QXZIZ,Class 2,2019-12-13T10:33:11Z,Halfway,Self-Understanding,3
+KW7I6,Class 2,2019-12-13T10:33:15Z,Halfway,Self-Understanding,1
+4DN3C,Class 2,2019-12-13T10:35:54Z,Halfway,Self-Understanding,3
+41DRO,Class 2,2019-12-13T10:32:02Z,Halfway,Self-Understanding,3
+DT6KT,Class 2,2019-12-13T10:35:09Z,Halfway,Self-Understanding,2
+Z68B8,Class 2,2019-12-13T10:34:19Z,Halfway,Self-Understanding,4
+BV58S,Class 2,2019-12-13T10:37:13Z,Halfway,Self-Understanding,4
+TDTPK,Class 2,2019-12-13T10:33:06Z,Halfway,Self-Understanding,1
+IG6VT,Class 2,2019-12-13T10:33:09Z,Halfway,Self-Understanding,4
+094O8,Class 2,2019-12-13T10:34:05Z,Halfway,Self-Understanding,1
+UO7DJ,Class 2,2019-12-13T10:35:45Z,Halfway,Self-Understanding,6
+30WP8,Class 2,2019-12-15T20:35:48Z,Halfway,Self-Understanding,1
+GA42L,Class 2,2019-12-17T10:03:32Z,Halfway,Self-Understanding,7
+QUOGW,Class 1,2018-12-07T12:17:01Z,Halfway,Understanding Others,7
+H2IPW,Class 1,2018-12-07T12:16:27Z,Halfway,Understanding Others,6
+MCID1,Class 1,2018-12-07T12:15:42Z,Halfway,Understanding Others,4
+OIA81,Class 1,2018-12-07T12:20:26Z,Halfway,Understanding Others,3
+5VQBW,Class 1,2018-12-07T12:21:09Z,Halfway,Understanding Others,3
+F7P3E,Class 1,2018-12-07T12:18:17Z,Halfway,Understanding Others,3
+WPNGW,Class 1,2018-12-07T12:16:58Z,Halfway,Understanding Others,8
+5T58D,Class 1,2018-12-07T12:19:35Z,Halfway,Understanding Others,10
+XJ25A,Class 1,2018-12-07T12:19:20Z,Halfway,Understanding Others,8
+Z0KOY,Class 1,2018-12-07T12:19:38Z,Halfway,Understanding Others,2
+HRH9P,Class 1,2018-12-07T12:18:02Z,Halfway,Understanding Others,3
+R479E,Class 1,2018-12-07T12:17:19Z,Halfway,Understanding Others,1
+ATRMN,Class 1,2018-12-07T12:23:15Z,Halfway,Understanding Others,2
+XJ25A,Class 1,2019-02-22T15:23:33Z,Halfway,Understanding Others,3
+4873I,Class 2,2019-12-13T10:32:57Z,Halfway,Understanding Others,8
+WIN3R,Class 2,2019-12-13T10:33:35Z,Halfway,Understanding Others,1
+QXZIZ,Class 2,2019-12-13T10:33:11Z,Halfway,Understanding Others,2
+KW7I6,Class 2,2019-12-13T10:33:15Z,Halfway,Understanding Others,1
+4DN3C,Class 2,2019-12-13T10:35:54Z,Halfway,Understanding Others,8
+41DRO,Class 2,2019-12-13T10:32:02Z,Halfway,Understanding Others,3
+DT6KT,Class 2,2019-12-13T10:35:09Z,Halfway,Understanding Others,1
+Z68B8,Class 2,2019-12-13T10:34:19Z,Halfway,Understanding Others,4
+BV58S,Class 2,2019-12-13T10:37:13Z,Halfway,Understanding Others,6
+TDTPK,Class 2,2019-12-13T10:33:06Z,Halfway,Understanding Others,4
+IG6VT,Class 2,2019-12-13T10:33:09Z,Halfway,Understanding Others,3
+094O8,Class 2,2019-12-13T10:34:05Z,Halfway,Understanding Others,1
+UO7DJ,Class 2,2019-12-13T10:35:45Z,Halfway,Understanding Others,7
+30WP8,Class 2,2019-12-15T20:35:48Z,Halfway,Understanding Others,1
+GA42L,Class 2,2019-12-17T10:03:32Z,Halfway,Understanding Others,7
+QUOGW,Class 1,2018-12-07T12:17:01Z,Halfway,Self-Other Comparison,7
+H2IPW,Class 1,2018-12-07T12:16:27Z,Halfway,Self-Other Comparison,7
+MCID1,Class 1,2018-12-07T12:15:42Z,Halfway,Self-Other Comparison,5
+OIA81,Class 1,2018-12-07T12:20:26Z,Halfway,Self-Other Comparison,4
+5VQBW,Class 1,2018-12-07T12:21:09Z,Halfway,Self-Other Comparison,5
+F7P3E,Class 1,2018-12-07T12:18:17Z,Halfway,Self-Other Comparison,5
+WPNGW,Class 1,2018-12-07T12:16:58Z,Halfway,Self-Other Comparison,8
+5T58D,Class 1,2018-12-07T12:19:35Z,Halfway,Self-Other Comparison,10
+XJ25A,Class 1,2018-12-07T12:19:20Z,Halfway,Self-Other Comparison,6
+Z0KOY,Class 1,2018-12-07T12:19:38Z,Halfway,Self-Other Comparison,2
+HRH9P,Class 1,2018-12-07T12:18:02Z,Halfway,Self-Other Comparison,3
+R479E,Class 1,2018-12-07T12:17:19Z,Halfway,Self-Other Comparison,1
+ATRMN,Class 1,2018-12-07T12:23:15Z,Halfway,Self-Other Comparison,2
+XJ25A,Class 1,2019-02-22T15:23:33Z,Halfway,Self-Other Comparison,4
+4873I,Class 2,2019-12-13T10:32:57Z,Halfway,Self-Other Comparison,8
+WIN3R,Class 2,2019-12-13T10:33:35Z,Halfway,Self-Other Comparison,1
+QXZIZ,Class 2,2019-12-13T10:33:11Z,Halfway,Self-Other Comparison,2
+KW7I6,Class 2,2019-12-13T10:33:15Z,Halfway,Self-Other Comparison,1
+4DN3C,Class 2,2019-12-13T10:35:54Z,Halfway,Self-Other Comparison,10
+41DRO,Class 2,2019-12-13T10:32:02Z,Halfway,Self-Other Comparison,6
+DT6KT,Class 2,2019-12-13T10:35:09Z,Halfway,Self-Other Comparison,2
+Z68B8,Class 2,2019-12-13T10:34:19Z,Halfway,Self-Other Comparison,8
+BV58S,Class 2,2019-12-13T10:37:13Z,Halfway,Self-Other Comparison,7
+TDTPK,Class 2,2019-12-13T10:33:06Z,Halfway,Self-Other Comparison,4
+IG6VT,Class 2,2019-12-13T10:33:09Z,Halfway,Self-Other Comparison,7
+094O8,Class 2,2019-12-13T10:34:05Z,Halfway,Self-Other Comparison,4
+UO7DJ,Class 2,2019-12-13T10:35:45Z,Halfway,Self-Other Comparison,7
+30WP8,Class 2,2019-12-15T20:35:48Z,Halfway,Self-Other Comparison,1
+GA42L,Class 2,2019-12-17T10:03:32Z,Halfway,Self-Other Comparison,8
+QUOGW,Class 1,2018-12-07T12:17:01Z,Halfway,Self-Regulation,2
+H2IPW,Class 1,2018-12-07T12:16:27Z,Halfway,Self-Regulation,4
+MCID1,Class 1,2018-12-07T12:15:42Z,Halfway,Self-Regulation,5
+OIA81,Class 1,2018-12-07T12:20:26Z,Halfway,Self-Regulation,1
+5VQBW,Class 1,2018-12-07T12:21:09Z,Halfway,Self-Regulation,8
+F7P3E,Class 1,2018-12-07T12:18:17Z,Halfway,Self-Regulation,3
+WPNGW,Class 1,2018-12-07T12:16:58Z,Halfway,Self-Regulation,1
+5T58D,Class 1,2018-12-07T12:19:35Z,Halfway,Self-Regulation,1
+XJ25A,Class 1,2018-12-07T12:19:20Z,Halfway,Self-Regulation,3
+Z0KOY,Class 1,2018-12-07T12:19:38Z,Halfway,Self-Regulation,1
+HRH9P,Class 1,2018-12-07T12:18:02Z,Halfway,Self-Regulation,3
+R479E,Class 1,2018-12-07T12:17:19Z,Halfway,Self-Regulation,1
+ATRMN,Class 1,2018-12-07T12:23:15Z,Halfway,Self-Regulation,5
+XJ25A,Class 1,2019-02-22T15:23:33Z,Halfway,Self-Regulation,1
+4873I,Class 2,2019-12-13T10:32:57Z,Halfway,Self-Regulation,1
+WIN3R,Class 2,2019-12-13T10:33:35Z,Halfway,Self-Regulation,1
+QXZIZ,Class 2,2019-12-13T10:33:11Z,Halfway,Self-Regulation,3
+KW7I6,Class 2,2019-12-13T10:33:15Z,Halfway,Self-Regulation,1
+4DN3C,Class 2,2019-12-13T10:35:54Z,Halfway,Self-Regulation,2
+41DRO,Class 2,2019-12-13T10:32:02Z,Halfway,Self-Regulation,3
+DT6KT,Class 2,2019-12-13T10:35:09Z,Halfway,Self-Regulation,1
+Z68B8,Class 2,2019-12-13T10:34:19Z,Halfway,Self-Regulation,6
+BV58S,Class 2,2019-12-13T10:37:13Z,Halfway,Self-Regulation,2
+TDTPK,Class 2,2019-12-13T10:33:06Z,Halfway,Self-Regulation,1
+IG6VT,Class 2,2019-12-13T10:33:09Z,Halfway,Self-Regulation,3
+094O8,Class 2,2019-12-13T10:34:05Z,Halfway,Self-Regulation,3
+UO7DJ,Class 2,2019-12-13T10:35:45Z,Halfway,Self-Regulation,4
+30WP8,Class 2,2019-12-15T20:35:48Z,Halfway,Self-Regulation,1
+GA42L,Class 2,2019-12-17T10:03:32Z,Halfway,Self-Regulation,6
+ATRMN,Class 1,2019-02-22T15:21:42Z,Final,Frequency,2
+H2IPW,Class 1,2019-02-22T15:19:21Z,Final,Frequency,4
+R479E,Class 1,2019-02-22T15:18:13Z,Final,Frequency,2
+I5584,Class 1,2019-02-22T15:21:25Z,Final,Frequency,1
+WPNGW,Class 1,2019-02-22T15:22:39Z,Final,Frequency,2
+F7P3E,Class 1,2019-02-22T15:26:55Z,Final,Frequency,4
+MCID1,Class 1,2019-02-22T15:25:50Z,Final,Frequency,3
+QUOGW,Class 1,2019-02-22T15:33:33Z,Final,Frequency,1
+OIA81,Class 1,2019-02-22T15:29:37Z,Final,Frequency,9
+XJ25A,Class 1,2019-02-22T15:31:19Z,Final,Frequency,5
+Z0KOY,Class 1,2019-02-25T10:13:13Z,Final,Frequency,3
+JQQI3,Class 1,2019-02-25T14:13:04Z,Final,Frequency,3
+HRH9P,Class 1,2019-03-01T15:10:25Z,Final,Frequency,4
+TDTPK,Class 2,2020-02-17T10:21:13Z,Final,Frequency,1
+WIN3R,Class 2,2020-02-17T10:27:21Z,Final,Frequency,2
+KW7I6,Class 2,2020-02-17T10:28:32Z,Final,Frequency,1
+41DRO,Class 2,2020-02-17T10:25:08Z,Final,Frequency,2
+Z68B8,Class 2,2020-02-17T10:21:43Z,Final,Frequency,6
+UO7DJ,Class 2,2020-02-17T10:22:47Z,Final,Frequency,3
+IG6VT,Class 2,2020-02-17T10:24:15Z,Final,Frequency,9
+4873I,Class 2,2020-02-17T10:25:24Z,Final,Frequency,3
+BV58S,Class 2,2020-02-17T10:24:51Z,Final,Frequency,1
+DT6KT,Class 2,2020-02-17T10:26:35Z,Final,Frequency,3
+094O8,Class 2,2020-02-17T10:24:23Z,Final,Frequency,9
+GA42L,Class 2,2020-02-17T10:30:52Z,Final,Frequency,7
+QXZIZ,Class 2,2020-02-17T10:30:34Z,Final,Frequency,4
+ATRMN,Class 1,2019-02-22T15:21:42Z,Final,Affordance,7
+H2IPW,Class 1,2019-02-22T15:19:21Z,Final,Affordance,4
+R479E,Class 1,2019-02-22T15:18:13Z,Final,Affordance,5
+I5584,Class 1,2019-02-22T15:21:25Z,Final,Affordance,5
+WPNGW,Class 1,2019-02-22T15:22:39Z,Final,Affordance,4
+F7P3E,Class 1,2019-02-22T15:26:55Z,Final,Affordance,5
+MCID1,Class 1,2019-02-22T15:25:50Z,Final,Affordance,3
+QUOGW,Class 1,2019-02-22T15:33:33Z,Final,Affordance,2
+OIA81,Class 1,2019-02-22T15:29:37Z,Final,Affordance,5
+XJ25A,Class 1,2019-02-22T15:31:19Z,Final,Affordance,5
+Z0KOY,Class 1,2019-02-25T10:13:13Z,Final,Affordance,2
+JQQI3,Class 1,2019-02-25T14:13:04Z,Final,Affordance,5
+HRH9P,Class 1,2019-03-01T15:10:25Z,Final,Affordance,6
+TDTPK,Class 2,2020-02-17T10:21:13Z,Final,Affordance,2
+WIN3R,Class 2,2020-02-17T10:27:21Z,Final,Affordance,2
+KW7I6,Class 2,2020-02-17T10:28:32Z,Final,Affordance,1
+41DRO,Class 2,2020-02-17T10:25:08Z,Final,Affordance,5
+Z68B8,Class 2,2020-02-17T10:21:43Z,Final,Affordance,7
+UO7DJ,Class 2,2020-02-17T10:22:47Z,Final,Affordance,4
+IG6VT,Class 2,2020-02-17T10:24:15Z,Final,Affordance,4
+4873I,Class 2,2020-02-17T10:25:24Z,Final,Affordance,8
+BV58S,Class 2,2020-02-17T10:24:51Z,Final,Affordance,1
+DT6KT,Class 2,2020-02-17T10:26:35Z,Final,Affordance,2
+094O8,Class 2,2020-02-17T10:24:23Z,Final,Affordance,5
+GA42L,Class 2,2020-02-17T10:30:52Z,Final,Affordance,10
+QXZIZ,Class 2,2020-02-17T10:30:34Z,Final,Affordance,4
+ATRMN,Class 1,2019-02-22T15:21:42Z,Final,Social Presence,2
+H2IPW,Class 1,2019-02-22T15:19:21Z,Final,Social Presence,5
+R479E,Class 1,2019-02-22T15:18:13Z,Final,Social Presence,1
+I5584,Class 1,2019-02-22T15:21:25Z,Final,Social Presence,2
+WPNGW,Class 1,2019-02-22T15:22:39Z,Final,Social Presence,2
+F7P3E,Class 1,2019-02-22T15:26:55Z,Final,Social Presence,3
+MCID1,Class 1,2019-02-22T15:25:50Z,Final,Social Presence,3
+QUOGW,Class 1,2019-02-22T15:33:33Z,Final,Social Presence,2
+OIA81,Class 1,2019-02-22T15:29:37Z,Final,Social Presence,1
+XJ25A,Class 1,2019-02-22T15:31:19Z,Final,Social Presence,2
+Z0KOY,Class 1,2019-02-25T10:13:13Z,Final,Social Presence,1
+JQQI3,Class 1,2019-02-25T14:13:04Z,Final,Social Presence,2
+HRH9P,Class 1,2019-03-01T15:10:25Z,Final,Social Presence,2
+TDTPK,Class 2,2020-02-17T10:21:13Z,Final,Social Presence,2
+WIN3R,Class 2,2020-02-17T10:27:21Z,Final,Social Presence,2
+KW7I6,Class 2,2020-02-17T10:28:32Z,Final,Social Presence,1
+41DRO,Class 2,2020-02-17T10:25:08Z,Final,Social Presence,4
+Z68B8,Class 2,2020-02-17T10:21:43Z,Final,Social Presence,8
+UO7DJ,Class 2,2020-02-17T10:22:47Z,Final,Social Presence,3
+IG6VT,Class 2,2020-02-17T10:24:15Z,Final,Social Presence,3
+4873I,Class 2,2020-02-17T10:25:24Z,Final,Social Presence,5
+BV58S,Class 2,2020-02-17T10:24:51Z,Final,Social Presence,2
+DT6KT,Class 2,2020-02-17T10:26:35Z,Final,Social Presence,1
+094O8,Class 2,2020-02-17T10:24:23Z,Final,Social Presence,1
+GA42L,Class 2,2020-02-17T10:30:52Z,Final,Social Presence,8
+QXZIZ,Class 2,2020-02-17T10:30:34Z,Final,Social Presence,5
+ATRMN,Class 1,2019-02-22T15:21:42Z,Final,Self-Understanding,5
+H2IPW,Class 1,2019-02-22T15:19:21Z,Final,Self-Understanding,5
+R479E,Class 1,2019-02-22T15:18:13Z,Final,Self-Understanding,1
+I5584,Class 1,2019-02-22T15:21:25Z,Final,Self-Understanding,7
+WPNGW,Class 1,2019-02-22T15:22:39Z,Final,Self-Understanding,5
+F7P3E,Class 1,2019-02-22T15:26:55Z,Final,Self-Understanding,4
+MCID1,Class 1,2019-02-22T15:25:50Z,Final,Self-Understanding,3
+QUOGW,Class 1,2019-02-22T15:33:33Z,Final,Self-Understanding,2
+OIA81,Class 1,2019-02-22T15:29:37Z,Final,Self-Understanding,1
+XJ25A,Class 1,2019-02-22T15:31:19Z,Final,Self-Understanding,4
+Z0KOY,Class 1,2019-02-25T10:13:13Z,Final,Self-Understanding,7
+JQQI3,Class 1,2019-02-25T14:13:04Z,Final,Self-Understanding,2
+HRH9P,Class 1,2019-03-01T15:10:25Z,Final,Self-Understanding,2
+TDTPK,Class 2,2020-02-17T10:21:13Z,Final,Self-Understanding,5
+WIN3R,Class 2,2020-02-17T10:27:21Z,Final,Self-Understanding,2
+KW7I6,Class 2,2020-02-17T10:28:32Z,Final,Self-Understanding,1
+41DRO,Class 2,2020-02-17T10:25:08Z,Final,Self-Understanding,2
+Z68B8,Class 2,2020-02-17T10:21:43Z,Final,Self-Understanding,4
+UO7DJ,Class 2,2020-02-17T10:22:47Z,Final,Self-Understanding,4
+IG6VT,Class 2,2020-02-17T10:24:15Z,Final,Self-Understanding,3
+4873I,Class 2,2020-02-17T10:25:24Z,Final,Self-Understanding,8
+BV58S,Class 2,2020-02-17T10:24:51Z,Final,Self-Understanding,1
+DT6KT,Class 2,2020-02-17T10:26:35Z,Final,Self-Understanding,1
+094O8,Class 2,2020-02-17T10:24:23Z,Final,Self-Understanding,1
+GA42L,Class 2,2020-02-17T10:30:52Z,Final,Self-Understanding,7
+QXZIZ,Class 2,2020-02-17T10:30:34Z,Final,Self-Understanding,4
+ATRMN,Class 1,2019-02-22T15:21:42Z,Final,Understanding Others,5
+H2IPW,Class 1,2019-02-22T15:19:21Z,Final,Understanding Others,5
+R479E,Class 1,2019-02-22T15:18:13Z,Final,Understanding Others,1
+I5584,Class 1,2019-02-22T15:21:25Z,Final,Understanding Others,7
+WPNGW,Class 1,2019-02-22T15:22:39Z,Final,Understanding Others,8
+F7P3E,Class 1,2019-02-22T15:26:55Z,Final,Understanding Others,6
+MCID1,Class 1,2019-02-22T15:25:50Z,Final,Understanding Others,3
+QUOGW,Class 1,2019-02-22T15:33:33Z,Final,Understanding Others,6
+OIA81,Class 1,2019-02-22T15:29:37Z,Final,Understanding Others,2
+XJ25A,Class 1,2019-02-22T15:31:19Z,Final,Understanding Others,5
+Z0KOY,Class 1,2019-02-25T10:13:13Z,Final,Understanding Others,2
+JQQI3,Class 1,2019-02-25T14:13:04Z,Final,Understanding Others,7
+HRH9P,Class 1,2019-03-01T15:10:25Z,Final,Understanding Others,4
+TDTPK,Class 2,2020-02-17T10:21:13Z,Final,Understanding Others,5
+WIN3R,Class 2,2020-02-17T10:27:21Z,Final,Understanding Others,2
+KW7I6,Class 2,2020-02-17T10:28:32Z,Final,Understanding Others,1
+41DRO,Class 2,2020-02-17T10:25:08Z,Final,Understanding Others,5
+Z68B8,Class 2,2020-02-17T10:21:43Z,Final,Understanding Others,4
+UO7DJ,Class 2,2020-02-17T10:22:47Z,Final,Understanding Others,5
+IG6VT,Class 2,2020-02-17T10:24:15Z,Final,Understanding Others,1
+4873I,Class 2,2020-02-17T10:25:24Z,Final,Understanding Others,2
+BV58S,Class 2,2020-02-17T10:24:51Z,Final,Understanding Others,5
+DT6KT,Class 2,2020-02-17T10:26:35Z,Final,Understanding Others,3
+094O8,Class 2,2020-02-17T10:24:23Z,Final,Understanding Others,1
+GA42L,Class 2,2020-02-17T10:30:52Z,Final,Understanding Others,8
+QXZIZ,Class 2,2020-02-17T10:30:34Z,Final,Understanding Others,5
+ATRMN,Class 1,2019-02-22T15:21:42Z,Final,Self-Other Comparison,5
+H2IPW,Class 1,2019-02-22T15:19:21Z,Final,Self-Other Comparison,5
+R479E,Class 1,2019-02-22T15:18:13Z,Final,Self-Other Comparison,1
+I5584,Class 1,2019-02-22T15:21:25Z,Final,Self-Other Comparison,5
+WPNGW,Class 1,2019-02-22T15:22:39Z,Final,Self-Other Comparison,8
+F7P3E,Class 1,2019-02-22T15:26:55Z,Final,Self-Other Comparison,5
+MCID1,Class 1,2019-02-22T15:25:50Z,Final,Self-Other Comparison,3
+QUOGW,Class 1,2019-02-22T15:33:33Z,Final,Self-Other Comparison,6
+OIA81,Class 1,2019-02-22T15:29:37Z,Final,Self-Other Comparison,3
+XJ25A,Class 1,2019-02-22T15:31:19Z,Final,Self-Other Comparison,2
+Z0KOY,Class 1,2019-02-25T10:13:13Z,Final,Self-Other Comparison,2
+JQQI3,Class 1,2019-02-25T14:13:04Z,Final,Self-Other Comparison,10
+HRH9P,Class 1,2019-03-01T15:10:25Z,Final,Self-Other Comparison,7
+TDTPK,Class 2,2020-02-17T10:21:13Z,Final,Self-Other Comparison,8
+WIN3R,Class 2,2020-02-17T10:27:21Z,Final,Self-Other Comparison,4
+KW7I6,Class 2,2020-02-17T10:28:32Z,Final,Self-Other Comparison,1
+41DRO,Class 2,2020-02-17T10:25:08Z,Final,Self-Other Comparison,5
+Z68B8,Class 2,2020-02-17T10:21:43Z,Final,Self-Other Comparison,8
+UO7DJ,Class 2,2020-02-17T10:22:47Z,Final,Self-Other Comparison,6
+IG6VT,Class 2,2020-02-17T10:24:15Z,Final,Self-Other Comparison,5
+4873I,Class 2,2020-02-17T10:25:24Z,Final,Self-Other Comparison,1
+BV58S,Class 2,2020-02-17T10:24:51Z,Final,Self-Other Comparison,4
+DT6KT,Class 2,2020-02-17T10:26:35Z,Final,Self-Other Comparison,2
+094O8,Class 2,2020-02-17T10:24:23Z,Final,Self-Other Comparison,1
+GA42L,Class 2,2020-02-17T10:30:52Z,Final,Self-Other Comparison,8
+QXZIZ,Class 2,2020-02-17T10:30:34Z,Final,Self-Other Comparison,5
+ATRMN,Class 1,2019-02-22T15:21:42Z,Final,Self-Regulation,5
+H2IPW,Class 1,2019-02-22T15:19:21Z,Final,Self-Regulation,5
+R479E,Class 1,2019-02-22T15:18:13Z,Final,Self-Regulation,1
+I5584,Class 1,2019-02-22T15:21:25Z,Final,Self-Regulation,3
+WPNGW,Class 1,2019-02-22T15:22:39Z,Final,Self-Regulation,2
+F7P3E,Class 1,2019-02-22T15:26:55Z,Final,Self-Regulation,3
+MCID1,Class 1,2019-02-22T15:25:50Z,Final,Self-Regulation,3
+QUOGW,Class 1,2019-02-22T15:33:33Z,Final,Self-Regulation,2
+OIA81,Class 1,2019-02-22T15:29:37Z,Final,Self-Regulation,1
+XJ25A,Class 1,2019-02-22T15:31:19Z,Final,Self-Regulation,3
+Z0KOY,Class 1,2019-02-25T10:13:13Z,Final,Self-Regulation,1
+JQQI3,Class 1,2019-02-25T14:13:04Z,Final,Self-Regulation,1
+HRH9P,Class 1,2019-03-01T15:10:25Z,Final,Self-Regulation,3
+TDTPK,Class 2,2020-02-17T10:21:13Z,Final,Self-Regulation,4
+WIN3R,Class 2,2020-02-17T10:27:21Z,Final,Self-Regulation,2
+KW7I6,Class 2,2020-02-17T10:28:32Z,Final,Self-Regulation,1
+41DRO,Class 2,2020-02-17T10:25:08Z,Final,Self-Regulation,3
+Z68B8,Class 2,2020-02-17T10:21:43Z,Final,Self-Regulation,5
+UO7DJ,Class 2,2020-02-17T10:22:47Z,Final,Self-Regulation,4
+IG6VT,Class 2,2020-02-17T10:24:15Z,Final,Self-Regulation,2
+4873I,Class 2,2020-02-17T10:25:24Z,Final,Self-Regulation,6
+BV58S,Class 2,2020-02-17T10:24:51Z,Final,Self-Regulation,1
+DT6KT,Class 2,2020-02-17T10:26:35Z,Final,Self-Regulation,1
+094O8,Class 2,2020-02-17T10:24:23Z,Final,Self-Regulation,1
+GA42L,Class 2,2020-02-17T10:30:52Z,Final,Self-Regulation,8
+QXZIZ,Class 2,2020-02-17T10:30:34Z,Final,Self-Regulation,5

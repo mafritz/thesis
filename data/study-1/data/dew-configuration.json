@@ -1,0 +1,387 @@
+{
+  "private": {
+    "name": "Replica of Fritz (2015) and Perrier (2017)",
+    "description": "Same settings and task of the Fritz 2015 and Perrier 2017 experiments."
+  },
+  "settings": {
+    "lang": "fr",
+    "title": "Replique des expériences de Fritz (2015) et Perrier (2017)",
+    "description": "Expériences menées dans le cadre du Master MALTT à TECFA, Université de Genève.",
+    "isPublic": false,
+    "isOpen": true,
+    "isDemo": false,
+    "minUsers": 1,
+    "maxUsers": 1,
+    "allowMultipleSessions": false,
+    "retrievePreviousData": false
+  },
+  "circumplex": {
+    "name": "EATMINT french circumplex",
+    "description": "Circumplex used in the test of the DEW",
+    "algorithmType": "radial",
+    "dimX": "Valence",
+    "dimY": "Control",
+    "isGrid": false,
+    "feelings": [
+      {
+        "label": "Confiant",
+        "angle": 9
+      },
+      {
+        "label": "Intéressé",
+        "angle": 27
+      },
+      {
+        "label": "Amusé",
+        "angle": 45
+      },
+      {
+        "label": "Ravi",
+        "angle": 63
+      },
+      {
+        "label": "Concentré",
+        "angle": 81
+      },
+      {
+        "label": "Satisfait",
+        "angle": 99
+      },
+      {
+        "label": "Détendu",
+        "angle": 117
+      },
+      {
+        "label": "Surpris",
+        "angle": 135
+      },
+      {
+        "label": "Soulagé",
+        "angle": 153
+      },
+      {
+        "label": "Empathique",
+        "angle": 171
+      },
+      {
+        "label": "Confus",
+        "angle": 189
+      },
+      {
+        "label": "Anxieux",
+        "angle": 207
+      },
+      {
+        "label": "Lassé",
+        "angle": 225
+      },
+      {
+        "label": "Stressé",
+        "angle": 243
+      },
+      {
+        "label": "Insatisfait",
+        "angle": 261
+      },
+      {
+        "label": "Frustré",
+        "angle": 279
+      },
+      {
+        "label": "Dégoûté",
+        "angle": 315
+      },
+      {
+        "label": "Envieux",
+        "angle": 297
+      },
+      {
+        "label": "Enervé",
+        "angle": 333
+      },
+      {
+        "label": "Irrité",
+        "angle": 351
+      }
+    ]
+  },
+  "displaying": {
+    "questionX": "VALENCE - La situation est agréable?",
+    "dimXneg": "Non, pas du tout",
+    "dimXpos": "Oui, tout à fait",
+    "questionY": "CONTRÔLE - La situation est sous contrôle?",
+    "dimYneg": "Non, pas du tout",
+    "dimYpos": "Oui, tout à fait",
+    "questionFeeling": "Que ressentez-vous?",
+    "numSubset": 3,
+    "showOtherEmotion": true,
+    "showNoEmotion": false,
+    "noEmotionLabel": "None"
+  },
+  "monitoring": {
+    "widgets": [
+      {
+        "type": "timeline",
+        "options": {
+          "showOther": true,
+          "showSelf": true,
+          "title": "Timeline émotionnelle"
+        }
+      },
+      {
+        "type": "linechart",
+        "options": {
+          "title": "Votre chronologie",
+          "summary": "participant"
+        }
+      },
+      {
+        "type": "linechart",
+        "options": {
+          "title": "Chronologie du partenaire",
+          "summary": "other"
+        }
+      }
+    ]
+  },
+  "task": {
+    "instructions": "Expériences dans lesquelles des participants ont été induits à penser qu'ils collaboraient avec une autre personne pour résoudre des énigmes. En réalité, les émotions et les raisonnements qui s'affichent sont simulés depuis l'enregistrement d'un participant qui a effectué la tâche en situation de vraie collaboration.\n\n\nPour essayer cette démo, rentrez simplement un ID pour le participant et un ID pour le groupe. Vous pouvez utiliser toute valeur, si la combinaison a déjà été utilisée, vous recevez un message d'erreur.\n\nLa tâche complète dure 20 minutes, mais elle est toujours la même pour 4 énigmes différents.",
+    "debriefing": "L'expérience est terminée.",
+    "taskUrl": "/task-examples/joint-problem-solving-fr/task/",
+    "timer": 20,
+    "isSimulation": true,
+    "simulation": [
+      {
+        "user": "Autre",
+        "time": 29,
+        "valueX": -27,
+        "valueY": -20,
+        "feeling": "Confus"
+      },
+      {
+        "user": "Autre",
+        "time": 100,
+        "valueX": 93,
+        "valueY": -20,
+        "feeling": "Détendu"
+      },
+      {
+        "user": "Autre",
+        "time": 118,
+        "valueX": 93,
+        "valueY": 48,
+        "feeling": "Amusé"
+      },
+      {
+        "user": "Autre",
+        "time": 153,
+        "valueX": 93,
+        "valueY": 81,
+        "feeling": "Intéressé"
+      },
+      {
+        "user": "Autre",
+        "time": 236,
+        "valueX": 62,
+        "valueY": 100,
+        "feeling": "Confiant"
+      },
+      {
+        "user": "Autre",
+        "time": 253,
+        "valueX": 100,
+        "valueY": 100,
+        "feeling": "Ravi"
+      },
+      {
+        "user": "Autre",
+        "time": 321,
+        "valueX": -100,
+        "valueY": -100,
+        "feeling": "Confus"
+      },
+      {
+        "user": "Autre",
+        "time": 383,
+        "valueX": 32,
+        "valueY": -100,
+        "feeling": "Soulagé"
+      },
+      {
+        "user": "Autre",
+        "time": 414,
+        "valueX": 99,
+        "valueY": -100,
+        "feeling": "Détendu"
+      },
+      {
+        "user": "Autre",
+        "time": 430,
+        "valueX": 99,
+        "valueY": 46,
+        "feeling": "Amusé"
+      },
+      {
+        "user": "Autre",
+        "time": 520,
+        "valueX": 100,
+        "valueY": 100,
+        "feeling": "Ravi"
+      },
+      {
+        "user": "Autre",
+        "time": 554,
+        "valueX": 100,
+        "valueY": 100,
+        "feeling": "Ravi"
+      },
+      {
+        "user": "Autre",
+        "time": 572,
+        "valueX": 100,
+        "valueY": 100,
+        "feeling": "Satisfait"
+      },
+      {
+        "user": "Autre",
+        "time": 610,
+        "valueX": -100,
+        "valueY": -100,
+        "feeling": "Frustré"
+      },
+      {
+        "user": "Autre",
+        "time": 683,
+        "valueX": -100,
+        "valueY": -100,
+        "feeling": "Lassé"
+      },
+      {
+        "user": "Autre",
+        "time": 746,
+        "valueX": -100,
+        "valueY": 28,
+        "feeling": "Insatisfait"
+      },
+      {
+        "user": "Autre",
+        "time": 815,
+        "valueX": -100,
+        "valueY": -40,
+        "feeling": "Frustré"
+      },
+      {
+        "user": "Autre",
+        "time": 863,
+        "valueX": -100,
+        "valueY": -100,
+        "feeling": "Insatisfait"
+      },
+      {
+        "user": "Autre",
+        "time": 877,
+        "valueX": -75,
+        "valueY": -72,
+        "feeling": "Lassé"
+      },
+      {
+        "user": "Autre",
+        "time": 932,
+        "valueX": -100,
+        "valueY": -100,
+        "feeling": "Anxieux"
+      },
+      {
+        "user": "Autre",
+        "time": 951,
+        "valueX": -100,
+        "valueY": -100,
+        "feeling": "Confus"
+      },
+      {
+        "user": "Autre",
+        "time": 1013,
+        "valueX": -100,
+        "valueY": -100,
+        "feeling": "Frustré"
+      },
+      {
+        "user": "Autre",
+        "time": 1031,
+        "valueX": -100,
+        "valueY": -46,
+        "feeling": "Amusé"
+      },
+      {
+        "user": "Autre",
+        "time": 1159,
+        "valueX": -100,
+        "valueY": -61,
+        "feeling": "Insatisfait"
+      },
+      {
+        "user": "Autre",
+        "time": 1168,
+        "valueX": -100,
+        "valueY": -100,
+        "feeling": "Frustré"
+      },
+      {
+        "user": "Autre",
+        "time": 1173,
+        "valueX": -100,
+        "valueY": -100,
+        "feeling": "Confus"
+      },
+      {
+        "user": "Autre",
+        "time": 1214,
+        "valueX": -100,
+        "valueY": -100,
+        "feeling": "Motivé"
+      },
+      {
+        "user": "Autre",
+        "time": 1245,
+        "valueX": -35,
+        "valueY": -13,
+        "feeling": "Concentré"
+      },
+      {
+        "user": "Autre",
+        "time": 1314,
+        "valueX": 13,
+        "valueY": 1,
+        "feeling": "Concentré"
+      },
+      {
+        "user": "Autre",
+        "time": 1366,
+        "valueX": 13,
+        "valueY": -54,
+        "feeling": "Anxieux"
+      },
+      {
+        "user": "Autre",
+        "time": 1444,
+        "valueX": 13,
+        "valueY": -54,
+        "feeling": "Stressé"
+      },
+      {
+        "user": "Autre",
+        "time": 1474,
+        "valueX": 13,
+        "valueY": -41,
+        "feeling": "Insatisfait"
+      },
+      {
+        "user": "Autre",
+        "time": 1491,
+        "valueX": -49,
+        "valueY": -14,
+        "feeling": "Frustré"
+      }
+    ]
+  }
+}

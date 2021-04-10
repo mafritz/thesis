@@ -1,0 +1,157 @@
+{
+  "private": {
+    "name": "EAT in STIC",
+    "description": "Utilisation de la DEW dans le cadre du cours STIC I."
+  },
+  "settings": {
+    "lang": "fr",
+    "title": "Partage des émotions pendant STIC I",
+    "description": "Cette étude s'intéresse au partage des émotions pendant les périodes à distance du cours STIC I.",
+    "isPublic": false,
+    "isOpen": false,
+    "isDemo": false,
+    "minUsers": 1,
+    "maxUsers": 0,
+    "allowMultipleSessions": true,
+    "retrievePreviousData": true
+  },
+  "circumplex": {
+    "name": "EATMINT french circumplex",
+    "description": "Circumplex used in the test of the DEW",
+    "algorithmType": "radial",
+    "dimX": "Valence",
+    "dimY": "Contrôle",
+    "isGrid": false,
+    "feelings": [
+      {
+        "label": "Confiant",
+        "angle": 9
+      },
+      {
+        "label": "Intéressé",
+        "angle": 27
+      },
+      {
+        "label": "Amusé",
+        "angle": 45
+      },
+      {
+        "label": "Ravi",
+        "angle": 63
+      },
+      {
+        "label": "Concentré",
+        "angle": 81
+      },
+      {
+        "label": "Satisfait",
+        "angle": 99
+      },
+      {
+        "label": "Détendu",
+        "angle": 117
+      },
+      {
+        "label": "Surpris",
+        "angle": 135
+      },
+      {
+        "label": "Soulagé",
+        "angle": 153
+      },
+      {
+        "label": "Empathique",
+        "angle": 171
+      },
+      {
+        "label": "Confus",
+        "angle": 189
+      },
+      {
+        "label": "Anxieux",
+        "angle": 207
+      },
+      {
+        "label": "Lassé",
+        "angle": 225
+      },
+      {
+        "label": "Stressé",
+        "angle": 243
+      },
+      {
+        "label": "Insatisfait",
+        "angle": 261
+      },
+      {
+        "label": "Frustré",
+        "angle": 279
+      },
+      {
+        "label": "Dégoûté",
+        "angle": 315
+      },
+      {
+        "label": "Envieux",
+        "angle": 297
+      },
+      {
+        "label": "Enervé",
+        "angle": 333
+      },
+      {
+        "label": "Irrité",
+        "angle": 351
+      }
+    ]
+  },
+  "displaying": {
+    "questionX": "La situation est-elle agréable ?",
+    "dimXneg": "Pas du tout",
+    "dimXpos": "Oui, tout à fait",
+    "questionY": "Pouvez-vous modifier la situation ?",
+    "dimYneg": "Pas du tout",
+    "dimYpos": "Oui, tout à fait",
+    "questionFeeling": "Quelle émotion ressentez-vous ?",
+    "numSubset": 3,
+    "showOtherEmotion": true,
+    "showNoEmotion": false,
+    "noEmotionLabel": "None"
+  },
+  "monitoring": {
+    "widgets": [
+      {
+        "type": "tagcloud",
+        "options": {
+          "title": "Vos 50 dernières émotions",
+          "summary": "participant",
+          "limit": 50
+        }
+      },
+      {
+        "type": "tagcloud",
+        "options": {
+          "title": "Les 100 dernières émotions des autres",
+          "summary": "group_bar_self",
+          "limit": 100,
+          "online": "others"
+        }
+      },
+      {
+        "type": "tagcloud",
+        "options": {
+          "title": "Toutes les émotions de la volée",
+          "summary": "group"
+        }
+      }
+    ]
+  },
+  "task": {
+    "instructions": "Merci d'utiliser l'outil lorsque vous travaillez au cours STIC I pendant les périodes à distance.\n\n**Rappelez-vous d'utiliser toujours le même ID**, celui que vous avez reçu pendant la présentation de l'étude, à chaque session.",
+    "debriefing": "Merci d'avoir utilisé l'outil pour cette session !",
+    "taskUrl": "",
+    "timer": 0,
+    "isSimulation": false,
+    "simulation": []
+  }
+}
