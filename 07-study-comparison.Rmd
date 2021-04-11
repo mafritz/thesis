@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# Overall and Comparative Assessment of the Emotional Awareness Tool
+# Overall and Comparative Assessment of the Emotional Awareness Tool Between Learning Settings
 
 ```{r comparison-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
@@ -19,7 +19,7 @@ source(here("data", "study-comparison", "comparison-export.R"))
 
 This chapter provides an overall and comparative assessment about the use and perception of the Emotion Awareness Tool (EAT) using data collected in the two previous empirical chapters of the thesis. In particular, the chapter aims at determining (1) to what extent participants exploited the theory-driven features of the tool, including the emotional structure provided by the underlying affective space (*i.e.*, the EATMINT circumplex adopted in both empirical contributions); and (2) whether there are observable differences in the use and perception of the tool with respect to the prototypical distance learning settings, that is, the Asynchronous and Individual setting (Asynch./Indiv.) of the previous chapter, and the Synchronous and Collaborative setting (Synch./Collab.) of chapter 4. Naturally, the comparison between distance learning settings is not -- and cannot be -- aimed at generalizing the use and perception of the EAT to the specific distance learning condition (*e.g.*, assess whether a particular feeling occurs more often when learners work individually rather than in pairs). This is clearly an overarching assessment that falls way outside the scope and reach of the present contribution. Nonetheless, it is possible to take advantage of the two empirical studies to explore if the multipurpose vocation of the EAT can be sustained in two very different distance learning conditions.
 
-In this regard, the chapter proposes four types of assessment related either to specific features of the EAT or its perception as a whole. First, the chapter explores the use of the two appraisal dimensions Valence and Control/Power that has been done through the two sliders of the Dynamic Emotion Wheel (DEW). Second, it assess the kind and proportion of subjective feelings expressed, either as part of the underlying affective space or not. Third, it evaluates the algorithm dynamically linking appraisal dimensions and subjective feelings in the adopted affective space. And last, it compares the perceived usability of the tool in the two distance learning settings.
+In this regard, the chapter proposes four types of assessment related either to specific features of the EAT or its perception as a whole. First, the chapter explores the use of the two appraisal dimensions Valence and Control/Power that has been done through the two sliders of the Dynamic Emotion Wheel (DEW). Second, it assess the kind and proportion of subjective feelings expressed, either as part of the underlying affective space or not. Third, it evaluates the algorithm dynamically linking appraisal dimensions and subjective feelings in the adopted affective space. And last, it compares the perceived usability of the tool.
 
 ## Assessment of the Use of Appraisal Dimensions
 
@@ -198,24 +198,82 @@ sc.empirical_feelings_disposition %>%
 The results highlight a wide range of differences between the expected and the observed disposition of each feeling, going from almost absolute correspondence for *Bored* (0.22°) to more than a rotation of 90° for *Annoyed* (102.59°). The empirical position of some feelings is computed using only a few observations, such in the case of *Empathetic* (5), *Envious* (1), or *Disgusted* (5); whereas others show a good approximation with many observations, as it is the case for the aforementioned *Bored* (0.22° with 63 observations), *Amused* (7.20° with 94 observations), *Surprised* (5.72° with 35 observations), or *Stressed* (5.11° with 35 observations). The overall disposition of the observed affective space, though, corroborates the lack of orthogonality highlighted earlier in the chapter, with respect to the use of the two appraisal dimensions. In fact, comparing the graphical representations of the theoretical/expected circumplex in Figure \@ref(fig:sc-theoretical-feelings-graph) with the empirical/observed in Figure \@ref(fig:sc-empirical-feelings-graph) confirms that most of the subjective feelings have been chosen with congruent ratings of Valence and Control/Power, that is when both appraisal dimensions are either positive or negative. When the two appraisal dimensions are orthogonal, only *Surprised* and *Empathetic* in the bottom-right quadrant, and *Envious* and *Irritated* in the top-right quadrant -- based on only a few observations, though -- have been chosen with the expected combination of the appraisal dimensions. The other feelings of the orthogonal combination of appraisals moved either in the *upper* or *lower* quadrant depending on the Valence rating. That is, feelings from the Positive Valence x Negative Control/Power quadrant *moved* to the quadrant with both Positive appraisal dimensions; whereas feelings from the Negative Valence x Positive Control/Power *moved* to the quadrant with both Negative appraisal dimensions.
 
 (ref:sc-theoretical-feelings-graph-caption) The theoretical/expected disposition of the EATMINT circumplex.
+
 ```{r sc-theoretical-feelings-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:sc-theoretical-feelings-graph-caption)", fig.pos="p"}
 sc.theoretical_feelings_disposition_circumplex.graph
 ```
 
 (ref:sc-empirical-feelings-graph-caption) The empirical/observed disposition of the feelings according to the actual rate of participants.
+
 ```{r sc-empirical-feelings-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:sc-empirical-feelings-graph-caption)", fig.pos="p"}
 sc.empirical_feelings_disposition_circumplex.graph
 ```
 
-The phenomenon is consistent in both learning settings, with nevertheless some variations. Figure \@ref(fig:sc-empirical-feelings-comparison-graph) shows the disposition of feelings with respect to the mean Valence and Control/Power, therefore in a Cartesian plane rather than in a circumplex. The choice of a different format, though, is only dictated by the need to simplify the display of the information, minimizing overlapping; there is thus no change  in the underlying algorithm. As Figure \@ref(fig:sc-empirical-feelings-comparison-graph) shows, the overall tendency of co-variation in the two appraisal dimensions permains. Nevertheless, in the Synch./Collab. setting, there is more consistency in the bottom-right quadrant, the one charactherized by Positive Valence x Negative Control. Three out of five feelings appears in the expected quadrant, and a fourth one -- *Relieved* -- is close to the edge with the top-right quadrant.
+The phenomenon is consistent in both learning settings, with nevertheless some variations. Figure \@ref(fig:sc-empirical-feelings-comparison-graph) shows the disposition of feelings with respect to the mean Valence and Control/Power, therefore in a Cartesian plane rather than in a circumplex. The choice of a different format, though, is only dictated by the need to simplify the display of the information, minimizing overlapping; there is thus no change in the underlying algorithm. As Figure \@ref(fig:sc-empirical-feelings-comparison-graph) shows, the overall tendency of co-variation in the two appraisal dimensions permains. Nevertheless, in the Synch./Collab. setting, there is more consistency in the bottom-right quadrant, the one charactherized by Positive Valence x Negative Control. Three out of five feelings appears in the expected quadrant, and a fourth one -- *Relieved* -- is close to the edge with the top-right quadrant.
 
 (ref:sc-empirical-feelings-comparison-graph-caption) Comparing the empirical disposition of the two learning settings.
-```{r sc-empirical-feelings-comparison-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:sc-empirical-feelings-comparison-graph-caption)", fig.pos="H"}
+```{r sc-empirical-feelings-comparison-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:sc-empirical-feelings-comparison-graph-caption)"}
 sc.empirical_space_comparison.graph
 ```
 
 ### Synthesis
 
+The assessment of the link between the appraisal dimensions and the subjective feeling yielded mixed, but overall promising, results. On the one hand, the overall *accuracy* of the dynamic algorithm was around 0.8, which means that four out of five subjective feelings expressed by participants were included in the three buttons suggested on the interface. The accuracy was lower in the Asynch./Indiv. setting, though, which may suggest the need of a more nuanced expression in these conditions.
+
+On the other hand, data clearly confirm a major issue with the Control/Power appraisal dimension, which has a high correlation with the Valence dimension, a phenomenon already observed in the usability test of the DEW (Fritz, 2015). The problem, though, does not seem to be unique to the tool. On the contrary, Scherer and Fontaine [-@schererSemanticStructureEmotion2018] encountered a similar difficulty with the use of the GRID instrument [@fontaineComponentsEmotionalMeaning2013], which, as a reminder, consists in a questionnaire comprising 142 features related to the different components of an emotion (*i.e.*, appraisal, bodily symptoms, expression, action tendencies, and subjective experience). Scherer and Fontaine [-@schererSemanticStructureEmotion2018], in an attept to investigate whether the dimensions of the feeling component could be predicted by the other components, among which the appraisal, failed to make emerge in the results the importance of the Control/Power dimension. In this regard, the authors note (*ibid.*, p. 9) :
+
+> It is exceedingly difficult to construct items that allow one to obtain valid assessments of control/power/coping appraisals, partly because of the strong relationship to valence (it is good to have high power).
+
+As advocated by the authors, this problem requires future studies to find better solution. In this regard, some options pertaining to the DEW will be provided in the general discussion of the thesis.
+
+## Assessment of the Perceived Usability of the Tool
+
+Finally, the EAT will be appraised with respect to its usability, that is the perceived efficiency, effectiveness and satisfaction in using the tool. A usability measure, the System Usability Scale [SUS, @brookeSUSQuickDirty1996], was administered in the Asynch./Indiv. empirical contribution, but not in the Synch./Collab. The SUS was nevertheless administered in the usability test in Fritz (2015), which used the same configuration and task of the Synch./Collab. setting (but without the experimental conditions). The SUS scores of the usability test ($N = 16$) will therefore be used for the Synch./Collab. setting, alongside the scores obtained in the Asynch./Indiv. setting of the present contribution ($N = 26$). 
+
+The scale, using inverse rating for even items, allows to compute an overall score ranging from 0 (very poor perceived usability) to 100 (excellent perceived usability). Even though, when the scale was first presented by Brooke (1996), the author warned about the interpretation of single items, cumulative results of the SUS in various published and unpublished reports have been collected in the last decades. As a result, there is nowadays the possibility to better assess the overall score of the SUS and of each of its items [@bangorDeterminingWhatIndividual2009; @lewisItemBenchmarksSystem2018; @sauroQuantifyingUserExperience2016]. About the overall score of the SUS, Sauro and Lewis [-@sauroQuantifyingUserExperience2016] retrieved a curved grading scale from 241 industrial usability studies and surveys. According to that scale, the average mean of the SUS overall score is $M = 68$, even though the same authors suggest that "it is becoming a common industrial goal to achieve a SUS of 80" [@lewisItemBenchmarksSystem2018, p. 161] as synonymous of a perceived good experience. 
+
+Table \@ref(tab:sc-sus-overall-score-table) shows the SUS score for the two learning settings, as well as the weighted overall mean. With an overall score of $M = `r sc.sus_comparison$mean[3] %>% printnum()`$ ($SD = `r sc.sus_comparison$sd[3] %>% printnum()`$), the EAT is perceived somehow halfway between the $M = 68$ empirical benchmark, and the target score of 80. The SUS score is consistent across the two learning settings, with a difference of less than 1 point.
+
+(ref:sc-sus-overall-score-caption) Score to the System Usability Scale [SUS, @brookeSUSQuickDirty1996]
+```{r sc-sus-overall-score-table}
+sc.sus_comparison %>% 
+  kable(
+    booktabs = TRUE,
+    digits = 2,
+    caption = "(ref:sc-sus-overall-score-caption)\\label{tab:sc-sus-overall-score-table}",
+    caption.short = "Comparison: overall score to the SUS",
+    longtable = FALSE,
+    col.names = c("Condition", "N", "M", "SD")
+  ) %>%
+  row_spec(3, bold = T) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
 
 
-## Assessment of the Overall Perception of the Tool
+Furthermore, Lewis and Sauro [-@lewisItemBenchmarksSystem2018] collected data from 166 unpublished industrial usability studies or surveys, each one comprising a mean of the SUS overall score. The 166 means were computed from a total of 11'855 surveys. From these data, the authors retrieved benchmarks for each of the ten items of the SUS to reach the $M = 68$ empirical mean, or the target score of 80 as a good experience. As a reminder, the SUS items are the following:
+
+1. I think that I would like to use this system frequently
+2. I found the system unnecessarily complex
+3. I thought the system was easy to use
+4. I think that I would need the support of a technical person to be able to use this system
+5. I found the various functions in this system were well integrated
+6. I thought there was too much inconsistency in this system
+7. I would imagine that most people would learn to use this system very quickly
+8. I found the system very cumbersome to use
+9. I felt very confident using the system
+10. I needed to learn a lot of things before I could get going with this system
+
+Figure \@ref(fig:sc-sus-items-graph) depicts the score of each of the SUS items across learning settings. To ease the comparison, even items have already been reversed, so that for each item a higher score equals a higher perceived usability. The horizontal lines represent Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks to reach the target score of 80. The original benchmarks refers to the 1-to-5 rating and have therefore been multiplied by a factor of 1.4 to map to the 1-to-7 scale used in both administrations of the SUS. Also the benchmarks have already been reversed for even items to ease the comparison.
+
+(ref:sc-sus-items-graph-caption) SUS scores on the single items, with the horizontal lines representing Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks to reach the target score of 80, transformed to a 1-to-7 scale. Both items and benchmarks have already been reversed for even items. Bars represent 95% confidence intervals.
+```{r sc-sus-items-graph, fig.align='center', out.width="100%", fig.cap="(ref:sc-sus-items-graph-caption)", fig.pos="H"}
+sc.sus_items.graph
+```
+
+With respect to difference between learnign settings, data show substantial consistency, with differences in items SUS1 (frequency), SUS3 (ease of use), and SUS8 (cumbersome). The first item in particular is the one yielding the bigger discrepancy, with participants in the Synch./Collab. setting reporting a perspective use more frequent than the Asynch./Indiv. setting, which is consistent with the observed use, for instance in terms of number of emotions expressed. All in all, though, the EAT seems to possess an *intrinsic* perceived usability that holds -- for good and for bad -- in both distance learning settings.
+
+Comparing the single items to Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks highlights that half of the items are on-or-above the target, and half are below. The fact that all the odd items are below, and all even items are on-or-above the target may seem peculiar, but it is consistent with the pattern of the benchmarks which are more demanding for odd items. Lewis and Sauro [-@lewisItemBenchmarksSystem2018] do not mention anything specific about this pattern, but implicitly exclude it could be determined by the negative formulation of odd items, since previous findings collected by the same authors [@sauroWhenDesigningUsability2011] seem to suggest that there is negligible impact of the negative formulation compared to a positive transformation of the even items.
+
+According to the benchmarks, the EAT performs particularly bad in the frequency of use (SUS1) and in the confidence in the system (SUS9), which are two important dimensions of the scale. The integration of the different part of the system (SUS5) also seem not to convince participants, whereas ease of use (SUS3) and quickness of adoption (SUS7) remain below target, but less critically so.
+
+On the bright side, the EAT performs very well in learnability (SUS10), and well in consistency (SUS6). Simplicity (SUS2), autonomy (SUS4), and intuition (SUS8) are on-target with respect to the 80 threshold. 
