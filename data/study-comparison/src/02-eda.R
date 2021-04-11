@@ -245,19 +245,17 @@ sc.empirical_feelings_disposition <- sc.dew_combined_emotions %>%
 
 sc.empirical_feelings_disposition_circumplex <- sc.empirical_feelings_disposition %>% 
   mutate(
-    pos_x = dew.getRadialX(computed_slope),
-    pos_y = dew.getRadialY(computed_slope)
+    pos_x = 0 - dew.getRadialY(computed_slope),
+    pos_y = dew.getRadialX(computed_slope)
   )
 
 sc.theoretical_feelings_disposition_circumplex <- sc.empirical_feelings_disposition %>% 
   mutate(
-    pos_x = dew.getRadialX(expected_slope),
-    pos_y = dew.getRadialY(expected_slope)
+    pos_x = 0 - dew.getRadialY(expected_slope),
+    pos_y = dew.getRadialX(expected_slope)
   )
 
-sc.empirical_feelings_disposition_circumplex.graph <- ggplot(sc.empirical_feelings_disposition_circumplex, aes(x = pos_x, y = pos_y, label = feeling)) +
-  # geom_hline(yintercept = 500) +
-  # geom_vline(xintercept = 500) +
+(sc.empirical_feelings_disposition_circumplex.graph <- ggplot(sc.empirical_feelings_disposition_circumplex, aes(x = pos_x, y = pos_y, label = feeling)) +
   geom_point(size = 7) +
   geom_text_repel(
     seed = 238769, box.padding = 0.9, 
@@ -269,19 +267,17 @@ sc.empirical_feelings_disposition_circumplex.graph <- ggplot(sc.empirical_feelin
     x = "Valence",
     y = "Control/Power"
   ) +
-  scale_x_continuous(labels = NULL) +
-  scale_y_continuous(labels = NULL) +
   theme(
     axis.title = element_blank(),
     axis.ticks = element_blank(),
     axis.text = element_blank()
   ) +
   coord_fixed() +
-  ggtitle("Empirical/Observed Affective Space")
+  scale_x_reverse(labels = NULL) +
+  scale_y_continuous(labels = NULL) +
+  ggtitle("Empirical/Observed Affective Space"))
 
-sc.theoretical_feelings_disposition_circumplex.graph <- ggplot(sc.theoretical_feelings_disposition_circumplex, aes(x = pos_x, y = pos_y, label = feeling)) +
-  # geom_hline(yintercept = 500) +
-  # geom_vline(xintercept = 500) +
+(sc.theoretical_feelings_disposition_circumplex.graph <- ggplot(sc.theoretical_feelings_disposition_circumplex, aes(x = pos_x, y = pos_y, label = feeling)) +
   geom_point(size = 7) +
   geom_text_repel(
     seed = 238769, box.padding = 0.9, 
@@ -293,15 +289,15 @@ sc.theoretical_feelings_disposition_circumplex.graph <- ggplot(sc.theoretical_fe
     x = "Valence",
     y = "Control/Power"
   ) +
-  scale_x_continuous(labels = NULL) +
-  scale_y_continuous(labels = NULL) +
   theme(
     axis.title = element_blank(),
     axis.ticks = element_blank(),
     axis.text = element_blank()
   ) +
   coord_fixed() +
-  ggtitle("Theoretical/Expected Affective Space")
+  scale_x_reverse(labels = NULL) +
+  scale_y_continuous(labels = NULL) +
+  ggtitle("Theoretical/Expected Affective Space"))
 
 # Empirical disposition scater plot
 sc.empirical_space.experiment.graph <- sc.dew_combined_emotions %>%

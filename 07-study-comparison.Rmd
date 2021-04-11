@@ -89,7 +89,7 @@ The second assessment concerns the expression of the subjective feeling, that is
 (ref:sc-feelings-cumulative-comparison-caption) Cumulative number of subjective feelings expressed that were listed or not listed in the underlying affective space
 
 ```{r sc-feelings-cumulative-comparison-table}
-sc.listed_vs_not_listed %>% 
+sc.listed_vs_not_listed %>%
   kable(
     booktabs = TRUE,
     digits = 2,
@@ -108,6 +108,7 @@ Another aspect worth considering in the assessment of the subjective feelings is
 
 ```{r sc-feelings-frequency-comparison-table}
 sc.listed_feelings_frequency %>%
+  select(-Quadrant) %>% 
   kable(
     booktabs = TRUE,
     digits = 2,
@@ -117,6 +118,13 @@ sc.listed_feelings_frequency %>%
   ) %>% 
   kable_styling(
     latex_options = c("repeat_header")
+  ) %>% pack_rows(
+    index = c(
+      "Quadrant I. Positive Valence x Positive Control/Power" = 5,
+      "Quadrant II. Positive Valence x Negative Control/Power" = 5,
+      "Quadrant III. Negative Valence x Negative Control/Power" = 5,
+      "Quadrant IV. Negative Valence x Positive Control/Power" = 5
+    )
   )
 ```
 
@@ -176,6 +184,14 @@ sc.empirical_feelings_disposition %>%
   ) %>% 
   kable_styling(
     latex_options = c("repeat_header", "HOLD_position")
+  ) %>% 
+  pack_rows(
+    index = c(
+      "Quadrant I. Positive Valence x Positive Control/Power" = 5,
+      "Quadrant II. Positive Valence x Negative Control/Power" = 5,
+      "Quadrant III. Negative Valence x Negative Control/Power" = 5,
+      "Quadrant IV. Negative Valence x Positive Control/Power" = 5
+    )
   )
 ```
 
