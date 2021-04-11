@@ -98,7 +98,9 @@ library(thesisdown)
 # Set how wide the R output will go
 options(width = 70)
 knitr::opts_chunk$set(
-  echo = FALSE
+  echo = FALSE,
+  message=FALSE,
+  warning = FALSE
 )
 ```
 
