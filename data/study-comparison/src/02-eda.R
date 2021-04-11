@@ -300,41 +300,31 @@ sc.theoretical_feelings_disposition_circumplex <- sc.empirical_feelings_disposit
   ggtitle("Theoretical/Expected Affective Space"))
 
 # Empirical disposition scater plot
-sc.empirical_space.experiment.graph <- sc.dew_combined_emotions %>%
-  filter(listed, source == "Experiment") %>%
-  group_by(feeling) %>% 
+(sc.empirical_space_comparison.graph <- sc.dew_combined_emotions %>%
+  mutate(
+    condition = if_else(source == "Experiment", "Synch./Collab.", "Asynch./Indiv.")
+  ) %>% 
+  group_by(condition, feeling) %>% 
   summarise(
     mean_x = mean(x),
     mean_y = mean(y)
   ) %>% 
-  ggplot(aes(x = mean_x, y = mean_y, label = feeling)) +
+  ggplot(aes(x = mean_x, y = mean_y, label = feeling, shape = condition, color = condition)) +
   geom_vline(xintercept = 0) +
   geom_hline(yintercept = 0) +
-  geom_point(size = 2) +
-  geom_label_repel(min.segment.length = 0, seed = 250, box.padding = 0.5, max.overlaps = Inf) +
+  geom_point(size = 5) +
+  geom_text_repel(min.segment.length = 0, seed = 250, box.padding = 0.5, max.overlaps = Inf) +
   scale_x_continuous(limits = c(-100, 100)) +
   scale_y_continuous(limits = c(-100, 100)) +
   labs(x = "Observed mean of Valence", y = "Observed mean of Control/Power") +
   coord_fixed() +
-  NULL
+  scale_colour_viridis_d() +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank()
+  ) +
+  NULL)
 
-sc.empirical_space.longitudinal.graph <- sc.dew_combined_emotions %>%
-  filter(listed, source == "Longitudinal") %>%
-  group_by(feeling) %>% 
-  summarise(
-    mean_x = mean(x),
-    mean_y = mean(y)
-  ) %>% 
-  ggplot(aes(x = mean_x, y = mean_y, label = feeling)) +
-  geom_vline(xintercept = 0) +
-  geom_hline(yintercept = 0) +
-  geom_point(size = 2) +
-  geom_label_repel(min.segment.length = 0, seed = 250, box.padding = 0.5, max.overlaps = Inf) +
-  scale_x_continuous(limits = c(-100, 100)) +
-  scale_y_continuous(limits = c(-100, 100)) +
-  labs(x = "Observed mean of Valence", y = "Observed mean of Control/Power") +
-  coord_fixed() +
-  NULL
 
 # SUS comparison
 sc.sus_overall <- sc.sus_scores %>% 

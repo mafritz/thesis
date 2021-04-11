@@ -195,19 +195,27 @@ sc.empirical_feelings_disposition %>%
   )
 ```
 
-The result
+The results highlight a wide range of differences between the expected and the observed disposition of each feeling, going from almost absolute correspondence for *Bored* (0.22°) to more than a rotation of 90° for *Annoyed* (102.59°). The empirical position of some feelings is computed using only a few observations, such in the case of *Empathetic* (5), *Envious* (1), or *Disgusted* (5); whereas others show a good approximation with many observations, as it is the case for the aforementioned *Bored* (0.22° with 63 observations), *Amused* (7.20° with 94 observations), *Surprised* (5.72° with 35 observations), or *Stressed* (5.11° with 35 observations). The overall disposition of the observed affective space, though, corroborates the lack of orthogonality highlighted earlier in the chapter, with respect to the use of the two appraisal dimensions. In fact, comparing the graphical representations of the theoretical/expected circumplex in Figure \@ref(fig:sc-theoretical-feelings-graph) with the empirical/observed in Figure \@ref(fig:sc-empirical-feelings-graph) confirms that most of the subjective feelings have been chosen with congruent ratings of Valence and Control/Power, that is when both appraisal dimensions are either positive or negative. When the two appraisal dimensions are orthogonal, only *Surprised* and *Empathetic* in the bottom-right quadrant, and *Envious* and *Irritated* in the top-right quadrant -- based on only a few observations, though -- have been chosen with the expected combination of the appraisal dimensions. The other feelings of the orthogonal combination of appraisals moved either in the *upper* or *lower* quadrant depending on the Valence rating. That is, feelings from the Positive Valence x Negative Control/Power quadrant *moved* to the quadrant with both Positive appraisal dimensions; whereas feelings from the Negative Valence x Positive Control/Power *moved* to the quadrant with both Negative appraisal dimensions.
 
 (ref:sc-theoretical-feelings-graph-caption) The theoretical/expected disposition of the EATMINT circumplex.
-
 ```{r sc-theoretical-feelings-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:sc-theoretical-feelings-graph-caption)", fig.pos="p"}
 sc.theoretical_feelings_disposition_circumplex.graph
 ```
 
 (ref:sc-empirical-feelings-graph-caption) The empirical/observed disposition of the feelings according to the actual rate of participants.
-
 ```{r sc-empirical-feelings-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:sc-empirical-feelings-graph-caption)", fig.pos="p"}
 sc.empirical_feelings_disposition_circumplex.graph
 ```
+
+The phenomenon is consistent in both learning settings, with nevertheless some variations. Figure \@ref(fig:sc-empirical-feelings-comparison-graph) shows the disposition of feelings with respect to the mean Valence and Control/Power, therefore in a Cartesian plane rather than in a circumplex. The choice of a different format, though, is only to simplify the display of the information, minimizing overlapping; there is thus no change  in the underlying algorithm. As Figure \@ref(fig:sc-empirical-feelings-comparison-graph) shows, the overall tendency of co-variation in the two appraisal dimensions permains. Nevertheless, in the Synch./Collab. setting, there is more consistency in the bottom-right quadrant, the one charactherized by Positive Valence x Negative Control. Three out of five feelings appears in the expected quadrant, and a fourth one -- *Relieved* -- is close to the edge with the top-right quadrant.
+
+(ref:sc-empirical-feelings-comparison-graph-caption) Comparing the empirical disposition of the two learning settings.
+```{r sc-empirical-feelings-comparison-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:sc-empirical-feelings-comparison-graph-caption)", fig.pos="H"}
+sc.empirical_space_comparison.graph
+```
+
+### Synthesis
+
 
 
 ## Assessment of the Overall Perception of the Tool
