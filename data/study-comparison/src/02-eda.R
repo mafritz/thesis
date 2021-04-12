@@ -71,7 +71,26 @@ sc.appraisal_sign_comparison <- sc.dew_combined_emotions %>%
     Setting, desc(Combination)
   ) %>% 
   ungroup()
-  
+
+(sc.appraisal_density.graph <- sc.dew_combined_emotions %>% 
+  pivot_longer(cols = c(x,y), names_to = "dimension") %>%
+  mutate(
+    dimension = if_else(dimension == "x", "Valence", "Control/Power"),
+    dimension = factor(dimension, levels = c("Valence", "Control/Power"))
+  ) %>% 
+  ggplot(aes(x = value, fill = condition)) +
+    geom_density() +
+    geom_vline(xintercept = 0, size = 2, color = "red", linetype = 2) +
+    facet_grid(dimension~condition) +
+    scale_fill_viridis_d() +
+    theme(
+      legend.position = "none"
+    ) +
+    labs(
+      x = "Appraisal evaluation on sliders",
+      y = "Density"
+    ) +
+    NULL)
 
 # Appraisal disposition
 (sc.appraisal_evaluation.graph <- sc.dew_combined_emotions %>% 
