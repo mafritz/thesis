@@ -81,7 +81,7 @@ sc.appraisal_sign_comparison <- sc.dew_combined_emotions %>%
   ggplot(aes(x = value, fill = condition)) +
     geom_density() +
     geom_vline(xintercept = 0, size = 2, color = "red", linetype = 2) +
-    facet_grid(dimension~condition) +
+    facet_grid(condition~dimension) +
     scale_fill_viridis_d() +
     theme(
       legend.position = "none"
