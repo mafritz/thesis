@@ -1,7 +1,3 @@
----
-bibliography: references.bib
----
-
 # Overall and Comparative Assessment of the Emotional Awareness Tool Between Learning Settings
 
 ```{r comparison-setup, include=FALSE, echo=FALSE}
