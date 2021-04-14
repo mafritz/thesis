@@ -64,3 +64,22 @@ s2.ea_usefulness.descriptive_stratified <- s2.ea_usefulness %>%
   select(group, dimension, survey, combined) %>% 
   pivot_wider(names_from = survey, values_from = combined) %>% 
   arrange(dimension, group)
+
+s2.ea_usefulness.descriptive_dimension <- s2.ea_usefulness %>% 
+  group_by(dimension, survey) %>% 
+  summarise(
+    mean = mean(value),
+    sd = sd(value)
+  ) %>% 
+  ungroup() %>%
+  mutate(
+    group = "Total",
+    combined = paste0(printnum(mean), " (", printnum(sd), ")")
+  ) %>%
+  select(group, dimension, survey, combined) %>% 
+  pivot_wider(names_from = survey, values_from = combined) %>% 
+  arrange(dimension, group)
+
+s2.ea_usefulness.descriptive_stratified  <- s2.ea_usefulness.descriptive_stratified %>% 
+  bind_rows(s2.ea_usefulness.descriptive_dimension) %>% 
+  arrange(dimension, group)

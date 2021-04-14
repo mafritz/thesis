@@ -36,7 +36,7 @@ In this regard, comparing two classes of the same course in different years may 
 Finally, whereas the number of emotions expressed can be maintained as an indicator of the use of the EAT, the eye-tracking measures used to detect emotional information seeking and processing cannot be replicated in a longitudinal plan. For this reason, the study also implements a tentative survey aiming at measuring the perceived Emotion Awareness Usefulness (EAU). The survey -- thoroughly depicted in the material section -- combines 7 dimensions retrieved from the literature: 
 
 1. *Frequency*. The frequency of use is a dimension used in different scales pertaining to Human-Computer Interaction and User Experience [@mackenzieHumanComputerInteractionEmpirical2013; @tullisMeasuringUserExperience2013], as it is the case in the System Usability Scale [@brookeSUSQuickDirty1996]. The more frequently a tool is used, the more useful it is perceived, especially when the use is voluntary.
-2. *Affordance*. Affordance reflects the inter-personal function of expressing emotions posited by may researchers in the field of affective science [*e.g.*, @parkinsonEmotionsDirectRemote2008; @rimeEmotionElicitsSocial2009; @vankleefInterpersonalDynamicsEmotion2018]. The presence of an EAT may prompt users to share their emotions, something they would not do without the presence of the tool.
+2. *Affordance*. Affordance in this context broadly refers to the actions available through the EAT and where they take place [@normanDesignEverydayThings2013]. The presence of an EAT may prompt users to share their emotions, something they would not do without the presence of the tool [*e.g.*, @parkinsonEmotionsDirectRemote2008; @rimeEmotionElicitsSocial2009; @vankleefInterpersonalDynamicsEmotion2018].
 3. *Social Presence*. Social presence is a pivotal dimension in remote learning, providing support for learners isolation and feeling of loneliness [*e.g.*, @gunawardenaSocialPresencePredictor1997; @tuRelationshipSocialPresence2002]. Perceiving the emotions of colleagues can help learners to remember there are others in the same condition as they are.
 4. *Self-Understanding*. Having emotions a strong influence on intra-personal functions [*e.g.*, @broschImpactEmotionPerception2013; @levensonIntrapersonalFunctionsEmotion1999; @schererWhatAreEmotions2005], the presence of an EAT may contribute to a better self-assessment of the situation and its consequences on learners' behavior.
 5. *Understanding Others*. The presence of the emotions of colleagues through the EAT may inform learners about what others are experiencing during the remote learning periods, providing information to build and update a mental model of the causes and consequences on their behavior [*e.g.*, @dillenbourgSymmetryPartnerModelling2016; @vankleefEmergingViewEmotion2010; @vankleefEmotionalInfluenceGroups2017; @vankleefInterpersonalDynamicsEmotion2018]
@@ -238,19 +238,32 @@ s2.eda.dimensions_dispersion
 
 This preliminary assessment therefore corroborates the interest to investigate more specific patterns in the rating of each of the 7 dimensions with respect to the change over time and differences between classes. Table \@ref(tab:s2-description-EAU-stratified) depicts means and standard deviations of the 7 dimensions stratified for both classes across the 4 longitudinal surveys. 
 
-(ref:s2-description-EAU-stratified-caption) Means and (standard deviations) of the EAU ratings across longitudinal surveys for both classes.
+(ref:s2-description-EAU-stratified-caption) Means and (standard deviations) of the EAU ratings across longitudinal surveys.
 ```{r s2-description-EAU-stratified}
-s2.ea_usefulness.descriptive_stratified %>% 
+s2.ea_usefulness.descriptive_stratified %>%
+  select(-dimension) %>% 
 kable(
     booktabs = TRUE,
     digits = 2,
     caption = "(ref:s2-description-EAU-stratified-caption)\\label{tab:s2-description-EAU-stratified}",
     caption.short = "Study 2: EAU means and standard deviations",
     longtable = FALSE,
-    linesep = c("", "\\addlinespace")
+    linesep = c("", "", "\\addlinespace")
   ) %>% 
   kable_styling(
     latex_options = c("repeat_header")
+  ) %>% 
+  row_spec(c(3, 6, 9, 12, 15, 18, 21), bold = T) %>% 
+  pack_rows(
+    index = c(
+      "Frequency" = 3, 
+      "Affordance" = 3, 
+      "Social Presence" = 3,
+      "Self-Understanding" = 3,
+      "Understanding Others" = 3,
+      "Self-Other Comparison" = 3,
+      "Self-Regulation" = 3
+    )
   )
 
 ```
@@ -278,7 +291,7 @@ s2.mlm.ea_usefulness.anova_table %>%
 Results are graphically depicted in Figure \@ref(fig:s2-graph-dimensions-and-survey), in which the EAU evaluation is stratified by the 7 dimensions of the scale and the 4 longitudinal surveys, as well as grouped by the 2 classes. Data show high *Expectancy* ratings for the *Frequency*. *Affordance*, *Social Presence*, *Understanding Others*, and *Self-Other Comparison* dimensions, but not for *Self-Understanding* and *Self-Regulation*. The ratings are generally maintained even after the *Demo* surveys and tend to decrease with the actual use of the tool in the *Halfway* survey, to remain then more or less stable even in the *Final* survey. Data also show that the two classes basically overlap on all dimensions and across longitudinal surveys. The group per dimension interaction is probably yielded by the *Frequency* and *Affordance* dimensions, for which the two classes differ the most, but it does not seem to play an important role in differentiating EAU ratings. As a consequence, the factor related to the class is dropped in post-hoc contrasts, which will focus only on the difference between the *Final* and the *Expectancy* surveys.
 
 (ref:s2-graph-dimensions-and-survey-caption) EAU rating over longitudinal surveys stratified by dimensions and grouped by class. Bars represents 95% confidence interval and the dashed gray line the median point of the scale.
-```{r s2-graph-dimensions-and-survey, out.width="80%", fig.align="center", fig.cap="(ref:s2-graph-dimensions-and-survey-caption)"}
+```{r s2-graph-dimensions-and-survey, fig.align="center", fig.cap="(ref:s2-graph-dimensions-and-survey-caption)"}
 s2.ea_usefulness.graph
 ```
 
@@ -310,7 +323,7 @@ $N = `r s2.sus_total %>% nrow()`$ participants filled the System Usability Scale
 Figure \@ref(fig:s2-sus-items-graph) illustrates the score obtained on each of the 10 items of the SUS. The score takes into account the reverse order for even items and is pondered on the 7-point scale used in the present study. Data clearly show that the first item, inherent to the frequency of use, is far below the other items, which have received overall a high rating. Items 5 (integration of different functions of the system) and 9 (confidence in using the system) also have received lower ratings compared to the other items, even if not as low as the first item about frequency.  
 
 (ref:s2-sus-items-graph-caption) Rating of the individual items of the System Usability Scale (SUS) for N = 26 participants.
-```{r s2-sus-items-graph, out.width="60%", fig.align="center", fig.cap="(ref:s2-sus-items-graph-caption)"}
+```{r s2-sus-items-graph, fig.align="center", fig.cap="(ref:s2-sus-items-graph-caption)"}
 s2.sus_by_item.graph
 ```
 
@@ -319,7 +332,7 @@ s2.sus_by_item.graph
 In the *Final* survey, that is approximately two weeks after the end of the semester -- and therefore the last day in which the EAT could be used by students during the STIC I course - participants were asked to recall the frequency with which (1) they have experienced the 20 subjective feelings of the underlying affective space as individuals, and (2) their class as a whole has experienced the same 20 subjective feelings. The sparse use in expressing emotions limits the interest in assessing whether there is a recollection of the individual and collective emotions shared with the EAT and is therefore reported here primarily to comply with the disclosure of all the measure collected. Figure ... compares three relative frequencies of the 20 subjective feelings of the underlying affective space adopted by the EAT. The first frequency is empirically retrieved using the relative frequency of expression of each subjective feelings compared to all the expressed feelings. The frequencies are mapped so that the most expressed feelings (e.g. *Attentive* and *Interested*) represent the upper bound, and correspond to the *Very often* frequency, whereas the least expressed feelings (e.g. *Surprised* and *Disgusted*) represent the lower bound, and correspond to the *Never* frequency. The second depicted frequency consists in how often participants recalled their colleagues have experienced the specific feelings. It is worth reminding at this purpose that from the interface of the EAT it was not possible to infer which specific colleague expressed a particular emotion, and therefore it was potentially possible to retrieve the frequency from the *word clouds* of the interface. Finally, the third frequency is the self-reported frequency by which participants experienced each subjective feeling themselves. The class and the self frequencies were collected by asking participants to rate the frequency on the same 5-point scale used in the graph (*i.e.*, from never to very often). 
 
 (ref:s2-recollection-feelings-graph) Comparison between the observed relative frequency of expressed feelings and the reported frequency recollected for the participants themselves, as well as the frequency attributed to the class as a whole.
-```{r s2-recollection-feelings-graph, fig.align='center', fig.cap="(ref:s2-recollection-feelings-graph)", out.width="90%"}
+```{r s2-recollection-feelings-graph, fig.align='center', fig.cap="(ref:s2-recollection-feelings-graph)"}
 s2.perceived_emotions_frequency.graph
 ```
 

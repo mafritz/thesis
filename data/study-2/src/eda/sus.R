@@ -22,10 +22,11 @@ s2.sus_score$item <- factor(s2.sus_score$item, levels = c(
 ))
 
 (s2.sus_by_item.graph <- s2.sus_score %>%
-  ggplot(aes(x = item, y = item_score, color = item)) +
+  ggplot(aes(x = as_factor(item), y = item_score, color = group)) +
   geom_jitter(size = 2, alpha = 0.2) +
   stat_summary(fun.data = mean_cl_normal, geom = "errorbar", width = 0.4) +
   stat_summary(fun = mean, geom = "point", size = 3, shape = 15) +
+  facet_wrap(~group, nrow = 2) + 
   theme(legend.position = "none") +
   labs(
     x = NULL,
