@@ -1,37 +1,63 @@
 # General Theoretical Background
 
-## Distance Learning: Pitfalls and Solutions
+The implementation and assessment of an Emotion Awareness Tool (EAT) in distance learning covers a wide spectrum of theories, pertaining often to multi- or inter-disciplinary fields. A comprehensive review of all the relevant literature is therefore beyond the scope and reach of the thesis. The general theoretical background will thus be preeminently tailored around the three elements that compose the acronyme EAT: Emotion, Awareness and Tool. 
 
-Topics:
+First, an EAT targets an *emotion* as the affective phenomenon of interest. It is therefore necessary to define what an emotion is, as well as mechanisms determining -- at the intra- and inter-personal levels -- causes and consequences of emotions, in particular with respect to learning processes. The section about emotion will mainly draw information from psychological theories of emotions, as well as contributions targeting the interplay between affective states and learning.
 
-* Distance learning is ubiquitous
-* Two major pitfalls : maintain students engaged and avoid isolation
-* Solutions : scaffolding and awareness tools
+Second, an EAT is supposed to provide *awareness* to its users. Awareness is a multi-faceted concepts, which can be roughly mapped to two distinct -- but possibly intertwined -- phenomenon. On the one hand, intra-personal awareness: the mechanism by which a person becomes aware of something. On the other hand, inter-personal awareness, that is, the perception, processing and use of information about others. The section about awareness will focus mainly on the former, drawing from the literature about the importance and instrumentality of disposing of information about others in a computer-mediated environments, which requires alternatives channel of communication with respect to face-to-face conditions. 
 
-## Awareness Tools: Beyond the Face-to-Face Golden Standard
+Third, an EAT is a *tool*, that is, a computational and information system implemented in a technology enhanced environment. It must therefore resolve, for instance, what kind of entities are targeted as input, when and how they are inserted into the system, as well as how and when these entities are then mapped to corresponding outputs, with various possible degrees of processing in between. The more technical section of the theoretical framework will mainyl draw from the literature about affective systems -- such as affect-aware or emotion-aware systems -- implemented in learning environments. 
 
-Topics:
+The theoretical framework will also consider some pivotal aspects of distance learning, especially in terms of learners' needs. Even though there is a growing consensus in considering that the frontiers between distance and co-located education are progressively falling apart, there is also ample evidence for the need to adapt the instructional design according to the conditions in which learning processes take place. The cognitive, social, and affective determinants of learning are situated and interact with the environment. As a consequence, there are fundamental differences whether learners' share both, either, or none of the spatial and temporal coordinates. 
 
-* What is awareness ? Double perspective "self-awareness" vs. "other-awareness"
-* The two functions of awareness tools : displaying and monitoring
-* Knowledge awareness tools
-* Groupware tools
-* Affect-aware tools 
+Finally, the theoretical framework will illustrate and discuss some key contributions in the literature, which have investigated emotion awareness with theoretical, methodological, or instrumental perspectives that are relevant to the thesis. These contributions will be referred to -- by comparison and contrast -- in the empirical chapters of the thesis, and it is therefore worth illustrating them at length. 
 
-## Emotion Awareness Tools: What Do we Know?
+## Emotion
 
-Topics:
+### What Is an Emotion
 
-* Onthology
-* Eligio et al.
-* EATMINT
+### Psychological Theories of Emotions
 
-## The Rationale Behind Emotion Awareness Tools
+### Appraisal Theories of Emotions
 
-Topics:
+### The Component Process Model Theoretical Framework
 
-* Emotion and Learning: Learning -> Emotions, Emotions -> Learning, and Learning Emotions (SEL)
-* Intra-personal function of emotions
-* Inter-personal function of emotions
-* Emotional competence
+### Intra-Personal Functions of Emotion
 
+### Inter-Personal Functions of Emotion
+
+### Emotion and Learning
+
+## Awareness
+
+### Intra-Personal Awareness
+
+### Inter-Personal Awareness
+
+### Awareness Tools in Computer-Mediated Environments
+
+### Emotional Awareness in Computer-Mediated Environments
+
+## Affective Systems 
+
+### Affective Computing
+
+### Computational Models of Emotions
+
+### Affective Systems in Learning Environments
+
+## Distance Learning
+
+### Synchronous vs. Asynchrounous Distance Learning
+
+### Individual vs. Collaborative Distance Learning
+
+## Illustration and Discussion of Key Contributions
+
+### Emotion Understanding and Performance During Computer-Supported Collaboration
+
+### Emotion Feedback During Computer-Mediated Collaboration
+
+### Towards Emotion Awareness Tools to Support Emotion and Appraisal Regulation in Academic Contexts
+
+## Summary
