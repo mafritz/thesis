@@ -102,10 +102,6 @@ s2.participants_aggregated <- s2.participants_aggregated_all %>%
 s2.ea_usefulness <- s2.ea_usefulness %>%
   filter(!participant %in% s2.excluded_participants)
 
-# Filter out from SUS score
-s2.sus_score <- s2.sus_score %>% 
-  filter(!participant %in% s2.excluded_participants)
-
 # Filter out from GECo score
 s2.geco_score <- s2.geco_score %>% 
   filter(!participant %in% s2.excluded_participants)
@@ -147,3 +143,19 @@ s2.geco_total <- s2.geco_score %>%
 # Add GECo total to aggregated participant
 s2.participants_aggregated <- s2.participants_aggregated %>% 
   left_join(s2.geco_total, by = "participant")
+
+# Filter out from SUS score
+s2.sus_score <- s2.sus_score %>% 
+  filter(!participant %in% s2.excluded_participants)
+
+# Calculate SUS score
+s2.sus_total <- s2.sus_score %>% 
+  group_by(participant) %>%
+  summarise(
+    sus_score = sum(item_score) * 10/6
+  ) %>% 
+  ungroup()
+
+# Add SUS total to aggregated participant
+s2.participants_aggregated <- s2.participants_aggregated %>% 
+  left_join(s2.sus_total, by = "participant")

@@ -17,20 +17,12 @@ s2.ea_usefulness.wider <- s2.ea_usefulness %>%
     values_from = "value"
   )
 
-names(s2.ea_usefulness.wider) <- str_replace_all(names(s2.ea_usefulness.wider), pattern = " ", replacement = "_")
-names(s2.ea_usefulness.wider) <- str_replace_all(names(s2.ea_usefulness.wider), pattern = "-", replacement = "_")
+#names(s2.ea_usefulness.wider) <- str_replace_all(names(s2.ea_usefulness.wider), pattern = " ", replacement = "_")
+#names(s2.ea_usefulness.wider) <- str_replace_all(names(s2.ea_usefulness.wider), pattern = "-", replacement = "_")
 
-s2.ea_usefulness_scale.expectancy <- s2.ea_usefulness.wider %>%
-  filter(survey == "Expectancy") %>% 
-  select(Frequency:Self_Regulation)
+s2.ea_usefulness_scale.all <- s2.ea_usefulness.wider %>%
+  select(Frequency:`Self-Regulation`)
 
-s2.ea_usefulness_scale.final <- s2.ea_usefulness.wider %>%
-  filter(survey == "Final") %>% 
-  select(Frequency:Self_Regulation)
-
-s2.ea_usefulness_scale.expectancy.reliability.uni <- omega(s2.ea_usefulness_scale.expectancy, 1)
-s2.ea_usefulness_scale.expectancy.reliability.all <- omega(s2.ea_usefulness_scale.expectancy, 7)
-
-s2.ea_usefulness_scale.final.reliability.uni <- omega(s2.ea_usefulness_scale.final, 1)
-s2.ea_usefulness_scale.final.reliability.all <- omega(s2.ea_usefulness_scale.final, 7)
+s2.ea_usefulness_scale.scree <- scree(s2.ea_usefulness_scale.all, pc = FALSE)
+s2.ea_usefulness_scale.factor_analysis <- omega(s2.ea_usefulness_scale.all, 3, fm = "minres", rotate = "oblimin")
 

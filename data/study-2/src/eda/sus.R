@@ -35,10 +35,3 @@ s2.sus_score$item <- factor(s2.sus_score$item, levels = c(
   scale_color_viridis_d() +
   NULL
 )
-
-s2.sus_total <- s2.sus_score %>% 
-  group_by(participant) %>%
-  summarise(
-    score = sum(item_score) * 10/6
-  ) %>% 
-  ungroup()
