@@ -46,6 +46,8 @@ Finally, the theoretical framework will illustrate and discuss some key contribu
 
 ### Affective Systems in Learning Environments
 
+### Affordance
+
 ## Distance Learning
 
 ### Synchronous vs. Asynchrounous Distance Learning
