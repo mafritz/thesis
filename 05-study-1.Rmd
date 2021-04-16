@@ -199,7 +199,7 @@ Within this experimental setting, a sensitivity analysis reveals that, given the
 -   For information processing, the statistical test will detect a difference of `r printnum(s1.delta_processing)` seconds or greater, given a mean of $M=`r printnum(mean(fritz2015_eyetracking$Total_Fixation_Duration_Monitoring_Sum))`$ ($SD =`r printnum(sd(fritz2015_eyetracking$Total_Fixation_Duration_Monitoring_Sum))`$) observed in Fritz (2015);
 -   For information seeking, the statistical test will detect a difference of `r printnum(s1.delta_seeking)` number of visits or greater, given a mean of $M=`r printnum(mean(fritz2015_eyetracking$Visit_Count_Monitoring_Sum))`$ ($SD =`r printnum(sd(fritz2015_eyetracking$Visit_Count_Monitoring_Sum))`$) observed in Fritz (2015).
 
-All analysis were conducted using the statistical software R, version 4.0.0. Data and code are available in the supplementary material.
+All analysis are conducted using the statistical software R, version 4.0.5. Analysis of variance use the Afex package version `r packageVersion("afex")` [@singmannAfexAnalysisFactorial2020].
 
 ## Results
 
@@ -372,7 +372,7 @@ Participants in the *Self-Centered* condition seem to privilege the paths betwee
 
 Finally, the *Partner-Oriented* condition seems once again *stuck in the middle*, and results for this group are difficult to assess due to the greater inter-individual variance that is also present in the other planned analysis. As a rule of thumb interpretation, the *Partner-Oriented* condition seems to go hand-in-hand with the *Self-Centered* condition in transitions between the *expressing-displaying* zone and the *perceiving-monitoring* zone (first row); and with the *Mutual-Modeling* condition in the other transitions (second and third rows).
 
-In an attempt to figure out whether this kind of analysis may be used in a more structured manner, a multilevel linear model, also known as mixed linear model [@batesFittingLinearMixedEffects2014; @kuznetsovaLmerTestPackageTests2017; @westLinearMixedModels2015], was fitted to the data at hand in the following way: the aggregated number of transitions per participant for each possible path represented the outcome variable; the type of transition and the interface of the EAT (*i.e.* the experimental condition) were considered as fixed factors, with an interaction between the two; the participant was used as a random intercept to account for the non-independence of observations. A more complex model could have been more interesting, but hardly feasible due to the small number of participants [@batesParsimoniousMixedModels2018].
+In an attempt to figure out whether this kind of analysis may be used in a more structured manner, a multilevel linear model, also known as mixed linear model [@batesFittingLinearMixedEffects2014; @kuznetsovaLmerTestPackageTests2017; @westLinearMixedModels2015], was fitted to the data at hand using the mixed function of the Afex [@singmannAfexAnalysisFactorial2020; @singmannIntroductionMixedModels2020] R package version `r packageVersion("afex")`. The model was fitted in the following terms: the aggregated number of transitions per participant for each possible path represented the outcome variable; the type of transition and the interface of the EAT (*i.e.* the experimental condition) were considered as fixed factors, with an interaction between the two; the participant was used as a random intercept to account for the non-independence of observations. A more complex model could have been more interesting, but hardly feasible due to the small number of participants [@batesParsimoniousMixedModels2018].
 
 A Type III Analysis of Variance of the multilevel linear model confirms effects of both individual factors and the interaction. Results are depicted in Table \@ref(tab:s1-transitions-anova-table) using Kenward-Roger approximation for computing the *p*-value [@lukeEvaluatingSignificanceLinear2017].
 
@@ -461,7 +461,7 @@ Finally, the overall small sample size combined with the unbalanced number of pa
 
 Taking advantage of the fact that the same task was adopted, under similar conditions, of a previous study [@fritzReinventingWheelEmotional2015], an internal meta-analysis was performed on the point-estimate means for the three dependent variables adopted in the current contribution. The interest of the meta-analyses is two-fold. On the one hand, they provide a better assessment of the point estimates about the performance-based indicators of the use of the EAT. On the other hand, those same indicators will be used as references in a subsequent study in this contribution.
 
-Each meta-analysis has been conducted using the R meta package, adopting the inverse of the variance weighting mechanism to account for differences in the sample size of the two internal studies. Results both for the fixed and the random models (using the DerSimonian-Laird estimator for $tau^2$) are provided.
+Each meta-analysis has been conducted using the R meta package version `r packageVersion("meta")`, adopting the inverse of the variance weighting mechanism to account for differences in the sample size of the two internal studies. Results both for the fixed and the random models (using the DerSimonian-Laird estimator for $tau^2$) are provided.
 
 #### Expressing Emotions Internal Meta-Analysis
 
