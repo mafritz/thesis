@@ -390,15 +390,35 @@ An exploratory factor analysis with three factors, using the Ordinary Least Squa
 2. The second factor includes *Self-Understanding* and *Self-Regulation* dimensions, that is the more *self-centered* dimensions of emotional awareness. The second factor also relates to *Social Presence*, which also loads on the first factor, and *Frequency*, shared with the third factor, but both with a lower coefficient;
 3. The third factor represents *Frequency* and *Affordance* dimensions, that is the more *usability related* dimensions.
 
-The diagram in Figure \@ref(fig:s2-factor-analysis-graph) reports the coefficients of loading. The overall reliability scores are Cronbach's $\alpha =$ `r s2.ea_usefulness_scale.factor_analysis$alpha %>% printnum()`, $\omega_{h}$ = `r s2.ea_usefulness_scale.factor_analysis$omega_h %>% printnum()`, and $\omega_{t}$ = `r s2.ea_usefulness_scale.factor_analysis$omega.tot %>% printnum()`, which suggest good reliability of the scale.
+The diagram in Figure \@ref(fig:s2-factor-analysis-graph) reports the coefficients of loading. The overall reliability scores are Cronbach's $\alpha =$ `r s2.ea_usefulness_scale.factor_analysis$alpha %>% printnum()`, $\omega_{h}$ = `r s2.ea_usefulness_scale.factor_analysis$omega_h %>% printnum()`, and $\omega_{t}$ = `r s2.ea_usefulness_scale.factor_analysis$omega.tot %>% printnum()`, which suggest good reliability of the scale. Incomplete and tentative, the EAU seems nevertheless a rather promising scale that can be expanded in further research. 
 
-(ref:s2-factor-analysis-caption) LABEL
-```{r s2-factor-analysis-graph, fig.align="center", fig.cap="(ref:s2-factor-analysis-caption)"}
+(ref:s2-factor-analysis-caption) Graphical representation of the exploratory factor analysis
+```{r s2-factor-analysis-graph, fig.align="left", fig.cap="(ref:s2-factor-analysis-caption)"}
 omega.diagram(s2.ea_usefulness_scale.factor_analysis, main = "", ,marg=c(5,0,0,0))
 ```
+### Emotion Awareness Usefulness and Emotional Competence
 
+The study also included the possibility to take the Geneva Emotion Competence (GECo) test [@schlegelGenevaEmotionalCompetence2018] anytime before the end of the semester. As a reminder, the GECo is a performance-based test measuring participants' emotional competence on four sub-competences: emotion recognition, emotion understanding, emotion regulation, and emotion management. Given the test was a corollary activity related only to the research -- and that the test is demanding in terms of time and effort due to its accuracy -- only $N = `r s2.geco_score_to_eau.wider %>% nrow()`$ participants performed it. This limits the possibility of exploring relationship between emotional competence and other indicators collected throughout the study beyond a descriptive perspective. In the meantime, participants that did take the test used their precious time during an intense phase of their education, which deserves gratitude and consideration. 
 
+Given the overall limited use that has been done of the EAT, the more interesting measure at hand to be related to emotional competence is the prospected usefulness measured in the *Expectancy* survey using the EAU scale. Even though the previous exploratory factor analysis suggests the presence of three factors in the scale, the scree test also highlights that only one factor is a reasonable compromise considering the data at hand. 
+
+These are the premises to a multiple regression that has been fit using the average score to the EAU on the *Expectancy* survey as dependent variable, and the score to the four sub-competences of the GECo test as covariates. The aim is to explore to what extent the sub-competences are related to the expected usefulness of an EAT as support to distance learning. The parameters of the multiple regression are depicted in Table \@ref(tab:s2-ec-eau-lm-table), whereas the full model yielded the following results `r apa_print(s2.sub_competences_to_expectancy.lm)$full_result$modelfit`.
+
+(ref:s2-ec-eau-lm-caption) Parameters of the multiple linear regression predicting expected EAU from the GECo emotional sub-comptences. $N = 11$.
+```{r s2-ec-eau-lm-table}
+apa_print(s2.sub_competences_to_expectancy.lm)$table %>% 
+  kable(
+    digits = 3,
+    caption = "(ref:s2-eau-contrasts-caption)\\label{tab:s2-ec-eau-lm-table}",
+    caption.short = "Study 2: Contrasts between Final and Expectancy surveys per EAU dimension",
+    longtable = FALSE,
+    booktabs = TRUE,
+    escape = FALSE
+  )
+```
+
+As one may expect from the small sample size at hand, there are no detectable effects in the model, with wide confidence interval around all predictors. Emotion recognition, understanding and regulation have negative estimates, whereas emotion management has a positive estimate, with a lower bound of the confidence interval that is very close to the 0 threshold. These results must obviously be taken with much more than a grain of salt, but if they were to be extended in a similar way, the fact that emotion management is the sub-competence more related to the overall expectation of the usefulness of an EAT would be an interesting result. Emotion management is in fact the subcompetence more oriented towards interpersonal regulation of emotion, that is, modifying the emotional state of others. That would imply
 
 ## Conclusion
 
-## Chapter Summary
+
