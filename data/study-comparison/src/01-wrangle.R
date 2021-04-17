@@ -67,7 +67,9 @@ sc.dew_combined_emotions = bind_rows(dew_s1, dew_s2) %>%
   ) %>% 
   mutate(
     expectedQuadrant = as_factor(ceiling(expectedSlope/90)),
-    absSlopeDifference = abs(expectedSlope - observedSlope)
+    slopeDifference = expectedSlope - observedSlope,
+    slopeDifference = if_else(slopeDifference >= 180, 180 - slopeDifference, slopeDifference),
+    absSlopeDifference = abs(slopeDifference)
   )
 
 rm(dew_fritz2015, dew_s1, dew_s2)
