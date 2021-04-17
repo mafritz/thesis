@@ -23,6 +23,10 @@ s2.ea_usefulness.wider <- s2.ea_usefulness %>%
 s2.ea_usefulness_scale.all <- s2.ea_usefulness.wider %>%
   select(Frequency:`Self-Regulation`)
 
-s2.ea_usefulness_scale.scree <- scree(s2.ea_usefulness_scale.all, pc = FALSE)
-s2.ea_usefulness_scale.factor_analysis <- omega(s2.ea_usefulness_scale.all, 3, fm = "minres", rotate = "oblimin")
+s2.eau.unidim <- unidim(s2.ea_usefulness_scale.all)
+s2.eau.unidim.alpha <- alpha(s2.ea_usefulness_scale.all)
+
+scree(s2.ea_usefulness_scale.all, pc = FALSE)
+s2.eau.fa <- omega(s2.ea_usefulness_scale.all, 3, rotate = "oblimin", fm = "minres")
+omega.diagram(s2.eau.fa)
 
