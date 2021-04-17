@@ -16,6 +16,11 @@ Finally, the theoretical framework will illustrate and discuss some key contribu
 
 ### What Is an Emotion
 
+The title of this subsection is a recurrent label in various types of contributions related to emotions. Foremost, it is the title of a seminal article by William James [-@jamesWhatEmotion1884], which, despite being more than a century old, is still source of lively debate [@ellsworthWilliamJamesEmotion1994; @schererWhatAreEmotions2005]. There are many iconic statements that testify to the difficulty of studying emotions from a scientific perspective. Fehr and Russel [-@fehrConceptEmotionViewed1984, p. 464] argued that "[e]veryone knows what an emotion is, until 
+asked to give a definition", which resonates with Kleinginna and Kleinginna [-@kleinginnaCategorizedListEmotion1981], who, around the same time forty years ago, collected more than a hundred definitions. More recently, Frijda and Scherer [@frijdaEmotionDefinitionsPsychological2009, p. 142] still confirmed that "emotion may be one of the fuzziest concepts in all of the sciences", which has nevertheless not stopped scholars to study it from different -- sometimes converging, oftentimes diverging -- perspectives [for a recent overview, see among others @adolphsNeuroscienceEmotionNew2018; @deonnaEmotionsPhilosophicalIntroduction2012; @dixonPassionsEmotionsCreation2003; @foxNatureEmotionFundamental2018; @oatleyEmotionsBriefHistory2004; @plamperHistoryEmotionsIntroduction2015; @pekrunEmotionsSchool2018]. On the contrary, and possibly as a consequence, within the social sciences alone, the number of publications with the keyword *emotion* has annually multiplied by a factor of 1.13 between 1990 and 2011 [@schererHumanEmotionExperiences2013]. 
+
+
+
 ### Psychological Theories of Emotions
 
 ### Appraisal Theories of Emotions
