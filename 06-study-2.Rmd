@@ -422,7 +422,7 @@ apa_print(s2.sub_competences_to_expectancy.lm)$table %>%
   kable(
     digits = 3,
     caption = "(ref:s2-eau-contrasts-caption)\\label{tab:s2-ec-eau-lm-table}",
-    caption.short = "Study 2: Contrasts between Final and Expectancy surveys per EAU dimension",
+    caption.short = "Study 2: Multiple Linear Regression: EC subcomptences predicting EAU",
     longtable = FALSE,
     booktabs = TRUE,
     escape = FALSE
