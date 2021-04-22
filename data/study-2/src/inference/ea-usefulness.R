@@ -9,6 +9,7 @@ library(visreg)
 library(car)
 library(afex)
 library(directlabels)
+library(performance)
 
 options(scipen = 999)
 options(digits = 5)
@@ -35,6 +36,8 @@ s2.mlm.ea_usefulness.comparison <- emmeans(
   )
 ) %>%
   pairs()
+
+s2.mlm.ea_usefulness.r2 <- r2(s2.mlm.ea_usefulness)
 
 
 (s2.ea_usefulness.graph <- ggplot(s2.ea_usefulness, aes(x = survey, y = value, group = group, color = group)) +
