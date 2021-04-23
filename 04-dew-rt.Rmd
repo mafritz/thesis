@@ -1,4 +1,4 @@
-# Introducing a Toolbox to Provide and Investigate Emotional Awareness in Computer-Mediated Environments
+# Building a Toolbox Around an Emotion Awareness Toool: A Proof of Concept
 
 ```{r dew-rt-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
@@ -22,13 +22,13 @@ source(here("data", "dew-rt", "dew-rt-export.R"))
 * Create An Affective Space
 * The EATMINT Affective Space
 
-The core of the DEW is the underlying bi-dimensional affective space, which determines the relationship between the two affective dimensions and the subjective feelings. As illustrated in the previous chapter, in the case of the Geneva Emotion Wheel the two affective dimensions are Valence and Control/Power, which determine the disposition of twenty subjective feelings around a circumplex. The DEW-RT abstracts this structure in two ways. First, it provides the possibility to choose among any composition of two affective dimensions. This means that, even though the tool is deeply rooted in the Component Process Model theoretical framework (see ...), any affective space that is based on, or can approximated to, a bi-dimensional structure can be adopted as an underlying model. Second, the DEW-RT allows any number of subjective feelings, as long as they can be mapped to the underlying bi-dimensional structure. In this regard, there are two possible structures of the affective space, which implement two different algorithms connecting the affective dimensions with the subjective feelings : (1) the circumplex structure, and (2) the Cartesian plane structure. 
+The core of the DEW is the underlying bi-dimensional affective space, which determines the relationship between the two affective dimensions and the subjective feelings. As illustrated in the previous chapter, in the case of the Geneva Emotion Wheel the two affective dimensions are Valence and Control/Power, which determine the disposition of twenty subjective feelings around a circumplex. The DEW-RT abstracts this structure in two ways. First, it provides the possibility to choose among any composition of two affective dimensions. This means that, even though the tool is deeply rooted in the Component Process Model theoretical framework (see ...), any affective space that is based on, or can be approximated to, a bi-dimensional structure can be adopted as an underlying model. Second, the DEW-RT allows any number of subjective feelings, as long as they can be mapped to the underlying bi-dimensional structure. In this regard, there are two possible structures of the affective space, which implement two different algorithms connecting the affective dimensions with the subjective feelings : (1) the circumplex structure, and (2) the Cartesian plane structure. 
 
 This section first proposes some examples of bi-dimensional affective spaces that can be found in the literature, and which are already available *out-of-the-box* in the DEW-RT. Next, using two existing affective spaces -- one circumplex and one Cartesian plane -- as sample, the section simulates the performance of the DEW sub-setting algorithm using a small set of the three subjective feelings and a bigger set of ten subjective feelings. Then, the section considers how new affective spaces can be built and shared through the DEW-RT. Finally, as an example, the construction of the EATMINT circumplex, used in the two empirical contributions of the thesis, is illustrated.
 
 ### Existing Affective Spaces
 
-An affective space is a spatial representation of the nature of emotions. As a consequence, the affective space is defined and reflects an underlying perspective of what an emotion is. 
+An affective space is a spatial representation of the nature of emotions. As a consequence, the affective space is both defined by, and reflects the underlying perspective of what an emotion is. 
 
 ### Simulation of the Sub-Setting Alorithms
 
