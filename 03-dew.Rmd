@@ -1,4 +1,4 @@
-# The Dynamic Emotion Wheel: Emotional Structure and Competence
+# Proof of Concept: Implementation Of Emotion Structure Into A Multipurpose Emotion Awareness Tool
 
 ```{r dew-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
