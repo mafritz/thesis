@@ -107,11 +107,11 @@ According to Boehner and colleagues [-@boehnerHowEmotionMade2007, p. 207], "succ
 6.  *Self-Other Comparison*. The use fo the tool allowed me to compare my emotions with those of my colleagues.
 7.  *Self-Regulation*. The use of the tool allowed me to regulate my emotions.
 
-The scale is very straightforward and with only a few items, specifically only one per dimension. This is a potential shortcoming from a reliability and validity standpoint, but, especially in a repeated measure design, brevity is of essence. Once again, the convenience sample of the study provides some leverage on the formulation of items, since MALTT students are, for instance, familiar with terms such as *regulation*, which may be too technical for other populations and therefore require a more explicit formulation.
+The scale is very straightforward and with only a few items, specifically only one per dimension. This is a potential shortcoming from a reliability and validity standpoint, but, especially in a repeated measure design, brevity is of essence. Once again, the convenience sample of the study provides some leverage on the formulation of items, since MALTT students are, for instance, familiar with terms such as *regulation*, which may be too technical for other populations and therefore would require a more explicit formulation.
 
 #### System Usability Scale
 
-The System Usability Scale (SUS; @brookeSUSQuickDirty1996) is a widely adopted scale that measures the usability of a tool. It comprises 10 items, usually on a 5-point scale, but that can also be adapted to a 7-point range, which has been the case for this study. The 10 items are as follows:
+The System Usability Scale (SUS) is a widely adopted scale that measures the usability of a tool [@brookeSUSQuickDirty1996]. It comprises 10 items, usually on a 5-point scale, but that can also be adapted to a 7-point range, which has been the case for this study. The 10 items are as follows:
 
 1.  I think that I would like to use this system frequently
 2.  I found the system unnecessarily complex
