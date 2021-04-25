@@ -42,11 +42,11 @@ A first, broad decision that shall be considered can be related to what Scaranti
 
 From a pure usability standpoint, that is, the perspective of a learner that must face a tool she is not used to have in a learning environment, a *folk* perspective should not be discarded as simplistic. For instance, an EAT could be based on the most frequent affective states encountered by learners [@dmelloSelectiveMetaanalysisRelative2013; @molinariEmotionFeedbackComputermediated2013; @reisAffectiveStatesComputersupported2018], without any relationship with a prescriptive definition, and regardless of whether these states are more or less prototypical of emotion [@fehrConceptEmotionViewed1984]. For instance, in a selective meta-analysis conducted by D'Mello [-@dmelloSelectiveMetaanalysisRelative2013] on the relative incidence of discrete affective states during learning with technology, the author identifies the following affective states as more frequent: engagement/flow, boredom, confusion, curiosity, happiness, and frustration. Even more bluntly, an EAT could avoid the problem altogether by prompting users to share *what they think an emotion is*, letting them construe the meaning of their emotional state without any guidance [@barrettKnowingWhatYou2001; @barrettSolvingEmotionParadox2006; @russellCoreAffectPsychological2003]
 
-On the other hand, from a multipurpose point of view -- which is in and on itself a form of generalization -- the link with a *scientific*, theory-driven perspective presents decisive advantages. First, by mapping the tool to a prescriptive definition, emotion not only emerges according to what it *is*, but also according to what it *does* and why. There is a growing body of literature focusing on the functional role emotion plays both at the intra- and inter-personal levels [@adolphsInvestigatingEmotionsFunctional2018; @fischerSocialFunctionsEmotion2016; @keltnerSocialFunctionsEmotions1999; @levensonIntrapersonalFunctionsEmotion1999; @leventhalRelationshipEmotionCognition1987]. In this regard, a theory-driven perspective should thus foster as much as possible a unitary -- or at least integrative -- rather than piecemeal approach [@broschAppraisingBrainNeuroCognitive2013; @pekrunProgressOpenProblems2005; @vankleefInterpersonalDynamicsEmotion2018]. Second, the 
- 
+On the other hand, from a multipurpose point of view -- which is in and on itself a form of generalization -- the link with a *scientific*, theory-driven perspective presents decisive advantages. First, by mapping the tool to a prescriptive definition, emotion not only emerges according to what it *is*, but also according to what it *does* and why. There is a growing body of literature focusing on the functional role emotion plays both at the intra- and inter-personal levels [@adolphsInvestigatingEmotionsFunctional2018; @fischerSocialFunctionsEmotion2016; @keltnerSocialFunctionsEmotions1999; @levensonIntrapersonalFunctionsEmotion1999; @leventhalRelationshipEmotionCognition1987]. In this regard, a theory-driven perspective should thus foster as much as possible a unitary -- or at least integrative -- rather than piecemeal approach [@broschAppraisingBrainNeuroCognitive2013; @pekrunProgressOpenProblems2005; @vankleefInterpersonalDynamicsEmotion2018]. Second, guidance/UX. Third, facilitate comparison between studies. And fourth, stick to a testable and falsifiable perspective. 
+
+Select a candidate against a provisional definition.
 
 ### Theories of Emotions
-
 
 
 ### Appraisal Theories of Emotions
@@ -80,9 +80,7 @@ The social and cultural function of emotion may therefore have been built upon a
 
 ### Computational Models of Emotions
 
-### Affective Systems in Learning Environments
-
-### Affordance
+### Taxonomies of Affective Systems in Learning Environments
 
 ## Distance Learning
 
