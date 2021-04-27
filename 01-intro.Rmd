@@ -47,11 +47,15 @@ Fourth, learners involved in a computer-mediated, technology enhanced learning a
 include_graphics(here("figure/intro/thesis-scm-model.png"))
 ```
 
-## Thesis Objectives {.unnumbered}
+## Thesis Perspective
 
-The present contribution therefore investigates the adoption, use and perception of a theory-driven, moment-to-moment, self-reporting emotion awareness tool in the context of distance, technology enhanced learning. The overall purpose of the thesis can be divided in two intertwined objectives: one methodological, and one empirical.
 
-### Methodological Objective {.unnumbered}
+
+## Thesis Contributions {.unnumbered}
+
+The overall purpose of the thesis can be divided in two intertwined objectives: one methodological, and one empirical.
+
+### Methodological Contribution {.unnumbered}
 
 From the methodological standpoint, the way emotional awareness is expressed and perceived is a pivotal element in determining to what extent it is possible to take full advantage from the use of an EAT. In other words, the EAT is not purely an auxiliary instrument [@meehlAppraisingAmendingTheories1990], but an integral part of the subject matter that requires careful assessment on its own [@buderGroupAwarenessTools2011; @janssenGroupAwarenessTools2011].
 
@@ -73,7 +77,7 @@ In the thesis, I present a generalization of the DEW underlying mechanism, which
 
 *Open Science principles*. The last decade has been characterized by rising concerns about replication of findings in social sciences, and psychology in particular, in what is generally referred to as the replication crisis [*e.g.*, @anvariReplicabilityCrisisPublic2019; @fritzOverviewReplicationCrisis2019; @opensciencecollaborationEstimatingReproducibilityPsychological2015; @schmidtShallWeReally2009]. Solutions to increase the reproducibility and replication of scientific results, usually grouped under the umbrella term of *Open Science*, have been proposed at various stages of the research process including: the need for better substantive theories from which to draw hypothesis; clearer definition of and discrimination between concepts; the validation of instruments and experimental material; the justification of the sample size; the pre-registration of research hypothesis, protocols and planned data analyses; the full disclosure of unprocessed data and the computational steps implicated in obtaining results; more transparency in the reviewing and publication processes; and open access to scientific knowledge [see among others @chambersSevenDeadlySins2017; @cruwellSevenEasySteps2019; @fergusonVastGraveyardUndead2012; @fiedlerCycleTheoryFormation2004; @lowndesOurPathBetter2017; @mayoPValuesTrialSelective2020; @moreyPeerReviewersOpenness2016; @Nosek1422; @scheelWhyHypothesisTesters2020; @simmons21WordSolution2012]. In an effort to comply to some of these principles, the DEW-RT is programmed in such a way that configuration of affective spaces and studies can be exported and shared with other researchers or practitioners, who can then reproduce exactly the same conditions.
 
-### Empirical Objective {.unnumbered}
+### Empirical Contribution {.unnumbered}
 
 The methodological intent of the DEW-RT is to provide a multipurpose EAT that can be adapted to different needs and purposes, but at the same time maintain a tight relationship with an underlying emotional structure. From an empirical standpoint, it is therefore worth investigating to what extent users can take full advantage of the main features illustrated in the previous section in an applied context. To this intent, the present contribution aims at assessing and comparing the adoption, use and perception of an EAT in two prototypical situations in distance, technology enhanced learning.
 
@@ -85,9 +89,15 @@ On the other hand, though, every assessment is done on some values or criterion 
 
 *Jane is prompted, by the presence of the EAT in her technology enhanced learning environment, to share her emotions with her colleague Paul because this information helps Paul to build and maintain a more accurate shared understanding of the situation at hand, which he can harness for his own activity. For the same reason, Jane is prompted to monitor and take into account Paul's emotions as instrumental information for her own activity*.
 
-## Thesis Contribution {.unnumbered}
+## Preliminary Definition and Clarification about the Use of Main Concepts
 
-In which I list what the thesis can contribute to.
+Considering the multi- and inter-disciplinary perspective of the thesis, it is useful to provide preliminary definition of the main and recurrent concepts, as they are used throughout the text, and whose interpretation may vary according to the field of reference. These preliminary definitions will be further developed in the reminder of the text, especially in the next chapter, but presenting them earlier will also, hopefully, help readers with a clarification of how these terms are used in the thesis. 
+
+**Affect** refers to a *flexible* container of internal mental states including emotion, moods, attitudes, interpersonal stances, preferences, feelings, and others [@frijdaAffectPsychologicalPerspectives2009; @colombettiFeelingBodyAffective2014]. Frijda and Scherer [-@frijdaAffectPsychologicalPerspectives2009, p.10] posit that "[t]he term *affect* and the corresponding adjective *affective* are generally used in an overarching generic sense for a mental state that is characterized by emotional feeling as compared with rational thinking" (italic in the text). From a complementary point of view, Colombetti [-@colombettiFeelingBodyAffective2014, p. 19] defines *affectivity* as "a *lack of indifference*, and rather a *sensibility* or *interest* for one's existence" (italic in the text). Throughout the text, an effort will be made to (1) respect authors original labeling of affective phenomena, and (2) maintain consistency between affect-related terms. Occasionally, though, declination of *affect*, such as *affective state* or *affective episode* may be used as a synonym of *emotion* (see below). Hopefully, in these cases, it would be clear from the context when those terms are used as synonymous because the distinction, in that precise passage of the text, is not of crucial importance for theoretical understanding or positioning. 
+
+**Awareness** often relates to the phenomenon by which someone *notices* something, which may happen at various levels, from pre-conscious to fully processed. In the context of the thesis, the term will always refer to a fully conscious state [@gazzanigaConsciousnessInstinctUnraveling2019], with nevertheless some ambiguity on the level of processing, which may become clearer according to the context. Furthermore, a distinction will be drawn between **self-awareness**, used to denote the conscious experience of one's own mental states, and **group-awareness** (for two or more people), which more closely relates to how the term awareness is used in computer-mediated environment. In fact, Dourish and Belotti [-@dourishAwarenessCoordinationShared1992, p. 1] define (group-)awareness as "an *understanding of the activities of others*, which provides a *context for your own activity*" (italic in the text). When the distinction between self- and group-awareness is not explicit, a combination of the two is to be intended, that is, the fact of one becoming aware of information about oneself (self-awareness) and/or others (group-awareness).
+
+**Emotion**. The definition of emotion is a crucial element of the theory-driven perspective adopted for the implementation of the EAT and, thus, is discussed at length in the next chapter. At this point, it is sufficient -- but pivotal -- to retain that *emotion* throughout the text will be used consistently to refer to a specific affective phenomena, distinguished from *general* affect (see above), moods, or preferences. An important distinction will be made and maintained between *emotion*, that is, the whole phenomenon, and *(subjective)-feeling*, which conversely is only a specific part of it [@grandjeanConsciousEmotionalExperience2008; @schererWhatAreEmotions2005]. 
 
 ## Thesis Outline {.unnumbered}
 
