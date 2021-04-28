@@ -49,7 +49,7 @@ include_graphics(here("figure/intro/thesis-scm-model.png"))
 
 ## Thesis Perspective
 
-The thesis adopts primarily an affective science perspective implemented with a human-computer interaction approach. That is, the theoretical framework of reference will be mainly drawn from the inter-disciplinary field of affective science -- favoring the psychological perspective in case of *conflict* -- with the intent to implement these theories in a computational system (hopefully) adopted by users in a distance learning environment. Theories from learning and education sciences will be, thus, integrated as corollary, with a lesser involvement in critically evaluating or contributing to them (see next section). In other words, it is beyond the scope and reach of the thesis to contribute in determining whether emotional awareness can lead to improving learning processes and, especially, outcomes. 
+The thesis adopts primarily an affective science perspective implemented with a human-computer interaction approach. That is, the theoretical framework of reference will be mainly drawn from the inter-disciplinary field of affective science -- favoring the psychological perspective in case of *conflict* -- with the intent to implement these theories in a computational system (hopefully) adopted by users in a distance learning environment. Theories from learning and education sciences will be, thus, integrated as corollary, with a lesser involvement in critically evaluating or contributing to them (see next section). In other words, it is beyond the scope of the thesis to contribute in determining whether emotional awareness can lead to improving learning processes and, especially, outcomes. 
 
 ## Thesis Contributions {.unnumbered}
 
