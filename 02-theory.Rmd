@@ -57,10 +57,10 @@ Second, tailoring an EAT on emotion theory may contribute to guide learners in d
 
 Third, from a research perspective, linking the EAT to a theory facilitates the assessment and comparison of measures collected through or about it, and therefore foster common ground in the contributions that shall decide to adopt it [@izardManyMeaningsAspects2010; @schererWhatAreEmotions2005]. In the meantime, the EAT would also benefit from the upcoming theoretical and applied contributions in the literature that relate to the shared emotion theory, ensuring the tool can progress over time, or otherwise be dismissed if some competing theory shall provide a better alternative [@fergusonVastGraveyardUndead2012; @meehlAppraisingAmendingTheories1990]
 
-These reasons, thus, advocate the adoption of a theory-driven approach to emotion definition. The next subsection will therefore assess some *candidates* among different emotion theories and adopt one as the prescriptive desideratum for guiding the implementation of an EAT. In order to better assess each theory, it is useful to dispose beforehand of at least a provisional definition of emotion upon which the different theories can be assessed. In this intent, Sander [-@sanderModelsEmotionAffective2013] argues that there is a general consensus across different theories of emotion about four key components, proposed here in an abridged version:
+These reasons, thus, advocate the adoption of a theory-driven approach to emotion definition. The next subsection will therefore briefly illustrate different emotion theories. In order to better assess each theory, it is useful to dispose beforehand of at least a provisional definition of emotion upon which the different theories can be compared. In this intent, Sander [-@sanderModelsEmotionAffective2013] argues that there is a general consensus across different theories of emotion about four key components, proposed here in an abridged version:
 
 1.  Emotions are multicomponent phenomena. Rather than a unitary process, emotion span several components, or subsystems, which are often enumerated in (i) appraisal, or evaluation; (ii) expression, or efferent manifestation; (iii) autonomic reaction, (iv) action readiness or preparedness, and (v) feeling or experience.
-2.  Emotions are two-step processes, consisting in emotion elicitation and the consequential emotion response.
+2.  Emotions are two-step processes, consisting in emotion elicitation and the consequential emotion response. With respect to the components enumerated in the previous point, the appraisal component represent the first step (elicitation), whereas the other components produce the response.
 3.  Emotions have relevant objects, that is, they are related to internal or external stimuli that are considered of major concern for the organism.
 4.  Emotions have a brief duration -- on which there is yet no precise estimation though -- compared to other affective phenomena such as moods, preferences, affective styles and dispositions, which tend to cover longer periods of time.
 
@@ -74,9 +74,9 @@ As illustrated in the consensual definition in the previous subsection, though, 
 
 #### Basic Emotion Theories
 
-Basic emotion theories (see @ekmanArgumentBasicEmotions1992 for a comprehensive illustration, and @huttoNewBetterBET2018 and @keltnerEmotionalExpressionAdvances2019 for recent developments) relates to the Motivational Tradition identified by Scarantino and de Sousa [@sep-emotion] and have been influenced by Darwin's work on emotion expression across species [@darwinExpressionEmotionsMan1872], even though an evolutionary perspective on the fundamental role of emotion in the survival of species is shared also by other clusters of theories [@adolphsNeuroscienceEmotionNew2018; @schererDynamicArchitectureEmotion2009]. Basic emotion theories are often referred to in the context of nonverbal expression of emotions, where they have represented the dominant approach in the last decades and still play today a prominent role [@keltnerEmotionalExpressionAdvances2019; @huttoNewBetterBET2018] despite some controversies [@crivelliInsideOutBasicEmotions2019; @colombettiFeelingBodyAffective2014].
+Basic emotion theories (see @ekmanArgumentBasicEmotions1992 for a comprehensive illustration, and @huttoNewBetterBET2018 and @keltnerEmotionalExpressionAdvances2019 for recent developments) relates to the Motivational Tradition identified by Scarantino and de Sousa [@sep-emotion] and have been influenced by Darwin's work on emotion expression across species [@darwinExpressionEmotionsMan1872], even though an evolutionary perspective on the fundamental role of emotion in the survival of species is shared also by other clusters of theories [@adolphsNeuroscienceEmotionNew2018; @schererDynamicArchitectureEmotion2009]. Basic emotion theories are often referred to in the context of nonverbal expression of emotions, where they have represented the dominant approach in the last decades and still play today a prominent role [@keltnerEmotionalExpressionAdvances2019; @huttoNewBetterBET2018] despite some controversies [@crivelliInsideOutBasicEmotions2019; @colombettiFeelingBodyAffective2014]. With respect to the intent of this thesis, the relevant elements of basic emotion theories are the following. 
 
-
+First, there is a distinction between basic emotion and non-basic emotions, that is, there is a list of phenomena that meet specific criteria allowing the discrimination between basic emotions and all other affective phenomena. As stated by Ekman and Cordaro [@ekmanWhatMeantCalling2011, p.365]: "[a]n emotion is either basic, or it is another affective phenomenon saturated with but different from the emotions, such as a mood, an emotional trait, and emotional disorder, etcetera". The criteria that a basic emotion must meet in order to be distinguished from other non-basic emotions are the following, retrieved from @keltnerWhatBasicEmotion2019. p.196: brief duration, unbidden, coherence among response systems, quick onset, presence in other primates, physiological correlates, particular antecedent, reported experience, particular signal, behavioral tendency, and cognitive focus. 
 
 #### Constructivist Emotion Theories
 
@@ -85,6 +85,8 @@ Basic emotion theories (see @ekmanArgumentBasicEmotions1992 for a comprehensive 
 #### Commonalities and Distinctions Between Theories
 
 ### The Component Process Model Theoretical Framework
+
+
 
 ### Intra-Personal Functions of Emotion
 
