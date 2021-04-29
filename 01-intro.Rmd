@@ -1,6 +1,6 @@
 # Introduction {.unnumbered}
 
-```{r itro-setup, include=FALSE, echo=FALSE}
+```{r intro-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
 library(papaja)
 library(here)

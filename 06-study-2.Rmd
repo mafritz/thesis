@@ -348,7 +348,7 @@ In the *Final* survey, that is approximately two weeks after the end of the seme
 (ref:s2-recollection-feelings-graph) Comparison between the observed relative frequency of expressed feelings and the reported frequency recollected for the participants themselves, as well as the frequency attributed to the class as a whole.
 
 ```{r s2-recollection-feelings-graph, fig.align='center', fig.cap="(ref:s2-recollection-feelings-graph)"}
-s2.perceived_emotions_frequency.graph
+#s2.perceived_emotions_frequency.graph
 ```
 
 ### Open-Ended Question
