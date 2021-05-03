@@ -1,4 +1,4 @@
-# Proof of Concept: Implementation Of Emotion Structure Into A Multipurpose Emotion Awareness Tool
+# Proof of Concept: Implementing an Appraisal-Driven, Moment-to-Moment, Self-Report Emotion Awareness Tool 
 
 ```{r dew-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
@@ -7,11 +7,134 @@ library(here)
 library(knitr)
 library(kableExtra)
 
+# Load the relevant data and graphs from the study-1 folder
+source(here("data", "dew-rt", "dew-rt-export.R"))
+
 ```
 
 Being Emotional Awareness Tools (EAT) a recent subject of inquiry, there is still a lack of validated instruments to investigate the matter. This shortcoming is particularly relevant considering that the way emotional awareness is expressed and conveyed to others may be a major factor in determining and interpreting its effects. In other words, the EAT is not *simply* an auxiliary instrument [@meehlAppraisingAmendingTheories1990]; on the contrary, it is an integral part of the subject matter and therefore requires careful assessment on its own [@buderGroupAwarenessTools2011; @janssenGroupAwarenessTools2011]. 
 
 This chapter illustrates the core feature of the Dynamic Emotion Wheel (DEW), the theory-driven, self-report, and moment-to-moment emotion awareness tool that will be implemented and assessed in two distance learning settings in the empirical contributions of the thesis. The DEW was originally conceived and developed as a prototype during my internship in the EATMINT project [@fritzDynamicEmotionWheel2015; @fritzDynamicEmotionWheel2016; @fritzProvidingEmotionalAwareness2017; @fritzRealTimeEmotionalAwareness2016] and as the subject of my Master thesis [@fritzReinventingWheelEmotional2015]. A more thorough description of the conception and development can therefore be found in Fritz [-@fritzReinventingWheelEmotional2015]. This chapter recalls some of the key points of the DEW, in particular its connection with the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005] and its core feature of implementing an underlying emotional structure into the tool. Then, it extends this connection by suggesting that the use of the DEW activates the theoretical concept of emotional competence as defined by Scherer [-@schererComponentialEmotionTheory2007], which comprises three sub-competences: (1) the appraisal, (2) the communication, and (3) the regulation sub-competences.
+
+## Defining the *Unit* of Measure to Elicit and Convey Emotional Awareness
+
+*What is an emotion?* is a question that literally appears in a multitude of scientific contributions. For instance, it is the title of a seminal article by William James [-@jamesWhatEmotion1884], which, despite being more than a century old, is still source of lively debate [@ellsworthWilliamJamesEmotion1994; @schererWhatAreEmotions2005]. There are many iconic statements that testify to the difficulty of studying emotions from a scientific perspective. Fehr and Russel [-@fehrConceptEmotionViewed1984, p. 464] argued that "[e]veryone knows what an emotion is, until asked to give a definition", which resonates with Kleinginna and Kleinginna [-@kleinginnaCategorizedListEmotion1981], who, around the same time forty years ago, collected almost one hundred definitions. More recently, Frijda and Scherer [-@frijdaEmotionDefinitionsPsychological2009, p. 142] still confirmed that "emotion may be one of the fuzziest concepts in all of the sciences", which was empirically corroborated by Izard [-@izardManyMeaningsAspects2010], who attempted -- and failed -- to extrapolate a unitary definition from the responses of 35 leading researchers from different fields to 6 questions about emotion definition, function, activation and regulation. The uncertainty and flexibility in defining emotion has nevertheless not stopped scholars to study it from different -- sometimes converging, oftentimes diverging -- perspectives [for a recent overview from different disciplines, see among others @adolphsNeuroscienceEmotionNew2018; @deonnaEmotionsPhilosophicalIntroduction2012; @dixonPassionsEmotionsCreation2003; @foxNatureEmotionFundamental2018; @oatleyEmotionsBriefHistory2004; @plamperHistoryEmotionsIntroduction2015; @pekrunEmotionsSchool2018; @schererBlueprintAffectiveComputing2010]. On the contrary, and possibly as a consequence, within the social sciences alone, the number of publications with the keyword *emotion* has annually multiplied by a factor of 1.13 between 1990 and 2011 [@schererHumanEmotionExperiences2013]. According to an estimation of Izard, at around the same period [@izardManyMeaningsAspects2010] 2'732 articles about emotion were published in the first decade of the millennium.
+
+Issues about the definition of emotion are rooted in historical, cultural and epistemological differences, within and across disciplines and approaches -- see @dixonPassionsEmotionsCreation2003 and @plamperHistoryEmotionsIntroduction2015 for overarching perspectives, or @sanderModelsEmotionAffective2013 for a more concise introduction. Some of the broader controversies regarding emotion can be encapsulated in onion layers that are highly interconnected and mutually influenced. From the outset to the inset, controversies may concern:
+
+-   how emotion relates to, and differ from other phenomenon of the mind/body such as intelligence, rationality, consciousness or various forms of cognition [@broschImpactEmotionPerception2013; @leventhalRelationshipEmotionCognition1987; @liebermanBooConsciousnessProblem2019; @rollsEmotionDecisionmakingExplained2014; @becharaRoleEmotionDecisionmaking2004; @pessoaCognitiveemotionalBrainInteractions2013; @murphyIntelligenceInterpersonalSensitivity2011; @saloveyEmotionalIntelligence1990];
+-   how emotion relates to, and differ from other affective phenomena such as moods, preferences, attitudes, motivation, desires, feelings, sentiments, passions, and so on [@linnenbrink-garciaAdaptiveMotivationEmotion2016; @schererWhatAreEmotions2005; @dixonPassionsEmotionsCreation2003; @schwarz2003mood; @colombettiFeelingBodyAffective2014];
+-   whether there are, and what are the building blocks and features, covering the whole process from causation to consequences, shared by all phenomena identified as emotion [@adolphsNeuroscienceEmotionNew2018; @grossEmotionRegulationAffective2002; @moorsTheoriesEmotionCausation2009; @russellCoreAffectPsychological2003; @smithPatternsCognitiveAppraisal1985];
+-   whether there are a countable number of, and how to distinguish between discrete emotions -- such as *anger*, *fear*, or *happiness* -- and if is it possible to categorize them in taxonomies [@fehrConceptEmotionViewed1984; @fontaineGlobalMeaningStructure2013; @russellCoreAffectPsychological2003; @sanderModelsEmotionAffective2013; @pekrunInternationalHandbookEmotions2014; @scarantinoDonGiveBasic2011; @ekmanArgumentBasicEmotions1992]
+-   how a specific emotion, assuming that a discrete emotion exists, should be referred to -- both from an everyday communication and scientific conceptualization points of view -- considering differences between cultures and languages [@ekmanWhatMeantCalling2011; @fontaineComponentsEmotionalMeaning2013; @gilliozMappingEmotionTerms2016; @torrePuttingFeelingsWords2018; @grandjeanConsciousEmotionalExperience2008; @schererMeasuringMeaningEmotion2013; @douglas-cowieEmotionalSpeechNew2003].
+
+The implementation of an EAT, especially one that has a multipurpose vocation, must therefore face the complexity of defining the *unit* that it aims to make people aware of [@boehnerHowEmotionMade2007]. In this regard, a first, broad decision that shall be considered can be related to what Scarantino and de Sousa [-@sep-emotion] identify as the two *desiderata* of emotion definition. The first consists in shaping the definition of emotion in order to achieve compatibility with ordinary linguistic usage, which corresponds to a descriptive definition. The second aims at finding a definition of emotion that is theoretically fruitful, that is, a prescriptive definition. The two desiderata are not mutually exclusive, since even a prescriptive definition should try to maintain as much compatibility with ordinary linguistic usage as possible [@schererWhatAreEmotions2005]. But, in the case of incompatibility with ordinary intuition, a prescriptive definition should favor theoretical generalization [@scarantinoHowDefineEmotions2012]. Roughly translated in more concrete terms, a definition of emotion should guide the implementation of an EAT in deciding whether it shall convey what users consider an emotion to be from a *folk* perspective, or rather what an emotion should be considered according to a *scientific* perspective [@scarantinoHowDefineEmotions2012; @fontaineGlobalMeaningStructure2013; @schererWhatAreEmotions2005].
+
+From a pure usability standpoint, that is, the perspective of a learner that must face a tool she is not used to have in a learning environment, a *folk* perspective should not be discarded as simplistic. For instance, an EAT could be based on the most frequent affective states encountered by learners [@dmelloSelectiveMetaanalysisRelative2013; @molinariEmotionFeedbackComputermediated2013; @reisAffectiveStatesComputersupported2018], without any relationship with a prescriptive definition, and regardless of whether these states are more or less prototypical of emotion [@fehrConceptEmotionViewed1984; @scarantinoDonGiveBasic2011]. For instance, in a selective meta-analysis conducted by D'Mello [-@dmelloSelectiveMetaanalysisRelative2013] on the relative incidence of discrete affective states during learning with technology, the author identifies the following as more frequent: engagement/flow, boredom, confusion, curiosity, happiness, and frustration. Even more bluntly, an EAT could avoid the problem altogether by prompting users to share *what they think an emotion is*, letting them construe the meaning of how they feel without any guidance [@barrettKnowingWhatYou2001; @barrettSolvingEmotionParadox2006; @russellCoreAffectPsychological2003]. On the other hand, from a multipurpose point of view -- which is in and on itself a form of generalization -- the link with a *scientific*, theory-driven perspective presents several advantages.
+
+First, by mapping the tool to a prescriptive definition, emotion not only emerges according to what it *is*, but also according to what it *does* and why. There is a growing body of literature focusing on the functional role emotion plays both at the intra- and inter-personal levels [more on this later, but see for instance @adolphsInvestigatingEmotionsFunctional2018; @fischerSocialFunctionsEmotion2016; @keltnerSocialFunctionsEmotions1999; @levensonIntrapersonalFunctionsEmotion1999; @leventhalRelationshipEmotionCognition1987]. Thus, a theory-driven perspective may contribute to better assemble these functions and take full advantage of them in the implementation of the EAT [@broschAppraisingBrainNeuroCognitive2013; @pekrunProgressOpenProblems2005; @vankleefInterpersonalDynamicsEmotion2018].
+
+Second, tailoring an EAT on emotion theory may contribute to guide learners in discovering and using it, since they can be both interested and reassured by identifying underlying mechanisms that are thought to be an integral part of the phenomenon [more on this in the next chapter, but see for instance @tranEmotionsDecisionMakingProcesses2012 for an applied example]. As it will be shown in more details in the section about awareness tools below, the fact that a dedicated tool is provided in the environment for some *corollary* activities does not automatically mean that it will be adopted [@kreijnsIdentifyingPitfallsSocial2003].
+
+Third, from a research perspective, linking the EAT to a theory facilitates the assessment and comparison of measures collected through or about it, and therefore foster common ground in the contributions that shall decide to adopt it [@izardManyMeaningsAspects2010; @schererWhatAreEmotions2005]. In the meantime, the EAT would also benefit from the upcoming theoretical and applied contributions in the literature that relate to the shared emotion theory, ensuring the tool can progress over time, or otherwise be dismissed if some competing theory shall provide a better alternative [@fergusonVastGraveyardUndead2012; @meehlAppraisingAmendingTheories1990].
+
+These reasons advocate the adoption of a theory-driven approach to emotion definition. The next subsection will thus address the topic of emotion theories.
+
+## Theories of Emotion
+
+As one may expect from the complexity in defining an emotion outlined in the previous subsection, there are a multitude of emotion theories and taxonomies that try to categorize them [for a recent overview, see @moorsTheoriesEmotionCausation2009; @sep-emotion; @sanderModelsEmotionAffective2013]. Adopting a perspective spanning philosophy and affective sciences, Scarantino and de Sousa [-@sep-emotion] identify three traditions in which most of emotion theories can be divided in: (1) the Feeling Tradition, which considers the conscious experience of an emotion as the fundamental characteristic; (2) the Evaluative Tradition, which focuses on how emotion consists in, or is crucially defined by the way eliciting events are evaluated; and (3) the Motivational Tradition, which identifies emotion with specific internal states driven by want or need to satisfy a goal.
+
+In psychology more specifically, the last decades have been characterized mainly by three major families of emotion theories that account for the *whole* emotional phenomenon, from causes to consequences, and not only part of it, such as emotion regulation [@frijdaEmotionDefinitionsPsychological2009; @sanderModelsEmotionAffective2013] : (1) basic emotion theories [@ekmanArgumentBasicEmotions1992; @ekmanWhatMeantCalling2011; @huttoNewBetterBET2018; @keltnerEmotionalExpressionAdvances2019], (2) constructivist/dimensional emotion theories [@russellCoreAffectPsychological2003; @russellEmotionCoreAffect2009; @stanleyTwodimensionalAffectiveSpace2009], and (3) appraisal emotion theories [@moorsAppraisalTheoriesEmotion2013; @schererDynamicArchitectureEmotion2009; @smithPatternsCognitiveAppraisal1985]. These three families emerged from different historical backgrounds, and the foundation are often rooted in philosophical perspectives with secular traditions. In *psychological* era, we can trace back seminal works on the three families in the second half of the last century [@arnoldEmotionPersonalityPsychological1960; @lazarusPsychologicalStressCoping1966; @russellCircumplexModelAffect1980; @schererEmotionProcessFunction1982]. Since then, theories have influenced each other, converging on some points -- most notably the fact that emotion is not unitary but comprises different components -- and maintaining different positions on other points, such as eliciting and differentiation mechanisms in discrete emotions [@frijdaEmotionDefinitionsPsychological2009; @sanderModelsEmotionAffective2013]. New and often interdisciplinary theories that have emerged lately resume and extends some ideas of one or more of these families, as in the *enacting* approach proposed by Colombetti [-@colombettiFeelingBodyAffective2014] or the *theory of affective pragmatics* proposed by Scarantino [-@scarantinoHowThingsEmotional2017]. In other cases, such as in the *theory of constructed emotion* advocated by Feldman Barrett [@barrettHowEmotionsAre2018; @barrettSolvingEmotionParadox2006; @barrettTheoryConstructedEmotion2017], there is considerable discontinuity with previous work,challenging the principle according to which emotions are responses or exist as natural kinds. For instance, Feldman Barret [-@barrettHowEmotionsAre2018, p. vii-viii] argues that "[e]motion are real, but not in the objective sense that molecules or neurons are real. They are real in the same sense that money is real -- that is, hardly an illusion, but a product of human agreement". Some contributions have also attempted to adopt a theory-independent perspective, focusing on empirical contributions by investigating the accuracy in making predictions about the emotion experienced by a person in a controlled environment [@schererEmotionProcessEvent2019].
+
+Within this scattered framework, it is difficult to fully account for the choice of a theory or set of theories without risking contradiction, or cherry picking only elements in support of one's idea. As advocated by different scholars [*e.g.*, @izardManyMeaningsAspects2010; @schererWhatAreEmotions2005; @broschAppraisingBrainNeuroCognitive2013], one should make clear what theory or theories are deployed, even at the risk of some ambiguity in the reasons behind these choices. Though only partially satisfactory, this compromise seems to be at least a step in the right direction, considering recent evidence suggesting that only around one article out of four published between 2009 and 2019 in psychology unambiguously cite an adopted theoretical framework [@mcphetresDecadeTheoryReflected2021].
+
+A second important choice in the implementation of a theory-driven EAT is therefore to define which emotion theory or set of theories it refers to, trying as much as possible to connect extant theories straightforwardly and unambiguously. In this intent, the broad criterion of selection adopted consists in considering theories that explicitly belong to, or are compatible with, the Evaluative Tradition, and more specifically appraisal theories of emotion. It is posited by this choice that an EAT may best serve its purpose in conveying instrumental information to learners, if that information is crucially determined by how learners construe emotion meaning from the situation at hand [@lavoueEmotionAwarenessTools2020; @molinariEmotionFeedbackComputermediated2013; @pekrunControlValueTheoryAchievement2006; @shumanConceptsStructuresEmotions2014]. The next subsection offers an overview of what characterizes this family of emotion theories.
+
+## Appraisal Theories of Emotion
+
+Appraisal theories of emotion originated in the 1960's with the work of Arnold [-@arnoldEmotionPersonalityPsychological1960] and Lazarus [-@lazarusPsychologicalStressCoping1966] and were then formalized in the 1980's by independent scholars reaching similar conclusions about the need to explain how different emotion may be elicited by the same event, for different persons and in different situations [@schererEmotionProcessFunction1982; @smithPatternsCognitiveAppraisal1985; @schorrAppraisalEvolutionIdea2001; @rosemanAppraisalTheoryOverview2001; @siemerSameSituationdifferentEmotions2007]. The core element shared by theories belonging to the appraisal family is resumed by the premise that emotions "are adaptive responses which reflect appraisals of features of the environment that are significant for the organism's well-being" [@moorsAppraisalTheoriesEmotion2013, p. 119], where well-being roughly encompasses the satisfaction or obstruction of someone's wants, needs or goals that are considered of major concern [@frijdaEmotions1986; @rosemanAppraisalTheoryOverview2001; @schererWhatAreEmotions2005]. This feature is nevertheless not unique to appraisal theories, since other theories reckon adaptive functions to emotion or motivational implications [@adolphsNeuroscienceEmotionNew2018; @ekmanArgumentBasicEmotions1992; @scarantinoHowThingsEmotional2017; @sep-emotion]. Appraisal theories are therefore more thoroughly characterized by the dynamic, recurrent and ongoing nature they confer to emotion in sustaining the adaptive response [@broschAppraisingBrainNeuroCognitive2013; @oatleyCognitiveApproachesEmotions2014; @rosemanAppraisalTheoryOverview2001; @schererDynamicArchitectureEmotion2009; @schorrAppraisalEvolutionIdea2001; @siemerSameSituationdifferentEmotions2007]. It is in fact common among appraisal theories to consider emotion as a process, rather than a state (*ibid.*). The bounded process unfolds over brief periods of time and can be modified in light of new information coming from any of the organismic subsystems or components, which include "an appraisal component with evaluations of the environment and the person--environment interaction; a motivational component with action tendencies or other forms of action readiness; a somatic component with peripheral physiological responses; a motor component with expressive and instrumental behavior; and a feeling component with subjective experience or feelings" [@moorsAppraisalTheoriesEmotion2013, pp. 119-120].
+
+An example of a concrete theory may contribute to better frame the mechanism, which is here limited to the appraisal component (more about this will follow). The example is taken from Pekrun's control-value theory of achievement emotion [@pekrunControlValueTheoryAchievement2006], which provides three key elements from an illustrative purpose. First, it directly relates to learning, which fits with the thesis's applied context. Second, it proposes a reduced number of appraisal criteria compared to other theories (more on this later). Third, the appraisals are not *valence* and *arousal*, which are ubiquitous dimensions in constructivist/dimensional theories [@russellCircumplexModelAffect1980; @russellEmotionCoreAffect2009; @stanleyTwodimensionalAffectiveSpace2009], whereas in appraisal theories may have important, but not mandatory status [@fontaineWorldEmotionsNot2007; @gilliozMappingEmotionTerms2016; @schererWhatAreEmotions2005]. In Pekrun's own words (*ibid*, p. 317):
+
+> The control-value theory described here posits that two groups of appraisals are of specific relevance for achievement emotions: (1) *subjective control* over achievement activities and their outcomes (e.g., expectations that persistence at studying can be enacted, and that it will lead to success); and (2) the *subjective values* of these activities and outcomes (e.g., the perceived importance of success).
+
+What emotion a learner will feel in an achievement context, such as studying for a test, will depend on the specific pattern emerging from the combination of appraising the subjective control and the subjective value. For instance, "[i]f an achievement activity (e.g., studying) and the material to which it relates (e.g., learning material) are positively valued, and if the activity is perceived as being sufficiently controllable by the self, *enjoyment* is assumed to be instigated" (*ibid.*, p. 323). Conversely, "[i]f the activity is perceived as being controllable, but is negatively valued (e.g., when effort required by the activity is experienced as aversive), *anger* is expected to be aroused. If the activity is not sufficiently controllable, *frustration* will be experienced" (*ibid*, p. 323, all italics in the text).
+
+According to the dynamic, recursive and ongoing nature of emotion posited by appraisal theories, then, the evaluation of the activity may change instantly. For instance, the learning material may be perceived as too difficult at first, lowering learners' subjective control, but become clearer after a synthesis or a figure. Likewise, the subjective value may suddenly arise if, after reading a few pages useless to one's needs, the learner finds a passage she can directly apply to solve a problem that has been bothering her ever since. Conversely, the very same passage may be considered of scarce value from her colleague, who has already solved the problem beforehand.
+
+The control-value theory of achievement emotions may therefore seem to be a valid candidate to guide the implementation of a theory-driven EAT guided by appraisal, but it actually does not comply with the multipurpose vocation. In fact, learning is characterized by different *kinds* of emotion, which comprise, but are not limited to, success or failure. More precisely, Pekrun and Linnerbrink-Garcia [-@pekrunInternationalHandbookEmotions2014] posit that learning also triggers epistemic emotions, topic emotions, and social emotions (more on this later). An overarching appraisal theory would therefore be more suitable to a multipurpose EAT. In this regard, appraisal theories, even if they share considerable overlapping, differ on several key points, which are enumerated in a recent state of the art proposed by @moorsAppraisalTheoriesEmotion2013. Most of the points are too detailed for the present purpose and the full list would lack instrumental information to be fully explained. Only the points concerning appraisal criteria are considered to be of primary relevance for the present purpose and will thus be extrapolated by the aforementioned source.
+
+As a reminder, appraisal is considered a process that scans events outside or inside the organism and evaluates them against a set of criteria related to the organism's well-being. One of the main source of divergence in appraisal theories concerns, precisely, the number of appraisal criteria the event is evaluated against, the order of evaluation, as well as the possible outcomes of every criterion. An appraisal criterion can have dimensional, ordinal or categorical values. For instance, the control-value theory described above [@pekrunControlValueTheoryAchievement2006] considers that the two appraisals control and value can assume ordinal values *none*, *low*, *medium* and *high*. Other appraisal theories postulate dimensional criteria, with potentially infinite values along a continuum or categorical. Pekrun could have hypothesized, for instance, that subjective control ranges from *entirely incontrollable* to *entirely controllable*, or split the dimension in a dichotomous *not controllable* and *controllable*. As stated by @moorsAppraisalTheoriesEmotion2013, pp. 121-122:
+
+> The number and nature of the appraisal variables and/or values is closely related to the number and nature of the emotions that one can or wishes to explain. In general, more emotions require more appraisal variables and/or more appraisal values. Turning it around, more appraisal variables and/or more appraisal values allow more variety in emotions. Two appraisal variables with two values each can account for four emotions. Seven appraisal variables with an infinite number of values each can account for an infinite number of emotions. The number and nature of the emotions that one wishes to explain can be traced back to metatheoretical choices such as whether one strives for parsimony and/or a focus on natural language descriptors of emotions, on the one hand, or exhaustiveness and/or a focus on variety, on the other hand.
+
+It is posited here that a multipurpose EAT may benefit from the greatest possible variation, taking into account the usability constraints imposed by the moment-to-moment and auxiliary nature of the tool. Standing at information provided by the cited article, the appraisal theory which provides the greatest variety is the Component Process Model [@schererAppraisalConsideredProcess2001; @schererDynamicArchitectureEmotion2009; @schererNatureDynamicsRelevance2013; @schererWhatAreEmotions2005] theoretical framework, which will thus be adopted as primary reference and is illustrated at length in the next subsection.
+
+## The Component Process Model Theoretical Framework
+
+The Component Process Model (CPM) is a theoretical framework bridging appraisal and componential approaches to emotion, first proposed by Scherer [-@schererEmotionProcessFunction1982] and refined over the years [-@schererNatureDynamicsRelevance2013; -@schererWhatAreEmotions2005; -@schererAppraisalConsideredProcess2001; -@schererDynamicArchitectureEmotion2009]. It has been applied to different contexts: the reader may find recent discussions of the model in relation with learning and education in @shumanConceptsStructuresEmotions2014, with affective computing in @schererBlueprintAffectiveComputing2010, with emotional meaning-making in @fontaineComponentsEmotionalMeaning2013, with emotional competence/intelligence in @schererComponentialEmotionTheory2007, and with neuroscience in @sanderAppraisalDrivenComponentialApproach2018. An overarching and accessible description of the model can be found in @schererWhatAreEmotions2005, whereas @schererAppraisalConsideredProcess2001 and @schererDynamicArchitectureEmotion2009 are more focused on the dynamic, recurrent and ongoing features of the model. Finally, recent developments are discussed in @schererNatureDynamicsRelevance2013. 
+
+This subsection proposes an overview of model and its components according to the objectives of the thesis by combining a computational [@schererComponentProcessModel2010], emotion meaning-making [@schererMeasuringMeaningEmotion2013; @schererSemanticStructureEmotion2018] and voluntary self-report [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005] perspectives. When available, evidence from other sources are integrated, but only if they explicitly state that they relate to the full CPM model. The integration from other sources is postponed to the next two subsections about intra-personal and inter-personal functions of emotion.
+
+### Overall Description of the Model
+
+The CPM adopts an evolutionary perspective "based on the idea that during evolution, emotion replaced instincts in order to allow for more flexible response to events in a complex environment" [@schererComponentProcessModel2009 p. 93].
+
+(ref:tf-cpm-subcomponents-caption) Relationships between organismic subsystems and the functions and components of emotion. Reproduced from @schererComponentProcessModel2010, original table 2.1.1, p. 49.
+
+```{r tf-cpm-components-table}
+tf.cpm_components <- tibble(
+  `Evaluation function` = c("Evaluation of objects and events", "System regulation", "Preparation and direction of action", "Communication of action and behavioral intention", "Monitoring of internal state and orgnism-environment interaction"),
+  `Organismic subsystem and major substrata` = c("Information processing (CNS)", "Support (CNS, NES, ANS)", "Executive (CNS)", "Action (SNS)", "Monitor (CNS)"),
+  `Emotion component` = c("Cognitive component", "Neurophysiological component", "Motivational component", "Motor expression component", "Subjective feeling component")
+)
+
+tf.cpm_components %>% 
+  kable(
+    caption = "(ref:tf-cpm-subcomponents-caption)\\label{tab:tf-cpm-components-table}",
+    caption.short = "CPM components and functions",
+    longtable = TRUE,
+    booktabs = TRUE,
+    linesep = c("\\addlinespace", "\\addlinespace", "\\addlinespace", "\\addlinespace", "\\addlinespace", "\\addlinespace")
+  ) %>% 
+  kable_styling(full_width = TRUE) %>%
+  column_spec(1, width = "6cm") %>% 
+  column_spec(2, width = "4.5cm") %>% 
+  footnote(
+    general = "Abbreviations: CNS-Central Nervous System; NES-Neuroendocrine System; ANS-Autonomic Nervous System; SNS-Somatic Nervous System.", threeparttable = TRUE
+  )
+```
+
+(ref:tf-cpm-general-model-adapted-caption) The dynamic architecture of the component process model. Adapted, with minor labeling and graphical modifications, from the original figure 2.1.1 in @schererComponentProcessModel2010, p. 50.
+
+```{r tf-cpm-general-model-adapted, fig.align="center", fig.cap="(ref:tf-cpm-general-model-adapted-caption)", out.width="100%"}
+knitr::include_graphics(here("figure/theory/cpm-model-adapted.png"))
+```
+
+### Appraisals as Sequential Evaluation Checks
+
+
+### Efferent Manifestations, What Is Missing Without Them?
+
+* Facial expressions as appraisal cues
+
+
+### Sbjective Feeling As Emotion Meaning Making
+
+* Explain the threeparti
+* GRID
+
+## A Working Definition of Emotion
+
+*x* is an emotion only *if*
+
+1. *x* is an affective *episode*
+2. x has the property of intentionality (i.e., of being directed)
+3. x contains bodily changes (arousal, expression, etc.) that are felt
+4. x contains a perceptual or intellectual episode, y, which has the property of intentionality 
+5. the intentionality of x is inherited from the intentionality of y
+6. x is triggered by at least one appraisal
+7. x is guided by at least one appraisal
 
 ## The Geneva Emotion Wheel
 
@@ -35,7 +158,7 @@ include_graphics(here("figure/dew/gew-v3.png"))
 
 The interface of the GEW, depicted in its third version in Figure \@ref(fig:gew-version-3-figure) [@schererGRIDMeetsWheel2013], presents 20 subjective feelings -- chosen with respect to their frequency in emotion literature and everyday language use -- organized in a circumplex, which is determined by two appraisal dimensions as axes: *Valence* on the abscissa and *Control/Power* on the ordinate. Each feeling is positioned according to a value along both axes and belongs thus to one of the four quadrants of the circumplex, determined by the combination of positive or negative Valence, and positive or negative Control/Power. From the origin of the axes stem 5 circles for each of the subjective feelings. The circles grow in size as they get closer to the edge of the circumplex, so that the first circle is the smallest, and the last one the biggest. Users can therefore choose, first, the *row* of circles that corresponds to the subjective feeling they are experiencing and, second, the intensity of the feeling as a function of the circle's size.
 
-## The Dynamic Emotion Wheel
+## The Dynamic Emotion Wheel: Active Rating of Appraisals with a *K* Nearest Neighbours Parsimonios Computational Model
 
 The GEW is a theory-driven and validated instrument that has been widely adopted in different experimental contexts. Nevertheless, from the point of view of an awareness tool, it has two major shortcomings. First, its size: the graphical interface of the GEW is too wide to be implemented alongside some other content, such as learning material or environment. Second, it is limited to self-report, and it does not provide a way for the emotional information to be stored and visualized after the expression [@bersetVisualisationDonneesRecherche2018; @hegartyCognitiveScienceVisualspatial2011; @leonyProvisionAwarenessLearners2013]. In order to overcome these shortcomings, I took advantage of the emotional structure implemented into the GEW to build a parsimonious computational model that allows users to actively rate the two appraisal dimensions of the GEW and suggest a subset of subjective feelings that are compatible with that particular combination of appraisal dimensions.
 
@@ -46,10 +169,47 @@ This sections begins with a brief overview of the DEW and then depicts how the e
 Introducing the overall interface of the DEW will ease the more detailed description of the specifics functions it serves. It is worth noting, though, that what is here presented is a configuration of the DEW that adopts and extends the same characteristics of the GEW. This is not, though, the only possible interface. The next chapter will introduce a research toolbox that precisely allows the configuration of different interfaces, which may be determined according to theoretical or practical needs of researchers interested in deploying the tool in their studies or practitioners aiming at implementing an EAT in their instructional design. 
 
 
+## Configuring the Dynamic Emotion Wheel: Theoretical and Applied Perspectives
 
-### Emotional Structure in the Expressing-Displaying Function
+* What is an affective space
+* Circumplex Affective Spaces
+* Cartesian Plane Affective Spaces
+* Existing Affective Spaces
+* Create An Affective Space
+* The EATMINT Affective Space
 
-### Emotional Structure in the Perceiving-Monitroing Function
+The core of the DEW is the underlying bi-dimensional affective space, which determines the relationship between the two affective dimensions and the subjective feelings. As illustrated in the previous chapter, in the case of the Geneva Emotion Wheel the two affective dimensions are Valence and Control/Power, which determine the disposition of twenty subjective feelings around a circumplex. The DEW-RT abstracts this structure in two ways. First, it provides the possibility to choose among any composition of two affective dimensions. This means that, even though the tool is deeply rooted in the Component Process Model theoretical framework (see ...), any affective space that is based on, or can be approximated to, a bi-dimensional structure can be adopted as an underlying model. Second, the DEW-RT allows any number of subjective feelings, as long as they can be mapped to the underlying bi-dimensional structure. In this regard, there are two possible structures of the affective space, which implement two different algorithms connecting the affective dimensions with the subjective feelings : (1) the circumplex structure, and (2) the Cartesian plane structure. 
+
+This section first proposes some examples of bi-dimensional affective spaces that can be found in the literature, and which are already available *out-of-the-box* in the DEW-RT. Next, using two existing affective spaces -- one circumplex and one Cartesian plane -- as sample, the section simulates the performance of the DEW sub-setting algorithm using a small set of the three subjective feelings and a bigger set of ten subjective feelings. Then, the section considers how new affective spaces can be built and shared through the DEW-RT. Finally, as an example, the construction of the EATMINT circumplex, used in the two empirical contributions of the thesis, is illustrated.
+
+### Existing Affective Spaces
+
+An affective space is a spatial representation of the nature of emotions. As a consequence, the affective space is both defined by, and reflects the underlying perspective of what an emotion is. 
+
+### Simulation of the Sub-Setting Alorithms
+
+```{r}
+dew_rt.sim_gew_graph_3
+```
+
+```{r}
+dew_rt.sim_gew_graph_10
+```
 
 
-## The Dynamic Emotion Wheel and Emotional Competence
+### Creating and Sharing New Affective Spaces
+
+### The Example of the EATMINT Circumplex
+
+## Configuration of the Interface
+
+* Displaying-Expressing Emotions (appraisal dimensions, subjective feelings)
+* Monitoring-Perceiving Emotions (graphical representation of emotions)
+* Exporting the Configuration
+
+## Configuration of Experimental Settings
+
+* Login
+* Task
+* Data persitance
+* Data exportation
