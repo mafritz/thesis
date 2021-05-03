@@ -1,0 +1,10 @@
+# Towards A Multipurpose, Appraisal-Driven, Moment-to-Moment and Self-Report Emotion Awareness Tool
+
+```{r eat-dashboard-setup, include=FALSE, echo=FALSE}
+library(tidyverse)
+library(papaja)
+library(here)
+library(knitr)
+library(kableExtra)
+
+```

@@ -1,0 +1,91 @@
+# A Parsimonious Computational Model Linking Appraisal and Subjective Feeling
+
+```{r computational-model-setup, include=FALSE, echo=FALSE}
+library(tidyverse)
+library(papaja)
+library(here)
+library(knitr)
+library(kableExtra)
+
+# Load the relevant data and graphs
+source(here("data", "dew-rt", "dew-rt-export.R"))
+
+```
+
+## The Geneva Emotion Wheel
+
+The complexity and diversity in the field of emotion theories is reflected in different approaches on how emotions should be assessed and measured [@boehnerHowEmotionMade2007; @cerneaSurveyTechnologiesRise2015; @maussMeasuresEmotionReview2009; @mortillaroEmotionsMethodsAssessment2015; @schererWhatAreEmotions2005]. In a componential approach to emotion, ideally, all aspects of the synchronized and unfolding process should be taken into account [@schererWhatAreEmotions2005]. Measuring all these aspects at once, though, requires dedicated material, some of which is difficult or impossible to deploy outside a laboratory. Self-report remains therefore a widely adopted method to ask a person about her emotional experience, either through *paper-and-pencil-like* questionnaire  [e.g. @harmon-jonesDiscreteEmotionsQuestionnaire2016; @pekrunMeasuringEmotionsEpistemic2016], or more elaborated self-report tools [see among others @broekensAffectButtonMethodReliable2013; @desmet2003measuring; @schererWhatAreEmotions2005;  @siegertAppropriateEmotionalLabelling2011; @bradleyMeasuringEmotionSelfAssessment1994; @caicedoHowYouFeel2006; @isomursuExperimentalEvaluationFive2007; @molinariEMORELOutilReporting2016].  With respect to more elaborate tools in particular, Scherer [-@schererWhatAreEmotions2005, p. 721] advocates some of the characteristics an emotion self-report tool should provide:
+
+* Concentrate on the feeling component of emotion;
+* Avoid the simple valence-arousal space;
+* Rely on natural language labels;
+* Allow the assessment of the intensity of the feeling;
+* Build some emotion structure into the instrument, rather than presenting arbitrary emotion sets;
+* Adopt a user-friendly graphical user interface.
+
+Driven by these tenets, Scherer [-@schererWhatAreEmotions2005] developed and refined over the years [@schererGRIDMeetsWheel2013] one of the most widely adopted emotion self-report tool: the Geneva Emotion Wheel (GEW). For instance, the GEW is also presented in an overarching chapter [@shumanConceptsStructuresEmotions2014] about emotion in the *International Handbook of Emotions in Education* [@pekrunInternationalHandbookEmotions2014], which is, to the best of my knowledge, the most up-to-date and comprehensive resource about emotion in education.
+
+The GEW is an instrumental implementation of the Component Process Model theoretical framework [CPM; @sanderAppraisalDrivenComponentialApproach2018; @schererAppraisalConsideredProcess2001; @schererDynamicArchitectureEmotion2009]. It combines the two most widely adopted approaches to emotion self-report -- the dimensional and discrete emotions approaches [@schererWhatAreEmotions2005] -- by establishing a causal link between the appraisal [@schererAppraisalConsideredProcess2001] and the subjective feeling [@grandjeanConsciousEmotionalExperience2008] components -- that is, between the cognitive evaluation of the situation and the holistic experience that usually emerges to consciousness as a natural language word or idiom. This direct link is corroborated by recent empirical contributions investigating whether the emotional meaning of words often adopted, in different cultures, to express emotional experiences can be traced back to specific evaluations of the eliciting event [@fontaineGlobalMeaningStructure2013; @fontaineWhyWhatHow2013; @gentschEffectsAchievementContexts2017; @gilliozMappingEmotionTerms2016; @schererSemanticStructureEmotion2018]. 
+
+(ref:gew-version-3-caption) The third version of the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013]
+```{r gew-version-3-figure, fig.cap="(ref:gew-version-3-caption)", fig.align="center", out.width="100%" }
+include_graphics(here("figure/dew/gew-v3.png"))
+```
+
+The interface of the GEW, depicted in its third version in Figure \@ref(fig:gew-version-3-figure) [@schererGRIDMeetsWheel2013], presents 20 subjective feelings -- chosen with respect to their frequency in emotion literature and everyday language use -- organized in a circumplex, which is determined by two appraisal dimensions as axes: *Valence* on the abscissa and *Control/Power* on the ordinate. Each feeling is positioned according to a value along both axes and belongs thus to one of the four quadrants of the circumplex, determined by the combination of positive or negative Valence, and positive or negative Control/Power. From the origin of the axes stem 5 circles for each of the subjective feelings. The circles grow in size as they get closer to the edge of the circumplex, so that the first circle is the smallest, and the last one the biggest. Users can therefore choose, first, the *row* of circles that corresponds to the subjective feeling they are experiencing and, second, the intensity of the feeling as a function of the circle's size.
+
+## The Dynamic Emotion Wheel: Active Rating of Appraisals with a *K* Nearest Neighbours Parsimonios Computational Model
+
+The GEW is a theory-driven and validated instrument that has been widely adopted in different experimental contexts. Nevertheless, from the point of view of an awareness tool, it has two major shortcomings. First, its size: the graphical interface of the GEW is too wide to be implemented alongside some other content, such as learning material or environment. Second, it is limited to self-report, and it does not provide a way for the emotional information to be stored and visualized after the expression [@bersetVisualisationDonneesRecherche2018; @hegartyCognitiveScienceVisualspatial2011; @leonyProvisionAwarenessLearners2013]. In order to overcome these shortcomings, I took advantage of the emotional structure implemented into the GEW to build a parsimonious computational model that allows users to actively rate the two appraisal dimensions of the GEW and suggest a subset of subjective feelings that are compatible with that particular combination of appraisal dimensions.
+
+This sections begins with a brief overview of the DEW and then depicts how the emotional structure is fit into the tool with respect to the two main functions of an awareness tool: the expressing-displaying and the perceiving-monitoring function.
+
+### Overview of the Dynamic Emotion Wheel
+
+Introducing the overall interface of the DEW will ease the more detailed description of the specifics functions it serves. It is worth noting, though, that what is here presented is a configuration of the DEW that adopts and extends the same characteristics of the GEW. This is not, though, the only possible interface. The next chapter will introduce a research toolbox that precisely allows the configuration of different interfaces, which may be determined according to theoretical or practical needs of researchers interested in deploying the tool in their studies or practitioners aiming at implementing an EAT in their instructional design. 
+
+
+## Configuring the Dynamic Emotion Wheel: Theoretical and Applied Perspectives
+
+* What is an affective space
+* Circumplex Affective Spaces
+* Cartesian Plane Affective Spaces
+* Existing Affective Spaces
+* Create An Affective Space
+* The EATMINT Affective Space
+
+The core of the DEW is the underlying bi-dimensional affective space, which determines the relationship between the two affective dimensions and the subjective feelings. As illustrated in the previous chapter, in the case of the Geneva Emotion Wheel the two affective dimensions are Valence and Control/Power, which determine the disposition of twenty subjective feelings around a circumplex. The DEW-RT abstracts this structure in two ways. First, it provides the possibility to choose among any composition of two affective dimensions. This means that, even though the tool is deeply rooted in the Component Process Model theoretical framework (see ...), any affective space that is based on, or can be approximated to, a bi-dimensional structure can be adopted as an underlying model. Second, the DEW-RT allows any number of subjective feelings, as long as they can be mapped to the underlying bi-dimensional structure. In this regard, there are two possible structures of the affective space, which implement two different algorithms connecting the affective dimensions with the subjective feelings : (1) the circumplex structure, and (2) the Cartesian plane structure. 
+
+This section first proposes some examples of bi-dimensional affective spaces that can be found in the literature, and which are already available *out-of-the-box* in the DEW-RT. Next, using two existing affective spaces -- one circumplex and one Cartesian plane -- as sample, the section simulates the performance of the DEW sub-setting algorithm using a small set of the three subjective feelings and a bigger set of ten subjective feelings. Then, the section considers how new affective spaces can be built and shared through the DEW-RT. Finally, as an example, the construction of the EATMINT circumplex, used in the two empirical contributions of the thesis, is illustrated.
+
+### Existing Affective Spaces
+
+An affective space is a spatial representation of the nature of emotions. As a consequence, the affective space is both defined by, and reflects the underlying perspective of what an emotion is. 
+
+### Simulation of the Sub-Setting Alorithms
+
+```{r}
+dew_rt.sim_gew_graph_3
+```
+
+```{r}
+dew_rt.sim_gew_graph_10
+```
+
+
+### Creating and Sharing New Affective Spaces
+
+### The Example of the EATMINT Circumplex
+
+## Configuration of the Interface
+
+* Displaying-Expressing Emotions (appraisal dimensions, subjective feelings)
+* Monitoring-Perceiving Emotions (graphical representation of emotions)
+* Exporting the Configuration
+
+## Configuration of Experimental Settings
+
+* Login
+* Task
+* Data persitance
+* Data exportation
