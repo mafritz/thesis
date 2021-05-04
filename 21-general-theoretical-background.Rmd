@@ -11,12 +11,11 @@ library(kableExtra)
 
 This chapter provides an overview of the extant literature, combining different sources of scientific knowledge, which corroborate the interest for endowing distance learning settings with emotional awareness. The overall perspective adopted in the chapter is therefore rather inductive, with a collection of theories and empirical evidence that support the pertinence of emotional awareness. A *bona fide*, uncritical approach to the extant literature is warranted by two intertwined reasons. First, there is consensus among different scholars about the fact that the scientific study of emotion in learning -- and distance learning more specifically -- is a recent line of inquiry [@pekrunInternationalHandbookEmotions2014; @pekrunProgressOpenProblems2005; @cerneaSurveyTechnologiesRise2015; @arguedasOntologyEmotionAwareness2015; @bakerAffectiveLearningTogether2013; @graesserEmotionsAdvancedLearning2014; @eligioEmotionUnderstandingPerformance2012; @molinariEmotionFeedbackComputermediated2013; @lavoueEmotionAwarenessTools2020; @brackettPermissionFeelUnlocking2019; @reisAffectiveStatesComputersupported2018]. At such an early stage, a *loosening*, rather than a *tightening* approach can therefore help cross-fertilization and discover elements of interest [@fiedlerCycleTheoryFormation2004]^[This is limited, though, to the scientific inquiry, whereas in an applied context, caution should be taken not to *play with people's feelings*]. Second, considering the dependency of emotional awareness from technology in the context of distance learning, it remains to be determined whether emotional awareness can lead to theory formation, in the sense of a causal network of risky predictions about phenomena of interest, or it has *only* the potential to intervene as a technological support, regardless of its  explanatory power [@meehlAppraisingAmendingTheories1990]. In other words, if it were to be found that endowing distance learning with emotional awareness results in beneficial effects for learners, it may be *deployed* as-if, waiting for theoretical explanations to *tighten* its causal effects at a later stage [@fiedlerCycleTheoryFormation2004; @meehlAppraisingAmendingTheories1990; @scheelWhyHypothesisTesters2020]. 
 
-The chapters starts with an organized, but essential, overview of current trends in learning psychology and education sciences, which consider the interplay between emotion and learning as a crucial interaction to foster learning processes and outcomes. Second, it illustrates how the rationale behind the instrumentality of emotional awareness in distance learning settings emerges from the convergence of multiple disciplines and perspectives, comprising -- but not limited to -- psychological theories about the pivotal role emotion play at the intra- and inter-personal levels; trends in computer-mediated communication and collaboration to implement awareness tools in technology enhanced environments; and current perspectives in the field of affective computing, which aims at empowering learning environments with affect- and emotion-aware systems. The last part of the chapter points out some methodological challenges in the scientific inquiry of emotional awareness, which are meant to pave the way for the second chapter of the theoretical part of the thesis.
+The chapters starts with an organized, but essential, overview of current trends in learning psychology and education sciences, which consider the interplay between affect and learning as a crucial interaction to foster learning processes and outcomes. Second, it illustrates how the rationale behind the instrumentality of emotional awareness in distance learning settings emerges from the convergence of multiple disciplines and perspectives, comprising -- but not limited to -- psychological theories about the pivotal role affect plays at the intra- and inter-personal levels; trends in computer-mediated communication and collaboration to implement awareness tools in technology enhanced environments; and current perspectives in the field of affective computing, which aims at empowering learning environments with affect- and emotion-aware systems. The last part of the chapter points out some methodological challenges in the scientific inquiry of emotional awareness. One of these challenges, specifically, relates to differences in the interpretation and use of the concept *emotion*, which is a topic discussed at length in the next chapter. Until a formal definition of *emotion*, thus, the more general term *affect* is often adopted in the narrative structure of the text, whereas -- as stated in the introduction -- an effort will be made to maintain authors' use of the term adopted in their work.
 
-## Emotion and Learning
+## Affect and Learning
 
-
-### An Organized Overview of The Interplay Between Emotion and Learning or Education
+The interplay between affect and learning is being investigated at various level of granularity, from the micro-level of neuroscience [*e.g.*, @immordino-yangEmotionsLearningBrain2016] to the macro-level of how education curricula and institution should reform their programs in order to take affective experiences into account [*e.g.*, @brackettPermissionFeelUnlocking2019]. Rather than a layered analysis, though, this section proposes an organization in three non-mutually exclusive and highly intertwined categories: (1) research that focuses *primarily* on the effects of learning processes and outcomes on affect; (2) research that focuses *primarily* on the effects of affect on learning processes and outcomes; and (3) research that focuses *primarily* on how either or both directional effects can be mediated or moderated by various forms of socio-affective competences such as emotional intelligence, intrinsic or extrinsic emotion regulation, and the like. This division is adopted mainly for easing the illustration of various contributions and does not bear any particular effect on the rest of the manuscript. The main aim of the section is to depict an overall and growing cross-disciplinary and inter-disciplinary interest in considering learning as the results of cognitive, social, and affective interactions.
 
 (ref:tf-organized-interplay-emotion-learning-caption) Schema proposing and organized overview of the interplay between emotion and learning or education.
 
@@ -24,13 +23,21 @@ The chapters starts with an organized, but essential, overview of current trends
 knitr::include_graphics(here("figure/theory/learning-emotion-competence.png"))
 ```
 
-There is a growing consensus in the broader education research, including education psychology, in considering learning as the results of cognitive, social, and affective interactions [@bakerAffectiveLearningTogether2013; @brackettRULERTheoryDrivenSystemic2019; @immordino-yangEmotionsLearningBrain2016; @kreijnsIdentifyingPitfallsSocial2003; @naykkiSocioemotionalConflictCollaborative2014; @pekrunProgressOpenProblems2005]. The interplay between two complex and multifaceted concepts as *emotion* and *learning* inevitably leads, exponentially, to further complexity. Both emotion and learning, in fact, *happen* at overlapping and interacting levels, ranging from the *micro-level* of neurophysiological substrates of the brain to the *macro-level* of instructional designs and education systems that take into account -- or otherwise ignore -- learners' emotions. A thorough overview of the multitude of scenarios in which emotion and learning can interact is far beyond the scope of this contribution [for recent and overarching perspectives see for instance @brackettPermissionFeelUnlocking2019; @immordino-yangEmotionsLearningBrain2016; @pekrunEmotionsSchool2018; @pekrunInternationalHandbookEmotions2014].
+### The Effects of Learning on Affect
 
-### Intra-Personal Functions of Emotion
 
-### The Emotion As Social Information Theoretical Framework
 
-### Inter-Personal Functions of Emotion
+### The Effects of Affect on Learning
+
+### Socio-Affective Competences in Learning
+
+## The Rational Behind Emotional Awareness
+
+### Intra-Personal Functions of Affect
+
+#### The Emotion As Social Information Theoretical Framework
+
+### Inter-Personal Functions of Affect
 
 #### Social Functions of Emotion
 
@@ -46,24 +53,26 @@ The social and cultural function of emotion may therefore have been built upon a
 
 ## Affective Systems
 
-### Affective Computing
+As stated in the introduction, and EAT technically combines features of awareness tools, illustrated in the previous section, and of affective systems -- such as affect-aware or emotion-aware systems -- which are here broadly defined as computation and information systems, which explicitly target affective phenomena [@calvoFrontiersAffectAwareLearning2012; @feidakisReviewEmotionAwareSystems2016; @harleyDevelopingEmotionAwareAdvanced2017; @picardAffectiveComputing2000]. This section will gather both theoretical and applied contributions about affective systems, particularly in technology enhanced learning environments. This will provide the opportunity to relate, by comparison and contrasts, the implementation of an EAT as a technological artifact targeting affective phenomena, and emotion more particularly. 
 
-### Computational Models of Emotions
+### The Interactional Approach to Affective Computing
 
-### Taxonomies of Affective Systems in Learning Environments
+A first step in the process to position an EAT with respect to affective systems is to turn to the broad and relatively recent field named *affective computing* which refers to "computing
+that relates to, arises from, or deliberately influences emotions" [@picardAffectiveComputing2000, p. 3]. Picard^[Picard was the first to introduce the term *affective computing* and her experience is telling of how the study of emotion and affective computing more specifically have changed over the last few decades. In the introduction of her seminal book *Affective Computing*, Picard [-@picardAffectiveComputing2000] -- also cited in @boehnerHowEmotionMade2007, from which the idea to include this passage is taken, see below -- writes: "I never expected to write a book addressing emotions. My education has been dominated by science and engineering, and based on
+axioms, laws, equations, rational thinking, and a pride that shuns the ‘touchy-feely.’ Being a woman in a field containing mostly men has provided extra incentive to cast off the stereotype of ‘emotional female’ in favor of the logical behavior of a scholar".] [-@picardAffectiveComputing2009] identifies four, non mutually exclusive, research areas:
 
-## Distance Learning
+1. Technologies for sensing, recognizing, modeling, and predicting emotional and affective states;
+2. Methods for computers to respond intelligently and respectfully to handle perceived affective information;
+3. Technology for displaying emotional information or mediating the expression or communication of emotion; 
+4. Computational mechanisms that stimulate internal emotions or implement their regulatory and biasing functions.
 
-### Synchronous vs. Asynchrounous Distance Learning
+At first blush, the third research area stands out as the best match for an EAT. The description perfectly fits with the main purpose of an EAT, which resonates with all the features proposed by the description: it aims at displaying emotional information, *and* mediate the expression *and* communication of emotion. According to Boehner and colleagues [-@boehnerHowEmotionMade2007], though, this particular line of research has been neglected in affective computing, whose mainstream approach considers emotion as an internal and individual phenomenon. They identify this mainstream approach to emotion as *informational*, which they qualify as "rooted in a longer laboratory-science tradition of studying emotion in which subjective experience is considered suspect, to be replaced by objective measures" [@boehnerHowEmotionMade2007, p. 276]. The authors advocate instead an *interactional* approach, which (1) focus on how computers can help users understand their emotions, rather than how computers can understand users’ emotions; and (2) sees emotions as a cultural, dynamic and social phenomena, constructed in action and interaction. The position taken by Boehener and colleagues is very-well resumed by this passage that is worth citing at length, for it targets perfectly the main aim of an EAT (*ibid*. p. 287):
 
-### Individual vs. Collaborative Distance Learning
+> The role of affective systems is not to transmit pre-existing emotional units, but to provide a resource for emotional meaning-making. Success of such a system is measured by whether users find the system’s responses useful for interpreting, reflecting on, and experiencing their emotions. Evaluation does not aim at finding a user’s original, *true* emotions, but in tracking
+how emotions are constructed and interpreted over time, and correlating these dynamics with
+aspects of system design. (The use of italic here replaces the quotation marks in the original article)
 
-## Illustration and Discussion of Key Contributions
+In support of this claim, the articles (*ibid.*) illustrate and compare different affective systems that have either an *informatinal* or *interactional* approach. For instance, one *interactional* system pertained precisely to the notion of emotional awareness. Co-workers in a shared space were asked to fill a survey about their emotions in real-time and, according to their responses, an abstract painting projected on a wall changed background color, the number and cluster of dots, and the speed of movement in the animation as a function of aggregates and averages of the survey responses. The authors report that co-workers were puzzled by the abstract representation, which contributed in fostering the co-construction of emotional meaning-making advocated in the *interactional* approach.
 
-### Emotion Understanding and Performance During Computer-Supported Collaboration
-
-### Emotion Feedback During Computer-Mediated Collaboration
-
-### Towards Emotion Awareness Tools to Support Emotion and Appraisal Regulation in Academic Contexts
 
 ## Summary
