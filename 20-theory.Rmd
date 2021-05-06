@@ -1,2 +1,1 @@
-# Part I {.unnumbered}
-## Theoretical Foundations {.unnumbered}
+# Part I -- Theoretical Foundations {.unnumbered}

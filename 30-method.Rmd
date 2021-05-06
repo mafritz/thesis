@@ -1,2 +1,1 @@
-# Part II {.unnumbered}
-## Methodological Contribution {.unnumbered}
+# Part II -- Proof of Concept {.unnumbered}
