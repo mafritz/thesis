@@ -9,9 +9,7 @@ library(kableExtra)
 
 ```
 
-Being Emotional Awareness Tools (EAT) a recent subject of inquiry, there is still a lack of validated instruments to investigate the matter. This shortcoming is particularly relevant considering that the way emotional awareness is expressed and conveyed to others may be a major factor in determining and interpreting its effects. In other words, the EAT is not *simply* an auxiliary instrument [@meehlAppraisingAmendingTheories1990]; on the contrary, it is an integral part of the subject matter and therefore requires careful assessment on its own [@buderGroupAwarenessTools2011; @janssenGroupAwarenessTools2011]. 
 
-This chapter illustrates the core feature of the Dynamic Emotion Wheel (DEW), the theory-driven, self-report, and moment-to-moment emotion awareness tool that will be implemented and assessed in two distance learning settings in the empirical contributions of the thesis. The DEW was originally conceived and developed as a prototype during my internship in the EATMINT project [@fritzDynamicEmotionWheel2015; @fritzDynamicEmotionWheel2016; @fritzProvidingEmotionalAwareness2017; @fritzRealTimeEmotionalAwareness2016] and as the subject of my Master thesis [@fritzReinventingWheelEmotional2015]. A more thorough description of the conception and development can therefore be found in Fritz [-@fritzReinventingWheelEmotional2015]. This chapter recalls some of the key points of the DEW, in particular its connection with the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005] and its core feature of implementing an underlying emotional structure into the tool. Then, it extends this connection by suggesting that the use of the DEW activates the theoretical concept of emotional competence as defined by Scherer [-@schererComponentialEmotionTheory2007], which comprises three sub-competences: (1) the appraisal, (2) the communication, and (3) the regulation sub-competences.
 
 ## What is an Emotion?
 
