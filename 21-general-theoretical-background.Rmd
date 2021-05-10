@@ -139,6 +139,17 @@ Whereas affective systems in computer-mediated learning environments stem direct
 
 This section provides an overview of the extant literature related to the notion of *awareness* in computer-mediated learning environments, where awareness is here intended broadly as information about others, which is instrumental to one's own activity [@buderGroupAwarenessTools2011; @dourishAwarenessCoordinationShared1992; @schmidtProblemAwareness2002]. The section is primarily concerned with conceptual integration of awareness. A more practical overview of design principles and implementation techniques for awareness tools is already available in Fritz [-@fritzReinventingWheelEmotional2015], from which some major points at the crossing-over between technical and conceptual implementation are retrieved. 
 
+### Scripting Tools vs. Awareness Tools
+
+
+### Taxonomy and Features of Awareness Tools
+
+### Awareness as Social Presence and Reference
+
+### Awareness as Partner- and Mutual-Modeling
+
+### Known Issues with Awareness Tools
+
 * Type of awareness 
 * Social presence
 * Social reference
