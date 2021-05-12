@@ -165,11 +165,15 @@ Group awareness tools [*e.g.*, @buderGroupAwarenessTools2011; @engelmannKnowledg
 
 It is posited here that a group awareness strategy best suits the objectives to convey emotional awareness for the following reasons. First, it potentially minimizes the latency time between emotion experience and expression. Moment-to-moment emotion self-reporting is considered to be more reliable than retrospective self-report, and therefore it is worth endowing learners with the possibility to express their emotions at the very moment they want or can [@fuentesSystematicLiteratureReview2017; @maussMeasuresEmotionReview2009; @ritchieEvolutionSelfreportingMethods2016; @robinsonEpisodicSemanticKnowledge20020619]. The second reason directly follows the first, since a group awareness perspective also potentially minimizes the latency time before emotion information provided by others is perceived. In both cases, the gain in latency time is labeled as potential, because it depends on learners disposition to express or take emotional information into account, both from a situated or personality trait perspectives [@kringIndividualDifferencesDispositional1994; @vankleefHowEmotionsRegulate2009; @pashlerDualtaskInterferenceSimple1994] --- a factor discussed more thoroughly later in the chapter. Third, as already mentioned, the use of group awareness tool can be integrated into a scripting strategy [@millerScriptingAwarenessTools2015], which is consistent with the multipurpose vocation of EAT put forward in the thesis. This is particularly relevant considering that one of the main pitfalls identified in the use of group awareness tools "is taking for granted that social interaction automatically takes place just because an environment makes it technologically possible" [@kreijnsIdentifyingPitfallsSocial2003, p. 336]. For these reasons, the next section delves deeper into the literature about group awareness tools.
 
-### Features of Awareness Tools: Beyond the Face-to-Face Golden Standard
+### Current Trends in Research on Awareness Tools
+
+As stated in the preamble of the section, group awareness tools, hereafter shortened to awareness tools, are a recent research topic in computer-mediated learning environments, but have a more established tradition in computer-mediated communication and collaboration [@baltesComputerMediatedCommunicationGroup2002; @lickliderComputerCommunicationDevice1968; @fjermestadAnalysisCommunicationMode2004; @dourishAwarenessCoordinationShared1992; @grossUsercenteredAwarenessComputersupported2005; @grudinComputerSupportedCooperativeWork1994]. 
 
 "is the tendency to restrict social interaction to educational interventions aimed at cognitive processes while social (psychological) interventions aimed at socio-emotional processes are ignored, neglected or forgotten" [@kreijnsIdentifyingPitfallsSocial2003, p. 336]
 
 ### Awareness as Partner- and Mutual-Modeling
+
+### Synthesis
 
 ## The Rationale Behind Emotion Awareness Tools
 
