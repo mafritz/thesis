@@ -1,0 +1,16 @@
+# The Rationale Behind an Emotion Awareness Tool
+
+```{r rationale-eat-setup, include=FALSE, echo=FALSE}
+library(tidyverse)
+library(papaja)
+library(here)
+library(knitr)
+library(kableExtra)
+
+```
+
+## Intra-Personal Function of Emotion
+
+## Inter-Personal Function of Emotion
+
+## Abstract Model of the Functions of an Emotion Awareness Tool
