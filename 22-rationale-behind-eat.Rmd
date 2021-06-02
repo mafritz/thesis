@@ -23,9 +23,24 @@ The social and cultural function of emotion may therefore have been built upon a
 
 ## Abstract Model of the Functions of an Emotion Awareness Tool
 
-The information illustrated above, as well as in the previous chapter, can be integrated in an abstract model that depicts the functions allegedly carried out by an EAT. The proposed abstract model, thus, does not have the pretension to establish an absolute reference; on the contrary, it aims at visually implementing the different passages that are (or may be) assumed in the instrumentality of an EAT as a support to learning activities in computer-mediated environments. The model, depicted in Figure \@ref(fig:intro-thesis-scm-model-figure), take the perspective of a learner that disposes of an EAT in its computer-mediated learning environment. The model comprises boxes for four conceptual elements: (a) the learning activity, which may refer broadly to any computer-mediated environment implementing an instructional design; (b) intra-personal emotion, representing a single event or a set of events corresponding to the learners' expressed-displayed emotions; (c) inter-personal emotion, representing a single event or set of events corresponding to emotions expressed-displayed by other learners sharing the same environment, that the learner herself can therefore perceive-monitor; and (d) an overarching *meaning-making* process, which encompasses learner's effort to extrapolate instrumental information. The boxes are connected with directional arrows, numbered from 1 to 7, representing a series of processes that are (or may be) implicated in 
+The information illustrated above, as well as in the previous chapter, can be integrated in an abstract model that depicts the functions allegedly carried out by an EAT. The proposed abstract model does not have the pretension to establish an absolute reference; on the contrary, it aims at visually implementing the different passages that are (or may be) assumed in the instrumentality of an EAT as a support to learning activities in computer-mediated environments. The model, depicted in Figure \@ref(fig:intro-thesis-scm-model-figure), take the perspective of a learner that disposes of an EAT in its computer-mediated learning environment. The model comprises boxes for four conceptual elements: (a) the learning activity, which may refer broadly to any computer-mediated environment implementing an instructional design; (b) intra-personal emotion, representing a single event or a set of events corresponding to the learners' expressed-displayed emotions; (c) inter-personal emotion, representing a single event or set of events corresponding to emotions expressed-displayed by other learners sharing the same environment, that the learner herself can therefore perceive-monitor; and (d) an overarching *meaning-making* process, which encompasses learner's effort to extrapolate instrumental information. The boxes are connected with directional arrows, numbered from 1 to 7, representing a series of processes that are (or may be) implicated in each passage. The numbers are used for identifying the passages, but do not imply a fixed order, even though some processes may be built upon previous passages. The section provides a discussion of each passage (*i.e.*, each numbered arrow) more specifically.
 
 (ref:thesis-scm-caption) The EAT determines how an intra-personal emotion becomes inter-personal, and how the inter-personal emotions contribute to improve the shared understanding of the situation at hand. The situation may then trigger other intra-personal emotions.
+
+### From the Learning Activity to Intra-Personal Emotion
+
+### From Intra-Personal Emotion to Meaning-Making
+
+### From the Learning Activity to Intra-Personal Emotion
+
+### From Inter-Personal Emotion to Meaning-Making
+
+### From Intra-Personal Emotion to Inter-Personal Emotion
+
+### From Inter-Personal Emotion to Intra-Persoanl Emotion
+
+### From Meaning-Making to the Learning Activity
+
 
 ```{r intro-thesis-scm-model-figure, fig.cap="(ref:thesis-scm-caption)", fig.align="center", out.width="100%" }
 include_graphics(here("figure/intro/thesis-scm-model.png"))
