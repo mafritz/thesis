@@ -45,29 +45,52 @@ The information illustrated above, as well as in the previous chapter, can be in
 
 ### From the Learning Activity to Intra-Personal Emotion
 
-Passage #1 goes from the learning activity to an intra-personal emotion, implicating that the learning activity elicits emotions in oneself. An EAT may intervene in this passage in several ways, grouped here in a non exhaustive lists of X phenomena labeled for illustration purpose as *emotion alertness*, *emotion expression* and *emotion coercion*.
+Passage #1 goes from the learning activity to an intra-personal emotion, implicating that the learning activity elicits emotions in oneself. An EAT may intervene in this passage in several ways, grouped here in a non exhaustive lists of X phenomena labeled for illustration purpose as *emotion alertness* and *emotion conceptualization*.
 
-#### Emotion Alertness
+Emotion alertness broadly refers to the fact that the presence of the EAT represents a general reminder about the emergence of emotion in learning, and therefore may increase the *sensitivity* about emotional experience in general. In other words, the presence of the EAT may push learners to bestow to emotional self-awareness more attention that they would normally do without the presence of the EAT [@brackettRULERTheoryDrivenSystemic2019; @lavoueEmotionAwarenessTools2020; @molinariEmotionFeedbackComputermediated2013]. Emotion alertness may be induced to different degrees, depending on, for instance, whether the EAT is always available or not, and whether explicit prompts are frequently sent to learners [@csikszentmihalyiValidityReliabilityExperienceSampling2014; @shiffmanEcologicalMomentaryAssessment2008]. For instance, Molinari and colleagues [-@molinariEmotionFeedbackComputermediated2013] implemented an EAT into a computer-mediated collaborative task that reminded participants to self-report their emotions after five minutes since the last emotion expressed. 
 
-The presence of the EAT represents a general reminder about the emergence of emotion in learning, and therefore increase the *alertness* about emotional expriences. The reminder can operate at different levels of implication. It may concern a *gentle reminder* to be attentive to one's own emotions, that is, remind the learner that the learning activity can elicit emotions and therefore be attentive to situations in which emotions are triggered. The EAT may encourage emotional self-awareness more specifically, in the sense of a conscious introspection of how the learner position herself emotionally towards the situation at hand.
+Emotion conceptualization broadly refers to the mechanisms by which learners are planned to self-report their emotions, which may vary greatly according to a number of theoretical and technical aspects. For instance, there is often the tendency to divide emotion self-report tools in two categories, depending on whether they adopt a dimensional or a discrete perspective [@broekensAffectButtonMethodReliable2013; @fuentesSystematicLiteratureReview2017; @ritchieEvolutionSelfreportingMethods2016; @schererWhatAreEmotions2005]. 
 
-#### Emotion Expression
+In a dimensional approach, an emotion is conceptualized as a rating on a number of continuous criteria, among which the most frequently adopted ones are valence and arousal, but may also comprise dominance or, less frequently, other criteria 
 
+In a discrete approach,
 
-#### Emotion Coercion
+Less frequently, self-report tools attempt to combine the two approaches, as it is the case in the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005], depicted in more details in the next chapter, or the Mood Meter application associated with the RULER approach [@brackettRULERTheoryDrivenSystemic2019] mentioned in the previous chapter. 
+
+Depending on how emotion is conceptualized and, by extension, planned for self-report, the intra-personal awareness of emotion may be more or less (mis)guided, inducing learners to pay attention to some elements of their emotional experience that they will not necessarily consider in the same way, or with the same weight, without the EAT or depending on the specifics of the EAT at hand. 
 
 
 ### From Intra-Personal Emotion to Meaning-Making
 
-### From the Learning Activity to Intra-Personal Emotion
+Once an emotion or a set of emotions are self-reported, it is assumed that learners may extrapolate meaning from them. 
+
+### From the Learning Activity to Inter-Personal Emotion
+
+Passage #3 starts a complementary path with respect to passage #1, but from an inter-personal perspective, that is, concerning emotion in others learners sharing the same computer-mediated learning environment. This path may in fact be optional when the EAT is exclusively concerned with emotion self-awareness, whereas it becomes an integral part when the EAT is inspired from a Group Awareness Tool perspective. 
 
 ### From Inter-Personal Emotion to Meaning-Making
 
+EASI model.
+Normative use. 
+
 ### From Intra-Personal Emotion to Inter-Personal Emotion
 
-### From Inter-Personal Emotion to Intra-Persoanl Emotion
+Expression of emotion: emotion is made available to others depending on learners willingness to discole their emotional experience.
+
+Emotion influence.
+
+Emotion sharing.
+
+### From Inter-Personal Emotion to Intra-Personal Emotion
+
+Emotion comparison (e.g. affiliation or differentiation).
+Emotion contagion.
 
 ### From Meaning-Making to the Learning Activity
+
+Emotion is integrated into the learning activity, it modifies behavior (self-regulation, co-regulation, socially shared regulation).
+
+Modification of learning activity can trigger another emotion, creating cycle.
 
 
 ```{r intro-thesis-scm-model-figure, fig.cap="(ref:thesis-scm-caption)", fig.align="center", out.width="100%" }
