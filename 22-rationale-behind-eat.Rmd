@@ -25,11 +25,13 @@ Third,
 
 ## Intra-Personal Function of Emotion
 
-### Emotion as Cognition
+### Emotion and Cognition
 
-### Emotion as Motivation
 
-### Emotion as Regulation
+
+### Emotion and Motivation
+
+### Emotion and Regulation
 
 ## Inter-Personal Function of Emotion
 
@@ -42,6 +44,12 @@ The information illustrated above, as well as in the previous chapter, can be in
 (ref:thesis-scm-caption) The EAT determines how an intra-personal emotion becomes inter-personal, and how the inter-personal emotions contribute to improve the shared understanding of the situation at hand. The situation may then trigger other intra-personal emotions.
 
 ### From the Learning Activity to Intra-Personal Emotion
+
+Passage #1 goes from the learning activity to the emergence of an intra-personal event, or set of events, that may consciously be identified by the learner as being emotional in their nature. An EAT intervenes in the following passage at least in the following ways.
+
+First, the presence of the EAT represents a general reminder about the presence of emotion in learning. The reminder can operate at different levels of implication. It may concern a *gentle reminder* to be attentive to one's own emotions, that is, remind the learner that the learning activity can elicit emotions and therefore be attentive to situations in which emotions may be triggered. More specifically, the EAT may encourage emotional self-awareness more specifically, in the sense of a conscious introspection of how the learner position herself emotionally towards the situation at hand; or even more bluntly prompt the learner to frame the 
+
+
 
 ### From Intra-Personal Emotion to Meaning-Making
 
