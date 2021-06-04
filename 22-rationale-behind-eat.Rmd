@@ -57,18 +57,27 @@ In a dimensional approach, an emotion is conceptualized as a rating on a number 
 
 In a discrete approach,
 
-Less frequently, self-report tools attempt to combine the two approaches, as it is the case in the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005], depicted in more details in the next chapter, or the Mood Meter application associated with the RULER approach [@brackettRULERTheoryDrivenSystemic2019] mentioned in the previous chapter. 
+Less frequently, self-report tools attempt to combine the two approaches, as it is the case in the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005], depicted in more details in the next chapter; the Mood Meter application associated with the RULER approach [@brackettRULERTheoryDrivenSystemic2019] mentioned in the previous chapter; or the emot-control system by Feidakis and colleagues [-@feidakisProvidingEmotionAwareness2014].
+
+The Mood Meter application ...
+
+The emot-control system implemented by Feidakis and colleagues [-@feidakisProvidingEmotionAwareness2014] shows on the same interface (a) a circumplex of 14 discrete affective states, represented by stylized, and colored faces similar to smileys/emoticons, organized according to the valence x activation orthogonal axis; (b) 5 additional images of similar kind, but representing moods in a sort of 5-point Likert scale (*sad*, *unhappy*, *neutral*, *happy*, and *very happy*); (c) a free text input to type-in another emotion not listed; and (d) another free text input introduced by the field legend *Write more about your feelings*. 
 
 Depending on how emotion is conceptualized and, by extension, planned for self-report, the intra-personal awareness of emotion may be more or less (mis)guided, inducing learners to pay attention to some elements of their emotional experience that they will not necessarily consider in the same way, or with the same weight, depending on the specifics of the EAT at hand. 
 
 
 ### From Intra-Personal Emotion to Meaning-Making
 
-Once an emotion or a set of emotions are self-reported, it is assumed that learners may extrapolate meaning from them. 
+Once an emotion or a set of emotions are self-reported, it is assumed that learners may extrapolate meaning from the emotional information available. In this regard, information may be punctual, for example the last emotion or set of emotions displayed concurrently. Conversely, the system may also implement some form of data persistence, which allows to observe the comulation and the evolution of the emotional experience over a varying time span. Depending on the way emotion information is also graphically represented, emotional meaning-making can be guided by the system, which may privilege some form of representation (*e.g.*, changes over time) over another (*e.g.*, comulative frequency of the same emotion expressed).
+
+Meaning-making is also tightly related to the way emotion is displayed through the system (passage #1), not only from a technical standpoint -- since the information available is determined by what information is inserted into the system -- but also conceptually. If emotion is considered from a dimensional standpoint, learners will extrapolate meaning from the extant criteria through which dimensions are rated. On the contrary, in a discrete emotion approach, learners extrapolate meaning from an *information unity* that is supposed to provide unique meaning compared to other possible choices. Finally, if the system combines dimensional and discrete approach, learners can extrapolate meaning from both. 
+
+The system may also influence meaning-making by adding contextual information to the way emotion is displayed. For instance, Molinari and colleagues [-@molinariEMORELOutilReporting2016] developed a self-reporting system from an Experience Sampling Method [@csikszentmihalyiValidityReliabilityExperienceSampling2014] perspective, the EMORE-L (EMOtion REport for E-Learning), which combine a discrete emotion approach with a series of contextual questions that learners are asked before and after selecting one or more discrete emotions between 8 possible choices, plus a neutral option. The system proposes 8 corollary questions spanning (a) situational aspects, *e.g.*, what they were doing; (b) evaluative circumstances, *e.g.*, to what extent learners felt in control of the situation; (c) social implications, *e.g.*, to what extent learner wishes to share her experience with other colleagues; and (d) mutual-modeling perspective, *i.e.*, does the learner know what other are experiencing, and does she thinks her colleagues know what she is experiencing. 
+
 
 ### From the Learning Activity to Inter-Personal Emotion
 
-Passage #3 starts a complementary path with respect to passage #1, but from an inter-personal perspective, that is, concerning emotion in others learners sharing the same computer-mediated learning environment. This path may in fact be optional when the EAT is exclusively concerned with emotion self-awareness, whereas it becomes an integral part when the EAT is inspired from a Group Awareness Tool perspective. 
+Passage #3 starts a complementary path with respect to passages #1 and #2, but from an inter-personal perspective, that is, concerning emotion in others learners sharing the same computer-mediated learning environment with the learner herself. This path may in fact be optional when the EAT is exclusively concerned with emotion self-awareness [*e.g.*, @lavoueEmotionAwarenessTools2020], whereas it becomes an integral part when the EAT is inspired from a Group Awareness Tool perspective [*e.g.*, @avrySharingEmotionsContributes2020; @eligioEmotionUnderstandingPerformance2012; @feidakisProvidingEmotionAwareness2014; @molinariEmotionFeedbackComputermediated2013]. 
 
 ### From Inter-Personal Emotion to Meaning-Making
 
