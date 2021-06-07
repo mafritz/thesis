@@ -43,6 +43,10 @@ The information illustrated above, as well as in the previous chapter, can be in
 
 (ref:thesis-scm-caption) The EAT determines how an intra-personal emotion becomes inter-personal, and how the inter-personal emotions contribute to improve the shared understanding of the situation at hand. The situation may then trigger other intra-personal emotions.
 
+```{r intro-thesis-scm-model-figure, fig.cap="(ref:thesis-scm-caption)", fig.align="center", out.width="100%" }
+include_graphics(here("figure/intro/thesis-scm-model.png"))
+```
+
 ### From the Learning Activity to Intra-Personal Emotion
 
 Passage #1 goes from the learning activity to an intra-personal emotion, implicating that the learning activity elicits emotions in oneself. An EAT may intervene in this passage in several ways, grouped here in a non exhaustive lists of X phenomena labeled for illustration purpose as *emotion alertness* and *emotion conceptualization*.
@@ -85,7 +89,7 @@ Normative use.
 
 ### From Intra-Personal Emotion to Inter-Personal Emotion
 
-Expression of emotion: emotion is made available to others depending on learners willingness to discole their emotional experience.
+Expression of emotion: emotion is made available to others depending on learners willingness to disclose their emotional experience.
 
 Emotion influence.
 
@@ -101,8 +105,3 @@ Emotion contagion.
 Emotion is integrated into the learning activity, it modifies behavior (self-regulation, co-regulation, socially shared regulation).
 
 Modification of learning activity can trigger another emotion, creating cycle.
-
-
-```{r intro-thesis-scm-model-figure, fig.cap="(ref:thesis-scm-caption)", fig.align="center", out.width="100%" }
-include_graphics(here("figure/intro/thesis-scm-model.png"))
-```
