@@ -49,8 +49,6 @@ Second, emotions play an inter-personal role in social interactions [see among o
 
 Fourth, learners involved in a computer-mediated, technology enhanced learning activity can benefit from cues about the presence of their colleagues and -- especially in a collaborative setting -- from a shared understanding of the situation at hand [see among others @molinariKnowledgeInterdependencePartner2009; @roschelleConstructionSharedKnowledge1995; @sanginFacilitatingPeerKnowledge2011; @suthersTechnologyAffordancesIntersubjective2006; @engelmannKnowledgeAwarenessCSCL2009; @kirschnerAwarenessCognitiveSocial2015; @kreijnsSocialAspectsCSCL2013; @janssenGroupAwarenessTools2011; @kreijnsIdentifyingPitfallsSocial2003; @dillenbourgEvolutionResearchComputersupported2009; @dillenbourgWhatYouMean1999; @janssenCoordinatedComputerSupportedCollaborative2013; @tuRelationshipSocialPresence2002].
 
-```
-
 ## Thesis Perspective
 
 The thesis adopts primarily an affective science perspective implemented with a human-computer interaction approach. That is, the theoretical framework of reference will be mainly drawn from the inter-disciplinary field of affective science -- favoring the psychological perspective in case of *conflict* -- with the intent to implement these theories in a computational system (hopefully) adopted by users in a distance learning environment. Theories from learning and education sciences will be, thus, integrated as corollary, with a lesser involvement in critically evaluating or contributing to them (see next section). In other words, it is beyond the scope of the thesis to contribute in determining whether emotional awareness can lead to improving learning processes and, especially, outcomes. 
