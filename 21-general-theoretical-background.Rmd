@@ -1,4 +1,4 @@
-# Theoretical Convergence About the Instrumentality of Emotional Awareness in Distance Learning Settings
+# Theoretical Convergence About the Instrumentality of Affective Phenomena in Computer-Mediated Learning Environments
 
 ```{r theoretical-background-setup, include=FALSE, echo=FALSE}
 library(tidyverse)

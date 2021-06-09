@@ -49,10 +49,6 @@ Second, emotions play an inter-personal role in social interactions [see among o
 
 Fourth, learners involved in a computer-mediated, technology enhanced learning activity can benefit from cues about the presence of their colleagues and -- especially in a collaborative setting -- from a shared understanding of the situation at hand [see among others @molinariKnowledgeInterdependencePartner2009; @roschelleConstructionSharedKnowledge1995; @sanginFacilitatingPeerKnowledge2011; @suthersTechnologyAffordancesIntersubjective2006; @engelmannKnowledgeAwarenessCSCL2009; @kirschnerAwarenessCognitiveSocial2015; @kreijnsSocialAspectsCSCL2013; @janssenGroupAwarenessTools2011; @kreijnsIdentifyingPitfallsSocial2003; @dillenbourgEvolutionResearchComputersupported2009; @dillenbourgWhatYouMean1999; @janssenCoordinatedComputerSupportedCollaborative2013; @tuRelationshipSocialPresence2002].
 
-(ref:thesis-scm-caption) The EAT determines how an intra-personal emotion becomes inter-personal, and how the inter-personal emotions contribute to improve the shared understanding of the situation at hand. The situation may then trigger other intra-personal emotions.
-
-```{r intro-thesis-scm-model-figure, fig.cap="(ref:thesis-scm-caption)", fig.align="center", out.width="100%" }
-include_graphics(here("figure/intro/thesis-scm-model.png"))
 ```
 
 ## Thesis Perspective
