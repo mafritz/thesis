@@ -71,13 +71,13 @@ This section first proposes an overview of model and its components according to
 
 ### Overall Description of the Model
 
-The CPM adopts an evolutionary perspective "based on the idea that during evolution, emotion replaced instincts in order to allow for more flexible response to events in a complex environment" [@schererComponentProcessModel2009 p. 93].
+The CPM adopts a functional perspective according to which "[e]motions have developed in the course of evolution to replace rigid instincts or stimulus-response chains by a mechanism that allows flexible adaptation to environmental contingencies by decoupling stimulus and response, creating a latency time for response optimization" [@schererComponentProcessModel2010, p. 48]. Response optimization emerges as the result from the synchronization of five organismic subsystems performing specific functions. The state of each subsystem during an emotion episode corresponds to one of the five components of the model, namely: (1) the cognitive, (2) the neurophysiological, (3) the motivational, (4) the motor expression, and (2) the subjective feeling components. Table @\ref(tab:tf-cpm-components-table) (*ibid*, p. 49) lists the full association between functions, organismic subsystems, and emotion component in the model.
 
 (ref:tf-cpm-subcomponents-caption) Relationships between organismic subsystems and the functions and components of emotion. Reproduced from @schererComponentProcessModel2010, original table 2.1.1, p. 49.
 
 ```{r tf-cpm-components-table}
 tf.cpm_components <- tibble(
-  `Evaluation function` = c("Evaluation of objects and events", "System regulation", "Preparation and direction of action", "Communication of action and behavioral intention", "Monitoring of internal state and orgnism-environment interaction"),
+  `Emotion function` = c("Evaluation of objects and events", "System regulation", "Preparation and direction of action", "Communication of action and behavioral intention", "Monitoring of internal state and orgnism-environment interaction"),
   `Organismic subsystem and major substrata` = c("Information processing (CNS)", "Support (CNS, NES, ANS)", "Executive (CNS)", "Action (SNS)", "Monitor (CNS)"),
   `Emotion component` = c("Cognitive component", "Neurophysiological component", "Motivational component", "Motor expression component", "Subjective feeling component")
 )
@@ -97,6 +97,8 @@ tf.cpm_components %>%
     general = "Abbreviations: CNS-Central Nervous System; NES-Neuroendocrine System; ANS-Autonomic Nervous System; SNS-Somatic Nervous System.", threeparttable = TRUE
   )
 ```
+
+According to the CPM, thus, an emotion is defined as "*an episode of interrelated, synchronized changes in the states of all or most of the five organismic subsystems in response to the evaluation of an external or internal stimulus event as relevant to major concerns of the organism*" [@schererWhatAreEmotions2005, p. 697, italic in the text].
 
 (ref:tf-cpm-general-model-adapted-caption) The dynamic architecture of the component process model. Adapted, with minor labeling and graphical modifications, from the original figure 2.1.1 in @schererComponentProcessModel2010, p. 50.
 
