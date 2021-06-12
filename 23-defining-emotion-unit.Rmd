@@ -125,11 +125,15 @@ knitr::include_graphics(here("figure/theory/cpm-model-adapted.png"))
 * Explain the threeparti
 * GRID
 
-## Linking Appraisals and Subjective Feeling
+## Corolollary Assumptions of the Component Process Model
 
-### The GRID Instrument
+### Emotion as a Distinct Affective Phenomenon
 
-### The Geneva Emotion Wheel
+### Emotional Competence from a Componential Perspective
+
+### Emotion Meaning-Making: the GRID Instrument
+
+### Emotion Self-Report: the Geneva Emotion Wheel
 
 The complexity and diversity in the field of emotion theories is reflected in different approaches on how emotions should be assessed and measured [@boehnerHowEmotionMade2007; @cerneaSurveyTechnologiesRise2015; @maussMeasuresEmotionReview2009; @mortillaroEmotionsMethodsAssessment2015; @schererWhatAreEmotions2005]. In a componential approach to emotion, ideally, all aspects of the synchronized and unfolding process should be taken into account [@schererWhatAreEmotions2005]. Measuring all these aspects at once, though, requires dedicated material, some of which is difficult or impossible to deploy outside a laboratory. Self-report remains therefore a widely adopted method to ask a person about her emotional experience, either through *paper-and-pencil-like* questionnaire  [e.g. @harmon-jonesDiscreteEmotionsQuestionnaire2016; @pekrunMeasuringEmotionsEpistemic2016], or more elaborated self-report tools [see among others @broekensAffectButtonMethodReliable2013; @desmet2003measuring; @schererWhatAreEmotions2005;  @siegertAppropriateEmotionalLabelling2011; @bradleyMeasuringEmotionSelfAssessment1994; @caicedoHowYouFeel2006; @isomursuExperimentalEvaluationFive2007; @molinariEMORELOutilReporting2016].  With respect to more elaborate tools in particular, Scherer [-@schererWhatAreEmotions2005, p. 721] advocates some of the characteristics an emotion self-report tool should provide:
 
