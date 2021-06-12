@@ -114,20 +114,70 @@ After a brief overview of the overall model, the next subsections focus on the t
 
 ### The Appraisal Module: Appraisals as Sequential Evaluation Checks
 
-The appraisal module may be considered the most characteristic of the CPM for two intertwined reasons. First, it bridges cognition and emotion in a functional perspective [@leventhalRelationshipEmotionCognition1987], avoiding thus the pitfalls of the opposition between affective and cognitive, which recent developments in affective science are progressively dismissing in favor of interacting or even integrating perspectives [@dukesRiseAffectivism2021; @pessoaCognitiveemotionalBrainInteractions2013]. Second, it plays a pivotal role in differentiating the CPM from other appraisal theories (see above), for the CPM makes bold assumptions about how distinctive appraisal patterns lead to distinctive emotional episodes [@schererDynamicArchitectureEmotion2009a; @schererHumanEmotionExperiences2013; @schererStudyingEmotionantecedentAppraisal1993; @schererEmotionProcessEvent2019]. In other words, the model explicitly assume a causal mechanism instantiated by the appraisal module, which determines the unfolding emotional episode in terms of response-patterning and integration/categorization.
+The appraisal module may be considered the most characteristic of the CPM for two intertwined reasons. First, it bridges cognition and emotion in a functional perspective [@leventhalRelationshipEmotionCognition1987], avoiding thus the pitfalls of the opposition between affective and cognitive, which recent developments in affective science are progressively dismissing in favor of interacting or even integrating perspectives [@dukesRiseAffectivism2021; @pessoaCognitiveemotionalBrainInteractions2013]. Second, it plays a pivotal role in differentiating the CPM from other appraisal theories (see above), for the CPM makes bold assumptions about how distinctive appraisal patterns lead to distinctive emotional episodes [@schererDynamicArchitectureEmotion2009; @schererHumanEmotionExperiences2013; @schererStudyingEmotionantecedentAppraisal1993; @schererEmotionProcessEvent2019]. In other words, the model explicitly assume a causal mechanism instantiated by the appraisal module, which determines the unfolding emotional episode in terms of response-patterning and integration/categorization.
 
-The CPM's appraisal module is built around the central notion of Sequential Evaluation Check (SEC), that is, a set of appraisal criteria the event, situation or behavior is evaluated against [@schererAppraisalConsideredProcess2001; @schererDynamicArchitectureEmotion2009; @schererNatureDynamicsRelevance2013]. According to the CPM, these appraisal criteria can not only be enumerated, but also determined with respect to their timing in achieving *preliminary closure* in information processing, that is, before the result of the evaluation can be integrated by other SECs or components of the model in the unfolding emotional process [see @schererNatureDynamicsRelevance2013 for a recent discussion]. The CPM identifies a total of 14 SECs, which can be organized in four groups: (1) relevance, (2) implications/consequences, (3) coping potential, and (4) norm compatibility.   
+The CPM's appraisal module is built around the central notion of Sequential Evaluation Check (SEC), that is, a set of appraisal criteria the event, situation or behavior is evaluated against [@schererAppraisalConsideredProcess2001; @schererDynamicArchitectureEmotion2009; @schererNatureDynamicsRelevance2013]. According to the CPM, these appraisal criteria can not only be enumerated, but also determined with respect to their timing in achieving *preliminary closure* in information processing, that is, before the result of the evaluation can be integrated by other SECs or components of the model in the unfolding emotional process [see @schererNatureDynamicsRelevance2013 for a recent discussion]. The CPM identifies a total of 13 SECs, listed in Table ..., which can be grouped in correspondence with four major appraisal objectives in adapting to a given event [@schererDynamicArchitectureEmotion2009; @schererNatureDynamicsRelevance2013]:
 
+* *Relevance*: how relevant is this event for me?
+* *Implications/Consequences*: what are the implications or consequences of this event and how do they affect my well-geing and my imeidate or long-term goals?
+* *Coping potential*: how well can I cope with or adjust to these consequences?
+* *Normative significance*: what is the significance of this event for my self-concept and for social norms and value?
 
-### The Response-Patterning Module: Efferent Manifestations, What Is Missing Without Them?
+(ref:tf-cpm-secs-caption) Stimulus evaluation cjecks, organized in four groups, illustrated with typical features describing the event or the effects on the person. Retrieved from original Table 1 in @schererNatureDynamicsRelevance2013, p. 151
+```{r tf-cpm-secs}
+tf.secs <- tibble(
+  `Stimulus evaluation checks` = c("Novelty", "Intrinsic pleasantness", "Goal/need pertinence", "Causal attribution", "Outcome probability", "Discrepancy from expectation", "Goal/need conduciveness", "Urgency", "Control", "Power", "Adjustment", "Internal standards", "External standards"),
+  `Event or behavior/person` = c(
+    "Event is sudden, familiar, unpredictable",
+    "Event is in itself un/pleasant for the person",
+    "Event is important and relevant for person’s goals or needs",
+    "Event was caused by the person’s own/somebody else’s behavior/chance; caused un/intentionally",
+    "Consequences of the event are predictable",
+    "Event confirmed/is inconsistent with expectations",
+    "Consequences of the event are positive/negative for person",
+    "Event required an immediate response",
+    "Person can control the consequences of the event",
+    "Person has power over the consequences of the event",
+    "Person can live with the consequences of the event",
+    "Event incongruent with own standards and self-ideals",
+    "Event violated laws or socially accepted norms"
+  )
+)
+
+tf.secs %>% 
+  kable(
+    caption = "(ref:tf-cpm-secs-caption)\\label{tab:tf-cpm-secs}",
+    caption.short = "CPM list of SECs",
+    longtable = TRUE,
+    booktabs = TRUE,
+  ) %>% 
+  kable_styling(full_width = TRUE) %>%
+  pack_rows("Relevance", 1, 3) %>% 
+  pack_rows("Implications/consequences", 4, 8) %>% 
+  pack_rows("Coping potential", 9, 11) %>% 
+  pack_rows("Norm compatibility", 12, 13) %>% 
+  column_spec(1, width = "5.5cm")
+  
+```
+
+The evaluation of SECs can be executed at various levels of processing, recently identified by Scherer [-@schererNatureDynamicsRelevance2013] in four levels: 
+
+>I have further developed the notion of levels of processing and now postulate four such levels (entailing different neural structures and circuits): (a) a low sensorimotor level with a pattern-matching mechanism that is largely genetically determined, using criteria consisting of appropriate templates; (b) a *schematic* level, based on memory traces from social learning processes and occurring in a fairly automatic, unconscious fashion; (c) an *association* level, involving various cortical association areas, which may occur automatically and unconsciously or in a deliberate, conscious fashion; and (d) a conceputal level, involving propositional knowledge and underlying cultural meaning systems, requiring consciousness and effortful calculations in prefrontal cortical areas. --- @schererNatureDynamicsRelevance2013, p.151
+
+Furthermore, appraisal criteria are also bidirectionally linked with many cognitive functions such as attention, memory, and reasoning, as well as motivational factors and representations of the self (see @schererDynamicArchitectureEmotion2009). As a consequence, the specific appraisal pattern that emerges is determined by situational factors, but also by more stable structures that can lead to certain patterns to emerge more or less frequently (*e.g.*, the tendency of a student to avoid public speaking as a result of past experiences). In the meantime, the fact that many elements concur in determining the specific appraisal profile implies that an evaluation may cause the emotional episode to derail from adaptive binaries and lead to inefficient or even harming responses to events, such as in the case of excessive anxiety or fear in taking an exam [@pekrunControlValueTheoryAchievement2006; @shumanConceptsStructuresEmotions2014].
+
+### The Response-Patterning Module: Efferent Manifestations and Action Tendencies
 
 * Facial expressions as appraisal cues
+* Action tendencies
 
 
 ### The Integration/Categorization Module: Sbjective Feeling As Emotion Meaning Making
 
 * Explain the threeparti
 * GRID
+
+### Synthesis
 
 ## Corolollary Assumptions of the Component Process Model
 
