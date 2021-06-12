@@ -71,15 +71,15 @@ This section first proposes an overview of model and its components according to
 
 ### Overall Description of the Model
 
-The CPM adopts a functional perspective according to which "[e]motions have developed in the course of evolution to replace rigid instincts or stimulus-response chains by a mechanism that allows flexible adaptation to environmental contingencies by decoupling stimulus and response, creating a latency time for response optimization" [@schererComponentProcessModel2010, p. 48]. Response optimization emerges as the result from the synchronization of five organismic subsystems performing specific functions. The state of each subsystem during an emotion episode corresponds to one of the five components of the model, namely: (1) the cognitive, (2) the neurophysiological, (3) the motivational, (4) the motor expression, and (2) the subjective feeling components. Table @\ref(tab:tf-cpm-components-table) (*ibid*, p. 49) lists the full association between functions, organismic subsystems, and emotion component in the model.
+The CPM adopts a functional perspective according to which "[e]motions have developed in the course of evolution to replace rigid instincts or stimulus-response chains by a mechanism that allows flexible adaptation to environmental contingencies by decoupling stimulus and response, creating a latency time for response optimization" [@schererComponentProcessModel2010, p. 48]. Response optimization emerges as the result from the synchronization of five organismic subsystems performing specific functions. The state of each subsystem during an emotion episode corresponds to one of the five components of the model, namely: (1) the cognitive, (2) the neurophysiological, (3) the motivational, (4) the motor expression, and (2) the subjective feeling components. Table \@ref(tab:tf-cpm-components-table) lists the full association between functions, organismic subsystems, and emotion component in the model. According to the CPM, thus, an emotion is defined as "*an episode of interrelated, synchronized changes in the states of all or most of the five organismic subsystems in response to the evaluation of an external or internal stimulus event as relevant to major concerns of the organism*" [@schererWhatAreEmotions2005, p. 697, italic in the text]. 
 
-(ref:tf-cpm-subcomponents-caption) Relationships between organismic subsystems and the functions and components of emotion. Reproduced from @schererComponentProcessModel2010, original table 2.1.1, p. 49.
+(ref:tf-cpm-subcomponents-caption) Relationships between organismic subsystems and the functions and components of emotion. Reproduced from @schererWhatAreEmotions2005, original table 1, p. 698.
 
 ```{r tf-cpm-components-table}
 tf.cpm_components <- tibble(
-  `Emotion function` = c("Evaluation of objects and events", "System regulation", "Preparation and direction of action", "Communication of action and behavioral intention", "Monitoring of internal state and orgnism-environment interaction"),
+  `Emotion function` = c("Evaluation of objects and events", "System regulation", "Preparation and direction of action", "Communication of reaction and behavioral intention", "Monitoring of internal state and orgnism-environment interaction"),
   `Organismic subsystem and major substrata` = c("Information processing (CNS)", "Support (CNS, NES, ANS)", "Executive (CNS)", "Action (SNS)", "Monitor (CNS)"),
-  `Emotion component` = c("Cognitive component", "Neurophysiological component", "Motivational component", "Motor expression component", "Subjective feeling component")
+  `Emotion component` = c("Cognitive component (appraisal)", "Neurophysiological component (bodily symptoms)", "Motivational component (action tendencies)", "Motor expression component (facial and vocal expression)", "Subjective feeling component (emotional experience)")
 )
 
 tf.cpm_components %>% 
@@ -98,13 +98,19 @@ tf.cpm_components %>%
   )
 ```
 
-According to the CPM, thus, an emotion is defined as "*an episode of interrelated, synchronized changes in the states of all or most of the five organismic subsystems in response to the evaluation of an external or internal stimulus event as relevant to major concerns of the organism*" [@schererWhatAreEmotions2005, p. 697, italic in the text].
+The CPM belongs to the appraisal family of emotion theories because it states that the coordination and synchronization of the components during an emotion episode is driven by the cognitive evaluation of the situation, that is, by how the situation is subjectively appraised by the person [@schererWhatAreEmotions2005]. The five components intertwine so that a variation in one fo them may lead to modifications in others, modifiyng thus the net effect of the coordination and synchronization. As stated by Scherer [-@schererMeasuringMeaningEmotion2013]:
+
+>Briefly put, the CPM suggests that the event and its consequences are appraised with a set of criteria on multiple levels of processing, producing a motivational effect or action tendency that often changes or at least modifies the status quo. Specifically, the appraisal results and the concomitant motivational changes will produce efferent effects in the autonomic nervous system (in the form of somatovisceral changes), and motor expressions are centrally represented and constantly fused in a multimodal integration area (with continuous updating as events and appraisals change). Parts of this central integrated representation may then become conscious and subject to assignment to fuzzy emotion categories, as well as being labeled with emotion words, expressions, or metaphors --- @schererMeasuringMeaningEmotion2013, p. 13
+
+The process can be understood in terms of input/output when the model is organized in three modules, as graphically represented in Figure \@ref(fig:tf-cpm-general-model-adapted-caption), adapted from @schererComponentProcessModel2010: (1) the appraisal module, (2) the response-patterning module, and (3) the integration/categorization module. From the left-hand side of the model, an event, behavior or situation (the input) is subject to a multilevel appraisal, that is, cognitively evaluated against a number of appraisal criteria. This evaluation leads to the patterning of a response, which comprises three out of the five organismic subsystems: (a) the motivational component, which prepares the organism to action, even if this action is not necessarily executed; (b) the neurophysiological component, which orchestrates the allocation of resources accordingly; and (c) the motor expression component, which is responsible of the emergence of the underlying process to the *surface* via efferent manifestations, providing communicative cues, such as facial expressions, vocal prosody, or body postures. Finally, in the integration/categorization module on the right-hand side, the whole process -- that is, the net effect of the appraisal and response-patterning -- is integrated in a central representation, the feeling, of which the person may or may not be conscious. If she is conscious, the person may recur to her emotional lexicon in an effort to label the feeling, which in that case becomes the subjective feeling, that is, the output of the conscious output of the whole process.
 
 (ref:tf-cpm-general-model-adapted-caption) The dynamic architecture of the component process model. Adapted, with minor labeling and graphical modifications, from the original figure 2.1.1 in @schererComponentProcessModel2010, p. 50.
 
 ```{r tf-cpm-general-model-adapted, fig.align="center", fig.cap="(ref:tf-cpm-general-model-adapted-caption)", out.width="100%"}
 knitr::include_graphics(here("figure/theory/cpm-model-adapted.png"))
 ```
+
+
 
 ### The Appraisal Module: Appraisals as Sequential Evaluation Checks
 
