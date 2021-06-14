@@ -194,7 +194,11 @@ knitr::include_graphics(here("figure/theory/cpm-subjective-feeling.jpg"))
 
 ### Synthesis
 
-## Corolollary Assumptions of the Component Process Model
+
+
+>if one knows the results of an individual’s event appraisal on major checks, one can approximately predict what kind of emotion he or she will most likely experience (or more precisely, what label the person is likely to use to refer to the experience). -- @schererDynamicArchitectureEmotion2009, p. 1326
+
+## Corolollaries to the Component Process Model
 
 ### Emotion as a Distinct Affective Phenomenon
 
