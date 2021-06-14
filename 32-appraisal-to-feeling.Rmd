@@ -14,7 +14,7 @@ source(here("data", "dew-rt", "dew-rt-export.R"))
 
 This chapter illustrates a parsimonious computational model inspired by the Component Process Model (CPM) theoretical framework that links appraisals criteria and subjective feeling. As a reminder, appraisals criteria in appraisal theories of emotions -- and the CPM more specifically -- are cognitive evaluation of an event, which determine emotion elicitation and differentiation. The subjective feeling, on the other hand, is the result of a highly dynamic and cumulative process, instantiated by appraisal, that coalesces in an overall emotional experience, from which the person may extrapolate meaning by recurring to natural language words or idioms that best convey its ineffable nature. In previous works, I have set forth the foundations of a prototype of an EAT, named *Dynamic Emotion Wheel* for its relationship with the Geneva Emotion Wheel illustrated in Part I of the thesis, which already explored the possibility to use active ratings of appraisal criteria to determine a set of subjective feelings most likely to occur, given the specific evaluation of the appraisal criteria. Previous work was nevertheless mainly driven by usability concerns emerged in empirical contributions using a provisional EAT [@molinariEmotionFeedbackComputermediated2013]. As it is often the case with usability issues, though, they were only the tip of the iceberg of more fundamental issues to be addressed, which initialized the quest for a better concept of an EAT. This chapter therefore builds on previous work in an attempt to bring an EAT even closer to appraisal theories of emotion, and the CPM more specifically.
 
-The chapter starts by briefly describing previous work on the Dynamic Emotion Wheel. Then, it extends on it by implementing a *k-nearest neighbor* approach to the relationship between appraisals and subjective feeling. Harnessing the abstract concept of an *N-dimensional* affective space, a parsimonious computational model can link one or more appraisal criteria with a set of subjective feelings that ar most likely to correspond with the specific appraisal profile. While presenting the abstract model, existing affective spaces will be used to illustrate the concept in more concrete terms. At the end of the chapter, the core principle of an appraisal-driven EAT will emerge, paving the way to the possibility of configuring it according to theoretical or practical needs.
+The chapter starts by briefly describing previous work on the Dynamic Emotion Wheel. Then, it extends on it by implementing a *k-nearest neighbor* approach to the relationship between appraisals and subjective feeling. Harnessing the abstract concept of an *N-dimensional* affective spA, a parsimonious computational model can link one or more appraisal criteria with a set of subjective feelings that ar most likely to correspond with the specific appraisal profile. While presenting the abstract model, existing affective spAs will be used to illustrate the concept in more concrete terms. At the end of the chapter, the core principle of an appraisal-driven EAT will emerge, paving the way to the possibility of configuring it according to theoretical or practical needs.
 
 ## The Dynamic Emotion Wheel
 
@@ -29,9 +29,35 @@ regulating and reflecting on emotions.
 
 ## A Parsimonious Computational Model Based on a *K-Nearest Neighbor* Approach
 
-### One-Dimensional Affective Spaces
+The bi-dimensional mechanism of the DEW can be abstracted according to the working definition of emotion provided by @mulliganWorkingDefinitionEmotion2012, specifically the points about appraisals: (a) an emotion *is triggered by at least one appraisal*, and (2) an emotion *is guided by at least one appraisal*. In other words, an emotional episode is elicited and differentiated according to at least 1, and up to *N*, appraisal criteria. 
 
-### Bi-Dimensional Affective Spaces
+To ease the illustration of the parsimonious computational model, the section adopts the following notation:
+
+* $E$ stands for *Appraisal **E**valuation*, that is, the hypothetical value that a cognitive evaluation can have on a given set of appraisal criteria $E_1$, $E_2$, ..., $E_n$. In concrete terms, $E$ represents the rating of a person asked to evaluate one or more appraisal dimensions. For instance, if there was only one appraisal, say, *Novelty*, than $E$ assumes a value determined by the extent to which the person evaluates the event as sudden, familiar or unpredictable on $E_1$.
+* $P$ stands for *Subjective Feeling **P**redicted Appraisal*, that is, the predicted appraisal profile associated with a given subjective feeling, with subscripts $P_1$, $P_2$, ..., $P_n$ representing a set of $n$ predicted appraisal criteria In concrete terms, $P$ represents the appraisal profile that is supposed to elicit the given subjective feeling. For instance, the CPM predicts that a subjective feeling represented by the word *Happiness* may be related to a higher evaluation on appraisal *Novelty* compared to a subjective feeling represented by the word *Sadness* [@schererComponentProcessModel2010].
+
+As a consequence, $d(E, P)$ represents the distance between the Appraisal Evaluation and the Subjective Feeling Predicted Appraisal, with the *k-nearest neighbors* being the *k* subjective feelings with the lowest $d(E, P)$. In other words, if $k=5$, then among all the subjective feelings in the affective space, the 5 whose appraisal profile $P$ is closer to the appraisal evaluation $E$ represent the subset of most likely subjective feelings to occur, given the *mysterious* point $E$, which is provided by the person cognitive evaluation. The following subsections illustrates how the distance $d(E, P)$ is calculated by the model depending on the number of appraisal criteria/dimensions composing the underlying affective space.
+
+### One-Dimensional Affective Space
+
+In a one-dimensional affective space, that is, where there is only a single appraisal criterion, the nearest neighbors are determined by the absolute distance between $E$ and $P$:
+
+$$
+d(E, P) = |E_1 - P_1|
+$$
+One-dimensional affective space are not usually defined as such in the literature, even though the possibility to conceptualize emotion on a single dimension is not infrequent, especially when this dimension represents an omnibus *valence* that often divides emotion in positive and negative. The possibility to use a one-dimensional affective space is therefore warranted by the working definition itself (*i.e.*, *at least one appraisal*), as well as by researchers and practitioners habit to recur to a dichotomous affective space, even though the actual rating is implicit rather than explicit, for instance in grouping choices.
+
+### Two-Dimensional Affective Space
+
+Two-dimensional affective spaces are ubiquitous in research, especially in the form of the Valence * Arousal circumplex [@russellCircumplexModelAffect1980]. Several scholars have adopted two-dimensional affective spaces in their research, and also as a graphical representation for self-report or awareness tools [*e.g.*, @feidakisEndowingElearningSystems2011]. Consequently, it is important that an overarching computational model can manage to incorporate
+
+#### Circumplex Affective Space
+
+
+#### Cartesian Plane Affective Space
+
+
+#### Comparison
 
 ```{r}
 dew_rt.sim_gew_graph_3
@@ -41,7 +67,7 @@ dew_rt.sim_gew_graph_3
 dew_rt.sim_gew_graph_10
 ```
 
-### Multi-Dimensional Affective Spaces
+### Multi-Dimensional Affective Space
 
 ## Synthesis
 
