@@ -29,12 +29,12 @@ regulating and reflecting on emotions.
 
 ## A Parsimonious Computational Model Based on a *K-Nearest Neighbor* Approach
 
-The bi-dimensional mechanism of the DEW can be abstracted according to the working definition of emotion provided by @mulliganWorkingDefinitionEmotion2012, specifically the points about appraisals: (a) an emotion *is triggered by at least one appraisal*, and (2) an emotion *is guided by at least one appraisal*. In other words, an emotional episode is elicited and differentiated according to at least 1, and up to *N*, appraisal criteria. 
+The bi-dimensional mechanism of the DEW can be abstracted according to the working definition of emotion provided by @mulliganWorkingDefinitionEmotion2012, specifically the points about appraisals: (a) an emotion *is triggered by at least one appraisal*, and (2) an emotion *is guided by at least one appraisal*. In other words, an emotional episode is elicited and differentiated according to at least 1, and up to *n*, appraisal criteria. 
 
 To ease the illustration of the parsimonious computational model, the section adopts the following notation:
 
 * $E$ stands for *Appraisal **E**valuation*, that is, the hypothetical value that a cognitive evaluation can have on a given set of appraisal criteria $E_1$, $E_2$, ..., $E_n$. In concrete terms, $E$ represents the rating of a person asked to evaluate one or more appraisal dimensions. For instance, if there was only one appraisal, say, *Novelty*, than $E$ assumes a value determined by the extent to which the person evaluates the event as sudden, familiar or unpredictable on $E_1$.
-* $P$ stands for *Subjective Feeling **P**redicted Appraisal*, that is, the predicted appraisal profile associated with a given subjective feeling, with subscripts $P_1$, $P_2$, ..., $P_n$ representing a set of $n$ predicted appraisal criteria In concrete terms, $P$ represents the appraisal profile that is supposed to elicit the given subjective feeling. For instance, the CPM predicts that a subjective feeling represented by the word *Happiness* may be related to a higher evaluation on appraisal *Novelty* compared to a subjective feeling represented by the word *Sadness* [@schererComponentProcessModel2010].
+* $P$ stands for *Subjective Feeling **P**redicted Appraisal*, that is, the predicted appraisal profile associated with a given subjective feeling, with subscripts $S_1$, $S_2$, ..., $S_n$ representing a set of $n$ predicted appraisal criteria In concrete terms, $P$ represents the appraisal profile that is supposed to elicit the given subjective feeling. For instance, the CPM predicts that a subjective feeling represented by the word *Happiness* may be related to a higher evaluation on appraisal *Novelty* compared to a subjective feeling represented by the word *Sadness* [@schererComponentProcessModel2010].
 
 As a consequence, $d(E, P)$ represents the distance between the Appraisal Evaluation and the Subjective Feeling Predicted Appraisal, with the *k-nearest neighbors* being the *k* subjective feelings with the lowest $d(E, P)$. In other words, if $k=5$, then among all the subjective feelings in the affective space, the 5 whose appraisal profile $P$ is closer to the appraisal evaluation $E$ represent the subset of most likely subjective feelings to occur, given the *mysterious* point $E$, which is provided by the person cognitive evaluation. The following subsections illustrates how the distance $d(E, P)$ is calculated by the model depending on the number of appraisal criteria/dimensions composing the underlying affective space.
 
@@ -43,31 +43,65 @@ As a consequence, $d(E, P)$ represents the distance between the Appraisal Evalua
 In a one-dimensional affective space, that is, where there is only a single appraisal criterion, the nearest neighbors are determined by the absolute distance between $E$ and $P$:
 
 $$
-d(E, P) = |E_1 - P_1|
+d(E, P) = |E_1 - S_1|
 $$
+
 One-dimensional affective space are not usually defined as such in the literature, even though the possibility to conceptualize emotion on a single dimension is not infrequent, especially when this dimension represents an omnibus *valence* that often divides emotion in positive and negative. The possibility to use a one-dimensional affective space is therefore warranted by the working definition itself (*i.e.*, *at least one appraisal*), as well as by researchers and practitioners habit to recur to a dichotomous affective space, even though the actual rating is implicit rather than explicit, for instance in grouping choices.
 
 ### Two-Dimensional Affective Space
 
-Two-dimensional affective spaces are ubiquitous in research, especially in the form of the Valence * Arousal circumplex [@russellCircumplexModelAffect1980]. Several scholars have adopted two-dimensional affective spaces in their research, and also as a graphical representation for self-report or awareness tools [*e.g.*, @feidakisEndowingElearningSystems2011]. Consequently, it is important that an overarching computational model can manage to incorporate
+Two-dimensional, or bi-dimensional, affective spaces are ubiquitous in research, especially in the form of the Valence * Arousal circumplex [@russellCircumplexModelAffect1980]. Several scholars have adopted two-dimensional affective spaces in their research, and also as a graphical representation for self-report/awareness tools [*e.g.*, @feidakisEndowingElearningSystems2011]. Consequently, it is important that an overarching computational model can manage to incorporate different kind of two-dimensional affective spaces. 
 
 #### Circumplex Affective Space
 
+$$
+E_{slope} = arctan(\frac{E_1}{E_2})
+$$
+When both $E_1$ and $E_2$ are at the neutral point 0, $d(E, P)$ is exactly the same for every subjective feeling, since any point on a circle is at the same distance from the origin. Conceptually, thus, any subjective feeling is as likely to represent the neutral point as any other. The computational model, thus, attributes a virtual random value both to $E_1$ and $E_2$ according to the range of the two appraisals dimensions only with the purpose to shuffle the set of subjective feelings and avoid thus that some subjective feelings are arbitrarily suggested with the neutral point.
+
+$$
+d(E, P) = |E_{slope} - S_{slope}|
+$$
 
 #### Cartesian Plane Affective Space
 
+$$
+d(E, P) = \sqrt{(E_1 - S_1)^2 + (E_2 - S_2)^2}
+$$
 
 #### Comparison
 
-```{r}
+Taking advantage of the fact that the disposition of the 20 subjective feelings in the third version of the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013] has been determined using the GRID instrument, the same affective space is available as a circumplex and as Cartesian plane. As a consequence, it is possible to simulate the behavior of the computational model. For the purpose of the simulation, the following parameters will be adopted:
+
+* The two appraisal dimensions (Valence and Control/Power) are implemented on a continuum ranging from -100 to 100, divied in steps of 1 unit;
+* The *k*-nearest neighbors is set to $k = 3$ and to $k = 10$ to assess how the radial and the vector algorithms behave when the number of suggested feelings varies;
+* The subjective feelings in the circumplex affective space are disposed so that each is equally distant from the previous and the following item, with a rotation of half the distance between each subjective feeling to respect the graphical representation of the circumplex, see the righ side of Figure \@ref(fig:pof-gew-radial-vs-vector);
+* The subjective feelings in the Cartesian plan are disposed according to the values retrieved from data retrieved in @schererGRIDMeetsWheel2013, see the left side of Figure \@ref(fig:pof-gew-radial-vs-vector). The original value on a range from -1 to 1 has been multiplied by 100 to map the range of the simulation.
+
+(ref:pof-gew-radial-vs-vector-caption) Disposition of the Geneva Emotion Wheel's 20 subjective feeling on a circumplex (left) and Cartesian plane (right) affective space. Reconstructed from @schererGRIDMeetsWheel2013.
+```{r pof-gew-radial-vs-vector, fig.align="center", fig.cap="(ref:pof-gew-radial-vs-vector-caption)", fig.align="center", out.width="100%"}
+knitr::include_graphics(here("figure/dew-rt/gew-radial-vs-vector.png"))
+```
+
+The simulation is computed by looping the $E_1$ and $E_2$ ranges so that each possible combination between the two -- that is, [-100, -100], [-100, -99], ..., [0, 0], ..., [100, 100] -- generates a subset of $k = 3$ or $k = 10$ subset of subjective feelings. Figure \@ref(fig:pf-simulation-3) and  \@ref(fig:pf-simulation-3) show the results of the simulation. With a $k = 3$ subset, the radial distance of the circumplex shows a more homogeneous number of appearances of each subjective feeling in the subset compared to the vector distance of the Cartesian plane. The opposite happens with $k = 10$, where the vector distance results in more homogeneous number of appearances compared to the radial distance.
+
+(ref:pof-simulation-3-caption) Results of the simulation comparing distance computed as a radial or vector distance with a subset of $k = 3$ subjective feelings.
+```{r pf-simulation-3, fig.align="center", fig.cap="(ref:pof-simulation-3-caption)", fig.align="center", out.width="70%"}
 dew_rt.sim_gew_graph_3
 ```
 
-```{r}
+(ref:pof-simulation-10-caption) Results of the simulation comparing distance computed as a radial or vector distance with a subset of $k = 10$ subjective feelings.
+```{r pof-simulation-10, fig.align="center", fig.cap="(ref:pof-simulation-10-caption)", fig.align="center", out.width="70%"}
 dew_rt.sim_gew_graph_10
 ```
 
+This simulation has only illustrative purpose, because the two affective spaces are only examples of an infinite number of spaces that can be conceived and therefore results may be very different with other configuration. Nevertheless, this kind of simulation may be interesting to carry out before adopting an affective space (see next chapter) to assess whether there are subjective feelings that are more likely to be suggested by the system, because that could influence learners in choosing them.
+
 ### Multi-Dimensional Affective Space
+
+$$
+d(E, P) = \sqrt{(E_1- S_1)^2 + (E_2 - S_2)^2+\cdots+(E_n - S_n)^2}
+$$
 
 ## Synthesis
 
