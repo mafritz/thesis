@@ -53,26 +53,34 @@ The possibility to restrain the affective space to a single dimension may also b
 
 ### Two-Dimensional Affective Space
 
-Two-dimensional, or bi-dimensional, affective spaces are ubiquitous in research, especially in the form of the dimensional *valence x arousal* circumplex [@russellCircumplexModelAffect1980], but also in appraisal-driven perspectives, as in Pekrun's control-value theory of achievement emotions [@pekrunControlValueTheoryAchievement2006; @pekrunControlValueTheoryAchievement2014] or the *valence x control/power* structure of the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005]. Several scholars have theoretically adopted two-dimensional affective spaces in their research, but also as graphical representations for self-report/awareness tools [*e.g.*, @feidakisEndowingElearningSystems2011]. Consequently, it is important that an overarching computational model can manage to incorporate different kinds of two-dimensional affective spaces. In this regard, an affective space based on two dimensions can be interpreted as the sum of a pair of one-dimensional continuous spaces, in which case each subjective feeling is determined by a precise coordinate in a Cartesian plane. Alternatively, it may also be interpreted, less stringently, as a circumplex where each subjective feeling is positioned at an equal distance from the origin. The two interpretation of a two-dimensional affective space requires different computational models from a *k-nearest neighbors* perspectives. This subsection first illustrates the computational model for a circumplex, and then for a Cartesian plane. Last, it compares the two computational models in a simulation using the same affective space depicted either as a circumplex or a Cartesian plane.
-
-#### Circumplex Affective Space
-
-A circumplex is a representation of affective phenomena that is mainly linked with the concept of core-affect in constructivist/dimensional emotion theories [@russellCoreAffectPsychological2003; @russellEmotionCoreAffect2009; @stanleyTwodimensionalAffectiveSpace2009], but the structure itself can be adopted to dispose multiple concepts, so that the similarity between two items is inversely proportional to their distance on the circumference of the circle: the less the distance, the more the two elements are similar or correlated. The circumplex is determined by two axes, usually delimited by opposite poles of the same constructs (*e.g.*, pleasant/unpleasant) or two constructs in antithesis (*e.g.* sadness/enthusiasm).
-
-$$
-E_{slope} = arctan(\frac{E_1}{E_2})
-$$
-When both $E_1$ and $E_2$ are at the neutral point 0, $d(E, P)$ is exactly the same for every subjective feeling, since any point on a circle is at the same distance from the origin. Conceptually, thus, any subjective feeling is as likely to represent the neutral point as any other. The computational model, thus, attributes a virtual random value both to $E_1$ and $E_2$ according to the range of the two appraisals dimensions only with the purpose to shuffle the set of subjective feelings and avoid thus that some subjective feelings are arbitrarily suggested with the neutral point.
-
-$$
-d(E, P) = |E_{slope} - S_{slope}|
-$$
+Two-dimensional, or bi-dimensional, affective spaces are ubiquitous in research, especially in the form of the dimensional *valence x arousal* circumplex [@russellCircumplexModelAffect1980], but also in appraisal-driven perspectives, as in Pekrun's control-value theory of achievement emotions [@pekrunControlValueTheoryAchievement2006; @pekrunControlValueTheoryAchievement2014] or the *valence x control/power* structure of the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005]. Several scholars have theoretically adopted two-dimensional affective spaces in their research, but also as graphical representations for self-report/awareness tools [*e.g.*, @feidakisEndowingElearningSystems2011]. Consequently, it is important that an overarching computational model can manage to incorporate different kinds of two-dimensional affective spaces. In this regard, an affective space based on two dimensions can be interpreted as the sum of a pair of one-dimensional continuous spaces, in which case each subjective feeling is determined by a precise coordinate in a Cartesian plane. Alternatively, it may also be interpreted, less stringently, as a circumplex where each subjective feeling is positioned at an equal distance from the origin. The two interpretation of a two-dimensional affective space requires different computational models from a *k-nearest neighbors* perspectives. This subsection first illustrates the computational model for a Cartesian plane, and then for a circumplex. Last, it compares the two computational models in a simulation using the same affective space depicted either as a Cartesian plane or a circumplex.
 
 #### Cartesian Plane Affective Space
 
+When a second appraisal criteria is added, the resulting affective space can be conceptualized as a Cartesian plane, in which $P$ is represented by the coordinates $x = P_1$, and $y = P_2$. At the same time, the appraisal evaluation is also determined by coordinates $x = E_1$ and $y = E_2$. Consequently, the *k-nearest neighbors* may be determined using the Euclidean (or Pythagorean) distance, with the nearest subjective feelings having the smallest hypotenuse of a triangle with the length of the sides determined by the difference between $E_1$ and $P_1$, and $E_2$ and $P_2$:
+
 $$
-d(E, P) = \sqrt{(E_1 - S_1)^2 + (E_2 - S_2)^2}
+d(E, P) = \sqrt{(E_1 - P_1)^2 + (E_2 - P_2)^2}
 $$
+
+#### Circumplex Affective Space
+
+An alternative for two-dimensional affective spaces consists in the use of a circumplex, a representation that is mainly linked with the concept of core-affect emerging from a *valence x arousal* space in constructivist/dimensional emotion theories [@russellCoreAffectPsychological2003; @russellEmotionCoreAffect2009; @stanleyTwodimensionalAffectiveSpace2009]. The structure itself, though, may also be adopted in other contexts, since a circumplex allows researchers to dispose multiple variables on a circle, so that the similarity between two items is inversely proportional to their distance on the circumference: the less the distance, the more the two elements are similar or correlated. The circumplex is determined by an x-axis and a y-axis, usually delimited by opposite poles of the same constructs (*e.g.*, pleasant/unpleasant) or two constructs in antithesis (*e.g.* sadness/enthusiasm). The combination of the two axes creates four quadrants, usually crossing over the negative and positive poles of the two axes. The top-right quadrant is x-positive and y-positive; the bottom-right quadrant is x-positive and y-negative; the bottom-left quadrant is x-negative and y-negative; and the top-left quadrant is x-negative and y-positive. 
+
+Given its practical structure, a circumplex ca be used to dispose subjective feelings determined by two appraisals criteria in a more *relaxed* way compared to a Cartesian plane. In fact, researchers can tentatively dispose items at an equal distance from each other, assuming the order of disposition on the circle as a sufficient connotation of the affective space. Since the computational model, though, does not use the circumplex as a graphical representation, but rather as a *database* to retrieve suggestions, the fact that subjective feelings are not equally spaced on the circumference is irrelevant from a usability standpoint. As a consequence, it is also possible to adopt circumplexes with overlapping subjective feelings, or where the distance between any two items on the circle is not necessarily the same, but rather a function of some theoretical or practical mechanism.
+
+On the other hand, the use of a circumplex as the underlying affective space requires a slightly different approach in computing the distance between $E$ and $P$, because $P$ in a circumplex is best conveyed as an angle, so that $P_{angle} \in \mathbb{R} : 0 \le P_{angle} \le 360$. A possible solution is to use $E_1$ and $E_2$ as points in a Cartesian plane, and compute the slope from the origin [0,0] of the plane. The slope can then be used to retrieve the angle from the x-axis, using the inverse tangent, or arctangent, trigonometric function, and -- with some correction skipped here, see Fritz (2015) or the code repository for more details -- also obtain an $E_{angle} \in \mathbb{R} : 0 \le E_{angle} \le 360$:
+
+$$
+E_{angle} = arctan(\frac{E_1 - 0}{E_2 - 0}) + correction = arctan(\frac{E_1}{E_2}) + correction
+$$
+
+Once retrieved the $E_{angle}$, the *k-nearest neighbors* can be determined using the same logic as in a uni-dimensional condition, by computing the absolute distance between $E_{angle}$ and $P_{angle}$:
+
+$$
+d(E, P) = |E_{angle} - P_{angle}|
+$$
+Conceptually, with this solution, it is worth considering the case when both $E_1$ and $E_2$ are at the neutral point 0, since $d(E, P)$ is exactly the same for every subjective feeling, since any point on a circle is at the same distance from the origin. In other words, any subjective feeling is as likely to represent the neutral point as any other. When both $E_1$ and $E_2$ are 0, thus, the computational model attributes a virtual random value both to $E_1$ and $E_2$ only with the purpose to shuffle the set of subjective feelings and avoid thus that some subjective feelings are arbitrarily suggested more frequently with the neutral point.
 
 #### Comparison
 
@@ -104,9 +112,16 @@ This simulation has only illustrative purpose, because the two affective spaces 
 
 ### Multi-Dimensional Affective Space
 
+There is growing empirical evidence in suggesting that one- and two-dimensional affective spaces are not enough to account for the variety of emotional experiences in semantic terms [@fontaineWorldEmotionsNot2007; @gilliozMappingEmotionTerms2016]. As a consequence, an overarching computational model should be able to integrate higher-order dimensional spaces, where the number of dimensions can be determined by researchers and practitioners with respect to theoretical, practical, or usability criteria (*e.g.*, if the moment-to-moment temporal dimension is particularly important, asking learners to repeatedly rate a high number of criteria would be very time consuming).
+
+Extending the model to more than two dimensions is relatively straightforward when the Euclidean distance is maintained as the algorithm to determine the *k-nearest neighbors*. In fact, the it is possible to determine the distance between any two points in a multidimensional space, simply by adding additional dimensions to the Pythagorean formula:
+
 $$
-d(E, P) = \sqrt{(E_1- S_1)^2 + (E_2 - S_2)^2+\cdots+(E_n - S_n)^2}
+d(E, P) = \sqrt{(E_1- P_1)^2 + (E_2 - P_2)^2+\cdots+(E_n - P_n)^2}
 $$
+
+The model therefore remains fairly limited in term of computational power required, even if the number of dimensions increases. The difficulty with a higher-order affective spaces is in fact more theoretical than practical, since it is more difficult to imagine a space with three or more dimensions. Beyond three dimensions, there a severe problems in graphically representing the space, which contrasts with the easy-to-understand, and easy-to-implement disposition of subjective feelings in a circumplex. At the same time, the *k-nearest neighbor* approach can precisely contribute to overcome this issue, once a multi-dimensional affective space is established, since the dimensions are *flattened* on uni-dimensional ratings. The computational model is then charged to map uni-dimensional ratings into multi-dimensional distances, as vectors between points in spaces the human mind can hardly imagine from a spatial point of view. 
+
 
 ## Synthesis
 
