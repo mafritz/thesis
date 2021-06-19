@@ -353,7 +353,19 @@ In the *Final* survey, that is approximately two weeks after the end of the seme
 
 ### Open-Ended Question
 
-In the *Halfway* and *Final* surveys, participants had the possibilities to add general commentaries about the use of the EAT. 
+In the *Halfway* and *Final* surveys, participants had the possibilities to add general commentaries to the overall questionnaire, with a free text field corresponding to the overarching question *Would you like to add any remark or comment on the study as a whole?*. The open-ended question received 21 answers in the *Halfway* survey, and only 10 in the *Final* survey. Even though the overall approach to the study is nomothetic rather than idiographic, the fact that the tool's adoption has been sparse overall suggests that these questions could provide some useful reasons.
+
+In this regard, most of the answers both in the *Halfway* and *Final* surveys point out that students forgot to use the tool, primarily because they were already overcome by the learning task. A few students, though, precised that the lack of use was also influenced by the presence of alternative communication channels used by the class, as it is clearly stated in this answer:
+
+>At first, I forgot to use it and realized it late in the period. Afterwards, I didn't do it, because I use [the group's messaging platform] Slack to exchange and this tool is sufficient for me to manage my emotions. Using another tool would have generated an additional mobilization of resources and [would] therefore [have been] counterproductive for me. --- Verbatim of the answer, translated from original French.
+
+Other students highlighted the fact that the moment-to-moment use of the tool interfered with their learning activity, diverting their attention. Even if they did manifest their emotion, those were rather prospective or retrospective. Furthermore, the sparse use of the tool even produced the very opposite effect it was intended to obtain, that is, increase social presence. As stated by a student:
+
+>I used the tool and I like the concept but I only found myself online once with my other colleagues which actually made me feel quite alone in my sharing moments. This is the opposite of what I expected because I thought I would feel more connected to my colleagues and my emotions in the moment. --- Verbatim of the answer, translated from original French.
+
+A few students nevertheless provide positive feedbacks about the presence of the tool, even if they regret the sparse use made of it by themselves or their colleagues. The feedback that more closely adheres to the tool overall purpose, though, provide an attentive analysis of its use in terms of the role the appraisal criteria played in its adoption:
+
+>It was a great tool to use. I particularly appreciated to have this tool in order to force myself to analysis [sic] my emotions while working on [the course] topics. [I] [p]articularly appreciated the question about [the] capability to change the situation, which was a good opportunity to take a step back and understand what factors led to the situation and how I could influence them. It was also particularly interesting to be able to see the last emotional states and the most used. [I] [w]ould be happy to continue the survey in the future period. --- Verbatim of the answer, which was provided in English by the student
 
 ## Discussion
 
