@@ -156,7 +156,7 @@ A Tobii T120 eye-tracker with Tobii Studio Pro v3.4.8 software [@tobiiabTobiiStu
 
 ### Procedure
 
-Participants were given a specific time to come to the test, which was performed at Geneva University, and were reminded of the importance to be on time since another participant was performing the test in the meantime. The experimenter welcomed the participant and introduced him in the room with the eye-tracking equipment. Once installed, the experimenter proceeded to explain the outline of the study:
+Participants were given a specific time to come to the test, which was performed at Geneva University, and were reminded of the importance to be on time since another participant was performing the test in the meantime. The experimenter welcomed the participant in the room with the eye-tracking equipment. Once installed, the experimenter proceeded to explain the outline of the study:
 
 -   Introduction and explication (10 minutes)
 -   Warm-up session with the DEW and instructions for the task (5 minutes)
