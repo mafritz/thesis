@@ -505,4 +505,4 @@ Furthermore, the focal question of whether learners would use the EAT having a m
 
 ### Acknowledgments
 
-The experimental phase of the project has been carried out by Stéphanie Perrier, a Master MALTT students, as part of her Master thesis [@perrierCollaborationEnvironnementMediatise2017] that Mireille Bétrancourt and I co-directed.
+The experimental phase of the project has been carried out by Stéphanie Perrier as part of her Master thesis [@perrierCollaborationEnvironnementMediatise2017] that Mireille Bétrancourt and I co-directed.
