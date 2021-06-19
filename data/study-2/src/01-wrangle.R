@@ -159,3 +159,7 @@ s2.sus_total <- s2.sus_score %>%
 # Add SUS total to aggregated participant
 s2.participants_aggregated <- s2.participants_aggregated %>% 
   left_join(s2.sus_total, by = "participant")
+
+# Import answers to open ended questions
+s2.open_ended_answers <- read_delim(here("data/study-2/data/transformed/open-ended-question.csv"), 
+                                    ";", escape_double = FALSE, trim_ws = TRUE)
