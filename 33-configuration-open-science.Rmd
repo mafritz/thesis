@@ -1,4 +1,4 @@
-# Towards A Multipurpose, Appraisal-Driven, Moment-to-Moment and Self-Report Emotion Awareness Tool
+# Building a Toolbox Around the Parsimonious Computational Model
 
 ```{r eat-dashboard-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
@@ -8,3 +8,6 @@ library(knitr)
 library(kableExtra)
 
 ```
+
+In the previous chapter illustrated the parsimonious computational model linking appraisal dimensions and subjective feelings as a representation of an emotion structure that can be *injected* into a graphical user interface to self-report emotions. The model represents the *core* of the proof of concept proposed by the thesis, but is clearly not sufficient to provide emotional awareness in computer-mediated learning environments. In this regard, this chapter introduces a toolbox built around the computational model that allows the configuration of the expressing-displaying as well as the perceiving-monitoring functions of an Emotion Awareness Tool (EAT) according to researchers and practitioners needs. The implementation of a toolbox is driven by open science tenets, which advocate the need for investing in the development of open material that can foster transparency, sharing, replicability and reproducibility of research practices and results. In this intent, the toolbox pays particular attention in incorporating these tenets. 
+
