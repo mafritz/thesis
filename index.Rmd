@@ -1,12 +1,12 @@
 ---
-title: 'My Final College Paper'
-author: 'Your R. Name'
-date: 'May 20xx'
-institution: 'Reed College'
-division: 'Mathematics and Natural Sciences'
-advisor: 'Advisor F. Name'
-department: 'Mathematics'
-degree: 'Bachelor of Arts'
+title: 'Implementation and Assessment of a Multipurpose Appraisal-Driven Emotion Awareness Tool Based on Self-Report. With an Application to Computer-Mediated Learning Environments.'
+author: 'Mattia A. Fritz'
+date: 'September 2021'
+institution: 'Université de Genève'
+division: 'TECFA'
+advisor: 'Prof. Mireille Bétrancourt'
+department: 'FPSE'
+degree: 'PhD in Psychology'
 knit: bookdown::render_book
 site: bookdown::bookdown_site
 
