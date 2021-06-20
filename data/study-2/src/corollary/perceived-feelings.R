@@ -10,12 +10,6 @@ theme_set(theme_apa(box = TRUE))
 
 # Plot perceived individual vs. class feelings
 s2.perceived_emotions_frequency.graph <- s2.perceived_emotions_frequency %>%
-  mutate(
-    avg_frequency = if_else((agent == "Observed"), rescale(avg_frequency, to = c(1,5)), avg_frequency),
-    sd_frequency = if_else((agent == "Observed"), rescale(sd_frequency, to = c(1,5)), sd_frequency),
-    lower.ci = if_else((agent == "Observed"), rescale(lower.ci, to = c(1,5)), lower.ci),
-    upper.ci = if_else((agent == "Observed"), rescale(upper.ci, to = c(1,5)), upper.ci),
-  ) %>%
   ggplot(aes(x = agent, y = avg_frequency, color = agent)) +
   geom_point(size = 1, shape = 15) +
   geom_errorbar(aes(ymin = lower.ci, ymax = upper.ci), width = 0.2) +
