@@ -26,6 +26,8 @@ emotions among participants in a computer-mediated task;
 levels, with respect to the emergence of strategies that improve collaboration such as monitoring,
 regulating and reflecting on emotions.
 
+Description of the DEW.
+
 
 ## A Parsimonious Computational Model Based on a *K-Nearest Neighbor* Approach
 
