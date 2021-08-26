@@ -1,0 +1,10 @@
+# The Dynamic Emotion Wheel
+
+```{r dew-chapter-setup, include=FALSE, echo=FALSE}
+library(tidyverse)
+library(papaja)
+library(here)
+library(knitr)
+library(kableExtra)
+
+```
