@@ -74,12 +74,3 @@ s1.anova.total_visit_duration.graph <- ggplot(s1.total_visit_duration, aes(x = g
     legend.position = "none"
   ) +
   NULL
-
-# Plot the assumptions
-par(mfrow = c(2, 2))
-plot(s1.anova.visit_count$aov)
-plot(s1.anova.total_visit_duration$aov)
-
-# Levene test for homogeneity
-s1.anova.visit_count.levene <- test_levene(s1.anova.visit_count, center = "median")
-s1.anova.total_visit_duration.levene <- test_levene(s1.anova.total_visit_duration, center = "median")

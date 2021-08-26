@@ -39,10 +39,3 @@ s1.anova.expressed_emotions.graph <- ggplot(s1.aggregated_emotions, aes(x = grou
     text = element_text(size = 16)
   ) +
   NULL
-
-# Plot the assumptions
-par(mfrow = c(2, 2))
-plot(s1.anova.expressed_emotions$aov)
-
-# Leven test for homogeneity
-s1.anova.expressed_emotions.levene <- test_levene(s1.anova.expressed_emotions, center = "median")

@@ -3,7 +3,7 @@ library(tidyverse)
 library(here)
 
 # Import data
-s1.raw_eyetracking_data <- read_delim(here("data/study-1/data/all-eyetracking-data.tsv"), 
+s1.raw_eyetracking_data <- read_delim(here("data/study-1/data/all-eyetracking-data_copy.tsv"), 
                                   "\t", escape_double = FALSE, trim_ws = TRUE)
 
 # Replace ParticipantName with RecordingName 
@@ -19,11 +19,11 @@ s1.raw_eyetracking_data <- s1.raw_eyetracking_data %>%
     !ParticipantName == "39o",
   )
 
-names(s1.raw_eyetracking_data) <- str_replace_all(names(s1.raw_eyetracking_data), " ", "_")
-names(s1.raw_eyetracking_data) <- str_replace_all(names(s1.raw_eyetracking_data), "\\[", "")
-names(s1.raw_eyetracking_data) <- str_replace_all(names(s1.raw_eyetracking_data), "\\]", "")
-names(s1.raw_eyetracking_data) <- str_replace_all(names(s1.raw_eyetracking_data), "AOI", "")
-names(s1.raw_eyetracking_data) <- str_replace_all(names(s1.raw_eyetracking_data), "Hit", "")
+# names(s1.raw_eyetracking_data) <- str_replace_all(names(s1.raw_eyetracking_data), " ", "_")
+# names(s1.raw_eyetracking_data) <- str_replace_all(names(s1.raw_eyetracking_data), "\\[", "")
+# names(s1.raw_eyetracking_data) <- str_replace_all(names(s1.raw_eyetracking_data), "\\]", "")
+# names(s1.raw_eyetracking_data) <- str_replace_all(names(s1.raw_eyetracking_data), "AOI", "")
+# names(s1.raw_eyetracking_data) <- str_replace_all(names(s1.raw_eyetracking_data), "Hit", "")
 
 s1.raw_eyetracking_data <- s1.raw_eyetracking_data %>%
   mutate_at(
