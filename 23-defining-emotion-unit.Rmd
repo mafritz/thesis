@@ -77,7 +77,7 @@ The CPM adopts a functional perspective according to which "[e]motions have deve
 
 (ref:tf-cpm-subcomponents-caption) Relationships between organismic subsystems and the functions and components of emotion. Reproduced from @schererWhatAreEmotions2005, original table 1, p. 698.
 
-```{r tf-cpm-components-table}
+```{r tf-cpm-components-table, eval=FALSE}
 tf.cpm_components <- tibble(
   `Emotion function` = c("Evaluation of objects and events", "System regulation", "Preparation and direction of action", "Communication of reaction and behavioral intention", "Monitoring of internal state and orgnism-environment interaction"),
   `Organismic subsystem and major substrata` = c("Information processing (CNS)", "Support (CNS, NES, ANS)", "Executive (CNS)", "Action (SNS)", "Monitor (CNS)"),
