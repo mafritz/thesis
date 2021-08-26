@@ -97,11 +97,12 @@ In support of this claim, the article (*ibid.*) illustrate and compare different
 
 More recently, Cernea and Kerren [-@cerneaSurveyTechnologiesRise2015], inspired by the work of Boehener and colleagues (*ibid*.), proposed a categorization of technologies *on the rise* for emotion-enhanced interaction. The authors main objective "was to focus on technologies that satisfy two main requirements: having been used increasingly often in affect detection for interaction purposes, and having a proven track of *portability*, *non-intrusiveness* and *low cost*" [@cerneaSurveyTechnologiesRise2015, p. 72]. Even though the authors target more complex affective system -- often using multi-modal sensory information, such as tracking and recognizing facial expressions, eye-movements or pupil dilation, or brain-computer-interfaces -- the categorization they propose is relevant also to a *simpler* system. The authors identify three types of affective systems from an interactional stand-point, proposed here in an condensed form (*ibid.*, p. 78):
 
-1. *Affective-awareness systems*, designed to improve affective self-awareness of a user (i.e., internal affective awareness) *or* awareness of the emotions of other users (i.e., external affective awareness), for instance, in collaborative or competitive environments.
-2. *Emotion-adaptive systems*: which adapt interaction based on the use affective state *or* mimic affective states with the purpose of enhancing the user experience and efficiency.
-3. *Emotion modeling systems*, which do not simply adapt to user affective states, but try to influence these states as well.
 
-An EAT belongs clearly to the first category of *affective-awareness systems*. The presence of this category corroborates the fact that emotional awareness is considered crucial also from an affective computing perspective. 
+1. *Emotion-adaptive systems*: which adapt interaction based on the use affective state *or* mimic affective states with the purpose of enhancing the user experience and efficiency.
+2. *Emotion modeling systems*, which do not simply adapt to user affective states, but try to influence these states as well.
+3. *Affective-awareness systems*, designed to improve affective self-awareness of a user (i.e., internal affective awareness) *or* awareness of the emotions of other users (i.e., external affective awareness), for instance, in collaborative or competitive environments.
+
+An EAT belongs clearly to the last category of *affective-awareness systems*. The presence of this category corroborates the fact that emotional awareness is considered crucial also from an affective computing perspective. 
 
 ### Emotion-Aware Systems in E-Learning
 
