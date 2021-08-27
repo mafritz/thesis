@@ -1,4 +1,4 @@
-# Emotional Awareness in Computer-Mediated Learning Environments: Assumptions, Mechanisms, and Methodological Issues
+# Emotional Awareness Tools in Computer-Mediated Learning Environments: Overview, Assumptions, Mechanisms, and Methodological Issues
 
 ```{r rationale-eat-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
@@ -9,26 +9,26 @@ library(kableExtra)
 
 ```
 
-Whereas the previous chapter provided a *bona fide* overview of the growing consensus in integrating affective phenomena into computer-mediated learning environments, this chapter delves  more specifically into the rationale behind endowing learners in a computer-mediated learning environment with an Emotion Awareness Tool (EAT), that is, the reasons why an EAT can be beneficial to learners. This chapter provides an overview of different aspects, as well as their intrinsic complexity, that must be faced when considering the possibility of endowing a computer-mediated learning environment with explicit emotional awareness.
+Whereas the previous chapter provided a *bona fide* overview of the growing consensus in integrating affective phenomena into computer-mediated learning environments, this chapter delves  more specifically into the topic of emotional awareness in computer-mediated learning environments. This chapter provides an overview of different aspects, as well as their intrinsic complexity, that must be faced when considering aims and means of endowing a computer-mediated learning environment with explicit emotional awareness. The chapter starts with an overview of a selection of related works. The selected works serve as a basis from which, later in the chapter, three basic assumptions about EATs are deduced. From these assumptions, then, the chapter proposes a schema, in which different mechanisms at play in the implementation of an EAT in computer-mediated learning environments are organized in functional terms. At the end of the chapter, some methodological issues are raised. 
 
-## Defining Emotional Awareness and Emotion Awareness Tools
+## Related Works
 
-Emotion or emotional awareness in computer-mediated learning environments is often defined, somehow implicitly, as information about one's own emotions and/or that of other learners sharing the same environment [@cerneaSurveyTechnologiesRise2015; @feidakisEndowingElearningSystems2011; @lavoueEmotionAwarenessTools2020]. For instance, as stated in the previous chapter, Feidakis and colleagues [-@feidakisReviewEmotionAwareSystems2016, p. 217] define emotion awareness, mainly from a *technical* viewpoint, as "the *implicit* or *explicit collection of emotion data* and the *recognition* of *emotion patterns*" (italics in the text). Lavoué and colleagues, on the other hand, [-@lavoueEmotionAwarenessTools2020] propose different definitions, partially derived from clinical psychology. They first propose a definition based upon @bodenFacetsEmotionalAwareness2015, which identifies emotional awareness as "the ability to perceive, identify, and understand emotions" [@lavoueEmotionAwarenessTools2020, p. 270]. Later in their article, Lavoué and colleagues (*ibid.*) propose another definition, based upon Rieffe and colleagues [-@rieffeEmotionAwarenessInternalising2008], referring to emotional awareness as "the attentional process by which individuals identify, explain and differentiate between their own emotions as well as the others’ emotions" [@lavoueEmotionAwarenessTools2020, p. 270]. These two definitions resonate with socio-emotional competences briefly illustrated in the previous chapter. Finally, even further below their article, Lavoué and colleagues (*ibid.*) provide a more technical definition of emotion awareness tools: "[e]motion awareness tools can be defined as tools that display information on own’ [sic] own or partners’ emotions, circumstances and antecedents" [@lavoueEmotionAwarenessTools2020, p. 284]. Compared to the more abstract definition of Feidakis and colleagues (*ibid.*), Lavoué and colleagues (*ibid.*) imply that the tool shall also provide information about circumstances and antecedents.
-
-Provisionally, an abstract definition of emotional awareness and, by extension, emotion awareness tool may better serve the multi-purpose vocation of an EAT, as advocated in the present contribution. As a consequence, an EAT is hereafter referring to a technological artifact, embedded in the computer-mediated learning environment, that provides information about one's own emotions and/or emotions of other learners sharing the same environment. 
+The previous chapter has provided an overview of the different concepts that are at play when affective phenomena are intertwined with learning in general, and computer-mediated learning environments more specifically. Determining the boundaries of related work in such a fervent and dynamic *milieu* is not an easy task. The objectives, methods, learning settings, and technologies implemented may vary greatly on a case-by-case basis. This section therefore provides an overview of selected works in the past ten years that share some common ground with the purpose of the present contribution. As previously stated, the field of affective and emotion aware systems in computer-mediated learning environments is recent and spans many disciplines, which complicates the adoption of a more systematic review of the existing literature. Furthermore, the selected works will be used as abstraction to extrapolate a more general and multipurpose approach to emotional awareness in computer-mediated learning environments rather than a confirming direction to follow-through.
 
 
-## Assumptions
 
-Three main assumptions:
+## Definition and Assumptions of an Emotion Awareness Tool
 
-(1) Intra-personal role of emotion
-(2) Inter-personal role of emotion
-(3) Emotion conveyed in computer-mediated learning environment
+Emotional awareness in computer-mediated learning environments is often proposed as self-explaining or defined somehow implicitly. For instance, as stated in the previous chapter, Feidakis and colleagues [-@feidakisReviewEmotionAwareSystems2016, p. 217] define emotion awareness, mainly from a *technical* viewpoint, as "the *implicit* or *explicit collection of emotion data* and the *recognition* of *emotion patterns*" (italics in the text). Cernea and colleagues [-@cerneaSurveyTechnologiesRise2015], in their overview of rising technologies in emotion-enhanced interaction, identifies the category of affective-aware systems as "designed to improve affective self-awareness of a user (i.e.,internal affective awareness) or awareness of the emotions of other users (i.e.,external affective awareness)" (*ibid.*, p.78). Examples of more precise attempts of definitions are provided by Lavoué and colleagues [-@lavoueEmotionAwarenessTools2020], who propose different definitions, partially derived from clinical psychology. They first propose a definition based upon @bodenFacetsEmotionalAwareness2015, which identifies emotional awareness as "the ability to perceive, identify, and understand emotions" [@lavoueEmotionAwarenessTools2020, p. 270]. Later in their article, Lavoué and colleagues (*ibid.*) propose another definition, based upon Rieffe and colleagues [-@rieffeEmotionAwarenessInternalising2008], referring to emotional awareness as "the attentional process by which individuals identify, explain and differentiate between their own emotions as well as the others’ emotions" [@lavoueEmotionAwarenessTools2020, p. 270]. These two definitions resonate with socio-emotional competences briefly illustrated in the previous chapter. Finally, even further below their article, Lavoué and colleagues (*ibid.*) provide a more technical definition of emotion awareness tools: "[e]motion awareness tools can be defined as tools that display information on own’ [sic] own or partners’ emotions, circumstances and antecedents" [@lavoueEmotionAwarenessTools2020, p. 284]. Compared to the more abstract definition of Feidakis and colleagues (*ibid.*), Lavoué and colleagues (*ibid.*) imply that the tool shall also provide information about circumstances and antecedents.
 
-As stated previously, affective phenomena covers a wide range of phenomena that are considered, to various extent, as not *strictly*, or at least not *exclusively*, rational [@frijdaAffectPsychologicalPerspectives2009], and may comprise concepts such as preferences, dispositions, personal stances, moods, emotions, and feelings [@colombettiFeelingBodyAffective2014; @pekrunIntroductionEmotionsEducation2014; @sanderModelsEmotionAffective2013; @schererWhatAreEmotions2005]. The list can be even further extended, depending on how far disciplines or researchers stretch the boundaries of affect as a concept, or affective phenomena as a category. For instance, Pekrun and Linnerbrink-Garcia [@pekrunIntroductionEmotionsEducation2014, p. 2] point out that "[i]n the broader education literature, affect is often used to denote a broad variety of noncognitive constructs including emotion but also including self-concept, beliefs, motivation, and so on [...]. In contrast, in emotion research, affect refers to emotions and moods more specifically". Emotion definition will be discussed at length in the next chapter, but it is useful to draw at this point a provisional outline of the concept in a first attempt to delimit what emotional awareness is (or may be) about, and why it may be useful to learners. There is in fact a growing consensus in considering emotion from a functional perspective. This section therefore first provides a provisional definition of emotion that is compatible with a functional approach to emotion. Then it illustrates some of the intra- and inter-personal functions attributed to emotion, which may have a bearing with learning processes and outcomes. Finally, it considers to what extent those functions are consistent across modalities, more specifically with respect to face-to-face versus computer-mediated situations.
+Provisionally, an abstract definition of emotional awareness and, by extension, emotion awareness tool may better serve the multi-purpose vocation of an EAT, as advocated in the present contribution. As a consequence, an EAT hereafter refers to a technological artifact, embedded in the computer-mediated learning environment, that provides information about one's own emotions and/or emotions of other learners sharing the same environment. Awareness of emotional information is adopted in a loose sense, implicating that users have noticed the emotional information available in the environment, but without any requirements in terms of level of processing or understanding. From this overarching definition, it is possible to derive three basic assumptions, which may be -- implicitly or explicitly -- shared by most contributions investigating the subject:
 
-### Intra-Personal Function of Emotion
+1. There is a level of intra-individual awareness of emotional information that may play a functional role for learners;
+2. There is a level of inter-individual awareness of emotional information that may play a functional role for learners;
+3. The intra- and/or the inter-level of awareness can be conveyed in the computer-mediated learning environment.
+
+
+### Intra-Personal Function of Emotional Awareness
 
 Overview of intra-personal function of emotions related to learning:
 
@@ -37,7 +37,7 @@ Overview of intra-personal function of emotions related to learning:
 * Emotion self-regulation
 
 
-### Inter-Personal Function of Emotion
+### Inter-Personal Function of Emotional Awareness
 
 Whereas the intra-personal function of emotion has received extensive attention in the last few decades, several researchers have more recently advocated the need for investigating the inter-personal function of emotion, especially in social interactions [@parkinsonEmotionSocialRelations2005; @rimePartageSocialEmotions2005; @vankleefInterpersonalDynamicsEmotion2018; @fischerWhereHaveAll2010]. Fisher and Van Kleef [-@fischerWhereHaveAll2010], for instance, posit that 
 
@@ -47,7 +47,7 @@ Keltner and Haidt [-@keltnerSocialFunctionsEmotions1999] identify four level of 
 
 Overview of the EASI model [@vankleefEmergingViewEmotion2010; @vankleefInterpersonalDynamicsEmotion2018].
 
-### Emotion Functions Across Modalities
+### Emotional Awareness Conveyed Through Computer-Mediated Environments
 
 Face-to-face vs computer-mediated environment:
 
@@ -123,5 +123,9 @@ Emotion contagion.
 Emotion is integrated into the learning activity, it modifies behavior (self-regulation, co-regulation, socially shared regulation).
 
 Modification of learning activity can trigger another emotion, creating cycle.
+
+## Methodological Issues
+
+For instance, Pekrun and Linnerbrink-Garcia [@pekrunIntroductionEmotionsEducation2014, p. 2] point out that "[i]n the broader education literature, affect is often used to denote a broad variety of noncognitive constructs including emotion but also including self-concept, beliefs, motivation, and so on [...]. In contrast, in emotion research, affect refers to emotions and moods more specifically".
 
 ## Synthesis
