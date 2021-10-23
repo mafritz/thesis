@@ -35,16 +35,24 @@ It follows that an EAT is a technological artifact, whose aim is to provide lear
 
 The thesis aims at extending this area of investigation by implementing and assessing a multipurpose appraisal-driven emotion awareness tool based on self-report, primarily thought to be adopted in computer-mediated learning environments. The aim of the contribution is therefore twofold. On the one side, the methodological implementation of an EAT with specific features, among which the connection to appraisal theories of emotion [@moorsAppraisalTheoriesEmotion2013; @rosemanAppraisalTheoryOverview2001; @sanderModelsEmotionAffective2013; @schererWhatAreEmotions2005; @siemerSameSituationdifferentEmotions2007]. On the other side, the empirical assessment of the adoption, use, perception and instrumentality of the EAT in computer-mediated learning environments as a means both to evaluate and inform -- adopting a cyclical interaction design perspective [@rogersInterctionDesignHumanComputer2011] -- the implementation of the EAT. Both aims are briefly outlined in the remainder of the section.
 
-### Methodolocial Contribution {-}
+### Methodolocial Objectives {-}
 
 Alongside other scholars [@arguedasOntologyEmotionAwareness2015; @brackettRULERTheoryDrivenSystemic2019; @feidakisReviewEmotionAwareSystems2016; @harleyDevelopingEmotionAwareAdvanced2017; @lavoueEmotionAwarenessTools2020; @molinariEMORELOutilReporting2016], I reckon that the specific way in which emotional awareness is implemented in a computer-mediated learning environment plays a prominent role in determining whether the EAT is adopted in the first place, and whether it serves its purpose in the wide spectrum of potential applications in which it may be deployed. All things considering, the role of an EAT may be broken down in two intertwined factors, which overlap with the two fundamental functions of awareness tools more generally [@buderGroupAwarenessTools2011; @schmidtProblemAwareness2002]: 
 
-1. Whether, when, how, and why emotional information is *inserted* into the computer-mediated learning environments through the EAT, creating thus the necessary, but not sufficient, conditions for emotional awareness to emerge;
-2. Whether, when, how, and why emotional information is *retrieved* from the EAT and processed by learners, for emotional awareness to be enacted and contribute to learning processes and outcomes.
+1. Whether, when, how, and why emotional information is *inserted* into the computer-mediated learning environments through the EAT, creating thus the necessary -- but not sufficient -- conditions for emotional awareness to emerge;
+2. Whether, when, how, and why emotional information is *retrieved* from the EAT and processed by learners, for emotional awareness to be enacted and hopefully contribute to learning processes and outcomes.
 
-To this extent, an EAT should 
+One of the central claim of the thesis is that both functions may be better served with the interaction of three elements: (1) voluntary self-report of emotion; (2) implementing an emotion structure into the tool; and (3) moment-to-moment availability of emotional awareness in the computer-mediated learning environment. Each element is briefly sketched hereafter.
 
-### Empirical Contribution {-}
+**Voluntary Self-Report**. Considerable attention in the last decades has been directed towards automatic recognition of emotion through individual or combined sources such as facial expressions, body posture, vocal prosody, or text analysis [@jordivallverduHandbookResearchSynthesizing2015; @schererBlueprintAffectiveComputing2010; @calvoAffectDetectionInterdisciplinary2010]. Some of these techniques have been applied in computer-mediated learning environments, notably in relation to virtual agents or intelligent tutors, which adapt or react based on learners' detected affective states [@calvoFrontiersAffectAwareLearning2012; @cerneaGroupAffectiveTone2014; @robisonEvaluatingConsequencesAffective2009]. 
+
+Notwithstanding the interest to detect affective information without learners' explicit action, ...
+
+**Implementing an Emotion Structure**. Despite a widespread agreement about the pivotal role of *affectivism* [@dukesRiseAffectivism2021], fundamental issues across affective phenomena (*e.g.* are emotions distinct from moods?) and within the same phenomenon (*e.g.*, what is an emotion?) are still unresolved [@izardManyMeaningsAspects2010; @sanderModelsEmotionAffective2013]. As a consequence, when endowing learners with emotional awareness, one has several options as to what constitute and is representative of *emotion*. For reasons that will be developed later in the text, this contribution adopts an appraisal-driven approach to emotion, according to which emotions are determined by an ongoing cognitive evaluation of events against a series of criteria [@moorsAppraisalTheoriesEmotion2013; @rosemanAppraisalTheoryOverview2001; @schererWhatAreEmotions2005].   
+
+**Moment-to-Moment Availability of Emotional Awareness**.
+
+### Empirical Objectives {-}
 
 ## Thesis Outline {-}
 
