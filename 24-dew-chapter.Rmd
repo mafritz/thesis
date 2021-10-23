@@ -8,3 +8,11 @@ library(knitr)
 library(kableExtra)
 
 ```
+
+The thesis builds on and extends previous work on Emotion Awareness Tools carried out in the Emotion Awareness Tool for Computer-Mediated Interactions (EATMINT) project [@avryAchievementAppraisalsEmotions2020; @avrySharingEmotionsContributes2020; @cereghettiSharingEmotionsComputermediated2015; @Chanel2013; @chanelGrandChallengeProblem2016; @fritzDynamicEmotionWheel2015; @fritzReinventingWheelEmotional2015; @molinariEmotionFeedbackComputermediated2013]. The project, which was part of the National Center of Competence in Research (NCCR) *Affective Sciences*, had two intertwined objectives:
+
+1. Designing Emotion Awareness Tools, which allow either the explicit or the autonomic sharing of 
+emotions in computer-mediated interaction; 
+2. Studying the impact of emotional awareness on collaboration both at intra- and inter-personal 
+levels, with respect to the emergence of strategies that improve collaboration such as monitoring, 
+regulating and reflecting on emotions.
