@@ -31,20 +31,24 @@ One way for learning activity and emotional awareness to coexist is through the 
 
 It follows that an EAT is a technological artifact, whose aim is to provide learners with emotional awareness in computer-mediated learning environments, under the assumption that its availability is beneficial to learners at the individual and/or collective levels [@arguedasAnalyzingHowEmotion2016; @avryAchievementAppraisalsEmotions2020; @avrySharingEmotionsContributes2020; @cerneaSurveyTechnologiesRise2015; @feidakisEndowingElearningSystems2011; @lavoueEmotionAwarenessTools2020; @molinariEmotionFeedbackComputermediated2013]. Such a claim has received in the last years an increasing interest in the affective, computer, and learning sciences from different theoretical, technical, methodological and empirical standpoints (*ibid.*). Applications of an EAT in computer-mediated learning environments may in fact range from providing learners with the possibility to self-report their emotions during a distance learning course as a means to increase self-reflection and self-regulation [@lavoueEmotionalDataCollection2017] to the implementation of a multi-modal system that provide emotional awareness through an unobtrusive brain-computer interface during computer-mediated collaboration [@makhkamovaAugmentingCollaborationInvisible2019]. Despite the differences in application, though, research gravitating around an EAT usually aims at investigating which factors -- intrinsic to the tool, deriving from the interaction between learners and the tool, between learners themselves, as well as between learners and the instructional design -- determine the adoption, perception, use and instrumentality of emotional awareness in computer-mediated learning environments.
 
-## Thesis Contribution {-}
+## Thesis Contribution
+
+The thesis aims at extending this area of investigation by implementing and assessing a multipurpose appraisal-driven emotion awareness tool based on self-report, primarily thought to be adopted in computer-mediated learning environments. The aim of the contribution is therefore twofold. On the one side, the methodological implementation of an EAT with specific features, among which the connection to appraisal theories of emotion [@moorsAppraisalTheoriesEmotion2013; @rosemanAppraisalTheoryOverview2001; @sanderModelsEmotionAffective2013; @schererWhatAreEmotions2005; @siemerSameSituationdifferentEmotions2007]. On the other side, the empirical assessment of the adoption, use, perception and instrumentality of the EAT in computer-mediated learning environments as a means both to evaluate and inform -- adopting a cyclical interaction design perspective [@rogersInterctionDesignHumanComputer2011] -- the implementation of the EAT. Both aims are briefly outlined in the remainder of the section.
+
+### Methodolocial Contribution {-}
 
 Alongside other scholars [@arguedasOntologyEmotionAwareness2015; @brackettRULERTheoryDrivenSystemic2019; @feidakisReviewEmotionAwareSystems2016; @harleyDevelopingEmotionAwareAdvanced2017; @lavoueEmotionAwarenessTools2020; @molinariEMORELOutilReporting2016], I reckon that the specific way in which emotional awareness is implemented in a computer-mediated learning environment plays a prominent role in determining whether the EAT is adopted in the first place, and whether it serves its purpose in the wide spectrum of potential applications in which it may be deployed. All things considering, the role of an EAT may be broken down in two intertwined factors, which overlap with the two fundamental functions of awareness tools more generally [@buderGroupAwarenessTools2011; @schmidtProblemAwareness2002]: 
 
-1. Whether, how, when and why emotional awareness is *inserted* into the computer-mediated learning environments through the EAT;
-2. Whether, how, when and why emotional awareness is *retrieved* from the EAT and processed by learners.
+1. Whether, when, how, and why emotional information is *inserted* into the computer-mediated learning environments through the EAT, creating thus the necessary, but not sufficient, conditions for emotional awareness to emerge;
+2. Whether, when, how, and why emotional information is *retrieved* from the EAT and processed by learners, for emotional awareness to be enacted and contribute to learning processes and outcomes.
 
-The thesis aims at contributing to research gravitating around 
-
-As a consequence, The thesis's contribution is twofold. On the one hand, from a methodological standpoint, it extends previous work on the design and development of an EAT, named the Dynamic Emotion Wheel [@fritzDynamicEmotionWheel2015; @fritzReinventingWheelEmotional2015]. On the other hand, from an empirical standpoint, it assess the adoption, use, and perception of that EAT in computer-mediated learning environments. Both objectives are further developed in the remainder of the section.
-
-### Methodological Contribution {-}
+To this extent, an EAT should 
 
 ### Empirical Contribution {-}
+
+## Thesis Outline {-}
+
+
 
 General introduction to the thesis:
 
