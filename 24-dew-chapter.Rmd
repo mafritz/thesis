@@ -16,3 +16,11 @@ emotions in computer-mediated interaction;
 2. Studying the impact of emotional awareness on collaboration both at intra- and inter-personal 
 levels, with respect to the emergence of strategies that improve collaboration such as monitoring, 
 regulating and reflecting on emotions.
+
+**Voluntary Self-Report**. Considerable attention in the last decades has been directed towards automatic recognition of emotion through individual or combined sources such as facial expressions, body posture, vocal prosody, or text analysis [@jordivallverduHandbookResearchSynthesizing2015; @schererBlueprintAffectiveComputing2010; @calvoAffectDetectionInterdisciplinary2010]. Some of these techniques have been applied in computer-mediated learning environments, notably in relation to virtual agents or intelligent tutors, which adapt or react based on learners' detected affective states [@calvoFrontiersAffectAwareLearning2012; @cerneaGroupAffectiveTone2014; @robisonEvaluatingConsequencesAffective2009]. 
+
+Notwithstanding the interest to detect affective information without learners' explicit action, ...
+
+**Implementing an Emotion Structure**. Despite a widespread agreement about the pivotal role of *affectivism* [@dukesRiseAffectivism2021], fundamental issues across affective phenomena (*e.g.* are emotions distinct from moods?) and within the same phenomenon (*e.g.*, what is an emotion?) are still unresolved [@izardManyMeaningsAspects2010; @sanderModelsEmotionAffective2013]. As a consequence, when endowing learners with emotional awareness, one has several options as to what constitute and is representative of *emotion*. For reasons that will be developed later in the text, this contribution adopts an appraisal-driven approach to emotion, according to which emotions are determined by an ongoing cognitive evaluation of events against a series of criteria [@moorsAppraisalTheoriesEmotion2013; @rosemanAppraisalTheoryOverview2001; @schererWhatAreEmotions2005].   
+
+**Moment-to-Moment Availability of Emotional Awareness**.
