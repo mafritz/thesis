@@ -68,6 +68,14 @@ On a *lower*-level, each contribution has specific research questions, which aim
 
 ## Thesis Outline {.unnumbered}
 
+The thesis is organized in four parts. Part I introduces the fundamental theoretical background that is common both to the methodological and empirical parts of the thesis. Chapter 1 gathers inter-disciplinary convergence about the importance of implementing affective phenomena in learning as a means to improve both learning processes and outcomes. Chapter 2 discusses emotion awareness and emotion awareness tools in computer-mediated learning environments, proposing fundamental assumptions about the reasons why it may be of use, as well as sketching the numerous interveing factors that may determine the adoption, use, perception and instrumentality of an EAT. Chapter 3 focuses on emotion theories and appraisal theories more specifically in order to discuss the reasons why they are considered as the reference for the emotional structure to be implemented in the EAT. Finally, Chapter 4 resumes previous work in the design of a prototype, named Dynamic Emotion Wheel, which will serve as the basis for further development of the multi-purpose toolbox.
+
+Part II presents the implementation of the EAT and the toolbox built around it as a proof of concept, that is, a functioning device for which conceptual features have been prioritized over more fundamental practices in software development such as error handling or testing. Chapter 5 discusses the requirements and the overall design principles of the EAT. Chapter 6 then illustrates the inner functioning of the parsimonious computational model that links appraisals criteria to the conscious emotional experience adopting a *k-nearest neighbor* approach with respect to an multi-dimensional underlying affective space. Finally, Chapter 7 briefly outlines how a user-friendly toolbox has been built around this core algorithm for scholars and practitioners to adapt the tool to their needs,as well as the features of the toolbox which are related to comparability of studies and sharing of material and data.
+
+Part III comprises the two empirical contributions, as well as the overall and comparative assessment of the EAT using results from both contributions. Chapter 8 illustrates the experiment in synchronous and collabrative settings, whereas Chapter 9 the observational study in asynchronous and individual settings described above. Finally, Chapter 10 provides the overall and comparative assessment of the EAT.
+
+Part IV concludes the thesis with the general discussion of Chapter 11 and the Conclusion. The Appendices at the end of the manuscript only provide links to supplemental material which are available online.
+
 General introduction to the thesis:
 
 -   Importance of affective phenomena in learning (affectivism era?)
