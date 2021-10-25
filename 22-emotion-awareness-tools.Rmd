@@ -11,13 +11,32 @@ library(kableExtra)
 
 Whereas the previous chapter provided a *bona fide* overview of the growing consensus in integrating affective phenomena into computer-mediated learning environments, this chapter delves more specifically into the topic of emotional awareness in computer-mediated learning environments. This chapter provides an overview of different aspects, as well as their intrinsic complexity, that must be faced when considering aims and means of endowing a computer-mediated learning environment with explicit emotional awareness. The chapter starts with an overview of a selection of related works. The selected works serve as a basis from which, later in the chapter, three basic assumptions about an Emotion Awareness Tool (EAT) are deduced. From these assumptions, then, the chapter proposes a schema, in which different mechanisms at play in the implementation of an EAT in computer-mediated learning environments are organized in functional terms. At the end of the chapter, some methodological issues are raised.
 
-## Related Works
 
 The previous chapter has provided an overview of the different concepts that are at play when affective phenomena are intertwined with learning in general, and computer-mediated learning environments more specifically. Determining the boundaries of related work in such a fervent and dynamic *milieu* is not an easy task. The objectives, methods, learning settings, and technologies implemented may vary greatly on a case-by-case basis. This section therefore provides an overview of selected works in the past ten years that share some common ground with the purpose of the present contribution. More specifically, (1) they make use of *some form* of voluntary and explicit expression of affective phenomena ; and (2) they refer to a context that may be broadly related, either for the aim or for the conditions, to computer-mediated learning environments. As previously stated, the field of affective and emotion aware systems in computer-mediated learning environments is recent and spans many disciplines, which complicates the adoption of a more systematic review of the existing literature. Furthermore, the selected works will be used as abstraction to extrapolate a more general and multipurpose approach to emotional awareness in computer-mediated learning environments rather than a confirming direction to follow-through. Contributions are presented chronologically, even though connections and progressive enhancement of previous work is quite limited.
 
-### Emotion Understanding in Computer-Mediated Collaboration
+## Emotional Awareness in Self-Regulation of Learning
 
-The first contribution of interest as a related work is by Eligio, Ainsworth and Crook [-@eligioEmotionUnderstandingPerformance2012]. The authors highlights thatawareness in computer-mediated collaboration focused primarily on behavioral and social functioning, whereas the affective dimension received at that time less attention. Eligio and colleagues (*ibid.*) therefore set forth two experiments aiming at exploring "what collaborators understand about each other's emotions and the implications of sharing information about them" (*ibid*, p. 2046).
+The first assumption about the instrumentality of emotional awareness implies that learners can benefit from it at the individual level, which roughly overlaps with the concept of self-regulation of learning.
+
+### Theoretical Underpinnings
+
+The role of emotion at the individual and intra-personal level has received over the last few decades extensive consideration from different perspectives and using different methods of investigation. A widespread consensus has emerged over the years about the fact that emotion, rather then disruptive of behavior and in antithesis with cognition, plays a prominent role in helping the organism to cope with a complex environment [@adolphsNeuroscienceEmotionNew2018; @armonyCambridgeHandbookHuman2013; @damasioDescartesError2006; @damasioStrangeOrderThings2018; @schererEmotionTheoriesConcepts2009; @immordino-yangEmotionsLearningBrain2016; @levensonAutonomicNervousSystem2014; @levensonIntrapersonalFunctionsEmotion1999; @leventhalRelationshipEmotionCognition1987; @pessoaCognitiveemotionalBrainInteractions2013; @sanderModelsEmotionAffective2013]. 
+
+For instance, emotion is known to influence high-level cognitive functions such as attention, perception, memory, and decision-making [@broschImpactEmotionPerception2013], which are all implicated in learning processes. A large body of research suggests that a dedicated system to emotional attention may complement and interact with the exogenous and endogenous systems [@broschAdditiveEffectsEmotional2011]. Emotionally charged stimuli are often bestowed precedence in perception  [@broschPerceptionCategorisationEmotional2010]. Many links between emotion and memory have been established both in the encoding and retrieving of information [@kensingerRetrievalEmotionalEvents2020; @tyngInfluencesEmotionLearning2017]. Finally, when emotion is not taken into account in decision-making, consequences can be highly disruptive for the person [@becharaRoleEmotionDecisionmaking2004; @rollsEmotionDecisionmakingExplained2014].
+
+Emotional awareness, though, goes a step forward in considering the importance of emotion at the intra-personal level, because it presupposes that learners can benefit from being aware of their emotions. Whether consciousness is a necessary condition for emotion to exist [@ledouxHigherorderTheoryEmotional2017; @liebermanBooConsciousnessProblem2019] is a debate outside the scope of the present contribution. The use of voluntary self-report pragmatically requires consciousness for emotional awareness to emerge in the first place.
+
+A field of study that has received widespread attention is that of emotion regulation [@grossEmotionRegulationCurrent2015a; @grossHandbookEmotionRegulation2014], a process which, when performed explicitly rather than implicitly [@torrePuttingFeelingsWords2018], requires the person to be aware of the emotion to be regulated.  
+
+
+### Related Works
+
+## Emotion in Co-Regulation and Social Regulation of Learning
+
+### Theoretical Underpinnings
+
+### Related Works
+The first contribution of interest as a related work is by Eligio, Ainsworth and Crook [-@eligioEmotionUnderstandingPerformance2012]. The authors highlight that awareness in computer-mediated collaboration focused primarily on behavioral and social functioning, whereas the affective dimension received at that time less attention. Eligio and colleagues (*ibid.*) therefore set forth two experiments aiming at exploring "what collaborators understand about each other's emotions and the implications of sharing information about them" (*ibid*, p. 2046).
 
 In the first experiment, the authors asked pairs of same-sex, unacquainted participants to play a collaborative game in a co-located environment, where they shared the same computer equipment. At the end of the collaboration, participants were asked to fill in two questionnaires where they had to rate the intensity of 15 emotions: *happy*, *angry*, *sad*, *fearful*, *angry*, *bored*, *challenged*, *interested*, *hopeful*, *frustrated*, *contempt*, *disgusted*, *surprised*, *proud*, *ashamed* and *guilty*. In the *own* version of the questionnaire, they rated the intensity of each emotion as they have perceived it during the task. In the *partner* version of the questionnaire, participants had to project the intensity by which their partner in the dyad had experienced each of the listed emotion. The administration of the questionnaire was made individually, so that participants could not discuss the matter with their partner, and up until that moment, participants were not informed of the rating, so that they had no particular reason to pay attention to emotions. Comparison of consistency between the two questionnaires highlighted that, despite collaborating side-by-side, participants had little understanding of their partner's emotions. On the contrary, consistently with previous findings in the literature [@kruegerTrulyFalseConsensus1994; @tomaAnticipatedCooperationVs2010], participants tended to project their own emotional experience onto their partners. Eligio and colleagues (*ibid*) provides two possible explanations of the results. On the one hand, participants could simply not care about the emotions of their partner. On the other hand, participants could genuinely care about them, but lacked the means to focus on them, for instance because the task was too demanding, and they therefore decided to prioritize other mental states perceived as *more* instrumental to the task at hand. In both cases, the attribution of their own emotional experiences to the partner is caused by a lack of information available, but the reasons for this shortcoming are not the same depending on the intentions.
 
@@ -25,7 +44,14 @@ In the second experiment, Eligio and colleagues (*ibid*) therefore decided to in
 
 From the two experiments, Eligio and colleagues (*ibid.*) concluded that participants do not have an accurate understanding of the emotion of their partner if their attention is not explicitly driven to it. Providing emotional awareness seems thus a promising way to increase mutual modeling (even though Eligio and colleagues do not use the term in their article), especially in remote situations.
 
-### 
+## Emotion in Computer-Mediated Learning Environments
+
+### Theoretical Underpinnings
+
+### Related Works
+
+
+---
 
 ## Definition and Assumptions of an Emotion Awareness Tool
 
