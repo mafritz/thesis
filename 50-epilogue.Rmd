@@ -1,1 +1,1 @@
-# Part IV -- Concluding Remarques {.unnumbered}
+# (PART\*) Concluding Remarques {.unnumbered}

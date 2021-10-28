@@ -1,4 +1,4 @@
-# (APPENDIX) Appendix {-} 
+# (PART\*) Appendix {-} 
 
 ```{r s1-setup-for-appendices, include=FALSE, echo=FALSE}
 library(tidyverse)

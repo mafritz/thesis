@@ -1,1 +1,1 @@
-# Part II -- Proof of Concept {.unnumbered}
+# (PART\*) Proof of Concept {.unnumbered}
