@@ -50,7 +50,7 @@ s2.mlm.ea_usefulness.r2 <- r2(s2.mlm.ea_usefulness)
     y = "Emotional Awareness Usefulness"
   ) +
   scale_y_continuous(limits = c(1, 10), breaks = c(1, 4, 7, 10)) +
-  scale_x_discrete(label=abbreviate) +
+  scale_x_discrete(label = abbreviate) +
   facet_wrap(~dimension, nrow = 3) +
   # guides(color = FALSE) +
   theme(
