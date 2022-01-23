@@ -39,3 +39,17 @@ s1.anova.expressed_emotions.graph <- ggplot(s1.aggregated_emotions, aes(x = grou
     text = element_text(size = 16)
   ) +
   NULL
+
+library(easystats)
+library(rstanarm)
+
+model <- stan_glm(n ~ group, data = s1.aggregated_emotions, prior = normal(location = 18.8, scale = 7.10, autoscale = FALSE))
+describe_posterior(model, test = c("p_direction", "rope", "bayesfactor"))
+
+
+report(model)
+plot(estimate_means(model))
+
+(group_diff <- emmeans(model, pairwise ~ group))
+
+estimate_contrasts(model, test = "bf", bf_prior = model)

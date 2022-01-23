@@ -74,3 +74,30 @@ s1.anova.total_visit_duration.graph <- ggplot(s1.total_visit_duration, aes(x = g
     legend.position = "none"
   ) +
   NULL
+
+## Bayes
+## Bayes
+
+library(easystats)
+library(rstanarm)
+library(see)
+
+model.visit <- stan_glm(value ~ group, data = s1.visit_count, prior = normal(116.5, 49.115))
+posteriors.visit <- get_parameters(model.visit)
+describe_posterior(model.visit, test = c("p_direction", "rope", "bayesfactor"))
+report(model.visit)
+plot(estimate_means(model.visit))
+estimate_contrasts(model.visit, test = "bf", bf_prior = model.visit)
+
+ggplot(posteriors.visit) +
+  geom_density(aes(x = groupPartner), fill = "orange", alpha = 0.7) +
+  geom_density(aes(x = groupMutual), fill = "violet", alpha = 0.7) +
+  NULL
+
+model.duration <- stan_glm(value ~ group, data = s1.total_visit_duration, prior = normal(49.978, 27.351))
+describe_posterior(model.duration, test = c("p_direction", "rope", "bayesfactor"))
+report(model.duration)
+plot(estimate_means(model.duration))
+estimate_contrasts(model.duration, test = "bf", bf_prior = model.duration)
+
+

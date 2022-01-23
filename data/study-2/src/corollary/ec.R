@@ -95,3 +95,22 @@ s2.sub_competences_to_expectancy.lm <- lm(
   Expectancy ~ recognition + understanding + regulation + management, 
   s2.geco_score_to_eau.wider
 )
+
+## Bayes
+
+library(easystats)
+library(rstanarm)
+library(see)
+
+s2.geco_score_to_eau.wider$Expectancy.fake = runif(nrow(s2.geco_score_to_eau.wider), min = 0, max = 10)
+
+model.expectancy <- stan_glm(
+  Expectancy ~ recognition + understanding + regulation + management, 
+  data = s2.geco_score_to_eau.wider,
+  prior = normal(location = c(0.58, 0.67, 1.14, .48))
+)
+
+result.expectancy <- describe_posterior(model.expectancy)
+plot(result.expectancy, stack = FALSE, priors = TRUE)
+report(model.expectancy)
+describe_posterior(model.expectancy, test = c("p_direction", "rope", "bayesfactor"))
