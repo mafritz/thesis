@@ -40,20 +40,20 @@ s1.anova.expressed_emotions.graph <- ggplot(s1.aggregated_emotions, aes(x = grou
   ) +
   NULL
 
-library(easystats)
-library(rstanarm)
-library(bayesplot)
-
-model <- stan_glm(n ~ group, data = s1.aggregated_emotions, prior = normal(location = 18.8, scale = 7.10, autoscale = FALSE))
-describe_posterior(model, test = c("all"), rope_range = c(4, 4))
-
-report(model)
-plot(estimate_means(model))
-
-mcmc_areas(as.matrix(model),
-           pars = c("groupPartner", "groupMutual"),
-           prob = 0.95)
-
-(group_diff <- emmeans(model, pairwise ~ group))
-
-estimate_contrasts(model, test = "bf", bf_prior = model)
+# library(easystats)
+# library(rstanarm)
+# library(bayesplot)
+# 
+# model <- stan_glm(n ~ group, data = s1.aggregated_emotions, prior = normal(location = 18.8, scale = 7.10, autoscale = FALSE))
+# describe_posterior(model, test = c("all"), rope_range = c(4, 4))
+# 
+# report(model)
+# plot(estimate_means(model))
+# 
+# mcmc_areas(as.matrix(model),
+#            pars = c("groupPartner", "groupMutual"),
+#            prob = 0.95)
+# 
+# (group_diff <- emmeans(model, pairwise ~ group))
+# 
+# estimate_contrasts(model, test = "bf", bf_prior = model)
