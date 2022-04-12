@@ -10,7 +10,7 @@ library(kableExtra)
 Sys.setenv(LANG = "en")
 
 # Load the relevant data and graphs from the study-comparison folder
-source(here("data", "study-comparison", "comparison-export.R"))
+source(here("data", "study-comparison", "comparison-export.R"), local = knitr::knit_global(), encoding = "UTF-8")
 ```
 
 This chapter provides an overall and comparative assessment about the use and perception of the Emotion Awareness Tool (EAT) using data collected in the two previous empirical chapters of the thesis. In particular, the chapter aims at determining (1) to what extent participants exploited the theory-driven features of the tool, including the emotional structure provided by the underlying affective space (*i.e.*, the EATMINT circumplex adopted in both empirical contributions); and (2) whether there are observable differences in the use and perception of the tool with respect to the prototypical distance learning settings, that is, the Asynchronous and Individual setting (Asynch./Indiv.) of the previous chapter, and the Synchronous and Collaborative setting (Synch./Collab.) of chapter 4. Naturally, the comparison between distance learning settings is not -- and cannot be -- aimed at generalizing the use and perception of the EAT to the specific distance learning condition (*e.g.*, assess whether a particular feeling occurs more often when learners work individually rather than in pairs). This is clearly an overarching assessment that falls way outside the scope of the present contribution. Nonetheless, it is possible to take advantage of the two empirical studies to explore if the multipurpose vocation of the EAT can be sustained in two very different distance learning conditions.

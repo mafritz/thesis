@@ -1,4 +1,11 @@
-# Foreword to the Methodological Part of the Thesis {.unnumbered}
+# Extending the Dynamic Emotion Wheel To a Multi-Purpose Emotion Awareness Tool for Practictioners and Researchers
+
+- Extension of the DEW
+- More than two dimensions
+- Appraisal vs. dimensions
+- Comparaison between studies
+- Citing cherer on utilitarian vs other emotions (e.g. depends on students finding prototypical appraisals in school)
+- Divide improvement from theoretical and practical perspectives
 
 In Part I of the thesis, the network of theoretical foundations in which the concept of an Emotion Awareness Tool (EAT) is intertwined has been set forth with respect both to the overall *affective milieu* in which the use of this type of tool is currently investigated, and the challenges in the conceptualization of each of the terms composing the acronym. *Emotion* has been illustrated through an overarching framework, the Component Process Model, from which a causal mechanisms as been retained: appraisals criteria as determinants of elicitation and differentiation in the emotional experience in the form of a holistic subjective feeling. *Awareness* has been substantiated in a double perspective: self-awareness and group-awareness, depending on the target of the instrumental information provided by emotional awareness. Finally, the technical part, the *Tool*, has been circumscribed to a moment-to-moment and self-report perspective. In a nutshell, these are the main premises to two intertwined methodological objectives: 
 

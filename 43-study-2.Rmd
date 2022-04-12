@@ -10,7 +10,7 @@ library(kableExtra)
 Sys.setenv(LANG = "en")
 
 # Load the relevant data and graphs from the study-1 folder
-source(here("data", "study-2", "s2-export.R"))
+source(here("data", "study-2", "s2-export.R"), local = knitr::knit_global(), encoding = "UTF-8")
 ```
 
 General introduction to the study:

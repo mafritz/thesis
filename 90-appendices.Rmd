@@ -9,8 +9,8 @@ library(pander)
 library(kableExtra)
 
 # Load the relevant data and graphs from the study-1 and study-2 folders
-source(here("data", "study-1", "s1-export.R"))
-source(here("data", "study-2", "s2-export.R"))
+source(here("data", "study-1", "s1-export.R"), local = knitr::knit_global(), encoding = "UTF-8")
+source(here("data", "study-2", "s2-export.R"), local = knitr::knit_global(), encoding = "UTF-8")
 ```
 
 # Study 1 - Synch./Coll.

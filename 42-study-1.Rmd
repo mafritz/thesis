@@ -8,7 +8,7 @@ library(knitr)
 library(kableExtra)
 
 # Load the relevant data and graphs from the study-1 folder
-source(here("data", "study-1", "s1-export.R"))
+source(here("data", "study-1", "s1-export.R"), local = knitr::knit_global(), encoding = "UTF-8")
 ```
 
 General introduction to the study:
@@ -183,12 +183,6 @@ Exclusion criteria determined beforehand concerned only technical issues that co
 For hypothesis *H1*, concerning differences in expression of emotions, a omnibus one-way ANOVA with pairwise comparison between all conditions was planned beforehand. The number of emotions expressed through the EAT represents the dependent variable, and the interface of the EAT the independent variable.
 
 For hypothesis *H2*, concerning differences in perception of emotions, two indicators retrieved by eye-tracking measures [@blascheckVisualizationEyeTracking2017; @pooleEyeTrackingHumanComputer2005] are used as dependent variables. First, the total time (in seconds) that participants spent looking at the perceiving-monitoring zone of the interface. Such indicator is usually interpreted as a proxy for information processing and could account for interest (*i.e.*, people look at it longer because it is interesting) or complexity (*i.e.*, people look at it longer because they need more time to understand what it means). Second, the number of times participants sought information by orienting their gaze inside the perceiving-monitoring zone of the interface, which is usually interpreted as an indicator that the person intentionally seeks for information she may find useful or that she got lost and needs reorientation. Given the relative simplicity of the information provided -- even though people do not like graphs [@carpenterModelPerceptualConceptual1998; @pinkerTheoryGraphComprehension1990] -- and the use of a fixed interface of the EAT, both measures are used as indicators of interest. For both measures, a omnibus one-way ANOVA with pairwise comparison between all conditions were planned beforehand. A family-wise correction to account for inflation in Type I error has been planned for each pairwise comparison.
-
-Within this experimental setting, a sensitivity analysis reveals that, given the planned sample $N = 48$ and conventional $\alpha$ = 0.05 and $\beta$ = 0.8 error rates control, each statistical test will be able to detect an effect size of Cohen's $d$ = `r printnum(s1.detectable_d)`. Taking a previous study using exactly the same task as benchmark, that would translate in practical terms as follows:
-
--   For expressing emotions, the statistical test will detect a difference of `r printnum(s1.delta_emotions)` expressed emotions or greater, given a mean of $M=`r printnum(mean(fritz2015_num_emotions))`$ ($SD = `r printnum(sd(fritz2015_num_emotions))`$) observed in Fritz (2015)
--   For information processing, the statistical test will detect a difference of `r printnum(s1.delta_processing)` seconds or greater, given a mean of $M=`r printnum(mean(fritz2015_eyetracking$Total_Fixation_Duration_Monitoring_Sum))`$ ($SD =`r printnum(sd(fritz2015_eyetracking$Total_Fixation_Duration_Monitoring_Sum))`$) observed in Fritz (2015);
--   For information seeking, the statistical test will detect a difference of `r printnum(s1.delta_seeking)` number of visits or greater, given a mean of $M=`r printnum(mean(fritz2015_eyetracking$Visit_Count_Monitoring_Sum))`$ ($SD =`r printnum(sd(fritz2015_eyetracking$Visit_Count_Monitoring_Sum))`$) observed in Fritz (2015).
 
 All analysis are conducted using the statistical software R, version 4.0.5. Analysis of variance use the Afex package version `r packageVersion("afex")` [@singmannAfexAnalysisFactorial2020].
 
