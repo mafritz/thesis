@@ -160,7 +160,7 @@ From the point of view of an EAT, emotional awareness from the response-patterni
 
 ### The Integration/Categorization Module: Subjective Feeling As Emotion Meaning Making
 
-The integration/categorization module may be considered the *output* of the CPM, because it coalesces information from all the other components into a conscious emotional experience. In fact, the CPM considers the subjective feeling "a holistic cognitive representation that integrates the temporarily coordinated changes of the other components [...], allowing the individual to reach awareness of his/her state and label it --- stating that he/she 'has' or 'feels' a particular emotion" [@schererGRIDMeetsWheel2013, p. 281]. Contrary to other interpretation of what an emotion is that requires consciousness for emotion to exist [@ledouxHigherorderTheoryEmotional2017; @liebermanBooConsciousnessProblem2019], according to the CPM the subjective feeling does not necessarily emerge to consciousness, nor it fully represents the emotional episode. Figure
+The integration/categorization module may be considered the *output* of the CPM, because it coalesces information from all the other components into a conscious emotional experience. In fact, the CPM considers the subjective feeling "a holistic cognitive representation that integrates the temporarily coordinated changes of the other components [...], allowing the individual to reach awareness of his/her state and label it -- stating that he/she 'has' or 'feels' a particular emotion" [@schererGRIDMeetsWheel2013, p. 281]. Contrary to other interpretation of what an emotion is that requires consciousness for emotion to exist [@ledouxHigherorderTheoryEmotional2017; @liebermanBooConsciousnessProblem2019], according to the CPM the subjective feeling does not necessarily emerge to consciousness, nor it fully represents the emotional episode. On the contrary, as depicted Figure \@ref(fig:tf-cpm-subjective-feeling-caption), the subjective feeling emerges from the coordination of (A) unconscious, (B) conscious and (C) semantic/communicative processes.
 
 (ref:tf-cpm-subjective-feeling-caption) LABEL
 
@@ -168,8 +168,9 @@ The integration/categorization module may be considered the *output* of the CPM,
 knitr::include_graphics(here("figure/theory/cpm-subjective-feeling.jpg"))
 ```
 
--   Explain the threeparti
--   GRID
+As the schema illustrates, a virtual *zone of valid self-report* does completely overlap with the *true* phenomena, meaning that a person can potentially verbalize or communicate (circle C) a subjective feeling that is not representative either or neither of the *true qualia* of circle A or the conscious representation of it represented by circle B. For instance, the person may fail to integrate the whole *signals* from the components in circle A, and therefore not *feel* the episode in spite of the organism experiencing it. This will result in not reporting an emotion. Another possibility is that the person consciously attributes to the *true qualia* a different representation from the *original signal* (circle B), as in the case of interpreting excitement for collaborating with a new colleague as fear. Finally, the person may verbalize or communicate (circle C) a different emotion from the one experienced due to confusion or lack of emotion-related vocabulary, as in communicating frustration rather than anger.
+
+Illustrates emotion-meaning making link with CPM (Grid, empirical evidence, appraisal and achievement emotions, ...)
 
 ### Synthesis
 
