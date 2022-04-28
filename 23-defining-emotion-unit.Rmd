@@ -69,9 +69,17 @@ This contribution adopts the Component Process Model theoretical framework [@sch
 
 ## The Component Process Model Theoretical Framework
 
-The Component Process Model (CPM) is a theoretical framework bridging appraisal and componential approaches to emotion, first proposed by Scherer [-@schererEmotionProcessFunction1982] in the 1980's and then refined over the years [-@schererNatureDynamicsRelevance2013; -@schererWhatAreEmotions2005; -@schererAppraisalConsideredProcess2001; -@schererDynamicArchitectureEmotion2009]. It has been applied to different contexts: the reader may find discussions of the model in relation with learning and education in @shumanConceptsStructuresEmotions2014, with affective computing in @schererBlueprintAffectiveComputing2010, with emotional meaning-making in @fontaineComponentsEmotionalMeaning2013, with emotional competence/intelligence in @schererComponentialEmotionTheory2007, and with neuroscience in @sanderAppraisalDrivenComponentialApproach2018. An overarching and accessible description of the model can be found in @schererWhatAreEmotions2005, whereas @schererAppraisalConsideredProcess2001 and @schererDynamicArchitectureEmotion2009 are more focused on the dynamic, recurrent and ongoing features of the model. Finally, recent developments are discussed in @schererNatureDynamicsRelevance2013.
+The Component Process Model (CPM) is a theoretical framework bridging appraisal and componential approaches to emotion, first proposed by Scherer [-@schererEmotionProcessFunction1982] in the 1980's and then refined over the years [-@schererNatureDynamicsRelevance2013; -@schererWhatAreEmotions2005; -@schererAppraisalConsideredProcess2001; -@schererDynamicArchitectureEmotion2009]. It has been applied to different contexts: the reader may find discussions of the model in relation with learning and education in @shumanConceptsStructuresEmotions2014, with affective computing in @schererBlueprintAffectiveComputing2010, with emotional meaning-making in @fontaineComponentsEmotionalMeaning2013, with emotional competence/intelligence in @schererComponentialEmotionTheory2007, and with neuroscience in @sanderAppraisalDrivenComponentialApproach2018. An overarching and accessible description of the model can be found in @schererWhatAreEmotions2005, whereas @schererAppraisalConsideredProcess2001 and @schererDynamicArchitectureEmotion2009 are more focused on the dynamic, recurrent and ongoing features of the model. Finally, more recent developments are discussed in @schererNatureDynamicsRelevance2013, @scherer2019 and @scherer2022.
 
-This section first proposes an overview of model and its components according to the objectives of the thesis by combining a computational [@schererComponentProcessModel2010], emotion meaning-making [@schererMeasuringMeaningEmotion2013; @schererSemanticStructureEmotion2018] and voluntary self-report [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005] perspectives.
+The choice of the CPM as the main theoretical source for the implementation of an emotion structure into an EAT is warranted by the following reasons. First, the model encompasses the whole process of emotion elicitation, manifestation, and representation to oneself and/or to to others [@sanderModelsEmotionAffective2013]. Second, the model draws a clear distinction between different affective phenomena. This is particularly relevant following for instance Pekrun and Linnerbrink-Garcia [@pekrunIntroductionEmotionsEducation2014, p. 2], who point out that "]i]n the broader education literature, affect is often used to denote a broad variety of noncognitive constructs including emotion but also including self-concept, beliefs, motivation, and so on [...]. In contrast, in emotion research, affect refers to emotions and moods more specifically". As depicted in \@ref(fig:emtion-vs-other-affetive-phenomena), the CPM considers emotion as phenomena that are, in partocular, strongly event focused and driven by appraisl (i.e., elicited by an event that can be identified and evaluated), of relatively brief duration, subject to abrupt changes, and with the potential of being regulated. Third, the model bestow to the subjective experience of the emotional episode a central role in extrapolating meaning-making both at the individual and interpersonal levels [@grandjeanConsciousEmotionalExperience2008; @schererWhatAreEmotions2005]. Forth, the CPM can be related to emotional intelligence/competence in concrete, practical terms [@schererComponentialEmotionTheory2007]. And finally, the model is computational in nature, which facilitates a transposition in a computer-mediated environment [@schererBlueprintAffectiveComputing2010].
+
+(ref:emtion-vs-other-affetive-phenomena-caption) Comparison between features of different affective phenomena, retrieved from @scherer2022, Table 1 in the original article, p. 158.
+
+```{r emtion-vs-other-affetive-phenomena, fig.align="center", fig.cap="(ref:emtion-vs-other-affetive-phenomena-caption)"}
+knitr::include_graphics(here("figure/theory/emotion-vs-other-affective-phenomena.png"))
+```
+
+This section first proposes an overview of model and its components according to the objectives of the thesis by combining a computational [@schererComponentProcessModel2010], emotion meaning-making [@schererMeasuringMeaningEmotion2013; @schererSemanticStructureEmotion2018] and voluntary self-report [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005] perspectives. Then, it provides further information on 3 *modules* that can be interpreted in an Input/Output process. Finally, it highlights how the CPM relates to the concept of emotional competence that is central to the use of an EAT.
 
 ### Overall Description of the Model
 
@@ -172,9 +180,9 @@ As the schema illustrates, a virtual *zone of valid self-report* does completely
 
 Illustrates emotion-meaning making link with CPM (Grid, empirical evidence, appraisal and achievement emotions, ...)
 
-### Synthesis
-
 > if one knows the results of an individual's event appraisal on major checks, one can approximately predict what kind of emotion he or she will most likely experience (or more precisely, what label the person is likely to use to refer to the experience). -- @schererDynamicArchitectureEmotion2009, p. 1326
+
+### Emotional Competence
 
 ## Corolollaries to the Component Process Model
 
