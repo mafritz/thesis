@@ -217,14 +217,4 @@ include_graphics(here("figure/dew/gew-v3.png"))
 
 The interface of the GEW, depicted in its third version in Figure \@ref(fig:gew-version-3-figure) [@schererGRIDMeetsWheel2013], presents 20 subjective feelings -- chosen with respect to their frequency in emotion literature and everyday language use -- organized in a circumplex, which is determined by two appraisal dimensions as axes: *Valence* on the abscissa and *Control/Power* on the ordinate. Each feeling is positioned according to a value along both axes and belongs thus to one of the four quadrants of the circumplex, determined by the combination of positive or negative Valence, and positive or negative Control/Power. From the origin of the axes stem 5 circles for each of the subjective feelings. The circles grow in size as they get closer to the edge of the circumplex, so that the first circle is the smallest, and the last one the biggest. Users can therefore choose, first, the *row* of circles that corresponds to the subjective feeling they are experiencing and, second, the intensity of the feeling as a function of the circle's size.
 
-## A Working Definition of Emotion
-
-*x* is an emotion only *if*
-
-1.  *x* is an affective *episode*
-2.  x has the property of intentionality (i.e., of being directed)
-3.  x contains bodily changes (arousal, expression, etc.) that are felt
-4.  x contains a perceptual or intellectual episode, y, which has the property of intentionality
-5.  the intentionality of x is inherited from the intentionality of y
-6.  x is triggered by at least one appraisal
-7.  x is guided by at least one appraisal
+## Synthesis
