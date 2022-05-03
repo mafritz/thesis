@@ -9,18 +9,9 @@ library(kableExtra)
 
 ```
 
-The thesis builds on and extends previous work on Emotion Awareness Tools carried out in the Emotion Awareness Tool for Computer-Mediated Interactions (EATMINT) project [@avryAchievementAppraisalsEmotions2020; @avrySharingEmotionsContributes2020; @cereghettiSharingEmotionsComputermediated2015; @Chanel2013; @chanelGrandChallengeProblem2016; @fritzDynamicEmotionWheel2015; @fritzReinventingWheelEmotional2015; @molinariEmotionFeedbackComputermediated2013]. The project, which was part of the National Center of Competence in Research (NCCR) *Affective Sciences*, had two intertwined objectives:
+This chapter illustrates a first attempt to implement an Emotion Awareness Tool (EAT) with the main characteristics put forward in the introduction conducted as part of the Emotion Awareness Tool for Computer-Mediated Interactions (EATMINT) project [@avryAchievementAppraisalsEmotions2020; @avrySharingEmotionsContributes2020; @cereghettiSharingEmotionsComputermediated2015; @Chanel2013; @chanelGrandChallengeProblem2016; @fritzDynamicEmotionWheel2015; @fritzReinventingWheelEmotional2015; @molinariEmotionFeedbackComputermediated2013]. The tool, named Dynamic Emotion Wheel [@fritzDynamicEmotionWheel2015; @fritzReinventingWheelEmotional2015] is deeply inspired by the Geneva Emotion Wheel, a self-report tool rooted in the Component Process Model introduced in the previous chapter.
 
-1. Designing Emotion Awareness Tools, which allow either the explicit or the autonomic sharing of 
-emotions in computer-mediated interaction; 
-2. Studying the impact of emotional awareness on collaboration both at intra- and inter-personal 
-levels, with respect to the emergence of strategies that improve collaboration such as monitoring, 
-regulating and reflecting on emotions.
+The project, which was part of the National Center of Competence in Research (NCCR) *Affective Sciences*, had two intertwined objectives:
 
-**Voluntary Self-Report**. Considerable attention in the last decades has been directed towards automatic recognition of emotion through individual or combined sources such as facial expressions, body posture, vocal prosody, or text analysis [@jordivallverduHandbookResearchSynthesizing2015; @schererBlueprintAffectiveComputing2010; @calvoAffectDetectionInterdisciplinary2010]. Some of these techniques have been applied in computer-mediated learning environments, notably in relation to virtual agents or intelligent tutors, which adapt or react based on learners' detected affective states [@calvoFrontiersAffectAwareLearning2012; @cerneaGroupAffectiveTone2014; @robisonEvaluatingConsequencesAffective2009]. 
-
-Notwithstanding the interest to detect affective information without learners' explicit action, ...
-
-**Implementing an Emotion Structure**. Despite a widespread agreement about the pivotal role of *affectivism* [@dukesRiseAffectivism2021], fundamental issues across affective phenomena (*e.g.* are emotions distinct from moods?) and within the same phenomenon (*e.g.*, what is an emotion?) are still unresolved [@izardManyMeaningsAspects2010; @sanderModelsEmotionAffective2013]. As a consequence, when endowing learners with emotional awareness, one has several options as to what constitute and is representative of *emotion*. For reasons that will be developed later in the text, this contribution adopts an appraisal-driven approach to emotion, according to which emotions are determined by an ongoing cognitive evaluation of events against a series of criteria [@moorsAppraisalTheoriesEmotion2013; @rosemanAppraisalTheoryOverview2001; @schererWhatAreEmotions2005].   
-
-**Moment-to-Moment Availability of Emotional Awareness**.
+1.  Designing Emotion Awareness Tools, which allow either the explicit or the autonomic sharing of emotions in computer-mediated interaction;
+2.  Studying the impact of emotional awareness on collaboration both at intra- and inter-personal levels, with respect to the emergence of strategies that improve collaboration such as monitoring, regulating and reflecting on emotions.
