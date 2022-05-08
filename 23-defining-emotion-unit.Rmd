@@ -13,6 +13,8 @@ library(kableExtra)
 
 ```
 
+This chapter lays out the foundation for implementing the emotion structure into an EAT as advocated in the previous chapter. The structure of an emotion is determined by its definition. For this reason, the chapter starts by highlighting the difficulties in reaching a consensual definition of what an emotion is. Next, a brief outline of competing emotion theories is provided. Among these theories, the contribution adopts appraisal theories of emotion, whose characterizing features are depicted in the third section of the chapter. Among appraisal theories, the Component Process Model, depicted in section 4, is retained as the theory of reference for the implementation of the EAT. The framework presents also the advantages of proposing a concrete link with emotional competence (section 5) and with emotion self-report from an appraisal-driven perspective (section 6), two central aspects in the voluntary use of an EAT.
+
 ## What is an Emotion?
 
 *What is an emotion?* is a question that literally appears in a multitude of scientific contributions. For instance, it is the title of a seminal article by William James [-@jamesWhatEmotion1884], which, despite being more than a century old, is still source of lively debate [@ellsworthWilliamJamesEmotion1994; @schererWhatAreEmotions2005]. There are many iconic statements that testify to the difficulty of studying emotions from a scientific perspective. Fehr and Russel [-@fehrConceptEmotionViewed1984, p. 464] argued that "[e]veryone knows what an emotion is, until asked to give a definition", which resonates with Kleinginna and Kleinginna [-@kleinginnaCategorizedListEmotion1981], who, around the same time forty years ago, collected almost one hundred definitions. More recently, Frijda and Scherer [-@frijdaEmotionDefinitionsPsychological2009, p. 142] still confirmed that "emotion may be one of the fuzziest concepts in all of the sciences", which was empirically corroborated by Izard [-@izardManyMeaningsAspects2010], who attempted -- and failed -- to extrapolate a unitary definition from the responses of 35 leading researchers from different fields to 6 questions about emotion definition, function, activation and regulation.
@@ -162,9 +164,18 @@ To sum up, in the CPM appraisal criteria play a prominent role in emotion elicit
 
 ### The Response-Patterning Module
 
-The response-patterning module build upon information provided by sequential evaluation checks (SECs) described in previous subsection. Adaptive reactions can be designated at two levels: (1) intra-individual, with the regulation of the organism's functions (neurophysiological component) and preparedness to action (motivational component); and (2) inter-individual, through the motor expression component, with efferent manifestations such as facial expression, vocal prosody or body posture playing an important communicative role [see @hyniewskaNaturalisticEmotionDecoding2019; @schererFacialExpressionsAllow2007; @shumanEmotionPerceptionComponential2017 from a componential perspective].
+The response-patterning module build upon information provided by sequential evaluation checks (SECs) described in previous subsection. Adaptive reactions can be designated at two levels: (1) intra-individual, with the regulation of the organism's functions (neurophysiological component) and action tendencies (motivational component); and (2) inter-individual, through the motor expression component, which comprises efferent manifestations such as facial expression, vocal prosody or body posture playing an important communicative role [see @hyniewskaNaturalisticEmotionDecoding2019; @schererFacialExpressionsAllow2007; @shumanEmotionPerceptionComponential2017 from a componential perspective].
 
 From the point of view of an EAT, emotional awareness from the response-patterning would require dedicated hardware/software both at the intra-individual (*e.g.*, heart-rate detection, skin conductance, ...) and inter-individual level (audio/video connection, autonomic emotion recognition from facial expression, ...). As stated in the introduction, even though these techniques exist and are currently deployed in emotional awareness research in computer-mediated environments, they are not considered for the purpose of the present contribution. It is interesting to point out, though, that a growing body of research considers efferent manifestations as cues of underlying appraisal [@scherer2018; @scherer2007; @mumenthaler2012; @parkinson2013]. People may therefore infer from efferent manifestations of emotion what kind of evaluation the person is doing of the situation, which then determines the whole emotional episode. This view is consistent with Van Kleef's functional equivalence hypothesis [@vankleefSocialEffectsEmotions2017] illustrated in the previous chapter. In other words, if people are provided with alternative appraisal cues, the social function of the expression may be considered functionally equivalent.
+
+The action tendency component, on the other hand, is of central concern from an emotional awareness perspective. In fact, according to the CPM, emotion predisposes the organism to act in a certain way, even though the course of action may be blocked or redefined before the concrete execution. @shumanConceptsStructuresEmotions2014 provide some examples with respect to learning:
+
+> For example, feeling curious is associated with approach rather than avoidant behavior. At the same time, as action tendencies are not actions (i.e., overt behavior), one has some flexibility to decide whether or not to carry out the action. This decoupling of stimulus and response distinguishes emotions from reflexes and allows for greater behavioral flexibility. For example, in a classroom, students sometimes need to wait before they can ask their questions. The action tendency associated with curiosity motivates students to ask questions, but it does not dictate that they immediately do so. Similarly, when feeling fear before a test for which one is not prepared, a student needs to suppress the urge to avoid the test and overcome the fear instead by, for example, studying for the test to increase her coping potential.\
+> --- @shumanConceptsStructuresEmotions2014, p. 17
+
+In some important ways, we can derive that emotional awareness is connected to the process of infering and, if needed, regulate action tendencies in oneself or others. At the same time, the action tendency component has received so far limited attention compared to the other components [@scherer2019; @scherer2022]. For instance, Shuman and Scherer (*ibid.*) reckon that epistemic emotions may not be associated to a particular action tendency or adaptive function.
+
+To sum up, even though the Response-Patterning module plays a prominent role in emotion differentiation and has also consequences on behavior especially through action tendencies, its intrinsic nature as well as the need of dedicated hardware and software complicate its transposition in an EAT. As a consequences, element provided by this module may have to be inferred from contextual or background knowledge by the learner.
 
 ### The Integration/Categorization Module: Subjective Feeling As Emotion Meaning Making
 
@@ -184,21 +195,11 @@ Despite the fact that the integration/categorization module may potentially be m
 
 Scherer and Meuleman [-@schererHumanEmotionExperiences2013], in particular, used an expert system to measure to what extent it was possible to predict from the CPM's appraisals the subjective feeling experienced by a person. In the test, participants were asked to self-report their appraisals of some situations and provide the subjective feeling(s) they had experienced. Using the self-reported appraisals alone, the system predicted what kind of subjective feeling(s) the participant may have experienced and then matched the results with the one(s) actually reported by participants. Results showed a predictive accuracy by the expert system above 50% for an exact match, and of 90% for a partial correct or appropriate label. An interesting finding of the same contribution concerns participants' need to use, often, more than one subjective feeling to correctly represent their emotional experience, which corroborates how verbalization/communication (circle C) may not completely overlap with the *true* underlying phenomenon.
 
-### Emotional Competence from a Componential Perspective
+## Emotional Competence from a Componential Perspective
 
 The overarching nature of the CPM is translated also in a componential perspective to the subject of emotional expertise/intelligence introduced in chapter 1. In this regard, Scherer advocates the use of the term *emotional competence* [@schererComponentialEmotionTheory2007].
 
-## Corolollaries to the Component Process Model
-
-### Emotion as a Distinct Affective Phenomenon
-
-### Emotional Competence from a Componential Perspective
-
-### Emotion Meaning-Making: the GRID Instrument
-
-### Emotion Self-Report: the Geneva Emotion Wheel
-
-The complexity and diversity in the field of emotion theories is reflected in different approaches on how emotions should be assessed and measured [@boehnerHowEmotionMade2007; @cerneaSurveyTechnologiesRise2015; @maussMeasuresEmotionReview2009; @mortillaroEmotionsMethodsAssessment2015; @schererWhatAreEmotions2005]. In a componential approach to emotion, ideally, all aspects of the synchronized and unfolding process should be taken into account [@schererWhatAreEmotions2005]. Measuring all these aspects at once, though, requires dedicated material, some of which is difficult or impossible to deploy outside a laboratory. Self-report remains therefore a widely adopted method to ask a person about her emotional experience, either through *paper-and-pencil-like* questionnaire [e.g. @harmon-jonesDiscreteEmotionsQuestionnaire2016; @pekrunMeasuringEmotionsEpistemic2016], or more elaborated self-report tools [see among others @broekensAffectButtonMethodReliable2013; @desmet2003measuring; @schererWhatAreEmotions2005; @siegertAppropriateEmotionalLabelling2011; @bradleyMeasuringEmotionSelfAssessment1994; @caicedoHowYouFeel2006; @isomursuExperimentalEvaluationFive2007; @molinariEMORELOutilReporting2016]. With respect to more elaborate tools in particular, Scherer [-@schererWhatAreEmotions2005] advocates some of the characteristics an emotion self-report tool should provide.
+## The Geneva Emotion Wheel
 
 > The design characteristics for the instrument to be developed are as follows:
 >
