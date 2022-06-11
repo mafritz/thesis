@@ -27,7 +27,7 @@ From these definitions it is possible to extrapolate three fundamental assumptio
 
 Each assumption is discussed in the following three sections. Every section proposes an overview of related theories, as well a selection of related works, which are of particular interest for the present contribution in terms of objectives, methodologies, or findings.
 
-## Emotional Awareness at the Intra-Personal Level
+## Emotional Awareness at the Intra-Personal Level {#ea-intra-personal}
 
 The first assumption about the instrumentality of emotional awareness implies that learners can benefit from it at the individual, intra-personal level.
 
@@ -80,7 +80,7 @@ Molinari and colleagues (*ibid*) exploratory work provide useful elements with r
 
 At a conceptual level, Molinari and colleagues introduced emotional awareness in individual settings, as a means to provide students with self-awareness of their own emotions. At the same time, the authors also measured, though, students' wish to dispose of collective emotional awareness. To this extent, Molinari and colleagues highlight how students expressed the wish to have full control over when and which emotional information to disclose. In addition, they also manifested the wish of being aware of their colleagues emotions, that is, bringing emotional awareness at the inter-personal level, which is the subject of the next section.
 
-## Emotional Awareness at the Inter-Personal Level
+## Emotional Awareness at the Inter-Personal Level {#ea-inter-personal}
 
 The second assumption about the instrumentality of emotional awareness posits that learners can benefit from emotional information available at a collective level, either for their own learning processes, that of their partners, or both at the same time.
 
@@ -131,7 +131,7 @@ A different approach was taken by Avry and colleagues [-@avryAchievementAppraisa
 
 The three studies outlined in this section provide very different approaches to the study of emotional awareness in computer-mediated learning environments. Since this is a recent and cross-disciplinary field of inquiry, a fragmented stage of research is inevitable [@fiedlerCycleTheoryFormation2004]. On the other hand, efforts should also be dedicated to the possibility of direct comparison and incremental building of knowledge. In this regard, the adoption of a prototypical EAT, whose eventual differences can be more easily defined through objective parameters, could be beneficial.
 
-## Emotion in Computer-Mediated Learning Environments
+## Emotion in Computer-Mediated Learning Environments {#ea-in-computer-mediated-environment}
 
 The third assumption underlying emotion awareness tools concerns the possibility to create emotional awareness in computer-mediated learning environments.
 
@@ -179,8 +179,6 @@ The tool provided by Feidakis and colleagues comply with all the three main feat
 
 The Mood Meter Mobile Application[^1] is a digital extension of the physical Mood Meter dashboard of the RULER approach introduced in the previous chapter [@brackettRULERTheoryDrivenSystemic2019] and depicted in Figure \@ref(fig:mood-meter-image). The physical Mood Meter consists in four colored quadrants organized according to two axes: valence and activation/arousal. Learners can therefore place themselves in one of the four quadrants according to (1) how pleasant or unpleasant do they feel, and (2) how high or low is their energy. The top-right yellow quadrant corresponds to emotions which are pleasant and high on energy, such as excitement, joy and elation. The bottom-right green quadrant corresponds to emotions which are pleasant and low on energy, as tranquility, serenity, and satisfaction. The bottom-left blue quadrant corresponds to emotions which are unpleasant and low in energy, as boredom, sadness and despair. And finally, in the top-left red quadrant corresponds to emotions which are unpleasant and high in energy, such as anger, frustration or anxiety. In the digital app, the overall *dashboard* is divided in 100 points (25 per quadrant). Users can tap one of the point in the quadrant and obtain 9 emotion words, that is the word that is associated with the very point they have clicked, plus 8 alternatives, which corresponds to the 8 adjacent points on the dashboard. Once identified the emotion term that corresponds to how the learner is feeling, the person can: (1) describe the feeling by typing in more information (as in Feidakis); and (2) select a strategy between quotes, images or practical tips that are meant to help the person shift to another feeling if desired. Further features of the app include the possibility to track the feelings entered in the app, for instance with an overview of the percentage per quadrant; set a reminder to use the app at specific periods, congruently with an experience sampling perspective [@csikszentmihalyiValidityReliabilityExperienceSampling2014]; and finally share their feelings via Facebook or Twitter.
 
-[^1]: <https://moodmeterapp.com/>
-
 ```{r mood-meter-image, out.width="60%", fig.cap="Image of the four quadrants of the Mood Meter, retrieved from Brackett et al. (2019), Figure 1 in the original article. For the Mood Meter app, see the official site in the footnote."}
 knitr::include_graphics(here::here("figure/theory/mood-meter-image.png"))
 ```
@@ -199,7 +197,7 @@ The EAT adopted by Molinari and colleagues (*ibid.*) is based on self-report and
 
 The three EATs illustrated in this section highlight some of the many choices in *encoding* and *decoding* emotional information that can be made in providing emotional awareness through a dedicated self-report tool. These choices can influence emotional awareness both at the intra- and inter-personal levels in ways that are put into perspective in the next section, which provides an abstract model of the functions of an EAT.
 
-## Abstract Model of the Functions of an Emotion Awareness Tool
+## Abstract Model of the Functions of an Emotion Awareness Tool {#abstract-model-of-ea}
 
 The information illustrated above, as well as in the previous chapter, can be integrated in an abstract model that depicts the mechanisms allegedly carried out by an EAT. The proposed abstract model does not have the pretension to be exhaustive; on the contrary, it aims at visually implementing some of the many different passages that are (or may be) assumed in the instrumentality of an EAT as a support to learning activities in computer-mediated environments. The model, depicted in Figure @ref(fig:intro-thesis-scm-model-figure), take the perspective of a learner that disposes of an EAT in its computer-mediated learning environment.
 
@@ -268,3 +266,5 @@ Emotion is integrated into the learning activity, it modifies behavior (self-reg
 Modification of learning activity can trigger another emotion, creating cycle.
 
 ## Synthesis
+
+[^1]: <https://moodmeterapp.com/>
