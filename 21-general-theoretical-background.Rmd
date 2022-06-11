@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# Theoretical Convergence About the Instrumentality of Affective Phenomena in Computer-Mediated Learning Environments
+# Theoretical Convergence About the Instrumentality of Affective Phenomena in Computer-Mediated Learning Environments {#general-affective-background}
 
 ```{r theoretical-background-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
@@ -58,7 +58,7 @@ The overall picture that emerges is necessarily scattered and sometimes contradi
 
 In this regard, an EAT takes in somehow an agnostic position, since it may register and convey all sort of affective phenomena that are considered potentially relevant to the learning context in which it is deployed, regardless of whether they are supposed to hinder or foster learning processes and outcomes. At the same time, though, the EAT should build emotional meaning making and awareness on the ground of affective phenomena that are known to play a prominent role in learning processes and outcomes.
 
-### Socio-Affective Competences in Learning
+### Socio-Affective Competences in Learning {#socio-affective-competences}
 
 Finally, a third approach in research about affect and learning focuses on empowering learners with skills, allowing them to deal with the social and emotional challenges that they face during various phases of the learning process. Oftentimes, the scope of this line of research goes beyond learning and educational settings, aiming at preparing learners -- especially in early educational programs -- to take advantage of their social and emotional skills in life more generally. Research of this third kind often -- but not always -- refers to the concept of Social and Emotional Learning (SEL), which has a long tradition in education [see @osherAdvancingSciencePractice2016]. Brackett and colleagues [-@brackettRULERTheoryDrivenSystemic2019] provide a recent definition of SEL:
 
