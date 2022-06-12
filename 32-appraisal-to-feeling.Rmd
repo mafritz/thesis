@@ -1,4 +1,4 @@
-# A Parsimonious Computational Model Linking Appraisal and Subjective Feeling
+# A Parsimonious Computational Model Linking Appraisal and Subjective Feeling {#computational-model}
 
 ```{r computational-model-setup, include=FALSE, echo=FALSE}
 library(tidyverse)

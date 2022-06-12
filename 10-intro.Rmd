@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# Introduction {.unnumbered}
+# Introduction {#general-introduction .unnumbered}
 
 ```{r intro-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
@@ -90,4 +90,4 @@ Part III comprises the two empirical contributions, as well as the overall and c
 
 Part IV concludes the thesis with the general discussion of Chapter 11 and the Conclusion. The Appendices at the end of the manuscript only provide links to supplemental material which are available online.
 
-## Code and Data
+## Code and Data {.unnumbered}
