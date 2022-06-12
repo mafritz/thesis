@@ -1,4 +1,4 @@
-# The Dynamic Emotion Wheel
+# The Dynamic Emotion Wheel {#dew-chapter}
 
 ```{r dew-chapter-setup, include=FALSE, echo=FALSE}
 library(tidyverse)

@@ -1,4 +1,4 @@
-# Overall and Comparative Assessment of the Emotional Awareness Tool Between Learning Settings
+# Overall and Comparative Assessment of the Emotional Awareness Tool Between Learning Settings {#study-comparaison}
 
 ```{r comparison-setup, include=FALSE, echo=FALSE}
 library(tidyverse)

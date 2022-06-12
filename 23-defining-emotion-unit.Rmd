@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# Defining the *Unit* of Measure to Self-Report and Convey Emotional Awareness
+# Defining the *Unit* of Measure to Self-Report and Convey Emotional Awareness {#defining-emotion-unit}
 
 ```{r emotion-definition-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
@@ -186,7 +186,7 @@ In some important ways, we can derive that emotional awareness is connected to t
 
 To sum up, even though the Response-Patterning module plays a prominent role in emotion differentiation and has also consequences on behavior especially through action tendencies, its intrinsic nature as well as the need of dedicated hardware and software complicate its transposition in an EAT. As a consequences, element provided by this module may have to be inferred from contextual or background knowledge by the learner.
 
-### The Integration/Categorization Module: Subjective Feeling As Emotion Meaning Making
+### The Integration/Categorization Module: Subjective Feeling As Emotion Meaning Making {#subjetive-feeling}
 
 The integration/categorization module may be considered the *output* of the CPM, because it coalesces information from all the other components into a conscious emotional experience, which can be used to monitor the emotional experience in the person. In fact, the CPM considers the subjective feeling "a holistic cognitive representation that integrates the temporarily coordinated changes of the other components [...], allowing the individual to reach awareness of his/her state and label it -- stating that he/she 'has' or 'feels' a particular emotion" [@schererGRIDMeetsWheel2013, p. 281]. Contrary to other interpretations of what an emotion is, which requires consciousness for emotion to exist [@ledouxHigherorderTheoryEmotional2017; @liebermanBooConsciousnessProblem2019], according to the CPM the subjective feeling does not necessarily emerge to consciousness, nor fully represents the *true* emotional episode. On the contrary, as depicted in Figure \@ref(fig:tf-cpm-subjective-feeling-caption), the subjective feeling emerges from the intersection of (A) unconscious, (B) conscious and (C) semantic/communicative processes.
 
