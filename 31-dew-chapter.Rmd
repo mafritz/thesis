@@ -13,16 +13,16 @@ library(kableExtra)
 
 ```
 
-This chapter resumes previous work on the subject of Emotion Awareness Tools that I have conducted in my Master thesis [@fritzReinventingWheelEmotional2015][^1]. The Master thesis emerged as a *spin-off* of studies conducted within the Emotion Awareness Tool for Computer-Mediated Interactions (EATMINT) project and was mainly focused on a user experience perspective, lacking therefore most of the theoretical background set forth in Part I. The Master thesis nevertheless lead to a conceptual prototype, which I named Dynamic Emotion Wheel (DEW) for it is inspired by the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005]. The prototype was presented first at the International Society for Research on Emotion (ISRE) conference [@fritzDynamicEmotionWheel2015], and later in education technology conferences [@fritzDynamicEmotionWheel2016; @fritzRealTimeEmotionalAwareness2016]. The interest elicited in both affective sciences and education technology communities corroborated the idea to implement and further extend the prototype. The chapter starts by briefly outlining the aim and scope of the EATMINT project as the context through which a series of initial requirements for an EAT were set forth. Second, it illustrates the Geneva Emotion Wheel (*ibid.*), a self-report tool based on the Component Process Model depicted in Section \@ref(cpm-section). The Geneva Emotion Wheel served as inspiration to produce the core principle of the Dynamic Emotion Wheel, illustrated in the third section of the chapter. Fourth, the chapter introduces an affective space adapted from previous work in the EATMINT, which will also be adopted in the empirical contributions of Part II. Fifth, the results of a usability test conducted on the Dynamic Emotion Wheel in experimental settings are outlined as a preliminary assessment of the tool. Finally, the theoretical and technical extensions of the tool illustrated in this second part of the contribution are set forth.
+This chapter resumes previous work on the subject of Emotion Awareness Tools that I have conducted in my Master thesis [@fritzReinventingWheelEmotional2015][^1]. The Master thesis emerged as a *spin-off* of studies conducted within the Emotion Awareness Tool for Computer-Mediated Interactions (EATMINT) project and was mainly focused on a user experience perspective, lacking therefore most of the theoretical background set forth in Part I. The Master thesis nevertheless lead to a conceptual prototype, which I named Dynamic Emotion Wheel (DEW) for it is inspired by the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005]. The prototype was first presented at the International Society for Research on Emotion (ISRE) conference [@fritzDynamicEmotionWheel2015], and later in education technology conferences [@fritzDynamicEmotionWheel2016; @fritzRealTimeEmotionalAwareness2016]. The interest elicited in both affective sciences and education technology communities corroborated the idea to implement and further extend the prototype. The chapter starts by briefly outlining the aim and scope of the EATMINT project as the context through which a series of initial requirements for an EAT were set forth. Second, it illustrates the Geneva Emotion Wheel (*ibid.*), a self-report tool based on the Component Process Model depicted in Section \@ref(cpm-section). The Geneva Emotion Wheel served as inspiration to produce the core principle of the Dynamic Emotion Wheel, illustrated in the third section of the chapter. Fourth, the chapter introduces an affective space adapted from previous work in the EATMINT, which will also be adopted in the empirical contributions of Part II. Fifth, the results of a usability test conducted on the Dynamic Emotion Wheel in experimental settings are outlined as a preliminary assessment of the tool. Finally, the theoretical and technical extensions of the tool illustrated in this second part of the contribution are set forth.
 
-## The EATMINT Project
+## The EATMINT Project {#eatmint-project}
 
-The Emotion Awareness Tool for Computer-Mediated Interactions (EATMINT) project was conducted as part of the National Center of Competence in Research (NCCR) *Affective Sciences* by a group of scholars integrating affective computing and affective sciences, computer science, education technology, education and learning sciences [ @cereghettiSharingEmotionsComputermediated2015; @Chanel2013; @chanelGrandChallengeProblem2016; @molinariEmotionFeedbackComputermediated2013; @molinariFeedbackEmotionnelCollaboration2013]. When the project started in mid 2011, the topic of emotional awareness in computer-mediated collaboration was almost uncharted [@feidakisEndowingElearningSystems2011; @eligioEmotionUnderstandingPerformance2012]. The team therefore set up the project to explore two intertwined objectives:
+The Emotion Awareness Tool for Computer-Mediated Interactions (EATMINT) project was conducted as part of the National Center of Competence in Research (NCCR) *Affective Sciences* by a group of scholars integrating affective computing and affective sciences, computer science, education technology, education and learning sciences [@cereghettiSharingEmotionsComputermediated2015; @Chanel2013; @chanelGrandChallengeProblem2016; @molinariEmotionFeedbackComputermediated2013; @molinariFeedbackEmotionnelCollaboration2013]. When the project started in mid 2011, the topic of emotional awareness in computer-mediated collaboration was almost uncharted [@feidakisEndowingElearningSystems2011; @eligioEmotionUnderstandingPerformance2012]. The team therefore set up the project to explore two intertwined objectives:
 
 1.  Designing Emotion Awareness Tools, which allow either the explicit or the autonomic sharing of emotions in computer-mediated interaction;
 2.  Studying the impact of emotional awareness on collaboration both at intra- and inter-personal levels, with respect to the emergence of strategies that improve collaboration such as monitoring, regulating and reflecting on emotions.
 
-## The Geneva Emotion Wheel
+## The Geneva Emotion Wheel {#gew}
 
 > The design characteristics for the instrument to be developed are as follows:
 >
@@ -43,18 +43,18 @@ include_graphics(here("figure/dew/gew-v3.png"))
 
 The interface of the GEW, depicted in its third version in Figure \@ref(fig:gew-version-3-figure) [@schererGRIDMeetsWheel2013], presents 20 subjective feelings -- chosen with respect to their frequency in emotion literature and everyday language use -- organized in a circumplex, which is determined by two appraisal dimensions as axes: *Valence* on the abscissa and *Control/Power* on the ordinate. Each feeling is positioned according to a value along both axes and belongs thus to one of the four quadrants of the circumplex, determined by the combination of positive or negative Valence, and positive or negative Control/Power. From the origin of the axes stem 5 circles for each of the subjective feelings. The circles grow in size as they get closer to the edge of the circumplex, so that the first circle is the smallest, and the last one the biggest. Users can therefore choose, first, the *row* of circles that corresponds to the subjective feeling they are experiencing and, second, the intensity of the feeling as a function of the circle's size.
 
-## The Core Principle of the Dynamic Emotion Wheel
+## The Core Principle of the Dynamic Emotion Wheel {#dew-core-principle}
 
-## The EATMINT Circumplex
+## The EATMINT Circumplex {#eatmint-circumplex}
 
-## Results of a Usability Test in Experimental Conditions
+## Results of a Usability Test in Experimental Conditions {#dew-ux-test}
 
-## Extending the Core Principle
+## Extending the Core Principle {#dew-extension-illustration}
 
 ### Theoretical Extension
 
 ### Technical Extension
 
-## Summary
+## Synthesis
 
 [^1]: As a consequence, some short passages of this chapter are reproduced from the unpublished Master thesis's manuscript, especially description of interfaces or settings, for which little or no additional value could be derived from modifications.
