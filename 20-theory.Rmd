@@ -1,5 +1,1 @@
 # (PART\*) Theoretical Foundations {.unnumbered}
-
-Part I of the thesis provide the overall theoretical background of the contribution. It starts from the general outlook of affective phenomena in learning and educational sciences and concludes in the specific inner mechanisms of emotion elicitation, differentiation, communication and regulation that may underlie the instrumentality of emotional awareness in computer-mediated learning environments.
-
-One of the main aims of Part I is to sketch the intricate picture that emerges from the integration of compound and articulated phenomena such as learning and affect in a multi- and inter-disciplinary field as education technology. The fragmented literature that emerges imposes to take position within alternative or competing theories and approaches. Part I therefore aims at producing a reasonable overview on the subject at hand and justify to the best explanation the theoretical and methodological choices.
