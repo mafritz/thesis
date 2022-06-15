@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# Emotional Awareness Tools in Computer-Mediated Learning Environments
+# Emotional Awareness Tools in Computer-Mediated Learning Environments {#eat-general-chapter}
 
 ```{r rationale-eat-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
