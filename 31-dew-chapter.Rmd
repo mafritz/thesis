@@ -24,6 +24,53 @@ The Emotion Awareness Tool for Computer-Mediated Interactions (EATMINT) project 
 
 A first step in the project consisted in the set up of exploratory experiment, from which different type of data could be collected with respect to the following research perspectives. First, to what extent emotional awareness influences perceived emotions after collaboration and the perceived quality of interaction [@molinariEmotionFeedbackComputermediated2013]. This part of the study has been thoroughly illustrated in the related works of Section \@ref(ea-inter-personal) about the inter-personal function of emotional awareness. Second, to what extent the perceived interaction during a collaborative task is linked to users' emotional traits, and how an emotional awareness tool can influence this relationship [@molinariFeedbackEmotionnelCollaboration2013]. Third, to what extent physiological and eye-movement coupling predict situations that may benefit from emotional awareness information during the collaboration process [@Chanel2013].
 
+The experimental setup was the same already described in Section \@ref(ea-in-computer-mediated-environment) about emotion in computer-mediated learning environments. In this regard, the EATMINT project members reckoned that the EAT used in pilot experiments -- already depicted in Figure \@ref(fig:tf-eatmint-eat) and repeated hereafter in Figure \@ref(fig:tf-eatmint-eat-repeated) -- showed some limitations, and therefore planned to implement a second version of the tool to be used in future studies. I was involved in this process first as an internship in the project, and later as the subject of my Master thesis [@fritzReinventingWheelEmotional2015]. This section first proposes a more thorough description of the tool, and then illustrates a series of requirements for the next version of the EAT, which were discussed with the EATMINT project's team.
+
+### Description of the EATMINT's First Version of an EAT
+
+The tool in the pilot studies of the EATMINT project was located at the right edge and occupied the whole height and about a fifth of the width of the screen. The tool was vertically divided in two areas of almost the same size.
+
+(ref:tf-eatmint-eat-repeated-caption) The argument graphic tool and the EAT adopted in @molinariEmotionFeedbackComputermediated2013, from Figure 1 in the original article (repeated from Figure \@ref(fig:tf-eatmint-eat)).
+
+```{r tf-eatmint-eat-repeated, fig.align="center", fig.cap="(ref:tf-eatmint-eat-repeated-caption)", out.width="80%"}
+knitr::include_graphics(here("figure/theory/eatmint-eat-and-task.png"))
+```
+
+In the lower part of the tool, users could press one of the 20 buttons with a label representing an emotion adjective (e.g. happy, amused, anxious, etc.). The list of emotions were defined mixing a previous study in the field [@dmelloDynamicsAffectiveStates2012] and 2 pre-experiments that aimed to identify the most frequent and intense emotions felt during a situation of collaboration, real or imagined. The 20 emotions were equally divided in positive and negative labelled groups, but did not follow any particular order within each list (see Table \@ref(tab:eatmint-original-emotions-table)). At the bottom-end of the screen, a "no-emotion" button spanning across the two columns was also available.
+
+(ref:original-list-eatmint-emotions-caption) List of the 20 emotion adjectives used as buttons in the EAT. Our translation from the original French word in parentheses -- partially based on a document by the [@genevaemotionresearchgroupAppendixLabelsDescribing1988] -- is limited to the contribution's purpose. The order in the table reflects the order of the buttons in the interface.
+
+```{r eatmint-original-emotions-table}
+eatmint_original_emotion_list <- tribble(
+  ~"",   ~"Positive emotions",    ~"Negative emotions",
+  1,        "Delighted (Ravi)",      "Stressed (Stréssé)",
+  2,        "Attentive (Concentré)",  "Annoyed (Enervé)",
+  3,        "Interested (Intéressé)", "Surprised (Surpris)",
+  4,        "Satisfied (Satisfait)",  "Irritated (Irrité)",
+  5,        "Empathetic (Empathique)", "Envious (Envieux)",
+  6,        "Confident (Confiant)",    "Anxious (Anxieux)",
+  7,        "Amused (Amusé)",          "Disappointed (Insatisfait)",
+  8,        "Relaxed (Détendu)",      "Confused (Confus)",
+  9,        "Grateful (Reconnaissant)", "Frustrated (Frustré)",
+  10,       "Relieved (Soulagé)",     "Bored (Lassé)"
+)
+
+eatmint_original_emotion_list |> 
+  kable(
+    caption = "(ref:original-list-eatmint-emotions-caption)\\label{tab:eatmint-original-emotions-table}",
+    caption.short = "Original list of EATMINT emotions",
+    longtable = FALSE,
+    booktabs = TRUE
+  )
+
+```
+
+In the upper side of the tool, participants could see the last three emotions they had expressed and the last three emotions manifested by the partner. Their own emotions appeared in the upper side as a vertical list of text-centered cases with a green background. The very last emotion had a lighter background and resulted top of the list. This case also served as a text input where the participant himself could type an emotion not in the list. Their partner's emotions appeared just below, in exactly the same way, except for a blue background and the first light-blue case not editable.
+
+Each participant could express the emotion he felt in one of three ways: (1) clicking one of the 20 emotion labelled buttons; (2) typing an emotion not in the list directly in the first light-green case; or (3) by clicking the "no-emotion" button at the bottom-end of the screen. The expressed emotion would then appear in the upper light-green case of his screen, and, respectively, in the upper light-blue case of his partner's screen.
+
+### Requirements for a Second Version of an EAT
+
 ## The Geneva Emotion Wheel {#gew}
 
 > The design characteristics for the instrument to be developed are as follows:
