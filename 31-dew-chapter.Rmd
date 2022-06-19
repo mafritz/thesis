@@ -89,9 +89,11 @@ The establishment of requirements was the first step in the interaction design m
 
 ## The Geneva Emotion Wheel {#gew}
 
-The Geneva Emotion Wheel (GEW) is an emotion self-report tool based upon the Component Process Model (CPM) theoretical framework illustrated in Section \@ref(cpm-section), which, at the time of writing, is in its third version [@schererWhatAreEmotions2005; @schererGRIDMeetsWheel2013; @shumanConceptsStructuresEmotions2014]. This section starts with a description of the tool and how it relates to the CPM. It then illustrates some uses that have been made of the tool, which relates to the concept of emotional awareness. Finally, it assesses the limitations of the tool with respect to the features retained as a central tenets for the implementation of an EAT in the current contribution.
+The Geneva Emotion Wheel (GEW) is an emotion self-report tool based upon the Component Process Model (CPM) theoretical framework illustrated in Section \@ref(cpm-section), which, at the time of writing, is in its third version [@schererWhatAreEmotions2005; @schererGRIDMeetsWheel2013; @shumanConceptsStructuresEmotions2014]. This section starts with a description of the tool and how it relates to the CPM. It then illustrates some uses that have been made of the tool, which resonate with emotional awareness. Finally, it assesses the limitations of the tool with respect to the features retained as a central tenet for the implementation of an EAT in the current contribution.
 
 ### Description of the Geneva Emotion Wheel
+
+The GEW was initially created under the assumption that it would be interesting to combine the widespread use of natural language words to describe the emotional experience with the precision of the dimensional approach in quantifying representative features of that same experience [@schererWhatAreEmotions2005].
 
 > The design characteristics for the instrument to be developed are as follows:
 >
