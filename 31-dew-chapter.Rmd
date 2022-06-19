@@ -93,7 +93,7 @@ The Geneva Emotion Wheel (GEW) is an emotion self-report tool based upon the Com
 
 ### Description of the Geneva Emotion Wheel
 
-The GEW was initially created under the assumption that it would be interesting to combine the widespread use of natural language words to describe the emotional experience with the precision of the dimensional approach in quantifying representative features of that same experience [@schererWhatAreEmotions2005].
+The GEW was initially created as an attempt to combine the widespread use of natural language words to describe the emotional experience with the precision of the dimensional approach in quantifying representative features of that same experience [@schererWhatAreEmotions2005]. At that time, most self-reporting tools adopted either one of the strategies, but did not integrate both in a cohesive way.
 
 > The design characteristics for the instrument to be developed are as follows:
 >
