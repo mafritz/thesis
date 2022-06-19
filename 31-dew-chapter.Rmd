@@ -93,18 +93,7 @@ The Geneva Emotion Wheel (GEW) is an emotion self-report tool based upon the Com
 
 ### Description of the Geneva Emotion Wheel
 
-The GEW was initially created as an attempt to combine the widespread use of natural language words to describe the emotional experience with the precision of the dimensional approach in quantifying representative features of that same experience [@schererWhatAreEmotions2005]. At that time, most self-reporting tools adopted either one of the strategies, but did not integrate both in a cohesive way.
-
-> The design characteristics for the instrument to be developed are as follows:
->
-> -   concentrating on the feeling component of emotion, in the sense of qualia, rather than asking respondents to judge concrete response characteristics such as sympathetic arousal;
-> -   going beyond a simple valence-arousal space in order to be better able to differentiate qualitatively different states that share the same region in this space;
-> -   relying on standard emotion labels in natural languages in order to capitalize on respondents' intuitive understanding of the semantic field;
-> -   allowing systematic assessment of the intensity of the feeling;
-> -   going beyond the arbitrariness of choosing different sets of emotion terms and presenting them in very unsystematic fashion by building some emotion structure into the instrument;
-> -   presenting the instrument in a graphical form that is userfriendly, allowing the respondent to rapidly understand the principle and use the instrument in a reliable fashion. --- @schererWhatAreEmotions2005, p. 721
-
-Driven by these tenets, Scherer [-@schererWhatAreEmotions2005] developed and refined over the years [@schererGRIDMeetsWheel2013] one of the most widely adopted emotion self-report tool: the Geneva Emotion Wheel (GEW). For instance, the GEW is also presented in an overarching chapter [@shumanConceptsStructuresEmotions2014] about emotion in the *International Handbook of Emotions in Education* [@pekrunInternationalHandbookEmotions2014], which is, to the best of my knowledge, the most up-to-date and comprehensive resource about emotion in education. The GEW is an instrumental implementation of the Component Process Model theoretical framework illustrated above. It combines the two most widely adopted approaches to emotion self-report -- the dimensional and discrete emotions approaches [@schererWhatAreEmotions2005] -- by establishing a causal link between the appraisal [@schererAppraisalConsideredProcess2001] and the subjective feeling [@grandjeanConsciousEmotionalExperience2008] components -- that is, between the cognitive evaluation of the situation and the holistic experience that usually emerges to consciousness as a natural language word or idiom. This direct link is also corroborated by recent empirical contributions investigating whether the emotional meaning of words often adopted, in different cultures, to express emotional experiences can be traced back to specific evaluations of the eliciting event [@fontaineGlobalMeaningStructure2013; @fontaineWhyWhatHow2013; @gentschEffectsAchievementContexts2017; @gilliozMappingEmotionTerms2016; @schererSemanticStructureEmotion2018].
+The GEW was initially created under the assumption that "it might be worth investing in the development of an instrument capable of combining the advantages of the precise differentiation provided by natural language labels with the simple organizational structure afforded by a two-dimensional space" [@schererGRIDMeetsWheel2013, p. 283], see also Section \@ref(ea-in-computer-mediated-environment).
 
 (ref:gew-version-3-caption) The third version of the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013]
 
