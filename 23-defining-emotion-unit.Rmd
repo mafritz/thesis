@@ -110,7 +110,7 @@ knitr::include_graphics(here("figure/theory/cpm-model-adapted.png"))
 
 After a brief overview of the overall model, the next subsections focus on the three modules respectively.
 
-### The Appraisal Module: Appraisals as Sequential Evaluation Checks
+### The Appraisal Module: Appraisals as Sequential Evaluation Checks {#cpm-appraisal-module}
 
 The appraisal module may be considered the most characteristic of the CPM for two intertwined reasons. First, it bridges cognition and emotion in a functional perspective [@leventhalRelationshipEmotionCognition1987], avoiding thus the pitfalls of the opposition between affect and cognition, which recent developments in affective science are progressively dismissing in favor of interacting or even integrating perspectives [@dukesRiseAffectivism2021; @pessoaCognitiveemotionalBrainInteractions2013]. Second, it plays a pivotal role in differentiating the CPM from other appraisal theories (see above), for the CPM makes bold assumptions about how distinctive appraisal patterns lead to distinctive emotional episodes [@schererDynamicArchitectureEmotion2009; @schererHumanEmotionExperiences2013; @schererStudyingEmotionantecedentAppraisal1993; @schererEmotionProcessEvent2019]. In other words, the model explicitly assumes a causal mechanism instantiated by the appraisal module, which determines the unfolding emotional episode in terms of response-patterning and integration/categorization.
 
@@ -171,7 +171,7 @@ knitr::include_graphics(here("figure/theory/cpm-full-process.png"))
 
 To sum up, in the CPM appraisal criteria play a prominent role in emotion elicitation and differentiation. As a consequence, an EAT could leverage on the pivotal role of SECs to foster emotional awareness, for instance advocating the cognitive evaluation of the salient event. In other words, the EAT could contribute to make sure that emotion is assessed at the conceptual level -- the one implicating consciousness and effort-full calculations -- as a means to extrapolate meaning-making from the adaptive objectives of appraisal criteria.
 
-### The Response-Patterning Module
+### The Response-Patterning Module {#cpm-patterning-module}
 
 The response-patterning module build upon information provided by sequential evaluation checks (SECs) described in previous subsection and is responsible for the e*mbodiement* of emotion in terms of adaptation [@schererEmotionProcessEvent2019]. Adaptive reactions can be designated at two levels: (1) intra-individual, with the regulation of the organism's functions (neurophysiological component) and the action tendencies (motivational component); and (2) inter-individual, through the motor expression component, which comprises efferent manifestations such as facial expression, vocal prosody or body posture playing an important communicative role [see @hyniewskaNaturalisticEmotionDecoding2019; @schererFacialExpressionsAllow2007; @shumanEmotionPerceptionComponential2017 from a componential perspective].
 
