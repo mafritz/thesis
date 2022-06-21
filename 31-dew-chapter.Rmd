@@ -138,13 +138,19 @@ Two main reasons are posited for these difficulties [@schererGRIDMeetsWheel2013;
 
 Another limitation linked to the underlying appraisal dimensions is that, in the GEW, these dimensions are not manifest. The problem with the Control/Power dimension surfaces only from a retro-engineering mechanism, but on the tool itself, there is no explicit mention of neither Valence nor Control/Power. The two appraisal dimensions are used to organize the lexicalized emotion, but there is no explicit guarantee that a person choosing *shame* (bottom-left quadrant) is *aware* of having evaluated the situation as unpleasant and with little coping potential -- that is, unless the respondent is informed beforehand of the semantic value of the interface. Without this kind of training, even the emotional awareness role played by the GEW in @tranEmotionsDecisionMakingProcesses2012 may be repositioned. According to more thorough information about the procedure available in @tranInfluenceEmotionsDecisionmaking2004, participants received definitions of the emotions on the GEW taken from a dictionary. As a consequence, there was probably some information about Valence-like features, but less likely about an underlying theoretical construct such as Control/Power. When tracing the evolution of the emotional experience between the quadrants, participants may have not been completely aware of the *dimensional* leaps undertaken, if not by the inference that adjacent emotions on the interface were more akin than those afar.
 
-From a more practical standpoint, the GEW is also doomed to occupy a considerable share of a screen, as it is the case for the *emot-control* [@feidakisProvidingEmotionAwareness2014; @feidakis2013] illustrated in the related works of Section \@ref(ea-in-computer-mediated-environment). The strength of this kind of interfaces is to provide an organized structure to the discrete emotions, disposing at the same time of all the available options. As a consequence, this design is not very responsive to scale in proportion to the number of options available. A greater number of discrete emotions would shrink the interface to the point of overlapping boundaries, especially of the circles to rate the intensity. A limited number of options, without rescaleing the overall size of the interface, would tear options far apart, injecting negative space in between, which would be of limited visuo-spatial use [@hegartyCognitiveScienceVisualspatial2011].
+From a more practical standpoint, the GEW is also doomed to occupy a considerable share of a screen, as it is the case for the *emot-control* [@feidakisProvidingEmotionAwareness2014; @feidakis2013] illustrated in the related works of Section \@ref(ea-in-computer-mediated-environment). The strength of this kind of interfaces is to provide an organized structure to the discrete emotions, disposing at the same time of all the available options. As a consequence, this design is not very responsive to scale in proportion to the number of options available. A greater number of discrete emotions would shrink the interface to the point of overlapping boundaries, especially of the circles to rate the intensity. A lower number of options, without rescaleing the overall size of the interface, would tear options far apart, injecting negative space in between, which would be of limited visuo-spatial use [@hegartyCognitiveScienceVisualspatial2011].
+
+Evolution over time and identity of respondent, position of the monitoring-perceiving function, etc.
 
 ## The Core Principle of the Dynamic Emotion Wheel {#dew-core-principle}
 
 ## The EATMINT Circumplex {#eatmint-circumplex}
 
+How it was created, there is a slide with the passages.
+
 ## Results of a Usability Test in Experimental Conditions {#dew-ux-test}
+
+Be brief, the method is shared with study 1, so point forward for more information.
 
 ## Extending the Core Principle {#dew-extension-illustration}
 
