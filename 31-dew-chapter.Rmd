@@ -122,6 +122,8 @@ Having their emotions expressed on the underlying structure represented by appra
 
 ### Limitations and Missing Features in the Geneva Emotion Wheel {#gew-limitations}
 
+Notwithstanding the many features of the GEW that corroborate the intrinsic quality of a self-report instrument, and the possibility to adopt it also in circumstances linked to emotional awareness, the tool presents a number of limitations and missing features, particularly from the point of view of an EAT with the characteristics sought after in the present contribution.
+
 ## The Core Principle of the Dynamic Emotion Wheel {#dew-core-principle}
 
 ## The EATMINT Circumplex {#eatmint-circumplex}
