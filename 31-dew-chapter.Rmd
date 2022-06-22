@@ -142,9 +142,11 @@ From a more practical standpoint, the GEW is also doomed to occupy a considerabl
 
 Another shortcoming of the GEW is its potential to fulfill the perceiving-monitoring function of an awareness tool. The size of the interface leaves little space to provide a dedicated space for contemplating the emotion expressed through the tool, especially from a longitudinal perspective. As in @tranEmotionsDecisionMakingProcesses2012, it would be possible to mark directly on the circles the expressed emotions with some form of sequential encoding to emulate time, but this mecanisms may easily overcrowd the interface after a few responses. One may duplicate the interface, for instance leaving the upper GEW for expressing-displaying, and the bottom GEW for perceiving-monitoring; but the tool would in this case occupy twice the already considerable size of one GEW alone.
 
-To sum up, I considered the opportunity to take advantage of GEW by maintaining its many theoretical and empirically validated features, but at the same time orient them towards an EAT that could meet the requirements set forth with the EATMINT project's member outlined in Section \@ref(requirements-for-a-second-version-of-an-eat). The result is the core principle of the Dynamic Emotion Wheel described in the next section.
+To sum up, The Geneva Emotion Wheel presents a number of theoretical and empirically validated features that are appealing even for an EAT. First, it is based on self-report, which entails the conscious, conceptual effort to investigate one's own emotional experience. Second, this introspection is guided by the implementation of an emotion structure combining appraisal dimensions and the subjective feeling in the form of a lexicalized emotion. Third, the structure also forms an affective space, which can be adapted by using appropriate steps in validating the characteristics of an alternative space. At the same time, the tool also presents some technical shortcomings and missing features that limit the possibility to be adopted *as-is* to perform both the expressing-displaying and the perceiving-monitoring function of an EAT. As a consequence, it was considered worth investigating the development of a new tool.
 
 ## The Dynamic Emotion Wheel
+
+The Dynamic Emotion Wheel (DEW) was originally conceived as a web-based application aiming at meeting the EATMINT project's requirements outlined in Section \@ref(requirements-for-a-second-version-of-an-eat). It was therefore primarily driven by an inter-personal perspective about emotional awareness consistent with the EATMINT interest in computer-mediated collaboration [@fritzDynamicEmotionWheel2015; @fritzDynamicEmotionWheel2016; @fritzProvidingEmotionalAwareness2017; @fritzRealTimeEmotionalAwareness2016; @fritzReinventingWheelEmotional2015]. As the name implies, the tool is deeply inspired by the Geneva Emotion Wheel [@schererWhatAreEmotions2005; @schererGRIDMeetsWheel2013; @shumanConceptsStructuresEmotions2014] described previously. This section starts by laying out the core principle of the DEW -- consisting in the *dynamic* element of the acronym -- which represents the main conceptual and usability difference with the Geneva Emotion Wheel. Second, it describes how this core principle determine the whole interface of the tool. Next, it illustrates how the principle can be adapted to a different affective space by introducing the EATMINT circumplex [@fritzProvidingEmotionalAwareness2017]. The sections ends with the results of a usability test conducted in experimental conditions as the last step of a first iterative process in the interaction design method adopted to create and later incrementally improve the tool [@fritzReinventingWheelEmotional2015].
 
 ### The Core Principle of the Dynamic Emotion Wheel {#dew-core-principle}
 
@@ -158,7 +160,7 @@ How it was created, there is a slide with the passages.
 
 Be brief, the method is shared with study 1, so point forward for more information.
 
-## Extending the Core Principle {#dew-extension-illustration}
+## Extending the Prototype Into a Proof of Concept {#dew-extension-illustration}
 
 ### Theoretical Extension
 
