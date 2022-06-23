@@ -105,7 +105,7 @@ The process can be understood in terms of input/output when the model is organiz
 (ref:tf-cpm-general-model-adapted-caption) The dynamic architecture of the component process model. Adapted, with minor labeling and graphical modifications, from the original figure 2.1.1 in @schererComponentProcessModel2010, p. 50.
 
 ```{r tf-cpm-general-model-adapted, fig.align="center", fig.cap="(ref:tf-cpm-general-model-adapted-caption)", out.width="100%"}
-knitr::include_graphics(here("figure/theory/cpm-model-adapted.png"))
+knitr::include_graphics(here::here("figure/theory/cpm-model-adapted.png"))
 ```
 
 After a brief overview of the overall model, the next subsections focus on the three modules respectively.
