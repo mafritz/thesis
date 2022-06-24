@@ -238,22 +238,22 @@ Using these sources and conceding a certain degree of approximation due to the t
 ```{r matching-eatmint-emotions}
 matching_table <- tribble(
   ~"EATMINT", ~"Source", ~"Affective space", ~"Val.", ~"C./P.",
-  "Amusé", "Amusement", "GEW 3.0", "+", "+",
-  "Concentré", "Attentive", "Scherer, 2005", "+", "+",
-  "Confiant", "Self-confident", "Scherer, 2005", "+", "+",
-  "Empathique", "Compassion or Empathetic", "GEW 3.0 or Scherer, 2005", "+", "-",
-  "Intéressé", "Interest", "GEW 3.0", "+", "+",
-  "Ravi", "Joy or Elation", "GEW 2.0 or 3.0", "+", "+",
-  "Satisfait", "Contentment", "GEW 3.0", "+", "-",
-  "Soulagé", "Relief", "GEW 3.0", "+", "-",
-  "Enervé", "Annoyed", "Scherer, 2005", "-", "+",
-  "Envieux", "Envy", "GEW 2.0", "-", "+",
-  "Frustré", "Frustrated", "Scherer, 2005", "-", "-",
-  "Insatisfait", "Disappointed", "GEW 3.0", "-", "-",
-  "Irrité", "Irritation", "GEW 2.0", "-", "+",
-  "Lassé", "Bored", "Scherer, 2005 or Russel, 1980", "-", "-",
-  "Surpris", "Surprise", "GEW 2.0", "+", "-",
-  "Stressé", "Stressed", "Russel, 1980", "-", "+"
+  "Amused", "Amusement", "GEW 3.0", "+", "+",
+  "Attentive", "Attentive", "Scherer, 2005", "+", "+",
+  "Confident", "Self-confident", "Scherer, 2005", "+", "+",
+  "Empathetic", "Compassion or Empathetic", "GEW 3.0 or Scherer, 2005", "+", "-",
+  "Interested", "Interest", "GEW 3.0", "+", "+",
+  "Delighted", "Joy or Elation", "GEW 2.0 or 3.0", "+", "+",
+  "Satisfied", "Contentment", "GEW 3.0", "+", "-",
+  "Relieved", "Relief", "GEW 3.0", "+", "-",
+  "Annoyed", "Annoyed", "Scherer, 2005", "-", "+",
+  "Envious", "Envy", "GEW 2.0", "-", "+",
+  "Frustrated", "Frustrated", "Scherer, 2005", "-", "-",
+  "Disappointed", "Disappointed", "GEW 3.0", "-", "-",
+  "Irritated", "Irritation", "GEW 2.0", "-", "+",
+  "Bored", "Bored", "Scherer, 2005 or Russel, 1980", "-", "-",
+  "Surprised", "Surprise", "GEW 2.0", "+", "-",
+  "Stressed", "Stressed", "Russel, 1980", "-", "+"
 )
 
 matching_table |> 
@@ -267,9 +267,17 @@ matching_table |>
   )
 ```
 
-Two other discrete emotions had a partial matching in the sources. *Anxieux* could be related to Worry (GEW 2.0) or Anxious (Russel, 1980). In one case, though, the Valence was positive and in the other negative, whereas the Control/Power was negative in both sources. *Détendu* was matched with Relaxed or Calm in Scherer (2005), in which case the Valence was positive, but the Control/Power was positive for one and negative for the other. It was decided to place the *Anxieux* in the quadrant with both negative values, whereas *Détendu* was placed in the positive Valence and negative Control/Power quadrant. With this configuration, the 18 discrete emotions placed so far formed a nicely balanced circumplex, with 5 emotions in the top-right and bottom-right quadrants, and 4 emotions for the quadrants on the left side.
+Two other discrete emotions had a partial matching in the sources. *Anxious* could be related to Worry (GEW 2.0) or Anxious (Russel, 1980). In one case, though, the Valence was positive and in the other negative, whereas the Control/Power was negative in both sources. *Relaxed* was matched with Relaxed or Calm in Scherer (2005), in which case the Valence was positive, but the Control/Power was positive for one and negative for the other. It was decided to place the *Anxious* in the quadrant with both negative values, whereas *Relaxed* was placed in the positive Valence and negative Control/Power quadrant. With this configuration, the 18 discrete emotions placed so far formed a nicely balanced circumplex, with 5 emotions in the top-right and bottom-right quadrants, and 4 emotions for the quadrants on the left side.
 
-The two lasting discrete emotions did not have even a partial matching. So it was decided using an heuristic approach to place *Confus*, translated in Confused, in the quadrant with both negative dimensions. The very last emotion, *Reconnaissant*, translated in Grateful, seemed more adequate in the positive Valence and negative Control/Power quadrant, but this quadrant tallied already 5 emotions. The only quadrant with a missing discrete emotion was the negative Valence, positive Control. It was thus decided to leave *Reconnaissant*/Grateful out of the circumplex, and replace it with *Dégoûté*, translated by *Disgusted*.
+The two lasting discrete emotions did not have even a partial matching. So it was decided using an heuristic approach to place *Confus*ed in the quadrant with both negative dimensions. The very last emotion, *Grateful*, seemed more adequate in the positive Valence and negative Control/Power quadrant, but this quadrant tallied already 5 emotions. The only quadrant with a missing discrete emotion was the negative Valence, positive Control. It was thus decided to leave *Grateful* out of the circumplex, and replace it with *Dégoûté*, translated by *Disgusted*. The final disposition is depicted in Figure \@ref(fig:theoretical-feelings-graph).
+
+(ref:theoretical-feelings-graph-caption) Disposition of 19 out of 20 discrete emotion used in the EATMINT project, with *Grateful* replaced with *Disgusted* to balance 5 items in every quadrant. The result is the EATMINT circumplex.
+
+```{r theoretical-feelings-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:theoretical-feelings-graph-caption)", fig.pos="p"}
+source(here::here("./data/study-comparison/src/02-eda.R"), local = knitr::knit_global(), encoding = "UTF-8") 
+sc.theoretical_feelings_disposition_circumplex.graph +
+  ggtitle("EATMINT circumplex")
+```
 
 ### Results of a Usability Test in Experimental Conditions {#dew-ux-test}
 
