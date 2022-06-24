@@ -69,7 +69,7 @@ The upper side of the tool was primarily concerned with the perceiving-monitorin
 
 As a result, each participant could voluntarily express their emotional experience in one of three ways: (1) by clicking one of the 20 emotion labelled buttons; (2) by typing an emotion not in the list directly in the first light-green case; or (3) by clicking the "no-emotion" button at the bottom-end of the screen. The expressed emotion would then appear in the upper light-green case of the participant's own screen, and, respectively, in the upper light-blue case of the partner's screen.
 
-### Requirements for a Second Version of an EAT
+### Requirements for a Second Version of an EAT {#eatmint-requirements}
 
 Following the analysis of the experiment from the team and the feedback provided by participants -- who found, for instance, the custom disposition of the discrete emotions labels not helping -- a requirement analysis was conducted with the members of the EATMINT project. At first, the requirements were set forth from a general, brainstorming perspective and it was the aim of the internship to try to put them together in a coherent interface. The requirements analysis identified five main characteristics of the tool.
 
@@ -223,11 +223,53 @@ Below the emotion timeline, two line charts report the chronology of the apprais
 
 To sum up, the DEW thus maintains most of the theoretically and empirically validated characteristics of the Geneva Emotion Wheel, but adapting and extending some functions to better fit with the perspective of an awareness tool rather than a self-report tool. An important missing feature compared to the GEW is the possibility to rate the intensity of the emotional episode. The values of the appraisal dimensions is in fact not to be confused with the intensity of the emotion.
 
-Furthermore, the interface allows to meet most of the requirements set forth with the EATMINT project's members. First, the tool clearly maintains its self-report perspective. Second, it implements an emotion structure, based on the Component Process Model theoretical framework. Third, it reduces the number of concurrent choices on the screen, leveraging on the dynamic mechanisms. Fourth, the space gained from a reduced expressing-displaying part is used to provide graphical representation of emotions, which are meant to increase the perception of the evolution of the emotional experience over time, as well as foster comparison between the person and the partner. Finally, by abstracting the computational model and harnessing the construction by modules of the graphical representation, it is also possible to adapt the inner-functioning and/or the appearance of the tool. In this regard, the next section shows a first adaptation that was made by creating an underlying affective space with starting from the discrete emotion used in the EATMINT tool.
+Furthermore, the interface allows to meet most of the requirements set forth with the EATMINT project's members, listed in Section \@ref(eatmint-requirements). First, the tool clearly maintains its self-report perspective. Second, it implements an emotion structure, based on the Component Process Model theoretical framework. Third, it reduces the number of concurrent choices on the screen, leveraging on the dynamic mechanisms of sub-setting the underlying affective space. Fourth, the space gained from a reduced expressing-displaying part is used to provide graphical representation of emotions, which are meant to increase the perception of the evolution of the emotional experience over time, as well as foster comparison between the person and the partner. Finally, by abstracting the computational model and harnessing the construction by modules of the graphical representation, it is also possible to adapt the inner-functioning and/or the appearance of the tool. In this regard, the next section shows a first adaptation that was made by creating an underlying affective space with starting from the discrete emotion used in the EATMINT tool.
 
 ### The EATMINT Circumplex {#eatmint-circumplex}
 
-How it was created, there is a slide with the passages.
+A first theoretical, rather than technical, distinction from the Geneva Emotion Wheel consisted in adapting the underlying affective space to lexicalized emotions more likely to occur in computer-mediated collaborative task. The 20 lexicalized emotions of the GEW have been in fact chosen for their relative frequency in everyday experience at large [@schererWhatAreEmotions2005; @schererGRIDMeetsWheel2013; @shumanConceptsStructuresEmotions2014]. The EATMINT team had already provided a list of discrete emotions listed in Table \@ref(tab:eatmint-original-emotions-table) of Section \@ref(description-of-the-eatmints-first-version-of-an-eat). It was thus possible to exploit this list, provided that each lexicalized emotion could be placed on an underlying circumplex.
+
+As suggested by the authors having worked on the GEW, one valid way to perform this task would have been the use of the GRID instrument [@schererGRIDMeetsWheel2013; @fontaineComponentsEmotionalMeaning2013]. Nevertheless, setting up a study asking participants to rate the discrete emotions seemed too risky without a prior test of the prototype. As a consequence, the discrete emotions used by the EATMINT team were placed by searching correspondences in existing bi-dimensional affective spaces. In particular, the four circumplex-like affective spaces were identified: versions 2.0 and 3.0 of the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013], the circumplex model of affect @russellCircumplexModelAffect1980, and the alternative dimensional structures of the semantic space for emotions built by Scherer [@schererWhatAreEmotions2005], which also integrates the circumplex from the pan-cultural study by Russel [@russellPanculturalAspectsHuman1983]. Whereas the former two affective spaces use the Valence x Control/Power dimensions, the latter use the Valence x Arousal dimensions. In this regard, though, Scherer [-@schererWhatAreEmotions2005, p. 722] notes that "a 45° rotation of the axes [of Russell's circumplex] corresponds rather nicely to an explanation of the distribution of the terms in a two-dimensional space formed by goal conduciveness and coping potential".
+
+Using these sources and conceding a certain degree of approximation due to the translation, it was possible to find a match for 16 out of the 20 EATMINT discrete emotions. Table \@ref(tab:matching-eatmint-emotions) lists the original EATMINT label, the label and the affective space of the source, and the value on the Valence and Control/Power dimensions.
+
+(ref:matching-eatmint-emotions-caption) Matching in existing affective spaces to create the EATMINT circumplex
+
+```{r matching-eatmint-emotions}
+matching_table <- tribble(
+  ~"EATMINT", ~"Source", ~"Affective space", ~"Val.", ~"C./P.",
+  "Amusé", "Amusement", "GEW 3.0", "+", "+",
+  "Concentré", "Attentive", "Scherer, 2005", "+", "+",
+  "Confiant", "Self-confident", "Scherer, 2005", "+", "+",
+  "Empathique", "Compassion or Empathetic", "GEW 3.0 or Scherer, 2005", "+", "-",
+  "Intéressé", "Interest", "GEW 3.0", "+", "+",
+  "Ravi", "Joy or Elation", "GEW 2.0 or 3.0", "+", "+",
+  "Satisfait", "Contentment", "GEW 3.0", "+", "-",
+  "Soulagé", "Relief", "GEW 3.0", "+", "-",
+  "Enervé", "Annoyed", "Scherer, 2005", "-", "+",
+  "Envieux", "Envy", "GEW 2.0", "-", "+",
+  "Frustré", "Frustrated", "Scherer, 2005", "-", "-",
+  "Insatisfait", "Disappointed", "GEW 3.0", "-", "-",
+  "Irrité", "Irritation", "GEW 2.0", "-", "+",
+  "Lassé", "Bored", "Scherer, 2005 or Russel, 1980", "-", "-",
+  "Surpris", "Surprise", "GEW 2.0", "+", "-",
+  "Stressé", "Stressed", "Russel, 1980", "-", "+"
+)
+
+matching_table |> 
+  arrange(EATMINT) |> 
+  kable(
+    caption = "(ref:matching-eatmint-emotions-caption)\\label{tab:matching-eatmint-emotions}",
+    caption.short = "Matching in existing affective spaces to create EATMINT circumplex",
+    longtable = FALSE,
+    booktabs = TRUE,
+    align = c("l", "l", "l", "c", "c")
+  )
+```
+
+Two other discrete emotions had a partial matching in the sources. *Anxieux* could be related to Worry (GEW 2.0) or Anxious (Russel, 1980). In one case, though, the Valence was positive and in the other negative, whereas the Control/Power was negative in both sources. *Détendu* was matched with Relaxed or Calm in Scherer (2005), in which case the Valence was positive, but the Control/Power was positive for one and negative for the other. It was decided to place the *Anxieux* in the quadrant with both negative values, whereas *Détendu* was placed in the positive Valence and negative Control/Power quadrant. With this configuration, the 18 discrete emotions placed so far formed a nicely balanced circumplex, with 5 emotions in the top-right and bottom-right quadrants, and 4 emotions for the quadrants on the left side.
+
+The two lasting discrete emotions did not have even a partial matching. So it was decided using an heuristic approach to place *Confus*, translated in Confused, in the quadrant with both negative dimensions. The very last emotion, *Reconnaissant*, translated in Grateful, seemed more adequate in the positive Valence and negative Control/Power quadrant, but this quadrant tallied already 5 emotions. The only quadrant with a missing discrete emotion was the negative Valence, positive Control. It was thus decided to leave *Reconnaissant*/Grateful out of the circumplex, and replace it with *Dégoûté*, translated by *Disgusted*.
 
 ### Results of a Usability Test in Experimental Conditions {#dew-ux-test}
 
