@@ -189,15 +189,31 @@ The core principle of the DEW paved the way, conceptually, for the system to pro
 
 The former is almost charted by the core principle. The low-fidelity wireframe of Figure \@ref(fig:dew-core-wireframe-with-options) already provide a good idea of how emotion can be self-reported. An important missing part, though, concerns the specific way by which the appraisal dimensions are labelled. Valence and Control/Power are scientific terms, unusual in everyday language. Both would therefore require translation in more intuitive and comprehensible forms. As described in the attempts to validate the disposition of feelings with direct rating for the GEW in Section \@ref(gew-limitations), this task may prove to be complicated, in particular considering the requirement for the tool to occupy a limited share of the screen. This excludes long description of the dimension as the ones adopted in direct rating for the GEW (e.g., "the situation is experienced as (un)pleasant and enjoyable (disagreeable) and/or is likely to have positive and desired (negative and undesired) consequences for the person").
 
-The perceiving-monitoring function, on the other hand, needs to be almost invented. As highlighted in Section \@ref(ea-in-computer-mediated-environment), scant attention has been given so far to how emotion can be graphically represented in a computer-mediated (learning) environment [@ez-zaouiaEmodashDashboardSupporting2020; @leonyProvisionAwarenessLearners2013; @derickEvaluatingEmotionVisualizations2017]. The building block for decoding emotional awareness are therefore the information that has been encoded: the value on appraisal dimensions and the subjective feeling.
+The perceiving-monitoring function, on the other hand, needs to be almost invented. As highlighted in Section \@ref(ea-in-computer-mediated-environment), scant attention has been given so far to how emotion can be graphically represented in a computer-mediated (learning) environment [@ez-zaouiaEmodashDashboardSupporting2020; @leonyProvisionAwarenessLearners2013; @derickEvaluatingEmotionVisualizations2017]. The building block for decoding emotional awareness is therefore the information that has been encoded: the value on appraisal dimensions and the subjective feeling.
 
-The attempt to integrate the different requirements and the concrete implementation of the core principle to convey emotional awareness is represented by the overall interface depicted in Figure \@ref(fig:dew-overall-commented-interface).
+The attempt to integrate the different requirements with the concrete implementation of the core principle to convey emotional awareness is represented by the overall interface depicted in Figure \@ref(fig:dew-overall-commented-interface)[^2]. The interface occupies around a fifth of the width and the whole height of a *modern* screen (depending on the resolution). It is divided in two main areas: the upper part is devoted to the expressing-displaying function, whereas the bottom part to the perceiving-monitoring function of awareness tools.
 
-(ref:dew-overall-commented-interface-caption) LABEL
+(ref:dew-overall-commented-interface-caption) The overall interface of the prototype, with visual cues about the role of each element. The size of the tool is not representative in proportion to the browser's window. The actual size is closer to one-fifth of the width.
 
 ```{r dew-overall-commented-interface, fig.align="center", fig.cap="(ref:dew-overall-commented-interface-caption)", out.width="100%"}
 knitr::include_graphics(here::here("./figure/dew/dew-overall-commented-interface.png"))
 ```
+
+The expressing-displaying function implements the core principle as described by the wireframes, using a uniform orange color for most of the elements of the interface that the user can manipulate. The two appraisal dimensions are represented by two horizontal sliders, each one with a continuum ranging from a negative *not at all* to a positive *yes, absolutely* poles. The neutral point is highlighted with a cue in the middle of the slider range. The Valence dimension is prompted by the label *VALENCE - Is the situation pleasant?* whereas the Control/Power with the label *POWER - Is the situation under your control?*. The choice of wording is adapted from the complementary material available with the Geneva Emotion Wheel[^3]. The name of the dimension in uppercase has been provided as a cue for the appraisal dimensions in the lower part of the screen, described below.
+
+The suggested subjective feelings are represented by three orange buttons, labelled with the lexicalized emotions that are most likely to occur given the values of the two appraisal-sliders. Below the three buttons, a text-input allows user to enter a custom response, which must be confirmed with a *Send* button. When the field is activated, a drop-down menu shows all the available lexicalized emotion. Beside the custom response field, a *No emotion* completes the options to express encode an emotional episode into the tool. The overall interaction workflow is depicted with three screen captures disposed side-by-side in Figure \@ref(fig:dew-expressing-sequence).
+
+(ref:dew-expressing-sequence-caption) The sequence to express-display an emotion through the Dynamic Emotion Wheel.
+
+```{r dew-expressing-sequence, fig.align="center", fig.cap="(ref:dew-expressing-sequence-caption)", out.width="32%", fig.show="hold"}
+knitr::include_graphics(c(
+  here::here("./figure/dew/dew-expressing-step1.png"), 
+  here::here("./figure/dew/dew-expressing-step2.png"), 
+  here::here("./figure/dew/dew-expressing-step3.png")
+))
+```
+
+The user is first prompted to rate the appraisal sliders. This message appears only the very first time the DEW interface appears and covers the space where the subjective feelings will appear. In this way, the dynamic nature of the link between the sliders and the buttons is perceived from the very onset of the interaction. The two sliders are also numbered to enforce the rating order corresponding to the sequential evaluation checks. As soon as the user moves one of knobs of the appraisal sliders, the options to express the subjective feelings appear. The number 3 besides the appearing zone completes the sequence of steps necessary to express the emotion. The user can at this moment observe the computed subset of discrete emotions and assess whether any of them is suitable to represent the actual subjective feeling. In that case, the corresponding button can be clicked. Otherwise, the "Other.." field or the "No emotion" buttons can be used instead. Once one of the options to express the subjective feeling is triggered, the system confirms the emotion has been encoded, showing also the time of the action. The confirmation message also inform the user that in order to express another emotion, the sliders must be moved again. A link can be clicked if the cognitive evaluation hasn't changed. This feature is intended especially in the case of blended or mixed emotions [@schererWhatAreEmotions2005; @schererHumanEmotionExperiences2013], which can be expressed in rapid succession by modifying only the subjective feeling, leaving the appraisal dimensions at the same values.
 
 ### The EATMINT Circumplex {#eatmint-circumplex}
 
@@ -216,3 +232,7 @@ Be brief, the method is shared with study 1, so point forward for more informati
 ## Synthesis
 
 [^1]: As a consequence, some short passages of this chapter are reproduced from the unpublished Master thesis's manuscript, especially description of interfaces or settings, for which little or no additional value could be derived from modifications.
+
+[^2]: The images actually are taken from the last version of the tool available at the time of writing and may thus differ from the images in the Master thesis. The main features are nonetheless equivalent.
+
+[^3]: Available at <https://www.unige.ch/cisa/gew> at the time of writing
