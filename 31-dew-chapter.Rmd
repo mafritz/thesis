@@ -291,7 +291,9 @@ At the same time, a usability test must provide similar and controlled condition
 
 $N = 16$ participants (8 women and 8 men, $M_{age} = 26.9, SD_{age} = 6.1$) voluntarily participate to the test, without any remuneration. They were recruited in the main building of the Psychology and Educational Sciences Faculty, whereas the test took place in an adjacent building. Participants were not expert neither in the field of emotion psychology nor human-computer interaction. Two women nevertheless followed a specific course about emotion psychology in their bachelor program, and were thus familiar with concept such as Valence or Control/Power. One man and one woman followed a specific course about human-computer interaction in their master program, and were thus familiar with concept such as usability and usability testing.
 
-Participants disposed of an overall interface composed by the Dynamic Emotion Wheel as illustrated in Figure \@ref(fig:dew-overall-commented-interface), but adopting the EATMINT circumplex as underlying affective space, on the left side, and by a custom interface for the joint problem-solving (simulated) task on the right-side. The task consisted in reading the text of the enigma and write the reasoning as well as the solution to the problem. While performing the task, participants were asked to express at least one emotion for each step in the enigma resolution: reading the problem, writing the reasoning and solution, and finding out the correct answers. The simulation was created by the *playback* of the interaction with the overall interface, which was recorded beforehand while two persons were actually performing the very same task in real-time. Everything one of the two persons did during that trial was *re-injected* into the interface at the very same time it happened on the synchronous trial. Being the problem-solving task determined by a fixed time to solve the problem (20 minutes overall, 5 minutes for each of the 4 enigmas), all participants were exposed to the same events on the interface. On the one hand, the reasoning and solutions to the enigmas were the same and appeared at the very same time. On the other, the emotions expressed by the recorded person appeared in the perceiving-monitoring part of the DEW. Consequently, participants could see the subjective feelings popping up in the emotion timeline, and the evolution of the cognitive evaluation appeared on the two line charts.
+Participants disposed of an overall interface composed by the Dynamic Emotion Wheel as illustrated in Figure \@ref(fig:dew-overall-commented-interface), but adopting the EATMINT circumplex as underlying affective space, on the left side, and by a custom interface for the joint problem-solving (simulated) task on the right-side. The task consisted in reading the text of the enigma and write the reasoning as well as the solution to the problem. While performing the task, participants were asked to express at least one emotion for each step in the enigma resolution: reading the problem, writing the reasoning and solution, and finding out the correct answers. There was nevertheless not any mechanism that reminded users to express them or prevent them for expressing more. According to the awareness tool perspective, they could use the tool as they saw fit.
+
+The simulation was created by the *playback* of the interaction with the overall interface, which was recorded beforehand while two persons were actually performing the very same task in real-time. Everything one of the two persons did during that trial was *re-injected* into the interface at the very same time it happened on the synchronous trial. Being the problem-solving task determined by a fixed time to solve the problem (20 minutes overall, 5 minutes for each of the 4 enigmas), all participants were exposed to the same events on the interface. On the one hand, the reasoning and solutions to the enigmas were the same and appeared at the very same time. On the other, the emotions expressed by the recorded person appeared in the perceiving-monitoring part of the DEW. Consequently, participants could see the subjective feelings popping up in the emotion timeline, and the evolution of the cognitive evaluation appeared on the two line charts.
 
 Inherently to the two line charts, participants were randomly assigned to two slightly different versions of the interface. In the *by participant* condition, the line charts were divided according to whom the cognitive evaluation *belonged*. As in Figure \@ref(fig:dew-overall-commented-interface), thus, the top chart reported the appraisals dimensions of the participant herself, whereas the bottom chart the cognitive evaluation of the simulated partner. In the *by appraisal* conditions, on the other hand, the top chart reported the evaluation of the Valence dimension for both the participant and the simulated partner, whereas the bottom chart reported the Control/Power evaluation.
 
@@ -300,6 +302,30 @@ Participants were instructed not to communicate directly with the partner (to ma
 The screen on which the test was taken was equipped with an eye-tracking device [@pooleEyeTrackingHumanComputer2005; @blascheckVisualizationEyeTracking2017], which allowed the gaze of participants to be tracked during their interaction with the overall interface of the task. Consequently, the test provided measures for both the expressing-displaying function and the perceiving-monitoring function. The former was represented by: (1) the number of emotion expressed, with each emotion consisting in a rating of each appraisal dimension comprised between -100 and 100 in correspondence with the negative and positive poles of the continuum; (2) the lexicalized emotion chosen for the subjective feeling; and (3) usability measures about the time the gaze of the participant was directed on the overall expressing-displaying part of the DEW. The latter was represented by how long and how often participants' gaze was directed towards the available emotional information. A survey at the end of the task completed the measure by subjective evaluations, among which the System Usability Scale [@brookeSUSQuickDirty1996], a widely adopted usability scale, and a specific rating on the perceived usefulness of the different elements of the interface, including the line charts differing according to the condition participants' were attributed to.
 
 ### Results
+
+```{r usability-test-analysis}
+library(readr)
+library(here)
+library(tidyverse)
+library(papaja)
+
+fritz2015_emotions <- read_csv(here("data/study-1/data/fritz2015_emotions.csv"))
+fritz2015_eyetracking <- read_csv(here("data/study-1/data/fritz2015_eyetracking.csv"))
+
+ux.expressing <- fritz2015_emotions |> 
+  group_by(user) |> 
+  summarise(
+    n = n()
+  ) |> 
+  ungroup() |> 
+  summarise(
+    M = mean(n),
+    SD = sd(n)
+  )
+
+```
+
+Overall, participants expressed $M =$ `r printnum(ux.expressing$M)` ($SD=$ `r printnum(ux.expressing$SD)`).
 
 ### Discussion
 
