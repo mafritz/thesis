@@ -10,6 +10,7 @@ library(papaja)
 library(here)
 library(knitr)
 library(kableExtra)
+source(here::here("./data/fritz2015/fritz2015_reanalysis.R"), local = knitr::knit_global(), encoding = "UTF-8")
 
 ```
 
@@ -285,7 +286,7 @@ The resulting EATMINT circumplex has a double interest. On a practical standpoin
 
 The interaction design method implies that an iterative cycle concludes with a usability test, from which useful information can be gathered in order to corroborate design choices or solve issues that may emerge from the concrete use of the product [@cooperFaceEssentialInteraction2007; @rogersInterctionDesignHumanComputer2011]. Oftentimes, the usability test consists in asking to a number of users to execute a series of guided tasks individually, which aim at a specific solution, such as performing a determinate manipulation on the interface or point to the correct information available [@lallemandMethodesDesignUX2017]. Nevertheless, the characteristics of an EAT do not really match with this testing conditions. First, the task to execute on an EAT consists in more or less the same procedure, which takes on value depending on how the same procedure of expressing-displaying and perceiving-monitoring information is integrated into the task at hand. Second, from the inter-subjective point of view of the computer-mediated collaboration and Computer-Supported Collaborative Learning perspectives of the EATMINT project, an individual test did not respond to the ecological situation in which the tool should be deployed.
 
-At the same time, a usability test must provide similar and controlled conditions for the information gathered to be reliable and summarized over trials. To strike a balance between the two seemingly opposing requirements, it was decided to perform a usability test in experimental conditions, which also happen to coincide with one of the aimed domain for the implementation of the tool, namely research. Participants were therefore asked to take part in a computer-mediated collaborative task consisting in the resolution of 4 enigmas. Participants were made to believe that another person was collaborating with them from another location, but actually the collaboration was simulated. The details of the experimental settings will be described thoroughly in the first empirical contribution of Part III, who adopted the very same principle, with the very same material and procedure. In this section, the main results of the usability test are illustrated, for some measure obtained through it also play a prominent role in the empirical part of the thesis. Given the experimental nature of the usability test, the section is organized with a method, result, and discussion subsections, even though the length of each section is kept at the essential information. A complete analysis of the usability test is available in @fritzReinventingWheelEmotional2015.
+At the same time, a usability test must provide similar and controlled conditions for the information gathered to be reliable and summarized over trials. To strike a balance between the two seemingly opposing requirements, it was decided to perform a usability test in experimental conditions, which also happen to coincide with one of the aimed domain for the implementation of the tool, namely research. Participants were therefore asked to take part in a computer-mediated collaborative task consisting in the resolution of 4 enigmas. Participants were made to believe that another person was collaborating with them from another location, but actually the collaboration was simulated. The details of the experimental settings will be described thoroughly in the first empirical contribution of Part III, who adopted the very same principle, with the very same material and procedure. In this section, the main results of the usability test are illustrated, for some measure obtained through it also play a prominent role in the empirical part of the thesis. Given the experimental nature of the usability test, the section is organized with a brief overview of the method, followed by a discussion of the main results. All results have been re-computed and are therefore to be considered more reliable than in @fritzReinventingWheelEmotional2015 in case of inconsistencies.
 
 ### Method
 
@@ -299,35 +300,17 @@ Inherently to the two line charts, participants were randomly assigned to two sl
 
 Participants were instructed not to communicate directly with the partner (to maintain the illusion of collaboration), for instance by asking questions through the text input used to write the reasoning. A system of points was implemented to foster the (simulated) collaboration: 1 point for each correct response given by either member of the dyad, 0 points for every response not given, and -1 points for every incorrect response. Once again to maintain the illusion of the collaboration, each member of the dyad could provide their own response and the collaboration consisted thus in building on each other reasoning in order to maximize the acquisition of points.
 
-The screen on which the test was taken was equipped with an eye-tracking device [@pooleEyeTrackingHumanComputer2005; @blascheckVisualizationEyeTracking2017], which allowed the gaze of participants to be tracked during their interaction with the overall interface of the task. Consequently, the test provided measures for both the expressing-displaying function and the perceiving-monitoring function. The former was represented by: (1) the number of emotion expressed, with each emotion consisting in a rating of each appraisal dimension comprised between -100 and 100 in correspondence with the negative and positive poles of the continuum; (2) the lexicalized emotion chosen for the subjective feeling; and (3) usability measures about the time the gaze of the participant was directed on the overall expressing-displaying part of the DEW. The latter was represented by how long and how often participants' gaze was directed towards the available emotional information. A survey at the end of the task completed the measure by subjective evaluations, among which the System Usability Scale [@brookeSUSQuickDirty1996], a widely adopted usability scale, and a specific rating on the perceived usefulness of the different elements of the interface, including the line charts differing according to the condition participants' were attributed to.
+The screen on which the test was taken was equipped with an eye-tracking device [@pooleEyeTrackingHumanComputer2005; @blascheckVisualizationEyeTracking2017], which allowed the gaze of participants to be tracked during their interaction with the overall interface of the task. Consequently, the test provided measures from the DEW, from the eye-tracker device, and from end-of-task survey, comprising the System Usability Scale [@brookeSUSQuickDirty1996], a widely adopted usability measure illustrated in more details in Chapter \@ref(study-comparaison).
 
-### Results
+### Results and Discussion
 
-```{r usability-test-analysis}
-library(readr)
-library(here)
-library(tidyverse)
-library(papaja)
+The results are based on $N = 14$ for all measures, except for eye-tracking indicators, which are based on $N =12$ participants. Two participants were excluded only from the eye-tracking measures due to a poor sampling percentage, that is, the number of time the eye-tracker system could detect the position of participants' gaze. This is not unusual since the eye-tracking device may be sensitive to head movements, light conditions in the room, or lenses of glasses. Other two were excluded overall because they had a total time of detection of their gaze on the task side of less than 3 minutes out of the 20 minutes of the task, against a mean of the other participants superior to 10 minutes. The time on the task part of the zone was chosen as a filter since a participant could genuinely not be interested in the EAT, but not looking at the task could either suggest a technical problem or disinterest in the experience. The gaze in the EAT side of the screen, as a comparison, was detected for almost 4 minutes on average. Summing the two measures, we obtain thus around 14 minutes of gaze detection. The lagging time is due to fact that participants had to write on their keyboard or manipulate the mouse and therefore turn away the eyes from the screen.
 
-fritz2015_emotions <- read_csv(here("data/study-1/data/fritz2015_emotions.csv"))
-fritz2015_eyetracking <- read_csv(here("data/study-1/data/fritz2015_eyetracking.csv"))
+With respect to the expressing-displaying function, participants expressed $M =$ `r printnum(mean(ux.expressing$tot))` ($SD=$ `r printnum(sd(ux.expressing$tot))`) emotions during the task. This is roughly one every two minutes in the task. Among the expressed emotions -- not including the "none" option that was chosen only one time by four different users -- the emotion expressed through the click of a button were $M =$ `r printnum(mean(ux.expressing$button))` ($SD=$ `r printnum(sd(ux.expressing$button))`), against $M =$ `r printnum(mean(ux.expressing$other))` ($SD=$ `r printnum(sd(ux.expressing$other))`) expressed by using the text field. There was therefore a negligeable difference of only around 2.5 emotions in favor of the suggested buttons, which did not reach the conventional alpha level of 0.05 in a one-tailed, paired Welch's t-test (`r apa_print(ux.click_type.test)$full_result`). The suggested lexicalized emotions did not seem, thus, to provide an accurate estimation of participants' subjective feelings. This is further corroborated by the fact that only `r nrow(ux.expressing_not_listed)` subjective feelings overall were typed in, whereas all others were chosen among the 20 lexicalized emotions of the EATMINT circumplex. It is thus the mechanism of suggestion itself that did not match, not the discrete emotions provided.
 
-ux.expressing <- fritz2015_emotions |> 
-  group_by(user) |> 
-  summarise(
-    n = n()
-  ) |> 
-  ungroup() |> 
-  summarise(
-    M = mean(n),
-    SD = sd(n)
-  )
+The overall time in which the gaze of the participants was inside the expressing-displaying area of the EAT was $M =$ `r printnum(mean(ux.displaying$duration))` ($SD =$ `r printnum(sd(ux.displaying$duration))`) seconds, that is less than 3 minutes. Assuming that participants had no particular interest in looking at this part of screen outside expressing an emotion (and the initial curiosity), it is possible to approximate the average time to express an emotion by dividing this individual overall time on the expressing-displaying area by the number of emotion expressed by the participant. We obtain an average of $M =$ `r printnum(mean(ux.displaying$time_per_emotion))` ($SD =$ `r printnum(sd(ux.displaying$time_per_emotion))`) seconds to encode an emotion through the interface.
 
-```
-
-Overall, participants expressed $M =$ `r printnum(ux.expressing$M)` ($SD=$ `r printnum(ux.expressing$SD)`).
-
-### Discussion
+### Synthesis
 
 ## Extending the Prototype Into a Proof of Concept {#dew-extension-illustration}
 
