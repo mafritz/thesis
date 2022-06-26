@@ -1,4 +1,4 @@
-# Emotion Awareness in Synchronous and Collaborative Settings
+# Emotion Awareness in Synchronous and Collaborative Settings {#study-1}
 
 ```{r s1-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
@@ -13,10 +13,10 @@ source(here("data", "study-1", "s1-export.R"), local = knitr::knit_global(), enc
 
 General introduction to the study:
 
-* Collaborative learning advantages and pitfalls
-* Mutual-modeling in CSCL
-* Description of empirical studies on emotional awareness in CMC/CSCL (Eligio, EATMINT)
-* Follow-up to EATMINT "*Finally, "one main limitation of the study is the difficulty in disentangling the effect of reflecting upon one’s own emotions from the effect of sharing one’s emotions with the partner" [@molinariEmotionFeedbackComputermediated2013, p. 342]
+-   Collaborative learning advantages and pitfalls
+-   Mutual-modeling in CSCL
+-   Description of empirical studies on emotional awareness in CMC/CSCL (Eligio, EATMINT)
+-   Follow-up to EATMINT "\*Finally, "one main limitation of the study is the difficulty in disentangling the effect of reflecting upon one's own emotions from the effect of sharing one's emotions with the partner" [@molinariEmotionFeedbackComputermediated2013, p. 342]
 
 ## Study Overview
 
