@@ -357,13 +357,17 @@ ux_measures |>
 
 ## Extending the Prototype Into a Proof of Concept {#dew-extension-illustration}
 
-The
+The chapter has so far covered how the Dynamic Emotion Wheel came to be as an attempt to respond to specific requirements within the EATMINT projet scope and aim. As a consequence, it was highly oriented toward the inter-personal function of an awareness tool, especially in a dyadic interaction. As illustrated in Chapter \@ref(eat-general-chapter), though, emotional awareness can be thought of also at the intra-personal level exclusively. Also, the inter-individual level does not have to be constrained to dyads. Furthermore, the use of the EATMINT circumplex highlights how the DEW can be modified according to theoretical and empirical criteria. In the reminder of the chapter, so, a series of features are set forth to transform the DEW from a *single-case* prototype to a multi-purpose proof of concept. The features are organized in theoretical and technical extensions, even though the two categories overlaps considerably and have mutual influence.
 
 ### Theoretical Extension
 
+The theoretical extension concerns *in primis* the emotion structure that is adopted to encode the expression of an emotion.
+
 ### Technical Extension
 
-## Synthesis
+The technical extension relates more generally to making the tool available to a wider audience of interested researchers and practitioners.
+
+## Summary
 
 [^1]: As a consequence, some short passages of this chapter are reproduced from the unpublished Master thesis's manuscript, especially description of interfaces or settings, for which little or no additional value could be derived from modifications.
 
