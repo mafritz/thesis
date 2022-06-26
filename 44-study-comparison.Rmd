@@ -28,14 +28,14 @@ One of the interesting indications that can be assessed through the ratings on t
 (ref:sc-appraisal-descriptive-caption) Descriptive statistics in the rating of the two appraisal dimensions of the affective space
 
 ```{r sc-appraisal-descriptive-table}
-sc.appraisal.descriptive %>% 
+sc.appraisal.descriptive |> 
   kable(
     booktabs = TRUE,
     digits = 2,
     caption = "(ref:sc-appraisal-descriptive-caption)\\label{tab:sc-appraisal-descriptive-table}",
     caption.short = "Comparison: descriptive of appraisal dimensions",
     longtable = FALSE,
-  ) %>%
+  ) |>
   row_spec(3, bold = T)
 ```
 
@@ -66,17 +66,17 @@ The fitted lines highlight a strong positive correlation between the Valence and
 (ref:sc-appraisal-combination-caption) Emotions expressed with different combinations of appraisal dimensions.
 
 ```{r sc-appraisal-combination-table}
-sc.appraisal_sign_comparison %>%
-  select(-Setting) %>% 
+sc.appraisal_sign_comparison |>
+  select(-Setting) |> 
   kable(
     booktabs = TRUE,
     digits = 2,
     caption = "(ref:sc-appraisal-combination-caption)\\label{tab:sc-appraisal-combination-table}",
     caption.short = "Comparison: appraisal combinations",
     longtable = FALSE,
-  ) %>% 
-  pack_rows("Asynch./Indiv. (26 participants)", 1, 3) %>%
-  pack_rows("Synch./Collab. (35 participants)", 4, 6) %>%
+  ) |> 
+  pack_rows("Asynch./Indiv. (26 participants)", 1, 3) |>
+  pack_rows("Synch./Collab. (35 participants)", 4, 6) |>
   kable_styling(
     latex_options = c("repeat_header")
   )
@@ -95,14 +95,14 @@ The second assessment concerns the expression of the subjective feeling, that is
 (ref:sc-feelings-cumulative-comparison-caption) Cumulative number of subjective feelings expressed that were listed or not listed in the underlying affective space
 
 ```{r sc-feelings-cumulative-comparison-table}
-sc.listed_vs_not_listed %>%
+sc.listed_vs_not_listed |>
   kable(
     booktabs = TRUE,
     digits = 2,
     caption = "(ref:sc-feelings-cumulative-comparison-caption)\\label{tab:sc-feelings-cumulative-comparison-table}",
     caption.short = "Comparison: listed vs. not listed feelings",
     longtable = FALSE,
-  ) %>%
+  ) |>
   row_spec(3, bold = T)
 ```
 
@@ -113,18 +113,18 @@ Another aspect worth considering in the assessment of the subjective feelings is
 (ref:sc-feelings-frequency-comparison-caption) Relative frequencies of the 20 listed subjective feelings and absolute differences between distance learning settings
 
 ```{r sc-feelings-frequency-comparison-table}
-sc.listed_feelings_frequency %>%
-  select(-Quadrant) %>% 
+sc.listed_feelings_frequency |>
+  select(-Quadrant) |> 
   kable(
     booktabs = TRUE,
     digits = 2,
     caption = "(ref:sc-feelings-frequency-comparison-caption)\\label{tab:sc-feelings-frequency-comparison-table}",
     caption.short = "Comparison: relative frequency of listed feelings",
     longtable = FALSE,
-  ) %>% 
+  ) |> 
   kable_styling(
     latex_options = c("repeat_header")
-  ) %>% pack_rows(
+  ) |> pack_rows(
     index = c(
       "Quadrant I. Positive Valence x Positive Control/Power" = 5,
       "Quadrant II. Positive Valence x Negative Control/Power" = 5,
@@ -151,18 +151,18 @@ This kind of measure, though, can be influenced, among other things, by (1) the 
 (ref:sc-frequency-button-caption) Frequency of clicks on one of the suggested subjective feelings
 
 ```{r sc-frequency-button-table}
-sc.button_vs_other.descriptive %>% 
+sc.button_vs_other.descriptive |> 
   kable(
     booktabs = TRUE,
     digits = 2,
     caption = "(ref:sc-frequency-button-caption)\\label{tab:sc-frequency-button-table}",
     caption.short = "Comparison: frequency of clicks on the buttons",
     longtable = FALSE,
-  ) %>%
+  ) |>
   row_spec(3, bold = T)
 ```
 
-Overall, the frequency of clicks on one of the suggested subjective feelings is $M = `r sc.button_vs_other.descriptive[3,3] %>% printnum()`$ ($SD = `r sc.button_vs_other.descriptive[3,4] %>% printnum()`$), which means that around 4 out of 5 emotions are expressed using one of the subjective feelings suggested through the three buttons on the interface. In the Asnyhc./Indiv. setting, the average frequency is $M = `r sc.button_vs_other.descriptive[1,3] %>% printnum()`$ with a standard deviation of $SD = `r sc.button_vs_other.descriptive[1,4] %>% printnum()`$. In the Synch./Collab. setting, the average frequency is $M = `r sc.button_vs_other.descriptive[2,3] %>% printnum()`$, with a standard deviation of $SD = `r sc.button_vs_other.descriptive[2,4] %>% printnum()`$. In both cases, thus, the frequency is well above the 0.5 threshold, which may be considered a random indicator whether the subjective feeling appeared or not in the proposed subset. There is nevertheless a difference of around 0.2 points between the two settings, with participants in the Synch./Collab. setting clicking more often on the buttons. The data, pictured in Figure \@ref(fig:sc-frequency-graph), reveals that most of the participants in the Synch./Collab. setting always *accepted* one of the proposed subjective feelings, whereas in the Asynch./Indiv. setting there is a more heterogenous disposition. This is consistent with evidence in the previous sections of the chapter indicating the need of a more nuanced emotional expression in the Asynch./Indiv. setting.
+Overall, the frequency of clicks on one of the suggested subjective feelings is $M = `r sc.button_vs_other.descriptive[3,3] |> printnum()`$ ($SD = `r sc.button_vs_other.descriptive[3,4] |> printnum()`$), which means that around 4 out of 5 emotions are expressed using one of the subjective feelings suggested through the three buttons on the interface. In the Asnyhc./Indiv. setting, the average frequency is $M = `r sc.button_vs_other.descriptive[1,3] |> printnum()`$ with a standard deviation of $SD = `r sc.button_vs_other.descriptive[1,4] |> printnum()`$. In the Synch./Collab. setting, the average frequency is $M = `r sc.button_vs_other.descriptive[2,3] |> printnum()`$, with a standard deviation of $SD = `r sc.button_vs_other.descriptive[2,4] |> printnum()`$. In both cases, thus, the frequency is well above the 0.5 threshold, which may be considered a random indicator whether the subjective feeling appeared or not in the proposed subset. There is nevertheless a difference of around 0.2 points between the two settings, with participants in the Synch./Collab. setting clicking more often on the buttons. The data, pictured in Figure \@ref(fig:sc-frequency-graph), reveals that most of the participants in the Synch./Collab. setting always *accepted* one of the proposed subjective feelings, whereas in the Asynch./Indiv. setting there is a more heterogenous disposition. This is consistent with evidence in the previous sections of the chapter indicating the need of a more nuanced emotional expression in the Asynch./Indiv. setting.
 
 (ref:sc-frequency-graph-caption) Frequency of click on one of the three buttons labeled with a subjective feeling. Bars represent 95% confidence intervals.
 
@@ -179,7 +179,7 @@ With the data collected every time a subjective feeling is expressed, it is poss
 (ref:sc-empirical-feelings-disposition-caption) Aggregated means of appraisal ratings for each of the 20 subjective feelings in the EATMINT circumplex, with observed and expected slopes.
 
 ```{r sc-empirical-feelings-disposition-table}
-sc.empirical_feelings_disposition %>%
+sc.empirical_feelings_disposition |>
   kable(
     booktabs = TRUE,
     digits = 2,
@@ -187,10 +187,10 @@ sc.empirical_feelings_disposition %>%
     caption.short = "Comparison: observed appraisal ratings in EATMINT circumplex",
     longtable = FALSE,
     col.names = c("Feeling", "N", "Valence", "Contr./Pow.", "Obs. Slope", "Exp. Slope", "|Slope|")
-  ) %>% 
+  ) |> 
   kable_styling(
     latex_options = c("repeat_header", "HOLD_position")
-  ) %>% 
+  ) |> 
   pack_rows(
     index = c(
       "Quadrant I. Positive Valence x Positive Control/Power" = 5,
@@ -237,12 +237,12 @@ The scale, using inverse rating for even items, allows to compute an overall sco
 
 Concerning the overall score of the SUS, Sauro and Lewis [-@sauroQuantifyingUserExperience2016] extrapolated a curved grading scale from 241 industrial usability studies and surveys. According to this scale, the average SUS overall score is $M = 68$, but the same authors suggest that "it is becoming a common industrial goal to achieve a SUS of 80" [@lewisItemBenchmarksSystem2018, p. 161] as synonymous of a perceived good experience.
 
-Table \@ref(tab:sc-sus-overall-score-table) shows the SUS score for the two learning settings, as well as the weighted overall mean. With an overall score of $M = `r sc.sus_comparison$mean[3] %\>% printnum()`$ ($SD =`r sc.sus_comparison$sd[3] %>% printnum()`$), the EAT is perceived somehow halfway between the $M = 68$ empirical benchmark, and the target score of 80. As the table shows, the SUS score is consistent across the two learning settings, with a difference of less than 1 point.
+Table \@ref(tab:sc-sus-overall-score-table) shows the SUS score for the two learning settings, as well as the weighted overall mean. With an overall score of $M = `r sc.sus_comparison$mean[3] |>  printnum()`$ ($SD =`r sc.sus_comparison$sd[3]  |>  printnum()`$), the EAT is perceived somehow halfway between the $M = 68$ empirical benchmark, and the target score of 80. As the table shows, the SUS score is consistent across the two learning settings, with a difference of less than 1 point.
 
 (ref:sc-sus-overall-score-caption) Score to the System Usability Scale [SUS, @brookeSUSQuickDirty1996]
 
 ```{r sc-sus-overall-score-table}
-sc.sus_comparison %>% 
+sc.sus_comparison |> 
   kable(
     booktabs = TRUE,
     digits = 2,
@@ -250,8 +250,8 @@ sc.sus_comparison %>%
     caption.short = "Comparison: overall score to the SUS",
     longtable = FALSE,
     col.names = c("Condition", "N", "M", "SD")
-  ) %>%
-  row_spec(3, bold = T) %>% 
+  ) |>
+  row_spec(3, bold = T) |> 
   kable_styling(latex_options = "HOLD_position")
 ```
 
