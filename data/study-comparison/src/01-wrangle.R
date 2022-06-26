@@ -3,6 +3,7 @@ library(here)
 library(tidyverse)
 library(skimr)
 
+source(here("data/fritz2015/fritz2015_reanalysis.R"))
 source(here("data/study-1/src/01-wrangle.R"))
 source(here("data/study-2/src/01-wrangle.R"))
 source(here("data/utils/dew-utils.R"))
@@ -75,18 +76,15 @@ sc.dew_combined_emotions = bind_rows(dew_s1, dew_s2) %>%
 rm(dew_fritz2015, dew_s1, dew_s2)
 
 # SUS Fritz 2015
-fritz2015_usability <- read_delim(here("data/study-comparison/data/fritz2015_usability.csv"), 
-                                  ";", escape_double = FALSE, trim_ws = TRUE)
 
-synch_usability <- fritz2015_usability %>% 
-  pivot_longer(cols = SUS1:SUS10, names_to = "item") %>% 
+synch_usability <- ux.sus_scale_long %>% 
   rename(participant = user) %>% 
-  mutate(
+  transmute(
     participant = as_factor(participant),
     source = "Synch./Collab.",
     item = as_factor(item),
-    item_num = as.integer(str_remove(item, "SUS")),
-    item_score = if_else(item_num %% 2 == 0, (7 - value), (value - 1))
+    item_num = order,
+    item_score = score
   )
 
 asynch_usability <- s2.sus_score %>% 
@@ -110,4 +108,4 @@ sc.sus_scores$item <- factor(sc.sus_scores$item, levels = c(
   "SUS10"
 ))
 
-rm(fritz2015_usability, synch_usability, asynch_usability)
+rm(synch_usability, asynch_usability)

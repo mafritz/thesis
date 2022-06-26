@@ -7,39 +7,40 @@ library(performance)
 library(report)
 library(corrr)
 
-fritz2015_survey <- read_delim(here::here("data/fritz2015/fritz2015_survey.csv"), delim = ";", escape_double = FALSE, trim_ws = TRUE, col_types = cols(Code = col_character())) |> 
+fritz2015_survey_raw <- read_delim(here::here("data/fritz2015/fritz2015_survey.csv"), delim = ";", escape_double = FALSE, trim_ws = TRUE, col_types = cols(Code = col_character())) |> 
   mutate(
     user = paste0("P", Code)
   )
-fritz2015_emotions <- read_csv(here("data/study-1/data/fritz2015_emotions.csv"))
-fritz2015_eyetracking <- read_csv(here("data/study-1/data/fritz2015_eyetracking.csv")) |> 
-  left_join(fritz2015_survey, by = c("user" = "Code"))
+fritz2015_emotions_raw <- read_csv(here("data/fritz2015/fritz2015_emotions.csv"))
 
-fritz2015_excluded <- fritz2015_eyetracking |> 
+fritz2015_eyetracking_raw <- read_csv(here("data/fritz2015/fritz2015_eyetracking.csv")) |> 
+  left_join(fritz2015_survey_raw, by = c("user" = "Code"))
+
+fritz2015_excluded <- fritz2015_eyetracking_raw |> 
   filter(
     Total_Visit_Duration_TASK_Sum < 3 * 60
   )
 
-fritz2015_eyetracking_filtered <- fritz2015_eyetracking |> 
+fritz2015_eyetracking <- fritz2015_eyetracking_raw |> 
   filter(!user %in% fritz2015_excluded$user)
 
-fritz2015_eyetracking_filtered <- fritz2015_eyetracking_filtered |> 
+fritz2015_eyetracking <- fritz2015_eyetracking |> 
   mutate(across(-c(X1, user), ~as.numeric(gsub("-", "", .))))
 
-fritz2015_emotions_filtered <- fritz2015_emotions |> 
+fritz2015_emotions <- fritz2015_emotions_raw |> 
   filter(!user %in% fritz2015_excluded$user)
 
-fritz2015_survey_filtered <- fritz2015_survey |> 
+fritz2015_survey <- fritz2015_survey_raw |> 
   filter(!user %in% fritz2015_excluded$user)
 
-ux.appraisals <- fritz2015_emotions_filtered |> 
+ux.appraisals <- fritz2015_emotions |> 
   group_by(user) |> 
   summarise(
     n = n(),
     cor = cor(x, y)
   )
 
-ux.expressing <- fritz2015_emotions_filtered |> 
+ux.expressing <- fritz2015_emotions |> 
   group_by(user, click) |>
   summarise(
     n = n()
@@ -49,7 +50,7 @@ ux.expressing <- fritz2015_emotions_filtered |>
     tot = button + other + none
   )
 
-ux.perceiving <- fritz2015_eyetracking_filtered |> 
+ux.perceiving <- fritz2015_eyetracking |> 
   transmute(
     user = user,
     timeline_visits = Visit_Count_Timeline_Sum,
@@ -58,7 +59,7 @@ ux.perceiving <- fritz2015_eyetracking_filtered |>
     linechart_duration = Total_Visit_Duration_Graphique_1_Sum + Total_Visit_Duration_Graphique_2_Sum
   )
 
-ux.sus_scale_long <- fritz2015_survey_filtered |> 
+ux.sus_scale_long <- fritz2015_survey |> 
   select(user, SUS1:SUS10) |> 
   pivot_longer(-user, names_to = "item", values_to = "evaluation") |> 
   mutate(
