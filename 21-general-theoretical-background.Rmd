@@ -154,7 +154,7 @@ As stated in the preamble of this section, the term awareness in the context of 
 
 Schmidt reckons that there are two intertwined functions that allow awareness to emerge. First, information must be made available, or produced, for awareness to be possible. Schmidt define this function as *displaying*. The emergence is nevertheless not enough, information must also be perceived, or consumed, so Schmidt define a second necessary function, which consists in *monitoring* the computer-mediated environment in search of displayed information. As a consequence, awareness "is not the product of passively acquired 'information' but is a characterization of some highly active and highly skilled practices" [@schmidtProblemAwareness2002, p. 293]. In the reminder of the section and the manuscript, awareness is therefore considered in functional terms as the result from the interaction of displaying and monitoring instrumental information.
 
-### Instrumental Information in Computer-Mediated Learning Environments
+### Instrumental Information in Computer-Mediated Learning Environments {#instrumental-awareness}
 
 Defining awareness as the function of displaying and monitoring instrumental information determines the need to frame what is considered as instrumental information. In this regard, when the concept of awareness was transferred into the context of learning, a change of perspective materialized on some important aspects, which are here resumed in three separated points, even though there is ample overlapping and interaction among them.
 

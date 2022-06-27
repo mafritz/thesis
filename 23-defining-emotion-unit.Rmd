@@ -223,7 +223,7 @@ The adoption of the CPM as the framework of reference presents another interesti
 
 Scherer defines emotional competence as "the capacity that is at issue, varying over individuals, as differential degrees of *competence in using the emotion mechanism* as it has been shaped by evolution" [@schererComponentialEmotionTheory2007, p. 102, italic in the text]. The term competence is considered at an intermediate level in a continuum represented by relatively stable traits, such as abilities, on the one side, and more specific and contextualized skills on the other side. This conceptualization is consistent with other scholars considering advantages inherited by some form of emotional know-how, as malleable and potentially modifiable through training [*e.g.*, @mayerAbilityModelEmotional2016]. Emotional competence can be divided in two major domains: emotion production and emotion perception. The two are then further characterized by three sub-competences: 1) the appraisal competence, (2) the communication competence, and (3) the regulation competence.
 
-### Appraisal Competence  {#appraisal-competence}
+### Appraisal Competence {#appraisal-competence}
 
 The appraisal competence consists in emotion elicitation and emotion differentiation [@schererEmotionProcessEvent2019]. On the one hand, a competent emotional agent is able to detect features of the environment that may benefit from an emotional response. For a student, for instance, it is important to rapidly detect events that are central to the learning process such as novel and relevant information; interactions with colleagues that may lead to unpleasant consequences; concepts that exceeds one's coping potential in processing them; or behaviors that violates norms of conduct such as plagiarism.
 
