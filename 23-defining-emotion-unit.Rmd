@@ -41,7 +41,7 @@ Third, from a research perspective, linking the EAT to a theory facilitates the 
 
 These reasons advocate the adoption of a theory-driven approach to emotion definition. The next section will thus address the topic of emotion theories.
 
-## Theories of Emotion
+## Theories of Emotion {#theories-of-emotion}
 
 As one may expect from the complexity in defining an emotion outlined in the previous section, there are a multitude of emotion theories and taxonomies that try to categorize them [see for example @moorsTheoriesEmotionCausation2009; @sep-emotion; @sanderModelsEmotionAffective2013]. Adopting a perspective spanning philosophy and affective sciences, Scarantino and de Sousa [-@sep-emotion] identify three traditions in which most of emotion theories may belong: (1) the Feeling Tradition, which considers the conscious experience of an emotion as the fundamental characteristic; (2) the Evaluative Tradition, which focuses on how emotion consists in, or is crucially defined by the way eliciting events are evaluated; and (3) the Motivational Tradition, which identifies emotion with specific internal states driven by want or need to satisfy a goal.
 
