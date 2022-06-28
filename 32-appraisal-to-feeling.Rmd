@@ -164,6 +164,10 @@ As already mentioned, Gillioz and colleagues [-@gilliozMappingEmotionTerms2016] 
 
 ## Limitations Of the Computational Model
 
+The computational model presented here is overtly simple to account for the sheer complexity of *what is an emotion*. It is limited to the appraisal and integration/categorization modules, excluding thus three out of five components of the Component Process Model. The complexity of the two modules is also simplified. In absolute terms, thus, the model reflects only a fraction of the theoretical work of the CPM, appraisal theories, or emotion theories more broadly. Compared to other existing solutions, though, the model adds some distinctive features. The limitations of the tool are therefore assessed with respect to these distinctive features.
+
+A first important assumption of the model is that it exists a linear relationship between the dimensions and the corresponding subjective feeling. Using statistical jargon widely adopted in psychology, the model subsumes a *main* effect of appraisal dimensions, but not an *interaction* effect. Some subjective feelings may in fact be more likely to occur not given the addition of two dimensions, but given a dimension conditional to the value of the other [@fontaineLinearNonlinearRelationships2021]. For instance, a subjective feeling can be evaluated on the Control/Power dimension only if the Valence dimension is very high or very low, whereas the model expects the feeling to be monotonically (*i.e.*, proportionally) linked to both dimensions.
+
 Linear vs non-linear, see article.
 
 ## Summary
