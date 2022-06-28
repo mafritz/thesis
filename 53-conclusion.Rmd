@@ -1,1 +1,4 @@
 # Conclusion {.unnumbered}
+
+* Gorund breaking -> no soil to build upon
+* Coding on the shoulders of giants to translate emotion theory into an user interface
