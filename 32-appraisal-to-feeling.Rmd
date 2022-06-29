@@ -44,7 +44,7 @@ A higher number of dimensions in self-reporting emotions also provide more accur
 
 Once again, the decision of striving for immediacy or accuracy in self-reporting emotion must be assessed in terms of pedagogical implications, rather than available user interfaces. A computational model that allows to make this decision by minimizing the impact on the technical requirements is therefore also in *emotional awareness*'s interest. The next section thus describe the logic of model.
 
-## The Foundations of the Computational Model Based on a *k*-Nearest Neighbors Approach
+## The Foundations of the Computational Model Based on a *k*-Nearest Neighbors Approach {#foundations-computational-model}
 
 Computation models of emotion are a wide domain of inter-disciplinary research, spanning fundamental emotion theories and highly applied applications with computational agents endowed with emotions [@marsella2010; @mortillaroEmotionsMethodsAssessment2015; @calvoAffectDetectionInterdisciplinary2010], see also Section \@ref(affect-aware-systems) about affect-aware systems. Compared to emotion theories more generally, which may sketch some inner functioning of emotion in broad terms while waiting for further evidence, computational models must instantiate the mechanisms in concrete terms, which are interpreted or compiled by a machine (*ibid.*). A positive turn of this necessity is that computational model can be presented -- and thus scrutinized -- in the smallest detail.
 
@@ -62,7 +62,7 @@ Second, it is necessary that the domain of $E$ -- the possible values of the rat
 
 The following sections thus illustrate how this distance $\Delta(E, P)$ is calculated by the model depending on the number of appraisal criteria/dimensions composing the underlying affective space: one-dimensional, two-dimensional, or multi-dimensional. The presence of a specific section on two-dimensional affective spaces -- which are in fact the first multi-dimensional condition -- is due to the possibility of interpreting the affective space either as a circumplex or as a Cartesian plane, which require a slightly different computation. The specific interest of each *N*-dimensional space are briefly discussed with respect to the existing literature.
 
-## One-Dimensional Affective Spaces
+## One-Dimensional Affective Spaces {#one-dimensional-affective-spaces}
 
 In a one-dimensional affective space, where there is only a single appraisal criterion, the nearest neighbors are determined by the absolute distance between $E$ and $P$:
 
@@ -74,7 +74,7 @@ One-dimensional affective space are not usually defined as such in the literatur
 
 The possibility to restrain the affective space to a single dimension may also be useful in situations where researchers or practitioners are interested specifically in the assessment of only one criterion, avoiding thus the potential mediation or moderation effects of additional criteria. For instance, if one is interested in the *normative significance*, more specifically with respect to *external standards* -- whether the event violated laws or socially accepted norms [@schererWhatAreEmotions2005] -- the presence of another appraisal criteria such as *valence*, may influence that evaluation. For example, negatively valenced emotion may be considered less socially acceptable [@vankleefInterpersonalDynamicsEmotion2018]. The presence of an explicit reminder of the valence could therefore mediate or moderate the rating of the external standard of normative significance.
 
-## Two-Dimensional Affective Spaces
+## Two-Dimensional Affective Spaces {#two-dimensional-affective-spaces}
 
 Two-dimensional -- or bi-dimensional -- affective spaces are ubiquitous in research, especially in the form of the dimensional *Valence x Arousal* circumplex [@russellCircumplexModelAffect1980], but also in appraisal-driven perspectives, as in Pekrun's Control-Value theory of achievement emotions [@pekrunControlValueTheoryAchievement2006; @pekrunControlValueTheoryAchievement2014] or the V*alence x Control/Power* structure of the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005]. As illustrated in the first part of the thesis, several scholars have theoretically adopted two-dimensional affective spaces in their research, but also as graphical representations for self-report/awareness tools [*e.g.*, @feidakisEndowingElearningSystems2011]. Consequently, it is important that an overarching computational model can manage to incorporate different kinds of two-dimensional affective spaces. In this regard, an affective space based on two dimensions can be interpreted as the sum of a pair of one-dimensional continuous spaces, in which case each subjective feeling is determined by a precise coordinate in a Cartesian plane. Alternatively, it may also be interpreted, less stringently, as a circumplex where each subjective feeling is positioned at an equal distance from the origin, as in the GEW. The alternative interpretations of a two-dimensional affective space, depicted in Figure \@ref(fig:two-dimensional-affective-spaces), require different computational models from a *k-nearest neighbors* perspective. This section, thus, first illustrates the computational model for a Cartesian plane, and then for a circumplex. Last, it compares the two computational models in a simulation using the same affective space depicted either as a Cartesian plane or a circumplex.
 
@@ -89,7 +89,7 @@ knitr::include_graphics(
 )
 ```
 
-### The Affectuve Space as a Cartesian Plane
+### The Affectuve Space as a Cartesian Plane {#the-affectuve-space-as-a-cartesian-plane}
 
 When a second appraisal criteria is added, the resulting affective space can be conceptualized as a Cartesian plane, in which $P$ is represented by the coordinates $x = P_1$, and $y = P_2$. At the same time, the appraisal evaluation is also determined by coordinates $x = E_1$ and $y = E_2$. Consequently, the *k-nearest neighbors* may be determined using the Euclidean (or Pythagorean) distance, with the nearest subjective feelings having the smallest hypotenuse of a triangle with the length of the sides determined by the difference between $E_1$ and $P_1$, and $E_2$ and $P_2$:
 
@@ -97,7 +97,7 @@ $$
 \Delta(E, P) = \sqrt{(E_1 - P_1)^2 + (E_2 - P_2)^2}
 $$
 
-### The Affective Space as a Circumplex
+### The Affective Space as a Circumplex {#the-affective-space-as-a-circumplex}
 
 An alternative for two-dimensional affective spaces consists in the use of a circumplex. A circumplex allows researchers to dispose multiple subjective feelings on the edge of a circle, so that the similarity between two items is inversely proportional to their distance on the circumference. The circumplex is determined by an x-axis and a y-axis, usually delimited by opposite poles of the same constructs (*e.g.*, pleasant/unpleasant) or two constructs in antithesis (*e.g.* sadness/enthusiasm). The combination of the two axes creates four quadrants, usually crossing over the negative and positive poles of the two axes. The top-right quadrant is x-positive and y-positive; the bottom-right quadrant is x-positive and y-negative; the bottom-left quadrant is x-negative and y-negative; and the top-left quadrant is x-negative and y-positive.
 
@@ -148,7 +148,7 @@ dew_rt.sim_gew_graph_10
 
 This simulation has only illustrative purpose, because the two affective spaces are only examples of an infinite number of spaces that can be conceived and therefore results may be very different with different configurations. Nevertheless, this kind of simulation may be interesting to carry out before adopting an affective space to assess whether there are subjective feelings that are more likely to be suggested by the system, because that could influence learners in choosing them.
 
-## Three-Dimensional Affective Spaces and Beyond
+## Three-Dimensional Affective Spaces and Beyond {#three-dimensional-affective-spaces-and-beyond}
 
 As previously mentioned, there is growing empirical evidence in suggesting that one- and two-dimensional affective spaces are not enough to account for the variety of emotional experiences in semantic terms [@fontaineWorldEmotionsNot2007; @gilliozMappingEmotionTerms2016; @fontaineLinearNonlinearRelationships2021]. A four dimensional structure determined by Valence, Power, Arousal and Novelty seems better fitted for a dimensional representation of emotions (*ibid.*). It is worth mentioning in this regard, though, that @fontaineLinearNonlinearRelationships2021 found empirical evidence suggesting that the additional *representative* value brought by a third and a fourth dimensions depends on the specific discrete emotions. For instance, terms related to joy and sadness could be discriminated almost as well with two dimensions as with four. On the other hand, lexicalized emotions closer to anger or surprise benefited from a four-dimensional structure [@fontaineLinearNonlinearRelationships2021].
 
@@ -164,7 +164,7 @@ The model therefore remains fairly limited in term of computational power requir
 
 As already mentioned, Gillioz and colleagues [-@gilliozMappingEmotionTerms2016] adopted the GRID instrument -- in its shorter CoreGRID version [@schererCoreGRIDMiniGRIDDevelopment2013] -- to assess the mapping of 80 emotion terms in an affective space. The number of dimensions and of emotion terms composing the affective space empirically established by the authors is a representative example of how a parsimonious computational model could be deployed in a self-report instrument, allowing users to benefit of all the dimensions and all the suggested emotion terms.
 
-## Limitations Of the Computational Model and Possible Ways to Attenuate Them
+## Limitations Of the Computational Model and Possible Ways to Attenuate Them {#limitations-of-the-computational-model-and-possible-ways-to-attenuate-them}
 
 The computational model presented here is overtly simple to account for the sheer complexity of *what is an emotion*. It is limited to the appraisal and integration/categorization modules, excluding thus three out of five components of the Component Process Model. The complexity of the two modules is also simplified. In absolute terms, thus, the model reflects only a fraction of the theoretical work of the CPM, appraisal theories, or emotion theories more broadly. Compared to other existing solutions, though, the model adds some distinctive features. The limitations of the tool are therefore assessed with respect to these distinctive features.
 
