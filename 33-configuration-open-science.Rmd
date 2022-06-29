@@ -36,6 +36,36 @@ From the back-end part of the toolbox, researchers and practitioners can perform
 3.  Access existing or create new affective spaces that can be used in *studies*. Affective spaces can be wither private, available this only to the logged-in researcher, or shared with other researchers subscribed to the same server*.*
 4.  Import configurations of *studies* or affective spaces from external sources, for instance -- ideally -- supplementary material from a contribution that has used the toolbox.
 
+A *study* is the element of the toolbox that glues all parts together. It is determined by the different configurations options and is made available to users through the toolbox front-end illustrated in the next subsection. Figure @ref(fig:dew-toolbox-study-detail) shows a cropped detail page of a *study*, which happens to be an archived instance of the usability test illustrated in Chapter @fig(dew-chapter).
+
+(ref:dew-toolbox-study-detail-caption) Example of a *study*'s detail page. The screen capture has been cropped to save space.
+
+```{r dew-toolbox-study-detail, fig.align="center", fig.cap="(ref:dew-toolbox-study-detail-caption)", out.width="100%"}
+knitr::include_graphics(here::here("./figure/dew/dew-toolbox-study-details.png"))
+```
+
+Through the detail page, it is possible to perform a series of actions connected to the *study*. Only the most salient actions are listed hereafter.
+
+First, the study can be started, which means that the front-end of the instance is launched in a new tab of the window. Each study disposes of its own web address, which can be limited to the local machine or local network, or publicly available over the web depending on where the server is installed. This is thus just one way to start-up an instance, which can nevertheless be accessed directly by users through the URL, without the need to pass from the admin area. The study can also be accessed in a preview mode, which shows how the final instance will look like to user, but without gathering any data.
+
+Second, the *study* can be configured. The configuration is equivalent when creating a new instance, and the details are illustrated in the following sections of the chapter.
+
+Third, the status of the study can be easily updated, switching from *open* to *closed* or vice-versa. It is in fact possible to decide whether an instance is available or not at any given time. When not available, the URL of the front-end will show a message informing the user that the instance is not active.
+
+Fourth, it is possible to export different elements of the study. The first and more obvious element to export are the data collected. In this regard, the detail page also provides a data summary frame on the right-side of the screen, right under the main actions buttons. The data summary report the number of participants who have been used the instance, the number of observations/emotions expressed, as well as an average for every dimension rated. The recorded observations are also illustrated in a wordcloud, which provides a perceptive representation of the most frequent subjective feelings used by participants. A second element that can be exported is the affective space adopted by the *study* (see below). A third element concerns the overall configuration of the *study*, which can be shared with other interested people, for instance as supplementary material in an article. Finally, the whole *study* (data, affective space, and overall configuration combined) can be exported as a form of backup.
+
+From the admin area it is also possible to access the list of available affective spaces, as well as create new ones. As stated above, affective spaces can be either private or shared. Only the researcher/practitioner that has created or added the affective space to the server can decide to make it public or private. When used in a *study*, the affective space is nevertheless copied into the specific instance, so that actions performed to the affective space do not automatically propagate to *studies*.
+
+Alongside the information necessary to represent the structure of the affective space (*i.e.*, dimensions and disposition of lexicalized emotions), the toolbox also reckons the importance of crediting the original author(s) of the affective spaces. In this regard, it is possible to specify how each affective space should be cited. Figure \@ref(fig:toolbox-affective-space-detail) shows the detail page of the English version of EATMINT circumplex introduced in Section \@ref(eatmint-circumplex). The structure of the affective space can be exported either as data, with the *Export* button on the top-left side of the screen, or a Scalable Vector Graphic (SVG), that is an image that can later be easily modified by a vector editor[^2]. The SVG file can later be included directly, or rasterized before inclusion in a contribution for illustrative purposes.
+
+(ref:toolbox-affective-space-detail-caption) Detail page of the English version of the EATMINT circumplex presented in Section \@ref(eatmint-circumplex) as an example of affective space. Each affective space disposes of a field to indicate how it should be cited in order to credit the author(s).
+
+```{r toolbox-affective-space-detail, fig.align="center", fig.cap="(ref:toolbox-affective-space-detail-caption)", out.width="100%"}
+knitr::include_graphics(here::here("./figure/dew/dew-toolbox-affective-space-page.png"))
+```
+
+At the time of writing, there are several affective spaces identified in the literature that can be implemented as underlying structures for the DEW. Furthermore, as stated in the description of the computational model in the previous chapter, an higher-order dimensional space can also be used for lower-order rating dimensions. For instance, a three-dimensional affective space can be (1) disjointed in three different one-dimensional affective space, (2) combined in two different bi-dimensional affective space, or (3) used in its whole three-dimensional structure.
+
 ### The Toolbox Front-End
 
 ## Configuration of the Expressing-Displaying Function
@@ -51,3 +81,5 @@ Third, as illustrated in the abstract model in Section \@ref(abstract-model-of-e
 ## Summary
 
 [^1]: Which is revealing of what is the primary goal of the toolbox, but I hope practitioners can also take advantage from it
+
+[^2]: At the time of writing, examples of widely adopted vector editors are the proprietary Adobe Illustrator and Affinity Designer, or the open-source Inkscape.
