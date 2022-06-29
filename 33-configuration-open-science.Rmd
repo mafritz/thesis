@@ -21,6 +21,21 @@ The toolbox is a web-based application that can also be installed on local machi
 
 ### The Toolbox Back-End
 
+The toolbox back-end is similar to a reserved admin area, where researchers must provide their credentials to access their instances of the tool. Figure \@ref(fig:toolbox-dashboard-page) shows the dashboard of the admin area available once the researcher has logged-in.
+
+(ref:toolbox-dashboard-page-caption) The dashboard page of the admin area shows a list of active instances/studies and gives access to the different features of the back-end.
+
+```{r toolbox-dashboard-page, fig.align="center", fig.cap="(ref:toolbox-dashboard-page-caption)", out.width="100%"}
+knitr::include_graphics(here::here("./figure/dew/dew-toolbox-admin-area.png"))
+```
+
+From the back-end part of the toolbox, researchers and practitioners can perform mainly four actions that have scientific and/or pedagogical relevance :
+
+1.  Access instances of the tool, which are identified as *studies* in the interface[^1]. The dashboard only lists the active instances, but in the *studies* tab researchers can also find past or inactive instances.
+2.  Create new *studies* and configure them according to the different options described in the reminder of the chapter.
+3.  Access existing or create new affective spaces that can be used in *studies*. Affective spaces can be wither private, available this only to the logged-in researcher, or shared with other researchers subscribed to the same server*.*
+4.  Import configurations of *studies* or affective spaces from external sources, for instance -- ideally -- supplementary material from a contribution that has used the toolbox.
+
 ### The Toolbox Front-End
 
 ## Configuration of the Expressing-Displaying Function
@@ -34,3 +49,5 @@ Third, as illustrated in the abstract model in Section \@ref(abstract-model-of-e
 ## Measures Available Through the Toolbox
 
 ## Summary
+
+[^1]: Which is revealing of what is the primary goal of the toolbox, but I hope practitioners can also take advantage from it
