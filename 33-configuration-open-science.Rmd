@@ -31,12 +31,12 @@ knitr::include_graphics(here::here("./figure/dew/dew-toolbox-admin-area.png"))
 
 From the back-end part of the toolbox, researchers and practitioners can perform mainly four actions that have scientific and/or pedagogical relevance :
 
-1.  Access instances of the tool, which are identified as *studies* in the interface[^1]. The dashboard only lists the active instances, but in the *studies* tab researchers can also find past or inactive instances.
-2.  Create new *studies* and configure them according to the different options described in the reminder of the chapter.
-3.  Access existing or create new affective spaces that can be used in *studies*. Affective spaces can be wither private, available this only to the logged-in researcher, or shared with other researchers subscribed to the same server*.*
+1.  Access instances -- that is, specific configurations of the tool -- which are identified as *studies* in the interface[^1]. The dashboard only lists the active instances, but in the *studies* tab researchers can also find past or inactive instances.
+2.  Manage instances by creating, duplicating, modifying, or removing *studies*.
+3.  Manage affective spaces that can be used in *studies*. Affective spaces can be either private, available thus only to the logged-in researcher, or shared with other researchers subscribed to the same server*.*
 4.  Import configurations of *studies* or affective spaces from external sources, for instance -- ideally -- supplementary material from a contribution that has used the toolbox.
 
-A *study* is the element of the toolbox that glues all parts together. It is determined by the different configurations options and is made available to users through the toolbox front-end illustrated in the next subsection. Figure @ref(fig:dew-toolbox-study-detail) shows a cropped detail page of a *study*, which happens to be an archived instance of the usability test illustrated in Chapter @fig(dew-chapter).
+A *study* is the element of the toolbox that glues all parts together. It is determined by the different configurations options and is made available to users through the toolbox front-end illustrated in the next subsection. Figure @ref(fig:dew-toolbox-study-detail) shows a cropped detail page of a *study*, which happens to be an archived instance of the usability test illustrated in Chapter @ref(dew-chapter).
 
 (ref:dew-toolbox-study-detail-caption) Example of a *study*'s detail page. The screen capture has been cropped to save space.
 
@@ -48,7 +48,7 @@ Through the detail page, it is possible to perform a series of actions connected
 
 First, the study can be started, which means that the front-end of the instance is launched in a new tab of the window. Each study disposes of its own web address, which can be limited to the local machine or local network, or publicly available over the web depending on where the server is installed. This is thus just one way to start-up an instance, which can nevertheless be accessed directly by users through the URL, without the need to pass from the admin area. The study can also be accessed in a preview mode, which shows how the final instance will look like to user, but without gathering any data.
 
-Second, the *study* can be configured. The configuration is equivalent when creating a new instance, and the details are illustrated in the following sections of the chapter.
+Second, the *study* can be configured. The configuration is equivalent when creating a new instance or modifying an existing one. Instancescan also be duplicated, which may be useful in case of conditions within the same *study*. The configuration details are illustrated in the following sections of the chapter.
 
 Third, the status of the study can be easily updated, switching from *open* to *closed* or vice-versa. It is in fact possible to decide whether an instance is available or not at any given time. When not available, the URL of the front-end will show a message informing the user that the instance is not active.
 
@@ -64,9 +64,35 @@ Alongside the information necessary to represent the structure of the affective 
 knitr::include_graphics(here::here("./figure/dew/dew-toolbox-affective-space-page.png"))
 ```
 
-At the time of writing, there are several affective spaces identified in the literature that can be implemented as underlying structures for the DEW. Furthermore, as stated in the description of the computational model in the previous chapter, an higher-order dimensional space can also be used for lower-order rating dimensions. For instance, a three-dimensional affective space can be (1) disjointed in three different one-dimensional affective space, (2) combined in two different bi-dimensional affective space, or (3) used in its whole three-dimensional structure.
+At the time of writing, there are several affective spaces identified in the literature that can be implemented as underlying structures for the DEW. These include the EATMINT circumplex in French and English @fritzProvidingEmotionalAwareness2017, the three versions of the Geneva Emotion Wheel @schererGRIDMeetsWheel2013, the circular scaling coordinates of 28 affect words by @russellCircumplexModelAffect1980, and the mapping of 80 emotion terms on a four-dimensional space by @gilliozMappingEmotionTerms2016. Furthermore, as stated in the description of the computational model in the previous chapter, an higher-order dimensional space can also be used for lower-order rating dimensions. For instance, a three-dimensional affective space can be (1) disjointed in three different one-dimensional affective space, (2) combined in two different bi-dimensional affective space, or (3) used in its whole three-dimensional structure. Bi-dimensional affective spaces can also be represented both as a circumplex or as a Cartesian plane, allowing thus great flexibility on the underlying *reference frame* to be adopted.
+
+Finally, the last relevant feature from a scientific or pedagogical perspective concerns the possibility to import affective spaces and whole *studies*' configurations. As mentioned above, this is meant to increase the transparency and sharing of research and practices involving the use of the tool. External sources can be imported for direct use, for better understanding of the inner functioning of an instance, as well as for checking the accuracy and adherence to protocols.
+
+To sum up, the back-end area of the toolbox is meant to facilitate researchers and practitioners tasks both at the individual and collective levels. At the same time, there is also the possibility to use the tool in isolation, on individual premises, with relatively few technical steps and requirements.
 
 ### The Toolbox Front-End
+
+The toolbox front-end is the instance of the tool participants/learners will interact with. It is available through an URL as any other site or web application. The front-end part of the screen can count up to four different screens: (1) one for general instructions, (2) one for the log-in/synchronization with two or more users if needed, (3) one for the task itself, and (4) one for a debriefing or end-of-task screen that can for instance provide a link to further steps in the procedure. There are nevertheless ways to modify the URL given to users, for them to skip any step except the task itself. For instance, users can be provided with an URL that includes a specific or random ID and that logs users directly into the task. This mechanism has been used in the empirical contribution of Chapter \@ref(study-2).
+
+When two or more participants have to be synchronized to start a specific task, the toolbox provide a *pseudo* log-in system that can be configured to hold-on until all the required users are ready to start the task. Figure ... illustrates this passage. The same instance can be used for as many groups as needed, with the size of the group that can potentially scale up to thousands. The limit is in fact determined by the machine's ability to deal with concurrent sockets. Users belonging to the same group need only to provide a common Group ID. Once again, the instructions on how to log-in into the system can be customized. Synchronization is also not mandatory. For instance, in a longitudinal use of the EAT as the one that will be made in the second empirical contribution of the tool, participants could log-in at any time, regardless of the number of concurrent colleagues connected on the interface. The system automatically detects if a new (or returning) user has accessed the instance and adapts the interface accordingly.
+
+(ref:dew-toolbox-frontend-login-caption) Example of *log-in* screen when the task has to start at the same time for all involved users. This is nevertheless not a mandatory step.
+
+```{r dew-toolbox-frontend-login, fig.align="center", fig.cap="(ref:dew-toolbox-frontend-login-caption)", out.width="60%"}
+knitr::include_graphics(here::here("./figure/dew/dew-toolbox-frontend-login.png"))
+```
+
+The core of the front-end is the interface where the EAT is available, which can be coupled (or not) with a task or learning activity on the side. Figure \@ref(fig:toolbox-frontend-interface) shows the front-end interface of an hypothetical study or learning activity based on collaborative writing. The EAT occupies the left-hand side of the screen, whereas the online editor is in a iframe (technically a window inside a window) on the right-hand side. The interface also presents a timer and a button that allows participants to stop the task at any time. This is just an example of how the choice of a web-based application allows the integration with existing tools, but once again, the possibilities are much wider and depends on the specific aims for which the toolbox is adopted. As will be described in the reminder of the Chapter, many aspects of the overall interface and the inner functions can be adapted through the back-end part of the toolbox. The example, for instance, adopts an *Energy* x *Familiarity* dimensions, which are derived from the *Arousal* x *Novelty* dimensions of the four-dimensional structure in @gilliozMappingEmotionTerms2016.
+
+(ref:toolbox-frontend-interface-caption) Example of an instance of the toolbox comprising the EAT on the left-hand side and a collaborative writing task on the right-hand side.
+
+```{r toolbox-frontend-interface, fig.align="top", fig.cap="(ref:toolbox-frontend-interface-caption)", out.width="100%"}
+knitr::include_graphics(
+  here::here("./figure/dew/dew-toolbox-frontend-task.png")
+)
+```
+
+To sum-up, the front-end of the toolbox consists in a web-application to which most users should be nowadays familiar with. The overall interface reflects the choices of the researcher or practitioner made on the back-end. Some of the most salient choices are briefly outlines in the reminder of the chapter.
 
 ## Configuration of the Expressing-Displaying Function
 
