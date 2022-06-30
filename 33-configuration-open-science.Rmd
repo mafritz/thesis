@@ -98,7 +98,7 @@ The synchronization between the interfaces of users is made thorough the bi-dire
 
 To sum-up, the front-end of the toolbox consists in a web-application of the sort that most users should be nowadays familiar with. It guarantees bi-directional communication over very brief periods of time for the emotional information, as well as the onset and end of the activity if needed. The overall interface reflects the choices made by the researcher or practitioner when the instance was set up through the back-end. Some of the most salient choices are briefly outlines in the reminder of the chapter.
 
-## Configuration of the Expressing-Displaying Function
+## Configuration of the Expressing-Displaying Function {#toolbox-displaying-features}
 
 The options available about how emotion is *encoded* into the system pertains to two intertwined element: the underlying affective space and how the expressing-displaying part of the EAT is configured. The options available for the affective space have already been outlined in the general presentation of the back-end part of the toolbox in Section \@ref(the-toolbox-back-end). It is worth reminding to this purpose that any kind of affective space can be adopted, as long as it meets the requirements of the underlying computational model defined in Section \@ref(model-requirements). Existing and validated affective spaces may be preferable in some circumstances, whereas more exploratory and custom choices could be warranted in others. The fact that affective spaces can be shared within the same server and across servers if needed is precisely meant to leave the maximum freedom, but at the same time foster transparency and comparability of conditions. An affective space is technically determined by the following minimal information:
 
@@ -132,7 +132,7 @@ It is also possible to provide the very same coordinates to all the subjective f
 
 To sum-up, the available configuration options in the expressing-displaying function can have pedagogical, theoretical, as well as user-experience implications. The flexibility of the configuration bestow researchers and practitioners the choice of which aspect should be privileged.
 
-## Configuration of the Perceiving-Monitoring Function
+## Configuration of the Perceiving-Monitoring Function {#toolbox-monitoring-features}
 
 As already mentioned, whereas the way emotion is *encoded* may be kept more or less the same regardless of the context, emotion *decoding* is highly dependent on the purpose of emotional awareness and how data is graphically represented from a visuo-spatial perspective [@hegartyCognitiveScienceVisualspatial2011]. As illustrated in the abstract model in Section \@ref(abstract-model-of-ea) built upon the definition of emotional awareness, a multi-purpose proof of concept shall consider emotional awareness as not only based on inter-personal, or not only limited to dydic interactions. Computer-mediated learning enviroments in particular span from the individual to the thousands of learners of MOOCs. Ideally, a multipurpose EAT should be able to scale congruently to the context. This possibility is inherently linked with the perceiving-monitoring part of the tool. The two representations (emotion timeline and appraisal line charts) proposed by the prototype are clearly limited to a restricted number of users. Adding 20 rows of the timeline and 20 line charts to account for 20 learners would pile up an overwhelming amount of information on screen. Research and practitioners may therefore also be allowed to choose between graphical representations of emotion aligned with the number of learners sharing the same EAT, as well as the kind of emotional meaning-making that the tool is supposed to foster [@leonyProvisionAwarenessLearners2013; @derickEvaluatingEmotionVisualizations2017; @bersetVisualisationDonneesRecherche2018; @fritzRealTimeEmotionalAwareness2016].
 
@@ -140,7 +140,58 @@ This subject, though, has received so far limited attention overall, as mentione
 
 As a consequence, the perceiving-monitoring function of the toolbox is limited in options and scope. This sections nevertheless provides an overview of the available configuration options.
 
-## Configuration of Research-Related Features
+The first option, which has implications regardless of the specific graphical representation adopted, is relative to the persistence of data over time. In this regard, it is possible to decide whether the expressed emotions are maintained between different *sessions* with the instance or not. A session corresponds to a new access to the tool, which is the equivalent to loading the page into the browser and *log-in* into the instance. When data is not persisted, all the graphical representation restart afresh, without any data. If persistence is maintained, the users will find all the available data from the first time the instance has been adopted. This also includes, in case of longitudinal inter-personal/group-awareness, data produced by other users sharing the same group in the instance.
+
+At the time of writing, the toolbox proposes only three kind of graphical representation of emotions, depicted side-by-side in Figure \@ref(fig:dew-monitoring-widgets): (1) the emotion timeline, (2) the dimensional/appraisal line charts, and (3) a word-cloud similar to the one available in the *study*'s detail page in the back-end part illustrated in Figure \@ref(fig:dew-toolbox-study-detail). All the representations will be adopted in the empirical contribution of Part III, so they are presented here only briefly.
+
+(ref:dew-monitoring-widgets-caption) Three graphical representation of the perceiving-monitoring function: the emotion timeline, the appraisal/dimensional line charts, and the subjective feelings word-cloud. Each of them can be configured.
+
+```{r dew-monitoring-widgets, fig.align="center", fig.cap="(ref:dew-monitoring-widgets-caption)", out.width="30%", fig.show="hold"}
+knitr::include_graphics(
+  c(
+    here::here("./figure/dew/dew-emotion-timeline.png"),
+    here::here("./figure/dew/dew-appraisal-linechart.png"),
+    here::here("./figure/dew/dew-wordcloud.png")
+    
+  )
+)
+```
+
+The three graphical representation can all be configured according to the falling parameters. Congruently with the intra-personal and/or intra-personal functon of emotional awareness, each of them can provide information about the user herself and/or the other users in the same group/instance:
+
+1.  For the emotion timeline, this means that the widget can show (1) only the *You* row; (2) only one row for every other user (*e.g.*, the *P987654* and *P555555* rows), whereas it is not possible to single-out exclusively one user if many are sharing the same space; or (3) both the *You* and one row for each other user, as it is the case in the image.
+2.  For the line charts, the interface can show (1) only the line chart with the appraisals/dimensions of the user herself (as in the image); (2) only one line chart for every other user in the group; or (3) both the user's own line chart and that/those of the other(s). The legend of each line/dimension can also be configured.
+3.  For the word-cloud the situation is slightly different, but the sense is the same. The interface can once again show (1) only the cloud of the user's own feelings; (2) only one cloud where the feelings of all other users (bar the user herself) are combined; (3) only one cloud where all the feelings (user herself plus all other users) are combined; or (4) any combination of the previous three.
+
+The title of the panel in which the graphical representation is contained can also be configured. In the case the line charts of other participants are adopted when there are more than one other user, the users' ID is added to the panel's title. The order of appearance can also be determined thorough the back-end admin area, except within a sequence of line charts belonging to other users, which will be stacked one after the other.
+
+To sum-up, at the time of writing there is a limited set of graphical representation to *decode* emotion for the perceiving-monitoring function of awareness. Those that are available, though, can be articulated from an intra-personal, inter-personal or combined perspective. This possibility will be harnessed in both empirical contributions in Part III.
+
+## Configuration of Research-Related Features {#toolbox-research-features}
+
+Being the toolbox also meant for researchers, there are a few features that are specifically meant for empirical studies or experiments. Most of them belong to standard procedures in studies' interactions, whereas one is very specific to the toolbox. The *standard* features includes:
+
+1.  As mentioned in the presentation of toolbox front-end, a screen can be devoted to instructions. Even though this can be helpful also for practitioners, they may be particularly useful in case of online studies. At the time of writing, the text can be written in Markdown, a widely used, light-weight mark-up language that allows to structure a text with titles, lists, images, etc. So the instruction can be as long and as precise as needed.
+
+2.  It is possible to force participants to use a pre-defined or random IDs for either or both the user and group identifiers. The system can also block the same IDs from being used again once the log-in has been done.
+
+3.  The duration of the task can be set to a specific time, with or without a timer that is available on the top of the interface, as in Figure \@ref(fig:toolbox-frontend-interface). A button that users can click to stop the task can also be made available, and labelled as wished.
+
+4.  The last screen of the front-end interface can contain a custom text, which can also be formatted. It is also possible to provide an *exit URL* and a label for the button that points at it. This may be useful for instance if there is an additional step in the procedure (*e.g.*, an online survey) or for directing participants to the end-of-trial URL commonly adopted by online recruiting platforms.
+
+The specific research-related features consists in the possibility to simulate the emotional experience of one or more fake participants, and inject it in the interface through the graphical representations of the perceiving-monitoring function described above. This possibility has been evoked in the illustration of the DEW's usability test and will also be adopted in the first empirical contribution presented in Chapter \@ref(study-1). To simulate the emotional experience, researchers must provide a list of *observations* that respects the number of dimensions of the underlying affective space, for consistency with what is expressed by *true* participants. The list of simulated emotions is therefore composed by:
+
+1.  A consistent identifier for every emotion belonging to the fake user. For instance, in the emotion timeline in Figure \@ref(fig:dew-monitoring-widgets), the *P555555* is faked. This shows incidentally that a fake participant can be added as the only other participant to a dyadic task, but also in addition to more than one *true* participant. To simulate more than one fake user, it suffices to enter in the list a different number of unique identifiers.
+
+2.  A time when the simulated emotion will be injected into the system. The value refers to the time elapsed since the log-in from every *true* participant accessing the instance, so it is more appropriate to use the simulation with synchronized trials of a fixed duration and not repeatable more than one time.
+
+3.  A value respecting the domain [$V_{min}:V\_{max}$] for every appraisal/dimension in the adopted affective space. If the interface includes the line charts for other participants, those values will serve to populate the graphics.
+
+4.  An emotion term or idiom, such a lexicalized emotion, that represents the subjective feeling. The label does not necessarily have to be part of the adopted underlying affective space. It can be manipulated as desired. For instance, one can test whether a *fake* participant that only uses custom emotion terms influences *true* participants to avoid the pre-defined options. Or the fake participant could provide lexicalized emotions belonging to the affective space, but with inchoerent appraisal/dimensional values (*e.g.*, a negatively valenced emotion terms when the *Valence* dimension is rated positively, or vice-versa).
+
+The simulation of a participant can also be adopted systematically. As a reminder from the related works in Section \@ref(ea-inter-personal) about inter-personal emotional awareness, @avryAchievementAppraisalsEmotions2020 manipulated feedback in an online collaborative game representing the *Control* and *Value* dimensions of Pekrun's theory [@pekrunControlValueTheoryAchievement2014; @pekrunControlValueTheoryAchievement2006]. The toolbox can provide a simulation including also the subjective feeling rather than only appraisal dimensions. For instance, different *emotional profiles* of the *fake* participants can vary according to how it evaluates and categorize/integrate the situation. The consequences of these differences can be tested on a number of cues spanning the quality of interaction, what kind of personality is attributed to the *fake* participant, whether it impacts the emotional experience of the *true* participants, and so on. In this regard, a third experiment harnessing this features was planned for this contribution, but was ultimately not carried out do to the outbreak of the COVID19 pandemic. More details will be provided in the concluding part of the thesis.
+
+To sum up, the toolbox provides researchers with features that can serve *standard* procedures in empirical settings, but also use the tool to create conditions or manipulations that can help to respond to specific research questions. Measurements gathered through the toolbox play in this sense a major role. They are thus illustrated next in the chapter.
 
 ## Measures Available Through the Toolbox
 
