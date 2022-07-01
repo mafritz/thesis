@@ -13,7 +13,7 @@ library(kableExtra)
 
 ```
 
-The previous chapter illustrated the parsimonious computational model linking appraisal dimensions and subjective feelings, which is the *core* of the proof of concept proposed by the thesis. This chapter introduces a toolbox built around the computational model, which allows the configuration of an Emotion Awareness Tool (EAT) according to researchers and practitioners needs. As stated in the introduction, the implementation of a toolbox is driven by open science tenets, which advocate the need for investing in the development of open material that can foster transparency, sharing, comparison, replicability and reproducibility of research practices, measures and results [@Nosek1422; @chambersSevenDeadlySins2017; @scheelWhyHypothesisTesters2020; @nelsonPsychologyRenaissance2018; @flakeMeasurementSchmeasurementQuestionable2020; @schererWhatAreEmotions2005]. The chapter starts by a general overview of the toolbox, which is divided in an area dedicated to researchers and practitioners, and the *end-user* interface of the tool integrated in a computer-mediated learning environment. The reminder of the Chapter then illustrates the available configuration options of how emotion is expressed-displayed and how emotion is perceived-monitored respectively. Finally, the Chapter describes some features of the toolbox that can be configured from an empirical point of view, as well as the measures that can be retrieved from the toolbox.
+The previous chapter illustrated the parsimonious computational model linking appraisal dimensions and subjective feelings, which is the *core* of the proof of concept proposed by the thesis. This chapter introduces a toolbox built around the computational model, which allows the configuration of an Emotion Awareness Tool (EAT) according to researchers and practitioners needs. As stated in the introduction, the implementation of a toolbox is driven by open science tenets, which advocate the need for investing in the development of open material that can foster transparency, sharing, comparison, replicability and reproducibility of research practices, measures and results [@Nosek1422; @chambersSevenDeadlySins2017; @scheelWhyHypothesisTesters2020; @nelsonPsychologyRenaissance2018; @flakeMeasurementSchmeasurementQuestionable2020; @schererWhatAreEmotions2005; @lowndesOurPathBetter2017]. The chapter starts by a general overview of the toolbox, which is divided in an area dedicated to researchers and practitioners, and the *end-user* interface of the tool integrated in a computer-mediated learning environment. The reminder of the Chapter then illustrates the available configuration options of how emotion is expressed-displayed and how emotion is perceived-monitored respectively. Finally, the Chapter describes some features of the toolbox that can be configured from an empirical point of view, as well as the measures that can be retrieved from the toolbox.
 
 ## General Presentation of the Toolbox
 
@@ -48,7 +48,7 @@ Through the detail page, it is possible to perform a series of actions connected
 
 First, the study can be started, which means that the front-end of the instance is launched in a new tab of the window. Each study disposes of its own web address, which can be limited to the local machine or local network, or publicly available over the web depending on where the server is installed. This is thus just one way to start-up an instance, which can nevertheless be accessed directly by users through the URL, without the need to pass from the admin area. The study can also be accessed in a preview mode, which shows how the final instance will look like to user, but without gathering any data.
 
-Second, the *study* can be configured. The configuration is equivalent when creating a new instance or modifying an existing one. Instancescan also be duplicated, which may be useful in case of conditions within the same *study*. The configuration details are illustrated in the following sections of the chapter.
+Second, the *study* can be configured. The configuration is equivalent when creating a new instance or modifying an existing one. Instances can also be duplicated, which may be useful in case of conditions within the same *study*. The configuration details are illustrated in the following sections of the chapter.
 
 Third, the status of the study can be easily updated, switching from *open* to *closed* or vice-versa. It is in fact possible to decide whether an instance is available or not at any given time. When not available, the URL of the front-end will show a message informing the user that the instance is not active.
 
@@ -165,7 +165,7 @@ knitr::include_graphics(
 )
 ```
 
-The three graphical representation can all be configured according to the falling parameters. Congruently with the intra-personal and/or intra-personal functon of emotional awareness, each of them can provide information about the user herself and/or the other users in the same group/instance:
+The three graphical representation can all be configured according to the falling parameters. Congruently with the intra-personal and/or intra-personal function of emotional awareness, each of them can provide information about the user herself and/or the other users in the same group/instance:
 
 1.  For the emotion timeline, this means that the widget can show (1) only the *You* row; (2) only one row for every other user (*e.g.*, the *P987654* and *P555555* rows), whereas it is not possible to single-out exclusively one user if many are sharing the same space; or (3) both the *You* and one row for each other user, as it is the case in the image.
 2.  For the line charts, the interface can show (1) only the line chart with the appraisals/dimensions of the user herself (as in the image); (2) only one line chart for every other user in the group; or (3) both the user's own line chart and that/those of the other(s). The legend of each line/dimension can also be configured.
@@ -199,9 +199,45 @@ The specific research-related features consists in the possibility to simulate t
 
 The simulation of a participant can also be adopted systematically. As a reminder from the related works in Section \@ref(ea-inter-personal) about inter-personal emotional awareness, @avryAchievementAppraisalsEmotions2020 manipulated feedback in an online collaborative game representing the *Control* and *Value* dimensions of Pekrun's theory [@pekrunControlValueTheoryAchievement2014; @pekrunControlValueTheoryAchievement2006]. The toolbox can provide a simulation including also the subjective feeling rather than only appraisal dimensions. For instance, different *emotional profiles* of the *fake* participants can vary according to how it evaluates and categorize/integrate the situation. The consequences of these differences can be tested on a number of cues spanning the quality of interaction, what kind of personality is attributed to the *fake* participant, whether it impacts the emotional experience of the *true* participants, and so on. In this regard, a third experiment harnessing this features was planned for this contribution, but was ultimately not carried out do to the outbreak of the COVID19 pandemic. More details will be provided in the concluding part of the thesis.
 
-To sum up, the toolbox provides researchers with features that can serve *standard* procedures in empirical settings, but also use the tool to create conditions or manipulations that can help to respond to specific research questions. Measurements gathered through the toolbox play in this sense a major role. They are thus illustrated next in the chapter.
+To sum up, the toolbox provides researchers with features that can serve *standard* procedures in empirical settings, but also use the tool to create conditions or manipulations that can help to respond to specific research questions. Measurements gathered through the toolbox play in this sense a major role.
 
 ## Measures Available Through the Toolbox
+
+Whereas the features illustrated in the previous section are mainly meant for researchers, the measures available through the toolbox may also be of interest for practitioners to have a sense of the *emotional experience* of learners. As illustrated in the general presentation of the toolbox back-end, the measures can be exported from the admin area in different file formats, which are meant to ease subsequent analysis, but also sharing in open-format [@gilmorePracticalSolutionsSharing2018; @levensteinDataSharingCaring2018]. Data available through the toolbox can be divided in accesses and observations.
+
+### Data About Accesses
+
+Accesses consists in initializing a new session with the instance of the toolbox by visiting the *study*'s URL. Given the web-based nature of the toolbox, a session is consistent with a visit of a web page, which technically consists in a new HTTP request send from the client to the server. This also includes, thus, page refresh in the browser. If the browser's window or tab remains open, though, the connection is maintained even if the window or tab are unattended by the user. A new access is tallied even when the URL comprises an *auto-login* feature through parameters specified in the URL query string (see below).
+
+The main interest of collecting accesses is to know when a user has accessed the instance of the toolbox. As already mentioned, there is the possibility to access the EAT, but without producing any data. So the observations alone may not be reliable in determining whether users have been *passively* using the EAT or not.
+
+Table \@ref(tab:data-accesses-table) illustrates the variables recorded for each access to the instance. For each variable, a description is also provided.
+
+(ref:data-accesses-table-caption) List of variables related to accesses, with description.
+
+```{r data-accesses-table}
+data_accesses <- tribble(
+  ~"Variable", ~"Description",
+  "Participant", "ID of the participant specified through the login form or the URL of the instance",
+  "Group", "ID of the group specified through the login form or the URL of the instance",
+  "Study", "The unique ID of the instance, given by the toolbox",
+  "Date", "The UTC date and time of the server",
+  "Query String", "A string of key-value associations that are appended at the end of an URL. They can be useful to record information about participants given outside the toolbox"
+)
+
+data_accesses |> 
+  kable(
+    caption = "(ref:data-accesses-table-caption)\\label{tab:data-accesses-table}",
+    caption.short = "Variables recorded for accesses",
+    longtable = FALSE,
+    booktabs = TRUE,
+    linesep = "\\addlinespace"
+  ) |> 
+  column_spec(1, bold = T) |> 
+  column_spec(2, width = "30em")
+```
+
+### Data About Observations
 
 ## Summary
 
