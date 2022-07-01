@@ -292,7 +292,7 @@ The list of online users is meant to enhance measures related to the social pres
 
 The radial distance quantifies $\Delta(E, P)$, where $E$ is represented by the *Dimenson(s)* variables, whereas $P$ is represented by the *Expected dimension(s)* variables. As stated in the description, this variable can only be computed if the exact label of the subjective feeling is detected as being part of the pre-defined list. Future version of the toolbox may in this sense use the closest label conditional on a predefined threshold of the string-comparison algorithm, but this is not the case at the time of writing. This kind of computation can in any case be performed afterwards, so they are meant to be shortcuts and helpers, not indispensable features.
 
-For a bi-dimensional circumplex, the variables are mostly the same. The radial distance is replaced by similar measures quantifying $\Delta(E, P)$. These variables are depicted in Table ..., with a brief description. All the other variables common with the Cartesian plane are omitted.
+For a bi-dimensional circumplex, the variables are mostly the same. The radial distance is replaced by similar measures quantifying $\Delta(E, P)$. These variables are described in Table \@ref(tab:data-observations-circumplex-table). All the other variables common with the Cartesian plane are omitted.
 
 (ref:data-observations-circumplex-table-caption) List of variables related to observations when the affective space is a bi-dimensional circumplex. Common variables with Cartesian plane's spaces are omitted.
 
