@@ -60,7 +60,7 @@ I report how I determined the sample size, all data exclusions (if any), all man
 
 ### Participants
 
-`r s2.participants_aggregated_all %>% nrow()` students (`r (s2.participants_gender_age$gender == "F") %>% sum()` women, `r (s2.participants_gender_age$gender == "M") %>% sum()` men, and 5 missing values) of the course *Sciences et Technologies de l'Information et de la Communication I* [@fritzPenseeComputationnelleAvec2019] in the Master of Science in Learning and Teaching Technologies at Geneva University took part in the study ($M_{age} = `r s2.participants_gender_age$age %\>% mean(na.rm = TRUE) %\>% printnum()`$, $SD_{age} =`r s2.participants_gender_age$age %>% sd(na.rm = TRUE) %>% printnum()`$ with 7 missing values). Students belonged to two classes that took the one-semester course in two successive years during the period of the thesis (2015-2020): `r table(s2.participants_aggregated_all$group)[1]` students in the first class, and `r table(s2.participants_aggregated_all$group)[2]` students in the second, without overlapping. It is worth noting that a third cohort was originally planned to increase the sample size, but the study has not been implemented because this third cohort had to undergo an abrupt switch to an exclusive distance learning format due to the pandemic. Even though a completely online format would have been even more interesting for the purpose of the present study, the use of the EAT would have added up to an already complicated situation. Furthermore, the cohort would also differ with the other in the way social links could have been created, not disposing of the same weeks with on-site courses.
+`r s2.participants_aggregated_all |> nrow()` students (`r (s2.participants_gender_age$gender == "F") |> sum()` women, `r (s2.participants_gender_age$gender == "M") |> sum()` men, and 5 missing values) of the course *Sciences et Technologies de l'Information et de la Communication I* [@fritzPenseeComputationnelleAvec2019] in the Master of Science in Learning and Teaching Technologies at Geneva University took part in the study ($M_{age} = `r s2.participants_gender_age$age |> mean(na.rm = TRUE) |> printnum()`$, $SD_{age} =`r s2.participants_gender_age$age |> sd(na.rm = TRUE) |> printnum()`$ with 7 missing values). Students belonged to two classes that took the one-semester course in two successive years during the period of the thesis (2015-2020): `r table(s2.participants_aggregated_all$group)[1]` students in the first class, and `r table(s2.participants_aggregated_all$group)[2]` students in the second, without overlapping. It is worth noting that a third cohort was originally planned to increase the sample size, but the study has not been implemented because this third cohort had to undergo an abrupt switch to an exclusive distance learning format due to the pandemic. Even though a completely online format would have been even more interesting for the purpose of the present study, the use of the EAT would have added up to an already complicated situation. Furthermore, the cohort would also differ with the other in the way social links could have been created, not disposing of the same weeks with on-site courses.
 
 The use of the EAT was warranted as a pedagogical activity, since the use of technological tools in learning situations is an integral part of the Master's program. Given no participant can be forced to take part to a study, though, students had the choice, at the end of the course, either to sign a consent form allowing data to be used for research purposes, or to write on the same form only the ID they were given at the beginning of the study (without connection to their identity, see procedure below) so that all data associated with that ID could be erased. The overall sample size of the study is therefore determined by the number of students whose ID appears in at least one of the different sources of measure (see below) and has not been retracted via the *non-consent* form.
 
@@ -195,12 +195,12 @@ Having no previous reference for data collection, *a priori* exclusion criteria 
 
 ## Results
 
-Results are based on $N = `r s2.participants_aggregated %>% nrow()`$ participants, having `r (s2.participants_aggregated_all %>% nrow()) - (s2.participants_aggregated %>% nrow())` students not filled both the *Halfway* and the *Final* survey, and were therefore excluded from the analysis considering they have dropped of the either from the course or the research. Table \@ref(tab:s2-descriptive-table) depicts the number of participants retained for each class across the 4 longitudinal surveys *Expectancy*, *Demo*, *Halfway* and *Final*, for which the two classes have very similar -- if not equal -- sample sizes.
+Results are based on $N = `r s2.participants_aggregated |> nrow()`$ participants, having `r (s2.participants_aggregated_all |> nrow()) - (s2.participants_aggregated |> nrow())` students not filled both the *Halfway* and the *Final* survey, and were therefore excluded from the analysis considering they have dropped of the either from the course or the research. Table \@ref(tab:s2-descriptive-table) depicts the number of participants retained for each class across the 4 longitudinal surveys *Expectancy*, *Demo*, *Halfway* and *Final*, for which the two classes have very similar -- if not equal -- sample sizes.
 
 (ref:s2-descriptive-table-caption) Number of participants retained for each class in total, and with respect to the 4 longitudinal surveys.
 
 ```{r s2-descriptive-table}
-s2.valid_results_description %>% 
+s2.valid_results_description |> 
   kable(
     col.names = c(NULL, "Class 1", "Class 2"),
     booktabs = TRUE,
@@ -213,7 +213,7 @@ s2.valid_results_description %>%
 
 ### Expressing Emotions
 
-Overall, participants expressed `r s2.participants_aggregated$num_emotions %>% sum()` emotions through the EAT, that is a mean of `r maf.print_m_sd(s2.participants_aggregated$num_emotions, TRUE, TRUE)`. One student in Class 1 and three students in Class 2 did not express any emotions at all. The fact that those students had not expressed emotions, though, does not systematically rule out the fact that they have not used the tool at all: potentially, they could have logged in just to see the emotions of others. Technically, the DEW-RT registers the log for every access, but students were not informed beforehand of this possibility. Thus, data about accesses has not been extracted -- and therefore not used -- and the 4 students are kept in the analysis.
+Overall, participants expressed `r s2.participants_aggregated$num_emotions |> sum()` emotions through the EAT, that is a mean of `r maf.print_m_sd(s2.participants_aggregated$num_emotions, TRUE, TRUE)`. One student in Class 1 and three students in Class 2 did not express any emotions at all. The fact that those students had not expressed emotions, though, does not systematically rule out the fact that they have not used the tool at all: potentially, they could have logged in just to see the emotions of others. Technically, the DEW-RT registers the log for every access, but students were not informed beforehand of this possibility. Thus, data about accesses has not been extracted -- and therefore not used -- and the 4 students are kept in the analysis.
 
 In comparing the two classes, the number of emotions expressed is similar with respect to the central tendency ($M_{class1} = 11.47$ against $M_{class2} = 13.47$), but differs greatly in variation ($SD_{class1} = 21.69$ against $SD_{class2} = 11.79$). The greater SD of Class 1 results in particular by a single participant that expressed 86 emotions. In Class 2, the greatest number of emotions expressed is 34. Taking the median as a more robust reference of comparison, the difference between Class 1 ($Mdn = 3$) and Class 2 ($Mdn = 12$) is much more evident. Figure \@ref(fig:s2-graph-emotions-expressed-boxplot) compares the expression of emotions between the two classes.
 
@@ -235,9 +235,9 @@ Overall, it is safe to assume that Class 2 made a more thorough and homogeneous 
 
 ### Emotion Awareness Usefulness
 
-Being the first adoption of the Emotion Awareness Usefulness (EAU) scale, it is worth beginning with some exploratory data analysis aiming at determining to what extent the self-reported rating over the 7 dimensions can contribute to assess (1) whether there is a change over time of the perceived EAU, and (2) whether the two classes differ in the perception of the EAU. In this regard, it is useful to start by evaluating the sensibility of the scale in terms of overall dispersion for each of the 7 underlying dimensions, namely *Frequency*, *Affordance*, *Social Presence*, *Self-Understanding*, *Understanding Others*, *Self-Other Comparison*, and *Self-Regulation*. In Figure \@ref(fig:s2-eda-dimensions-dispersion-graph) every circle represents one of the $N=`r s2.ea_usefulness %>% nrow()`$ ratings, which was made on a scale from 1 to 10, for each dimension across surveys and participants. The dispersion for each of the 7 dimensions spans over the entire range of the rating, suggesting that each dimension has a good sensibility.
+Being the first adoption of the Emotion Awareness Usefulness (EAU) scale, it is worth beginning with some exploratory data analysis aiming at determining to what extent the self-reported rating over the 7 dimensions can contribute to assess (1) whether there is a change over time of the perceived EAU, and (2) whether the two classes differ in the perception of the EAU. In this regard, it is useful to start by evaluating the sensibility of the scale in terms of overall dispersion for each of the 7 underlying dimensions, namely *Frequency*, *Affordance*, *Social Presence*, *Self-Understanding*, *Understanding Others*, *Self-Other Comparison*, and *Self-Regulation*. In Figure \@ref(fig:s2-eda-dimensions-dispersion-graph) every circle represents one of the $N=`r s2.ea_usefulness |> nrow()`$ ratings, which was made on a scale from 1 to 10, for each dimension across surveys and participants. The dispersion for each of the 7 dimensions spans over the entire range of the rating, suggesting that each dimension has a good sensibility.
 
-(ref:s2-eda-dimensions-dispersion-graph-caption) Overall ratings of each of the 7 EAU dimensions, $N=`r s2.ea_usefulness %>% nrow()`$ ratings. Bars represent 95% confidence intervals around the overall mean.
+(ref:s2-eda-dimensions-dispersion-graph-caption) Overall ratings of each of the 7 EAU dimensions, $N=`r s2.ea_usefulness |> nrow()`$ ratings. Bars represent 95% confidence intervals around the overall mean.
 
 ```{r s2-eda-dimensions-dispersion-graph, fig.cap="(ref:s2-eda-dimensions-dispersion-graph-caption)", out.width="80%", fig.align='center'}
 s2.eda.dimensions_dispersion
@@ -248,8 +248,8 @@ This preliminary assessment therefore corroborates the interest to investigate m
 (ref:s2-description-EAU-stratified-caption) Means and (standard deviations) of the EAU ratings across longitudinal surveys.
 
 ```{r s2-description-EAU-stratified}
-s2.ea_usefulness.descriptive_stratified %>%
-  select(-dimension) %>% 
+s2.ea_usefulness.descriptive_stratified |>
+  select(-dimension) |> 
 kable(
     booktabs = TRUE,
     digits = 2,
@@ -257,11 +257,11 @@ kable(
     caption.short = "Study 2: EAU means and standard deviations",
     longtable = FALSE,
     linesep = c("", "", "\\addlinespace")
-  ) %>% 
+  ) |> 
   kable_styling(
     latex_options = c("repeat_header")
-  ) %>% 
-  row_spec(c(3, 6, 9, 12, 15, 18, 21), bold = T) %>% 
+  ) |> 
+  row_spec(c(3, 6, 9, 12, 15, 18, 21), bold = T) |> 
   pack_rows(
     index = c(
       "Frequency" = 3, 
@@ -285,7 +285,7 @@ The linear mixed model analyzing the score on the EAU scale was fitted using the
 (ref:s2-mlm-eau-caption) Results of a Type III ANOVA on the fitted multilevel linear model using Kenward-Roger approximation for computing the *p*-value
 
 ```{r s2-mlm-eau-table}
-s2.mlm.ea_usefulness.anova_table %>%
+s2.mlm.ea_usefulness.anova_table |>
   kable(
     booktabs = TRUE,
     longtable = FALSE,
@@ -309,18 +309,18 @@ Results of the post-hoc contrasts averaged over group and stratified across EAU 
 (ref:s2-eau-contrasts-caption) Contrasts between the Final and the Expectancy surveys for each of the 7 dimensions of the EAU scale averaged over the two classes.
 
 ```{r s2-eau-contrasts-table}
-s2.mlm.ea_usefulness.comparison %>% 
-  as_tibble() %>%
+s2.mlm.ea_usefulness.comparison |> 
+  as_tibble() |>
   mutate(
     p.value = round_ps_apa(p.value)
-  ) %>% 
+  ) |> 
   kable(
     digits = 3,
     caption = "(ref:s2-eau-contrasts-caption)\\label{tab:s2-eau-contrasts-table}",
     caption.short = "Study 2: Contrasts between Final and Expectancy surveys per EAU dimension",
     longtable = FALSE,
     booktabs = TRUE
-  ) %>% 
+  ) |> 
   kable_styling(
     latex_options = c("repeat_header")
   )
@@ -328,7 +328,7 @@ s2.mlm.ea_usefulness.comparison %>%
 
 ### Perceived Usability of the EAT
 
-$N = `r s2.sus_total %>% nrow()`$ participants filled the System Usability Scale (SUS) survey [@brookeSUSQuickDirty1996] at the end of the semester. The observed score has been of `r maf.print_m_sd(s2.sus_total$sus_score, TRUE, TRUE)`, which is considered *Good* according to the stratification proposed by Bangor, Kortum and Miller [-@bangorDeterminingWhatIndividual2009].
+$N = `r s2.sus_total |> nrow()`$ participants filled the System Usability Scale (SUS) survey [@brookeSUSQuickDirty1996] at the end of the semester. The observed score has been of `r maf.print_m_sd(s2.sus_total$sus_score, TRUE, TRUE)`, which is considered *Good* according to the stratification proposed by Bangor, Kortum and Miller [-@bangorDeterminingWhatIndividual2009].
 
 Figure \@ref(fig:s2-sus-items-graph) illustrates the score obtained on each of the 10 items of the SUS for the two classes. The score takes into account the reverse order for even items and is pondered on the 7-point scale used in the present study. As in the case of the EAU, ratings on the SUS are also consistent between classes. More specifically, data clearly show that the first item, inherent to the frequency of use, is far below the other items, which have received overall a high rating. Items 5 (integration of different functions of the system) and 9 (confidence in using the system) also have received lower ratings compared to the other items, even if not as low as the first item about frequency.
 
@@ -394,7 +394,7 @@ The chapter proposes two corollary type of analysis that may be of interest for 
 
 ### Structure and Reliability of the Emotion Usefulness Scale
 
-Even though the use of multilevel linear model is more adequate for a fine grained assessment of the tentative scale, it is worth exploring whether the Emotion Usefulness scale (EAU) proposes structural features that may be of interest for future use. In this regard, the way the scale has been administered is somehow atypical. On the one hand, participants rated the scale on multiple occasion, which is consistent with the test/re-test paradigm. On the other hand, the conditions in which the scale has been administered where obviously not the same, since the aim of the contribution was to measure the change of perception over time rather then the consistency of the scale. For an exploratory purpose, it could be informative to relax some of the habitual boundaries in reliability measures and *pretend* that each administration of the survey was unique, even when the rater was the same. This choice is warranted by two elements. First, it increases the sample size of measures compared to taking just one of the four survey in which the scale has been administered. Second, if the repeated measure of the administration is taken into consideration, there will be essential overlapping with the multilevel analysis performed above. For these reasons, all $N = `r s2.ea_usefulness_scale.all %>% nrow()`$ administrations of the scale will be considered in the analysis.
+Even though the use of multilevel linear model is more adequate for a fine grained assessment of the tentative scale, it is worth exploring whether the Emotion Usefulness scale (EAU) proposes structural features that may be of interest for future use. In this regard, the way the scale has been administered is somehow atypical. On the one hand, participants rated the scale on multiple occasion, which is consistent with the test/re-test paradigm. On the other hand, the conditions in which the scale has been administered where obviously not the same, since the aim of the contribution was to measure the change of perception over time rather then the consistency of the scale. For an exploratory purpose, it could be informative to relax some of the habitual boundaries in reliability measures and *pretend* that each administration of the survey was unique, even when the rater was the same. This choice is warranted by two elements. First, it increases the sample size of measures compared to taking just one of the four survey in which the scale has been administered. Second, if the repeated measure of the administration is taken into consideration, there will be essential overlapping with the multilevel analysis performed above. For these reasons, all $N = `r s2.ea_usefulness_scale.all |> nrow()`$ administrations of the scale will be considered in the analysis.
 
 Two types of analysis will be conducted to explore the structure and reliability of the EAU. First, it is worth assessing to what extent the scale can be considered as uni-dimensional, that is, measuring a single underlying latent variable, represented in this case by the perceived usefulness of disposing of emotional awareness. Second, it is also worth exploring whether there is an underlying structure of more than one factor.
 
@@ -404,7 +404,7 @@ For determining the existence of a single, common factor, there is a growing con
 
 > There are a variety of ways of assessing whether a set of items measures one latent trait. unidim is just one more way. If a one factor model holds in the data, then the factor analytic decomposition F implies that FF' should reproduce the correlations with communalities along the diagonal. In this case, the fit FF' should be identical to the correlation matrix minus the uniquenesses. unidim is just the ratio of these two estimates. The higher it is, the more the evidence for unidimensionality.
 
-Results of fitting the *unidim* approach to the EAU yields a unidimensionality index of `r s2.eau.unidim$uni[1] %>% printnum()`, with a fit of the average correlation to the matrix of `r s2.eau.unidim$uni[2] %>% printnum()`, suggesting the presence of a unidimensional factor. As a comparison, the more traditional Cronbach's coefficient is also promising, with a raw $\alpha$ of `r s2.eau.unidim.alpha$total$raw_alpha %>% printnum()`.
+Results of fitting the *unidim* approach to the EAU yields a unidimensionality index of `r s2.eau.unidim$uni[1] |> printnum()`, with a fit of the average correlation to the matrix of `r s2.eau.unidim$uni[2] |> printnum()`, suggesting the presence of a unidimensional factor. As a comparison, the more traditional Cronbach's coefficient is also promising, with a raw $\alpha$ of `r s2.eau.unidim.alpha$total$raw_alpha |> printnum()`.
 
 #### Exploratory Factor Analysis
 
@@ -412,7 +412,7 @@ The exploratory factor analysis will be conducted in two steps using the psych R
 
 The scree test pictured in Figure \@ref(fig:sc-scree-plot-graph) suggests that three factors account for a fair amount of variance, with small gain achieved by adding a fourth or fifth one.
 
-(ref:sc-scree-plot-caption) Scree plot based on all the EAU surveys administered. $N = `r s2.ea_usefulness_scale.all %>% nrow()`$
+(ref:sc-scree-plot-caption) Scree plot based on all the EAU surveys administered. $N = `r s2.ea_usefulness_scale.all |> nrow()`$
 
 ```{r sc-scree-plot-graph, fig.align="center", fig.cap="(ref:sc-scree-plot-caption)"}
 scree(s2.ea_usefulness_scale.all, pc = FALSE)
@@ -424,7 +424,7 @@ An exploratory factor analysis with three factors, using the *minimum residuals*
 2.  The second factor includes *Self-Understanding* and *Self-Regulation* dimensions, that is the more *self-centered* dimensions of emotional awareness. The second factor also relates to *Social Presence*, which also loads on the first factor, and *Frequency*, shared with the third factor, but both with a lower coefficient;
 3.  The third factor represents *Frequency* and *Affordance* dimensions, that is the more *usability related* dimensions.
 
-The diagram in Figure \@ref(fig:s2-factor-analysis-graph) reports the coefficients of loading. The overall reliability scores are Cronbach's $\alpha =$ `r s2.eau.fa$alpha %>% printnum()`, $\omega_{h}$ = `r s2.eau.fa$omega_h %>% printnum()`, and $\omega_{t}$ = `r s2.eau.fa$omega.tot %>% printnum()`, which suggest good reliability of the scale. Incomplete and tentative, the EAU seems nevertheless a rather promising scale that can be expanded in further research.
+The diagram in Figure \@ref(fig:s2-factor-analysis-graph) reports the coefficients of loading. The overall reliability scores are Cronbach's $\alpha =$ `r s2.eau.fa$alpha |> printnum()`, $\omega_{h}$ = `r s2.eau.fa$omega_h |> printnum()`, and $\omega_{t}$ = `r s2.eau.fa$omega.tot |> printnum()`, which suggest good reliability of the scale. Incomplete and tentative, the EAU seems nevertheless a rather promising scale that can be expanded in further research.
 
 (ref:s2-factor-analysis-caption) Graphical representation of the exploratory factor analysis
 
@@ -434,7 +434,7 @@ omega.diagram(s2.eau.fa, main = "", ,marg=c(5,0,0,0))
 
 ### Emotion Awareness Usefulness and Emotional Competence
 
-The study also included the possibility to take the Geneva Emotion Competence (GECo) test [@schlegelGenevaEmotionalCompetence2018] anytime before the end of the semester. As a reminder, the GECo is a performance-based test measuring participants' emotional competence on four sub-competences: emotion recognition, emotion understanding, emotion regulation, and emotion management. Given the test was a corollary activity related only to the research -- and that the test is demanding in terms of time and effort due to its accuracy -- only $N = `r s2.geco_score_to_eau.wider %>% nrow()`$ participants performed it. This limits the possibility of exploring relationship between emotional competence and other indicators collected throughout the study beyond a descriptive perspective. In the meantime, participants that did take the test used their precious time during an intense phase of their education, which deserves gratitude and consideration.
+The study also included the possibility to take the Geneva Emotion Competence (GECo) test [@schlegelGenevaEmotionalCompetence2018] anytime before the end of the semester. As a reminder, the GECo is a performance-based test measuring participants' emotional competence on four sub-competences: emotion recognition, emotion understanding, emotion regulation, and emotion management. Given the test was a corollary activity related only to the research -- and that the test is demanding in terms of time and effort due to its accuracy -- only $N = `r s2.geco_score_to_eau.wider |> nrow()`$ participants performed it. This limits the possibility of exploring relationship between emotional competence and other indicators collected throughout the study beyond a descriptive perspective. In the meantime, participants that did take the test used their precious time during an intense phase of their education, which deserves gratitude and consideration.
 
 Given the overall limited use that has been done of the EAT, the more interesting measure at hand to be related to emotional competence is the prospected usefulness measured in the *Expectancy* survey using the EAU scale. The unidimensionality coefficients exposed above suggest that the average score of the EAU can be, at least in the exploratory context, retained as an indicator of perceived usefulness of emotional awareness and therefore represent the measure of interest.
 
@@ -443,7 +443,7 @@ These are the premises to a multiple regression that has been fit using the aver
 (ref:s2-ec-eau-lm-caption) Parameters of the multiple linear regression predicting expected EAU from the GECo emotional sub-comptences. $N = 11$.
 
 ```{r s2-ec-eau-lm-table}
-apa_print(s2.sub_competences_to_expectancy.lm)$table %>% 
+apa_print(s2.sub_competences_to_expectancy.lm)$table |> 
   kable(
     digits = 3,
     caption = "(ref:s2-eau-contrasts-caption)\\label{tab:s2-ec-eau-lm-table}",
