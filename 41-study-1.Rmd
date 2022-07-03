@@ -82,7 +82,7 @@ I report how I determined the sample size, all data exclusions (if any), all man
 
 ### Material
 
-#### Overall Interface of the CSCL Task
+#### Overall Interface of the Task
 
 The experimental material comprises different components; I therefore provide an overview before specifying the various details. Figure \@ref(fig:s1-task-interface-figure) shows the disposition of the screen during the experimental task. It comprises the EAT on the left-side of the screen, outlined in blue, and the simulated, joint-problem solving task on the right. The image indicates what part of the interface was simulated for the *Mutual-Modeling* condition. The interfaces of the other conditions are illustrated below. Some parts of the interface have been translated in English for the current contribution. In the experiment, though, the french language was used consistently for every condition.
 
@@ -102,7 +102,7 @@ The joint problem-solving task comprised four enigmas taken from a game. The fir
 
 #### Configuration of the Emotion Awareness Tool
 
-The version of the DEW was composed as follows. The Valence and Control/Power dimensions [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005] determined the appraisals for the expression-displaying of emotional episodes. Valence was prompted with the question "*Is the situation pleasant?*", whereas Control/Power with the question "*Is the situation under your control?*". Both evaluations were determined with the extreme negative pole *Not at all*, and extreme positive pole *Yes, absolutely*. The underlying affective space was configured using a radial circumplex with the 20 EATMINT emotions also used in Fritz [-@fritzReinventingWheelEmotional2015]. The composition of the circumplex has been detailed in the previous chapter (add reference here).
+The version of the DEW was composed as follows. The Valence and Control/Power dimensions [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005] determined the appraisals for the expression-displaying of emotional episodes. Valence was prompted with the question "*Is the situation pleasant?*", whereas Control/Power with the question "*Is the situation under your control?*". Both evaluations were determined with the extreme negative pole *Not at all*, and extreme positive pole *Yes, absolutely*. The underlying affective space was configured using a circumplex with the 20 EATMINT emotions also used in Fritz [-@fritzReinventingWheelEmotional2015]. The composition of the circumplex has been detailed in the previous chapter (add reference here).
 
 For the monitoring/perceiving function of the EAT, each condition differed in the following ways (depicted in Figure \@ref(fig:s1-eat-interfaces-figure)):
 
