@@ -46,6 +46,18 @@ include_graphics(here("figure/s1/s1-theory-diagram.png"))
 
 The phenomenon under scrutiny in the present study is therefore whether a different use of, and access to emotional information elicit a different use of the EAT in terms of its expressing-displaying and the perceiving-monitoring functions [@buderGroupAwarenessTools2011; @schmidtProblemAwareness2002]. More specific hypotheses are stated with respect to each function.
 
+(ref:conditions-ea-model-caption) Comparison of the three condition with respect to the abstract model illustrated in Section @ref(abstract-model-of-ea)
+
+```{r conditions-ea-model, fig.align="center", fig.cap="(ref:conditions-ea-model-caption)", out.width="30%", fig.show="hold"}
+knitr::include_graphics(
+  c(
+    here::here("./figure/s1/self-centered-model.png"),
+    here::here("./figure/s1/partner-oriented-model.png"),
+    here::here("./figure/s1/mutual-modeling-model.png")
+  )
+)
+```
+
 ### Use in Expressing Emotions
 
 For expressing-displaying emotions, the three interfaces provide the learner with different reasons to express how she feels, as well as different affective triggers that may elicit emotional episodes (see also below the hypothesis about the use in perceiving emotions). More precisely:
