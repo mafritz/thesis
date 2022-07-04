@@ -19,7 +19,7 @@ In this first empirical contribution, the toolbox is adopted in order to investi
 
 ## Study Rationale
 
-In the few experimental contributions that have investigated emotional awareness in synchronous computer-mediated collaboration so far [*e.g.*, @avrySharingEmotionsContributes2020; @eligioEmotionUnderstandingPerformance2012; @molinariEmotionFeedbackComputermediated2013], the experimental design consisted in comparing a control group, who did not dispose of emotional awareness, with a *treatment* group, who disposed of emotional awareness in *full strength*. That is, either the person had no emotional awareness at all, or she had access to the full *abstract model* depicted in Section \@ref(abstract-model-of-ea): intra-individual and inter-individual awareness, and also the comparison between the two. The *treatment* setting is therefore consistent with the mutual-modeling perspective [@dillenbourgSymmetryPartnerModelling2016], according to which the symmetry of the information available to learners is instrumental to build and update a holistic representation of the partner, upon which the collaborative effort can strive.
+In the few experimental contributions that have investigated emotional awareness in synchronous computer-mediated collaboration so far [*e.g.*, @avrySharingEmotionsContributes2020; @eligioEmotionUnderstandingPerformance2012; @molinariEmotionFeedbackComputermediated2013], the experimental design consisted in comparing a control group, who did not dispose of emotional awareness, with a *treatment* group, who disposed of emotional awareness in *full strength*. That is, either the person had no emotional awareness at all, or she had access to the full *abstract model* depicted in Section \@ref(abstract-model-of-ea): intra-individual and inter-individual awareness, and also the comparison between the two. The *treatment* setting is therefore consistent with the mutual-modeling perspective [@dillenbourgSymmetryPartnerModelling2016; @molinariKnowledgeInterdependencePartner2009; @sanginPeerKnowledgeModeling2009], according to which the symmetry of the information available to learners is instrumental to build and update a holistic representation of the partner, upon which the collaborative effort can strive.
 
 As the abstract model has shown, though, emotional awareness can be broken down to a series of passages that, even though tightly related, may have different reasons for, and consequences on the use of an EAT. At the very least, it is possible to identify the intra-personal and the inter-personal *paths*, which are underpinned by two different assumptions about the instrumentality of emotional awareness (see Sections \@ref(ea-intra-personal) and \@ref(ea-inter-personal)). In this regard, for instance, @molinariEmotionFeedbackComputermediated2013 reckon that "one main limitation of [their *control vs. treatment*] study is the difficulty in disentangling the effect of reflecting upon one's own emotions from the effect of sharing one's emotions with the partner" [@molinariEmotionFeedbackComputermediated2013, p.342]. As a consequence, it may be worth investigating the use of different configurations of an EAT, which may vary, for instance, according to (1) the use of the emotional information that is produced, and (2) the access to the emotional information that may be perused through the tool. As suggested by @buderGroupAwarenessTools2011, varying the characteristics within an awareness tool may complement the assessment of its specific contribution alongside the all-or-nothing approach of the *control vs. treatment* design.
 
@@ -91,7 +91,7 @@ Following @simmons21WordSolution2012 suggestion to increase transparency in expe
 
 ### Participants and Design
 
-48 participants (29 women, 19 men), aged 18 to 55 ($M=37.3, SD=10.01$), voluntarily participated to the study. The sample size was determined by time constraints, since data had to be collected in 15 days. 23 participants were university students from different faculties, both at undergraduate and graduate levels. 25 participants were professionals working for a company adopting distance learning practices. No remuneration was provided for taking part in the study. Participants were randomly assigned to one of the three conditions/interfaces (*Self-Centered*, *Partner-Oriented*, or *Mutual-Modeling*) in order to produce a balanced design with 16 participants per condition.
+48 participants (29 women, 19 men), aged 18 to 55 ($M_{age}=37.3$, $SD_{age}=10.01$), voluntarily participated to the study. The sample size was determined by time constraints, since data had to be collected in 15 days in co-located conditions. 23 participants were university students from different faculties, both at undergraduate and graduate levels. 25 participants were professionals working for a company adopting distance learning practices. No remuneration was provided for taking part in the study. Participants were randomly assigned to one of the three conditions/interfaces (*Self-Centered*, *Partner-Oriented*, or *Mutual-Modeling*) in order to produce a balanced design with 16 participants per condition.
 
 ### Material
 
@@ -107,7 +107,7 @@ include_graphics(here("figure/s1/s1-task-interface.png"))
 
 #### Problem-Solving Task
 
-The joint problem-solving task comprised four enigmas taken from a game. The first three enigmas had a clear response that could be inferred, whereas the last one was more of a non-nonsensical type. The same enigmas have been used in a previous study [@fritzReinventingWheelEmotional2015], where they elicited different emotions both in number and kind in a population similar to that of the current sample. Each enigma was subdivided in three phases:
+The joint problem-solving task comprised four enigmas taken from a game. The first three enigmas had a clear response that could be inferred, whereas the last one was more of a non-nonsensical type. The same enigmas have been used in the usability test of the Dynamic Emotion Wheel [@fritzReinventingWheelEmotional2015], where they elicited different emotions both in number and kind in a population similar to that of the current sample (see Section \@ref(ux-reference-measures)). Each enigma was subdivided in three phases:
 
 -   40 seconds during which the text of enigma was showed on the interface. At this stage, participants could only express their emotions, but could not write their reasoning or the reply;
 -   3 minutes and 20 seconds during which participants could write their reasoning and reply to the enigma, as well as see the *playback* reasoning (but not answer) of the simulated partner;
@@ -115,17 +115,19 @@ The joint problem-solving task comprised four enigmas taken from a game. The fir
 
 #### Configuration of the Emotion Awareness Tool
 
-The version of the DEW was composed as follows. The Valence and Control/Power dimensions [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005] determined the appraisals for the expression-displaying of emotional episodes. Valence was prompted with the question "*Is the situation pleasant?*", whereas Control/Power with the question "*Is the situation under your control?*". Both evaluations were determined with the extreme negative pole *Not at all*, and extreme positive pole *Yes, absolutely*. The underlying affective space was configured using a circumplex with the 20 EATMINT emotions also used in Fritz [-@fritzReinventingWheelEmotional2015]. The composition of the circumplex has been detailed in the previous chapter (add reference here).
+The DEW toolbox was adopted to configure the tool with the desired features. The expressing-displaying function was common to all conditions, which differed only in the perceiving-monitoring part of the interface.
 
-For the monitoring/perceiving function of the EAT, each condition differed in the following ways (depicted in Figure \@ref(fig:s1-eat-interfaces-figure)):
+For expressing an emotion, the Valence and Control/Power dimensions [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005] determined the appraisals for the expression-displaying of emotional episodes. Valence was prompted with the question "*Is the situation pleasant?*", whereas Control/Power with the question "*Is the situation under your control?*". Both evaluations were determined with the extreme negative pole *Not at all*, and extreme positive pole *Yes, absolutely*. The underlying affective space was represented by EATMINT circumplex depicted at lenght in Section \@ref(eatmint-circumplex).
+
+For the perceiving-monitoring function of the EAT, each condition differed in the following ways (depicted in Figure \@ref(fig:s1-eat-interfaces-figure)):
 
 -   *Self-Centered*: the interface comprises an emotion time-line, then a graphic line chart that depicts the evolution of the appraisal dimensions over time, and finally a tag cloud where the size of each subjective feelings is proportional to the frequency with which it has been expressed. The information provided is based only on the emotions expressed by the participant herself.
 -   *Partner-Oriented*: the interface is the same as in the *Self-Centered* condition, but the information provided is based only on the emotions expressed by the simulated partner (see below).
 -   *Mutual-Modeling*: the interface comprises an emotion time-line, but with both the participant and the simulated partner's subjective feelings organized in two different rows. Two line charts complete the interface, one with the appraisal dimensions of the participant, and the other of the partner.
 
-The *Self-Centered* and *Partner-Oriented* conditions presents a tag cloud in order to balance the surface of the EAT that contains information. In this way, the EAT occupies more or less the same amount of the screen.
+The *Self-Centered* and *Partner-Oriented* conditions present a tag cloud at the end of the interface in order to balance the surface of the EAT that contains information. In this way, the EAT occupies more or less the same amount of the screen.
 
-(ref:s1-eat-interfaces-caption) The three different interfaces used in the experiment. In order from left to right: the *Self-Centered*, the *Partner-Oriented*, and the *Mutual-Modeling* versions.
+(ref:s1-eat-interfaces-caption) The three different interfaces used in the experiment. From left to right: the *Self-Centered*, the *Partner-Oriented*, and the *Mutual-Modeling* versions.
 
 ```{r s1-eat-interfaces-figure, fig.cap="(ref:s1-eat-interfaces-caption)", fig.align="center", out.width="100%" }
 knitr::include_graphics(here::here("figure/s1/s1-eat-interfaces.png"))
@@ -140,7 +142,7 @@ s1.simulated_partner <- s1.dew_configuration$task$simulation %>%
   left_join(s1.feelings_translation, by = c("feeling" = "label"))
 ```
 
-The *playback* manipulations displayed on the interface were recorded in a pilot test with 4 confederates: 2 men and 2 women performed the same joint problem-solving task, but in a synchronous situation. The *playback* is thus comprised by: (1) all the emotional episodes expressed, with both the evaluation on the appraisal dimensions and the related subjective feeling expressed; and (2) what confederates have typed, at the very same moment, into the reasoning field, as well as the answer to each of the 4 enigmas. In this regard, confederates were explicitly asked not to communicate directly through the text fields, but limit their typing to the reasoning for solving the problem. One of the *playback* was then randomly chosen for the task and *injected* into the experimental task interface. The simulated partner expresses `r s1.simulated_partner %>% nrow()` emotions and finds the solution to 2 out of 4 enigmas. The full list of emotions -- comprising the time of expression, the associated Valence and Control/Power appraisals, and the subjective feeling -- are depicted in Table \@ref(tab:s1-simulated-emotions-table).
+The *playback* manipulations displayed on the interface were recorded in the same pilot test as for the usability assessment of the DEW already mentioned above. 4 confederates (2 men and 2 women) performed the same joint problem-solving task, but in a synchronous situation. The *playback* is thus comprised by: (1) all the emotional episodes expressed, represented by the evaluation on the two appraisal dimensions and the related subjective feeling; and (2) what the confederate have typed, at the very same moment, into the reasoning field, as well as the answer to each of the 4 enigmas. In this regard, confederates were explicitly asked not to communicate directly through the text fields, but limit their typing to the reasoning for solving the problem. One of the *playback* was then randomly chosen for the task and *injected* into the experimental task interface. The simulated partner expresses `r s1.simulated_partner %>% nrow()` emotions and finds the solution to 2 out of 4 enigmas. The full list of emotions -- comprising the time of expression, the associated Valence and Control/Power appraisals, and the subjective feeling -- are depicted in Table \@ref(tab:s1-simulated-emotions-table).
 
 (ref:s1-simulated-emotions-caption) List of the emotions of the simulated partner. Time is expressed in seconds.
 
@@ -156,7 +158,7 @@ kable(s1.simulated_partner,
 
 #### Eye-tracking
 
-A Tobii T120 eye-tracker with Tobii Studio Pro v3.4.8 software [@tobiiabTobiiStudio2015] was used for eye-tracking measures. Areas Of Interest (AOI) were disposed on the EAT as a whole (left side of the screen) and the task (right side of the screen). The AOI of the EAT was further divided in the displaying/expressing upper zone, and the monitoring/perceiving lower zone.
+A Tobii T120 eye-tracker with Tobii Studio Pro v3.4.8 software [@tobiiabTobiiStudio2015] was used for eye-tracking measures. Areas Of Interest (AOI) were disposed on the EAT as a whole (left side of the screen) and the task (right side of the screen). The AOI of the EAT was further divided in the expressing-displaying upper zone, and the perceiving-monitoring lower zone.
 
 ### Procedure
 
@@ -171,9 +173,9 @@ Participants were given a specific time to come to the test, which was performed
 
 The general aim of the study was explained. The experimenter reassured participants about the fact that the data would be anonymous, and that they could stop the experiment at any time without any reason. A first consent form was then signed if the participant agreed to take part in the study.
 
-At this point, the experimenter explained how the collaborative task would take place. She first showed a demo about the functioning of the DEW. Since in a previous study [@fritzReinventingWheelEmotional2015], whose aim was to observe the spontaneous use of the tool, participants were confused about the dimension of Control/Power, in this study the experimenter proposed a more thorough explanation of what the two sliders of the DEW stand for. The explication also aimed at reducing the risk that participants will move the cursors for the Valence and Control/Power dimensions until they found the *right* subjective feeling. Next, the experimenter showed the perceiving-monitoring part of the EAT, which was explained according to the experimental condition the participant was attributed to. In this way, participants were informed about both what the emotional information they provided would be used for (*Self-Centered* vs *Partner-oriented/Mutual-modeling*), and to which emotional information they would have access (*Self-Centered* vs *Partner-Oriented* vs *Mutual-Modeling*).
+At this point, the experimenter explained how the collaborative task would take place. She first showed a demo about the functioning of the DEW. Since in a previous study [@fritzReinventingWheelEmotional2015], whose aim was to observe the spontaneous use of the tool, participants were confused about the dimension of Control/Power, in this study the experimenter proposed a more thorough explanation of what the two sliders of the DEW stand for. The explication also aimed at reducing the risk that participants will move the cursors for the Valence and Control/Power dimensions until they found the *right* subjective feeling. Next, the experimenter showed the perceiving-monitoring part of the EAT, which was explained according to the experimental condition the participant was attributed to. In this way, participants were informed about both what the emotional information they provided would be used for (*Self-Centered* vs *Partner-oriented/Mutual-modeling*), and to what kind of emotional information they would have access to (*Self-Centered* vs *Partner-Oriented* vs *Mutual-Modeling*).
 
-Finally, the experimenter explained the right-hand side of the screen, which implemented the joint problem-solving task. Participants were informed about the three parts (reading, solving and solution) that composed each of the 4 enigmas to solve. They were also prompted to write their reasoning to solve the problem in the appropriate field, but to avoid direct communication with the partner.
+Finally, the experimenter explained the right-hand side of the screen, which implemented the joint problem-solving task. Participants were informed about the three parts (reading, solving and solution) that composed each of the 4 enigmas to solve. They were also prompted to write their reasoning to solve the problem in the appropriate field, but to avoid direct communication with the partner. Since in the usability test of the DEW participants spontaneously expressed emotions and participated to the task, the system of points adopted to enhance collaboration was dropped.
 
 #### Warm-up session with the DEW
 
@@ -181,11 +183,11 @@ Participants were placed in front of the screen used for the test and could prac
 
 #### Experimental task
 
-Once the participant was ready for the test, the experimenter simulated to check-in with another confederate to simulate that the other participant was ready to start the experiment as well. Then the experimenter proceeded to calibrate the eye-tracker equipment. After being reminded about the general functioning of the eye-tracker and the importance of not moving during the task, the participant would then proceed with the task. At first, she had to fill a sort of *log-in form*, providing a random ID and an identifier for the pair. Once the task properly started, the participant had access to the overall interface depicted above, including the *playback* of all the manipulations made by a confederate.
+Once the participant was ready for the test, the experimenter simulated to check-in with another confederate to simulate that the other participant was ready to start the experiment as well. Then the experimenter proceeded to calibrate the eye-tracker equipment. After being reminded about the general functioning of the eye-tracker and the importance of not moving during the task, the participant would then proceed with the task. At first, she had to fill the *log-in form* of the front-end interface of the toolbox, providing a random ID and an identifier for the pair. Once the task started, the participant had access to the overall interface depicted above, including the *playback* of all the manipulations made by a confederate.
 
 #### Post-test debriefing
 
-After the task, participants were asked to fill in a survey with information that will not be used in the present contribution, but have been analyzed by Perrier [-@perrierCollaborationEnvironnementMediatise2017]. At the end of the study, participants were informed about the manipulation of the simulated partner and the experimental reasons behind it. A second consent form was therefore submitted to participants, for them to confirm they understood the reason of the manipulation, and that they accepted the use of the data.
+After the task, participants were asked to fill in a survey whose data that will not be used in the present contribution, but have been analyzed by Perrier [-@perrierCollaborationEnvironnementMediatise2017]. At the end of the study, participants were informed about the manipulation of the simulated partner and the experimental reasons behind it. A second consent form was therefore submitted to participants, for them to confirm they understood the reason of the manipulation, and that they accepted the use of the data.
 
 ### A Priori Exclusion Criteria
 
@@ -197,7 +199,7 @@ For hypothesis *H1*, concerning differences in expression of emotions, a omnibus
 
 For hypothesis *H2*, concerning differences in perception of emotions, two indicators retrieved by eye-tracking measures [@blascheckVisualizationEyeTracking2017; @pooleEyeTrackingHumanComputer2005] are used as dependent variables. First, the total time (in seconds) that participants spent looking at the perceiving-monitoring zone of the interface. Such indicator is usually interpreted as a proxy for information processing and could account for interest (*i.e.*, people look at it longer because it is interesting) or complexity (*i.e.*, people look at it longer because they need more time to understand what it means). Second, the number of times participants sought information by orienting their gaze inside the perceiving-monitoring zone of the interface, which is usually interpreted as an indicator that the person intentionally seeks for information she may find useful or that she got lost and needs reorientation. Given the relative simplicity of the information provided -- even though people do not like graphs [@carpenterModelPerceptualConceptual1998; @pinkerTheoryGraphComprehension1990] -- and the use of a fixed interface of the EAT, both measures are used as indicators of interest. For both measures, a omnibus one-way ANOVA with pairwise comparison between all conditions were planned beforehand. A family-wise correction to account for inflation in Type I error has been planned for each pairwise comparison.
 
-All analysis are conducted using the statistical software R, version 4.0.5. Analysis of variance use the Afex package version `r packageVersion("afex")` [@singmannAfexAnalysisFactorial2020].
+All analysis are conducted using the statistical software R, version 4.2.0. Analysis of variance use the Afex package version `r packageVersion("afex")` [@singmannAfexAnalysisFactorial2020].
 
 ## Results
 
@@ -224,7 +226,7 @@ kable(s1.participants_repartition,
   kable_styling(latex_options = "HOLD_position")
 ```
 
-The resulting unbalanced design and overall small $N$, particularly low in the *Partner-Oriented* condition, decrease the power of the planned test and make it more exposed to violation of assumptions [@hoekstraAreAssumptionsWellKnown2012], which are checked in Appendix A. The interpretation of results must therefore take into account these limits.
+The resulting unbalanced design and overall small $N$, particularly low in the *Partner-Oriented* condition, decrease the power of an already ambitious planned test and make it more exposed to violation of assumptions [@hoekstraAreAssumptionsWellKnown2012]. The interpretation of results from an hypothesis-testing, inferential perspective is therefore maintained only if basic assumptions of the model are met. They are also provided more from an exploratory perspective, such as a reference for future studies, rather than a confirmatory standpoint [@scheel2020; @fiedlerCycleTheoryFormation2004; @lakensTooTrueBe2017].
 
 ### Differences in Expressing Emotions
 
@@ -239,20 +241,12 @@ maf.plot_means_comparison(s1.aggregated_emotions, aes(x = group, y = n, color = 
   theme(legend.position = "none")
 ```
 
-No detectable difference, neither in the omnibus one-way ANOVA (`r apa_print(s1.anova.expressed_emotions)$full_result`), nor in the pairwise comparisons could be observed. Results of the comparisons are depicted in Table \@ref(tab:s1-expressed-emotions-comparison-table). Hypothesis (*H1*) is therefore rejected: a different access to and use of emotional information did not yield detectable differences in the number of emotion expressed.
+Assumptions check for the ANOVA model highlighted major discrepancies in the distribution of residuals, suggesting violation of the assumption of normality, as illustrated in Figure \@ref(anova-expressed-emotions-assumptions-caption) The results of the omnibus ANOVA and of the individual comparisons are therefore not provided.
 
-(ref:s1-expressed-emotions-comparison-caption) Pairwise comparisons of the thee conditions with respect to the number of emotions expressed (*p*-values are adjusted with the Tukey method).
+(ref:anova-expressed-emotions-assumptions-caption) Assumptions check on the ANOVA model for expressing emotions revealed violation of the normality of residuals assumption. The test of hypothesis H1 is therefore withdrawn.
 
-```{r s1-expressed-emotions-contrats}
-s1.anova.expressed_emotions.comp.summary %>%
-  mutate(p.value = round_ps_apa(p.value)) %>%
-  kable(
-    digits = 2,
-    caption = "(ref:s1-expressed-emotions-comparison-caption)\\label{tab:s1-expressed-emotions-comparison-table}",
-    caption.short = "Study 1: Number of Emotions Expressed per Condition",
-    longtable = FALSE,
-    booktabs = TRUE
-  )
+```{r anova-expressed-emotions-assumptions, fig.align="center", fig.cap="(ref:anova-expressed-emotions-assumptions-caption)", out.width="90%"}
+s1.anova.expressed_emotions.assumptions
 ```
 
 ### Differences in Perceiving Emotions

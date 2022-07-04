@@ -3,6 +3,9 @@ library(tidyverse)
 library(afex)
 library(papaja)
 library(emmeans)
+library(performance)
+library(effectsize)
+library(patchwork)
 
 theme_set(theme_apa(box = TRUE))
 
@@ -40,20 +43,13 @@ s1.anova.expressed_emotions.graph <- ggplot(s1.aggregated_emotions, aes(x = grou
   ) +
   NULL
 
-# library(easystats)
-# library(rstanarm)
-# library(bayesplot)
-# 
-# model <- stan_glm(n ~ group, data = s1.aggregated_emotions, prior = normal(location = 18.8, scale = 7.10, autoscale = FALSE))
-# describe_posterior(model, test = c("all"), rope_range = c(4, 4))
-# 
-# report(model)
-# plot(estimate_means(model))
-# 
-# mcmc_areas(as.matrix(model),
-#            pars = c("groupPartner", "groupMutual"),
-#            prob = 0.95)
-# 
-# (group_diff <- emmeans(model, pairwise ~ group))
-# 
-# estimate_contrasts(model, test = "bf", bf_prior = model)
+# Assumptions
+
+# Homogénéité de la variance (les groupes ont une variance similaire) -> À utiliser avec précaution
+check_homogeneity(s1.anova.expressed_emotions)
+
+# Normalité des résidus
+s1.anova.expressed_emotions.normality_distribution <- plot(check_normality(s1.anova.expressed_emotions))
+s1.anova.expressed_emotions.normality_plot <- plot(check_normality(s1.anova.expressed_emotions), type = "qq", detrend = TRUE)
+
+s1.anova.expressed_emotions.assumptions <- s1.anova.expressed_emotions.normality_distribution + s1.anova.expressed_emotions.normality_plot
