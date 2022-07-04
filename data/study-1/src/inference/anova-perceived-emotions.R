@@ -3,6 +3,8 @@ library(tidyverse)
 library(afex)
 library(papaja)
 library(emmeans)
+library(performance)
+library(effectsize)
 
 theme_set(theme_apa(box = TRUE))
 
@@ -43,6 +45,14 @@ s1.anova.visit_count.graph <- ggplot(s1.visit_count, aes(x = group, y = value, c
   ) +
   NULL
 
+# Homogénéité de la variance (les groupes ont une variance similaire) -> À utiliser avec précaution
+check_homogeneity(s1.anova.visit_count)
+
+# Normalité des résidus
+plot(check_normality(s1.anova.visit_count))
+plot(check_normality(s1.anova.visit_count), type = "qq")
+plot(check_normality(s1.anova.visit_count), type = "qq", detrend = TRUE)
+
 # Total Visit Duration
 s1.total_visit_duration <- s1.et_data_tidy %>%
   filter(
@@ -75,27 +85,10 @@ s1.anova.total_visit_duration.graph <- ggplot(s1.total_visit_duration, aes(x = g
   ) +
   NULL
 
-## Bayes
-## Bayes
+# Homogénéité de la variance (les groupes ont une variance similaire) -> À utiliser avec précaution
+check_homogeneity(s1.anova.total_visit_duration)
 
-# library(easystats)
-# library(rstanarm)
-# library(see)
-# 
-# model.visit <- stan_glm(value ~ group, data = s1.visit_count, prior = normal(116.5, 49.115))
-# posteriors.visit <- get_parameters(model.visit)
-# describe_posterior(model.visit, test = c("all"), rope_range = c(-25, 25))
-# report(model.visit)
-# plot(estimate_means(model.visit))
-# estimate_contrasts(model.visit, test = "bf", bf_prior = model.visit)
-# 
-# ggplot(posteriors.visit) +
-#   geom_density(aes(x = groupPartner), fill = "orange", alpha = 0.7) +
-#   geom_density(aes(x = groupMutual), fill = "violet", alpha = 0.7) +
-#   NULL
-# 
-# model.duration <- stan_glm(value ~ group, data = s1.total_visit_duration, prior = normal(49.978, 27.351))
-# describe_posterior(model.duration, test = c("all"), rope_range = c(-4, 4))
-# report(model.duration)
-# plot(estimate_means(model.duration))
-# estimate_contrasts(model.duration, test = "bf", bf_prior = model.duration)
+# Normalité des résidus
+plot(check_normality(s1.anova.total_visit_duration))
+plot(check_normality(s1.anova.total_visit_duration), type = "qq")
+plot(check_normality(s1.anova.total_visit_duration), type = "qq", detrend = TRUE)
