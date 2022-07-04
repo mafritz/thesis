@@ -241,7 +241,7 @@ maf.plot_means_comparison(s1.aggregated_emotions, aes(x = group, y = n, color = 
   theme(legend.position = "none")
 ```
 
-Assumptions check for the ANOVA model highlighted major discrepancies in the distribution of residuals, suggesting violation of the assumption of normality, as illustrated in Figure \@ref(anova-expressed-emotions-assumptions-caption) The results of the omnibus ANOVA and of the individual comparisons are therefore not provided.
+Assumptions check for the ANOVA model highlighted a discrepancy in the distribution of residuals, suggesting violation of the assumption of normality, as illustrated in Figure \@ref(anova-expressed-emotions-assumptions-caption) The results of the omnibus ANOVA and of the individual comparisons are therefore not provided.
 
 (ref:anova-expressed-emotions-assumptions-caption) Assumptions check on the ANOVA model for expressing emotions revealed violation of the normality of residuals assumption. The test of hypothesis H1 is therefore withdrawn.
 
@@ -252,34 +252,6 @@ s1.anova.expressed_emotions.assumptions
 ### Differences in Perceiving Emotions
 
 The perception of the emotional information is divided in emotional information processing and emotional information seeking.
-
-#### Processing Emotional Information
-
-Participants spent on average `r maf.print_m_sd(s1.total_visit_duration$value, TRUE, TRUE)` seconds looking at any part of the perceiving-monitoring zone of the interface, which amounts to 4.28% of the total task time. Participants in the *Self-Centered* condition spent `r maf.print_m_sd(s1.total_visit_duration %>% filter(group == "Self") %>% pull(value), FALSE, TRUE)` seconds, whereas this time roughly doubles in the *Partner-Oriented* (`r maf.print_m_sd(s1.total_visit_duration %>% filter(group == "Partner") %>% pull(value), FALSE, FALSE)`) and the *Mutual-Modeling* (`r maf.print_m_sd(s1.total_visit_duration %>% filter(group == "Mutual") %>% pull(value), FALSE, FALSE)`) conditions, for which time differed slightly (see Figure \@ref(fig:s1-total-visit-duration-graph)).
-
-(ref:s1-total-visit-duration-graph-caption) Total time (in seconds) spent looking at the perceiving-monitoring zone of the interface. Bars represent 95% confidence intervals.
-
-```{r s1-total-visit-duration-graph, fig.cap="(ref:s1-total-visit-duration-graph-caption)", out.width="60%", fig.align="center"}
-maf.plot_means_comparison(s1.total_visit_duration, aes(x = group, y = value, color = group)) +
-  labs(x = NULL, y = "Seconds") +
-  theme(legend.position = "none")
-```
-
-An overall effect of the experimental condition on the time spent processing emotional information could be observed (`r apa_print(s1.anova.total_visit_duration)$full_result` in a one-way ANOVA). Pairwise comparisons, depicted in Table \@ref(tab:s1-total-visit-duration-comparison-table), confirm detectable differences between the *Self-Centered* vs *Partner-Oriented*, and *Self-Centered* vs *Mutual-Modeling* conditions, but not between the *Partner-Oriented* and *Mutual-Modeling* conditions. Hypothesis (*H2*) is therefore partially corroborated: the overall effect is detected, but with only two out of three comparisons between conditions.
-
-(ref:s1-total-visit-duration-caption) Pairwise comparisons of the thee interfaces with respect to total time spent looking at the perceiving-monitoring zone of the EAT (*p*-values are adjusted with the Tukey method).
-
-```{r s1-total-visit-duration-contrats}
-s1.anova.total_visit_duration.comp.summary %>%
-  mutate(p.value = round_ps_apa(p.value)) %>%
-  kable(
-    digits = 2,
-    caption = "(ref:s1-total-visit-duration-caption)\\label{tab:s1-total-visit-duration-comparison-table}",
-    caption.short = "Study 1: Pairwise Comparisons for Total Visit Duration.",
-    longtable = FALSE,
-    booktabs = TRUE
-  )
-```
 
 #### Seeking Emotional Information
 
@@ -310,19 +282,47 @@ s1.anova.visit_count.comp.summary %>%
   )
 ```
 
+#### Processing Emotional Information
+
+Participants spent on average `r maf.print_m_sd(s1.total_visit_duration$value, TRUE, TRUE)` seconds looking at any part of the perceiving-monitoring zone of the interface, which amounts to 4.28% of the total task time. Participants in the *Self-Centered* condition spent `r maf.print_m_sd(s1.total_visit_duration %>% filter(group == "Self") %>% pull(value), FALSE, TRUE)` seconds, whereas this time roughly doubles in the *Partner-Oriented* (`r maf.print_m_sd(s1.total_visit_duration %>% filter(group == "Partner") %>% pull(value), FALSE, FALSE)`) and the *Mutual-Modeling* (`r maf.print_m_sd(s1.total_visit_duration %>% filter(group == "Mutual") %>% pull(value), FALSE, FALSE)`) conditions, for which time differed slightly (see Figure \@ref(fig:s1-total-visit-duration-graph)).
+
+(ref:s1-total-visit-duration-graph-caption) Total time (in seconds) spent looking at the perceiving-monitoring zone of the interface. Bars represent 95% confidence intervals.
+
+```{r s1-total-visit-duration-graph, fig.cap="(ref:s1-total-visit-duration-graph-caption)", out.width="60%", fig.align="center"}
+maf.plot_means_comparison(s1.total_visit_duration, aes(x = group, y = value, color = group)) +
+  labs(x = NULL, y = "Seconds") +
+  theme(legend.position = "none")
+```
+
+An overall effect of the experimental condition on the time spent processing emotional information could be observed (`r apa_print(s1.anova.total_visit_duration)$full_result` in a one-way ANOVA). Pairwise comparisons, depicted in Table \@ref(tab:s1-total-visit-duration-comparison-table), confirm detectable differences between the *Self-Centered* vs *Partner-Oriented*, and *Self-Centered* vs *Mutual-Modeling* conditions, but not between the *Partner-Oriented* and *Mutual-Modeling* conditions. Hypothesis (*H2*) is therefore partially corroborated: the overall effect is detected, but with only two out of three comparisons between conditions.
+
+(ref:s1-total-visit-duration-caption) Pairwise comparisons of the thee interfaces with respect to total time spent looking at the perceiving-monitoring zone of the EAT (*p*-values are adjusted with the Tukey method).
+
+```{r s1-total-visit-duration-contrats}
+s1.anova.total_visit_duration.comp.summary %>%
+  mutate(p.value = round_ps_apa(p.value)) %>%
+  kable(
+    digits = 2,
+    caption = "(ref:s1-total-visit-duration-caption)\\label{tab:s1-total-visit-duration-comparison-table}",
+    caption.short = "Study 1: Pairwise Comparisons for Total Visit Duration.",
+    longtable = FALSE,
+    booktabs = TRUE
+  )
+```
+
 ## Discussion
 
-The planned analyses aimed at investigating whether a different use of, and access to, emotional information determine differences in use of an EAT during a computer-mediated collaborative task, which -- beside evident shortcomings in the *collaborative* nature -- may be considered representative of a CSCL application in distance learning. The reduced sample size upon which the analyses are based requires caution in interpreting the obtained results. The inter-individual differences in all measured dependent variables entail wide confidence intervals, whose source can be traced back to the many processes implicated in the task. Some of them may not be directly inherent to a genuine interest in emotional awareness, and may have potentially influenced participants' capacity in conveying and taking into account emotional awareness beyond their intentions. For instance, participants had to coordinate multiple functions, both cognitively and practically (e.g. writing on a keyboard, manipulating the EAT, etc.), under specific time constraints. Participants with less dexterity in writing at the keyboard or manipulating the interface may have found less time to dedicate to the EAT even if they were willing to. The small sample size cannot guarantee that these individual differences are sufficiently balanced by the randomized trial. Even in the presence of detectable effects, thus, the assessment of their relevance in terms of *practical* consequences is limited: their size is inherently high due to the small sample and they should not even be taken as reliable benchmarks for future studies [@albersWhenPowerAnalyses2018].
+The planned analyses aimed at investigating whether a different use of, and access to emotional information determine differences in use of an EAT during a computer-mediated collaborative task, which has been simulated in order to control from other sources of emotional information outside the manipulated interface of the EAT. The technical issues, due to articulated settings between the material and the simulation implicated in the experiment, have nevertheless reduced an already limited sample size. Furthermore, the inter-individual differences in all measured dependent variables entail wide confidence intervals, whose source can be traced back to the many processes implicated in the task. Some of them may not be directly inherent to a genuine interest in emotional awareness, and may have potentially influenced participants' capacity in conveying and taking into account emotional awareness beyond their intentions. For instance, participants had to coordinate multiple functions, both cognitively and practically (e.g. writing on a keyboard, manipulating the EAT, etc.), under specific time constraints. Participants with less dexterity in writing at the keyboard or manipulating the interface may have found less time to dedicate to the EAT even if they were willing to. The small sample size cannot guarantee that these individual differences are sufficiently balanced by the randomized trial. Even in the presence of detectable effects, thus, the assessment of their relevance in terms of *practical* consequences is limited: their size is inherently high due to the small sample and they should not even be taken as reliable benchmarks for future studies [@albersWhenPowerAnalyses2018].
 
-On the other hand, the controlled environment in which the *performance-based* measures have been obtained make them worth of interest in assessing to what extent the presence of an EAT serves as an affordance in conveying and taking notice of emotional awareness during a computer-mediated collaborative task. Eye-tracking measures, in particular, may be considered spontaneous reactions occurring to some extent even beyond participants' top-down control. The discussion of the obtained results may thus contribute to sketch a more defined outlook of the use of an EAT and provide cues for further hypotheses worth investigating or shortcomings to be taken into account in future studies.
+On the other hand, the controlled environment in which the *performance-based* measures have been obtained make them worth of interest in assessing to what extent the presence of an EAT serves as an affordance in conveying and taking notice of emotional awareness during a computer-mediated collaborative task. Eye-tracking measures, in particular, may be considered spontaneous reactions occurring to some extent even beyond participants' top-down control. The discussion of the obtained results, especially by using the most cautious lower confidence intervals, may thus contribute to sketch a more defined outlook of the use of an EAT and provide cues for further hypotheses worth investigating or shortcomings to be taken into account in future studies.
 
-### Expressing Emotions May not Depend Exclusively on Social Sharing
+### Participants Expressed Emotion From a Self-Centered Perspective
 
-In the first hypothesis, it has been posited that learners expression of emotions through the EAT varies depending on what use would be made of them, and what emotional information they have access to through the interface. More precisely, it has been stated that participants in the *Self-Centered* condition would express fewer emotions, compared to the *Partner-Oriented* and *Mutual-Modeling* condition, because of the absence of social sharing. It has also been posited that participants in the *Mutual-Modeling* condition would express more emotions than in the *Partner-Oriented* condition by virtue of an additional prompt in social sharing due to the direct and persistent comparison between one's own emotions and that of the partner.
+In the first hypothesis, it has been posited that learners expression of emotions through the EAT varies depending on what use would be made of them, and what emotional information they have access to through the interface. More precisely, it has been stated that participants in the *Self-Centered* condition would express fewer emotions, compared to the other, more socially-oriented, conditions. It has also been posited that participants in the *Mutual-Modeling* condition would express more emotions than in the *Partner-Oriented* condition by virtue of an additional prompt in social sharing due to the direct and persistent comparison between one's own emotions and that of the partner.
 
-Results failed to corroborate any of these assumptions given that neither an overall effect, nor differences in the comparison between each condition could be detected. The effect size to yield significant results was already ambitious with the planned $N=48$ sample size, and was therefore even further undercut by post-hoc exclusions, for which even observed effect sizes above $d = 0.5$ (*Self-Centered* vs *Partner-Oriented* and *Self-Centered* vs *Mutual Modeling*) cannot yield a discernible difference. Hypothesis *H1* must therefore be provisionally rejected, even though the observed directions and size of the effects are, in part at lest, consistent with an increased expression of the emotions with a more social-oriented interface.
+This hypothesis could not be tested due to violation of assumption about normality of residuals in the ANOVA model [@hoekstraAreAssumptionsWellKnown2012]. The number of emotion expressed may in fact be considered a tricky measure, since, depending on the specific number of emotion expected, it may be considered a countable measure, thus closer to a Poisson distribution rather than a Gaussian one. Notwithstanding, the usability test conducted in similar conditions yielded an average of emotions around 17, with no zero-inflated count, with a similar result also obtained in this experiment (see below for a small meta-analyis on the subject). As a consequence, the use of ANOVA could be warranted. The non-normality of residuals in this specific case may rather be due, thus, to an instrinsic inter-individual difference towards expressing emotions, which can result from a mix of dispositional stance [@schererEmotionEmotionalCompetence2010; @scherer2021] and technical skills in manipulating the interface. If this is the case, then small differences accountable to the interface should be expected. As a consequence, researchers planning for effects of contextual/external factors on the expression of emotion shall probably aim at a considerable sample size to discern the signal from the inter-individual noise.
 
-Notwithstanding the limits of the sample, it is also worth reversing the perspective and, rather, highlight how participants in all conditions expressed on average `r maf.print_m_sd(s1.aggregated_emotions$n, FALSE, TRUE)` emotions, that is more than 1 emotion every 2 minutes of task. In particular, participants in the *Self-Centered* condition expressed on average `r maf.print_m_sd(s1.aggregated_emotions %>% filter(group == "Self") %>% pull(n), FALSE, TRUE)` emotions despite knowing they were the only recipient of the information. This result could be considered, in principle at least, as support for *not* ruling out the interest of *intra-personal* interest in expressing emotions: the presence of an EAT could indeed serve as an *individual affordance* for emotional expression as a support for (implicit) emotion regulation. On the other hand, though, this result may also be explained by side effects of the experimental task. For instance, this number may be inflated by task compliance, since the overall experimental setting was overtly aimed at expressing emotions. Furthermore, the characteristics of the experimental task, whose timing is fixed and not determined by the participants' actions, may also have pushed participants to express emotions to *fill-in* idle time between enigmas or part of the task within each enigma, rather than for an urge to express and regulate their emotions. A more fine-grained analysis of the time of expression should therefore be taken into account.
+It may thus be interesting to reverse the perspective and, rather than seeking for differences, highlight how participants in all conditions expressed on average `r maf.print_m_sd(s1.aggregated_emotions$n, FALSE, TRUE)` emotions, that is more than 1 emotion every 2 minutes. In particular, participants in the *Self-Centered* condition expressed on average `r maf.print_m_sd(s1.aggregated_emotions %>% filter(group == "Self") %>% pull(n), FALSE, TRUE)` emotions despite knowing they were the only recipient of the information. This result could be considered, in principle at least, as supportive of the intra-personal function of emotional awareness, even in synchronous and collaborative settings*.* The presence of an EAT could have increased emotion alertness as a first step towards emotional expression, which may then be used as a form of (implicit) emotion regulation. On the other hand, though, this result may also be explained by side effects of the experimental task. For instance, this number may be inflated by task compliance, since the overall experimental setting was overtly aimed at expressing emotions. Furthermore, the characteristics of the experimental task, whose timing is fixed and not determined by the participants' actions, may also have pushed participants to express emotions to *fill-in* idle time between enigmas or part of the task within each enigma, rather than for an urge to express and regulate their emotions. A more fine-grained analysis of the time of expression should therefore be taken into account.
 
 All things considering, thus, the present contribution conveys limited and mixed evidence with respect to the interest for expressing emotions during a computer-mediated collaborative task. Nevertheless, the experimental settings elicited considerable variation in the number of emotions expressed: with an increased sample size, the experimental plan could potentially contribute to assess the matter more thoroughly, for instance using a planned equivalence test with the aim to rule out differences, rather than detecting ones [@fidlerEpistemicImportanceEstablishing; @lakensEquivalenceTestsPractical2017].
 
