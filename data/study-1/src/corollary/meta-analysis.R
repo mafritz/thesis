@@ -7,8 +7,8 @@ source(here("data/study-1/src/01-wrangle.R"))
 # Meta-analysis of expressing emotions
 s1.meta_analysis_expressing <- metamean(
     n = c(14, 35), 
-    mean = c(18.81, 13.80), 
-    sd = c(7.10, 5.68), 
+    mean = c(ux.expressing$tot |> mean(), 13.80), 
+    sd = c(ux.expressing$tot |> sd(), 5.68), 
     studlab = c("Fritz 2015", "Perrier 2017")
   )
 s1.meta_analysis_expressing.summary <- summary(s1.meta_analysis_expressing)

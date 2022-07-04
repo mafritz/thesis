@@ -26,9 +26,20 @@ s1.anova.visit_count.comp <- emmeans(s1.anova.visit_count, "group")
 s1.anova.visit_count.comp.p <- pairs(s1.anova.visit_count.comp)
 s1.anova.visit_count.comp.es <- eff_size(s1.anova.visit_count.comp, sigma = sigma(s1.anova.visit_count$lm), df.residual(s1.anova.visit_count$lm))
 
-s1.anova.visit_count.comp.summary <- as_tibble(s1.anova.visit_count.comp.p) %>% 
+s1.anova.visit_count.comp.summary <- as_tibble(s1.anova.visit_count.comp.p |> summary(infer = TRUE)) %>%
   mutate(
-    cohens.d = as_tibble(s1.anova.visit_count.comp.es)$effect.size
+    estimate = paste0(printnum(estimate), " [", printnum(lower.CL), ", ", printnum(upper.CL), "]")
+  ) |> 
+  select(-c(lower.CL, upper.CL)) |> 
+  mutate(
+    cohens.d = paste0(
+      printnum(as_tibble(s1.anova.visit_count.comp.es)$effect.size), 
+      " [", 
+      printnum(as_tibble(s1.anova.visit_count.comp.es)$lower.CL), 
+      ", ", 
+      printnum(as_tibble(s1.anova.visit_count.comp.es)$upper.CL),
+      "]"
+    )
   )
 
 # Graph Visit Count
@@ -66,9 +77,20 @@ s1.anova.total_visit_duration.comp <- emmeans(s1.anova.total_visit_duration, "gr
 s1.anova.total_visit_duration.comp.p <- pairs(s1.anova.total_visit_duration.comp)
 s1.anova.total_visit_duration.comp.es <- eff_size(s1.anova.total_visit_duration.comp, sigma = sigma(s1.anova.total_visit_duration$lm), df.residual(s1.anova.total_visit_duration$lm))
 
-s1.anova.total_visit_duration.comp.summary <- as_tibble(s1.anova.total_visit_duration.comp.p) %>% 
+s1.anova.total_visit_duration.comp.summary <- as_tibble(s1.anova.total_visit_duration.comp.p |> summary(infer = TRUE)) %>%
   mutate(
-    cohens.d = as_tibble(s1.anova.total_visit_duration.comp.es)$effect.size
+    estimate = paste0(printnum(estimate), " [", printnum(lower.CL), ", ", printnum(upper.CL), "]")
+  ) |> 
+  select(-c(lower.CL, upper.CL)) |> 
+  mutate(
+    cohens.d = paste0(
+      printnum(as_tibble(s1.anova.total_visit_duration.comp.es)$effect.size), 
+      " [", 
+      printnum(as_tibble(s1.anova.total_visit_duration.comp.es)$lower.CL), 
+      ", ", 
+      printnum(as_tibble(s1.anova.total_visit_duration.comp.es)$upper.CL),
+      "]"
+    )
   )
 
 # Graph Visit Duration
