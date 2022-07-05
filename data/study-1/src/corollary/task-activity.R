@@ -31,6 +31,9 @@ s1.emotion_per_task_activity <- s1.dew_emotions |>
   arrange(enigma_situation) |> 
   pivot_longer(
     -c(group, enigma_situation)
+  ) |> 
+  mutate(
+    name = str_to_sentence(name)
   )
 
 s1.emotion_per_task_activity.graph <- ggplot(s1.emotion_per_task_activity, aes(x = group, y = value, fill = group)) +
