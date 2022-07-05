@@ -22,9 +22,20 @@ s1.anova.expressed_emotions.comp <- emmeans(s1.anova.expressed_emotions, "group"
 s1.anova.expressed_emotions.comp.p <- pairs(s1.anova.expressed_emotions.comp)
 s1.anova.expressed_emotions.comp.es <- eff_size(s1.anova.expressed_emotions.comp, sigma = sigma(s1.anova.expressed_emotions$lm), df.residual(s1.anova.expressed_emotions$lm))
 
-s1.anova.expressed_emotions.comp.summary <- as_tibble(s1.anova.expressed_emotions.comp.p) %>% 
+s1.anova.expressed_emotions.comp.summary <- as_tibble(s1.anova.expressed_emotions.comp.p |> summary(infer = TRUE)) %>%
   mutate(
-    cohens.d = as_tibble(s1.anova.expressed_emotions.comp.es)$effect.size
+    estimate = paste0(printnum(estimate), " [", printnum(lower.CL), ", ", printnum(upper.CL), "]")
+  ) |> 
+  select(-c(lower.CL, upper.CL)) |> 
+  mutate(
+    cohens.d = paste0(
+      printnum(as_tibble(s1.anova.expressed_emotions.comp.es)$effect.size), 
+      " [", 
+      printnum(as_tibble(s1.anova.expressed_emotions.comp.es)$lower.CL), 
+      ", ", 
+      printnum(as_tibble(s1.anova.expressed_emotions.comp.es)$upper.CL),
+      "]"
+    )
   )
 
 # Plot

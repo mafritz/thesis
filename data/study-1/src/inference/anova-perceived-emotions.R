@@ -21,7 +21,7 @@ s1.visit_count <- s1.et_data_tidy %>%
     stat == "Sum"
   )
 
-s1.anova.visit_count <- aov_car(value ~ group + Error(1 | user), data = s1.visit_count)
+s1.anova.visit_count <- aov_4(value ~ group + (1 | user), data = s1.visit_count)
 s1.anova.visit_count.comp <- emmeans(s1.anova.visit_count, "group")
 s1.anova.visit_count.comp.p <- pairs(s1.anova.visit_count.comp)
 s1.anova.visit_count.comp.es <- eff_size(s1.anova.visit_count.comp, sigma = sigma(s1.anova.visit_count$lm), df.residual(s1.anova.visit_count$lm))
