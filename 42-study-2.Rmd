@@ -90,41 +90,48 @@ Compared with the interface used in the study illustrated in the previous chapte
 
 According to Boehner and colleagues [-@boehnerHowEmotionMade2007, p. 207], "success of [an affect-aware] system is measured by whether users find the system's responses useful for interpreting, reflecting on, and experiencing their emotions". Based upon this perspective, the study introduces a tentative scale that aims at measuring Emotion Awareness Usefulness (EAU) with respect to 7 dimensions identified in the literature. The scale comprises 7 items expressing one of the 7 dimensions, for which participants expressed their accord on a scale from 1 (strongly disagree) to 10 (strongly agree) according to the item alone (*i.e.*, with no reference to the dimension):
 
+1.  **Frequency**. The frequency of use is a dimension used in different scales pertaining to Human-Computer Interaction and User Experience [@mackenzieHumanComputerInteractionEmpirical2013; @tullisMeasuringUserExperience2013], as it is the case in the System Usability Scale [@brookeSUSQuickDirty1996]. The more frequently a tool is used, the more useful it is perceived, especially when the use is voluntary.
+
+2.  **Affordance**. Affordance in this context broadly refers to the actions available through the EAT and where they take place [@normanDesignEverydayThings2013]. The presence of an EAT may prompt users to share their emotions, something they would not do without the presence of the tool [e.g., @parkinsonEmotionsDirectRemote2008; @rimeEmotionElicitsSocial2009; @vankleefInterpersonalDynamicsEmotion2018].
+
+3.  **Social Presence**. Social presence is a pivotal dimension in remote learning, providing support for learners isolation and feeling of loneliness [e.g., @kreijnsMeasuringPerceivedSocial2011; @jezegouCreerPresenceDistance2010]. Perceiving the emotions of colleagues can help learners to remember there are others in the same condition as they are.
+
+4.  Self-Understanding. Having emotions a strong influence on intra-personal functions [e.g., @broschImpactEmotionPerception2013; @levensonIntrapersonalFunctionsEmotion1999; @schererWhatAreEmotions2005], the presence of an EAT may contribute to a better self-assessment of the situation and its consequences on learners' behavior.
+
+5.  Understanding Others. The presence of the emotions of colleagues through the EAT may inform learners about what others are experiencing during the remote learning periods, providing information to build and update a mental model of the causes and consequences on their behavior [e.g., @dillenbourgSymmetryPartnerModelling2016; @vankleefEmergingViewEmotion2010; @vankleefEmotionalInfluenceGroups2017; @vankleefInterpersonalDynamicsEmotion2018]
+
+6.  Self-Other Comparison. Comparing one's own emotions with that of the colleagues can provide useful information, especially in situation of incertitude [e.g., @eligioEmotionUnderstandingPerformance2012; @molinariEmotionFeedbackComputermediated2013; @vandevenEnvyAdmirationEmotion2017]. The presence of the EAT may facilitate and prompt this comparison.
+
+7.  Self-Regulation. Emotion regulation is a pivotal phenomenon that allows learners to modify their emotional experience using different strategies, such as suppression or reappraisal, in order to maintain instrumental emotional states and modify disruptive ones [e.g., @arguedasAnalyzingHowEmotion2016; @grossEmotionRegulationCurrent2015; @grossHandbookEmotionRegulation2014; @jarvenojaRegulationEmotionsSocially2013]. The presence of the EAT, both in terms of learners own emotions and that of the colleagues, may facilitate regulatory processes.
+
 (ref:eau-table-caption) List of variables related to accesses, with description.
 
 ```{r eau-table}
 eau_description <- tibble::tribble(
   ~"#",
   ~"Dimension",
-  ~"Label",
-  ~"Description",
+  ~"Item",
   "1",
   "Frequency",
   "I used the tool frequently (e.g. every time I worked for the course).",
-  "The frequency of use is a dimension used in different scales pertaining to Human-Computer Interaction and User Experience. The more frequently a tool is used the more useful it is perceived especially when the use is voluntary.",
   "2",
   "Affordance",
-  "The use of the tool prompted me to share my emotions.", "Affordance in this context broadly refers to the actions available through the EAT and where they take place. The presence of an EAT may prompt users to share their emotions something they would not do without the presence of the tool",
+  "The use of the tool prompted me to share my emotions.", 
   "3",
   "Social Presence",
   "The use of the tool allowed me to feel less lonely during remote learning periods.",
-  "Social presence is a pivotal dimension in remote learning providing support for learners isolation and feeling of loneliness. Perceiving the emotions of colleagues can help learners to remember there are others in the same condition as they are.",
   "4",
   "Self-Understanding",
   "The use of the tool allowed me to better understand my emotions.",
-  "Having emotions a strong influence on intra-personal functions, the presence of an EAT may contribute to a better self-assessment of the situation and its consequences on learners' behavior.",
   "5",
   "Understanding Others",
   "The use of the tool allowed me to better understand the emotions of my colleagues.",
-  "The presence of the emotions of colleagues through the EAT may inform learners about what others are experiencing during the remote learning periods providing information to build and update a mental model of the causes and consequences on their behavior",
   "6",
   "Self-Other Comparison",
   "The use fo the tool allowed me to compare my emotions with those of my colleagues.",
-  "Comparing one's own emotions with that of the colleagues can provide useful information especially in situation of incertitude. The presence of the EAT may facilitate and prompt this comparison.",
   "7",
   "Self-Regulation",
-  "The use of the tool allowed me to regulate my emotions.",
-  "Emotion regulation is a pivotal phenomenon that allows learners to modify their emotional experience using different strategies such as suppression or reappraisal in order to maintain instrumental emotional states and modify disruptive ones. The presence of the EAT both in terms of learners own emotions and that of the colleagues may facilitate regulatory processes."
+  "The use of the tool allowed me to regulate my emotions."
 )
 
 eau_description |> 
@@ -136,9 +143,8 @@ eau_description |>
     linesep = "\\addlinespace"
   ) |> 
   column_spec(1, width = "1em") |> 
-  column_spec(2, width = "7em") |> 
-  column_spec(3, width = "10em") |> 
-  column_spec(4, width = "15em") |> 
+  column_spec(2, width = "10em") |> 
+  column_spec(3, width = "22em") |> 
   kable_styling(latex_options = "HOLD_position")
 
 ```
