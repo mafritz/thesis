@@ -217,7 +217,7 @@ Finally, Gentsch and colleagues [-@gentschEffectsAchievementContexts2017] adopte
 
 To sum up, there is consistent evidence of a direct link between appraisal criteria and the holistic, conscious subjective feeling, which integrate the whole phenomenon. This link is particularly evident when the subjective feeling is represented by a lexicalized emotion: a word carrying semantic emotional meaning. The link is nevertheless probabilistic in nature, and can be influenced by contextual as well as individual characteristics such as emotion knowledge, emotional vocabulary, or culture. At the same time, lexicalized emotion can also be projected into affective spaces determined by dimensions driven by a componential approach. In this regard, there is consistent evidence that four dimensions are necessary to account for the differentiation of emotional experience.
 
-## Emotional Competence from a Componential Perspective
+## Emotional Competence from a Componential Perspective {#emotional-competence-cpm}
 
 The adoption of the CPM as the framework of reference presents another interesting aspects: disposing of an underlying mechanism upon which the overarching concept of *emotional expertise* as defined by @hoemann2021 can be clarified. In fact, Scherer [@schererComponentialEmotionTheory2007] proposes to adopt the term *emotional competence* and postulates that this phenomena can be informed by the CPM.
 
