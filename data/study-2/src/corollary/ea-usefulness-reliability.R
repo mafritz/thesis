@@ -17,11 +17,13 @@ s2.ea_usefulness.wider <- s2.ea_usefulness %>%
     values_from = "value"
   )
 
-#names(s2.ea_usefulness.wider) <- str_replace_all(names(s2.ea_usefulness.wider), pattern = " ", replacement = "_")
-#names(s2.ea_usefulness.wider) <- str_replace_all(names(s2.ea_usefulness.wider), pattern = "-", replacement = "_")
+# names(s2.ea_usefulness.wider) <- str_replace_all(names(s2.ea_usefulness.wider), pattern = " ", replacement = "_")
+names(s2.ea_usefulness.wider) <- str_replace_all(names(s2.ea_usefulness.wider), pattern = "-", replacement = "_")
 
 s2.ea_usefulness_scale.all <- s2.ea_usefulness.wider %>%
-  select(Frequency:`Self-Regulation`)
+  select(Frequency:`Self_Regulation`)
+
+s2.ea_usefulness_scale.reliability <- s2.ea_usefulness_scale.all |> reliability()
 
 s2.eau.unidim <- unidim(s2.ea_usefulness_scale.all)
 s2.eau.unidim.alpha <- alpha(s2.ea_usefulness_scale.all)

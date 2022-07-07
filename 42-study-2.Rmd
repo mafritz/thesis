@@ -411,15 +411,23 @@ Two types of analysis will be conducted to explore the structure and reliability
 
 #### Uni-Dimensionality
 
-For determining the existence of a single, common factor, there is a growing consensus in consideringthat Cronbach's $\alpha$ is not the most adequate choice [see for exemple @hayesUseOmegaRather2020; @revelleReliabilityTutorial2019; @sijtsmaUseMisuseVery2009]. In the R package psych [@revellePsychProceduresPsychological2021], used here in version `r packageVersion("psych")`, Revelle proposes an exploratory index of unidimensionality through the *unidim* function, described in the documentation of the package as follows:
+For determining the existence of a single, common factor, there is a growing consensus in considering that Cronbach's $\alpha$ is not the most adequate choice [see for exemple @hayesUseOmegaRather2020; @revelleReliabilityTutorial2019; @sijtsmaUseMisuseVery2009]. In this regard, @revelleReliabilityTutorial2019 suggest that more than one indicator of the psychometric properties of the scale should be reported. The table below illustrates indicators of reliability computed using the psych R package [@revellePsychProceduresPsychological2021], used here in version `r packageVersion("psych")`.
+
+| $\omega_h$ | $\alpha$ | $\omega_{tot}$ | Uni  | r.fit | fa.fit | max.split | min.split | mean.r | med.r |
+|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+| 0.6        | 0.86     | 0.9            | 0.86 | 0.92  | 0.93   | 0.88      | 0.71      | 0.46   | 0.35  |
+
+: Reliability measures of the EAU scale
+
+All indicators seem to converge on moderate to high values, which corroborates the reliability of the scale. For the purpose of this study, particular attention is focused on the *Uni* indicator, which is computed through the *unidim* function of the psych package (*ibid*.). The function is described as follows:
 
 > There are a variety of ways of assessing whether a set of items measures one latent trait. unidim is just one more way. If a one factor model holds in the data, then the factor analytic decomposition F implies that FF' should reproduce the correlations with communalities along the diagonal. In this case, the fit FF' should be identical to the correlation matrix minus the uniquenesses. unidim is just the ratio of these two estimates. The higher it is, the more the evidence for unidimensionality.
 
-Results of fitting the *unidim* approach to the EAU yields a unidimensionality index of `r s2.eau.unidim$uni[1] |> printnum()`, with a fit of the average correlation to the matrix of `r s2.eau.unidim$uni[2] |> printnum()`, suggesting the presence of a unidimensional factor. As a comparison, the more traditional Cronbach's coefficient is also promising, with a raw $\alpha$ of `r s2.eau.unidim.alpha$total$raw_alpha |> printnum()`.
+Results of fitting the *unidim* approach to the EAU yields a unidimensionality index of `r s2.eau.unidim$uni[1] |> printnum()`, with a fit of the average correlation to the matrix of `r s2.eau.unidim$uni[2] |> printnum()`, suggesting that the scale can in principle be reduced to a unidimensional, latent factor.
 
 #### Exploratory Factor Analysis
 
-The exploratory factor analysis will be conducted in two steps using the psych R package [@revellePsychProceduresPsychological2021] version `r packageVersion("psych")`. First, a scree test is conducted to determine the number of factors that account for the greatest variance. Then, this number of factors is used in an exploratory factor analysis to retrieve the loading of the seven dimensions of the EAU on the suggested number of factors.
+Even though the scale provides a good approximation for a single factor, it is still worth examining if more than one factor better fit the structure. The exploratory factor analysis will be conducted in two steps using again the psych R package [@revellePsychProceduresPsychological2021] version `r packageVersion("psych")`. First, a scree test is conducted to determine the number of factors that account for the greatest variance. Then, this number of factors is used in an exploratory factor analysis to retrieve the loading of the seven dimensions of the EAU on the suggested number of factors.
 
 The scree test pictured in Figure \@ref(fig:sc-scree-plot-graph) suggests that three factors account for a fair amount of variance, with small gain achieved by adding a fourth or fifth one.
 
@@ -539,7 +547,7 @@ In this regard, all the expectations were basically confirmed in the *Demo* surv
 
 ### Inconclusive, But Promising Settings to Introduce Emotional Competence in the Picture
 
-### No Recollection of the Emotional Experience Whatsoever 
+### No Recollection of the Emotional Experience Whatsoever
 
 ### Consistency Between Classes Suggests No Interacting Effect
 
