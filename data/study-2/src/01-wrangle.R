@@ -48,7 +48,8 @@ s2.perceived_emotions_frequency <- s2.perceived_emotions_frequency %>%
   mutate(
     label_fr = as_factor(label_fr),
     label_en = as_factor(label_en),
-    agent = factor(agent, c("Self", "Class", "Observed"))
+    agent = factor(agent, c("Self", "Class", "Observed")),
+    avg_frequency = rescale(avg_frequency, c(1,5))
   )
 
 # Import SUS score
