@@ -12,7 +12,7 @@ theme_set(theme_apa(box = TRUE))
 s2.perceived_emotions_frequency.graph <- s2.perceived_emotions_frequency %>%
   filter(agent != "Observed") |> 
   ggplot(aes(x = agent, y = avg_frequency, color = agent)) +
-  geom_hline(aes(yintercept = avg_frequency), color = "gray", alpha = 0.6, data = s2.perceived_emotions_frequency |> filter(agent == "Observed")) + 
+  geom_hline(aes(yintercept = avg_frequency), color = "gray", alpha = 0.6, size = 1, data = s2.perceived_emotions_frequency |> filter(agent == "Observed")) + 
   stat_summary(fun = mean_cl_normal, geom = "errorbar", aes(group = agent, color = agent), width = 0.4) +
   stat_summary(fun = mean, geom = "point", aes(group = agent, color = agent), size = 3, shape = 15) +
   facet_wrap(~label_en) +

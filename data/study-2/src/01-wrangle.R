@@ -2,6 +2,7 @@
 
 library(tidyverse)
 library(here)
+library(scales)
 
 # Import DEW expressed emotions
 s2.expressed_emotions <- read_csv(here("data/study-2/data/transformed/dew-emotions.csv"))
