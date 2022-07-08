@@ -42,7 +42,7 @@ sc.appraisal.descriptive.absolute <- sc.dew_combined_emotions %>%
   relocate(Setting, .before = Participants)
 
 sc.appraisal.descripitve.comparison <- sc.dew_combined_emotions %>% 
-  group_by(source) %>% 
+  group_by(condition) %>% 
   summarise(
     Participants = n_distinct(user),
     Observations = n(),
@@ -50,11 +50,8 @@ sc.appraisal.descripitve.comparison <- sc.dew_combined_emotions %>%
     `Control/Power` = paste0(printnum(mean(y)), " (", printnum(sd(y)), ")")
   ) %>% 
   ungroup() %>% 
-  mutate(
-    source = if_else(source == "Experiment", "Synch./Collab.", "Asynch./Indiv.")
-  ) %>% 
   rename(
-    Setting = source
+    Setting = condition
   ) %>% 
   arrange(Setting)
 
@@ -332,9 +329,7 @@ sc.theoretical_feelings_disposition_circumplex <- sc.empirical_feelings_disposit
 
 # Empirical disposition scater plot
 (sc.empirical_space_comparison.graph <- sc.dew_combined_emotions %>%
-  mutate(
-    condition = if_else(source == "Experiment", "Synch./Collab.", "Asynch./Indiv.")
-  ) %>% 
+  filter(listed) |> 
   group_by(condition, feeling) %>% 
   summarise(
     mean_x = mean(x),

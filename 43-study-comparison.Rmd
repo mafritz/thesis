@@ -17,38 +17,70 @@ Sys.setenv(LANG = "en")
 source(here("data", "study-comparison", "comparison-export.R"), local = knitr::knit_global(), encoding = "UTF-8")
 ```
 
-This chapter provides an overall and comparative assessment about the use and perception of the Emotion Awareness Tool (EAT) using data collected in the two previous empirical chapters of the thesis, as well as in the usability test depicted in Section \@ref(dew-ux-test). In this regard, the chapter proposes four types of assessment related either to specific features of the EAT or its perception as a whole. First, the use of the two appraisal dimensions *Valence* and *Control/Power* that has been done through the two sliders of the interface. Second, the kind and proportion of subjective feelings expressed, either as part of the underlying affective space or not. Third, the computational model linking appraisal dimensions and subjective feelings in the adopted affective space. And last, the perceived usability of the tool, which comprises the efficacy, efficiency and satisfaction in using the EAT [@brookeSUSQuickDirty1996; @lewisItemBenchmarksSystem2018; @tullisMeasuringUserExperience2013].
+This chapter provides a general assessment of some of the fundamental features of the Emotion Awareness Tool (EAT) implemented in the thesis. To do so, the study will perform a sort of secondary data analysis on data collected through the usability test [@fritzReinventingWheelEmotional2015], briefly resumed in Section \@ref(dew-ux-test), and the two empirical contributions of Chapter \@ref(study-1) and Chapter \@ref(study-2). The structure of the chapter will therefore first align with the previous two chapters. First, the rationale of the study is proposed alongside the research questions. Second, a brief methodological section illustrates the datasets used in the analysis. The chapter then does not propose a result and discussion sections, but rather discuss the assessment with respect to the specific research questions.
 
 ## Study Rationale
 
-Taking advantage of the use of the EAT by different participants and in different conditions, the contribution aims at determining (1) to what extent participants exploited the theory-driven features of the tool, including the emotional structure provided by the underlying affective space (*i.e.*, the EATMINT circumplex adopted in both empirical contributions); and (2) whether there are observable differences in the use and perception of the tool with respect to the prototypical distance learning settings, that is, the Asynchronous and Individual setting (Asynch./Indiv.) of the previous chapter, and the Synchronous and Collaborative setting (Synch./Collab.) of Chapter \@ref(study-1) and the usability test. Naturally, the comparison between settings is not aimed at generalizing the use and perception of the EAT to the specific distance learning condition (*e.g.*, assess whether a particular feeling occurs more often when learners work individually rather than in pairs). This is clearly an overarching assessment that falls way outside the scope of the present contribution. Nonetheless, it is possible to take advantage of the two empirical studies to explore if the multipurpose vocation of the EAT can be sustained in two very different computer-mediated learning environments.
+Even though the use of an EAT is highly dependent on a serious of factors such as who is using it, when, and why, one of the main tenet of the thesis is that it is possible to provide a multi-purpose tool, which can be adapted to different situations. Taking advantage from the fact that the EAT has been deployed in three empirical settings presented in this contribution -- the usability test resumed from Fritz (2015) and the two previous empirical chapters -- data collected in each occasion can be integrated to provide a more thorough data analysis.
+
+More specifically, it is possible to distinguish between the synchronous and collaborative (Synch./Collab.) settings of the usability test and the experiment in Chapter \@ref(study-1) on the one hand, and the asynchronous and individual (Asynch./Indiv.) settings of the study in Chapter \@ref(study-2) on the other. By this, the aim is certainly not to draw inferences from the effect of different computer-mediated environments on the use of an EAT. On the contrary, consistently with the focus on internal validity of the thesis, the objective is rather to assess whether the same EAT can adapt to different settings. One of the central tenet of the thesis is, in fact, that researchers and practitioners interested in endowing computer-mediated learning environments with emotional awareness may do so by adapting a tool, whose central features may be of interest in a wide number of scenarios. At the same time, the EAT is also based upon specific theoretical and technical assumptions, such as the usefulness of implementing an emotion structure into the tool. A comprehensive analysis of data gathered in different settings, but based upon similar theoretical and technical postulates, can therefore represents a first assessment of the intrinsic qualities and shortcomings of the EAT.
+
+## Research Questions
+
+In this regard, the chapter proposes four types of assessment related either to specific features of the EAT or its perception as a whole. Each assessment focuses on a specific research question, presented hereafter.
+
+### Appraisal Dimensions as Meaningful Evaluation of Events
+
+The concept of appraisal is a central tenet of the entire thesis. It is the *glue* that puts together different theoretical assumptions, such as what an emotion *is* [@sanderModelsEmotionAffective2013; @schererWhatAreEmotions2005; @moorsAppraisalTheoriesEmotion2013; @scherer2019; @scherer2022], and pedagogical implications, such as how learners can take full advantage from an EAT in terms of self-reflection and strategic communication of their emotional experience to others [@boehnerHowEmotionMade2007; @cerneaSurveyTechnologiesRise2015; @molinariEmotionFeedbackComputermediated2013; @lavoueEmotionAwarenessTools2020]. Appraisal is technically translated into the interface with the use of sliders, upon which learners can evaluate the situation in a dimensional approach to emotion self-report. In the three empirical settings in which the EAT has been adopted, the *Valence* and *Control/Power* dimensions represented the appraisal criteria, which prompted a cognitive evaluation of the situation by learners. The first research question therefore relates to the use of the sliders as representation of the interest and instrumentality of the underlying appraisal dimensions.
+
+### Lexicalized Emotions as Representative of Learners' Subjective Feelings
+
+Another focal point concerns the symbolic representation of the whole emotional experience that learners can use to extrapolate inter-personal meaning making and/or send a strategic *token* that maximize inference of the *true* emotional episode in others [@grandjeanConsciousEmotionalExperience2008; @fontaineComponentsEmotionalMeaning2013; @ogarkovaFolkEmotionConcepts2013]. In the EAT, this role is conferred to a number of lexicalized emotions pre-compiled in the underlying affective space, which are meant to provide learners with meaningful options to coalesce the emotional experience in a practical and intuitive *token*. The second research questions therefore assess to what extent the lexicalized emotions proposed in the EATMINT circumplex met this requirement.
+
+### The Computational Model on Trial
+
+The core of the EAT relies on the computational model presented in Chapter \@ref(computational-model), whose fundamental tenet is that the holistic emotional experience can be predicted on the basis of the cognitive evaluation of the situation [@schererHumanEmotionExperiences2013; @fontaineLinearNonlinearRelationships2021; @scherer2018; @gentschEffectsAchievementContexts2017; @schererSemanticStructureEmotion2018]. The EAT harness this causal mechanism to provide a subset of lexicalized emotion that are most likely to occur, given the rating on the appraisal dimensions. In all three empirical settings, the EAT provided 3 suggestions as buttons, but also left participants to provide another emotion term either from the pre-compiled list (but not proposed as button) or outside the list. The third research questions investigates the efficacy of the computational model in providing learners with an *educated guess*, which was accepted as an accurate representation of learners subjective feeling.
+
+### Perceived Usability Beyond the Concrete Use
+
+Even though the concrete use of an EAT is the primary concern for an awareness tool, it may be influenced by a number of dispositional or situational factors, as illustrated by the abstract model of emotional awareness in Section \@ref(abstract-model-of-ea). In other words, the EAT may have a *potential* that is not fully expressed in the situation at hand. The perceived usability of the tool -- which comprises the efficacy, efficiency and satisfaction in using the EAT [@brookeSUSQuickDirty1996; @lewisItemBenchmarksSystem2018; @tullisMeasuringUserExperience2013] -- may therefore complement performance-based data in the assessment. The fourth research questions therefore refers to how the usability of the EAT has been rated across different uses.
 
 ## Methods
 
-This third empirical contribution can be considered a form of secondary data analysis [@westonRecommendationsIncreasingTransparency2019], grouping the datasets of the three empirical contributions where the EAT has been deployed. The analyses will be based over two combined datasets.
+This third empirical contribution can be considered a form of secondary data analysis [@westonRecommendationsIncreasingTransparency2019], grouping the datasets of the three empirical contributions where the EAT has been deployed. Data will be integrated in two datasets, which will be used to address the four research questions.
 
-The first consists in all the emotions that have been expressed through the EAT. This dataset comprises $N_{observations} =$ `r sc.dew_combined_emotions |> nrow()` produced by $N_{participants} =$ `r sc.dew_combined_emotions$user |> unique() |> length()`. Table \@ref(tab:sc-emotions-dataset-table) illustrates how observations and participants are divided between the three datasets, with two datasets attributed to the Synch./Collab. setting, and one to the Asynch./Indiv. setting.
+### Expressed Emotions Dataset
+
+The first dataset consists in all the emotions that have been expressed through the EAT. This dataset comprises $N_{observations} =$ `r sc.dew_combined_emotions |> nrow()` produced by $N_{participants} =$ `r sc.dew_combined_emotions$user |> unique() |> length()`. Table \@ref(tab:sc-emotions-dataset-table) illustrates how observations and participants are divided between the three datasets, with two datasets attributed to the Synch./Collab. setting, and one to the Asynch./Indiv. setting.
 
 (ref:sc-emotions-datasets-caption) Descriptive statistics in the rating of the two appraisal dimensions of the affective space
 
 ```{r sc-emotions-dataset-table}
 sc.emotions_allocation |> 
-  kable(
-    booktabs = TRUE,
-    digits = 2,
-    caption = "(ref:sc-emotions-dataset-caption)\\label{tab:sc-emotions-dataset-table}",
-    caption.short = "Datasets of expressed emotions",
-    longtable = FALSE,
-  )
+ kable(
+  booktabs = TRUE,
+  digits = 2,
+  caption = "(ref:sc-emotions-dataset-caption)\\label{tab:sc-emotions-dataset-table}",
+  caption.short = "Datasets of expressed emotions",
+  longtable = FALSE,
+ )
 ```
+
+### System Usability Scale Dataset
 
 The second composed dataset comprises the rating on the System Usability Scale [@brookeSUSQuickDirty1996], which was administered in the usability test and in the study of Chapter \@ref(study-2), but not in the experiment of Chapter \@ref(study-1). In total, the SUS has been rated by $N =$ 40 participants, 14 in the Synch./Collab. setting of the usability test, and 26 in the study of of Chapter \@ref(study-2).
 
-## Assessment of the Use of Appraisal Dimensions
+### Analyses
 
-The first theory-driven feature of the EAT under scrutiny are the two sliders, which represent the appraisal dimensions through which the eliciting event is evaluated [@schererAppraisalConsideredProcess2001; @schererDynamicArchitectureEmotion2009; @schererWhatAreEmotions2005]. As a reminder, the EATMINT circumplex adopts the *Valence* and *Control/Power* appraisal dimensions to prompt the evaluation of the eliciting event. In both empirical contributions, the Valence dimension was prompted with the question *Is the situation pleasant?*. The Control/Power dimension was prompted with the question *Is the situation under your control?* in the Synch./Collab. contribution,and with *Can you modifiy the situation?* in the Asynch./Indiv. contribution. Both dimensions could be rated from a negative pole labeled *Not at all*, corresponding to a score of -100, to the positive pole labeled *Yes, absolutely*, corresponding to a score of 100. Each slider was sensitive to 1-point variation.
+The analyses will be comparative in nature, but without the use of inferential models, which are considered outside the scope of a preliminary assessment of a tool.
 
-### Overall Ratings of the Appraisal Dimensions
+## Results
+
+### Measures About the Use of Appraisal Dimensions
+
+The first theory-driven feature of the EAT under scrutiny are the two sliders, which represent the appraisal dimensions through which the eliciting event is evaluated [@schererAppraisalConsideredProcess2001; @schererDynamicArchitectureEmotion2009; @schererWhatAreEmotions2005]. As a reminder, the EATMINT circumplex adopts the *Valence* and *Control/Power* appraisal dimensions to prompt the evaluation of the eliciting event. In all empirical contributions, the Valence dimension was prompted with the question *Is the situation pleasant?* The Control/Power dimension was prompted with the question *Is the situation under your control?* in the Synch./Collab. contributions. For the Asynch./Individ. contribution, on the other hand, the question *Can you modify the situation?* was adopted instead. Both dimensions could be rated from a negative pole labeled *Not at all*, corresponding to a score of -100, to the positive pole labeled *Yes, absolutely*, corresponding to a score of 100. Each slider was sensitive to 1-point variation.
+
+#### Overall Ratings of the Appraisal Dimensions
 
 One of the interesting indications that can be assessed through the ratings on the appraisal dimensions is to what extent participants could make use of the full range of the slider, that is, whether they discriminate the eliciting events as being more or less pleasant, and more or less under their control. In this regard, Table \@ref(tab:sc-appraisal-descriptive-table) reports the number of participants expressing at least one emotion through the tool, the cumulative number of emotions expressed, as well as the overall mean and standard deviation of the two appraisal dimensions.
 
@@ -56,33 +88,33 @@ One of the interesting indications that can be assessed through the ratings on t
 
 ```{r sc-appraisal-descriptive-table}
 sc.appraisal.descriptive |> 
-  kable(
-    booktabs = TRUE,
-    digits = 2,
-    caption = "(ref:sc-appraisal-descriptive-caption)\\label{tab:sc-appraisal-descriptive-table}",
-    caption.short = "Comparison: descriptive of appraisal dimensions",
-    longtable = FALSE,
-  ) |>
-  row_spec(3, bold = T)
+ kable(
+  booktabs = TRUE,
+  digits = 2,
+  caption = "(ref:sc-appraisal-descriptive-caption)\\label{tab:sc-appraisal-descriptive-table}",
+  caption.short = "Comparison: descriptive of appraisal dimensions",
+  longtable = FALSE,
+ ) |>
+ row_spec(3, bold = T)
 ```
 
 Results show that, for the Valence dimension, the overall mean is almost perfectly neutral for the Asynch./Indiv. setting, whereas it is slightly positive (around 6 points) for the Synch./Collab. setting. In both settings, the rating of the Valence dimension yielded a high standard deviation of around 60 rating points. Data therefore corroborate that participants in both settings took advantage of the full range of the Valence dimension in a very similar way. With respect to the Control/Power dimension, the overall mean for the Asynch./Indiv. setting is slightly positive (around 5 points), whereas it is slightly negative for the Synch./Collab. setting (around -4 points). The standard deviations are also high, but more diverging, with a difference of more than 10 rating points (around 50 for Asynch./Indiv. against around 64 for Synch./Collab.). For this second appraisal dimension, thus, data highlight a slight divergences in central tendency, even though it remains close to the neutral point for both settings, and less variance in the rating of the Control/Power slider in the Asynch./Indiv. setting.
 
-The descriptive measures are complemented by Figure \@ref(fig:sc-appraisal-density-graph), which shows the density of the two appraisal dimensions for each learning setting. The plots highlight fairly normal and flat distributions (*i.e.*, Leptokurtic-like shapes) around the neutral point for all combinations, except for the Control/Power dimension in the Asnyhc./Indiv. setting, on the top-right plot, which has an higher peek of the distribution (*i.e.*, Platykurtic-like). This higher peek is nevertheless inflated by a single participant who expressed 65 emotions leaving the Control/Power dimension on the neutral point. The distributions also denote some *bumps* on the tails, especially in the positive tail of the Asynch./Indiv. and, to a lesser extent, both tails in the Synch./Collab. setting for the Control/Power dimension. These *bumps* represent ratings in which participants used the extreme poles of the sliders.
+The descriptive measures are complemented by Figure \@ref(fig:sc-appraisal-density-graph), which shows the density of the two appraisal dimensions for each learning setting. The plots highlight fairly specular and flat distributions (*i.e.*, Leptokurtic-like shapes) around the neutral point for all combinations, except for the Control/Power dimension in the Asnyhc./Indiv. setting, on the top-right plot, which has an higher peek of the distribution (*i.e.*, Platykurtic-like). This higher peek is nevertheless inflated by a single participant who expressed 65 emotions leaving the Control/Power dimension on the neutral point. The distributions also denote some *bumps* on the tails, especially in the positive tail of the Asynch./Indiv. and, to a lesser extent, both tails in the Synch./Collab. setting for the Control/Power dimension. These *bumps* represent ratings in which participants used the extreme poles of the sliders. There is therefore a certain trend in expressing the more extreme values on the appraisal dimensions.
 
 All things considering, though, participants in both settings seem to take advantage, individually, of the full range of the appraisal dimensions. Being the two dimensions related, though, the analysis must also consider their joint ratings, which is presented next.
 
-(ref:sc-appraisal-density-caption) Density plots of the two appraisal dimensions' ratings for the each distance learning setting.
+(ref:sc-appraisal-density-caption) Density plots of the two appraisal dimensions' ratings for the each setting.
 
 ```{r sc-appraisal-density-graph, fig.align='center', fig.cap="(ref:sc-appraisal-density-caption)"}
 sc.appraisal_density.graph
 ```
 
-### Joint Ratings of Valence and Control/Power
+#### Joint Ratings of Valence and Control/Power
 
 The second element of interest in the use of the appraisal dimensions is whether their use is independent from one another, in which case the dimensions are truly orthogonal, or if there is a sort of *multicollinearity* due to a high correlation between ratings (see Section \@ref(gew-limitations) for a more theoretical discussion on the subject). In other words, does it happen that participants rate a situation as pleasant, but without feeling control over it; or, conversely, a situation as unpleasant, but feeling control over it? Figure \@ref(fig:sc-appraisal-evaluation-graph) shows two Locally Estimated Scatterplot Smoothing (LOESS) functions [@jacobyLoessNonparametricGraphical2000] -- that is, two non-parametric regressions lines that best fit the data at hand -- applied to the points defined by the Valence appraisal on the x-axis, and the Control/Power appraisal on the y-axis.
 
-(ref:sc-appraisal-evaluation-caption) LOESS functions applied to Valence x Control/Power appraisals in the two distance learning settings.
+(ref:sc-appraisal-evaluation-caption) LOESS functions applied to Valence x Control/Power appraisals in the two settings.
 
 ```{r sc-appraisal-evaluation-graph, fig.align='center', out.width="80%", fig.cap="(ref:sc-appraisal-evaluation-caption)"}
 sc.appraisal_evaluation.graph
@@ -94,86 +126,86 @@ The fitted lines highlight a strong positive correlation between the Valence and
 
 ```{r sc-appraisal-combination-table}
 sc.appraisal_sign_comparison |>
-  select(-Setting) |> 
-  kable(
-    booktabs = TRUE,
-    digits = 2,
-    caption = "(ref:sc-appraisal-combination-caption)\\label{tab:sc-appraisal-combination-table}",
-    caption.short = "Comparison: appraisal combinations",
-    longtable = FALSE,
-  ) |> 
-  pack_rows("Asynch./Indiv. (26 participants)", 1, 3) |>
-  pack_rows("Synch./Collab. (35 participants)", 4, 6) |>
-  kable_styling(
-    latex_options = c("repeat_header")
-  )
+ select(-Setting) |> 
+ kable(
+  booktabs = TRUE,
+  digits = 2,
+  caption = "(ref:sc-appraisal-combination-caption)\\label{tab:sc-appraisal-combination-table}",
+  caption.short = "Comparison: appraisal combinations",
+  longtable = FALSE,
+ ) |> 
+ pack_rows("Asynch./Indiv. (26 participants)", 1, 3) |>
+ pack_rows("Synch./Collab. (35 participants)", 4, 6) |>
+ kable_styling(
+  latex_options = c("repeat_header")
+ )
 ```
 
 For both settings, the same sign combination was expressed at least one time by a greater number of participants, and proportionally more than the other combinations: almost half of the total (0.49) for the Asynch./Indiv. and almost three quarter of the total (0.72) for the Synch./Collab. setting. The opposite sign combination, on the other hand, accounts only for around one fifth of the total both for the Asynch./Indiv. (0.19) and the Synch./Collab. (0.21) settings. Finally, the neutral point was used in greater proportion in the Asynch./Indiv. setting, with almost one third (0.31) of the total, compared to the Synch./Collab. setting with a proportion of around one in twenty (0.06). As in the case of the density plots described above, this score is inflated by a single participant in the Asynch./Indiv. setting who expressed more than 60 emotions leaving the neutral point on the Control/Power dimension.
 
-Individual attitude towards rating both dimensions together should therefore be considered in the assessment. In this regard, it is interesting to compute the individual correlation between the rating of the *Valence* dimension and the *Control/Power* dimension, and then use the average of the correlation ($M_\rho$) as in indicator of whether the two sliders tend to co-vary or not. An $M_\rho \rightarrow 0$ would suggest the two dimensions are orthogonal, whereas $M_\rho \rightarrow \pm 1$ would suggest that the two dimensions are rated exactly in the same way (positive correlation), or that one is rated asymmetrically with respect to the other. Among the $N = 74$ participants that expressed at least 2 emotions (the lower bound to comput a correlation), the average correlation observed is of $M_\rho =$ `r sc.appraisal_correlation.overall$cor |> mean(na.rm = TRUE) |> printnum()` ($SD_\rho =$ `r sc.appraisal_correlation.overall$cor |> sd(na.rm = TRUE) |> printnum()`). The correlation is greater in the Asynch./Indiv. setting, with $M_\rho =$ 0.58 ($SD_\rho$ = 0.47) compared to the Synch./Collab. setting, where $M\rho =$ 0.42 ($SD_\rho =$ 0.41). In both settings, thus, there is a highly positive correlation between the two sliders, which tend to be rated symmetrically.
+Individual attitude towards rating both dimensions together should therefore be considered in the assessment. In this regard, it is interesting to compute the individual correlation between the rating of the *Valence* dimension and the *Control/Power* dimension, and then use the average of the correlation ($M_\rho$) as an indicator of whether the two sliders tend to co-vary or not. An $M_\rho \rightarrow 0$ would suggest the two dimensions are orthogonal, whereas $M_\rho \rightarrow \pm 1$ would suggest that the two dimensions are rated exactly in the same way (positive correlation), or that one is rated asymmetrically with respect to the other (negative correlation). Among the $N = 74$ participants that expressed at least 2 emotions (the lower bound to compute an intra-individual correlation), the average correlation observed is of $M_\rho =$ `r sc.appraisal_correlation.overall$cor |> mean(na.rm = TRUE) |> printnum()` ($SD_\rho =$ `r sc.appraisal_correlation.overall$cor |> sd(na.rm = TRUE) |> printnum()`). The correlation is greater in the Asynch./Indiv. setting, with $M_\rho =$ 0.58 ($SD_\rho$ = 0.47) compared to the Synch./Collab. setting, where $M\rho =$ 0.42 ($SD_\rho =$ 0.41). In both settings, thus, there is a highly positive correlation between the two sliders, which tend to be rated symmetrically.
 
-### Synthesis
+#### Synthesis
 
-All things considering, data suggest that participants take advantage of the full range of each appraisal dimensions individually, but, combined, the two appraisal dimensions are not used as orthogonal. On the contrary, there is strong correlation between the two ratings. This phenomena is consistent in both distance learning settings. To assess whether this is problematic, though, it is necessary to check for the subjective feelings that have been expressed with the appraisal ratings. In fact, it could be the case that participants predominantly expressed subjective feelings that are theoretically characterized by either positive Valence and positive Control/Power, or negative Valence and negative Control/Power, for that would explain the lack of orthogonality. The link between appraisal dimensions and subjective feelings is illustrated below in the chapter.
+All things considering, data suggest that participants take advantage of the full range of each appraisal dimensions individually, but, combined, the two appraisal dimensions are not used as orthogonal. On the contrary, there is strong correlation between the two ratings. This phenomena is consistent in both settings. To assess whether this is problematic, though, it is necessary to check for the subjective feelings that have been expressed with the appraisal ratings. In fact, it could be the case that participants predominantly expressed subjective feelings that are theoretically characterized by either positive Valence and positive Control/Power, or negative Valence and negative Control/Power, for that would explain the lack of orthogonality. The link between appraisal dimensions and subjective feelings is illustrated below in the chapter.
 
-## Assessment of the Subjective Feelings Expressed
+### Measures About the Subjective Feelings Expressed
 
-The second assessment concerns the expression of the subjective feeling, that is, the conscious experience of the emotional episode that is usually labeled using natural language words or idioms. [@grandjeanConsciousEmotionalExperience2008]. The assessment primarily aims at determining to what extent the feelings included in the underlying affective space -- that is, the labels that appeared on the buttons or in the dropw-down menu in the expressing-displaying part of the EAT -- met participants' need in terms of representation and differentiation of the conscious experience of the emotion [@barrettKnowingWhatYou2001; @erbasRoleValenceFocus2015]. As a reminder, the EATMINT circumplex proposes 20 subjective feelings, 5 for every combination of the two appraisal dimensions, which have been derived from previous studies [@molinariEmotionFeedbackComputermediated2013; @fritzReinventingWheelEmotional2015]. The 20 subjective feelings are `r combine_words(sort(sc.eatmint_circumplex$label_en))`. If these 20 subjective feelings meet learners' need in best describing their conscious experience, participants should have made a spare use of the possibility to express their feelings with natural language words or idioms falling outside this list. In this regard, it is worth comparing whether the feelings of the underlying affective space are consistent with participants needs in the two distance learning settings. Table \@ref(tab:sc-feelings-cumulative-comparison-table) illustrates the cumulative number of subjective feelings listed or not listed in the underlying affective space.
+The second assessment concerns the expression of the subjective feeling, that is, the conscious experience of the emotional episode that is usually labeled using natural language words or idioms. [@grandjeanConsciousEmotionalExperience2008; @fontaineComponentsEmotionalMeaning2013; @ogarkovaFolkEmotionConcepts2013]. The assessment primarily aims at determining to what extent the lexicalized emotions included in the underlying affective space met participants' need in terms of representation and differentiation of the conscious experience of the emotion [@barrettKnowingWhatYou2001; @erbasRoleValenceFocus2015]. As a reminder, the EATMINT circumplex proposes 20 lexicalized emotions: `r combine_words(sort(sc.eatmint_circumplex$label_en))`. If these 20 lexicalized emotions meet learners' need in best describing their subjective feeling, participants should have made a spare use of the possibility to express their feelings with natural language words or idioms falling outside this list. In this regard, it is worth comparing whether the lexicalized emotions of the underlying affective space are consistent with participants needs in the two settings. Table \@ref(tab:sc-feelings-cumulative-comparison-table) illustrates the cumulative number of expressed subjective feelings listed or not listed in the underlying affective space.
 
 (ref:sc-feelings-cumulative-comparison-caption) Cumulative number of subjective feelings expressed that were listed or not listed in the underlying affective space
 
 ```{r sc-feelings-cumulative-comparison-table}
 sc.listed_vs_not_listed |>
-  kable(
-    booktabs = TRUE,
-    digits = 2,
-    caption = "(ref:sc-feelings-cumulative-comparison-caption)\\label{tab:sc-feelings-cumulative-comparison-table}",
-    caption.short = "Comparison: listed vs. not listed feelings",
-    longtable = FALSE,
-  ) |>
-  row_spec(3, bold = T)
+ kable(
+  booktabs = TRUE,
+  digits = 2,
+  caption = "(ref:sc-feelings-cumulative-comparison-caption)\\label{tab:sc-feelings-cumulative-comparison-table}",
+  caption.short = "Comparison: listed vs. not listed feelings",
+  longtable = FALSE,
+ ) |>
+ row_spec(3, bold = T)
 ```
 
-Data show that in both settings, participants privileged the subjective feelings included in the EATMINT circumplex with proportions above .80. There is nevertheless a difference between the two conditions of more than ten percentage points, since the proportion of listed feelings for the Asynch./Indiv. setting is around 0.83 against 0.96 in the Synch./Collab. setting. A difference between the two settings is also reinforced by the number of distinct subjective feelings expressed outside the proposed list. In the Asnych./Non-Coll. setting, participants provided 30 distinct subjective feelings, mostly using single words, compared to 12 distinct subjective feelings in the Synch./Collab. setting (the list of the original natural language words or idioms, in french, proposed by each setting are included in the Appendices). These results suggest that, in the Asynch./Indiv. setting, participants may need a richer *emotional vocabulary* to express their conscious emotional experience, even though the 20 subjective feelings proposed by the underlying affective space cover their needs most of the time.
+Data show that in both settings, participants privileged the lexicalized emotions included in the EATMINT circumplex with proportions above .80. There is nevertheless a difference between the two conditions of more than ten percentage points, since the proportion of listed options for the Asynch./Indiv. setting is around 0.83 against 0.96 in the Synch./Collab. setting. A difference between the two settings is also reinforced by the number of distinct subjective feelings expressed outside the proposed list. In the Asnych./Non-Coll. setting, participants provided 30 distinct subjective feelings, mostly using single words, compared to 12 distinct subjective feelings in the Synch./Collab. setting. These results suggest that, in the Asynch./Indiv. setting, participants may need a richer *emotional vocabulary* [@erbasRoleValenceFocus2015; @barrettTheoryConstructedEmotion2017; @ogarkovaFolkEmotionConcepts2013] to express their conscious emotional experience, even though the 20 lexicalized emotions proposed by the underlying affective space cover their needs most of the time.
 
-Another aspect worth considering in the assessment of the subjective feelings is whether the relative frequency in expressing the feelings listed in the circumplex varies across distance learning settings. Table \@ref(tab:sc-feelings-frequency-comparison-table) reports the relative frequency of each one of the 20 subjective feelings in the EATMINT circumplex for both distance learning settings, as well as the absolute difference across learning settings. The use of the absolute difference highlights the fact that this comparison does not aim at determining whether participants in one learning setting tend to experience a specific feeling more or less than in the other setting, since the two empirical contributions proposed in the thesis are not fit for this purpose. The aim of the comparison is rather to determine whether the same underlying affective space may adapt to different *needs* in conveying the holistic emotional experience.
+Another aspect worth considering in the assessment of the subjective feelings is whether the relative frequency in expressing options listed in the circumplex varies across settings. Table \@ref(tab:sc-feelings-frequency-comparison-table) reports the relative frequency of each one of the 20 lexicalized emotions in the EATMINT circumplex for both settings, as well as the absolute difference across settings. The use of the absolute difference highlights the fact that this comparison does not aim at determining whether participants in one setting tend to experience a specific feeling more or less than in the other setting, since the two empirical contributions proposed in the thesis are not fit for this purpose. The aim of the comparison is rather to determine whether the same underlying affective space may adapt to different *needs* in conveying the holistic emotional experience.
 
-(ref:sc-feelings-frequency-comparison-caption) Relative frequencies of the 20 listed subjective feelings and absolute differences between distance learning settings
+(ref:sc-feelings-frequency-comparison-caption) Relative frequencies of the 20 listed subjective feelings and absolute differences between settings
 
 ```{r sc-feelings-frequency-comparison-table}
 sc.listed_feelings_frequency |>
-  select(-Quadrant) |> 
-  kable(
-    booktabs = TRUE,
-    digits = 2,
-    caption = "(ref:sc-feelings-frequency-comparison-caption)\\label{tab:sc-feelings-frequency-comparison-table}",
-    caption.short = "Comparison: relative frequency of listed feelings",
-    longtable = FALSE,
-  ) |> 
-  kable_styling(
-    latex_options = c("repeat_header")
-  ) |> pack_rows(
-    index = c(
-      "Quadrant I. Positive Valence x Positive Control/Power" = 5,
-      "Quadrant II. Positive Valence x Negative Control/Power" = 5,
-      "Quadrant III. Negative Valence x Negative Control/Power" = 5,
-      "Quadrant IV. Negative Valence x Positive Control/Power" = 5
-    )
+ select(-Quadrant) |> 
+ kable(
+  booktabs = TRUE,
+  digits = 2,
+  caption = "(ref:sc-feelings-frequency-comparison-caption)\\label{tab:sc-feelings-frequency-comparison-table}",
+  caption.short = "Comparison: relative frequency of listed feelings",
+  longtable = FALSE,
+ ) |> 
+ kable_styling(
+  latex_options = c("repeat_header")
+ ) |> pack_rows(
+  index = c(
+   "Quadrant I. Positive Valence x Positive Control/Power" = 5,
+   "Quadrant II. Positive Valence x Negative Control/Power" = 5,
+   "Quadrant III. Negative Valence x Negative Control/Power" = 5,
+   "Quadrant IV. Negative Valence x Positive Control/Power" = 5
   )
+ )
 ```
 
-Data illustrate roughly three different combinations. First, there are feelings with a high relative frequency in one setting and a low relative frequency in the other (*e.g.*, Amused, Relieved, Surprised or Satisfied). Second, there are feelings with high relative frequencies which are consistent across settings (*e.g.*, Attentive, Interested, Bored or Frustrated). Finally, there are feelings with low relative frequencies in both settings (*e.g.*, Envious, Disgusted, Relaxed, Irritated, Empathic). Results therefore corroborate the assumption that the EATMINT circumplex may adapt to different distance learning settings, even though some of its feelings are seldom chosen by participants. Whether these feelings should continue to be proposed as choices in the affective space is discussed at length in the concluding part of the contribution.
+Data illustrate roughly three different combinations. First, there are options with a high relative frequency in one setting and a low relative frequency in the other (*e.g.*, *Amused*, *Relieved*, *Surprised* or *Satisfied*). Second, there are options with high relative frequencies which are consistent across settings (*e.g.*, *Attentive*, *Interested*, *Bored* or *Frustrated*). Finally, there are feelings with low relative frequencies in both settings (*e.g.*, *Envious*, *Disgusted*, *Relaxed*, *Irritated*, *Empathetic*). Results therefore corroborate the assumption that the EATMINT circumplex may adapt to different settings, even though some of its lexicalized emotions are seldom chosen by participants. Whether these feelings should continue to be proposed as choices in the affective space is discussed below.
 
-## Assessment of the Link Between Appraisal Dimensions and Subjective Feelings
+### Measures About the Computational Model Linking Appraisal Dimensions and Subjective Feelings
 
-The two previous sections highlight that, separately, the appraisal dimensions and the subjective feelings composing the affective space seem to adapt to the two distant learning settings. The core of the DEW is nevertheless the theory-driven, computational link between the appraisal dimensions and the subjective feeling. It is therefore pivotal to assess whether the parsimonious model that suggests a subset of subjective feelings given a specific evaluation of the eliciting event according to *Valence* and *Control/Power* eases learners' task in conveying the holistic emotional experience. The link between appraisal dimensions and subjective feeling can be derived only for the emotions that are part of the underlying affective space, and therefore the following analysis will filter out subjective feelings not included in the EATMINT circumplex (see above).
+The two previous sections highlight that, separately, the appraisal dimensions and the lexicalized emotions composing the affective space seem to adapt to the two different settings. The core of the DEW is nevertheless the theory-driven, computational link between the appraisal dimensions and the subjective feeling. It is therefore pivotal to assess whether the parsimonious computational model that suggests a subset of subjective feelings given a specific evaluation of the eliciting event eases learners' task in conveying the holistic emotional experience. The link between appraisal dimensions and subjective feeling can be derived only for the emotions that are part of the underlying affective space, and therefore the following analysis will filter out subjective feelings not included in the EATMINT circumplex list.
 
-The link between appraisal dimensions and subjective feelings can be assessed mainly in two ways. The first is pragmatic, and pertains to the actual use of the tool with respect to the frequency by which learner's chose one of the subjective feelings proposed in the subset of buttons on the interface, rather than having to recur to the drop-down menu or typing the word themselves. The second is more theoretically-driven and consists in comparing the underlying affective space -- that is, the one *expected* from the theory -- with the *observed* affective space, which can be computed with the means of *Valence* and *Control/Power* every time a given subjective feeling has been chosen by learners.
+The link between appraisal dimensions and subjective feelings can be assessed mainly in two ways. The first is pragmatic, and pertains to the actual use of the tool with respect to the frequency by which learner's chose one of the options proposed in the subset of buttons on the interface, rather than having to recur to the drop-down menu or typing the word themselves. The second is more theoretically-driven and consists in comparing the underlying affective space -- that is, the one *expected* from the theory -- with the *observed* affective space, which can be computed with the means of *Valence* and *Control/Power* every time a given lexicalized emotion has been chosen by learners.
 
-### Frequency of Choice of the Proposed Subjective Feelings
+#### Frequency of Choice of the Proposed Subjective Feelings
 
-The pragmatic assessment consists in computing the frequency by which learner's *accepted* to click on one of the three proposed buttons labeled with a subjective feeling, given the evaluation provided through the two sliders representing the appraisal dimensions. In other words, the frequency represent the number of times that learners found one of the suggested subjective feeling as the *right* representation, or *best* approximation, of their holistic emotional experience. The frequency can therefore range from 0 -- that is, the learner never found the corresponding subjective feeling in the buttons and had to provide it through the drop-down menu or text input -- to 1, in which case the learner always *accepted* one of the three suggestions provided by the buttons.
+The pragmatic assessment consists in computing the frequency by which learner's *accepted* to click on one of the three proposed buttons labeled with a lexicalized emotion, given the evaluation provided through the two sliders representing the appraisal dimensions. In other words, the frequency represent the number of times that learners found one of the suggested options as the *right* representation, or *best* approximation, of their subjective feeling. The frequency can therefore range from 0 -- that is, the learner never found the corresponding subjective feeling in the buttons and had to provide it through the drop-down menu or text input -- to 1, in which case the learner always *accepted* one of the three suggestions provided by the buttons.
 
 This kind of measure, though, can be influenced, among other things, by (1) the sheer number of emotions expressed, with low numbers inflating either the opposite poles or the central tendency; and (2) individual characteristics such as conformity to accept a suggestion or the dexterity in choosing another feeling from the list. For these reasons, the frequency is computed for each participant that has expressed at least five emotions, that is $N = `r sc.button_vs_other.descriptive[1,2]`$ in the Asynch./Indiv. setting, and $N = `r sc.button_vs_other.descriptive[2,2]`$ in the Synch./Collab. setting. Results are shown in Table \@ref(tab:sc-frequency-button-table).
 
@@ -181,17 +213,17 @@ This kind of measure, though, can be influenced, among other things, by (1) the 
 
 ```{r sc-frequency-button-table}
 sc.button_vs_other.descriptive |> 
-  kable(
-    booktabs = TRUE,
-    digits = 2,
-    caption = "(ref:sc-frequency-button-caption)\\label{tab:sc-frequency-button-table}",
-    caption.short = "Comparison: frequency of clicks on the buttons",
-    longtable = FALSE,
-  ) |>
-  row_spec(3, bold = T)
+ kable(
+  booktabs = TRUE,
+  digits = 2,
+  caption = "(ref:sc-frequency-button-caption)\\label{tab:sc-frequency-button-table}",
+  caption.short = "Comparison: frequency of clicks on the buttons",
+  longtable = FALSE,
+ ) |>
+ row_spec(3, bold = T)
 ```
 
-Overall, the frequency of clicks on one of the suggested subjective feelings is $M = `r sc.button_vs_other.descriptive[3,3] |> printnum()`$ ($SD = `r sc.button_vs_other.descriptive[3,4] |> printnum()`$), which means that around 4 out of 5 emotions are expressed using one of the subjective feelings suggested through the three buttons on the interface. In the Asnyhc./Indiv. setting, the average frequency is $M = `r sc.button_vs_other.descriptive[1,3] |> printnum()`$ with a standard deviation of $SD = `r sc.button_vs_other.descriptive[1,4] |> printnum()`$. In the Synch./Collab. setting, the average frequency is $M = `r sc.button_vs_other.descriptive[2,3] |> printnum()`$, with a standard deviation of $SD = `r sc.button_vs_other.descriptive[2,4] |> printnum()`$. In both cases, thus, the frequency is well above the 0.5 threshold, which may be considered a random indicator whether the subjective feeling appeared or not in the proposed subset. There is nevertheless a difference of around 0.2 points between the two settings, with participants in the Synch./Collab. setting clicking more often on the buttons. The data, pictured in Figure \@ref(fig:sc-frequency-graph), reveals that most of the participants in the Synch./Collab. setting always *accepted* one of the proposed subjective feelings, whereas in the Asynch./Indiv. setting there is a more heterogenous disposition. This is consistent with evidence in the previous sections of the chapter indicating the need of a more nuanced emotional expression in the Asynch./Indiv. setting.
+Overall, the frequency of clicks on one of the suggested options is $M = `r sc.button_vs_other.descriptive[3,3] |> printnum()`$ ($SD = `r sc.button_vs_other.descriptive[3,4] |> printnum()`$), which means that around 4 out of 5 emotions are expressed using one of the lexicalized emotions suggested through the three buttons on the interface. In the Asnyhc./Indiv. setting, the average frequency is $M = `r sc.button_vs_other.descriptive[1,3] |> printnum()`$ with a standard deviation of $SD = `r sc.button_vs_other.descriptive[1,4] |> printnum()`$. In the Synch./Collab. setting, the average frequency is $M = `r sc.button_vs_other.descriptive[2,3] |> printnum()`$, with a standard deviation of $SD = `r sc.button_vs_other.descriptive[2,4] |> printnum()`$. There is nevertheless a difference of around 0.2 points between the two settings, with participants in the Synch./Collab. setting clicking more often on the buttons. The data, pictured in Figure \@ref(fig:sc-frequency-graph), reveals that most of the participants in the Synch./Collab. setting always *accepted* one of the proposed subjective feelings, whereas in the Asynch./Indiv. setting there is a more heterogeneous disposition. This is consistent with evidence in the previous sections of the chapter indicating the need of a more nuanced emotional expression in the Asynch./Indiv. setting.
 
 (ref:sc-frequency-graph-caption) Frequency of click on one of the three buttons labeled with a subjective feeling. Bars represent 95% confidence intervals.
 
@@ -199,38 +231,38 @@ Overall, the frequency of clicks on one of the suggested subjective feelings is 
 sc.button_vs_other.graph
 ```
 
-Overall, though, the parsimonious computational model fitted into the EAT seems to adequately connect the appraisals dimensions with the subjective feeling: participants took advantage of this feature on average in four out of five emotions expressed. These results seems also to corroborate the limited number of suggestions proposed by the tool. Three buttons, in fact, seem to provide learners with sufficient options to discriminate their feelings. The sheer frequency, though, does not guarantee that this mechanism *works* in the same way at every level of combination between the appraisal dimensions, for which a more detailed analysis is necessary.
+Overall, though, the parsimonious computational model fitted into the EAT seems to adequately connect the appraisals dimensions with the subjective feeling: participants took advantage of this feature on average in four out of five emotions expressed. These results seem also to corroborate the limited number of suggestions proposed by the tool. Three buttons, in fact, seem to provide learners with sufficient options to discriminate their subjective feelings. The sheer frequency, though, does not guarantee that this mechanism *works* in the same way at every level of combination between the appraisal dimensions, for which a more detailed analysis is necessary.
 
-### Expected Versus Observed Affective Space
+#### Expected Versus Observed Affective Space
 
-With the data collected every time a subjective feeling is expressed, it is possible to compute an observed position of the feeling on the circumplex. The observed position is computed in two steps. First, the means of the Valence and Control/Power dimensions are calculated for every feeling belonging to the underlying circumplex. For example, every time that the subjective feeling *Attentive* has been expressed, the corresponding ratings that the participant has made of the two appraisal dimensions are pooled to determine the means. Once the mean of Valence and Control/Power are obtained, they are injected into the computational model to retrieve the slope, which will be used to place the feeling on the circumplex. Table \@ref(tab:sc-empirical-feelings-disposition-table) reports the necessary figures to compute the observed slope and compares it with the expected slope, that is the position of the feeling on the EATMINT circumplex. The absolute difference between the two slopes is also provided. The greater the absolute difference, the wider the gap between the *theoretical* position proposed by the underlying affective space and the *empirical* rating made by participants.
+With the data collected every time a subjective feeling is expressed, it is possible to compute an observed position of the lexicalized emotion on the circumplex. The observed position is computed in two steps. First, the means of the *Valence* and *Control/Power* dimensions are calculated for every feeling belonging to the underlying circumplex. For example, every time that the subjective feeling *Attentive* has been expressed, the corresponding ratings that the participant has made of the two appraisal dimensions are pooled to determine the means. Once the mean of *Valence* and *Control/Power* are obtained, they are injected into the computational model to retrieve the slope, which will be used to place the feeling on the circumplex. Table \@ref(tab:sc-empirical-feelings-disposition-table) reports the necessary figures to compute the observed slope and compares it with the expected slope, that is the position of the feeling on the EATMINT circumplex. The absolute difference between the two slopes is also provided. The greater the absolute difference, the wider the gap between the *theoretical* position proposed by the underlying affective space and the *empirical* rating made by participants.
 
 (ref:sc-empirical-feelings-disposition-caption) Aggregated means of appraisal ratings for each of the 20 subjective feelings in the EATMINT circumplex, with observed and expected slopes.
 
 ```{r sc-empirical-feelings-disposition-table}
 sc.empirical_feelings_disposition |>
-  kable(
-    booktabs = TRUE,
-    digits = 2,
-    caption = "(ref:sc-empirical-feelings-disposition-caption)\\label{tab:sc-empirical-feelings-disposition-table}",
-    caption.short = "Comparison: observed appraisal ratings in EATMINT circumplex",
-    longtable = FALSE,
-    col.names = c("Feeling", "N", "Valence", "Contr./Pow.", "Obs. Slope", "Exp. Slope", "|Slope|")
-  ) |> 
-  kable_styling(
-    latex_options = c("repeat_header", "HOLD_position")
-  ) |> 
-  pack_rows(
-    index = c(
-      "Quadrant I. Positive Valence x Positive Control/Power" = 5,
-      "Quadrant II. Positive Valence x Negative Control/Power" = 5,
-      "Quadrant III. Negative Valence x Negative Control/Power" = 5,
-      "Quadrant IV. Negative Valence x Positive Control/Power" = 5
-    )
+ kable(
+  booktabs = TRUE,
+  digits = 2,
+  caption = "(ref:sc-empirical-feelings-disposition-caption)\\label{tab:sc-empirical-feelings-disposition-table}",
+  caption.short = "Comparison: observed appraisal ratings in EATMINT circumplex",
+  longtable = FALSE,
+  col.names = c("Feeling", "N", "Valence", "Contr./Pow.", "Obs. Slope", "Exp. Slope", "|Slope|")
+ ) |> 
+ kable_styling(
+  latex_options = c("repeat_header", "HOLD_position")
+ ) |> 
+ pack_rows(
+  index = c(
+   "Quadrant I. Positive Valence x Positive Control/Power" = 5,
+   "Quadrant II. Positive Valence x Negative Control/Power" = 5,
+   "Quadrant III. Negative Valence x Negative Control/Power" = 5,
+   "Quadrant IV. Negative Valence x Positive Control/Power" = 5
   )
+ )
 ```
 
-The results highlight a wide range of differences between the expected and the observed disposition of each feeling, going from almost absolute correspondence for *Bored* (0.22°) to more than a rotation of 90° for *Annoyed* (102.59°). The empirical position of some feelings is computed using only a few observations, such in the case of *Empathetic* (5), *Envious* (1), or *Disgusted* (5); whereas others show a good approximation with many observations, as it is the case for the aforementioned *Bored* (0.22° with 63 observations), *Amused* (7.20° with 94 observations), *Surprised* (5.72° with 35 observations), or *Stressed* (5.11° with 35 observations). The overall disposition of the observed affective space, though, corroborates the lack of orthogonality highlighted earlier in the chapter, with respect to the use of the two appraisal dimensions. In fact, comparing the graphical representations of the theoretical/expected circumplex in Figure \@ref(fig:sc-theoretical-feelings-graph) with the empirical/observed in Figure \@ref(fig:sc-empirical-feelings-graph) confirms that most of the subjective feelings have been chosen with congruent ratings of Valence and Control/Power, that is when both appraisal dimensions are either positive or negative. When the two appraisal dimensions are orthogonal, only *Surprised* and *Empathetic* in the bottom-right quadrant, and *Envious* and *Irritated* in the top-right quadrant -- based on only a few observations, though -- have been chosen with the expected combination of the appraisal dimensions. The other feelings of the orthogonal combination of appraisals moved either in the *upper* or *lower* quadrant depending on the Valence rating. That is, feelings from the Positive Valence x Negative Control/Power quadrant *moved* to the quadrant with both Positive appraisal dimensions; whereas feelings from the Negative Valence x Positive Control/Power *moved* to the quadrant with both Negative appraisal dimensions.
+The results highlight a wide range of differences between the expected and the observed disposition of each lexicalized emotion, going from almost absolute correspondence for *Bored* (0.22°) to more than a rotation of 90° for *Annoyed* (102.59°). The empirical position of some options is computed using only a few observations, such in the case of *Empathetic* (5), *Envious* (1), or *Disgusted* (5); whereas others show a good approximation with many observations, as it is the case for the aforementioned *Bored* (0.22° with 63 observations), *Amused* (7.20° with 94 observations), *Surprised* (5.72° with 35 observations), or *Stressed* (5.11° with 35 observations). The overall disposition of the observed affective space, though, corroborates the lack of orthogonality, highlighted earlier in the chapter, in the use of the two appraisal dimensions. In fact, the comparison between the graphical representations of the theoretical/expected circumplex in Figure \@ref(fig:sc-theoretical-feelings-graph) and the empirical/observed in Figure \@ref(fig:sc-empirical-feelings-graph) confirms that most of the subjective feelings have been chosen with congruent ratings of Valence and Control/Power, that is when both appraisal dimensions are either positive or negative. When the two appraisal dimensions are orthogonal, only *Surprised* and *Empathetic* in the bottom-right quadrant, and *Envious* and *Irritated* in the top-right quadrant -- based on only a few observations, though -- have been chosen with the expected combination of the appraisal dimensions. The other lexicalized emotions supposed to appear on the orthogonal combination of appraisals *moved* either in the upper or lower quadrant, depending on the Valence rating. That is, feelings from the Positive *Valence* x Negative *Control/Power* quadrant *moved* to the quadrant with both Positive appraisal dimensions; whereas feelings from the Negative *Valence* x Positive *Control/Power* *moved* to the quadrant with both Negative appraisal dimensions.
 
 (ref:sc-theoretical-feelings-graph-caption) The theoretical/expected disposition of the EATMINT circumplex, reported from Figure \@ref(fig:theoretical-feelings-graph) in Chapter \@ref(dew-chapter).
 
@@ -238,13 +270,13 @@ The results highlight a wide range of differences between the expected and the o
 sc.theoretical_feelings_disposition_circumplex.graph
 ```
 
-(ref:sc-empirical-feelings-graph-caption) The empirical/observed disposition of the feelings according to the actual rate of participants.
+(ref:sc-empirical-feelings-graph-caption) The empirical/observed disposition of the EATMINT's circumplex lexicalized emotions according to the actual average rate of participants.
 
 ```{r sc-empirical-feelings-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:sc-empirical-feelings-graph-caption)", fig.pos="p"}
 sc.empirical_feelings_disposition_circumplex.graph
 ```
 
-The phenomenon is consistent in both learning settings, with nevertheless some variations. Figure \@ref(fig:sc-empirical-feelings-comparison-graph) shows the disposition of feelings with respect to the mean Valence and Control/Power, therefore in a Cartesian plane rather than in a circumplex. The choice of a different format, though, is only dictated by the need to simplify the display of the information, minimizing overlapping; there is thus no change in the underlying algorithm. As Figure \@ref(fig:sc-empirical-feelings-comparison-graph) shows, the overall tendency of co-variation in the two appraisal dimensions permains. Nevertheless, in the Synch./Collab. setting, there is more consistency in the bottom-right quadrant, the one charactherized by Positive Valence x Negative Control. Three out of five feelings appears in the expected quadrant, and a fourth one -- *Relieved* -- is close to the edge with the top-right quadrant.
+The phenomenon is consistent in both learning settings, with nevertheless some variations. Figure \@ref(fig:sc-empirical-feelings-comparison-graph) shows the disposition of feelings with respect to the mean *Valence* and *Control/Power*, therefore in a Cartesian plane rather than in a circumplex. The choice of a different format, though, is only dictated by the need to simplify the display of the information, minimizing overlapping; there is thus no change in the underlying algorithm. As Figure \@ref(fig:sc-empirical-feelings-comparison-graph) shows, the overall tendency of co-variation in the two appraisal dimensions permains. Nevertheless, in the Synch./Collab. setting, there is more consistency in the bottom-right quadrant, the one characterized by Positive *Valence* x Negative *Control/Power*. Three out of five feelings appears in the expected quadrant, and a fourth one -- *Relieved* -- is close to the edge with the top-right quadrant.
 
 (ref:sc-empirical-feelings-comparison-graph-caption) Comparing the empirical disposition of the two learning settings.
 
@@ -252,19 +284,19 @@ The phenomenon is consistent in both learning settings, with nevertheless some v
 sc.empirical_space_comparison.graph
 ```
 
-### Synthesis
+#### Synthesis
 
 The assessment of the link between the appraisal dimensions and the subjective feeling yielded mixed, but overall promising, results. On the one hand, the overall *accuracy* of the dynamic algorithm was around 0.8, which means that four out of five subjective feelings expressed by participants were included in the three buttons suggested on the interface. The accuracy was lower in the Asynch./Indiv. setting, though, which may suggest the need of a more nuanced expression in these conditions.
 
-On the other hand, data clearly confirm a major issue with the Control/Power appraisal dimension, which has a high correlation with the Valence dimension, a phenomenon already highlighted in the limitations of the Geneva Emotion Wheel in Section \@ref(gew-limitations) and also observed in the usability test of the DEW illustrated in Section \@ref(dew-ux-test). The problem, though, does not seem to be unique to self-report tools. As already mentioned, Scherer and Fontaine [-@schererSemanticStructureEmotion2018] encountered a similar difficulty with the use of the GRID instrument [@fontaineComponentsEmotionalMeaning2013]. As advocated by the authors, this problem requires future studies to find better solution. In this regard, some options pertaining to the DEW will be provided in the general discussion of the thesis.
+On the other hand, data clearly confirm a major issue with the *Control/Power* appraisal dimension, which has a high correlation with the *Valence* dimension, a phenomenon already highlighted in the limitations of the Geneva Emotion Wheel in Section \@ref(gew-limitations) and also observed in the usability test of the DEW illustrated in Section \@ref(dew-ux-test). The problem, though, does not seem to be unique to self-report tools. As already mentioned, Scherer and Fontaine [-@schererSemanticStructureEmotion2018] encountered a similar difficulty with the use of the GRID instrument [@fontaineComponentsEmotionalMeaning2013]. As advocated by the authors, this problem requires future studies to find better solution.
 
-## Assessment of the Perceived Usability of the Tool
+### Assessment of the Perceived Usability of the Tool
 
 Finally, the EAT will be appraised with respect to its usability, that is the perceived efficiency, effectiveness and satisfaction in using the tool. A usability measure, the System Usability Scale [SUS, @brookeSUSQuickDirty1996], was administered in the Asynch./Indiv. empirical contribution, but not in the Synch./Collab. The SUS was nevertheless administered in the usability test in Fritz (2015), which used the same configuration and task of the Synch./Collab. setting (but without the experimental conditions). The SUS scores of the usability test ($N = 16$) will therefore be used for the Synch./Collab. setting, alongside the scores obtained in the Asynch./Indiv. setting of the present contribution ($N = 26$).
 
 The scale, using inverse rating for even items, allows to compute an overall score ranging from 0 (very poor perceived usability) to 100 (excellent perceived usability). Results of the SUS have been collected in the last decades in various published and unpublished reports. Thus, there is nowadays the possibility to better assess the overall score of the SUS, as well as of each of its ten items [@bangorDeterminingWhatIndividual2009; @lewisItemBenchmarksSystem2018; @sauroQuantifyingUserExperience2016].
 
-Concerning the overall score of the SUS, Sauro and Lewis [-@sauroQuantifyingUserExperience2016] extrapolated a curved grading scale from 241 industrial usability studies and surveys. According to this scale, the average SUS overall score is $M = 68$, but the same authors suggest that "it is becoming a common industrial goal to achieve a SUS of 80" [@lewisItemBenchmarksSystem2018, p. 161] as synonymous of a perceived good experience.
+Concerning the overall score of the SUS, Sauro and Lewis [-@sauroQuantifyingUserExperience2016] extrapolated a curved grading scale from 241 industrial usability studies and surveys. According to this scale, the average SUS overall score is $M = 68$. In the meantime, the same authors suggest that "it is becoming a common industrial goal to achieve a SUS of 80" [@lewisItemBenchmarksSystem2018, p. 161] as synonymous of a perceived good experience.
 
 Table \@ref(tab:sc-sus-overall-score-table) shows the SUS score for the two learning settings, as well as the weighted overall mean. With an overall score of $M =$ `r sc.sus_comparison$mean[3] |> printnum()` ($SD =$ `r sc.sus_comparison$sd[3] |> printnum()`), the EAT is perceived somehow halfway between the $M = 68$ empirical benchmark, and the target score of 80. As the table shows, the SUS score is consistent across the two learning settings, with a difference of less than 1 point.
 
@@ -272,16 +304,16 @@ Table \@ref(tab:sc-sus-overall-score-table) shows the SUS score for the two lear
 
 ```{r sc-sus-overall-score-table}
 sc.sus_comparison |> 
-  kable(
-    booktabs = TRUE,
-    digits = 2,
-    caption = "(ref:sc-sus-overall-score-caption)\\label{tab:sc-sus-overall-score-table}",
-    caption.short = "Comparison: overall score to the SUS",
-    longtable = FALSE,
-    col.names = c("Condition", "N", "M", "SD")
-  ) |>
-  row_spec(3, bold = T) |> 
-  kable_styling(latex_options = "HOLD_position")
+ kable(
+  booktabs = TRUE,
+  digits = 2,
+  caption = "(ref:sc-sus-overall-score-caption)\\label{tab:sc-sus-overall-score-table}",
+  caption.short = "Comparison: overall score to the SUS",
+  longtable = FALSE,
+  col.names = c("Condition", "N", "M", "SD")
+ ) |>
+ row_spec(3, bold = T) |> 
+ kable_styling(latex_options = "HOLD_position")
 ```
 
 Furthermore, Lewis and Sauro [-@lewisItemBenchmarksSystem2018] collected data from 166 unpublished industrial usability studies or surveys, each one comprising a mean of the SUS overall score. The 166 means were computed from a total of 11'855 surveys. From these data, the authors retrieved benchmarks for each of the ten items of the SUS to reach the $M = 68$ empirical mean, or the target score of 80. As a reminder, the SUS items are the following:
@@ -297,7 +329,7 @@ Furthermore, Lewis and Sauro [-@lewisItemBenchmarksSystem2018] collected data fr
 9.  I felt very confident using the system
 10. I needed to learn a lot of things before I could get going with this system
 
-Figure \@ref(fig:sc-sus-items-graph) depicts the score of each of the SUS items across learning settings. To ease the comparison, even items have already been reversed, so that for each item a higher score equals a higher perceived usability. The horizontal lines represent Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks to reach the target score of 80. The original benchmarks refers to the 1-to-5 rating and have therefore been multiplied by a factor of 1.4 to map to the 1-to-7 scale used in both administrations of the SUS. Also the benchmarks have already been reversed for even items to ease the comparison.
+Figure \@ref(fig:sc-sus-items-graph) depicts the score of each of the SUS items across settings. To ease the comparison, even items have already been reversed, so that for each item a higher score equals a higher perceived usability. The horizontal lines represent Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks to reach the target score of 80. The original benchmarks refers to the 1-to-5 rating and have therefore been multiplied by a factor of 1.4 to map to the 1-to-7 scale used in both administrations of the SUS. Also the benchmarks have already been reversed for even items to ease the comparison.
 
 (ref:sc-sus-items-graph-caption) SUS scores on the single items, with the horizontal lines representing Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks to reach the target score of 80, transformed to a 1-to-7 scale. Both items and benchmarks have already been reversed for even items. Bars represent 95% confidence intervals.
 
@@ -305,20 +337,30 @@ Figure \@ref(fig:sc-sus-items-graph) depicts the score of each of the SUS items 
 sc.sus_items.graph
 ```
 
-Data show substantial consistency across learning settings for most of the items, with differences in items SUS1 (frequency), SUS3 (ease of use), and SUS8 (intuition). The first item in particular is the one yielding the bigger discrepancy, with participants in the Synch./Collab. setting reporting a perspective use more frequent than the Asynch./Indiv. setting, which is consistent with the observed use, for instance in terms of number of emotions expressed. All in all, though, the EAT seems to possess an *intrinsic* perceived usability that holds -- for good and for bad -- in both distance learning settings.
+Data show substantial consistency across learning settings for most of the items, with differences in items SUS1 (frequency), SUS3 (ease of use), and SUS8 (intuition). The first item in particular is the one yielding the bigger discrepancy, with participants in the Synch./Collab. setting reporting a perspective use more frequent than the Asynch./Indiv. setting, which is consistent with the observed use, for instance in terms of number of emotions expressed. All in all, though, the EAT seems to possess an *intrinsic* perceived usability that holds -- for good and for bad -- in both settings.
 
 Comparing the single items to Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks highlights that half of the items are on-or-above the target, and half are below. The fact that all the odd items are below, and all even items are on-or-above the target may seem peculiar, but is consistent with the pattern of the benchmarks which are more demanding for odd items. Lewis and Sauro [-@lewisItemBenchmarksSystem2018] do not mention anything specific about this pattern, but implicitly exclude it could be determined by the negative formulation of odd items, since previous findings collected by the same authors [@sauroWhenDesigningUsability2011] seem to suggest that there is negligible impact of the negative formulation compared to a positive transformation of the odd items.
 
 According to the benchmarks, the EAT performs particularly bad in the frequency of use (SUS1) and in the confidence in the system (SUS9), which are two important dimensions of the scale. The integration of the different parts of the system (SUS5) also does not seem to convince learners, whereas ease of use (SUS3) and quickness of adoption (SUS7) remain below target, but less critically so. On the bright side, the EAT performs very well in learnability (SUS10), and well in consistency (SUS6). Furthermore, simplicity (SUS2), autonomy (SUS4), and intuition (SUS8) are aligned with the target score of 80.
 
-Feidakis and colleagues [-@feidakisProvidingEmotionAwareness2014] also used the SUS score to assess the usability of the *emot-control*, based on a valence x activation circumplex, on which 14 discrete emotional states are positioned. The overall SUS score they obtained on $N = 29$ is $M = 67.81$ ($SD$ not provided), thus around 7 points lower. Contrary to the present results, though, learners in Feidakis and colleagues (*ibid.*) reported a higher score on the item about frequency (SUS1).
+A more meaningful comparison of the usability of the EAT can be provided with Feidakis and colleagues [-@feidakisProvidingEmotionAwareness2014], who also used the SUS score to assess the usability of the *emot-control* (see the related works in Section \@ref(ea-in-computer-mediated-environment)). The overall SUS score obtained by the *emot-control* on $N = 29$ is $M = 67.81$ ($SD$ not provided), thus around 7 points lower. Contrary to the present results, though, learners in Feidakis and colleagues (*ibid.*) reported a higher score on the item about frequency (SUS1).
 
-The implications of the usability evaluation of the EAT will be integrated in the general discussion of the thesis, since they provide useful information that can be linked to broader aspects about emotional awareness and the tool more specifically. A preliminary synthesis nevertheless highlights that the overall perception of the usability of the EAT is fairly good, especially considering the lack of previous experience with this type of device. On the other hand, there are also critical indications, such as the prospected frequency of use or the confidence in the system, which must be carefully considered.
+A preliminary synthesis highlights that the overall perception of the usability of the EAT is fairly good, especially considering the lack of previous experience with this type of devices. On the other hand, there are also critical indications, such as the prospected frequency of use or the confidence in the system, which must be carefully considered.
+
+## Discussion
+
+### Appraising the Appraisals
+
+### EATMINT's Lexicalized Emotions Are Representative of Learners' Experience
+
+### A Good Enough Heuristics, Most of the Time
+
+### Usability Is Not Bad -- But It Is Not Enough
 
 ## Conclusion
 
-This chapter proposed an overall assessment of the use and perception of the EAT, as well as a comparison between the use in an asynchronous and individual distance learning environment, versus a synchronous and collaborative one. The primary purpose of the chapter was to determine to what extent the EAT meets learners' need, in particular by evaluating whether learners' take full advantage of the emotional structure implemented into the tool in expressing their emotional states. Results of the overall and comparative assessment provide mixed evidence.
+This chapter proposed an overall assessment of the use and perception of the EAT, as well as a comparison between the use in an asynchronous and individual environment, versus a synchronous and collaborative one. The primary purpose of the chapter was to determine to what extent the EAT meets learners' need, in particular by evaluating whether learners' take full advantage of the emotional structure implemented into the tool in expressing their emotional states. Results of the overall and comparative assessment provide mixed evidence.
 
-On the one hand, the tool and the underlying EATMINT affective space seem to adapt fairly well to different distance learning settings. For instance, the 20 subjective feelings proposed in the circumplexes seem to be sufficient to convey most of learners' emotional experiences. Furthermore, the algorithm linking the two appraisal dimensions with the proposed subjective feelings provided a good accuracy, consistent across learning settings. These indicators suggest that the EAT possesses a sort of *intrinsic* value, which may be generalized to different contexts. This does not mean, though, that the EAT will be perceived as useful regardless of other determinants, such as the task at hand or the overall instructional design. For instance, the comparison suggest that learners' may need a more nuanced emotional expression in an asynchronous and individual setting.
+On the one hand, the tool and the underlying EATMINT affective space seem to adapt fairly well to different settings. For instance, the 20 subjective feelings proposed in the circumplexes seem to be sufficient to convey most of learners' emotional experiences. Furthermore, the algorithm linking the two appraisal dimensions with the proposed subjective feelings provided a good accuracy, consistent across learning settings. These indicators suggest that the EAT possesses a sort of *intrinsic* value, which may be generalized to different contexts. This does not mean, though, that the EAT will be perceived as useful regardless of other determinants, such as the task at hand or the overall instructional design. For instance, the comparison suggest that learners' may need a more nuanced emotional expression in an asynchronous and individual setting.
 
 On the other hand, results also corroborate and extend some problems already emerged in the first test of the tool (Fritz, 2015), such as the lack of orthogonality of the two appraisal dimensions Valence and Control/Power, or issues with the prospected frequency of use and the confidence in the system. The issues, though, do not seem limited to technical elements of the EAT, but rather extend to more fundamental aspects of emotional awareness or the difficulty in determining an emotional structure that can be leveraged by users. As a consequence, they need a thorough and integrated perspective, which is provided next in the general discussion of the thesis.
