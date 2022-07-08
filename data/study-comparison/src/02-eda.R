@@ -11,6 +11,18 @@ theme_set(theme_apa(box = TRUE))
 source(here("data/study-comparison/src/01-wrangle.R"))
 source(here("data/utils/dew-utils.R"))
 
+# Allocation between sources
+sc.emotions_allocation <- sc.dew_combined_emotions |>
+  mutate(
+    Dataset = factor(source, levels = c("Usability Test", "Chapter 7", "Chapter 8"))
+  ) |> 
+  group_by(Dataset) |> 
+  summarise(
+    Setting = first(condition),
+    Participants = n_distinct(user),
+    Observations = n()
+  )
+
 # Appraisal dimensions
 
 sc.appraisal.descriptive.absolute <- sc.dew_combined_emotions %>% 

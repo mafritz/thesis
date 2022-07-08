@@ -17,7 +17,8 @@ dew_fritz2015 <- fritz2015_emotions %>%
   mutate(
     listed = as.logical(listed),
     source = "Usability Test",
-    condition = "Synch/Collaborative"
+    condition = "Synch./Collab.",
+    source = "Usability Test"
   )
 
 dew_s1 <- s1.dew_emotions %>% 
@@ -29,7 +30,7 @@ dew_s1 <- s1.dew_emotions %>%
   ) %>% 
   left_join(s1.feelings_translation, by = "label") %>% 
   mutate(
-    source = "Experiment",
+    source = "Chapter 7",
     condition = "Synch./Collab.",
     listed = if_else(!is.na(label_en), TRUE, FALSE)
   )
@@ -44,7 +45,7 @@ dew_s2 <- s2.expressed_emotions %>%
   rename(user = participant) %>% 
   left_join(s1.feelings_translation, by = "label") %>% 
   mutate(
-    source = "Longitudinal",
+    source = "Chapter 8",
     condition = "Asynch./Indiv.",
     listed = if_else(!is.na(label_en), TRUE, FALSE)
   )
@@ -53,7 +54,7 @@ sc.eatmint_circumplex <- s1.dew_configuration$circumplex$feelings %>%
   left_join(s1.feelings_translation)
 
 # Combine all expressed emotions
-sc.dew_combined_emotions = bind_rows(dew_s1, dew_s2) %>% 
+sc.dew_combined_emotions = bind_rows(dew_fritz2015, dew_s1, dew_s2) %>% 
   rename(feeling = label_en) %>% 
   mutate(
     click = as_factor(click),
