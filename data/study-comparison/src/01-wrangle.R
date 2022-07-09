@@ -53,7 +53,7 @@ dew_s2 <- s2.expressed_emotions %>%
 sc.eatmint_circumplex <- s1.dew_configuration$circumplex$feelings %>% 
   left_join(s1.feelings_translation)
 
-# Combine all expressed emotions
+# Combine all expressed emotions ----
 sc.dew_combined_emotions = bind_rows(dew_fritz2015, dew_s1, dew_s2) %>% 
   rename(feeling = label_en) %>% 
   mutate(
@@ -76,7 +76,7 @@ sc.dew_combined_emotions = bind_rows(dew_fritz2015, dew_s1, dew_s2) %>%
 
 rm(dew_fritz2015, dew_s1, dew_s2)
 
-# SUS Fritz 2015
+# SUS Fritz 2015 ----
 
 synch_usability <- ux.sus_scale_long %>% 
   rename(participant = user) %>% 
@@ -110,3 +110,15 @@ sc.sus_scores$item <- factor(sc.sus_scores$item, levels = c(
 ))
 
 rm(synch_usability, asynch_usability)
+
+# Allocation between sources ----
+sc.emotions_allocation <- sc.dew_combined_emotions |>
+  mutate(
+    Dataset = factor(source, levels = c("Usability Test", "Chapter 7", "Chapter 8"))
+  ) |> 
+  group_by(Dataset) |> 
+  summarise(
+    Setting = first(condition),
+    Participants = n_distinct(user),
+    Observations = n()
+  )

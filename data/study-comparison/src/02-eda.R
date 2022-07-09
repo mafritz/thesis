@@ -227,6 +227,12 @@ sc.button_vs_other <- sc.dew_combined_emotions %>%
     ratio = button / (button + other),
   )
 
+sc.button_vs_other.model <- t.test(
+  x = sc.button_vs_other$button,
+  y = sc.button_vs_other$other,
+  paired = TRUE
+)
+
 sc.button_vs_other.descriptive <- sc.button_vs_other %>%
   group_by(condition) %>%
   summarise(
