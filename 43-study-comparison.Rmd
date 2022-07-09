@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# Overall and Comparative Assessment of the Emotional Awareness Tool Between Learning Settings {#study-comparaison}
+# A Data-Driven Assessment of the Emotion Awareness Tool in Different Computer-Mediated Environments {#study-comparaison}
 
 ```{r comparison-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
@@ -47,7 +47,7 @@ Even though the concrete use of an EAT is the primary concern for an awareness t
 
 ## Methods
 
-This third empirical contribution can be considered a form of secondary data analysis [@westonRecommendationsIncreasingTransparency2019], grouping the datasets of the three empirical contributions where the EAT has been deployed. Data will be integrated in two datasets, which will be used to address the four research questions.
+This third empirical contribution can be considered a form of secondary data analysis [@westonRecommendationsIncreasingTransparency2019] or a small internal meta-analysis of one's own studies [@gohMiniMetaAnalysisYour2016]. It consists in grouping the datasets of the three empirical contributions where the EAT has been deployed: the usability test in Fritz (2015), the experiment of Chapter \@ref(study-1), and the longitudinal study of Chapter \@ref(study-2). Data will be integrated in two datasets, which will be used to address the four research questions.
 
 ### Expressed Emotions Dataset
 
@@ -76,11 +76,11 @@ The analyses will be comparative in nature, but without the use of inferential m
 
 ## Results
 
-The results are presented with respect to the four research questions. A thorough use of graphical representation is adopted to better convey the different facets of the measure at hand [@tukeyExploratoryDataAnalysis1977; @hegartyCognitiveScienceVisualspatial2011; @franconeriScienceVisualData2021].
+The results are presented with respect to the four research questions. A thorough use of graphical representation is adopted to better convey the different facets of the measures at hand [@tukeyExploratoryDataAnalysis1977; @hegartyCognitiveScienceVisualspatial2011; @franconeriScienceVisualData2021].
 
 ### Measures About the Use of Appraisal Dimensions
 
-The first theory-driven feature of the EAT under scrutiny are the two sliders, which represent the appraisal dimensions through which the eliciting event is evaluated [@schererAppraisalConsideredProcess2001; @schererDynamicArchitectureEmotion2009; @schererWhatAreEmotions2005]. As a reminder, the EATMINT circumplex adopts the *Valence* and *Control/Power* appraisal dimensions to prompt the evaluation of the eliciting event. In all empirical contributions, the Valence dimension was prompted with the question *Is the situation pleasant?* The Control/Power dimension was prompted with the question *Is the situation under your control?* in the Synch./Collab. contributions. For the Asynch./Individ. contribution, on the other hand, the question *Can you modify the situation?* was adopted instead. Both dimensions could be rated from a negative pole labeled *Not at all*, corresponding to a score of -100, to the positive pole labeled *Yes, absolutely*, corresponding to a score of 100. Each slider was sensitive to 1-point variation.
+The first theory-driven feature of the EAT under scrutiny are the two sliders, which represent the appraisal dimensions through which the eliciting event is evaluated [@schererAppraisalConsideredProcess2001; @schererDynamicArchitectureEmotion2009; @schererWhatAreEmotions2005]. As a reminder, the EATMINT circumplex adopts the *Valence* and *Control/Power* appraisal dimensions to prompt the evaluation of the situation. In all empirical contributions, the Valence dimension was prompted with the question *Is the situation pleasant?* The Control/Power dimension was prompted with the question *Is the situation under your control?* in the Synch./Collab. contributions. For the Asynch./Individ. contribution, on the other hand, the question *Can you modify the situation?* was adopted instead. Both dimensions could be rated from a negative pole labeled *Not at all*, corresponding to a score of -100, to the positive pole labeled *Yes, absolutely*, corresponding to a score of 100. Each slider was sensitive to 1-point variation.
 
 #### Overall Ratings of the Appraisal Dimensions
 
