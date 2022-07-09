@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# Emotional Awareness in Blended Learning: an Exploratory Analysis of the Use and Perception of an Emotion Awareness Tool Over Time {#sutdy-2}
+# Emotional Awareness in Blended Learning: an Exploratory Analysis of the Use and Perception of an Emotion Awareness Tool Over Time {#study-2}
 
 ```{r s2-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
