@@ -7,6 +7,7 @@ library(ggforce)
 library(patchwork)
 library(afex)
 library(emmeans)
+library(easystats)
 
 theme_set(theme_apa(box = TRUE))
 
@@ -27,13 +28,6 @@ sc.button_vs_other <- sc.dew_combined_emotions %>%
     n = button + other,
     ratio = button / (button + other),
   )
-
-# T-test ----
-sc.button_vs_other.model <- t.test(
-  x = sc.button_vs_other$button,
-  y = sc.button_vs_other$other,
-  paired = TRUE
-)
 
 sc.button_vs_other.descriptive <- sc.button_vs_other %>%
   group_by(condition) %>%
