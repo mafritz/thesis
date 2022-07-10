@@ -10,7 +10,7 @@ library(papaja)
 library(here)
 library(knitr)
 library(kableExtra)
-
+knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
 
 The previous chapter illustrated the parsimonious computational model linking appraisal dimensions and subjective feelings, which is the *core* of the proof of concept proposed by the thesis. This chapter introduces a toolbox built around the computational model, which allows the configuration of an Emotion Awareness Tool (EAT) according to researchers and practitioners needs. As stated in the introduction, the implementation of a toolbox is driven by open science tenets, which advocate the need for investing in the development of open material that can foster transparency, sharing, comparison, replicability and reproducibility of research practices, measures and results [@Nosek1422; @chambersSevenDeadlySins2017; @scheelWhyHypothesisTesters2020; @nelsonPsychologyRenaissance2018; @flakeMeasurementSchmeasurementQuestionable2020; @schererWhatAreEmotions2005; @lowndesOurPathBetter2017]. The chapter starts by a general overview of the toolbox, which is divided in an area dedicated to researchers and practitioners, and the *end-user* interface of the tool integrated in a computer-mediated learning environment. The reminder of the Chapter then illustrates the available configuration options of how emotion is expressed-displayed and how emotion is perceived-monitored respectively. Finally, the Chapter describes some features of the toolbox that can be configured from an empirical point of view, as well as the measures that can be retrieved from the toolbox.

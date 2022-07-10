@@ -13,6 +13,7 @@ library(kableExtra)
 
 # Load the relevant data and graphs from the study-1 folder
 source(here("data", "study-1", "s1-export.R"), local = knitr::knit_global(), encoding = "UTF-8")
+knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
 
 In this first empirical contribution, the toolbox is adopted in order to investigate whether a different use of and access to emotional information has an impact on the concrete use of the Emotional Awareness Tool in its basic functions: expressing emotions, and perusing the emotional information available. The main objective of the experiment is to break down the overall abstract model of emotional awareness described in Section \@ref(abstract-model-of-ea) into three different *paths*, corresponding to three different interfaces configured through the toolbox: a Self-Centered, a Partner-Oriented and a Mutual-Modeling interface. Using a simulated synchronous and collaborative task -- as in the usability test of the Dynamic Emotion Wheel

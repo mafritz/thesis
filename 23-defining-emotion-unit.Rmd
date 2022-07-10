@@ -10,7 +10,7 @@ library(papaja)
 library(here)
 library(knitr)
 library(kableExtra)
-
+knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
 
 This chapter lays out the foundation for implementing the emotion structure into an EAT. The structure of an emotion is determined by its definition. For this reason, the chapter starts by highlighting the difficulties in reaching a consensual definition of what an emotion is. Next, a brief outline of competing emotion theories is provided. Among these theories, the contribution adopts appraisal theories of emotion, whose characterizing features are depicted in the third section of the chapter. Among appraisal theories, the Component Process Model, depicted in section 4, is retained as the theory of reference for the implementation of the EAT. The framework presents also the advantages of proposing a concrete link with emotional competence, which is discussed in the last section of the chapter.

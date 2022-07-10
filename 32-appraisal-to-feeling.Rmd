@@ -13,7 +13,7 @@ library(kableExtra)
 
 # Load the relevant data and graphs
 source(here("data", "dew-rt", "dew-rt-export.R"), local = knitr::knit_global(), encoding = "UTF-8")
-
+knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
 
 This chapter illustrates the parsimonious computational model that is at the core of the Dynamic Emotion Wheel. The model is based upon the probabilistic link, stated by appraisal theories of emotions and the Component Process Model more specifically, between the cognitive evaluation of the situation and the resulting holistic experience, the subjective feeling, that can be lexicalized in natural language words or idioms. The combination of the computational model and the interface of the DEW illustrated in the previous chapter makes it possible to abstract from two-dimensional spaces and be projected into a context in which the number of dimensions can be defined according to researchers and practitioners' needs or aims. In this regard, the chapter starts by briefly outlining the interest for and in taking into account affective spaces with a different number of underlying dimensions. Second, it illustrates the logic behind the computational model inside the DEW. The following three sections, then, describe how the same computational logic can be applied to one-dimensional, two-dimensional, and multi-dimensional affective spaces (3 and beyond). The chapter ends with an assessment of the limitations of the computational model.
