@@ -99,7 +99,7 @@ library(thesisdown)
 options(width = 70)
 knitr::opts_chunk$set(
   echo = FALSE,
-  message=FALSE,
+  message = FALSE,
   warning = FALSE
 )
 ```
