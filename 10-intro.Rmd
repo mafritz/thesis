@@ -117,6 +117,6 @@ Part IV concludes the thesis with the general discussion of Chapter 11 and the C
 
 ## Code and Data {.unnumbered}
 
-The code and data for the toolbox as well as for the computational manuscript of the thesis -- including thus data of the empirical contribution -- are publicly available. Since the code span different repositories, but that those repositories may change the underlying technology or location over time, the different links are grouped in a single web page. The page is hosted on the TECFA server, active since the early 1990's, which has a long tradition of keeping URL stable over time. I hope this tradition will perdure.
+The code and data for the toolbox as well as for the computational manuscript of the thesis -- including thus data of the empirical contribution -- are publicly available. Since the code span different repositories, but that those repositories may change the underlying technology or location over time, the different links are grouped in a single web page. The page is hosted on the TECFA server, active since the early 1990's, which has a long tradition of keeping URL stable over time. I hope this tradition will go on.
 
 <https://tecfa.unige.ch/perso/mafritz/thesis/code-and-data/>
