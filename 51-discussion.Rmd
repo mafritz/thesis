@@ -1,6 +1,8 @@
-# (PART\*) Concluding Remarques {.unnumbered}
+# (PART\*) Concluding Remarks {.unnumbered}
 
 # General Discussion
+
+This chapter proposes a general discussion of the thesis, which will put a selection of topics into a broader perspective.
 
 ## Are the Features of the Proposed EAT Instrumental to Emotional Awareness?
 
@@ -21,7 +23,7 @@
 
 ## When Emotional Awareness May Be Useful?
 
-## Tho Whom Emotional Awareness May Be Useful?
+## To Whom Emotional Awareness May Be Useful?
 
 ## How Can Emotional Awareness Be Improved Outside the Tool?
 
