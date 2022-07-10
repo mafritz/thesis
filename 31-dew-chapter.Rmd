@@ -1,6 +1,7 @@
 ---
 bibliography: references.bib
 ---
+# (PART\*) Proof of Concept {.unnumbered}
 
 # Previous Work on a Prototype: the Dynamic Emotion Wheel {#dew-chapter}
 

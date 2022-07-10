@@ -1,6 +1,7 @@
 ---
 bibliography: references.bib
 ---
+# (PART\*) Theoretical Foundations {.unnumbered}
 
 # Theoretical Convergence About the Instrumentality of Affective Phenomena in Computer-Mediated Learning Environments {#general-affective-background}
 
