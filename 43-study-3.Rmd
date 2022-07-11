@@ -18,7 +18,7 @@ source(here("data", "study-comparison", "comparison-export.R"), local = knitr::k
 knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
 
-This chapter provides a general assessment of some of the fundamental features of the Emotion Awareness Tool (EAT) implemented in the thesis. To do so, the study will perform a sort of secondary data analysis on data collected through the usability test [@fritzReinventingWheelEmotional2015], briefly resumed in Section \@ref(dew-ux-test), and the two empirical contributions of Chapter \@ref(study-1) and Chapter \@ref(study-2). The structure of the chapter will therefore first align with the previous two chapters. First, the rationale of the study is proposed alongside the research questions. Second, a brief methodological section illustrates the datasets used in the analysis. The chapter then does not propose a result and discussion sections, but rather discuss the assessment with respect to the specific research questions.
+This chapter provides a general assessment of some of the fundamental features of the Emotion Awareness Tool (EAT) implemented in the thesis from a data-driven perspective. To do so, the study will merge data from the usability test [@fritzReinventingWheelEmotional2015], briefly resumed in Section \@ref(dew-ux-test), and the two empirical contributions of Chapter \@ref(study-1) and Chapter \@ref(study-2). The structure of the chapter will nevertheless follow once again the traditional structure of an empirical contribution [@sollaciIntroductionMethodsResults2004], but starts directly with the study rationale.
 
 ## Study Rationale
 
