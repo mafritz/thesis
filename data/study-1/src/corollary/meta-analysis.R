@@ -9,7 +9,7 @@ s1.meta_analysis_expressing <- metamean(
     n = c(14, 35), 
     mean = c(ux.expressing$tot |> mean(), 13.80), 
     sd = c(ux.expressing$tot |> sd(), 5.68), 
-    studlab = c("Fritz 2015", "Perrier 2017")
+    studlab = c("Fritz 2015", "This contribution")
   )
 s1.meta_analysis_expressing.summary <- summary(s1.meta_analysis_expressing)
 
@@ -27,7 +27,7 @@ s1.meta_analysis_processing <- metamean(
     sd(fritz2015_eyetracking$Total_Visit_Duration_Monitoring_Sum), 
     sd(other_both_only$Total_Visit_Duration_MONITORING_Sum)
     ), 
-  studlab = c("Fritz 2015", "Perrier 2017")
+  studlab = c("Fritz 2015", "This contribution")
 )
 s1.meta_analysis_processing.summary = summary(s1.meta_analysis_processing)
 
@@ -42,7 +42,7 @@ s1.meta_analysis_seeking <- metamean(
     sd(fritz2015_eyetracking$Visit_Count_Monitoring_Sum), 
     sd(other_both_only$Visit_Count_MONITORING_Sum)
     ), 
-  studlab = c("Fritz 2015", "Perrier 2017")
+  studlab = c("Fritz 2015", "This contribution")
 )
 s1.meta_analysis_seeking.summary = summary(s1.meta_analysis_seeking)
 
