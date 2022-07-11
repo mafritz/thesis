@@ -18,12 +18,7 @@ source(here("data", "study-2", "s2-export.R"), local = knitr::knit_global(), enc
 knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
 
-General introduction to the study:
-
--   Pitfalls in distance learning
--   Increasing interest for enhancing social presence as a multi-faceted construct (isolation, belonging, authenticity, affective experience, ...)
--   Social function of emotions (affiliation, distanciation, emotiona contagion, social reference in uncertain situations, ...)
--   Description of some empirical contributions collecting emotions during distance learning situations (Lavoué and colleagues, 2020, Ruiz and colleagues 2016, ...)
+This chapter describes the second empirical contribution of the thesis, which investigates the longitudinal use of an EAT, in asynchronous and non-collaborative learning settings, made by two classes of a blended Master in education technology. As for the previous chapter, the presentation of the study follows the traditional structure of empirical contributions [@sollaciIntroductionMethodsResults2004] and therefore the outline of the chapter is not presented. The chapter starts directly by introducing the rationale of the study.
 
 ## Study Rationale
 
