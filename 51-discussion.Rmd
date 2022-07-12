@@ -1,6 +1,6 @@
 # (PART\*) Concluding Remarks {.unnumbered}
 
-# General Discussion
+# General Discussion {#general-discussion}
 
 This chapter proposes a general discussion of the thesis, which will put a selection of topics into a broader perspective.
 

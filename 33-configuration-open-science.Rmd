@@ -36,7 +36,7 @@ From the back-end part of the toolbox, researchers and practitioners can perform
 3.  Manage affective spaces that can be used in *studies*. Affective spaces can be either private, available thus only to the logged-in researcher, or shared with other researchers subscribed to the same server*.*
 4.  Import configurations of *studies* or affective spaces from external sources, for instance -- ideally -- supplementary material from a contribution that has used the toolbox.
 
-A *study* is the element of the toolbox that glues all parts together. It is determined by the different configurations options and is made available to users through the toolbox front-end illustrated in the next subsection. Figure @ref(fig:dew-toolbox-study-detail) shows a cropped detail page of a *study*, which happens to be an archived instance of the usability test illustrated in Chapter @ref(dew-chapter).
+A *study* is the element of the toolbox that glues all parts together. It is determined by the different configurations options and is made available to users through the toolbox front-end illustrated in the next subsection. Figure \@ref(fig:dew-toolbox-study-detail) shows a cropped detail page of a *study*, which happens to be an archived instance of the usability test illustrated in Chapter \@ref(dew-chapter).
 
 (ref:dew-toolbox-study-detail-caption) Example of a *study*'s detail page. The screen capture has been cropped to save space.
 
