@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# (PART\*) Empirical Contribution {.unnumbered}
+# (PART) Empirical Contribution {.unnumbered}
 
 # Does a Different Use of and Access to Emotional Information Change the Concrete Use of the Emotion Awareness Tool? {#study-1}
 
@@ -152,7 +152,8 @@ The *playback* manipulations displayed on the interface were recorded in the sam
 (ref:s1-simulated-emotions-caption) List of the emotions of the simulated partner. Time is expressed in seconds.
 
 ```{r s1-simulated-partner-table}
-kable(s1.simulated_partner,
+kable(
+  s1.simulated_partner,
   col.names = c("Time", "Valence", "Control", "Feeling (FR)", "Feeling (EN)"),
   caption = "(ref:s1-simulated-emotions-caption)\\label{tab:s1-simulated-emotions-table}",
   caption.short = "Study 1: Simulated Partner's Emotions",
@@ -223,7 +224,8 @@ s1.participants_repartition <- s1.et_data |>
     n = n()
   )
 
-kable(s1.participants_repartition,
+kable(
+  s1.participants_repartition,
   col.names = c("Condition", "N"),
   caption = "(ref:s1-observed-design-capture)\\label{tab:s1-observed-design-table}",
   caption.short = "Study 1: Observed Experimental Design",

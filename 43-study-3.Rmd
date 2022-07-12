@@ -64,7 +64,8 @@ s3.emotions_allocation |>
   caption = "(ref:s3-emotions-dataset-caption)\\label{tab:s3-emotions-dataset-table}",
   caption.short = "Datasets of expressed emotions",
   longtable = FALSE,
- )
+ ) |>
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 ### System Usability Scale Dataset
@@ -95,10 +96,11 @@ s3.appraisal.descriptive |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-appraisal-descriptive-caption)\\label{tab:s3-appraisal-descriptive-table}",
-  caption.short = "Comparison: descriptive of appraisal dimensions",
+  caption.short = "Study 3: descriptive of appraisal dimensions",
   longtable = FALSE,
  ) |>
- row_spec(3, bold = T)
+ row_spec(3, bold = T) |>
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 Results show that, for the Valence dimension, the overall mean is almost perfectly neutral for the Asynch./Indiv. setting, whereas it is slightly positive (around 6 points) for the Synch./Collab. setting. In both settings, the rating of the Valence dimension yielded a high standard deviation of around 60 rating points. Data therefore corroborate that participants in both settings took advantage of the full range of the Valence dimension in a very similar way. With respect to the *Control/Power* dimension, the overall mean for the Asynch./Indiv. setting is slightly positive (around 5 points), whereas it is slightly negative for the Synch./Collab. setting (around -4 points). The standard deviations are also high, but more diverging, with a difference of more than 10 rating points (around 50 for Asynch./Indiv. against around 64 for Synch./Collab.). For this second appraisal dimension, thus, data highlight a slight divergences in central tendency, even though it remains close to the neutral point for both settings, and less variance in the rating of the *Control/Power* slider in the Asynch./Indiv. setting.
@@ -134,14 +136,15 @@ s3.appraisal_sign_comparison |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-appraisal-combination-caption)\\label{tab:s3-appraisal-combination-table}",
-  caption.short = "Comparison: appraisal combinations",
+  caption.short = "Study 3: appraisal combinations",
   longtable = FALSE,
  ) |> 
  pack_rows("Asynch./Indiv. (26 participants)", 1, 3) |>
  pack_rows("Synch./Collab. (35 participants)", 4, 6) |>
  kable_styling(
   latex_options = c("repeat_header")
- )
+ ) |>
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 For both settings, the same sign combination was expressed at least one time by a greater number of participants, and proportionally more than the other combinations: almost half of the total (0.49) for the Asynch./Indiv. and almost three quarter of the total (0.72) for the Synch./Collab. setting. The opposite sign combination, on the other hand, accounts only for around one fifth of the total both for the Asynch./Indiv. (0.19) and the Synch./Collab. (0.21) settings. Finally, the neutral point was used in greater proportion in the Asynch./Indiv. setting, with almost one third (0.31) of the total, compared to the Synch./Collab. setting with a proportion of around one in twenty (0.06). As in the case of the density plots described above, this score is inflated by a single participant in the Asynch./Indiv. setting who expressed more than 60 emotions leaving the neutral point on the *Control/Power* dimension.
@@ -164,7 +167,7 @@ s3.listed_vs_not_listed |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-feelings-cumulative-comparison-caption)\\label{tab:s3-feelings-cumulative-comparison-table}",
-  caption.short = "Comparison: listed vs. not listed feelings",
+  caption.short = "Study 3: listed vs. not listed feelings",
   longtable = FALSE,
  ) |>
  row_spec(3, bold = T)
@@ -183,7 +186,7 @@ s3.listed_feelings_frequency |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-feelings-frequency-comparison-caption)\\label{tab:s3-feelings-frequency-comparison-table}",
-  caption.short = "Comparison: relative frequency of listed feelings",
+  caption.short = "Study 3: relative frequency of listed feelings",
   longtable = FALSE,
  ) |> 
  kable_styling(
@@ -220,10 +223,11 @@ s3.button_vs_other.descriptive |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-frequency-button-caption)\\label{tab:s3-frequency-button-table}",
-  caption.short = "Comparison: frequency of clicks on the buttons",
+  caption.short = "Study 3: frequency of clicks on the buttons",
   longtable = FALSE,
  ) |>
- row_spec(3, bold = T)
+ row_spec(3, bold = T) |>
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 Overall, the frequency of clicks on one of the suggested options is $M = `r s3.button_vs_other.descriptive[3,3] |> printnum()`$ ($SD = `r s3.button_vs_other.descriptive[3,4] |> printnum()`$), which means that around 4 out of 5 emotions are expressed using one of the lexicalized emotions suggested through the three buttons on the interface. In the Asnyhc./Indiv. setting, the average frequency is $M = `r s3.button_vs_other.descriptive[1,3] |> printnum()`$ with a standard deviation of $SD = `r s3.button_vs_other.descriptive[1,4] |> printnum()`$. In the Synch./Collab. setting, the average frequency is $M = `r s3.button_vs_other.descriptive[2,3] |> printnum()`$, with a standard deviation of $SD = `r s3.button_vs_other.descriptive[2,4] |> printnum()`$. There is nevertheless a difference of around 0.2 points between the two settings, with participants in the Synch./Collab. setting clicking more often on the buttons. The data, pictured in Figure \@ref(fig:s3-frequency-graph), reveals that most of the participants in the Synch./Collab. setting always *accepted* one of the proposed subjective feelings, whereas in the Asynch./Indiv. setting there is a more heterogeneous disposition. This is consistent with evidence in the previous sections of the chapter indicating the need of a more nuanced emotional expression in the Asynch./Indiv. setting.
@@ -248,7 +252,7 @@ s3.empirical_feelings_disposition |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-empirical-feelings-disposition-caption)\\label{tab:s3-empirical-feelings-disposition-table}",
-  caption.short = "Comparison: observed appraisal ratings in EATMINT circumplex",
+  caption.short = "Study 3: observed appraisal ratings in EATMINT circumplex",
   longtable = FALSE,
   col.names = c("Feeling", "N", "Valence", "Contr./Pow.", "Obs. Slope", "Exp. Slope", "|Slope|")
  ) |> 
@@ -311,7 +315,7 @@ s3.sus_comparison |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-sus-overall-score-caption)\\label{tab:s3-sus-overall-score-table}",
-  caption.short = "Comparison: overall score to the SUS",
+  caption.short = "Study 3: overall score to the SUS",
   longtable = FALSE,
   col.names = c("Condition", "N", "M", "SD")
  ) |>

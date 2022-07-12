@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# (PART\*) Proof of Concept {.unnumbered}
+# (PART) Proof of Concept {.unnumbered}
 
 # Previous Work on a Prototype: the Dynamic Emotion Wheel {#dew-chapter}
 
@@ -334,7 +334,8 @@ ux_measures |>
     longtable = FALSE,
     booktabs = TRUE,
     digits = 2
-  )
+  ) |>
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 ## Extending the Prototype Into a Proof of Concept {#dew-extension-illustration}

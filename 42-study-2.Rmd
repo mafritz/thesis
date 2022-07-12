@@ -279,7 +279,8 @@ s2.valid_results_description |>
     caption = "(ref:s2-descriptive-table-caption)\\label{tab:s2-descriptive-table}",
     caption.short = "Study 2: Descriptive statistics",
     longtable = FALSE,
-  )
+  ) |>
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 ### Measures About the Use of the EAT
@@ -345,7 +346,8 @@ kable(
       "Self-Other Comparison" = 3,
       "Self-Regulation" = 3
     )
-  )
+  ) |>
+  kable_styling(latex_options = "HOLD_position")
 
 ```
 
@@ -366,7 +368,8 @@ s2.mlm.ea_usefulness.anova_table |>
     caption = "(ref:s2-mlm-eau-caption)\\label{tab:s2-mlm-eau-table}",
     caption.short = "Study 2: Emotion Awareness Multilevel Linear Model",
     linesep = c("", "",  "\\addlinespace")
-  )
+  ) |>
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 Results are graphically depicted in Figure \@ref(fig:s2-graph-dimensions-and-survey), in which the EAU evaluation is stratified by the 7 dimensions of the scale and the 4 longitudinal surveys, as well as divided between the 2 classes. Data show high *expectancy* ratings for the *Frequency*, *Affordance*, *Social Presence*, *Understanding Others*, and *Self-Other Comparison* dimensions, but not for *Self-Understanding* and *Self-Regulation*. The ratings are generally maintained even after the *demo* surveys and tend to decrease with the actual use of the tool in the *halfway* survey, to remain then more or less stable even in the *final* survey. Data also show that the two classes basically overlap on all dimensions and across longitudinal surveys. The group per dimension interaction is probably yielded by the *Frequency* and *Affordance* dimensions, for which the two classes differ the most, but it does not seem to play an important role in differentiating EAU ratings. As a consequence, the factor related to the class is dropped in post-hoc contrasts, which will focus only on the difference between the *Final* and the *Expectancy* surveys.
@@ -396,7 +399,8 @@ s2.mlm.ea_usefulness.comparison |>
   ) |> 
   kable_styling(
     latex_options = c("repeat_header")
-  )
+  ) |>
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 ### Structure and Reliability of the Emotion Usefulness Scale
@@ -477,6 +481,7 @@ s2.bayesian.result.expectancy |> as_tibble() |>
     booktabs = TRUE,
     digits = 2
   ) |> 
+  kable_styling(latex_options = "HOLD_position") |>
   kable_styling(latex_options = "HOLD_position")
 ```
 

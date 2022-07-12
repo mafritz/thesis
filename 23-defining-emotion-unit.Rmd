@@ -164,7 +164,8 @@ tf.secs |>
   pack_rows("Implications/consequences", 4, 8) |> 
   pack_rows("Coping potential", 9, 11) |> 
   pack_rows("Norm compatibility", 12, 13) |> 
-  column_spec(1, width = "5.5cm")
+  column_spec(1, width = "5.5cm") |>
+  kable_styling(latex_options = "HOLD_position")
   
 ```
 

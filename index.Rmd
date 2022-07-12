@@ -1,7 +1,7 @@
 ---
 title: 'Implementation and Assessment of a Multipurpose Appraisal-Driven Emotion Awareness Tool Based on Self-Report. With an Application to Computer-Mediated Learning Environments.'
 author: 'Mattia A. Fritz'
-date: 'September 2021'
+date: 'July 2022'
 institution: 'Université de Genève'
 division: 'TECFA'
 advisor: 'Prof. Mireille Bétrancourt'

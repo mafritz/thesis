@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# (PART\*) Theoretical Foundations {.unnumbered}
+# (PART) Theoretical Foundations {.unnumbered}
 
 # Theoretical Convergence About the Instrumentality of Affective Phenomena in Computer-Mediated Learning Environments {#general-affective-background}
 
@@ -68,7 +68,7 @@ In this regard, an EAT takes in somehow an agnostic position, since it may regis
 Finally, a third approach in research linking affect and learning focuses on empowering learners with skills, allowing them to deal with the social and emotional challenges that they face during various phases of the learning process. Oftentimes, the scope of this line of research goes beyond learning and educational settings, aiming at preparing learners -- especially in early educational programs -- to take advantage from their social and emotional skills in life more generally. Research of this third kind often -- but not always -- refers to the concept of Social and Emotional Learning (SEL), which has a long tradition in education [see @osherAdvancingSciencePractice2016]. Brackett and colleagues [-@brackettRULERTheoryDrivenSystemic2019] provide a recent definition of SEL:
 
 > Today, SEL refers to the process of integrating cognition, emotion, and behavior into teaching and learning such that adults and children build self- and social awareness skills, learn to manage their own and others' emotions and behavior, make responsible decisions, and build positive relationships.\
-> --- [@brackettRULERTheoryDrivenSystemic2019, p. 144]
+> --- @brackettRULERTheoryDrivenSystemic2019, p. 144
 
 One extensive perspective on this form of social and emotional learning is represented by the RULER approach [@brackettEnhancingAcademicPerformance2012; @brackettRULERTheoryDrivenSystemic2019; @hoffmannTeachingEmotionRegulation2020; @nathansonCreatingEmotionallyIntelligent2016], an acronym that stands for:
 
