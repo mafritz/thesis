@@ -10,7 +10,7 @@ library(papaja)
 library(here)
 library(knitr)
 library(kableExtra)
-knitr::opts_chunk$set(echo = TRUE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 Imagine that you are co-authoring a text with a colleague for an upcoming assignment that you must submit in a course: you are at home, she can be anywhere in the world. You are using an online text processor, which allows you to edit the document simultaneously. This particular text editor has the feature of attributing animal names to authors, so that you are currently identified in the work-space as *anonymous hippo*, and your partner is *anonymous turtle*. The only thing you can see about the *turtle* is the flow of letters that stems from the position of her cursor in the document whenever she is typing on her keyboard, and *vice versa*. Imagine being in this situation: what kind of information about the *turtle* would you like to know to better assess how the learning task is going? And what kind of information about yourself would you like the *turtle* to know, for her to better assess how the learning task is going?

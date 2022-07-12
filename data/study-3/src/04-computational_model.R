@@ -11,11 +11,11 @@ library(easystats)
 
 theme_set(theme_apa(box = TRUE))
 
-source(here("data/study-comparison/src/01-wrangle.R"))
+source(here("data/study-3/src/01-wrangle.R"))
 source(here("data/utils/dew-utils.R"))
 
 # Button vs. Other ----
-sc.button_vs_other <- sc.dew_combined_emotions %>%
+s3.button_vs_other <- s3.dew_combined_emotions %>%
   filter(listed) %>% 
   group_by(condition, user, click) %>%
   summarise(
@@ -29,7 +29,7 @@ sc.button_vs_other <- sc.dew_combined_emotions %>%
     ratio = button / (button + other),
   )
 
-sc.button_vs_other.descriptive <- sc.button_vs_other %>%
+s3.button_vs_other.descriptive <- s3.button_vs_other %>%
   group_by(condition) %>%
   summarise(
     n = n(),
@@ -38,13 +38,13 @@ sc.button_vs_other.descriptive <- sc.button_vs_other %>%
   ) %>% bind_rows(
     tibble(
       condition = "Total",
-      n = nrow(sc.button_vs_other),
-      mean = mean(sc.button_vs_other$ratio),
-      sd = sd(sc.button_vs_other$ratio)
+      n = nrow(s3.button_vs_other),
+      mean = mean(s3.button_vs_other$ratio),
+      sd = sd(s3.button_vs_other$ratio)
     )
   )
 
-sc.button_vs_other.graph <- ggplot(sc.button_vs_other, aes(x = condition, y = ratio, color = condition)) +
+s3.button_vs_other.graph <- ggplot(s3.button_vs_other, aes(x = condition, y = ratio, color = condition)) +
   geom_jitter(alpha = 0.2, size = 2) +
   stat_summary(fun.data = mean_cl_normal, geom = "errorbar", width = 0.3, position = position_dodge(width = 0.1)) +
   stat_summary(fun = mean, geom = "point", size = 6, shape = 15, position = position_dodge(width = 0.6)) +
@@ -59,7 +59,7 @@ sc.button_vs_other.graph <- ggplot(sc.button_vs_other, aes(x = condition, y = ra
   NULL
 
 # Empirical observed slope ----
-sc.empirical_feelings_disposition <- sc.dew_combined_emotions %>% 
+s3.empirical_feelings_disposition <- s3.dew_combined_emotions %>% 
   filter(listed, !is.na(observedSlope)) %>% 
   group_by(feeling) %>% 
   summarise(
@@ -73,19 +73,19 @@ sc.empirical_feelings_disposition <- sc.dew_combined_emotions %>%
   arrange(expected_slope) %>% 
   ungroup()
 
-sc.empirical_feelings_disposition_circumplex <- sc.empirical_feelings_disposition %>% 
+s3.empirical_feelings_disposition_circumplex <- s3.empirical_feelings_disposition %>% 
   mutate(
     pos_x = 0 - dew.getRadialY(computed_slope),
     pos_y = dew.getRadialX(computed_slope)
   )
 
-sc.theoretical_feelings_disposition_circumplex <- sc.empirical_feelings_disposition %>% 
+s3.theoretical_feelings_disposition_circumplex <- s3.empirical_feelings_disposition %>% 
   mutate(
     pos_x = 0 - dew.getRadialY(expected_slope),
     pos_y = dew.getRadialX(expected_slope)
   )
 
-sc.empirical_feelings_disposition_circumplex.graph <- ggplot(sc.empirical_feelings_disposition_circumplex, aes(x = pos_x, y = pos_y, label = feeling)) +
+s3.empirical_feelings_disposition_circumplex.graph <- ggplot(s3.empirical_feelings_disposition_circumplex, aes(x = pos_x, y = pos_y, label = feeling)) +
     geom_point(size = 7) +
     geom_text_repel(
       seed = 238769, box.padding = 0.9, 
@@ -107,7 +107,7 @@ sc.empirical_feelings_disposition_circumplex.graph <- ggplot(sc.empirical_feelin
     scale_y_continuous(labels = NULL) +
     ggtitle("Empirical/Observed Affective Space")
 
-sc.theoretical_feelings_disposition_circumplex.graph <- ggplot(sc.theoretical_feelings_disposition_circumplex, aes(x = pos_x, y = pos_y, label = feeling)) +
+s3.theoretical_feelings_disposition_circumplex.graph <- ggplot(s3.theoretical_feelings_disposition_circumplex, aes(x = pos_x, y = pos_y, label = feeling)) +
     geom_point(size = 7) +
     geom_text_repel(
       seed = 238769, box.padding = 0.9, 
@@ -130,7 +130,7 @@ sc.theoretical_feelings_disposition_circumplex.graph <- ggplot(sc.theoretical_fe
     ggtitle("Theoretical/Expected Affective Space")
 
 # Empirical disposition scater plot ----
-sc.empirical_space_comparison.graph <- sc.dew_combined_emotions %>%
+s3.empirical_space_comparison.graph <- s3.dew_combined_emotions %>%
     filter(listed) |> 
     group_by(condition, feeling) %>% 
     summarise(

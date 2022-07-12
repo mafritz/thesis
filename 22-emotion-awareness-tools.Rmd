@@ -10,7 +10,7 @@ library(papaja)
 library(here)
 library(knitr)
 library(kableExtra)
-knitr::opts_chunk$set(echo = TRUE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 After a general overview about the relationship between affect and learning, this chapter focuses on emotional awareness and on Emotion Awareness Tools (EAT) more specifically. First, the concept of emotional awareness is defined within the context of computer-mediated learning environments. Second, three main assumptions are derived by this definition. The theoretical underpinnings of each assumption are set forth, complemented by the overview of related empirical works. In the second part of the chapter, an abstract model of an EAT is laid out in an attempt to frame the different interactions between the learners and an EAT, for emotional awareness to be instrumental. The model also allows to highlight how the instrumentality of an EAT is far from being trivial and rather requires a complex interplay between learners expertise and willingness in taking emotional awareness into account on the one hand, and features of the EAT that can sustain or facilitate the process. Finally, it is suggested that the abstract model can be used as a way to direct research in emotional awareness, by pointing out which part of the model the research aims at investigating (*e.g.*, the whole or some specific parts).

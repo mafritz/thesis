@@ -50,18 +50,18 @@ dew_s2 <- s2.expressed_emotions %>%
     listed = if_else(!is.na(label_en), TRUE, FALSE)
   )
 
-sc.eatmint_circumplex <- s1.dew_configuration$circumplex$feelings %>% 
+s3.eatmint_circumplex <- s1.dew_configuration$circumplex$feelings %>% 
   left_join(s1.feelings_translation)
 
 # Combine all expressed emotions ----
-sc.dew_combined_emotions = bind_rows(dew_fritz2015, dew_s1, dew_s2) %>% 
+s3.dew_combined_emotions = bind_rows(dew_fritz2015, dew_s1, dew_s2) %>% 
   rename(feeling = label_en) %>% 
   mutate(
     click = as_factor(click),
     observedSlope = map2_dbl(x, y, dew.calculateSlope),
     observedQuadrant = as_factor(ceiling(observedSlope / 90))
   ) %>% 
-  left_join(sc.eatmint_circumplex, by = c("feeling" = "label_en")) %>% 
+  left_join(s3.eatmint_circumplex, by = c("feeling" = "label_en")) %>% 
   select(-label.y) %>% 
   rename(
     expectedSlope = angle,
@@ -95,8 +95,8 @@ asynch_usability <- s2.sus_score %>%
     source = "Asynch./Indiv."
   )
 
-sc.sus_scores <- bind_rows(synch_usability, asynch_usability)
-sc.sus_scores$item <- factor(sc.sus_scores$item, levels = c(
+s3.sus_scores <- bind_rows(synch_usability, asynch_usability)
+s3.sus_scores$item <- factor(s3.sus_scores$item, levels = c(
   "SUS1",
   "SUS2",
   "SUS3",
@@ -112,7 +112,7 @@ sc.sus_scores$item <- factor(sc.sus_scores$item, levels = c(
 rm(synch_usability, asynch_usability)
 
 # Allocation between sources ----
-sc.emotions_allocation <- sc.dew_combined_emotions |>
+s3.emotions_allocation <- s3.dew_combined_emotions |>
   mutate(
     Dataset = factor(source, levels = c("Usability Test", "Chapter 7", "Chapter 8"))
   ) |> 

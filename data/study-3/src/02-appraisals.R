@@ -10,12 +10,12 @@ library(emmeans)
 
 theme_set(theme_apa(box = TRUE))
 
-source(here("data/study-comparison/src/01-wrangle.R"))
+source(here("data/study-3/src/01-wrangle.R"))
 source(here("data/utils/dew-utils.R"))
 
 # Appraisal dimensions ----
 
-sc.appraisal.descriptive.absolute <- sc.dew_combined_emotions %>% 
+s3.appraisal.descriptive.absolute <- s3.dew_combined_emotions %>% 
   summarise(
     Participants = n_distinct(user),
     Observations = n(),
@@ -31,7 +31,7 @@ sc.appraisal.descriptive.absolute <- sc.dew_combined_emotions %>%
   ) %>% 
   relocate(Setting, .before = Participants)
 
-sc.appraisal.descripitve.comparison <- sc.dew_combined_emotions %>% 
+s3.appraisal.descripitve.comparison <- s3.dew_combined_emotions %>% 
   group_by(condition) %>% 
   summarise(
     Participants = n_distinct(user),
@@ -45,9 +45,9 @@ sc.appraisal.descripitve.comparison <- sc.dew_combined_emotions %>%
   ) %>% 
   arrange(Setting)
 
-sc.appraisal.descriptive <- bind_rows(sc.appraisal.descripitve.comparison, sc.appraisal.descriptive.absolute)
+s3.appraisal.descriptive <- bind_rows(s3.appraisal.descripitve.comparison, s3.appraisal.descriptive.absolute)
 
-sc.appraisal_sign_comparison <- sc.dew_combined_emotions %>% 
+s3.appraisal_sign_comparison <- s3.dew_combined_emotions %>% 
   mutate(
     Combination = case_when(
       ((x > 0 & y > 0) | (x < 0 & y < 0)) ~ "Same sign",
@@ -71,7 +71,7 @@ sc.appraisal_sign_comparison <- sc.dew_combined_emotions %>%
   ) %>% 
   ungroup()
 
-sc.appraisal_density.graph <- sc.dew_combined_emotions %>% 
+s3.appraisal_density.graph <- s3.dew_combined_emotions %>% 
     pivot_longer(cols = c(x,y), names_to = "dimension") %>%
     mutate(
       dimension = if_else(dimension == "x", "Valence", "Control/Power"),
@@ -92,7 +92,7 @@ sc.appraisal_density.graph <- sc.dew_combined_emotions %>%
     NULL
 
 # Appraisal disposition ----
-sc.appraisal_evaluation.graph <- sc.dew_combined_emotions %>% 
+s3.appraisal_evaluation.graph <- s3.dew_combined_emotions %>% 
     ggplot(aes(x = x, y = y)) +
     geom_point(alpha = 0.2) +
     geom_smooth(method = "loess", formula = y ~ x, size = 2) +
@@ -110,7 +110,7 @@ sc.appraisal_evaluation.graph <- sc.dew_combined_emotions %>%
 
 # Appraisal correlation ---
 
-sc.appraisal_correlation.overall <- sc.dew_combined_emotions |> 
+s3.appraisal_correlation.overall <- s3.dew_combined_emotions |> 
   group_by(user, condition) |> 
   summarise(
     N = n(),
@@ -119,7 +119,7 @@ sc.appraisal_correlation.overall <- sc.dew_combined_emotions |>
     N >= 2
   )
 
-sc.appraisal_correlation.conditions <- sc.appraisal_correlation.overall |>
+s3.appraisal_correlation.conditions <- s3.appraisal_correlation.overall |>
   group_by(condition) |> 
   summarise(
     N = n(),

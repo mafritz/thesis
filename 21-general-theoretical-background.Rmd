@@ -12,7 +12,7 @@ library(papaja)
 library(here)
 library(knitr)
 library(kableExtra)
-knitr::opts_chunk$set(echo = TRUE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 This chapter provides an overview of the literature, combining different disciplines and perspectives, which corroborates the interest for endowing computer-mediated learning environments with affective phenomena. The chapter starts with an organized outlook of current trends in learning psychology and education sciences, which consider the interplay between affect and learning as a crucial interaction to foster learning processes and outcomes. Then, the chapter focuses on affect-aware systems and awareness tools respectively, for an Emotion Awareness Tool (EAT) shares similarities with both systems. The two systems, though, are driven mainly by different perspectives: affective computing in the first case, and Computer-Supported Collaborative Learning in the second. The emergence of an EAT with the characteristics stated in the introduction can therefore be compared and contrasted with the different perspectives provided in the literature.
