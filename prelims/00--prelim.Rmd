@@ -2,15 +2,14 @@
 
 ## Acknowledgements {-}
 
-I want to thank a few people.
+Still to be written
 
 ## Preface {-}
 
-This is an example of a thesis setup to use the reed thesis document class
-(for LaTeX) and the R bookdown package, in general.
+Still to be written
 
 ## Dedication {-}
 
-You can have a dedication here if you wish. 
+Still to be written
 
 `r if(!knitr:::is_latex_output()) '## Abstract {-}'`
