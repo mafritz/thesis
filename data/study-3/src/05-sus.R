@@ -14,12 +14,12 @@ source(here("data/study-3/src/01-wrangle.R"))
 source(here("data/utils/dew-utils.R"))
 
 # SUS comparison ----
-s3.sus_overall <- s3.sus_scores %>% 
-  group_by(participant) %>% 
+s3.sus_overall <- s3.sus_scores |> 
+  group_by(participant) |> 
   summarise(
     sus_score = sum(item_score) * 10 / 6
-  ) %>% 
-  ungroup() %>%
+  ) |> 
+  ungroup() |>
   summarise(
     source = "Total",
     n = n(),
@@ -27,18 +27,18 @@ s3.sus_overall <- s3.sus_scores %>%
     sd = sd(sus_score)
   )
 
-s3.sus_comparison <- s3.sus_scores %>% 
-  group_by(source, participant) %>% 
+s3.sus_comparison <- s3.sus_scores |> 
+  group_by(source, participant) |> 
   summarise(
     sus_score = sum(item_score) * 10 / 6
-  ) %>% 
-  ungroup() %>% 
-  group_by(source) %>% 
+  ) |> 
+  ungroup() |> 
+  group_by(source) |> 
   summarise(
     n = n(),
     mean = mean(sus_score),
     sd = sd(sus_score)
-  ) %>% 
+  ) |> 
   bind_rows(s3.sus_overall)
 
 s3.sus_items_benchmark <- tibble(
@@ -46,7 +46,7 @@ s3.sus_items_benchmark <- tibble(
   value = c(3.80, 5 - 1.85, 4.24, 5 - 1.51, 3.96, 5 - 1.77, 4.19, 5 - 1.66, 4.25, 5 - 1.64) * 1.4
 )
 
-s3.sus_items.graph <- s3.sus_scores %>% ggplot(aes(x = source, y = item_score, color = source)) +
+s3.sus_items.graph <- s3.sus_scores |> ggplot(aes(x = source, y = item_score, color = source)) +
     geom_hline(data = s3.sus_items_benchmark, aes(yintercept = value), size = 2, alpha = 0.4) +
     geom_jitter(alpha = 0.2, size = 2) +
     stat_summary(fun.data = mean_cl_normal, geom = "errorbar", width = 0.3, position = position_dodge(width = 0.1)) +

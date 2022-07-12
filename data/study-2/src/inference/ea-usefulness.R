@@ -34,7 +34,7 @@ s2.mlm.ea_usefulness.comparison <- emmeans(
   at = list(
     survey = c("Final", "Expectancy")
   )
-) %>%
+) |>
   pairs()
 
 s2.mlm.ea_usefulness.r2 <- r2(s2.mlm.ea_usefulness)

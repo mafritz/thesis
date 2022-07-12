@@ -9,7 +9,7 @@ source(here("data/study-2/src/01-wrangle.R"))
 theme_set(theme_apa(box = TRUE))
 
 # Plot perceived individual vs. class feelings
-s2.perceived_emotions_frequency.graph <- s2.perceived_emotions_frequency %>%
+s2.perceived_emotions_frequency.graph <- s2.perceived_emotions_frequency |>
   filter(agent != "Observed") |> 
   ggplot(aes(x = agent, y = avg_frequency, color = agent)) +
   geom_hline(aes(yintercept = avg_frequency), color = "gray", alpha = 0.6, size = 1, data = s2.perceived_emotions_frequency |> filter(agent == "Observed")) + 

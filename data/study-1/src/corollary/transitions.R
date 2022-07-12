@@ -15,13 +15,13 @@ options(digits = 5)
 source(here("data/study-1/src/01-wrangle.R"))
 
 # Task to monitoring and vice-versa
-s1.transitions_task_monitoring <- s1.raw_eyetracking_data %>%
-  group_by(ParticipantName) %>%
+s1.transitions_task_monitoring <- s1.raw_eyetracking_data |>
+  group_by(ParticipantName) |>
   filter(
     monitoring_aoi == TRUE,
     lag(monitoring_aoi == FALSE),
     lag(task_aoi == TRUE)
-  ) %>%
+  ) |>
   summarise(
     num_transitions = n(),
     group = first(StudioTestName),
@@ -30,13 +30,13 @@ s1.transitions_task_monitoring <- s1.raw_eyetracking_data %>%
     to = "Perceiving"
   )
 
-s1.transitions_monitoring_task <- s1.raw_eyetracking_data %>%
-  group_by(ParticipantName) %>%
+s1.transitions_monitoring_task <- s1.raw_eyetracking_data |>
+  group_by(ParticipantName) |>
   filter(
     task_aoi == TRUE,
     lag(task_aoi == FALSE),
     lag(monitoring_aoi == TRUE)
-  ) %>%
+  ) |>
   summarise(
     num_transitions = n(),
     group = first(StudioTestName),
@@ -46,13 +46,13 @@ s1.transitions_monitoring_task <- s1.raw_eyetracking_data %>%
   )
 
 # Tasl to displaying and vice-versa
-s1.transitions_task_displaying <- s1.raw_eyetracking_data %>%
-  group_by(ParticipantName) %>%
+s1.transitions_task_displaying <- s1.raw_eyetracking_data |>
+  group_by(ParticipantName) |>
   filter(
     displaying_aoi == TRUE,
     lag(displaying_aoi == FALSE),
     lag(task_aoi == TRUE)
-  ) %>%
+  ) |>
   summarise(
     num_transitions = n(),
     group = first(StudioTestName),
@@ -60,13 +60,13 @@ s1.transitions_task_displaying <- s1.raw_eyetracking_data %>%
     from = "Task",
     to = "Expressing"
   )
-s1.transitions_displaying_task <- s1.raw_eyetracking_data %>%
-  group_by(ParticipantName) %>%
+s1.transitions_displaying_task <- s1.raw_eyetracking_data |>
+  group_by(ParticipantName) |>
   filter(
     task_aoi == TRUE,
     lag(task_aoi == FALSE),
     lag(displaying_aoi == TRUE)
-  ) %>%
+  ) |>
   summarise(
     num_transitions = n(),
     group = first(StudioTestName),
@@ -76,13 +76,13 @@ s1.transitions_displaying_task <- s1.raw_eyetracking_data %>%
   )
 
 # Displaying to Expressing and vice-versa
-s1.transitions_displaying_monitoring <- s1.raw_eyetracking_data %>%
-  group_by(ParticipantName) %>%
+s1.transitions_displaying_monitoring <- s1.raw_eyetracking_data |>
+  group_by(ParticipantName) |>
   filter(
     monitoring_aoi == TRUE,
     lag(monitoring_aoi == FALSE),
     lag(displaying_aoi == TRUE)
-  ) %>%
+  ) |>
   summarise(
     num_transitions = n(),
     group = first(StudioTestName),
@@ -90,13 +90,13 @@ s1.transitions_displaying_monitoring <- s1.raw_eyetracking_data %>%
     from = "Expressing",
     to = "Perceiving"
   )
-s1.transitions_monitoring_displaying <- s1.raw_eyetracking_data %>%
-  group_by(ParticipantName) %>%
+s1.transitions_monitoring_displaying <- s1.raw_eyetracking_data |>
+  group_by(ParticipantName) |>
   filter(
     displaying_aoi == TRUE,
     lag(displaying_aoi == FALSE),
     lag(monitoring_aoi == TRUE)
-  ) %>%
+  ) |>
   summarise(
     num_transitions = n(),
     group = first(StudioTestName),
@@ -130,8 +130,8 @@ s1.transitions$transition <- factor(
 s1.transitions$group = fct_recode(s1.transitions$group, Partner = "Other", Mutual = "Both")
 s1.transitions$group <- factor(s1.transitions$group, levels = c("Self", "Partner", "Mutual"))
 
-s1.transitions.descriptive <- s1.transitions %>% 
-  group_by(transition, group) %>% 
+s1.transitions.descriptive <- s1.transitions |> 
+  group_by(transition, group) |> 
   summarise(
     n = n(),
     mean = mean(num_transitions),

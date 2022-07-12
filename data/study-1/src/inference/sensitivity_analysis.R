@@ -9,9 +9,9 @@
 # s1.detectable_d <- cohens_d(f = s1.detectable_f$f)
 # s1.detectable_eta <- eta_squared(d = s1.detectable_d)
 # 
-# fritz2015_num_emotions <- fritz2015_emotions %>%
-#   group_by(user) %>%
-#   summarise(n = n()) %>%
+# fritz2015_num_emotions <- fritz2015_emotions |>
+#   group_by(user) |>
+#   summarise(n = n()) |>
 #   pull()
 # 
 # s1.delta_emotions <- s1.detectable_d * sd(fritz2015_num_emotions)

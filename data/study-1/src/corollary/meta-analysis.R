@@ -14,7 +14,7 @@ s1.meta_analysis_expressing <- metamean(
 s1.meta_analysis_expressing.summary <- summary(s1.meta_analysis_expressing)
 
 # Filter to other and both only condition
-other_both_only <- s1.et_data %>%  filter(group != "Self")
+other_both_only <- s1.et_data |>  filter(group != "Self")
 
 # Meta-analysis of information processing
 s1.meta_analysis_processing <- metamean(

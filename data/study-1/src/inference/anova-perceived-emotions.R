@@ -14,7 +14,7 @@ options(digits = 5)
 source(here("data/study-1/src/01-wrangle.R"))
 
 # Total Visit Count
-s1.visit_count <- s1.et_data_tidy %>%
+s1.visit_count <- s1.et_data_tidy |>
   filter(
     measure == "Visit Count",
     aoi == "Monitoring",
@@ -26,7 +26,7 @@ s1.anova.visit_count.comp <- emmeans(s1.anova.visit_count, "group")
 s1.anova.visit_count.comp.p <- pairs(s1.anova.visit_count.comp)
 s1.anova.visit_count.comp.es <- eff_size(s1.anova.visit_count.comp, sigma = sigma(s1.anova.visit_count$lm), df.residual(s1.anova.visit_count$lm))
 
-s1.anova.visit_count.comp.summary <- as_tibble(s1.anova.visit_count.comp.p |> summary(infer = TRUE)) %>%
+s1.anova.visit_count.comp.summary <- as_tibble(s1.anova.visit_count.comp.p |> summary(infer = TRUE)) |>
   mutate(
     estimate = paste0(printnum(estimate), " [", printnum(lower.CL), ", ", printnum(upper.CL), "]")
   ) |> 
@@ -65,7 +65,7 @@ plot(check_normality(s1.anova.visit_count), type = "qq")
 plot(check_normality(s1.anova.visit_count), type = "qq", detrend = TRUE)
 
 # Total Visit Duration
-s1.total_visit_duration <- s1.et_data_tidy %>%
+s1.total_visit_duration <- s1.et_data_tidy |>
   filter(
     measure == "Total Visit Duration",
     aoi == "Monitoring",
@@ -77,7 +77,7 @@ s1.anova.total_visit_duration.comp <- emmeans(s1.anova.total_visit_duration, "gr
 s1.anova.total_visit_duration.comp.p <- pairs(s1.anova.total_visit_duration.comp)
 s1.anova.total_visit_duration.comp.es <- eff_size(s1.anova.total_visit_duration.comp, sigma = sigma(s1.anova.total_visit_duration$lm), df.residual(s1.anova.total_visit_duration$lm))
 
-s1.anova.total_visit_duration.comp.summary <- as_tibble(s1.anova.total_visit_duration.comp.p |> summary(infer = TRUE)) %>%
+s1.anova.total_visit_duration.comp.summary <- as_tibble(s1.anova.total_visit_duration.comp.p |> summary(infer = TRUE)) |>
   mutate(
     estimate = paste0(printnum(estimate), " [", printnum(lower.CL), ", ", printnum(upper.CL), "]")
   ) |> 

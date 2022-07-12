@@ -13,7 +13,7 @@ theme_set(theme_apa(box = TRUE))
 source(here("data/study-2/src/01-wrangle.R"))
 
 
-s2.ec_vs_eau <- s2.participants_aggregated %>% 
+s2.ec_vs_eau <- s2.participants_aggregated |> 
   pivot_longer(
     cols = Expectancy:Final,
     names_to = "survey",
@@ -22,11 +22,11 @@ s2.ec_vs_eau <- s2.participants_aggregated %>%
 
 s2.ec_vs_eau$survey <- factor(s2.ec_vs_eau$survey, c("Expectancy", "Demo", "Halfway", "Final"))
 
-s2.geco_score_to_eau.wider <- s2.geco_score %>%
+s2.geco_score_to_eau.wider <- s2.geco_score |>
   mutate(
     sub_competence = str_to_sentence(sub_competence),
   ) |> 
-  pivot_wider(names_from = "sub_competence", values_from = "score") %>% 
+  pivot_wider(names_from = "sub_competence", values_from = "score") |> 
   inner_join(s2.participants_aggregated)
 
 s2.geco_score_means = s2.geco_score_to_eau.wider |> summarise(

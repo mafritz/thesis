@@ -152,18 +152,18 @@ tf.secs <- tibble(
   )
 )
 
-tf.secs %>% 
+tf.secs |> 
   kable(
     caption = "(ref:tf-cpm-secs-caption)\\label{tab:tf-cpm-secs}",
     caption.short = "CPM list of SECs",
     longtable = FALSE,
     booktabs = TRUE,
-  ) %>% 
-  kable_styling(full_width = TRUE) %>%
-  pack_rows("Relevance", 1, 3) %>% 
-  pack_rows("Implications/consequences", 4, 8) %>% 
-  pack_rows("Coping potential", 9, 11) %>% 
-  pack_rows("Norm compatibility", 12, 13) %>% 
+  ) |> 
+  kable_styling(full_width = TRUE) |>
+  pack_rows("Relevance", 1, 3) |> 
+  pack_rows("Implications/consequences", 4, 8) |> 
+  pack_rows("Coping potential", 9, 11) |> 
+  pack_rows("Norm compatibility", 12, 13) |> 
   column_spec(1, width = "5.5cm")
   
 ```

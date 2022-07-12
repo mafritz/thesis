@@ -21,7 +21,7 @@ s2.sus_score$item <- factor(s2.sus_score$item, levels = c(
   "SUS10"
 ))
 
-(s2.sus_by_item.graph <- s2.sus_score %>%
+(s2.sus_by_item.graph <- s2.sus_score |>
   ggplot(aes(x = as_factor(item), y = item_score, color = group)) +
   geom_jitter(size = 2, alpha = 0.2) +
   stat_summary(fun.data = mean_cl_normal, geom = "errorbar", width = 0.4) +

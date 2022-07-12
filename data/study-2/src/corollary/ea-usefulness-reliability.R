@@ -10,7 +10,7 @@ theme_set(theme_apa(box = TRUE))
 
 source(here("data/study-2/src/01-wrangle.R"))
 
-s2.ea_usefulness.wider <- s2.ea_usefulness %>%
+s2.ea_usefulness.wider <- s2.ea_usefulness |>
   pivot_wider(
     names_from = "dimension",
     names_repair = "minimal",
@@ -20,7 +20,7 @@ s2.ea_usefulness.wider <- s2.ea_usefulness %>%
 # names(s2.ea_usefulness.wider) <- str_replace_all(names(s2.ea_usefulness.wider), pattern = " ", replacement = "_")
 names(s2.ea_usefulness.wider) <- str_replace_all(names(s2.ea_usefulness.wider), pattern = "-", replacement = "_")
 
-s2.ea_usefulness_scale.all <- s2.ea_usefulness.wider %>%
+s2.ea_usefulness_scale.all <- s2.ea_usefulness.wider |>
   select(Frequency:`Self_Regulation`)
 
 s2.ea_usefulness_scale.reliability <- s2.ea_usefulness_scale.all |> reliability()

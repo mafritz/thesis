@@ -15,27 +15,27 @@ source(here("data/study-3/src/01-wrangle.R"))
 source(here("data/utils/dew-utils.R"))
 
 # Button vs. Other ----
-s3.button_vs_other <- s3.dew_combined_emotions %>%
-  filter(listed) %>% 
-  group_by(condition, user, click) %>%
+s3.button_vs_other <- s3.dew_combined_emotions |>
+  filter(listed) |> 
+  group_by(condition, user, click) |>
   summarise(
     n = n()
-  ) %>%
-  ungroup() %>%
-  filter(n >= 5) %>%
-  pivot_wider(names_from = "click", values_from = "n", values_fill = 0) %>%
+  ) |>
+  ungroup() |>
+  filter(n >= 5) |>
+  pivot_wider(names_from = "click", values_from = "n", values_fill = 0) |>
   mutate(
     n = button + other,
     ratio = button / (button + other),
   )
 
-s3.button_vs_other.descriptive <- s3.button_vs_other %>%
-  group_by(condition) %>%
+s3.button_vs_other.descriptive <- s3.button_vs_other |>
+  group_by(condition) |>
   summarise(
     n = n(),
     mean = mean(ratio),
     sd = sd(ratio)
-  ) %>% bind_rows(
+  ) |> bind_rows(
     tibble(
       condition = "Total",
       n = nrow(s3.button_vs_other),
@@ -59,27 +59,27 @@ s3.button_vs_other.graph <- ggplot(s3.button_vs_other, aes(x = condition, y = ra
   NULL
 
 # Empirical observed slope ----
-s3.empirical_feelings_disposition <- s3.dew_combined_emotions %>% 
-  filter(listed, !is.na(observedSlope)) %>% 
-  group_by(feeling) %>% 
+s3.empirical_feelings_disposition <- s3.dew_combined_emotions |> 
+  filter(listed, !is.na(observedSlope)) |> 
+  group_by(feeling) |> 
   summarise(
     n = n(),
-    valence = paste0(mean(x) %>% printnum(), " (", sd(x) %>% printnum(), ")"),
-    control = paste0(mean(y) %>% printnum(), " (", sd(y) %>% printnum(), ")"),
+    valence = paste0(mean(x) |> printnum(), " (", sd(x) |> printnum(), ")"),
+    control = paste0(mean(y) |> printnum(), " (", sd(y) |> printnum(), ")"),
     computed_slope = map2_dbl(mean(x), mean(y), dew.calculateSlope),
     expected_slope = first(expectedSlope),
     `|slope|` = abs(computed_slope - expected_slope)
-  ) %>% 
-  arrange(expected_slope) %>% 
+  ) |> 
+  arrange(expected_slope) |> 
   ungroup()
 
-s3.empirical_feelings_disposition_circumplex <- s3.empirical_feelings_disposition %>% 
+s3.empirical_feelings_disposition_circumplex <- s3.empirical_feelings_disposition |> 
   mutate(
     pos_x = 0 - dew.getRadialY(computed_slope),
     pos_y = dew.getRadialX(computed_slope)
   )
 
-s3.theoretical_feelings_disposition_circumplex <- s3.empirical_feelings_disposition %>% 
+s3.theoretical_feelings_disposition_circumplex <- s3.empirical_feelings_disposition |> 
   mutate(
     pos_x = 0 - dew.getRadialY(expected_slope),
     pos_y = dew.getRadialX(expected_slope)
@@ -130,13 +130,13 @@ s3.theoretical_feelings_disposition_circumplex.graph <- ggplot(s3.theoretical_fe
     ggtitle("Theoretical/Expected Affective Space")
 
 # Empirical disposition scater plot ----
-s3.empirical_space_comparison.graph <- s3.dew_combined_emotions %>%
+s3.empirical_space_comparison.graph <- s3.dew_combined_emotions |>
     filter(listed) |> 
-    group_by(condition, feeling) %>% 
+    group_by(condition, feeling) |> 
     summarise(
       mean_x = mean(x),
       mean_y = mean(y)
-    ) %>% 
+    ) |> 
     ggplot(aes(x = mean_x, y = mean_y, label = feeling, shape = condition, color = condition)) +
     geom_vline(xintercept = 0) +
     geom_hline(yintercept = 0) +

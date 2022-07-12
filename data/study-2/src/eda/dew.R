@@ -10,9 +10,9 @@ theme_set(theme_apa(box = TRUE))
 
 
 # Compare frequency of subjective feelings
-s2.expressed_emotions %>%
-  left_join(s2.feelings_translation, by = "label") %>% 
-  filter(listed) %>%
+s2.expressed_emotions |>
+  left_join(s2.feelings_translation, by = "label") |> 
+  filter(listed) |>
   ggplot(aes(x = fct_rev(label_en), fill = group)) +
   geom_bar() +
   scale_fill_viridis_d() +
@@ -38,15 +38,15 @@ s2.graph_expressed_emotions_over_time <- ggplot(s2.expressed_emotions, aes(x = a
   NULL
 
 # Scatterplot representation
-s2.expressed_emotions %>% 
-  filter(listed) %>% 
-  group_by(group, label) %>% 
+s2.expressed_emotions |> 
+  filter(listed) |> 
+  group_by(group, label) |> 
   summarise(
     mean_valence = mean(x),
     mean_control = mean(y),
     n = n()
-  ) %>% 
-  inner_join(s2.feelings_translation, by = "label") %>% 
+  ) |> 
+  inner_join(s2.feelings_translation, by = "label") |> 
   ggplot(aes(x = mean_valence, y = mean_control, label = label_en)) +
     geom_point() +
     geom_label_repel(
@@ -71,11 +71,11 @@ s2.expressed_emotions %>%
     NULL
 
 # Compare number of emotions expressed
-s2.graph_expressed_emotions_boxplot <- s2.expressed_emotions %>% 
-  group_by(participant, group) %>% 
+s2.graph_expressed_emotions_boxplot <- s2.expressed_emotions |> 
+  group_by(participant, group) |> 
   summarise(
     count = n()
-  ) %>% 
+  ) |> 
   ggplot(aes(x = group, y = count, fill = group)) +
   geom_boxplot() +
   scale_fill_viridis_d() +

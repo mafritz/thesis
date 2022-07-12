@@ -5,10 +5,10 @@ source(here("data/dew-rt/src/01-wrangle.R"))
 
 theme_set(theme_apa(box = TRUE))
 
-dew_rt.sim_gew_graph_3 <- dew_rt.sim_gew %>%
+dew_rt.sim_gew_graph_3 <- dew_rt.sim_gew |>
   filter(
     as.numeric(order) <= 3
-  ) %>%
+  ) |>
   ggplot(
     aes(x = fct_rev(label), fill = order)
   ) +
@@ -26,10 +26,10 @@ dew_rt.sim_gew_graph_3 <- dew_rt.sim_gew %>%
   coord_flip() +
   NULL
 
-dew_rt.sim_gew_graph_10 <- dew_rt.sim_gew %>%
+dew_rt.sim_gew_graph_10 <- dew_rt.sim_gew |>
   filter(
     as.numeric(order) <= 10
-  ) %>%
+  ) |>
   ggplot(
     aes(x = fct_rev(label), fill = order)
   ) +
@@ -47,10 +47,10 @@ dew_rt.sim_gew_graph_10 <- dew_rt.sim_gew %>%
   coord_flip() +
   NULL
 
-dew_rt.sim_gillioz_et_al_graph_3 <- dew_rt.sim_gillioz_et_al %>% 
+dew_rt.sim_gillioz_et_al_graph_3 <- dew_rt.sim_gillioz_et_al |> 
   filter(
   as.numeric(order) <= 3
-) %>%
+) |>
   ggplot(
     aes(x = fct_rev(label), fill = order)
   ) +
@@ -68,10 +68,10 @@ dew_rt.sim_gillioz_et_al_graph_3 <- dew_rt.sim_gillioz_et_al %>%
   coord_flip() +
   NULL
 
-dew_rt.sim_gillioz_et_al_graph_10 <- dew_rt.sim_gillioz_et_al %>% 
+dew_rt.sim_gillioz_et_al_graph_10 <- dew_rt.sim_gillioz_et_al |> 
   filter(
   as.numeric(order) <= 10
-) %>%
+) |>
   ggplot(
     aes(x = fct_rev(label), fill = order)
   ) +

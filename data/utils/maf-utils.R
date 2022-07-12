@@ -26,7 +26,7 @@ maf.print_m_sd <- function(data, ci = FALSE, wrap_sd = TRUE) {
   if (ci) {
     m <- apa_print(t.test(data))$estimate
   } else {
-    m <- paste0("$M=", mean(data) %>% printnum(), "$")
+    m <- paste0("$M=", mean(data) |> printnum(), "$")
   }
 
   # SD
