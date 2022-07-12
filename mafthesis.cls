@@ -184,7 +184,7 @@
 \setlength{\oddsidemargin}{0in}
 \setlength{\evensidemargin}{0in}
 \setlength{\textwidth}{6.0in}
-\setlength{\textheight}{9.0in}
+\setlength{\textheight}{9.7in}
 \setlength\topmargin{0in}
 \addtolength\topmargin{-\headheight}
 \addtolength\topmargin{-\headsep}
