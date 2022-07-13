@@ -382,7 +382,7 @@ ux_measures |>
     booktabs = TRUE,
     digits = 2
   ) |>
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header"))
 ```
 
 ## Extending the Prototype Into a Proof of Concept {#dew-extension-illustration}

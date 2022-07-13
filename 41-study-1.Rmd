@@ -255,7 +255,7 @@ kable(
   longtable = FALSE,
   booktabs = TRUE,
 ) |> 
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header"))
 ```
 
 The resulting unbalanced design and overall small $N$, particularly low in the *Partner-Oriented* condition, decrease the power of an already ambitious planned test and make it more exposed to violation of assumptions [@hoekstraAreAssumptionsWellKnown2012]. The interpretation of results from an hypothesis-testing perspective is nevertheless maintained, but provided from an exploratory perspective, such as a reference for future studies, rather than a confirmatory standpoint [@scheel2020; @fiedlerCycleTheoryFormation2004; @lakensTooTrueBe2017].
@@ -294,7 +294,7 @@ s1.anova.expressed_emotions.comp.summary |>
     align = "l",
     escape = FALSE
   ) |> 
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header"))
 ```
 
 ### Differences in Perceiving Emotions
@@ -335,7 +335,7 @@ s1.anova.visit_count.comp.summary |>
     align = "l",
     escape = FALSE
   ) |> 
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header"))
 ```
 
 #### Processing Emotional Information
@@ -371,7 +371,7 @@ s1.anova.total_visit_duration.comp.summary |>
     align = "l",
     escape = FALSE
   ) |> 
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header"))
 ```
 
 ## Post-Hoc Corollary Analyses
@@ -419,7 +419,7 @@ s1.transitions.lmm.anova_table |>
     booktabs = TRUE,
     longtable = TRUE
   ) |> 
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header"))
 ```
 
 Table \@ref(tab:s1-transitions-comparisons-table) reports the pairwise comparisons between the three experimental conditions stratified by the bi-directional path of the transition. Differences in the pairwise comparisons can be detected between *Self-Centered* vs *Mutual-Modeling* and *Partner-Oriented* vs *Mutual-Modeling* in the transitions between expressing-displaying and perceiving-monitoring. In the four comparisons, the more socially-oriented interface obtained more transitions, in both directions, than the less socially-oriented one, corroborating the assumption that participants make use of the emotional information about the partner as a reference.
@@ -444,16 +444,13 @@ s1.transitions.contrasts$contrasts |>
     align = "l",
     caption = "(ref:s1-transitions-comparisons-caption)\\label{tab:s1-transitions-comparisons-table}",
   ) |>
-  kable_styling(
-    latex_options = c("repeat_header")
-  ) |>
   pack_rows("Expressing to Perceiving", 1, 3) |>
   pack_rows("Perceiving to Expressing", 4, 6) |>
   pack_rows("Expressing to Task", 7, 9) |>
   pack_rows("Task to Expressing", 10, 12) |>
   pack_rows("Perceiving to Task", 13, 15) |>
-  pack_rows("Task to Perceiving", 16, 18) |> 
-  kable_styling(latex_options = "HOLD_position")
+  pack_rows("Task to Perceiving", 16, 18) |>
+  kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
 All things considering, transitions may represent a more interesting measure of the perceiving-monitoring function of emotional awareness compared to information seeking and information processing adopted in the planned analyses. Even considering the shortcomings (e.g. transitions interrupted by the use of the keyboard), transitions provide a more *dynamic* outlook on how emotional information is integrated into the task. The concept of transition may even be pushed further by measuring at which moment the transition has occurred, which would provide useful information on the interest -- but also the potential distraction -- of moment-to-moment awareness. For instance, it would be possible to assess whether learners look at the emotions expressed by the partner as soon as they appear on the interface, or if they wait idle period in the task. In this regard, the next analysis focus precisely on the moment-to-moment perspective, but with respect to emotion expression-displaying.

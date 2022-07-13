@@ -62,10 +62,10 @@ s3.emotions_allocation |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-emotions-dataset-caption)\\label{tab:s3-emotions-dataset-table}",
-  caption.short = "Datasets of expressed emotions",
+  caption.short = "Study 3: Datasets of expressed emotions",
   longtable = FALSE,
  ) |>
-  kable_styling(latex_options = "HOLD_position")
+ kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
 ### System Usability Scale Dataset
@@ -100,7 +100,7 @@ s3.appraisal.descriptive |>
   longtable = FALSE,
  ) |>
  row_spec(3, bold = T) |>
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
 Results show that, for the Valence dimension, the overall mean is almost perfectly neutral for the Asynch./Indiv. setting, whereas it is slightly positive (around 6 points) for the Synch./Collab. setting. In both settings, the rating of the Valence dimension yielded a high standard deviation of around 60 rating points. Data therefore corroborate that participants in both settings took advantage of the full range of the Valence dimension in a very similar way. With respect to the *Control/Power* dimension, the overall mean for the Asynch./Indiv. setting is slightly positive (around 5 points), whereas it is slightly negative for the Synch./Collab. setting (around -4 points). The standard deviations are also high, but more diverging, with a difference of more than 10 rating points (around 50 for Asynch./Indiv. against around 64 for Synch./Collab.). For this second appraisal dimension, thus, data highlight a slight divergences in central tendency, even though it remains close to the neutral point for both settings, and less variance in the rating of the *Control/Power* slider in the Asynch./Indiv. setting.
@@ -148,10 +148,7 @@ s3.appraisal_sign_comparison |>
  ) |> 
  pack_rows("Asynch./Indiv. (26 participants)", 1, 3) |>
  pack_rows("Synch./Collab. (35 participants)", 4, 6) |>
- kable_styling(
-  latex_options = c("repeat_header")
- ) |>
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
 For both settings, the same sign combination was expressed at least one time by a greater number of participants, and proportionally more than the other combinations: almost half of the total (0.49) for the Asynch./Indiv. and almost three quarter of the total (0.72) for the Synch./Collab. setting. The opposite sign combination, on the other hand, accounts only for around one fifth of the total both for the Asynch./Indiv. (0.19) and the Synch./Collab. (0.21) settings. Finally, the neutral point was used in greater proportion in the Asynch./Indiv. setting, with almost one third (0.31) of the total, compared to the Synch./Collab. setting with a proportion of around one in twenty (0.06). As in the case of the density plots described above, this score is inflated by a single participant in the Asynch./Indiv. setting who expressed more than 60 emotions leaving the neutral point on the *Control/Power* dimension.
@@ -195,9 +192,6 @@ s3.listed_feelings_frequency |>
   caption = "(ref:s3-feelings-frequency-comparison-caption)\\label{tab:s3-feelings-frequency-comparison-table}",
   caption.short = "Study 3: relative frequency of listed feelings",
   longtable = FALSE,
- ) |> 
- kable_styling(
-  latex_options = c("repeat_header")
  ) |> pack_rows(
   index = c(
    "Quadrant I. Positive Valence x Positive Control/Power" = 5,
@@ -205,7 +199,8 @@ s3.listed_feelings_frequency |>
    "Quadrant III. Negative Valence x Negative Control/Power" = 5,
    "Quadrant IV. Negative Valence x Positive Control/Power" = 5
   )
- )
+ ) |>
+  kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
 Data illustrate roughly three different combinations. First, there are options with a high relative frequency in one setting and a low relative frequency in the other (*e.g.*, *Amused*, *Relieved*, *Surprised* or *Satisfied*). Second, there are options with high relative frequencies which are consistent across settings (*e.g.*, *Attentive*, *Interested*, *Bored* or *Frustrated*). Finally, there are feelings with low relative frequencies in both settings (*e.g.*, *Envious*, *Disgusted*, *Relaxed*, *Irritated*, *Empathetic*). Results therefore corroborate the assumption that the EATMINT circumplex may adapt to different settings, even though some of its lexicalized emotions are seldom chosen by participants. Whether these feelings should continue to be proposed as choices in the affective space is discussed below.
@@ -234,7 +229,7 @@ s3.button_vs_other.descriptive |>
   longtable = FALSE,
  ) |>
  row_spec(3, bold = T) |>
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
 Overall, the frequency of clicks on one of the suggested options is $M = `r s3.button_vs_other.descriptive[3,3] |> printnum()`$ ($SD = `r s3.button_vs_other.descriptive[3,4] |> printnum()`$), which means that around 4 out of 5 emotions are expressed using one of the lexicalized emotions suggested through the three buttons on the interface. In the Asnyhc./Indiv. setting, the average frequency is $M = `r s3.button_vs_other.descriptive[1,3] |> printnum()`$ with a standard deviation of $SD = `r s3.button_vs_other.descriptive[1,4] |> printnum()`$. In the Synch./Collab. setting, the average frequency is $M = `r s3.button_vs_other.descriptive[2,3] |> printnum()`$, with a standard deviation of $SD = `r s3.button_vs_other.descriptive[2,4] |> printnum()`$. There is nevertheless a difference of around 0.2 points between the two settings, with participants in the Synch./Collab. setting clicking more often on the buttons. The data, pictured in Figure \@ref(fig:s3-frequency-graph), reveals that most of the participants in the Synch./Collab. setting always *accepted* one of the proposed subjective feelings, whereas in the Asynch./Indiv. setting there is a more heterogeneous disposition. This is consistent with evidence in the previous sections of the chapter indicating the need of a more nuanced emotional expression in the Asynch./Indiv. setting.
@@ -267,9 +262,6 @@ s3.empirical_feelings_disposition |>
   longtable = FALSE,
   col.names = c("Feeling", "N", "Valence", "Contr./Pow.", "Obs. Slope", "Exp. Slope", "|Slope|")
  ) |> 
- kable_styling(
-  latex_options = c("repeat_header", "HOLD_position")
- ) |> 
  pack_rows(
   index = c(
    "Quadrant I. Positive Valence x Positive Control/Power" = 5,
@@ -277,7 +269,8 @@ s3.empirical_feelings_disposition |>
    "Quadrant III. Negative Valence x Negative Control/Power" = 5,
    "Quadrant IV. Negative Valence x Positive Control/Power" = 5
   )
- )
+ ) |>
+  kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
 The results highlight a wide range of differences between the expected and the observed disposition of each lexicalized emotion, going from almost absolute correspondence for *Bored* (0.22°) to more than a rotation of 90° for *Annoyed* (102.59°). The empirical position of some options is computed using only a few observations, as in the case of *Empathetic* (5), *Envious* (1), or *Disgusted* (5); whereas others show a good approximation with many observations, as it is the case for the aforementioned *Bored* (0.22° with 63 observations), *Amused* (7.20° with 94 observations), *Surprised* (5.72° with 35 observations), or *Stressed* (5.11° with 35 observations). The overall disposition of the observed affective space, though, corroborates the lack of orthogonality, highlighted earlier in the chapter, in the use of the two appraisal dimensions. In fact, the comparison between the graphical representations of the theoretical/expected circumplex in Figure \@ref(fig:s3-theoretical-feelings-graph) and the empirical/observed in Figure \@ref(fig:s3-empirical-feelings-graph) confirms that most of the subjective feelings have been chosen with congruent ratings of *Valence* and *Control/Power*, that is when both appraisal dimensions are either positive or negative. When the two appraisal dimensions are orthogonal, only *Surprised* and *Empathetic* in the bottom-right quadrant, and *Envious* and *Irritated* in the top-right quadrant -- based on only a few observations, though -- have been chosen with the expected combination of the appraisal dimensions. The other lexicalized emotions supposed to appear on the orthogonal combination of appraisals *moved* in another quadrant, depending on the *Valence* rating. That is, feelings from the Positive *Valence* x Negative *Control/Power* quadrant *moved* to the quadrant with both Positive appraisal dimensions; whereas feelings from the Negative *Valence* x Positive *Control/Power* *moved* to the quadrant with both Negative appraisal dimensions.
@@ -349,7 +342,7 @@ s3.sus_comparison |>
   col.names = c("Condition", "N", "M", "SD")
  ) |>
  row_spec(3, bold = T) |> 
- kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
 Furthermore, Lewis and Sauro [-@lewisItemBenchmarksSystem2018] collected data from 166 unpublished industrial usability studies or surveys, each one comprising a mean of the SUS overall score. The 166 means were computed from a total of 11'855 surveys. From these data, the authors retrieved benchmarks for each of the ten items of the SUS to reach the $M = 68$ empirical mean, or the target score of 80. As a reminder, the SUS items are the following:

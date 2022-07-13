@@ -276,7 +276,7 @@ data_accesses |>
   ) |> 
   column_spec(1, bold = T) |> 
   column_spec(2, width = "30em") |> 
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header"))
 ```
 
 ### Data About Observations
@@ -322,7 +322,7 @@ observations_plane_data |>
   ) |> 
   column_spec(1, bold = T) |> 
   column_spec(2, width = "30em") |> 
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header"))
 ```
 
 The sense and use of most variables is straightforward: they are extension or refinements of the core dimensional and discrete emotions approaches to emotion self-report. The most relevant variables from a theoretical perspectives are the list of online users and the vector distance.
@@ -355,7 +355,7 @@ observations_circumplex_data |>
   ) |> 
   column_spec(1, bold = T) |> 
   column_spec(2, width = "30em") |> 
-  kable_styling(latex_options = "HOLD_position")
+  kable_styling(latex_options = c("HOLD_position", "repeat_header"))
 ```
 
 The measures specific for the circumplexes are simply adaptations to the use of angles rather then the Euclidean distance. For instance, the radial distance must be congruent with the continuity of the circle, meaning that there are the clockwise and anti-clockwise routes between any two points on the circumplex. That is, if a lexicalized emotion in the list has a theoretically-driven position of 15°, but is evaluated to the equivalent of 300°, the shortest radial difference is 75° (anti-clockwise) and not 345° (clockwise).
