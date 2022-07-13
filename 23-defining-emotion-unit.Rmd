@@ -94,7 +94,7 @@ Third, the model bestow to the subjective experience of the emotional episode a 
 
 Forth, the CPM can be related to emotional intelligence/competence in concrete, practical terms [@schererComponentialEmotionTheory2007]. As illustrated in Section \@ref(socio-affective-competences), socio-affective competences are one of the central areas of research bridging affective sciences and learning/education sciences.
 
-Finally, the model is computational in nature [@schererBlueprintAffectiveComputing2010]. A computational model of emotion [@marsella2010] may be helpful in complying with the third main assumption of emotional awareness of Section \@ref(ea-in-computer-mediated-environment), namely that emotional awareness can be fruitfully conveyed in a computer-mediated learning environment.
+Finally, the model is computational in nature [@schererBlueprintAffectiveComputing2010]. A computational model of emotion [@marsellaComputationalModelsEmotion2010] may be helpful in complying with the third main assumption of emotional awareness of Section \@ref(ea-in-computer-mediated-environment), namely that emotional awareness can be fruitfully conveyed in a computer-mediated learning environment.
 
 This section first proposes an overview of the model and its components according to the objectives of the thesis by combining a computational [@schererComponentProcessModel2010], emotion meaning-making [@schererMeasuringMeaningEmotion2013; @schererSemanticStructureEmotion2018] and voluntary self-report [@schererGRIDMeetsWheel2013; @schererWhatAreEmotions2005] perspectives. Then, it provides further information on 3 *modules* that can be interpreted in an Input/Output process.
 
