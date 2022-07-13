@@ -111,7 +111,10 @@ All things considering, though, participants in both settings seem to take advan
 
 (ref:s3-appraisal-density-caption) Density plots of the two appraisal dimensions' ratings for the each setting.
 
-```{r s3-appraisal-density-graph, fig.align='center', fig.cap="(ref:s3-appraisal-density-caption)"}
+```{r s3-appraisal-density-graph}
+#| fig.align="center", 
+#| fig.cap="(ref:s3-appraisal-density-caption)",
+#| fig.scap = "Study 3: Density plot of the appraisal dimensions",
 s3.appraisal_density.graph
 ```
 
@@ -121,7 +124,11 @@ The second element of interest in the use of the appraisal dimensions is whether
 
 (ref:s3-appraisal-evaluation-caption) LOESS functions applied to *Valence* x *Control/Power* appraisals in the two settings.
 
-```{r s3-appraisal-evaluation-graph, fig.align='center', out.width="80%", fig.cap="(ref:s3-appraisal-evaluation-caption)"}
+```{r s3-appraisal-evaluation-graph}
+#| fig.align="center", 
+#| fig.cap="(ref:s3-appraisal-evaluation-caption)",
+#| fig.scap = "Study 3: Scatterplot of appraisal dimensions rating with LOESS function",
+#| out.width="80%"
 s3.appraisal_evaluation.graph
 ```
 
@@ -234,7 +241,11 @@ Overall, the frequency of clicks on one of the suggested options is $M = `r s3.b
 
 (ref:s3-frequency-graph-caption) Frequency of click on one of the three buttons labeled with a subjective feeling. Bars represent 95% confidence intervals.
 
-```{r s3-frequency-graph, fig.align='center', out.width="60%", fig.cap="(ref:s3-frequency-graph-caption)"}
+```{r s3-frequency-graph}
+#| fig.align="center", 
+#| fig.cap="(ref:s3-frequency-graph-caption)",
+#| fig.scap = "Study 3: Frequency of click on the suggested buttons",
+#| out.width="60%"
 s3.button_vs_other.graph
 ```
 
@@ -273,13 +284,25 @@ The results highlight a wide range of differences between the expected and the o
 
 (ref:s3-theoretical-feelings-graph-caption) The theoretical/expected disposition of the EATMINT circumplex, reported from Figure \@ref(fig:theoretical-feelings-graph) in Chapter \@ref(dew-chapter).
 
-```{r s3-theoretical-feelings-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:s3-theoretical-feelings-graph-caption)", fig.pos="p"}
+```{r s3-theoretical-feelings-graph}
+#| fig.align="center",
+#| fig.cap="(ref:s3-theoretical-feelings-graph-caption)",
+#| fig.scap = "Study 3: Theoretically-driven (expected) affective space", 
+#| fig.height=9, 
+#| fig.pos="p",
+#| out.width = "100%"
 s3.theoretical_feelings_disposition_circumplex.graph
 ```
 
 (ref:s3-empirical-feelings-graph-caption) The empirical/observed disposition of the EATMINT's circumplex lexicalized emotions according to the actual average rate of participants.
 
-```{r s3-empirical-feelings-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:s3-empirical-feelings-graph-caption)", fig.pos="p"}
+```{r s3-empirical-feelings-graph}
+#| fig.align="center", 
+#| fig.cap="(ref:s3-empirical-feelings-graph-caption)",
+#| fig.scap = "Study 3: Empirically-driven (observed) affective space", 
+#| fig.pos="p",
+#| fig.height=9, 
+#| out.width="100%"
 s3.empirical_feelings_disposition_circumplex.graph
 ```
 
@@ -287,7 +310,13 @@ The phenomenon is consistent in both learning settings, with nevertheless some v
 
 (ref:s3-empirical-feelings-comparison-graph-caption) Comparing the empirical disposition of the two learning settings.
 
-```{r s3-empirical-feelings-comparison-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:s3-empirical-feelings-comparison-graph-caption)", fig.pos="p"}
+```{r s3-empirical-feelings-comparison-graph}
+#| fig.align='center', 
+#| fig.cap="(ref:s3-empirical-feelings-comparison-graph-caption)", 
+#| fig.scap = "Study 3: Subjective feelings empirically-driven disposition",
+#| fig.height=9, 
+#| fig.pos="p",
+#| out.width="100%"
 s3.empirical_space_comparison.graph
 ```
 
@@ -340,7 +369,12 @@ Figure \@ref(fig:s3-sus-items-graph) depicts the score of each of the SUS items 
 
 (ref:s3-sus-items-graph-caption) SUS scores on the single items, with the horizontal lines representing Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks to reach the target score of 80, transformed to a 1-to-7 scale. Both items and benchmarks have already been reversed for even items. Bars represent 95% confidence intervals.
 
-```{r s3-sus-items-graph, fig.align='center', out.width="100%", fig.cap="(ref:s3-sus-items-graph-caption)", fig.pos="H"}
+```{r s3-sus-items-graph}
+#| fig.align='center', 
+#| fig.cap="(ref:s3-sus-items-graph-caption)",
+#| fig.scap = "Study 3: SUS rating, with benchmarks from Lewis and Sauro (2018)", 
+#| fig.pos="H",
+#| out.width="100%"
 s3.sus_items.graph
 ```
 

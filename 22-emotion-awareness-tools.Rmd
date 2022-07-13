@@ -109,8 +109,14 @@ The EASI theory (*ibid.*) provides an integrative framework of the social-functi
 
 (ref:tf-social-regulation-model-caption) The Social Regulatory Cycle at the inter-personal level, fromm the original Figure 2 in @reeckSocialRegulationEmotion2016, p. 51.
 
-```{r tf-social-regulation-model, fig.align="center", out.width="80%", fig.cap="(ref:tf-social-regulation-model-caption)"}
-knitr::include_graphics(here("./figure/theory/social-regulation-emotion.png"))
+```{r tf-social-regulation-model}
+#| fig.align="center", 
+#| fig.cap="(ref:tf-social-regulation-model-caption)",
+#| fig.scap = "Social Regulatory Cycle, from Reeck et al. (2016)",
+#| out.width="80%"
+knitr::include_graphics(
+    here::here("./figure/theory/social-regulation-emotion.png")
+)
 ```
 
 To sum up, there is extensive work in emotion theory advancing reasons why emotions play a pivotal role at the inter-personal level. Learners may therefore benefit from socially conveyed emotional awareness both at the individual and collective level, assuming *appropriate* communicating and inferential processes are at play.
@@ -176,15 +182,24 @@ Feidakis and colleagues [@feidakisProvidingEmotionAwareness2014; @feidakis2013] 
 
 (ref:emot-control-image-caption) Image of the overall interface in which the *emot-control* is inserted. Retrieved from @feidakis2013, Figure 7 in the original article. p. 1653.
 
-```{r emot-control-image, out.width="100%", fig.cap="(ref:emot-control-image-caption)"}
-knitr::include_graphics(here::here("figure/theory/emot-control-feidakis.png"))
+```{r emot-control-image}
+#| fig.cap = "(ref:emot-control-image-caption)",
+#| fig.scap = "Emot-Control tool, from Feidakis et al. (2013)",
+#| out.width = "80%" 
+knitr::include_graphics(
+    here::here("figure/theory/emot-control-feidakis.png")
+)
 ```
 
 The tool provided by Feidakis and colleagues comply with all the three main features of an EAT as advocated by the present contribution: it is based on voluntary-self report, it incorporates an emotional structure based on Russel's (1980) circumplex, and allows moment-to-moment emotional awareness. On the other hand, the tool separates the expressing-displayingand the perceiving-monitoringfunction of an awareness tool, which are provided in two separate windows. Furthermore, the use of icons representing synthetic facial expressions present some limitations. From a spatial perspective, augmenting the number of options would reduce the size of the icons and make identification more difficult. Depicting emotions with icons is also more prone to misunderstanding or difficulty to provide a sufficient number of images, and different enough to discriminate between similar feelings. For instance the emotion placed from noon to 1 (*inspired*) in the circumplex is very similar to that placed from 2 to 3 o'clock (*interested*). It is useful to note in this regard that a previous version of the tool combined the icon and the label, for the label being dropped in the latest version to overcome language barriers [@feidakis2013]. Finally, the tool combine emotions and moods on the same observation, which may be problematic given a growing consensus in considering the two as distinct phenomena: we may have moods and emotions at the same time, but also only moods or only emotions [@linnenbrink-garciaAdaptiveMotivationEmotion2016; @schererWhatAreEmotions2005; @scherer2022].
 
 The Mood Meter Mobile Application[^1], depicted in Figure \@ref(fig:mood-meter-image), is a digital extension of the physical Mood Meter dashboard of the RULER approach [@brackettRULERTheoryDrivenSystemic2019; @hoffmannTeachingEmotionRegulation2020; @nathansonCreatingEmotionallyIntelligent2016] introduced in Section \@ref(socio-affective-competences). The physical Mood Meter consists in four colored quadrants organized according to two axes: *Valence* and *Activation/Arousa*l. Learners can therefore project themselves in one of the four quadrants according to (1) the extent by which they rate their emotional exprience as pleasant or unpleasant, and (2) how high or low is their energy. The top-right yellow quadrant corresponds to emotions which are pleasant and high on energy, such as *excitement*, *joy* and *elation*. The bottom-right green quadrant corresponds to emotions which are pleasant and low on energy, as *tranquility*, *serenity*, and *satisfaction*. The bottom-left blue quadrant corresponds to emotions which are unpleasant and low in energy, as *boredom*, *sadness* and *despair*. And finally, in the top-left red quadrant corresponds to emotions which are unpleasant and high in energy, such as *anger*, *frustration* or *anxiety*. In the digital app, the overall dashboard is divided in 100 points (25 per quadrant). Users can tap one of the point in the quadrant and obtain 9 emotion words, that is the word that is associated with the very point they have clicked, plus 8 alternatives, which corresponds to the 8 adjacent points on the dashboard. Once identified the emotion term that corresponds to how the learner is feeling, the person can: (1) describe the feeling by typing in more information; and (2) select a strategy between quotes, images or practical tips that are meant to help the person shift to another feeling if desired. Further features of the app include the possibility to track the feelings entered in the app, for instance with an overview of the percentage per quadrant; set a reminder to use the app at specific periods; and finally share their feelings via Facebook or Twitter.
 
-```{r mood-meter-image, out.width="60%", fig.align="center", fig.cap="Image of the four quadrants of the Mood Meter, retrieved from Brackett et al. (2019), Figure 1 in the original article. For the Mood Meter app, see the official site in the footnote."}
+```{r mood-meter-image}
+#| fig.align = "center", 
+#| fig.cap = "Image of the four quadrants of the Mood Meter, retrieved from Brackett et al. (2019), Figure 1 in the original article. For the Mood Meter app, see the official site in the footnote.",
+#| fig.scap = "Mood Meter, from Brackett et al. (2019)",
+#| out.width = "60%"
 knitr::include_graphics(here::here("figure/theory/mood-meter-image.png"))
 ```
 
@@ -194,8 +209,14 @@ A third and final tool cited in this overview is the one adopted in the contribu
 
 (ref:tf-eatmint-eat-caption) The argument graphic tool and the EAT adopted in @molinariEmotionFeedbackComputermediated2013, from Figure 1 in the original article.
 
-```{r tf-eatmint-eat, fig.align="center", fig.cap="(ref:tf-eatmint-eat-caption)", out.width="80%"}
-knitr::include_graphics(here("figure/theory/eatmint-eat-and-task.png"))
+```{r tf-eatmint-eat}
+#| fig.align="center", 
+#| fig.cap="(ref:tf-eatmint-eat-caption)", 
+#| fig.scap = "First version of EATMINT tool, from Molinari et al. (2013)",
+#| out.width="80%"
+knitr::include_graphics(
+    here::here("figure/theory/eatmint-eat-and-task.png")
+)
 ```
 
 The EAT adopted by Molinari and colleagues (*ibid.*) is based on self-report and provide moment-to-moment emotional awareness, being persistently on screen. On the other hand, though, it adopts a purely discrete approach to emotion, without implementing any explicit emotion structure into the tool beside the dichotomous organization of emotion terms according to the *positive* vs. *negative* distinction discussed in Section \@ref(affect-on-learning) [@erbasRoleValenceFocus2015; @shumanLevelsValence2013; @colombettiAppraisingValence2009]. In this regard, as a follow-up of the experiment, the authors reckoned that the tool could be improved on a number of points, which became the input for my Master thesis [@fritzReinventingWheelEmotional2015] detailed in Chapter \@ref(dew-chapter).
@@ -220,8 +241,14 @@ The boxes are connected with directional arrows, numbered from 1 to 7, represent
 
 (ref:thesis-scm-model-caption) Abstract model of the functions of an EAT from the perspective of a single learner disposing of it in a computer-mediated learning environment. Numbers pinpoint passages or processes that may influence whether and how an EAT sustains the function at stake.
 
-```{r thesis-scm-model, fig.cap="(ref:thesis-scm-model-caption)", fig.align="center", out.width="100%" }
-include_graphics(here("figure/intro/thesis-scm-model.png"))
+```{r thesis-scm-model}
+#| fig.cap="(ref:thesis-scm-model-caption)", 
+#| fig.align= "center",
+#| fig.scap = "Abstract model of emotional awareness", 
+#| out.width= "100%"
+include_graphics(
+    here::here("figure/intro/thesis-scm-model.png")
+)
 ```
 
 ### From the Learning Activity to Intra-Personal Emotion

@@ -80,8 +80,14 @@ Second, the model draws a clear distinction between different affective phenomen
 
 (ref:emotion-vs-other-affective-phenomena-caption) Comparison between features of different affective phenomena, retrieved from @scherer2022, Table 1 in the original article, p. 158.
 
-```{r emotion-vs-other-affective-phenomena, fig.align="center", fig.cap="(ref:emtion-vs-other-affective-phenomena-caption)", out.width="100%"}
-knitr::include_graphics(here("figure/theory/emotion-vs-other-affective-phenomena.png"))
+```{r emotion-vs-other-affective-phenomena}
+#| fig.align="center", 
+#| fig.cap="(ref:emotion-vs-other-affective-phenomena-caption)",
+#| fig.scap = "Comparison between affective phenomena, from Scherer (2022)", 
+#| out.width="100%"
+knitr::include_graphics(
+  here::here("figure/theory/emotion-vs-other-affective-phenomena.png")
+)
 ```
 
 Third, the model bestow to the subjective experience of the emotional episode a central role in extrapolating meaning-making both at the individual and interpersonal levels [@grandjeanConsciousEmotionalExperience2008; @schererWhatAreEmotions2005]. This is consistent with an interactional approach to emotion [@boehnerHowEmotionMade2007] illustrated in Section \@ref(interactional-approach-emotion).
@@ -111,10 +117,16 @@ The process can be understood in terms of input/output when the model is organiz
 
 From the left-hand side of the model, an event, behavior or situation (the input) is subject to a multilevel appraisal; it is cognitively evaluated against a number of appraisal criteria. This evaluation leads to the patterning of a response, which comprises three out of the five organismic subsystems: (a) the motivational component, which prepares the organism to action, even if this action is not necessarily executed; (b) the neurophysiological component, which orchestrates the allocation of resources according to the action tendency; and (c) the motor expression component, which is responsible of the emergence of the underlying process to the *surface* via efferent manifestations, providing communicative cues, such as facial expressions, vocal prosody, or body postures. Finally, in the integration/categorization module on the right-hand side, the whole process -- that is, the net effect of the appraisal and response-patterning -- is integrated in a central representation, the feeling, of which the person may or may not be conscious. If she is conscious, the person may recur to her knowledge about features of emotion or her emotional lexicon in an effort to extrapolate a symbolic representation of the feeling, which in that case becomes the subjective feeling: the conscious output of the whole process.
 
-(ref:tf-cpm-general-model-adapted-caption) The dynamic architecture of the component process model. Adapted, with minor labeling and graphical modifications, from the original figure 2.1.1 in @schererComponentProcessModel2010, p. 50.
+(ref:tf-cpm-general-model-adapted-caption) The dynamic architecture of the component process model. Adapted, with minor labeling and graphical modifications, from the original Figure 2.1.1 in @schererComponentProcessModel2010, p. 50.
 
-```{r tf-cpm-general-model-adapted, fig.align="center", fig.cap="(ref:tf-cpm-general-model-adapted-caption)", out.width="100%"}
-knitr::include_graphics(here::here("figure/theory/cpm-model-adapted.png"))
+```{r tf-cpm-general-model-adapted}
+#| fig.align="center", 
+#| fig.cap="(ref:tf-cpm-general-model-adapted-caption)", 
+#| fig.scap = "Component Process Model architecture, adapted from Scherer (2010b)",
+#| out.width="100%"
+knitr::include_graphics(
+  here::here("figure/theory/cpm-model-adapted.png")
+)
 ```
 
 After a brief overview of the overall model, the next subsections focus on the three modules respectively.
@@ -175,8 +187,14 @@ Furthermore, appraisal criteria are also bidirectionally linked with cognitive f
 
 (ref:tf-cpm-full-process-caption) Comprehensive illustration of the component process model of emotion. Retrieved from the original Figure 1 in @sanderSystemsApproachAppraisal2005, p. 321. Please note that the *conducivness* SEC does not appear in the more recent list provided by Scherer [-@schererNatureDynamicsRelevance2013] and illustrated above.
 
-```{r tf-cpm-full-process, fig.align="center", fig.cap="(ref:tf-cpm-full-process-caption))", out.width="90%"}
-knitr::include_graphics(here("figure/theory/cpm-full-process.png"))
+```{r tf-cpm-full-process}
+#| fig.align = "center", 
+#| fig.cap = "(ref:tf-cpm-full-process-caption))", 
+#| fig.scap = "Comprehensive illustration of the Component Process Model of emotion, from Sander et al. (2005)",
+#| out.width = "80%"
+knitr::include_graphics(
+  here::here("figure/theory/cpm-full-process.png")
+)
 ```
 
 To sum up, in the CPM appraisal criteria play a prominent role in emotion elicitation and differentiation. As a consequence, an EAT could leverage on the pivotal role of SECs to foster emotional awareness, for instance advocating the cognitive evaluation of the salient event. In other words, the EAT could contribute to make sure that emotion is assessed at the conceptual level -- the one implicating consciousness and effort-full calculations -- as a means to extrapolate meaning-making from the adaptive objectives of appraisal criteria.
@@ -202,8 +220,14 @@ The integration/categorization module may be considered the *output* of the CPM,
 
 (ref:tf-cpm-subjective-feeling-caption) The subjective feeling as the central representation of the other CPM's components. The three circles of the Venn diagram show that a valid zone of self-report does not *overlap* with the underlying integration (circle A), nor the intra-personal conscious representation (circle B). Retrieved from @grandjeanConsciousEmotionalExperience2008, Figure 3 in the original article at p. 487.
 
-```{r tf-cpm-subjective-feeling-caption, fig.align="center", fig.cap="(ref:tf-cpm-subjective-feeling-caption)", out.width="50%"}
-knitr::include_graphics(here("figure/theory/cpm-subjective-feeling.jpg"))
+```{r tf-cpm-subjective-feeling-caption}
+#| fig.align="center", 
+#| fig.cap="(ref:tf-cpm-subjective-feeling-caption)", 
+#| fig.scap = "Three hypothetical types of central representation of the Component Process Model, from Grandjean at al. (2008)",
+#| out.width="50%"
+knitr::include_graphics(
+  here::here("figure/theory/cpm-subjective-feeling.jpg")
+)
 ```
 
 As the schema illustrates, a virtual *zone of valid self-report* does not completely overlap with the *true* phenomena, meaning that a person can potentially verbalize or communicate (circle C) a subjective feeling that is not representative either or neither of the *true qualia* of circle A or the conscious representation of it represented by circle B. For instance, the person may fail to integrate the whole *signals* from the components in circle A, and therefore not *feel* the episode in spite of the organism experiencing it. This will result in not reporting an emotion. Another possibility is that the person consciously attributes to the *true qualia* a different representation from the *original signal* (circle B), as in the case of interpreting excitement for collaborating with a new colleague as fear. Finally, (circle C) the person may be unable to verbalize her emotion or communicate a different emotion from the one experienced due to confusion or lack of emotion-related vocabulary, as in communicating *frustration* rather than *anger*.

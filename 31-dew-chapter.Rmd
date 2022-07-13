@@ -35,8 +35,14 @@ The tool in the pilot studies of the EATMINT project was persistently located at
 
 (ref:tf-eatmint-eat-repeated-caption) The argument graphic tool and the EAT adopted in @molinariEmotionFeedbackComputermediated2013, from Figure 1 in the original article (repeated from Figure \@ref(fig:tf-eatmint-eat)).
 
-```{r tf-eatmint-eat-repeated, fig.align="center", fig.cap="(ref:tf-eatmint-eat-repeated-caption)", out.width="80%"}
-knitr::include_graphics(here("figure/theory/eatmint-eat-and-task.png"))
+```{r tf-eatmint-eat-repeated}
+#| fig.align = "center", 
+#| fig.cap = "(ref:tf-eatmint-eat-repeated-caption)", 
+#| fig.scap = "First version of the EATMINT tool (repeated)",
+#| out.width = "80%"
+knitr::include_graphics(
+  here::here("figure/theory/eatmint-eat-and-task.png")
+)
 ```
 
 The lower part of the tool was dedicated to the expressing-displaying function of an awareness tool. Users could encode their emotional experience by pressing one of 20 buttons, each labelled with a lexicalized emotion in the form of an adjective (e.g. *attentive*, *irritated*, *relaxed*, etc.). The list of discrete emotions was defined by combining a previous study about affective dynamics during complex learning [@dmelloDynamicsAffectiveStates2012] and two pilot studies that aimed at identifying the most frequent and intense emotions felt during a situation of collaboration, real or imagined. The 20 discrete emotions were equally divided in *positive* and *negative* labelled groups, available side by side, but did not follow any particular order within each list (see Table \@ref(tab:eatmint-original-emotions-table)). At the bottom-end of the screen, a "no-emotion" button spanning across the two columns was also available.
@@ -109,8 +115,14 @@ Furthermore, from the origin of the axes stem 5 circles for each of the lexicali
 
 (ref:gew-version-3-caption) The third version of the Geneva Emotion Wheel [@schererGRIDMeetsWheel2013]
 
-```{r gew-version-3-figure, fig.cap="(ref:gew-version-3-caption)", fig.align="center", out.width="100%" }
-include_graphics(here("figure/dew/gew-v3.png"))
+```{r gew-version-3-figure}
+#| fig.align="center", 
+#| fig.cap="(ref:gew-version-3-caption)",
+#| fig.scap = "Third version of the Geneva Emotion Wheel, from Scherer, Shuman, et al. (2013)",
+#| out.width="80%"  
+include_graphics(
+  here::here("figure/dew/gew-v3.png")
+)
 ```
 
 It is worth noting that, whereas the two dimensions have been constant over the evolution of the tool, the number and labels of the lexicalized emotions have been modified with each of the three versions, even though the aim has been consistently to provide users with intuitive, widely adopted natural language words representative of major emotion families (i.e. modal emotions). In fact, the positioning of the discrete emotions proved to be particularly difficult. If the position of the lexicalized emotions for version 1.0 and 2.0 was empirically validated for most of them on the *Valence* dimension, the same was not true for the *Control/Power* dimension [@sacharinGenevaEmotionWheel2012]. This aspect will be further developed in Section \@ref(gew-limitations). For this descriptive passage, it is worth mentioning that the disposition of the 20 lexicalized emotions of the third version of the GEW has been determined using the GRID instrument mentioned in Section \@ref(cpm-integration-module). The authors who have been working on the third version of the GEW also suggest that a custom choice of lexicalized emotions is possible, but should ideally be determined by the GRID instrument. In this regard, the MiniGRID or the CoreGRID [@schererCoreGRIDMiniGRIDDevelopment2013], which are shorter version of the GRID, can be adopted to limit the number of ratings needed to determine the position of each lexicalized emotion.
@@ -157,8 +169,14 @@ The core principle of the DEW is rather straightforward: in a self-report condit
 
 (ref:dew-core-wireframe-caption) Wireframe sketching the core principle of the Dynamic Emotion Wheel in three sequential and coordinated steps.
 
-```{r dew-core-wireframe, fig.align="center", fig.cap="(ref:dew-core-wireframe-caption)", out.width="60%"}
-knitr::include_graphics(here::here("./figure/dew/dew-core-principle-subset.png"))
+```{r dew-core-wireframe}
+#| fig.align="center", 
+#| fig.cap="(ref:dew-core-wireframe-caption)", 
+#| fig.scap = "Core principle of the Dynamic Emotion Wheel (wireframe)",
+#| out.width="60%"
+knitr::include_graphics(
+  here::here("./figure/dew/dew-core-principle-subset.png")
+)
 ```
 
 The first two steps are the same type of action and are driven by the following assumption: rather than using appraisal dimensions to organize the lexicalized emotions as in the Geneva Emotion Wheel, the very same appraisal dimensions are used as active rating inputs. If how a person evaluates the situation on appraisal criteria is the determinant of elicitation and differentiation of the emotional response, than it is in both the intra-personal and inter-personal best interests that the cognitive evaluation of an event is explicitly manifested through the tool. Obviously, being a self-report measure, the ratings on the appraisal dimensions are only a proxy of the *true* profile of the sequential evaluation checks. It also means that, referring to the CPM's four levels of processing (sensori-motor, schematic, association, and conceptuel), the appraisal is performed at the conceptual level, the one which requires consciousness of the underlying evaluation and effort-full calculation in the pre-frontal cortex [@schererNatureDynamicsRelevance2013], see also Section \@ref(cpm-appraisal-module).
@@ -175,8 +193,14 @@ Finally, the mechanisms must also reckon its limitations. For instance, the appr
 
 (ref:dew-core-wireframe-with-options-caption) Extension of the core concept with a "no emotion" and "Other..." options.
 
-```{r dew-core-wireframe-with-options, fig.align="center", fig.cap="(ref:dew-core-wireframe-with-options-caption)", out.width="60%"}
-knitr::include_graphics(here::here("./figure/dew/dew-core-principle-subset-with-options.png"))
+```{r dew-core-wireframe-with-options}
+#| fig.align="center", 
+#| fig.cap="(ref:dew-core-wireframe-with-options-caption)",
+#| fig.scap = "Extension of the core principle of the Dynamic Emotion Wheel (wireframe)", 
+#| out.width="60%"
+knitr::include_graphics(
+  here::here("./figure/dew/dew-core-principle-subset-with-options.png")
+)
 ```
 
 The core principle of the DEW consists thus in projecting an emotion structure into the way the emotion is self-reported. Following appraisal theories principles, and the CPM more specifically, the emotion structure is represented by the Appraisal module and the Integration/Categorization module (see Section \@ref(cpm-section) and Figure \@ref(fig:tf-cpm-general-model-adapted) in particular). The Appraisal module is represented by the cognitive evaluation on the *Valence* and *Control/Power* dimensions, also adopted by the Geneva Emotion Wheel. The Integration/Categorization module is represented by the choice between lexicalized emotions provided by the system, a "no emotion", and a custom response. The lexicalized emotions suggested by the system are only a subset of the list pre-defined in the underlying affective space. This subset is determined by a parsimonious computational model based on the probabilistic link between the cognitive evaluation of an event and the form by which the resulting experience, the subjective feeling, can be integrated and categorized using lexicalized emotions. This is consistent with the CPM's assumption reported from Section \@ref(cpm-integration-module) and empirically validated by a number of studies [@schererHumanEmotionExperiences2013; @fontaineComponentsEmotionalMeaning2013; @fontaineWorldEmotionsNot2007; @gilliozMappingEmotionTerms2016; @schererSemanticStructureEmotion2018; @gentschEffectsAchievementContexts2017], and which is well resumed in this sentence:
@@ -198,17 +222,28 @@ The attempt to integrate the different aspects in a comprehensive user interface
 
 (ref:dew-overall-commented-interface-caption) The overall interface of the prototype, with visual cues about the role of each element. The size of the tool is not representative in proportion to the browser's window. The actual size is closer to one-fifth of the width.
 
-```{r dew-overall-commented-interface, fig.align="center", fig.cap="(ref:dew-overall-commented-interface-caption)", out.width="100%"}
-knitr::include_graphics(here::here("./figure/dew/dew-overall-commented-interface.png"))
+```{r dew-overall-commented-interface}
+#| fig.align="center", 
+#| fig.cap="(ref:dew-overall-commented-interface-caption)",
+#| fig.scap = "Overall interface of the Dynamic Emotion Wheel", 
+#| out.width="100%"
+knitr::include_graphics(
+  here::here("./figure/dew/dew-overall-commented-interface.png")
+)
 ```
 
 The expressing-displaying function implements the core principle as described by the wireframes, using a uniform orange color for most of the elements of the interface that the user can manipulate. The two appraisal dimensions are represented by two horizontal sliders, each one with a continuum ranging from a negative *not at all* to a positive *yes, absolutely* poles. The neutral point is highlighted with a cue in the middle of the slider range. The *Valence* dimension is prompted by the label *VALENCE - Is the situation pleasant?* whereas the *Control/Power* with the label *POWER - Is the situation under your control?*. The choice of wording is adapted from the complementary material available with the Geneva Emotion Wheel. The name of the dimension in uppercase has been provided as a cue for the appraisal dimensions in the lower part of the screen, described below.
 
 The suggested subjective feelings are represented by three orange buttons, labelled with the lexicalized emotions that are most likely to occur given the values of the two appraisal-sliders. Below the three buttons, a text-input allows user to enter a custom response, which must be confirmed with a *Send* button. When the field is activated, a drop-down menu shows all the available lexicalized emotion. Beside the custom response field, a *No emotion* completes the options to encode an emotional episode into the tool. The overall interaction workflow is depicted with three screen captures disposed side-by-side in Figure \@ref(fig:dew-expressing-sequence).
 
-(ref:dew-expressing-sequence-caption) The sequence to express-display an emotion through the Dynamic Emotion Wheel.
+(ref:dew-expressing-sequence-caption) Interaction workflow to express an emotion through the Dynamic Emotion Wheel
 
-```{r dew-expressing-sequence, fig.align="center", fig.cap="(ref:dew-expressing-sequence-caption)", out.width="32%", fig.show="hold"}
+```{r dew-expressing-sequence}
+#| fig.align="center", 
+#| fig.cap="(ref:dew-expressing-sequence-caption)",
+#| fig.scap = "Interaction workflow to express an emotion through the Dynamic Emotion Wheel", 
+#| out.width="32%", 
+#| fig.show="hold"
 knitr::include_graphics(c(
   here::here("./figure/dew/dew-expressing-step1.png"), 
   here::here("./figure/dew/dew-expressing-step2.png"), 
@@ -276,7 +311,13 @@ The two lasting discrete emotions did not have even a partial matching. So it wa
 
 (ref:theoretical-feelings-graph-caption) Disposition of 19 out of 20 discrete emotion used in the EATMINT project, with *Grateful* replaced by *Disgusted* to balance 5 items in every quadrant. The result is the EATMINT circumplex.
 
-```{r theoretical-feelings-graph, fig.align='center', out.width="100%", fig.height=9, fig.cap="(ref:theoretical-feelings-graph-caption)", fig.pos="p"}
+```{r theoretical-feelings-graph}
+#| fig.align='center', 
+#| fig.height=9, 
+#| fig.cap="(ref:theoretical-feelings-graph-caption)",
+#| fig.scap = "The EATMINT circumplex", 
+#| fig.pos="p",
+#| out.width="100%"
 source(here::here("./data/study-3/src/04-computational_model.R"), local = knitr::knit_global(), encoding = "UTF-8") 
 s3.theoretical_feelings_disposition_circumplex.graph +
   ggtitle("EATMINT circumplex")
@@ -296,8 +337,14 @@ The overall interface of the test was divided in three areas of interest. First,
 
 (ref:ux-heatmap-duration-caption) Heatmap representing the time the gaze has lasted on each part of the interface. Red zones represent long-gazed elements.
 
-```{r ux-heatmap-duration, fig.align="center", fig.cap="(ref:ux-heatmap-duration-caption)", out.width="80%"}
-knitr::include_graphics(here::here("./figure/dew/ux-test-heatmap.png"))
+```{r ux-heatmap-duration}
+#| fig.align="center", 
+#| fig.cap="(ref:ux-heatmap-duration-caption)", 
+#| fig.scap = "Heatmap of the usability test on the Dynamic Emotion Wheel",
+#| out.width="80%"
+knitr::include_graphics(
+  here::here("./figure/dew/ux-test-heatmap.png")
+)
 ```
 
 Finally, at the end of the task, participants filled a survey where they were asked about their perception of the EAT. The survey comprised also the System Usability Scale [@brookeSUSQuickDirty1996], a widely adopted scale to measure usability, which has incidentally been administered also by @feidakisProvidingEmotionAwareness2014 to assess the *emot-control* tool already mentioned (see the related works in Section \@ref(ea-in-computer-mediated-environment)). The overall rating on the scale was of almost 75 points out of 100, which can be considered an acceptable usability score [@bangorDeterminingWhatIndividual2009; @lewisItemBenchmarksSystem2018]. A thorough assessment of the usability score will be discussed in Chapter \@ref(study-3).

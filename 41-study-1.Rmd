@@ -28,9 +28,14 @@ As the abstract model has shown, though, emotional awareness can be broken down 
 
 One way to guide the configuration of different versions of an EAT is to use the abstract model of the functions of emotional awareness and imagine it is a sort of *pipeline* in which the *flow* of emotional awareness circulates. Each passage from one main concept -- the learning task, the intra-indiviudal or inter-individual emotion, and the meaning-making extrapolated from emotional information -- can be seen as a pipe, whose flow can be blocked, decreased, or increased according to the configuration of the EAT. Figure \@ref(fig:conditions-ea-model) shows this concept graphically, with three different configurations of the *pipeline*, identified respectively as Self-Centered, Partner-Oriented, and Mutual-Modeling.
 
-(ref:conditions-ea-model-caption) Comparison of three different *pipelines* in the abstract model of emotional awareness: the Self-Centered, the Partner-Oriented, and the Mutual-Modeling *paths*. The *flow* in a pipe can be blocked (x), decreased (--), or increased (+), depending on the configuration of the the EAT's interface.
+(ref:conditions-ea-model-caption) Comparison of three different *pipelines* in the abstract model of emotional awareness: the Self-Centered, the Partner-Oriented, and the Mutual-Modeling *paths*. The *flow* in a pipe can be blocked (x), decreased (-), or increased (+), depending on the configuration of the the EAT's interface.
 
-```{r conditions-ea-model, fig.align="center", fig.cap="(ref:conditions-ea-model-caption)", out.width="30%", fig.show="hold"}
+```{r conditions-ea-model}
+#| fig.align="center", 
+#| fig.cap="(ref:conditions-ea-model-caption)",
+#| fig.scap = "Study 1: Manipulation of the abstract model to create experimental conditions", 
+#| out.width="30%", 
+#| fig.show="hold"
 knitr::include_graphics(
   c(
     here::here("./figure/s1/self-centered-model.png"),
@@ -58,8 +63,14 @@ In this regard, one way to look at the three different *flows* of emotional awar
 
 (ref:affective-processes-per-condition-caption) Theoretical concepts mobilized by versions of the EAT differing in the use of, and access to emotional information. Concepts are listed in alphabetic order.
 
-```{r affective-processes-per-condition, fig.align="center", fig.cap="(ref:affective-processes-per-condition-caption)", out.width="60%"}
-knitr::include_graphics(here::here("figure/s1/s1-theory-diagram.png"))
+```{r affective-processes-per-condition}
+#| fig.align="center", 
+#| fig.cap="(ref:affective-processes-per-condition-caption)", 
+#| fig.scap = "Study 1: Different emotion-related concepts mobilized by the experimental conditions",
+#| out.width="60%"
+knitr::include_graphics(
+  here::here("figure/s1/s1-theory-diagram.png")
+)
 ```
 
 In the Self-Centered condition, learners will be oriented towards their own emotional experience [@molinariEMORELOutilReporting2016; @lavoueEmotionAwarenessTools2020]. This translates, for instance, in an accurate appraisal of the situation [@scherer2021], which is nevertheless not influenced by the need to reflect on a strategic signal to others or normative pressure [@schererComponentialEmotionTheory2007; @hareliEmotionsSignalsNormative2013]. Another important process in a Self-Centered orientation is represented by emotion self-regulation [@grossEmotionRegulationCurrent2015; @grossHandbookEmotionRegulation2014]: expressing and perusing one's own emotions through the EAT can enhance self-reflection on the emotional experience, and therefore strategies to maintain functional emotions and modify dysfunctional ones. In this regard, the use of an EAT linking appraisal dimensions and subjective feelings can enhance a form of regulation through *affect labeling* [@torrePuttingFeelingsWords2018; @liebermanPuttingFeelingsWords2007; @liebermanBooConsciousnessProblem2019], according to which the process of *naming* an emotion with a term entails an implicit regulation of that same emotion.
@@ -106,8 +117,14 @@ The experimental material comprises different components; therefore an overview 
 
 (ref:s1-task-interface-caption) Overview of the interface that presents the various part of the material adopted for the CSCL task.
 
-```{r s1-task-interface-figure, fig.cap="(ref:s1-task-interface-caption)", fig.align="center", out.width="100%" }
-include_graphics(here("figure/s1/s1-task-interface.png"))
+```{r s1-task-interface-figure}
+#| fig.align="center",
+#| fig.cap="(ref:s1-task-interface-caption)",  
+#| fig.scap = "Study 1: Overall interface of the task",
+#| out.width="100%" 
+include_graphics(
+  here::here("figure/s1/s1-task-interface.png")
+)
 ```
 
 #### Problem-Solving Task
@@ -134,8 +151,14 @@ The *Self-Centered* and *Partner-Oriented* conditions present a tag cloud at the
 
 (ref:s1-eat-interfaces-caption) The three different interfaces used in the experiment. From left to right: the *Self-Centered*, the *Partner-Oriented*, and the *Mutual-Modeling* versions.
 
-```{r s1-eat-interfaces-figure, fig.cap="(ref:s1-eat-interfaces-caption)", fig.align="center", out.width="100%" }
-knitr::include_graphics(here::here("figure/s1/s1-eat-interfaces.png"))
+```{r s1-eat-interfaces-figure}
+#| fig.align="center", 
+#| fig.cap="(ref:s1-eat-interfaces-caption)",
+#| fig.scap = "Study 1: The three different interfaces of the experimental conditions", 
+#| out.width="100%" 
+knitr::include_graphics(
+  here::here("figure/s1/s1-eat-interfaces.png")
+)
 ```
 
 #### Simulated partner
@@ -243,7 +266,11 @@ Participants expressed a total of `r s1.dew_emotions |> nrow()` emotions, which 
 
 (ref:s1-expressed-emotions-graph-caption) Number of emotions expressed by experimental condition. Bars represent 95% confidence intervals.
 
-```{r s1-expressed-emotions-graph, fig.cap="(ref:s1-expressed-emotions-graph-caption)", fig.align="center", out.width="60%"}
+```{r s1-expressed-emotions-graph}
+#| fig.align="center", 
+#| fig.cap="(ref:s1-expressed-emotions-graph-caption)", 
+#| fig.scap = "Study 1: Number of emotions expressed",
+#| out.width="60%"
 
 maf.plot_means_comparison(s1.aggregated_emotions, aes(x = group, y = n, color = group)) +
   labs(x = NULL, y = "Number of emotions") +
@@ -280,7 +307,11 @@ Participants' gaze entered the perceiving-monitoring zone of the interface on av
 
 (ref:s1-visit-count-graph-caption) Total visits count in the perceiving-monitoring zone of the interface. Bars represent 95% confidence intervals.
 
-```{r s1-visit-count-graph, fig.cap="(ref:s1-visit-count-graph-caption)", out.width="60%", fig.align="center"}
+```{r s1-visit-count-graph}
+#| fig.align="center",
+#| fig.cap="(ref:s1-visit-count-graph-caption)", 
+#| fig.scap = "Study 1: Total visits count",
+#| out.width="60%"
 
 maf.plot_means_comparison(s1.visit_count, aes(x = group, y = value, color = group)) +
   labs(x = NULL, y = "Number of visits") +
@@ -313,7 +344,11 @@ Participants spent on average `r maf.print_m_sd(s1.total_visit_duration$value, T
 
 (ref:s1-total-visit-duration-graph-caption) Total time (in seconds) spent looking at the perceiving-monitoring zone of the interface. Bars represent 95% confidence intervals.
 
-```{r s1-total-visit-duration-graph, fig.cap="(ref:s1-total-visit-duration-graph-caption)", out.width="60%", fig.align="center"}
+```{r s1-total-visit-duration-graph}
+#| fig.align="center",
+#| fig.cap="(ref:s1-total-visit-duration-graph-caption)", 
+#| fig.scap = "Study 1: Total visit duration",
+#| out.width="60%"
 maf.plot_means_comparison(s1.total_visit_duration, aes(x = group, y = value, color = group)) +
   labs(x = NULL, y = "Seconds") +
   theme(legend.position = "none")
@@ -355,7 +390,12 @@ Participants made on average `r maf.print_m_sd(s1.transitions |> group_by(Partic
 
 (ref:s1-transitions-graph-caption) Number of transitions between Areas of Interest (AOI) on the interface. Transitions aggregated for $N = 34$ participants. Bars represent 95% confidence intervals.
 
-```{r s1-transitions-graph, fig.cap="(ref:s1-transitions-graph-caption)", fig.height=6, out.width="100%"}
+```{r s1-transitions-graph}
+#| fig.align = "center",
+#| fig.cap="(ref:s1-transitions-graph-caption)", 
+#| fig.scap = "Study 1: Number of transitions between AOI",
+#| fig.height=6, 
+#| out.width="100%"
 s1.transitions.graph
 ```
 
@@ -428,7 +468,11 @@ Congruently with appraisal theories of emotions -- which state that it is the ev
 
 (ref:s1-appraisal-evolution-caption) Evolution of the appraisal dimensions over time with a LOESS smoother ($N = 35$).
 
-```{r s1-appraisal-evolution-graph, fig.align="center", out.width="100%", fig.cap="(ref:s1-appraisal-evolution-caption)"}
+```{r s1-appraisal-evolution-graph}
+#| fig.align="center", 
+#| fig.cap="(ref:s1-appraisal-evolution-caption)",
+#| fig.scap = "Study 1: Evolution of the appraisal dimensions",
+#| out.width="100%"
 s1.appraisal_over_time.graph 
 ```
 
@@ -442,7 +486,11 @@ The same analysis can be conducted with respect to the expression of subjective 
 
 (ref:s1-feelings-evolution-caption) Expression of the subjective feelings. $N = `r nrow(filter(s1.dew_emotions, listed == TRUE))`$ emotions (out of `r nrow(s1.dew_emotions)`) whose subjective feeling belongs to the underlying affective space used by the DEW, aggregated for the $N = 35$ participants. (Legend omitted for reducing space, see previous graphs.)
 
-```{r s1-feelings-evolution-graph, fig.align="center", out.width="100%", fig.cap="(ref:s1-feelings-evolution-caption)"}
+```{r s1-feelings-evolution-graph}
+#| fig.align="center", 
+#| fig.cap="(ref:s1-feelings-evolution-caption)",
+#| fig.scap = "Study 1: Evolution of the expression of the subjective feelings",
+#| out.width="100%"
 s1.feelings_over_time_graph
 ```
 
@@ -458,7 +506,12 @@ To assess this claim, the number of emotions expressed by each participant in ea
 
 (ref:emotions-per-activity-caption) Observed and projected number of expressed emotions depending on the type of activity during the task (reading, solving or assessing the solution). The gray line corresponds to the observed overall mean of $M =$ 13.8.
 
-```{r emotions-per-activity-graph, fig.align="center", fig.cap="(ref:emotions-per-activity-caption)", out.width= "80%", fig.height=4}
+```{r emotions-per-activity-graph}
+#| fig.align="center", 
+#| fig.cap="(ref:emotions-per-activity-caption)",
+#| fig.scap = "Study 1: Observed and projected number of emotion expressed per task activity", 
+#| fig.height=4,
+#| out.width= "80%"
 s1.emotion_per_task_activity.graph
 ```
 
@@ -474,7 +527,12 @@ Each meta-analysis has been conducted using the R meta package version `r packag
 
 The meta-analysis on the expression of emotions has been conducted on all the retained participants for both studies, since, even for participants in the *Self-Centered* condition, the overall situation in which participants have expressed their emotions are sufficiently close for an internal meta-analytic purpose. Consequently, the sample size are of $N = 14$ in Fritz (2015) and of $N = 35$ in this contribution. Results, depicted in Figure \@ref(fig:s1-forest-expressing), assess an estimated mean of `r s1.meta_analysis_expressing.summary$fixed$TE |> printnum()` [`r s1.meta_analysis_expressing.summary$fixed$lower |> printnum()`; `r s1.meta_analysis_expressing.summary$fixed$upper |> printnum()`] expressed emotions for the fixed effect model, and of `r s1.meta_analysis_expressing.summary$random$TE |> printnum()` [`r s1.meta_analysis_expressing.summary$random$lower |> printnum()`; `r s1.meta_analysis_expressing.summary$random$upper |> printnum()`] for the random effect model. The meta-analysis highlights the presence of considerable heterogeneity in the expression of emotions ($\tau^2$ = 10.29; $\tau$ = 3.21; I\^2 = 82.0% [23.9%; 95.7%]; H = 2.36 [1.15; 4.84]; $\chi^2$ = 5.55 *p* = .018). This may suggest that the different conditions of the two studies may have played a role in inflating the number of emotions expressed in Fritz (2015), where participants were explicitly asked, if possible, to express at least one emotion in each phase of the 4 enigmas (*i.e.* which would amount to 12). On the contrary, in this contribution they did not receive any guidance as of the number of emotion to express. This may be interpreted as a warning about the importance of being careful in framing how the expression of emotional information is prompted, even if the inflation of the number of emotions may not be necessarily accounted by *forced* emotions, that is, emotional episodes that are not *really* felt, but nevertheless reported. It may also be the case that prompting for emotional expression may ease participants into expressing their emotions, something they could be less prone to do otherwise.
 
-```{r s1-forest-expressing, fig.align="left", out.width="100%", fig.cap="Internal meta-analysis of the number of emotions expressed in the experimental task.", fig.height=2 }
+```{r s1-forest-expressing}
+#| fig.align="left",  
+#| fig.cap="Internal meta-analysis of the number of emotions expressed in the experimental task.",
+#| fig.scap = "Study 1: Small meta-analysis of the number of emotions expressed", 
+# fig.height=2,
+#| out.width="100%"
 forest.meta(s1.meta_analysis_expressing, hetstat = TRUE, xlim = c(5, 25), layout = "JAMA")
 ```
 
@@ -482,7 +540,12 @@ forest.meta(s1.meta_analysis_expressing, hetstat = TRUE, xlim = c(5, 25), layout
 
 The internal meta-analysis on information processing has been conducted using only the participants retained for the eye-tracking analysis ($N = 12$) in Fritz (2015), and only participants in the *Partner-Oriented* and *Mutual-Modeling* conditions ($N = 23$) in this contribution, for the interface in these situations is identical or at least very similar with respect to the *social* information shared. Results, depicted in Figure \@ref(fig:s1-forest-processing), assess an estimated mean of `r s1.meta_analysis_processing.summary$fixed$TE |> printnum()` [`r s1.meta_analysis_processing.summary$fixed$lower |> printnum()`; `r s1.meta_analysis_processing.summary$fixed$upper |> printnum()`] total visit duration, in seconds, for the fixed effect model, and of `r s1.meta_analysis_processing.summary$random$TE |> printnum()` [`r s1.meta_analysis_processing.summary$random$lower |> printnum()`; `r s1.meta_analysis_processing.summary$random$upper |> printnum()`] for the random effect model. The meta-analysis does not detect heterogeneity between studies ($\tau^2$ = 40.81; $\tau$ = 6.39; I\^2 = 45.2%; H = 1.35; $\chi^2$ = 1.82 *p* = .177), which may indicate that the time spent at looking at emotional information could be determined by a balance between the primary problem-solving activity and the sustaining emotional awareness. The point estimate of total visit duration being around 1 minute over the 20 minutes of the task, it corresponds to a proportion of 5% of the total time.
 
-```{r s1-forest-processing, fig.align="left", out.width="100%", fig.cap="Internal meta-analysis of the time spent at processing emotional information available on screen.", fig.height=2}
+```{r s1-forest-processing}
+#| fig.align="left", 
+#| fig.cap="Internal meta-analysis of the time spent at processing emotional information available on screen.",
+#| fig.scap = "Study 1: Small meta-analysis of emotion information processing", 
+#| fig.height=2,
+#| out.width="100%"
 forest.meta(s1.meta_analysis_processing, hetstat = TRUE, xlim = c(30, 80), layout = "JAMA")
 ```
 
@@ -490,7 +553,12 @@ forest.meta(s1.meta_analysis_processing, hetstat = TRUE, xlim = c(30, 80), layou
 
 With respect to emotional information seeking, the internal meta-analyses comprise the same samples as for information processing, that is $N = 12$ in Fritz (2015) and $N = 23$ in this contribution. Results, depicted in Figure \@ref(fig:s1-forest-seeking), assess an estimated mean of `r s1.meta_analysis_seeking.summary$fixed$TE |> printnum()` [`r s1.meta_analysis_seeking.summary$fixed$lower |> printnum()`; `r s1.meta_analysis_seeking.summary$fixed$upper |> printnum()`] number of visits for the fixed effect model, and of `r s1.meta_analysis_seeking.summary$random$TE |> printnum()` [`r s1.meta_analysis_seeking.summary$random$lower |> printnum()`; `r s1.meta_analysis_seeking.summary$random$upper |> printnum()`] for the random effect model. The meta-analysis does not detect heterogeneity between studies ($\tau^2$ = 0; $\tau$ = 0; I\^2 = 0%; H = 1; $\chi^2$ = .56 *p* = .453), which is nevertheless rather due to the huge variability within studies rather than homogeneity between studies. In future studies, the number of transitions between AOI could represent a more informative measure for emotional information seeking.
 
-```{r s1-forest-seeking, fig.align="left", out.width="100%", fig.cap="Internal meta-analysis of the number of times emotional information has been visited on screen.", fig.height=2 }
+```{r s1-forest-seeking}
+#| fig.align="left", 
+#| fig.cap="Internal meta-analysis of the number of times emotional information has been visited on screen.", 
+#| fig.scap = "Study 1: Small internal meta-analysis of emotion information processing",
+#| fig.height=2,
+#| out.width="100%"
 forest.meta(s1.meta_analysis_seeking, hetstat = TRUE, xlim = c(50, 100), layout = "JAMA")
 ```
 

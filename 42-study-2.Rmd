@@ -100,8 +100,14 @@ For the perceiving-monitoring function of awareness, three word clouds were impl
 
 (ref:s2-dew-interface-caption) Interface of the EAT for a participant, depicting the expressing-displaying and perceiving-monitoring parts of the tool. For the perceiving-monitoring parts, the word clouds refer to the social functions of emotions identified by Fischer and Mastead [-@fischerSocialFunctionsEmotion2016]: affiliation and distancing (details in the text).
 
-```{r s2-dew-interface-figure, fig.cap="(ref:s2-dew-interface-caption)", fig.align="center", out.width="50%"}
-knitr::include_graphics(here::here("figure/s2/dew-interface.png"))
+```{r s2-dew-interface-figure}
+#| fig.align="center",
+#| fig.cap="(ref:s2-dew-interface-caption)",  
+#| fig.scap = "Study 2: Interface of the EAT",
+#| out.width="50%"
+knitr::include_graphics(
+  here::here("figure/s2/dew-interface.png")
+)
 ```
 
 The combination of the three word clouds sustain the two main social functions of emotions identified by Fischer and Mastead [-@fischerSocialFunctionsEmotion2016]: the affiliation and the distancing function (see Section \@ref(ea-inter-personal)). The top and center word clouds allow participant to compare her own emotions (top) with that of the class (center). In this way, the learner can position herself with respect to the other students (distancing). The bottom word cloud groups all the emotions of the class and is therefore more related to the affiliation function of emotions. In an attempt to increase the perception of others, the title of the central word cloud also reported how many other participants were currently online.
@@ -293,7 +299,12 @@ In comparing the two classes, the number of emotions expressed is similar with r
 
 (ref:s2-graph-emotions-expressed-boxplot-caption) Boxplot comparing the expression of emotions between the two classes.
 
-```{r s2-graph-emotions-expressed-boxplot, fig.align="center", fig.width=4, fig.height=2.5, fig.cap="(ref:s2-graph-emotions-expressed-boxplot-caption)"}
+```{r s2-graph-emotions-expressed-boxplot}
+#| fig.align="center", 
+#| fig.cap="(ref:s2-graph-emotions-expressed-boxplot-caption)",
+#| fig.scap = "Study 2: Number of emotion expressed",
+#| fig.width=4, 
+#| fig.height=2.5, 
 s2.graph_expressed_emotions_boxplot
 ```
 
@@ -301,7 +312,11 @@ The use of the tool with respect to the longitudinal duration of the course is d
 
 (ref:s2-graph-expressed-emotions-over-time-caption) Cumulative number of emotions expressed through the EAT
 
-```{r s2-graph-expressed-emotions-over-time, fig.align='center', out.width="80%", fig.cap="(ref:s2-graph-expressed-emotions-over-time-caption)"}
+```{r s2-graph-expressed-emotions-over-time}
+#| fig.align="center", 
+#| fig.cap="(ref:s2-graph-expressed-emotions-over-time-caption)",
+#| fig.scap = "Study 2: Evolution of the number of emotion expressed",
+#| out.width="80%"
 s2.graph_expressed_emotions_over_time
 ```
 
@@ -313,7 +328,11 @@ Being the first adoption of the Emotion Awareness Usefulness (EAU) scale, it is 
 
 (ref:s2-eda-dimensions-dispersion-graph-caption) Overall ratings of each of the 7 EAU dimensions, $N=`r s2.ea_usefulness |> nrow()`$ ratings. Bars represent 95% confidence intervals around the overall mean.
 
-```{r s2-eda-dimensions-dispersion-graph, fig.cap="(ref:s2-eda-dimensions-dispersion-graph-caption)", out.width="80%", fig.align='center'}
+```{r s2-eda-dimensions-dispersion-graph}
+#| fig.align="center",
+#| fig.cap="(ref:s2-eda-dimensions-dispersion-graph-caption)", 
+#| fig.scap = "Study 2: Sensibility of EAU rating",
+#| out.width="80%"
 s2.eda.dimensions_dispersion
 ```
 
@@ -376,7 +395,10 @@ Results are graphically depicted in Figure \@ref(fig:s2-graph-dimensions-and-sur
 
 (ref:s2-graph-dimensions-and-survey-caption) EAU rating over longitudinal surveys stratified by dimensions and grouped by class. Bars represents 95% confidence interval and the dashed gray line the median point of the scale.
 
-```{r s2-graph-dimensions-and-survey, fig.align="center", fig.cap="(ref:s2-graph-dimensions-and-survey-caption)"}
+```{r s2-graph-dimensions-and-survey}
+#| fig.align="center", 
+#| fig.cap="(ref:s2-graph-dimensions-and-survey-caption)",
+#| fig.scap = "Study 2: Longitudinal EAU rating",
 s2.ea_usefulness.graph
 ```
 
@@ -433,7 +455,12 @@ The scree test pictured in Figure \@ref(fig:s2-scree-plot-graph) suggests that t
 
 (ref:s2-scree-plot-caption) Scree plot based on all the EAU surveys administered. $N = `r s2.ea_usefulness_scale.all |> nrow()`$
 
-```{r s2-scree-plot-graph, fig.align="center", fig.cap="(ref:s2-scree-plot-caption)"}
+```{r s2-scree-plot-graph}
+#| fig.align="center", 
+#| fig.cap="(ref:s2-scree-plot-caption)",
+#| fig.scap = "Study 2: Scree plot of EAU dimensions",
+#| out.width = "60%"
+
 scree(s2.ea_usefulness_scale.all, pc = FALSE)
 ```
 
@@ -447,7 +474,10 @@ The diagram in Figure \@ref(fig:s2-factor-analysis-graph) reports the coefficien
 
 (ref:s2-factor-analysis-caption) Graphical representation of the exploratory factor analysis
 
-```{r s2-factor-analysis-graph, fig.align="left", fig.cap="(ref:s2-factor-analysis-caption)"}
+```{r s2-factor-analysis-graph}
+#| fig.align="left", 
+#| fig.cap="(ref:s2-factor-analysis-caption)",
+#| fig.scap = "Study 2: Factors loading of the EAU"
 omega.diagram(s2.eau.fa, main = "", marg = c(5,0,0,0))
 ```
 
@@ -495,7 +525,11 @@ Figure \@ref(fig:s2-sus-items-graph) illustrates the score obtained on each of t
 
 (ref:s2-sus-items-graph-caption) Rating of the individual items of the System Usability Scale (SUS) for N = 26 participants.
 
-```{r s2-sus-items-graph, fig.align="center", fig.cap="(ref:s2-sus-items-graph-caption)"}
+```{r s2-sus-items-graph}
+#| fig.align="center", 
+#| fig.cap="(ref:s2-sus-items-graph-caption)",
+#| fig.scap = "Study 2: Rating of the SUS items",
+#| out.width = "80%"
 s2.sus_by_item.graph
 ```
 
@@ -507,7 +541,11 @@ In the *final* survey, that is approximately two weeks after the end of the seme
 
 (ref:s2-recollection-feelings-graph) Comparison between the frequency with which each subjective feeling has been recollected as being perceived by the learner herself (Self) or attributed to the whole group (Class). The gray line represents the *observed* frequency mapped on the number of expressions through the EAT.
 
-```{r s2-recollection-feelings-graph, fig.align='center', fig.cap="(ref:s2-recollection-feelings-graph)"}
+```{r s2-recollection-feelings-graph}
+#| fig.align="center", 
+#| fig.cap="(ref:s2-recollection-feelings-graph)",
+#| fig.scap = "Study 2: Recollected frequencies of expressed subjective feelings",
+#| out.width = "100%"
 s2.perceived_emotions_frequency.graph
 ```
 

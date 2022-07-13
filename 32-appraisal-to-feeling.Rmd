@@ -98,7 +98,12 @@ In this regard, an affective space based on two dimensions can be interpreted as
 
 (ref:two-dimensional-affective-spaces-caption) Comparison between a two-dimensional affective space for which the *reference frame* is a Cartesian plane (left) or a circumplex (right). The X and Y values corresponds to the $E_1$ and $E_2$ values respectively.
 
-```{r two-dimensional-affective-spaces, fig.align="center", fig.cap="(ref:two-dimensional-affective-spaces-caption)", out.width="48%", fig.show="hold"}
+```{r two-dimensional-affective-spaces}
+#| fig.align="center", 
+#| fig.cap="(ref:two-dimensional-affective-spaces-caption)",
+#| fig.scap = "Affective spaces as Cartesian planes vs. circumplexes", 
+#| out.width="48%", 
+#| fig.show="hold"
 knitr::include_graphics(
   c(
     here::here("./figure/dew/dew-vector-distance.png"),
@@ -146,21 +151,38 @@ Taking advantage of the fact that the disposition of the 20 subjective feelings 
 
 (ref:pof-gew-radial-vs-vector-caption) Disposition of the Geneva Emotion Wheel's 20 subjective feeling on a circumplex (left) and Cartesian plane (right) affective space. Reconstructed from @schererGRIDMeetsWheel2013.
 
-```{r pof-gew-radial-vs-vector, fig.align="center", fig.cap="(ref:pof-gew-radial-vs-vector-caption)", fig.align="center", out.width="100%"}
-knitr::include_graphics(here("figure/dew-rt/gew-radial-vs-vector.png"))
+```{r pof-gew-radial-vs-vector}
+#| fig.align="center", 
+#| fig.cap="(ref:pof-gew-radial-vs-vector-caption)",
+#| fig.scap = "The Geneva Emotion Wheel as a Cartesian plane or a circumplex affective space, reconstructed from Scherer, Shuman, et al. (2013)", 
+#| fig.align="center", 
+#| out.width="100%"
+knitr::include_graphics(
+  here::here("figure/dew-rt/gew-radial-vs-vector.png")
+)
 ```
 
 The simulation is computed by looping the $E_1$ and $E_2$ ranges so that each possible combination between the two -- that is, [-100, -100], [-100, -99], ..., [0, 0], ..., [99, 100], [100, 100] -- generates a subset of $k = 3$ or $k = 10$ subjective feelings. Figure \@ref(fig:pf-simulation-3) and \@ref(fig:pf-simulation-3) show the results of the simulation. With a $k = 3$ subset, the radial distance of the circumplex shows a more homogeneous number of appearances of each subjective feeling in the subset compared to the vector distance of the Cartesian plane. The opposite happens with $k = 10$, where the vector distance results in more homogeneous number of appearances compared to the radial distance.
 
 (ref:pof-simulation-3-caption) Results of the simulation comparing distance computed as a radial or vector distance with a subset of $k = 3$ subjective feelings.
 
-```{r pf-simulation-3, fig.align="center", fig.cap="(ref:pof-simulation-3-caption)", fig.align="center", out.width="70%"}
+```{r pf-simulation-3}
+#| fig.align="center", 
+#| fig.cap="(ref:pof-simulation-3-caption)",
+#| fig.scap = "Simulation of the computational model with k = 3", 
+#| fig.align="center", 
+#| out.width="60%"
 dew_rt.sim_gew_graph_3
 ```
 
 (ref:pof-simulation-10-caption) Results of the simulation comparing distance computed as a radial or vector distance with a subset of $k = 10$ subjective feelings.
 
-```{r pof-simulation-10, fig.align="center", fig.cap="(ref:pof-simulation-10-caption)", fig.align="center", out.width="70%"}
+```{r pof-simulation-10}
+#| fig.align="center", 
+#| fig.cap="(ref:pof-simulation-10-caption)",
+#| fig.scap = "Simulation of the computational model with k = 10", 
+#| fig.align="center", 
+#| out.width="70%"
 dew_rt.sim_gew_graph_10
 ```
 

@@ -25,8 +25,14 @@ The toolbox back-end is similar to a resitrcted admin area, where researchers mu
 
 (ref:toolbox-dashboard-page-caption) The dashboard page of the admin area shows a list of active instances/studies and gives access to the different features of the back-end.
 
-```{r toolbox-dashboard-page, fig.align="center", fig.cap="(ref:toolbox-dashboard-page-caption)", out.width="100%"}
-knitr::include_graphics(here::here("./figure/dew/dew-toolbox-admin-area.png"))
+```{r toolbox-dashboard-page}
+#| fig.align="center", 
+#| fig.cap="(ref:toolbox-dashboard-page-caption)",
+#| fig.scap = "Toolbox dashboard", 
+#| out.width="100%"
+knitr::include_graphics(
+  here::here("./figure/dew/dew-toolbox-admin-area.png")
+)
 ```
 
 From the back-end part of the toolbox, researchers and practitioners can perform mainly four actions that have scientific and/or pedagogical relevance :
@@ -40,8 +46,14 @@ A *study* is the element of the toolbox that glues all parts together. It is det
 
 (ref:dew-toolbox-study-detail-caption) Example of a *study*'s detail page. The screen capture has been cropped to save space.
 
-```{r dew-toolbox-study-detail, fig.align="center", fig.cap="(ref:dew-toolbox-study-detail-caption)", out.width="100%"}
-knitr::include_graphics(here::here("./figure/dew/dew-toolbox-study-details.png"))
+```{r dew-toolbox-study-detail}
+#| fig.align="center", 
+#| fig.cap="(ref:dew-toolbox-study-detail-caption)",
+#| fig.scap = "An instance's details in the toolbox", 
+#| out.width="100%"
+knitr::include_graphics(
+  here::here("./figure/dew/dew-toolbox-study-details.png")
+)
 ```
 
 Through the detail page, it is possible to perform a series of actions connected to the *study*. Only the most salient actions are listed hereafter.
@@ -56,8 +68,14 @@ Fourth, it is possible to export different elements of the study, as depicted in
 
 (ref:toolbox-export-modal-caption) Screen capture of the export procedure, which can be executed on different elements of the *study* and, if possible, with different file types.
 
-```{r toolbox-export-modal, fig.align="center", fig.cap="(ref:toolbox-export-modal-caption)", out.width="70%"}
-knitr::include_graphics(here::here("./figure/dew/dew-toolbox-export-options.png"))
+```{r toolbox-export-modal}
+#| fig.align="center", 
+#| fig.cap="(ref:toolbox-export-modal-caption)",
+#| fig.scap = "Export procedure in the toolbox", 
+#| out.width="60%"
+knitr::include_graphics(
+  here::here("./figure/dew/dew-toolbox-export-options.png")
+)
 ```
 
 From the admin area it is also possible to access the list of available affective spaces, as well as create new ones. As stated above, affective spaces can be either private or shared. Only the researcher/practitioner that has created or added the affective space to the server can decide to make it public or private. When used in a *study*, the affective space is nevertheless copied into the specific instance, so that actions performed to the affective space do not automatically propagate to *studies*.
@@ -66,8 +84,14 @@ Alongside the information necessary to represent the structure of the affective 
 
 (ref:toolbox-affective-space-detail-caption) Detail page of the English version of the EATMINT circumplex presented in Section \@ref(eatmint-circumplex) as an example of affective space. Each affective space disposes of a field to indicate how it should be cited in order to credit the author(s).
 
-```{r toolbox-affective-space-detail, fig.align="center", fig.cap="(ref:toolbox-affective-space-detail-caption)", out.width="100%"}
-knitr::include_graphics(here::here("./figure/dew/dew-toolbox-affective-space-page.png"))
+```{r toolbox-affective-space-detail}
+#| fig.align="center", 
+#| fig.cap="(ref:toolbox-affective-space-detail-caption)",
+#| fig.scap = "Affective space's details in the toolbox", 
+#| out.width="100%"
+knitr::include_graphics(
+  here::here("./figure/dew/dew-toolbox-affective-space-page.png")
+)
 ```
 
 At the time of writing, there are several affective spaces identified in the literature that can be implemented as underlying structures for the DEW. These include the EATMINT circumplex in French and English @fritzProvidingEmotionalAwareness2017, the three versions of the Geneva Emotion Wheel @schererGRIDMeetsWheel2013, the circular scaling coordinates of 28 affect words by @russellCircumplexModelAffect1980, and the mapping of 80 emotion terms on a four-dimensional space by @gilliozMappingEmotionTerms2016. Furthermore, as stated in the description of the computational model in the previous chapter, an higher-order dimensional space can also be used for lower-order rating dimensions. For instance, a three-dimensional affective space can be (1) disjointed in three different one-dimensional affective space, (2) combined in two different bi-dimensional affective space, or (3) used in its whole three-dimensional structure. Bi-dimensional affective spaces can also be represented both as a circumplex or as a Cartesian plane, allowing thus greater flexibility on the underlying *reference frame* to be adopted.
@@ -86,15 +110,25 @@ When two or more participants have to be synchronized to start a specific task, 
 
 (ref:dew-toolbox-frontend-login-caption) Example of *log-in* screen when the task has to start at the same time for all involved users. This is nevertheless not a mandatory step.
 
-```{r dew-toolbox-frontend-login, fig.align="center", fig.cap="(ref:dew-toolbox-frontend-login-caption)", out.width="60%"}
-knitr::include_graphics(here::here("./figure/dew/dew-toolbox-frontend-login.png"))
+```{r dew-toolbox-frontend-login}
+#| fig.align="center", 
+#| fig.cap="(ref:dew-toolbox-frontend-login-caption)",
+#| fig.scap = "Participants' synchronization before starting to use an instance", 
+#| out.width="60%"
+knitr::include_graphics(
+  here::here("./figure/dew/dew-toolbox-frontend-login.png")
+)
 ```
 
 The core of the front-end is the interface where the EAT is available, which can be coupled (or not) with a task or learning activity on the side. Figure \@ref(fig:toolbox-frontend-interface) shows the front-end interface of an hypothetical study or learning activity based on collaborative writing. The EAT occupies the left-hand side of the screen, whereas the online editor is in a iframe (technically a window inside a window) on the right-hand side. The interface may also presents a timer and a button that allows participants to stop the task at any time. This is just an example of how the choice of a web-based application allows the integration with existing tools, but once again, the possibilities are much wider and depends on the specific aims for which the toolbox is adopted. As it will be described in the reminder of the chapter, many aspects of the overall interface and the inner functions can be adapted through the back-end part of the toolbox. The example, for instance, adopts an *Energy* x *Familiarity* dimensions, which are derived from the *Arousal* x *Novelty* dimensions of the four-dimensional structure in @gilliozMappingEmotionTerms2016.
 
 (ref:toolbox-frontend-interface-caption) Example of an instance of the toolbox comprising the EAT on the left-hand side and a collaborative writing task on the right-hand side.
 
-```{r toolbox-frontend-interface, fig.align="top", fig.cap="(ref:toolbox-frontend-interface-caption)", out.width="100%"}
+```{r toolbox-frontend-interface}
+#| fig.align="top", 
+#| fig.cap="(ref:toolbox-frontend-interface-caption)", 
+#| fig.scap = "Interface with the EAT and a computer-mediated collaborative writing task",
+#| out.width="100%"
 knitr::include_graphics(
   here::here("./figure/dew/dew-toolbox-frontend-task.png")
 )
@@ -156,7 +190,12 @@ At the time of writing, the toolbox proposes only three kind of graphical repres
 
 (ref:dew-monitoring-widgets-caption) Three graphical representation of the perceiving-monitoring function: the emotion timeline, the appraisal/dimensional line charts, and the subjective feelings word-cloud. Each of them can be configured.
 
-```{r dew-monitoring-widgets, fig.align="center", fig.cap="(ref:dew-monitoring-widgets-caption)", out.width="30%", fig.show="hold"}
+```{r dew-monitoring-widgets}
+#| fig.align="center", 
+#| fig.cap="(ref:dew-monitoring-widgets-caption)", 
+#| fig.scap = "Graphical representations of emotion proposed by the toolbox",
+#| out.width="30%", 
+#| fig.show="hold"
 knitr::include_graphics(
   c(
     here::here("./figure/dew/dew-emotion-timeline.png"),

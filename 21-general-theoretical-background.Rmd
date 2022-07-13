@@ -221,8 +221,14 @@ An example of this integrated perspective is provided by Janssen and Bodemer [@j
 
 (ref:janssen-bodemer-framework-caption) Framework of relationships between cognitive and social group awareness, coordination of the content and relational space, and effectiveness of collaboration. From the original Figure 1 in @janssenCoordinatedComputerSupportedCollaborative2013, p. 52.
 
-```{r janssen-bodemer-framework, fig.align="center", fig.cap="(ref:janssen-bodemer-framework-caption)", out.width="80%"}
-knitr::include_graphics(here("figure/theory/cognitive-social-group-awareness.png"))
+```{r janssen-bodemer-framework}
+#| fig.align = "center", 
+#| fig.cap = "(ref:janssen-bodemer-framework-caption)",
+#| fig.scap = "Coordination space in CSCL, from Janssen and Bodemer (2013)", 
+#| out.width = "80%"
+knitr::include_graphics(
+    here::here("figure/theory/cognitive-social-group-awareness.png")
+)
 ```
 
 There is therefore a growing interest in exploring awareness tools that integrate into the CSCL environment information upon which learners can form a better representation of each others, in an attempt to build and maintain shared understanding and inter-subjective meaning-making. More traditional information, such as what a learner is doing in the collaborative space, are progressively integrated with information stimulating more meta-cognitive and socially oriented processes.
