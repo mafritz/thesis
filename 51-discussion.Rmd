@@ -2,4 +2,44 @@
 
 # General Discussion {#general-discussion}
 
-Still to be written
+```{r setup-general-discussion}
+library(dagitty)
+```
+
+The general discussion of the thesis draws both from the implementation of the proof of concept in Part II and the results of the empirical contribution in Part III. It will be organized on what I consider to be the main contributions of the present work: the computational model at the core of the proposed Emotion Awareness Tool and the abstract model of emotional awareness presented in Section ... The first part of the discussion is therefore directed towards the role the computational model has played and may play in shaping how emotional awareness can be fruitfully conveyed from an appraisal-driven perspective. The second part of the discussion attempts to extend the abstract model of emotional awareness to a more concrete structural causal model. The discussion then proposes a series of suggestions that may be of interest to other scholars interested in implementing emotion awareness tools, which are derived from the overall experience in planning and developing the tool as well as situations in which to deploy it. Finally, the discussion ends with openings on future perspectives of the current work.
+
+## It Is What the Computation Is About that Matters
+
+### An Active Cognitive Evaluation of the Situation Should Be Part of an EAT
+
+I reckon that learners may benefit from the active evaluation of the situation at hand against a set of appraisal criteria. Even if scant, the empirical evidence collected in the thesis seems to suggest that learners vary greatly in the extent by which they evaluate similar -- if not identical -- situations, corroborating thus the core principle of appraisal theories of emotion. Not considering for the moment the lack of orthogonality between the Valence and Control/Power dimensions, the use that has been made of the appraisal sliders of the EAT highlights variance both between and within learners. In a context where the elicitation of emotion is important both for the learner herself and, possibly, her colleagues as well, asking learners to actively rate what they are living through the lenses of appraisal criteria
+
+### Subjective Feeling Differentiation Should Be Fostered by the EAT
+
+### Theoretical, Data-Driven, or Pedagogical: What Should Drive the Computation?
+
+-   Theory-driven: the underlying affective space and the computation are derived from theoretical model or affective spaces
+
+-   Data-Driven: the underlying computation is derived from some form of learning, such as machine learning based on a huge amount of data
+
+-   Pedagogy-Driven: the computation is based upon an expert system that calibrates the probability of having a defined evaluation and emotion experience given the specific of the task at hand. This is a sort of Bayesian interpretation: rather than having the cognitive evaluation free to vary as it is only determined by the person itself. In the theory driven we have $P(emotion|evaluation)$ whereas from an inverse perspective we have $P(evaluation|emotion)$.
+
+## From an Abstract to a Structural Causal Model of Emotional Awareness
+
+-   Brief introduction to SCM and DAG
+
+-   Exemple of controlling for gender in CSCL experiments
+
+-   Attempt to draw a preliminary SCM
+
+## Suggestions for the Implementation of Emotion Awareness Tools
+
+1.  The tool should not only be anchored to an emotion theory, but the link should also be illustrated in terms of what are the advantages for learners to implement that theory rather than another.
+
+2.  The tool should make explicit which kind of affective phenomena it targets
+
+3.  The tool should justify the kind and number of dimensional/discrete emotion unit among which learners can choose
+
+4.  
+
+## Future Perspectives
