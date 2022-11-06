@@ -1,3 +1,7 @@
+---
+bibliography: references.bib
+---
+
 # (PART) Concluding Remarks {.unnumbered}
 
 # General Discussion {#general-discussion}
@@ -8,13 +12,41 @@ library(dagitty)
 
 The general discussion of the thesis draws both from the implementation of the proof of concept in Part II and the results of the empirical contribution in Part III. It will be organized on what I consider to be the main contributions of the present work: the computational model at the core of the proposed Emotion Awareness Tool and the abstract model of emotional awareness presented in Section ... The first part of the discussion is therefore directed towards the role the computational model has played and may play in shaping how emotional awareness can be fruitfully conveyed from an appraisal-driven perspective. The second part of the discussion attempts to extend the abstract model of emotional awareness to a more concrete structural causal model. The discussion then proposes a series of suggestions that may be of interest to other scholars interested in implementing emotion awareness tools, which are derived from the overall experience in planning and developing the tool as well as situations in which to deploy it. Finally, the discussion ends with openings on future perspectives of the current work.
 
-## It Is What the Computation Is About that Matters
+## Is Emotional Awareness a More Defined Construct?
 
-### An Active Cognitive Evaluation of the Situation Should Be Part of an EAT
+The first objective of the thesis was related to the construct validity of emotional awareness as a concept. The construct as so far been defined mostly implicitly following what I think is a mild form of *psychologisme*: given that emotion play a prominent role in everyday life and it is also related to mechanisms that are implicated to learning, then it should also play a prominent role in computer-mediated learning environments. I reckon that in a recent and forming field of research, some amount of implicit assumptions is not only necessary, but also instrumental in attempting to determine where research should be directed [@fiedlerCycleTheoryFormation2004].
 
-I reckon that learners may benefit from the active evaluation of the situation at hand against a set of appraisal criteria. Even if scant, the empirical evidence collected in the thesis seems to suggest that learners vary greatly in the extent by which they evaluate similar -- if not identical -- situations, corroborating thus the core principle of appraisal theories of emotion. Not considering for the moment the lack of orthogonality between the Valence and Control/Power dimensions, the use that has been made of the appraisal sliders of the EAT highlights variance both between and within learners. In a context where the elicitation of emotion is important both for the learner herself and, possibly, her colleagues as well, asking learners to actively rate what they are living through the lenses of appraisal criteria
+In this regard, I posited that the whole concept of emotional awareness could be better grasped if learners (1) reflect on their emotion from a subjective feeling experience rather than autonomic recognition; (2) guide their reflection on the appraisal of a situation; and (3) convey emotional awareness to others using the same *information unity* they have used to extrapolate meaning-making from the situation at hand. Following these assumptions, I set forth two models that attempt to advance our understanding of emotional awareness in computer-mediated learning environments: an abstract model of emotional awareness, and a computational model that assists learners in bridging the cognitive evaluation of the situation with their subjective feeling. I propose thus a comprehensive analysis of the two models.
 
-### Subjective Feeling Differentiation Should Be Fostered by the EAT
+### Analysis of the Abstract Model
+
+The abstract model, illustrated again in Figure \@ref(fig:thesis-scm-model-repeated), consists in reducing emotional awareness to a core of simpler functions, which are put into a common perspective. It starts from the learning activity as a source of potential emotional experiences and paves two parallel paths at the intra-personal and inter-personal levels, culminating in meaning-making, which can be related back to the learning activity.
+
+(ref:thesis-scm-model-repeated-caption) Abstract model of the functions of an EAT from the perspective of a single learner disposing of it in a computer-mediated learning environment. Repeated from Figure @ref(fig:thesis-scm-model).
+
+```{r thesis-scm-model-repeated}
+#| fig.cap="(ref:thesis-scm-model-repeated-caption)", 
+#| fig.align= "center",
+#| fig.scap = "Abstract model of emotional awareness", 
+#| out.width= "100%"
+include_graphics(
+    here::here("figure/intro/thesis-scm-model.png")
+)
+```
+
+The abstract model has, to my sense, the merit of uncovering some of the implicit assumptions that are made in considering emotional awareness instrumental to computer-mediated learning environments. For instance, it draws a clearer distinction between the intra-personal and inter-personal perspectives, going thus in the direction of "disentangling the effect of reflecting upon one's own emotions from the effect of sharing one's emotions with the partner" [@molinariEmotionFeedbackComputermediated2013, p.342]. Highlighting more clearly the intra- and inter-personal building blocks of emotional awareness paves the way to the possibility of configuring tools and environments in which the different forms of emotional awareness are more or less explicitly sought after and enhanced.
+
+The experiment in which the use of and access to emotional information was manipulated is a first attempt in this direction. Even if the results have been undermined by the small sample size at hand, the experiment at least succeeded in pointing out that, in the definition of emotional awareness as "information about one's own emotions and/or about the emotions of other learners", the *and/or* disjunction has profound consequences on the mechanisms at play in producing and perusing emotional awareness. The three word clouds used in the longitudinal study to convey persistence of the emotional experience at the personal, inter-personal, and group levels are another example of the disjunction. They directly mobilize the affiliation and distancing function of emotion identified by Fischer and Manstead [-@fischerSocialFunctionsEmotion2016]. Finally, the factor analysis on the Emotion Awareness Usefulness (EAU) scale, also introduced in the longitudinal study, confirms a distinction between a self-centered cluster (*Self-Understanding* and *Self-Regulation dimensions*) and a partner(s) oriented cluster (*Social Presence*, *Understanding Others*, and *Self-Other Comparison* dimensions). In other words, the distinction between the intra- and inter-personal paths is not only pertinent in the concrete, technical functioning of the EAT, but also in the perceived usefulness. In this regard, empirical data collected in both studies seem to privilege an inter-personal stance of the EAT, but with a *pure* intra-personal perspective which could also play a prominent role.
+
+In the meantime, the abstract model falls short in purporting the left-hand side of the model: how meaning-making is extrapolated and related back to the learning activity. Even though it was not an explicit objective of the thesis to explore this relationship above and beyond the role of an EAT, this mechanism is at the core of why emotional awareness should be provided in the first place. The thesis made the overt assumption that, for this passage even to occur, it is important to maximize the chance that meaning-making is made on solid ground from an emotional perspective. I reckon that this assumption is open to valid criticism as if whether the ground is solid should be determined, *in primis,* from a pedagogical perspective. A mainstream position on this subject is that learners can be guided by instructional designs or learning environments towards emotional experiences that are inherently instrumental to learning. I have chosen to take an alternative path by leveraging on the fact that emotions are in and of themselves adaptive responses to an environment that is likely to elicit some prototypical cognitive evaluations. Linking emotional awareness to appraisal theories of emotion is, to my sense, the best chance of bestowing learners with the responsibility of extrapolating useful meaning-making for their learning processes and outcomes from personal and inter-personal emotional information.
+
+The overall use of the EAT made by learners in the empirical contributions of the thesis is, I think, reasonable support for the core of appraisal theories of emotion: even during similar -- if not identical -- situations, learners showed considerable variance in their evaluation and differentiation of their emotional experience. As a consequence, I consider that even in an instructional design that is tailored for inducing functional and avoiding dysfunctional emotional experiences, learners could vary at different extent in *complying* with the paved emotional path. As a consequence, I join other scholars in considering that learners should be assisted in making the best out of emotion as a mechanism that provides important information on what is going on, paving the way to different opportunities in self-regulation, co-regulation and socially-shared regulation of learning [@jarvelaEnhancingSociallyShared2015; @jarvelaSociallySharedRegulation2016; @millerScriptingAwarenessTools2015; @winneWhatStateArt2015]. In this regard, the explicit link between the cognitive evaluation and the resulting subjective experience plays a pivotal role, which the computational model attempts to harness.
+
+### Analysis of the Computational Model
+
+The computational model at the core of the proposed EAT is the mechanism by which this broad assumption is put in concrete terms: learners evaluate the situation on a set of appraisal criteria and are assisted in finding the subjective feeling that best convey their emotional experience based on theoretical ground. The evidence gathered in the empirical contributions of the thesis sketches a contrasting picture with respect to this assumption. On the one hand, the computational model based on the Valence x Control/Power appraisals obtained a fair predictive accuracy as an expert system.
+
+## Is the EAT at Hand Instrumental in Research About Emotional Awareness in Computer-Mediated Learning Environments?
 
 ### Theoretical, Data-Driven, or Pedagogical: What Should Drive the Computation?
 
