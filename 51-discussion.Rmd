@@ -48,11 +48,16 @@ The sheer presence of an EAT seems to me, thus, a necessary condition -- though 
 
 The computational model at the core of the proposed EAT is the mechanism by which this broad assumption is put in concrete terms: learners evaluate the situation on a set of appraisal criteria and are assisted in finding the subjective feeling that best convey their emotional experience based on theoretical ground. The evidence gathered in the empirical contributions of the thesis sketches a contrasting picture with respect to this assumption. On the one hand, the computational model based on the Valence x Control/Power appraisals obtained a fair predictive accuracy as an expert system.
 
--   Theory-driven: the underlying affective space and the computation are derived from theoretical model or affective spaces
+-   Theory-driven: the underlying affective space and the computation are derived from theoretical model or affective spaces\
+    $E = A + {Theory}$
 
--   Data-Driven: the underlying computation is derived from some form of learning, such as machine learning based on a huge amount of data
+-   Data-Driven: the underlying computation is derived from some form of learning, such as machine learning based on a huge amount of data\
+    $E = A + {Use} + {Previous}$
 
--   Pedagogy-Driven: the computation is based upon an expert system that calibrates the probability of having a defined evaluation and emotion experience given the specific of the task at hand. This is a sort of Bayesian interpretation: rather than having the cognitive evaluation free to vary as it is only determined by the person itself. In the theory driven we have $P(emotion|evaluation)$ whereas from an inverse perspective we have $P(evaluation|emotion)$.
+-   Pedagogy-Driven: the computation is based upon an expert system that calibrates the probability of having a defined evaluation and emotion experience given the specific of the task at hand. This is a sort of Bayesian interpretation: rather than having the cognitive evaluation free to vary as it is only determined by the person itself. In the theory driven we have $P(emotion|evaluation)$ whereas from an inverse perspective we have $P(evaluation|emotion)$.\
+    $E = A + {Scripting}$
+
+Role of computational model overestimated in UX and underestimated in pedagogical terms.
 
 ## Is the EAT at Hand Instrumental in Research About Emotional Awareness in Computer-Mediated Learning Environments?
 
