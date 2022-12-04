@@ -60,12 +60,17 @@ $$
 E = A + Theory
 $$
 
-In this approach, the likelihood of an expected subjective feeling is derived only by the theoretical model, represented by the affective space. In other words, the model is not influenced neither by contextual factors, nor by the information coming in from the use of the tool through time. This way of considering an emotion is consistent with the abstract idea of an emotion as a *Swiss-knife* that maximizes its usefulness in many different circumstances.
+In this approach, the likelihood of an expected subjective feeling is derived only by the theoretical model, represented by the affective space. In other words, the model is not influenced neither by contextual factors, nor by the information coming in from the use of the tool through time -- for instance, the previous emotion experienced by the learner. This way of considering an emotion is consistent with the abstract idea, particularly relevant in appraisal-driven theories, of an emotion as a *Swiss-knife* that maximizes its usefulness in many different circumstances, depending on the person making the appropriate evaluation of which *tool* is more appropriate to the situation at hand on a moment-by-moment basis.
 
-Data-Driven: the underlying computation is derived from some form of learning, such as machine learning based on a huge amount of data\
-$E = A + {Use} + {Previous}$
+A first alternative to pure theory-driven approach consists in harnessing the concrete use of the tool through time, with the possibility to add the information about the previous emotion experienced. The equation would therefore be the following:
 
--   Pedagogy-Driven: the computation is based upon an expert system that calibrates the probability of having a defined evaluation and emotion experience given the specific of the task at hand. This is a sort of Bayesian interpretation: rather than having the cognitive evaluation free to vary as it is only determined by the person itself. In the theory driven we have $P(emotion|evaluation)$ whereas from an inverse perspective we have $P(evaluation|emotion)$.\
+$$
+E = A + {Use} + {Previous}
+$$
+
+In this case, the computational model would not be an *expert system* with a fixed set of responses, but would adapt depending on the use that is made of the tool. With a platform built around the EAT, it would be possible to set up some form of machine learning that uses existing data as training set. The previous experienced emotion could also be adopted as a predictor, leveraging on the chances that there are transitions between emotions that are more likely than others to occur in learning contexts [@dmelloDynamicsAffectiveStates2012; @dmelloConfusionCanBe2014; @lehmanConfusionComplexLearning2012]. This approach does not exclude the possibility to inject theoretical knowledge, for instance as a form of Bayesian prior that regularizes the model [@mcelreathStatisticalRethinkingBayesian2020].
+
+-   Pedagogy-Driven: the computation is based upon an expert system that calibrates the probability of having a defined evaluation and emotion experience given the specific of the task at hand. This is a sort of Bayesian interpretation: rather than having the cognitive evaluation free to vary as it is only determined by the person itself. In the theory driven we have $P(emotion|evaluation)$ whereas from an inverse perspective we have $P(evaluation|target \space emotion)$.\
     $E = A + {Scripting}$
 
 Role of computational model overestimated in UX and underestimated in pedagogical terms.
