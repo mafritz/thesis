@@ -46,13 +46,24 @@ The sheer presence of an EAT seems to me, thus, a necessary condition -- though 
 
 ### Analysis of the Computational Model
 
-The computational model at the core of the proposed EAT is the mechanism by which this broad assumption is put in concrete terms: learners evaluate the situation on a set of appraisal criteria and are assisted in finding the subjective feeling that best convey their emotional experience based on theoretical ground. The evidence gathered in the empirical contributions of the thesis sketches a contrasting picture with respect to this assumption. On the one hand, the computational model based on the Valence x Control/Power appraisals obtained a fair predictive accuracy as an expert system.
+The computational model at the core of the proposed EAT is the mechanism by which this broad assumption is put in concrete terms: learners evaluate the situation on a set of appraisal criteria and are assisted in finding the subjective feeling that best convey their emotional experience based on theoretical ground. The evidence gathered in the empirical contributions of the thesis sketches a contrasting picture with respect to this assumption, as highlighted in the data-driven assessment of Chapter \@ref(study-3). On the one hand, the computational model based on the Valence x Control/Power appraisals obtained a fair predictive accuracy as an expert system. Most of the subjective feeling expressed belonged to the subset of computed suggestions. On the other hand, the use of the tool confirmed previous work in highlighting a major overlapping between the two dimensions, which tend to co-vary. As previous scholars have pointed out, it is safe to assume that this is mainly due to the overarching importance given to the Valence dimension, with the Control/Power following suit, conditioned on whether the situation is perceived as pleasant or unpleasant.
 
--   Theory-driven: the underlying affective space and the computation are derived from theoretical model or affective spaces\
-    $E = A + {Theory}$
+This is clearly a major shortcoming both from a user experience and pedagogical perspective. For the former, the learner is asked for an explicit action that seems to add little independent value, which makes it redundant and in contrast with the general outlook in user experience advocating parsimony and relevance in prompting user action. For the latter, learners seem to gain little understanding from the Control/Value reflection, even though, at a theoretical level, this is a major determinant in discriminating emotional experience, and also a relevant pedagogical dimension in influencing learning processes and outcome.
 
--   Data-Driven: the underlying computation is derived from some form of learning, such as machine learning based on a huge amount of data\
-    $E = A + {Use} + {Previous}$
+The extension of the computational model to multi-dimensional affective spaces illustrated in Chapter \@ref(computational-model)was mainly driven by this major problem. Allowing researchers and practitioners to adopt the number and kind of appraisal dimensions, which also determine the likelihood of the subjective feeling, is certainly a way to overcome the issue. Depending on the specifics of the computer-mediated learning environment, there may be cognitive evaluations of the situation at hand that are more or less relevant. This leaves the door open to future work targeting more specifically emotions linked to learning, as it is the case, for instance, to epistemic emotion which have only recently been put under the radar.
+
+At the same time, as already mentioned, the way the interface of the EAT is built makes the underlying computational model independent from the appearance of the tool. This paves the way to alternative computational models that can be implemented on the very same user interface. I identify three possible kind of computational models: theory-driven, data-driven, and pedagogy-driven. These are illustrated by adopting the same conventions adopted in illustrating the computational model in Chapter \@ref(computational-model) : $E$ represents the expected subjective feeling, and $A$ represents the set of appraisal criteria against which the situation is assessed.
+
+The theory-driven approach is the one adopted in the current contribution, and is represented by the following equation:
+
+$$
+E = A + Theory
+$$
+
+In this approach, the likelihood of an expected subjective feeling is derived only by the theoretical model, represented by the affective space. In other words, the model is not influenced neither by contextual factors, nor by the information coming in from the use of the tool through time. This way of considering an emotion is consistent with the abstract idea of an emotion as a *Swiss-knife* that maximizes its usefulness in many different circumstances.
+
+Data-Driven: the underlying computation is derived from some form of learning, such as machine learning based on a huge amount of data\
+$E = A + {Use} + {Previous}$
 
 -   Pedagogy-Driven: the computation is based upon an expert system that calibrates the probability of having a defined evaluation and emotion experience given the specific of the task at hand. This is a sort of Bayesian interpretation: rather than having the cognitive evaluation free to vary as it is only determined by the person itself. In the theory driven we have $P(emotion|evaluation)$ whereas from an inverse perspective we have $P(evaluation|emotion)$.\
     $E = A + {Scripting}$
