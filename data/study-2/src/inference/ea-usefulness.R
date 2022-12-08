@@ -4,6 +4,7 @@ library(tidyverse)
 library(lmerTest)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 library(emmeans)
 library(broom.mixed)
 library(visreg)
@@ -59,5 +60,5 @@ s2.mlm.ea_usefulness.r2 <- r2(s2.mlm.ea_usefulness)
     legend.title = element_blank(),
     text = element_text(size = 11)
   ) +
-  scale_color_okabeito(palette = "black_first") +
+  scale_colour_brewer(palette = "Dark2") +
   NULL)

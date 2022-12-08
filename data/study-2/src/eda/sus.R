@@ -3,6 +3,7 @@ library(here)
 library(tidyverse)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 library(skimr)
 
 theme_set(theme_apa(box = TRUE))
@@ -33,6 +34,6 @@ s2.sus_score$item <- factor(s2.sus_score$item, levels = c(
     x = NULL,
     y = "Score on the SUS item (reversed for even items)"
   ) +
-  scale_color_okabeito(palette = "black_first") +
+  scale_colour_brewer(palette = "Dark2") +
   NULL
 )

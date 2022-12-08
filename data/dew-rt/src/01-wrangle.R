@@ -3,6 +3,7 @@ library(here)
 library(tidyverse)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 library(jsonlite)
 
 # Get list of affective spaces

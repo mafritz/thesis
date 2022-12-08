@@ -3,6 +3,7 @@ library(here)
 library(tidyverse)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 
 s1.et_data <- read_csv(here("data/study-1/data/et-data.csv"))
 

@@ -3,6 +3,7 @@ library(tidyverse)
 library(directlabels)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 
 options(scipen = 999)
 options(digits = 5)
@@ -36,7 +37,7 @@ s2.participant_split_expression <- s2.participants_aggregated |>
     #geom_dl(aes(label = num_emotions), method = list("last.qp", cex = 1)) +
     facet_wrap(~dimension) +
     theme(legend.position="bottom", legend.box = "horizontal") +
-    scale_color_okabeito(palette = "black_first") +
+    scale_colour_brewer(palette = "Dark2") +
     labs(
       x = "Survey",
       y = "Rating"

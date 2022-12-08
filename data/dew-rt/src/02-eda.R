@@ -21,7 +21,7 @@ dew_rt.sim_gew_graph_3 <- dew_rt.sim_gew |>
   theme(
     legend.position = "right"
   ) +
-  scale_fill_oi(palette = "black_first") +
+  scale_fill_brewer(palette = "Dark2") +
   facet_wrap(~space, strip.position = "bottom") +
   coord_flip() +
   NULL
@@ -42,7 +42,7 @@ dew_rt.sim_gew_graph_10 <- dew_rt.sim_gew |>
   theme(
     legend.position = "right"
   ) +
-  scale_fill_oi(palette = "black_first") +
+  scale_fill_brewer(palette = "Dark2") +
   facet_wrap(~space, strip.position = "bottom") +
   coord_flip() +
   NULL
@@ -63,7 +63,7 @@ dew_rt.sim_gillioz_et_al_graph_3 <- dew_rt.sim_gillioz_et_al |>
   theme(
     legend.position = "right"
   ) +
-  scale_fill_oi(palette = "black_first") +
+  scale_fill_brewer(palette = "Dark2") +
   facet_wrap(~space, strip.position = "bottom") +
   coord_flip() +
   NULL
@@ -84,7 +84,7 @@ dew_rt.sim_gillioz_et_al_graph_10 <- dew_rt.sim_gillioz_et_al |>
   theme(
     legend.position = "right"
   ) +
-  scale_fill_oi(palette = "black_first") +
+  scale_fill_brewer(palette = "Dark2") +
   facet_wrap(~space, strip.position = "bottom") +
   coord_flip() +
   NULL

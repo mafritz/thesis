@@ -3,6 +3,7 @@ library(here)
 library(tidyverse)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 library(easystats)
 library(rstanarm)
 

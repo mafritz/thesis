@@ -2,6 +2,7 @@ library(here)
 library(tidyverse)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 library(ggrepel)
 library(jsonlite)
 library(ggforce)
@@ -82,7 +83,7 @@ s3.appraisal_density.graph <- s3.dew_combined_emotions |>
     geom_density() +
     geom_vline(xintercept = 0, size = 2, color = "red", linetype = 2) +
     facet_grid(condition~dimension) +
-    scale_fill_oi(palette = "black_first") +
+    scale_fill_brewer(palette = "Dark2") +
     theme(
       legend.position = "none"
     ) +
@@ -98,7 +99,7 @@ s3.appraisal_evaluation.graph <- s3.dew_combined_emotions |>
     geom_point(alpha = 0.2) +
     geom_smooth(method = "loess", formula = y ~ x, size = 2) +
     facet_wrap(~condition) +
-    scale_color_okabeito(palette = "black_first") +
+    scale_colour_brewer(palette = "Dark2") +
     theme(
       legend.position = "right"
     ) +

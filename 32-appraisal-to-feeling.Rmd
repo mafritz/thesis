@@ -8,6 +8,7 @@ bibliography: references.bib
 library(tidyverse)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 library(here)
 library(knitr)
 library(kableExtra)
@@ -193,7 +194,7 @@ This simulation has only illustrative purpose, because the two affective spaces 
 
 As previously mentioned, there is growing empirical evidence in suggesting that one- and two-dimensional affective spaces are not enough to account for the variety of emotional experiences in semantic terms [@fontaineWorldEmotionsNot2007; @gilliozMappingEmotionTerms2016; @fontaineLinearNonlinearRelationships2021]. A four dimensional structure determined by *Valence*, *Power*, *Arousal* and *Novelty* seems better fitted for a dimensional representation of emotions (*ibid.*). It is worth mentioning in this regard, though, that @fontaineLinearNonlinearRelationships2021 found empirical evidence suggesting that the additional *representative* value brought by a third and a fourth dimensions depends on the specific discrete emotions. For instance, terms related to *joy* and *sadness* could be discriminated almost as well with two dimensions as with four. On the other hand, lexicalized emotions closer to *anger* or *surprise* benefited from a four-dimensional structure [@fontaineLinearNonlinearRelationships2021].
 
-In appraisal theories more specifically, there is virtually no limits to the number of appraisal criteria [@moorsAppraisalTheoriesEmotion2013]. As a reminder, the Component Process Model postulates as many as 13 sequential evaluation checks (\@ref(tab:tf-cpm-secs)). As a consequence, an overarching computational model should be able to integrate higher-order dimensional spaces, where the number of dimensions can be determined by researchers and practitioners with respect to theoretical, practical, or usability criteria (*e.g.*, if the moment-to-moment temporal dimension is particularly important, asking learners to repeatedly rate a high number of criteria would be very time consuming).
+In appraisal theories more specifically, there is virtually no limits to the number of appraisal criteria [@moorsAppraisalTheoriesEmotion2013]. As a reminder from Section \@ref(cpm-appraisal-module), the Component Process Model postulates as many as 13 sequential evaluation checks. As a consequence, an overarching computational model should be able to integrate higher-order dimensional spaces, where the number of dimensions can be determined by researchers and practitioners with respect to theoretical, practical, or usability criteria (*e.g.*, if the moment-to-moment temporal dimension is particularly important, asking learners to repeatedly rate a high number of criteria would be very time consuming).
 
 Extending the model to more than two dimensions is relatively straightforward when the Euclidean distance is maintained as the algorithm to determine the *k-nearest neighbors*. In fact, it is possible to determine the distance between any two points in a multidimensional space simply by adding additional dimensions to the Pythagorean formula:
 

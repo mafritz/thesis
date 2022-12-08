@@ -2,6 +2,7 @@ library(here)
 library(tidyverse)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 library(psych)
 
 options(scipen = 999)

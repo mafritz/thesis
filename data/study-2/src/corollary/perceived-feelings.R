@@ -3,6 +3,7 @@ library(here)
 library(tidyverse)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 library(scales)
 
 source(here("data/study-2/src/01-wrangle.R"))
@@ -25,5 +26,5 @@ s2.perceived_emotions_frequency.graph <- s2.perceived_emotions_frequency |>
     y = NULL
   ) +
   theme(legend.position = "none") +
-  scale_color_okabeito(palette = "black_first") +
+  scale_colour_brewer(palette = "Dark2") +
   NULL

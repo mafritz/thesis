@@ -3,6 +3,7 @@ library(tidyverse)
 library(lmerTest)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 
 theme_set(theme_apa(box = TRUE))
 
@@ -40,7 +41,7 @@ s1.emotion_per_task_activity <- s1.dew_emotions |>
 s1.emotion_per_task_activity.graph <- ggplot(s1.emotion_per_task_activity, aes(x = group, y = value, fill = group)) +
   geom_bar(stat = "identity", position = position_dodge2(width = 0.5, preserve = "single", padding = 0.5)) +
   facet_grid(name~enigma_situation) +
-  scale_fill_oi(palette = "black_first") +
+  scale_fill_brewer(palette = "Dark2") +
   theme(legend.position = "none") +
   labs(x = NULL, y = "Number of expressed emotions") +
   geom_hline(yintercept = 13.8, color = "gray", size = 2, alpha = 0.7) +

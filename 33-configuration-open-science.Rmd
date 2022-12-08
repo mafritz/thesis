@@ -8,6 +8,7 @@ bibliography: references.bib
 library(tidyverse)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 library(here)
 library(knitr)
 library(kableExtra)

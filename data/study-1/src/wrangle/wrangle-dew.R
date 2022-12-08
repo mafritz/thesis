@@ -4,6 +4,7 @@ library(tidyverse)
 library(jsonlite)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 library(afex)
 library(emmeans)
 

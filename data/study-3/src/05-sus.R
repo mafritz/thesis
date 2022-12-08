@@ -2,6 +2,7 @@ library(here)
 library(tidyverse)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 library(ggrepel)
 library(jsonlite)
 library(ggforce)
@@ -57,7 +58,7 @@ s3.sus_items.graph <- s3.sus_scores |> ggplot(aes(x = source, y = item_score, co
       x = NULL,
       y = "System Usability Scale computed score"
     ) +
-    scale_color_okabeito(palette = "black_first") +
+    scale_colour_brewer(palette = "Dark2") +
     scale_x_discrete(label = abbreviate) +
     scale_y_continuous(limits = c(1, 7), breaks = c(1, 3, 5, 7)) +
     theme(

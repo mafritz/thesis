@@ -3,6 +3,7 @@ library(here)
 library(tidyverse)
 library(papaja)
 library(see)
+library(RColorBrewer)  
 
 source(here("data/study-2/src/01-wrangle.R"))
 
