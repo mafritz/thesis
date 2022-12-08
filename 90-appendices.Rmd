@@ -3,6 +3,7 @@
 ```{r s1-setup-for-appendices, include=FALSE, echo=FALSE}
 library(tidyverse)
 library(papaja)
+library(see)
 library(here)
 library(knitr)
 library(pander)

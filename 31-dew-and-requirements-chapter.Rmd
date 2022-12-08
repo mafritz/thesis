@@ -9,6 +9,7 @@ bibliography: references.bib
 ```{r dew-chapter-setup, include=FALSE, echo=FALSE}
 library(tidyverse)
 library(papaja)
+library(see)
 library(here)
 library(knitr)
 library(kableExtra)

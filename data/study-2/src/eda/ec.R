@@ -2,6 +2,7 @@
 library(here)
 library(tidyverse)
 library(papaja)
+library(see)
 
 theme_set(theme_apa(box = TRUE))
 
@@ -12,7 +13,7 @@ ggplot(s2.geco_score, aes(x = sub_competence, y = score, color = sub_competence)
   theme(
     legend.position = "none"
   ) +
-  scale_color_viridis_d() +
+  scale_color_okabeito(palette = "black_first") +
   NULL
 
 ggplot(s2.participants_aggregated, aes(x = geco_total, y = num_emotions)) +

@@ -2,6 +2,7 @@ library(here)
 library(tidyverse)
 library(lmerTest)
 library(papaja)
+library(see)
 library(emmeans)
 library(broom.mixed)
 library(car)
@@ -162,7 +163,7 @@ s1.transitions.graph <- ggplot(s1.transitions, aes(x = group, y = num_transition
     x = NULL,
     y = "Number of transitions between screen zones"
   ) +
-  scale_color_viridis_d() +
+  scale_color_okabeito(palette = "black_first") +
   theme(
     legend.position = "none"
   ) +

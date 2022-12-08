@@ -1,5 +1,6 @@
 library(here)
 library(papaja)
+library(see)
 library(tidyverse)
 library(apa)
 
@@ -17,7 +18,7 @@ maf.plot_means_comparison <- function(data, mappings) {
     theme(
       text = element_text(size = 16)
     ) +
-    scale_color_viridis_d() +
+    scale_color_okabeito(palette = "black_first") +
     NULL
 }
 

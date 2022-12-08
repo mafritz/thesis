@@ -2,6 +2,7 @@ library(here)
 library(tidyverse)
 library(lmerTest)
 library(papaja)
+library(see)
 
 theme_set(theme_apa(box = TRUE))
 
@@ -23,5 +24,5 @@ s1.feelings_over_time_graph <- s1.dew_emotions |>
     theme(
       legend.position = "none"
     ) +
-  scale_color_viridis_d() +
+  scale_color_okabeito(palette = "black_first") +
   NULL

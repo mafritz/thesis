@@ -3,6 +3,7 @@ library(here)
 library(tidyverse)
 library(lmerTest)
 library(papaja)
+library(see)
 library(emmeans)
 library(broom.mixed)
 library(visreg)
@@ -58,5 +59,5 @@ s2.mlm.ea_usefulness.r2 <- r2(s2.mlm.ea_usefulness)
     legend.title = element_blank(),
     text = element_text(size = 11)
   ) +
-  scale_color_viridis_d() +
+  scale_color_okabeito(palette = "black_first") +
   NULL)

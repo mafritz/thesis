@@ -1,6 +1,7 @@
 library(here)
 library(tidyverse)
 library(papaja)
+library(see)
 library(ggrepel)
 library(jsonlite)
 library(ggforce)
@@ -52,7 +53,7 @@ s3.button_vs_other.graph <- ggplot(s3.button_vs_other, aes(x = condition, y = ra
     x = NULL,
     y = "Frequency of clicks on one of the suggested feelings"
   ) +
-  scale_color_viridis_d() +
+  scale_color_okabeito(palette = "black_first") +
   theme(
     legend.position = "none"
   ) +
@@ -146,7 +147,7 @@ s3.empirical_space_comparison.graph <- s3.dew_combined_emotions |>
     scale_y_continuous(limits = c(-100, 100)) +
     labs(x = "Observed mean of Valence", y = "Observed mean of Control/Power") +
     coord_fixed() +
-    scale_colour_viridis_d() +
+    scale_color_okabeito(palette = "black_first") +
     theme(
       legend.position = "bottom",
       legend.title = element_blank()

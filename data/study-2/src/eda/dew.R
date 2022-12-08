@@ -1,6 +1,7 @@
 #Exploratory data analysis 
 library(tidyverse)
 library(papaja)
+library(see)
 library(here)
 library(ggrepel)
 
@@ -15,7 +16,7 @@ s2.expressed_emotions |>
   filter(listed) |>
   ggplot(aes(x = fct_rev(label_en), fill = group)) +
   geom_bar() +
-  scale_fill_viridis_d() +
+  scale_fill_oi(palette = "black_first") +
   coord_flip() +
   labs(
     x = "Subjective feeling",
@@ -31,7 +32,7 @@ s2.graph_expressed_emotions_over_time <- ggplot(s2.expressed_emotions, aes(x = a
     y = "Cumulative number of emotions expressed",
     color = NULL
   ) +
-  scale_colour_viridis_d() +
+  scale_color_okabeito(palette = "black_first") +
   theme(
     legend.position = "right"
   ) +
@@ -63,7 +64,7 @@ s2.expressed_emotions |>
     ) +
     scale_x_continuous(limits = c(-100, 100)) +
     scale_y_continuous(limits = c(-100, 100)) +
-    scale_color_viridis_d() +
+    scale_color_okabeito(palette = "black_first") +
     facet_wrap(~group) +
     theme(
       legend.position = "bottom"
@@ -78,7 +79,7 @@ s2.graph_expressed_emotions_boxplot <- s2.expressed_emotions |>
   ) |> 
   ggplot(aes(x = group, y = count, fill = group)) +
   geom_boxplot() +
-  scale_fill_viridis_d() +
+  scale_fill_oi(palette = "black_first") +
   labs(
     x = NULL,
     y = "Emotions expressed"

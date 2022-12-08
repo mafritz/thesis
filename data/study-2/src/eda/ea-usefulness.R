@@ -2,6 +2,7 @@
 library(here)
 library(tidyverse)
 library(papaja)
+library(see)
 library(skimr)
 
 theme_set(theme_apa(box = TRUE))
@@ -27,7 +28,7 @@ s2.eda.dimensions_dispersion <- s2.ea_usefulness |>
     x = NULL,
     y = "Self-Reported Perceived Usefulness"
   ) +
-  scale_color_viridis_d() +
+  scale_color_okabeito(palette = "black_first") +
   scale_y_continuous(limits = c(1,10), breaks = c(1,4,7,10)) +
   theme(legend.position = "none") +
   coord_flip() +
@@ -40,7 +41,7 @@ s2.eda.dimensions_over_surveys <- s2.ea_usefulness |>
   stat_summary(fun.data = mean_cl_normal, geom = "point", size = 4) +
   facet_wrap(~dimension) +
   scale_y_continuous(limits = c(1,10), breaks = c(1,4,7,10)) +
-  scale_color_viridis_d() +
+  scale_color_okabeito(palette = "black_first") +
   theme(
     text = element_text(size = 10)
   ) +

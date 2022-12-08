@@ -2,6 +2,7 @@
 library(here)
 library(tidyverse)
 library(papaja)
+library(see)
 library(jsonlite)
 
 # Get list of affective spaces

@@ -2,6 +2,7 @@
 library(here)
 library(tidyverse)
 library(papaja)
+library(see)
 
 source(here("data/study-2/src/01-wrangle.R"))
 

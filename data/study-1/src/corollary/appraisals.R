@@ -1,6 +1,7 @@
 library(here)
 library(tidyverse)
 library(papaja)
+library(see)
 library(grid)
 library(gridExtra)
 
@@ -40,7 +41,7 @@ s1.appraisal_over_time.graph <- s1.appraisals_long_format |>
     geom_point(size = 0.5, alpha = 0.1) +
     geom_smooth(aes(group = group, color = group), data = s1.appraisals_long_format) +
     facet_grid(group ~ dimension) +
-    scale_color_viridis_d() +
+    scale_color_okabeito(palette = "black_first") +
     theme(
       legend.position = "none"
     ) +
