@@ -405,8 +405,18 @@ Computer-mediated learning environments can be adopted in a wide variety of situ
 
 Endowing a computer-mediated learning environment with emotional awareness requires technical skills that are often beyond reach for researchers and practitioners without a computer science background. This certainly represents an hindrance to the possibility of taking full advantage of the potential diversity of use that could be made of an EAT, or research questions that could be investigated if emotional awareness could be provided more easily and without the need of dedicated hardware or software. The proof of concept should also attempt to make the EAT readily available to other scholars and practitioners interested in an emotional awareness tool with some prototypical characteristics that are necessarily fixed, but others that can be configured to a greater extent.
 
-### Foster Transparency, Comparability, Reproducibility and Replicability of Data Obtained Through the Tool
+### Foster Open Science Principles
+
+Finally, congruently with the thesis perspective depicted in the introduction, the proof of concept aims at fostering the adoption of Open Science principles [@Nosek1422; @cruwellSevenEasySteps2019; @chambersSevenDeadlySins2017], namely in terms of:
+
+-   Transparency and consistency in the inner functioning of the tool;
+
+-   Facilitating comparison of studies that have adopted the EAT, even though in different configurations;
+
+-   Easing reproducibility and replicability of the data obtained through the tool;
+
+-   Recognition and credit for scholars contributing to the advancement of the tool, for instance by creating or adapting underlying affective spaces from other tools, empirical trials, or fundamental theories.
 
 ## Summary
 
-This chapter provided an overview of the Dynamic Emotion Wheel, a prototype built in the specific context of the EATMINT project, but that has, as a result of its design, an inner functioning that can be easily abstracted to different theoretical framework, research settings, and pedagogical uses. The tool is inspired by the Geneva Emotion Wheel, a self-report instrument deeply rooted in the Component Process Model. The core principle of the DEW consists in twisting the function of the appraisal dimensions: whereas in the GEW they are adopted as axes on which lexicalized emotion are disposed, in the DEW the user actively rate the *Valence* and the *Control/Power* dimensions in order to obtain a subset of most likely subjective feeling to occur, given the specific evaluation at hand. The emotion structure consisting in the measure of the two appraisal sliders and the subjective feeling is then used for conveying emotional awareness through a timeline of subjective feelings and line charts for the appraisal dimensions. A test of the interface conducted in a simulated computer-mediated collaborative environment yielded mixed, but all things considering encouraging results. The two next chapters will describe how the DEW has been theoretically and technically extended to better meet practitioners and researchers' needs.
+This chapter provided an overview of previous work conducted on a prototype of an EAT, named Dynamic Emotion Wheel, that the proof of concept will extend according to a new set of comprehensive requirements. These requirements cover theoretical, technical, and pedagogical objectives, which must coalesce in a relatively simple and parsimonious tool, requiring minimal dedicated hardware and software, as well as technical know-how to be adopted by scholars and practitioners alike. The next two chapters in this Part II illustrates how the requirements have been attempted to be met mainly by two intertwined elements. First, a better defined and extended computational model linking appraisal criteria and subjective feeling, thoroughly depicted in Chapter \@ref(computational-model). Second, a toolbox illustrated in Chapter \@ref(toolbox-chapter), which is built around this core computational model and allows scholars and practitioners to set up and configure their own instance of an EAT, as well as exporting data gathered through the tool.
