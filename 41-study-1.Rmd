@@ -19,7 +19,7 @@ source(here("data", "study-1", "s1-export.R"), local = knitr::knit_global(), enc
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-This chapter describes the first empirical contribution of the thesis, which investigates to what extent a different use of, and access to emotional information can determine the concrete use of an EAT in synchronous and collaborative computer-mediated settings. The presentation of the experiment follows the traditional structure of empirical contributions [@sollaciIntroductionMethodsResults2004], but without the general theoretical background already presented in Part I.
+This chapter describes the first empirical contribution of the thesis, which investigates to what extent a different use of, and access to emotional information can determine the concrete use of an EAT in synchronous and collaborative computer-mediated settings. The presentation of the experiment follows the traditional structure of empirical contributions [@sollaciIntroductionMethodsResults2004].
 
 ## Study Rationale
 
