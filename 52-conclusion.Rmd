@@ -1,3 +1,21 @@
 # Conclusion {.unnumbered}
 
-I posited that the whole concept of emotional awareness could be better grasped if learners (1) reflect on their emotion from a subjective feeling experience rather than autonomic recognition; (2) guide their reflection on the appraisal of a situation and convey emotional awareness to others using the same information unity they have used to extrapolate meaning-making from the situation at hand; and (3) dispose of emotional awareness on a moment-by-moment basis, which bestow to learners the responsibility of producing and perusing emotional information at the moment the see fit. 
+I posited that the whole concept of emotional awareness could be better grasped if learners (1) reflect on their emotion from a subjective feeling experience rather than autonomic recognition; (2) guide their reflection on the appraisal of a situation and convey emotional awareness to others using the same information unity they have used to extrapolate meaning-making from the situation at hand; and (3) dispose of emotional awareness on a moment-by-moment basis, which bestow to learners the responsibility of producing and perusing emotional information at the moment the see fit.
+
+## Limitations
+
+### The Link Between Meaning-Making and Learning Remains Mostly Implicit
+
+On the downside, the abstract model falls short in purporting the left-hand side of the model: how meaning-making is extrapolated and related back to the learning activity. Even though it was not an explicit objective of the thesis to explore this relationship above and beyond the role of an EAT, this mechanism is at the core of why emotional awareness should be provided in the first place. The thesis made the overt assumption that, for this passage even to occur, it is important to maximize the chances that meaning-making is made on solid ground from an *affective-first* perspective.
+
+I reckon that this assumption is open to valid criticism: whether the ground is solid should also be determined from a pedagogical perspective. A mainstream position on this subject is that learners can be guided by instructional designs or adaptive learning environments towards emotional experiences that are inherently instrumental to learning. I have chosen to take an alternative path consistent with the awareness tool perspective: learners are bestowed with the locus of control in considering when and how emotional information can contribute to a better (re)assessment of the learning situation ad hand, leveraging on meaning-making that is extrapolated from the emotional information available.
+
+As highlighted in the theoretical part of the thesis, this assumption requires a series of events to fall into place, which are difficult to assess before one is assured about if and how emotional awareness can be fruitfully conveyed in the first place. That is the main reason why the thesis has only scraped the surface of this pivotal underlying assumption and rather focused on the overall features, use and perception of the EAT at hand. In doing so, though, I reckon that I have in somehow neglected the potential role of the EAT in giving to emotional awareness a pedagogical dimension. The longitudinal study in particular has confirmed that, without an adequate pedagogical scenario in which the EAT is inserted, it is also a form of *psychologisme* to expect that endowing learners with emotional awareness would miraculously create the conditions for a socio-emotional dimension to emerge.
+
+The pedagogical role for extrapolating meaning-making was almost totally deferred to the emotion structure injected into the tool, notably by the computational model at the core of the EAT. In the previous chapters, I have focused on the analysis of the model mainly from an UX perspective, even in the data-driven assessment of Chapter \@ref(study-3). I now reckon that the computational model plays a more prominent role of what I had anticipated also in the left-hand side of the abstract model. From a pedagogical perspective, it assists learners in making and reinforcing inferences about the link between the evaluation of the situation at hand and what they may probably experience at the conscious emotional level. In the next section I therefore propose a more holistic analysis of the computational model.
+
+## Future Perspectives
+
+### Technical Improvements to the EAT
+
+### Further Empirical Adoption of the EAT
