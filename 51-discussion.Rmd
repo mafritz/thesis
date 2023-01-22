@@ -162,7 +162,7 @@ Emotional Awareness in Computer-Mediated Learning Environments is linked to many
 
 ## Analysis of the Computational Model at the Core of the EAT
 
-The computational model is not only the way through which an emotion structure is implemented according to appraisal theories of emotion, but also the main pedagogical mechanisms through which meaning-making is meant to be extrapolated and harnessed by learners in the situation at hand. The evidence gathered in the empirical contributions of the thesis sketches a contrasting picture with respect to the efficacy of the model, as highlighted in the data-driven assessment of Chapter \@ref(study-3). In this section I will therefore try to extend the analysis of the computational model in more general terms. First, I briefly resume the main indications that have been collected on the computational model. Second, I provide some alternatives to the proposed model. And finally, I discuss why I consider that a theory-driven computational model is still the better choice at this stage of the investigation of emotional awareness.
+The computational model is not only the way through which an emotion structure is implemented according to appraisal theories of emotion, but also the main pedagogical mechanisms through which meaning-making is meant to be extrapolated and harnessed by learners in the situation at hand. The evidence gathered in the empirical contributions of the thesis sketches a contrasting picture with respect to the efficacy of the model, as highlighted in the data-driven assessment of Chapter \@ref(study-3). In this section I will therefore try to extend the analysis of the computational model in more general terms. First, I briefly resume the main indications that have been collected on the computational model. Second, I provide some alternatives to the proposed model. Finally, I discuss why I consider that a theory-driven computational model is still the better choice at this stage of the investigation of emotional awareness.
 
 ### Is It Worth Having aComputational Model Determined by Appraisal Theories of Emotion?
 
@@ -215,6 +215,8 @@ The data-driven approach would imply some form of *folk interpretation* of emoti
 The pedagogy-driven perspective, on the other hand, does not really provide learners with the means to use emotion as valuable information: what is sought after is rather the induction of an affective experience, regardless of learners' ongoing evaluation, based on the assumption that it contributes to a learning process. I stick to the idea that emotions are dynamic processes, entangled with higher order cognitive functions, which cannot easily be defined in a linear and deterministic way, unless the event under scrutiny is highly predictable, as in the case of a video lecture. Otherwise, I consider the variability in emotion experience as a function of the complexity of the learning setting: the more complex it is, the more variability is to be expected. This variability can be better accounted for when a probabilistic link between the evaluation of the situation and the overall experience is accounted by an overarching emotion theory.
 
 All things considered, thus, I posit that the implementation of a theory-driven EAT should be continued. Especially in a parsimonious form, it may be a relatively affordable tool to enhance emotional awareness in different computer-mediated learning environments.
+
+Theory convergence in emotion theory, see Scherer.
 
 ## Suggestions for the Implementation of Emotion Awareness Tools
 
