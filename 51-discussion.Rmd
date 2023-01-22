@@ -53,7 +53,7 @@ Structural causal models (SCM) combine a set of mathematical derivations about c
 
 ```{r example-dag}
 #| fig.cap="General example of Direct Acyclic Graph (DAG)",
-#| out.width="70%",
+#| out.width="60%",
 #| fig.align="center"
 example_dag <- dagitty('dag {
 bb="-4.44,-3.29,3.228,4.499"
@@ -79,7 +79,7 @@ drawdag(example_dag)
 
 ```
 
-One of the main advantages of SCM is that it is possible to derive, according to the specific effect that we want to test in the model, what other variables should be controlled/conditioned for depending on the type of effect we are interested in. For instance, in the general example, we may be interested in the direct effect of $X$ on $Y$. In this case, the structure of the DAG implies that we must control for variables $A$, $F$, and $M$, but not for the others. The control of $B$ is optional, depending on the degree of accuracy in estimating the effect $X \rightarrow Y$. Conversely, if we were interested in the total effect of $X$ on $Y$, then we must control only for $A$ and $F$, but not for $M$ and the others, with $B$ once again as optional. This is particularly relevant in the study of emotional awareness in computer-mediated learning environment, since there are many potential variables at stake and controlling all of them would not only be impossible, but also potentially induce spurious correlations. In other words, what variable are controlled for depend on the structural causal model itself.
+One of the main advantages of SCM is that it is possible to derive, according to the specific effect that we want to test in the model, what other variables should be controlled/conditioned for depending on the type of effect we are interested in. For instance, in the general example, we may be interested in the direct effect of $X$ on $Y$. In this case, the structure of the DAG implies that we must control for variables $A$, $F$, and \$M\$, but not for the others. Namely, controlling for $C$ would represent a *bad control*, since it would open another path from $X$ to $Y$ and thus potentially confound the direct effect. The control of $B$ is optional, depending on the degree of accuracy in estimating the effect $X \rightarrow Y$. Conversely, if we were interested in the total effect of $X$ on $Y$, then we must control only for $A$ and $F$, but not for $M$ and the others, with $B$ once again as optional. In other words, what variable are controlled for depend on the structural causal model itself.
 
 An example taken from other contributions investigating emotional awareness may contribute to make the argument more concrete. For instance, in four experimental contributions investigating the role of emotional awareness in computer-mediated computer environments using dyads -- Eligio and colleagues [-@eligioEmotionUnderstandingPerformance2012], Molinari and colleagues [-@molinariEmotionFeedbackComputermediated2013], and Avry and colleagues [-@avryAchievementAppraisalsEmotions2020; -@avryExplicitSharingEmotions2021] -- all authors controlled for the sex of participants, either by taking only women or by forcing same-sex dyads. This experimental control is explained in @eligioEmotionUnderstandingPerformance2012 and @molinariEmotionFeedbackComputermediated2013 with the fact that men and women differ with respect to emotional expressiveness. It is unclear, though, what variable emotional expressiveness influence, and therefore why it is necessary to control for it.
 
@@ -87,15 +87,15 @@ For instance, the four contributions are experiments in which there is a randomi
 
 At the same time, if the sex of the dyads and/or emotional expressiveness may have an influence on the use of the EAT itself, for instance, on how many emotions are expressed by the user, than we are dealing with a post-treatment variable. In fact, the dyads without emotional awareness cannot be influenced by it, and therefore we are stratifying for something that is directly dependent on the intervention itself, which is also generally known to be a bad control.
 
-Finally, same-sex dyads and/or emotional expressiveness may have been controlled, as it is often the case in randomized trial, to have a better estimate of the effect on the outcome variable (i.e. as variable $B$ in the general example). In this case, thus, same-sex dyads and/or emotional expressiveness needs to be causally linked with the dependent variable. That is, if authors are interested to some form of measure about the learning gain in disposing or not of emotional awareness, same-sex dyads and/or emotional expressiveness should be causally linked with the learning process or outcome itself. The four contributions used very different outcome variables in their experimental plans, so it is hard to believe that this control has been made for this reason.
+Finally, same-sex dyads and/or emotional expressiveness may have been controlled, as it is often the case in randomized trial, to have a better estimate of the effect on the outcome variable (i.e. as variable $B$ in the general example). In this case, thus, same-sex dyads and/or emotional expressiveness needs to be causally linked with the dependent variable. That is, if authors are interested in some form of measure about the learning gain in disposing or not of emotional awareness, same-sex dyads and/or emotional expressiveness should be causally linked with the learning process or outcome itself. The four contributions used very different outcome variables in their experimental plans, so it is hard to believe that this control has been made for this reason.
 
-I rather think that control for same-sex dyads has been started with no specific reason if not the unfortunate pressure researchers have or receive to *control for something,* for their study to seem more accurate. The practice neverthelees seems to have caught on and could easily be established as a must in the field, even though it is not explained causally. To be clear, I am not implying that neither the composition of the dyad with respect to the sex of learners, nor emotional expressiveness have anything to say in the picture. I am rather positing that the presence of controlling variables should be causally defined in terms of (a) an underlying structural causal model, and (b) the very effect the contribution is meant to explore. According to the interplay of these two elements, one can establish whether same-sex dyads and/or emotional expressiveness are good or bad controls.
+I rather think that control for same-sex dyads has been added as a consequence of the unfortunate pressure researchers have or receive to *control for something,* for their study to seem more accurate. The practice nevertheless seems to have caught on and could easily be established as a must in the field, even though it is not explained causally. To be clear, I am not implying that neither the composition of the dyad with respect to the sex of learners, nor emotional expressiveness have anything to say in the picture. I am rather positing that the presence of controlling variables should be causally defined in terms of (a) an underlying structural causal model, and (b) the very effect the contribution is meant to explore. According to the interplay of these two elements, one can establish whether same-sex dyads and/or emotional expressiveness are good or bad controls.
 
 This task is inevitably complex, considering the number of potential intervening factors at play, some of which have already been listed in the presentation of the model in Part I. We certainly need to make some trial and error before even getting close to identify a chain of causal variables due to the complexity of the phenomenon at hand. In the next section, I will therefore attempt to propose a tentative SCM based on the underlying logic and experience of the present contribution.
 
 ### A Structural Causal Model of the Effect of Emotional Awareness on Learning Processes and Outcomes
 
-As mentioned above, a Structural Causal Model (SCM) depends on the specific effect we are interested in. For this purpose, I will therefore adopt the overall question concerning the direct effect of emotional awareness on learning processes and outcomes. According to this aim, I have drawn the Direct Acyclic Graph (DAG) depicted in Figure \@ref(fig:tentative-dag).
+As mentioned above, a Structural Causal Model (SCM) depends on the specific effect we are interested in. For this purpose, I will adopt the overall question concerning the direct effect of emotional awareness on learning processes and outcomes. According to this aim, I have drawn the Direct Acyclic Graph (DAG) depicted in Figure \@ref(fig:tentative-dag).
 
 ```{r tentative-dag}
 #| fig.cap="Tentative Structural Causal Model of the Direct Effect of Emotional Awareness on Learning Processes and Outcomes",
@@ -103,15 +103,15 @@ As mentioned above, a Structural Causal Model (SCM) depends on the specific effe
 #| fig.align="center"
 tentative_dag <- dagitty('dag {
 bb="-3.883,-3.983,4.105,2.663"
-"EAT Features" [pos="2.900,-3.260"]
+"EAT Features" [pos="2.900,-3.2"]
 "EAT Use" [pos="-1.379,-0.537"]
-"Emotional Awareness" [exposure,pos="-2.627,0.539"]
-"Emotional Competence" [pos="-2.584,-3.207"]
-"Learning process or outcome" [outcome,pos="3.027,0.512"]
-Appraisal [pos="-2.601,-1.303"]
-Partners [pos="0.973,-3.225"]
-Regulation [pos="0.132,0.548"]
-Task [pos="-0.929,-3.216"]
+"Emotional Awareness" [exposure,pos="-2.5,0.5"]
+"Emotional Competence" [pos="-2.5,-3.2"]
+"Learning" [outcome,pos="3.027,0.5"]
+Appraisal [pos="-2.5,-1.303"]
+Partners [pos="0.973,-3.2"]
+Regulation [pos="0.132,0.5"]
+Task [pos="-0.929,-3.2"]
 "EAT Features" -> "EAT Use"
 "EAT Features" -> Appraisal
 "EAT Use" -> "Emotional Awareness"
@@ -126,9 +126,9 @@ Partners -> "EAT Use"
 Partners -> Appraisal
 Partners -> Regulation
 Partners -> Task
-Regulation -> "Learning process or outcome"
+Regulation -> "Learning"
 Task -> "EAT Use"
-Task -> "Learning process or outcome"
+Task -> "Learning"
 Task -> Appraisal
 Task -> Regulation
 }')
@@ -138,27 +138,27 @@ drawdag(tentative_dag)
 
 The SCM makes the following assumptions:
 
--   There are four high-level variables that play a prominent role, which are depicted on the top of the model: The EAT features, learners' Emotional Competence, the characteristics of the Task, and the presence/characteristics of the Partner(s). Among the four high-level variables, I posit that there is an influence of the Partner(s) on the Task at hand and the EAT Features, since the presence of Partners determine what learners will do, but also how the EAT would look like (e.g. configuration according to intra-personal, inter-personal, or both form of awareness).
+-   There are four high-level variables that play a prominent role, which are depicted on the top of the model: the EAT features, learners' Emotional Competence, the characteristics of the Task, and the presence/characteristics of the Partner(s). Among the four high-level variables, I posit that there is an influence of the Partner(s) on the Task at hand and the EAT Features, since the presence of Partners determines what learners will do, but also how the EAT would look like (e.g. configuration according to intra-personal, inter-personal, or both form of awareness). On the contrary, there is no link between the Task and EAT features, since the proposed EAT is meant to be multi-purpose, and therefore adapt to any task.
 
--   Congruently with the appraisal-driven perspective of the thesis, I assume that the Appraisal variable -- that is, how the situation at hand is evaluated -- play a prominent role in the model. Appraisal is influenced by all the four high-level variables depicted above. Appraisal is a direct ascendant of Emotional Awareness, since I venture that a great deal of variation in Emotional Awareness is determined on how the situation is evaluated. The effect of Appraisal on Emotional Awareness can be direct or mediated by EAT Use. In fact, it is possible to construe Emotional Awareness even without using the EAT, for instance by inferring emotional meaning from cues outside the emotional information provided by the EAT.
+-   Congruently with the appraisal-driven perspective of the thesis, I assume that the Appraisal variable play a prominent role in the model. Appraisal is influenced by all the four high-level variables depicted above. In fact, how the situation is appraised is determined by the learner's Emotional Competence, the specifics of the Task at hand, the Partner(s) (c.f., Emotion As Social Information theoretical framework), and the EAT features, which can guide the appraisal for instance through the chosen criteria. Appraisal is then a direct ascendant of Emotional Awareness, since I venture that a great deal of variation in Emotional Awareness is determined on how the situation is evaluated. The effect of Appraisal on Emotional Awareness can be direct or mediated by EAT Use. In fact, it is possible to construe Emotional Awareness even without using the EAT, for instance by inferring emotional meaning from cues outside the emotional information provided by the EAT.
 
--   The EAT Use also plays a prominent role in the model, since it directly influences Emotional Awareness. At the same time, the use of the EAT is influenced by the four high-level variables.
+-   The EAT Use also plays a prominent role in the model, since it directly influences Emotional Awareness. At the same time, the use of the EAT is influenced by the four high-level variables in a way that is very similar on how the four high-level variables determine Appraisal. The distinction between Appraisal and EAT Use is therefore determined mainly by the fact that (a) learners can decide not to use the EAT in spite of a relevant Appraisal, and (b) learners can convey or infer (deliberately or for lack of competence) an emotional information that is not congruent with the Appraisal.
 
--   Emotional Awareness directly influence the Regulation strategy adopted (e.g. Self-Regulation, Co-Regulation or Socially-Shared Regulation). The Regulation, at the same time, also depends on three out of four high-level variables, since I venture that the EAT Features do not have a direct influence on Regulation. The influence of the EAT on Regulation is completely mediated by the use.
+-   Emotional Awareness is determined both by Appraisal and the EAT Use, for reasons specified above. At the same time, Emotional Awareness directly determines the Regulation strategy adopted (e.g. Self-Regulation, Co-Regulation or Socially-Shared Regulation). The Regulation also depends on three out of four high-level variables, since I venture that the EAT Features do not have a direct influence on Regulation. The influence of the EAT on Regulation is completely mediated by the path going through EAT Use and Emotional Awareness.
 
--   Finally, Learning Processes or Outcomes are directly influenced by the Regulation, as well as by the Task, since, for instance, if the Task is too difficult, there will not be any Learning Process or Outcome regardless of all other variables implied.
+-   Finally, Learning Processes or Outcomes are directly determined by the Regulation, as well as by the Task, since, for instance, if the Task is too difficult, there will not be any Learning regardless of all other variables implied. On the contrary, I venture that the influence of the Partners on Learning is all mediated by the other paths, since a form of interaction is required.
 
-The structure of the DAG implies that, in spite of the multiple associations between variables, for measuring the direct effect of Emotional Awareness on Learning Process and Outcomes, it is necessary to control only for the Task and Regulation. The Task is fairly obvious, since to measure the effect of different degrees of Emotional Awareness the Task should be hold constant. The Regulation, on the other hand, cannot be hold constant. So an alternative could be to measure learner's regulatory abilities, for instance with the regulation and management dimensions of the Geneva Emotion Competence Test adopted in the longitudinal study.
+The structure of the DAG implies that, in spite of the multiple associations between variables, for measuring the direct effect of Emotional Awareness on Learning Process and Outcomes, it is necessary to control only for the Task and Regulation variables. The Task is fairly obvious, since to measure the effect of different degrees of Emotional Awareness the Task should be hold constant. The Regulation, on the other hand, cannot be hold constant. So an alternative could be to measure learner's regulatory abilities, for instance with the regulation and management dimensions of the Geneva Emotion Competence Test adopted in the longitudinal study.
 
 It is worth pointing out, though, that the proposed SCM considers learning processes and outcomes in a very abstract way, a point that will be more thoroughly assessed in the limitations of the overall thesis in the Conclusion. As a consequence, other variables may need to be added depending on the specific nature of the outcome variable.
 
-For instance, the outcome variable can be related to information retention or problem-solving performance, in which case added variables should probably be controls of the dependent variable. The proposed model and controls may stand as it is for the left-hand side of the structure.
+For instance, the outcome variable can be related to information retention or problem-solving performance, in which case added variables should probably be controls of the dependent variable in an attempt to increase precision on measuring the effect. The proposed model and controls may stand as it is for the left-hand side of the structure.
 
-On the other hand, if the outcome variable is more of a relation kind, such as quality of interaction, others socio-socio-affective phenomena could also be potential confounders, especially if they influence both the outcome variable and Regulation. If one draws an arrow from the Partner to the Learning Processes and Outcomes and maintains the arrow from the Partner to Regulation, for example, then it is necessary to control for Partner if the direct effect is the aim of the study (c.f. the discussion about same-sex dyad control in the previous subsection).
+On the other hand, if the outcome variable is more of a relation kind, such as quality of interaction, other socio-affective phenomena could also be potential confounders, especially if they influence both the outcome variable and Regulation. If one draws an arrow from the Partner to the Learning Processes and Outcomes and maintains the arrow from the Partner to Regulation, for example, then it is necessary to control for Partner if the direct effect is the aim of the study (c.f. the discussion about same-sex dyad control in the previous subsection).
 
 ### Synthesis
 
-Emotional Awareness in Computer-Mediated Learning Environments is linked to many potential intervening factors. As a consequence, it may be useful to reveal the assumptions of causality between those variables in a concrete manner. Starting from the abstract model proposed in Chapter \@ref(eat-general-chapter) that was useful as a general interface for organizing emotional awareness, I have derived a structural causal model that makes explicit assumptions about the underlying structure of a direct effect of emotional awareness on learning processes and outcomes. In the structural model, the Appraisal and EAT Use variables are at the forefront of many interconnection of the model. In the proposed EAT, the two variables are directly linked by the explicit link between appraisal criteria and the subjective feeling at the core of the tool. The next session thus propose an analysis of the underlying computational model.
+Emotional Awareness in Computer-Mediated Learning Environments is linked to many potential intervening factors. As a consequence, it may be useful to reveal the assumptions of causality between those variables in a concrete manner. Starting from the abstract model proposed in Chapter \@ref(eat-general-chapter), useful as a general interface for organizing emotional awareness, I have derived a structural causal model that makes explicit assumptions about the underlying structure of a direct effect of emotional awareness on learning processes and outcomes. In the structural model, the Appraisal and EAT Use variables are at the forefront of many interconnection of the model. In the proposed EAT, the two variables coalesce in the computational model, which is discusses next.
 
 ## Analysis of the Computational Model at the Core of the EAT
 
