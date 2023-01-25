@@ -9,6 +9,7 @@ bibliography: references.bib
 ```{r setup-general-discussion}
 library(dagitty)
 library(rethinking)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 The general discussion of the thesis draws both from the implementation of the proof of concept in Part II and the results of the empirical contribution in Part III. Since the previous chapters have already proposed extensive analyses of the specific topics or research questions at hand, I will adopt a higher-level perspective for the general discussion, focusing mainly on what I think are the two main contributions of the thesis: the abstract model of emotional awareness, and the computational model at the core of the proposed EAT. I then use the overall experience of implementing and assessing an EAT to provide what I think are useful suggestions for other scholars interested in providing emotional awareness through a dedicated tool.
@@ -17,7 +18,7 @@ The general discussion of the thesis draws both from the implementation of the p
 
 One of the main objectives of the thesis was related to the construct validity of emotional awareness as a concept. To my mind, the construct has so far been defined mostly implicitly following a mild form of *psychologisme*: given that emotion play a prominent role in everyday life and it is also related to mechanisms that are implicated to learning, then it is safe to deduce that it should also play a prominent role in computer-mediated learning environments. In a recent and forming field of research, some amount of implicit assumptions is not only necessary, but also instrumental in attempting to determine where research should be directed [@fiedlerCycleTheoryFormation2004]. In this regard, in an attempt to further clarify the concept, I have proposed an abstract model based on three underlying assumptions of emotional awareness: first, that emotion play a prominent role at the inter-personal level; second, that emotion convey useful information at the inter-personal level; and third, that emotion can be fruitfully expressed and perused in computer-mediated learning environments.
 
-(ref:thesis-scm-model-repeated-caption) Abstract model of the functions of an EAT from the perspective of a single learner disposing of it in a computer-mediated learning environment. Repeated from Figure @ref(fig:thesis-scm-model).
+(ref:thesis-scm-model-repeated-caption) Abstract model of the functions of an EAT from the perspective of a single learner disposing of it in a computer-mediated learning environment. Repeated from Chapter \@ref(eat-general-chapter).
 
 ```{r thesis-scm-model-repeated}
 #| fig.cap="(ref:thesis-scm-model-repeated-caption)", 
@@ -214,7 +215,13 @@ The scripting-driven perspective provides a huge potential in pedagogical terms.
 
 All things considered, thus, I posit that the implementation of a theory-driven EAT should be continued. Especially in a parsimonious form, it may be a relatively affordable tool to enhance emotional awareness in different computer-mediated learning environments.
 
-Theory convergence in emotion theory, see Scherer.
+Points :
+
+-   Theory convergence in emotion theory, see Scherer.
+
+-   Entangled brain, division may disappear... but still, novelty to consider emotion in computer-mediated learning environments
+
+-   More complex computational model ?
 
 ## Suggestions for the Implementation of Emotion Awareness Tools
 
