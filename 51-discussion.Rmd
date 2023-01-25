@@ -75,7 +75,7 @@ X -> Y
 Y -> C
 }')
 
-drawdag(example_dag)
+drawdag(example_dag, lwd = 2, goodarrow = FALSE)
 
 ```
 
@@ -133,7 +133,7 @@ Task -> Appraisal
 Task -> Regulation
 }')
 
-drawdag(tentative_dag)
+drawdag(tentative_dag, lwd = 2, goodarrow = FALSE)
 ```
 
 The SCM makes the following assumptions:
