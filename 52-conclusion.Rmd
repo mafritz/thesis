@@ -12,7 +12,7 @@ I posited that the whole concept of emotional awareness could be better grasped 
 
 -   
 
-### Limited Empirical Data
+### Contribution is Mainly Analytical
 
 -   Started mainly in CSCL context following previous work
 
@@ -26,7 +26,7 @@ I posited that the whole concept of emotional awareness could be better grasped 
 
 -   Researchers often seek :
 
-    -    a custom implementation of "simple" data collection
+    -   a custom implementation of "simple" data collection
 
     -   a tool that is tightly integrated with the learning environment
 

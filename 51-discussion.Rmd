@@ -213,7 +213,16 @@ The scripting-driven perspective provides a huge potential in pedagogical terms.
 
 ### Some Tenacity May Be Temporarily Warranted
 
-All things considered, thus, I posit that the implementation of a theory-driven EAT should be continued. Especially in a parsimonious form, it may be a relatively affordable tool to enhance emotional awareness in different computer-mediated learning environments.
+It follows from the discussion of the alternative above that there is not, to my mind, a conceptual computational model presenting a clear advantage over an appraisal-driven theoretical model. In spite of the limitations revealed in the actual use of the EAT in the present contribution, I consider premature to abandon it all together. Some form of "theoretical tenacity" [@meehlAppraisingAmendingTheories1990; @eronenTheoryCrisisPsychology2021] to the overall idea of implementing an appraisal-driven structure manifestly into the tool may therefore be warranted, if only from a *faute de mieux* perspective. I consider two main arguments in favor of this claim: the first is taken from advances about an overarching theory of emotion, whereas the second is more pragmatic in nature.
+
+In a recent discussion on the topic of emotion science, Scherer [-@scherer2022] argues that times are ripe for theory convergence. The author analyzes how a componential model of emotion, as the one depicted in \@ref(fig:tf-cpm-general-model-adapted), provides considerable overlapping between competing emotion theories, limiting divergences to more detailed or conventional issues.
+
+> In most cases, the existing differences seem to be due to the use of different terminology (e.g. construction, basic, discrete, affect, experience), on the respective level of analysis (e.g. brain, behaviour, language), and, in particular, on unequal emphasis placed on specific components and stages of the emotion process.\
+> --- @scherer2022, p. 164
+
+In his analysis of the commonalities, Scherer (*ibid.*) argues that all major emotion theories subsume, more or less explicitly, a direct link between (1) an ongoing evaluation of events, behaviors in oneself and others, situational factors, surrounding objects, and personal or collective memories; and (2) a partial access to the whole emotion process in the form of a feeling that can be labelled depending on personal subjectivity and collective conventions. As a consequence, an overt computational model as the one proposed here may therefore simply make explicit what, in other settings, is implied.
+
+At the same time, the link between the appraisal and the subjective feeling components is neither the only, nor necessarily the more relevant one. For instance, one of the disadvantages of using the subjective feeling as part of the underlying structure is that consequences on behavior may have to be inferred. One can imagine to replace the subjective feeling with some representation of an action tendency, which is more overtly aimed at the consequences on behavior. In terms of the interface, this may result, for example, in buttons labelled with actions such as *I want to quit*, *I need more information*, or *I require assistance*, which are still driven by appraisal criteria. In other words, before abandoning the overall idea of the model, it is possible to act also outside the realm of the appraisal criteria as I have so far envisioned.
 
 Points :
 
