@@ -159,7 +159,7 @@ On the other hand, if the outcome variable is more related to the *relational sp
 
 ### Synthesis
 
-Emotional Awareness in Computer-Mediated Learning Environments is linked to many potential intervening factors. As a consequence, it may be useful to reveal the assumptions of causality between those variables in a concrete manner. Starting from the abstract model proposed in Chapter \@ref(eat-general-chapter), useful as a general interface for organizing emotional awareness, I have derived a structural causal model that makes explicit assumptions about the underlying structure of a direct effect of emotional awareness on learning processes and outcomes. In the structural model, the Appraisal and EAT Use variables are at the forefront of many interconnection of the model. In the proposed EAT, the two variables coalesce in the computational model, which is discusses next.
+Emotional Awareness in Computer-Mediated Learning Environments is linked to many potential intervening factors. As a consequence, it may be useful to reveal the assumptions of causality between those variables in a concrete manner. Starting from the abstract model proposed in Chapter \@ref(eat-general-chapter), useful as a general interface for organizing emotional awareness, I have derived a structural causal model that makes explicit assumptions about the underlying structure of a direct effect of emotional awareness on learning processes and outcomes. In the structural model, the Appraisal and EAT Use variables are at the forefront of many interconnection of the model. In the proposed EAT, the two variables coalesce in the computational model, which is discussed next.
 
 ## Analysis of the Computational Model at the Core of the EAT
 
@@ -224,15 +224,23 @@ In his analysis of the commonalities, Scherer (*ibid.*) argues that all major em
 
 At the same time, the link between the appraisal and the subjective feeling components is neither the only, nor necessarily the more relevant one. For instance, one of the disadvantages of using the subjective feeling as part of the underlying structure is that consequences on behavior may have to be inferred. One can imagine to replace the subjective feeling with some representation of an action tendency, which is more overtly aimed at the consequences on behavior. In terms of the interface, this may result, for example, in buttons labelled with actions such as *I want to quit*, *I need more information*, or *I require assistance*, which are still driven by appraisal criteria. In other words, before abandoning the overall idea of the model, it is possible to act also outside the realm of the appraisal criteria as I have so far envisioned.
 
-Points :
+The second reason, of a more pragmatic nature, relates to the parsimony, or simplicity, of the model at hand. When models are concerned, the saying attributed to George Box [-@boxScienceStatistics1976] is often evoked: "all models are wrong, but some are useful". I think this should be interpreted as a contracted form of a more nuanced sentence: *all models don't capture the whole of the phenomena, but some of them are useful, to some extent and under specific assumptions*. In an inter-disciplinary field such as the investigation of emotional awareness in computer-mediated learning environments, disposing of a *simple* and transparent model -- wrapped up in a configurable tool -- may contribute to draw the attention about the need to specify assumptions about the affective side of the equation [@pekrunIntroductionEmotionsEducation2014; @dukesRiseAffectivism2021; @linnenbrink-garciaAdaptiveMotivationEmotion2016]. The transparency and simplicity of the model may represent a gentle introduction for researchers outside the domain of affective science, who nevertheless reckon the importance and interest of affective phenomena. In this regard, the model should also be weighted depending on the number of researchers and practitioners who see a potential utility for it, to an extent sufficient for its adoption and under the assumptions that are specific to their settings and goals (a topic that will be more thoroughly addressed in the conclusion). There is always the possibility, at a later and more defined stage of the process, to switch towards more complex and accurate computational models [@marsellaComputationalModelsEmotion2010; @schererPredictionDataDriven2019], as well as more articulated affect- or emotion-awares systems [@harleyDevelopingEmotionAwareAdvanced2017; @dmelloAffectiveComputingApproach2018].
 
--   Theory convergence in emotion theory, see Scherer.
-
--   Entangled brain, division may disappear... but still, novelty to consider emotion in computer-mediated learning environments
-
--   More complex computational model ?
+### Synthesis
 
 ## Suggestions for the Implementation of Emotion Awareness Tools
+
+-   Affective phenomenon or phenomena targeted
+
+-   Why a theory in pedagogical terms
+
+-   Different versions of the tool
+
+-   Provide a description of lexicalized emotion and justification for the choice
+
+-   Consider training learners before using
+
+-   Provide measure of usability/ux experience
 
 The proposed EAT is only one way of implementing a theory-driven structure of emotion into a tool. I consider competition in science a necessity for progress, and therefore I highly encourage other scholars to continue the development of alternative tools or embark in the development of new ones. To this extent, I provide some suggestions that may be of interest for such an enterprise, often by discussing other suggestions made by other scholars.
 
