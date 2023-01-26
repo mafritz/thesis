@@ -1,4 +1,25 @@
+---
+bibliography: references.bib
+---
+
 # Conclusion {.unnumbered}
+
+```{r conclusion-setup, include=FALSE, echo=FALSE}
+library(tidyverse) 
+library(papaja) 
+library(see) 
+library(RColorBrewer)
+library(here) 
+library(knitr) 
+library(kableExtra)
+
+Sys.setenv(LANG = "en")
+
+# Load the relevant data and graphs from the study-3 folder
+
+source(here("data", "generative-model", "simulation-of-participant-emotions.R"), local = knitr::knit_global(), encoding = "UTF-8")
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE) 
+```
 
 I posited that the whole concept of emotional awareness could be better grasped if learners (1) reflect on their emotion from a subjective feeling experience rather than autonomic recognition; (2) guide their reflection on the appraisal of a situation and convey emotional awareness to others using the same information unity they have used to extrapolate meaning-making from the situation at hand; and (3) dispose of emotional awareness on a moment-by-moment basis, which bestow to learners the responsibility of producing and perusing emotional information at the moment the see fit.
 
@@ -12,7 +33,7 @@ I posited that the whole concept of emotional awareness could be better grasped 
 
 -   
 
-### Contribution is Mainly Analytical
+### Contribution is Mainly Analytic
 
 -   Started mainly in CSCL context following previous work
 
@@ -34,12 +55,19 @@ I posited that the whole concept of emotional awareness could be better grasped 
 
 ## Future Perspectives
 
-### Technical Improvements to the EAT
+### Usability Test of the Toolbox
 
 -   Usability test, Focus groups, ...
 
 -   Work on graphical representations
 
-### Further Empirical Adoption of the EAT
+### Generative Use of the Computational Model
 
--   Scripting vs. Awareness strategy
+```{r simulated-emotions-manipuation}
+#| out.width="100%",
+#| fig.height=7,
+#| fig.cap="Simulated emotions from the computational model"
+gm.simulated_emotions.graph
+```
+
+### Scripting vs. Awareness strategy
