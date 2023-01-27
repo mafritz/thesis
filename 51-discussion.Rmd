@@ -8,6 +8,7 @@ bibliography: references.bib
 
 ```{r setup-general-discussion}
 library(dagitty)
+library(ggdag)
 library(rethinking)
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
@@ -76,8 +77,9 @@ X -> Y
 Y -> C
 }')
 
-drawdag(example_dag, lwd = 2, goodarrow = FALSE)
-
+# drawdag(example_dag, lwd = 2, goodarrow = FALSE)
+ggdag(example_dag) +
+  theme_dag_blank()
 ```
 
 One of the main advantages of SCM is that it is possible to derive, according to the specific effect that we want to test in the model, what other variables should be controlled/conditioned for depending on the type of effect we are interested in [@rohrerThinkingClearlyCorrelations2018; @pearlCausalInferenceStatistics2016; @cinelliCrashCourseGood2020a]. For instance, in the general example, we may be interested in the direct effect of $X$ on $Y$. In this case, the structure of the DAG implies that we must control for variables \$A\$, $F$, and $M$, but not for the others. Namely, controlling for $C$ would represent a *bad control*, since it would open another path from $X$ to $Y$ and thus potentially confound the direct effect. The control of $B$ is optional, depending on the degree of accuracy in estimating the effect $X \rightarrow Y$. Conversely, if we were interested in the total effect of $X$ on $Y$, then we must control only for $A$ and $F$, but not for $M$ and the others, with $B$ once again as optional. In other words, what variables are controlled for depend on the structural causal model itself.
@@ -102,39 +104,106 @@ As mentioned above, a Structural Causal Model (SCM) depends on the specific effe
 #| fig.cap="Tentative Structural Causal Model of the Direct Effect of Emotional Awareness on Learning Processes and Outcomes",
 #| out.width="80%",
 #| fig.align="center"
-tentative_dag <- dagitty('dag {
-bb="-3.883,-3.983,4.105,2.663"
-"EAT Features" [pos="2.900,-3.2"]
-"EAT Use" [pos="-1.379,-0.537"]
-"Emotional Awareness" [exposure,pos="-2.5,0.5"]
-"Emotional Competence" [pos="-2.5,-3.2"]
-"Learning" [outcome,pos="3.027,0.5"]
-Appraisal [pos="-2.5,-1.303"]
-Partners [pos="0.973,-3.2"]
-Regulation [pos="0.132,0.5"]
-Task [pos="-0.929,-3.2"]
-"EAT Features" -> "EAT Use"
-"EAT Features" -> Appraisal
-"EAT Use" -> "Emotional Awareness"
-"Emotional Awareness" -> Regulation
-"Emotional Competence" -> "EAT Use"
-"Emotional Competence" -> Appraisal
-"Emotional Competence" -> Regulation
-Appraisal -> "EAT Use"
-Appraisal -> "Emotional Awareness"
-Partners -> "EAT Features"
-Partners -> "EAT Use"
-Partners -> Appraisal
-Partners -> Regulation
-Partners -> Task
-Regulation -> "Learning"
-Task -> "EAT Use"
-Task -> "Learning"
-Task -> Appraisal
-Task -> Regulation
-}')
 
-drawdag(tentative_dag, lwd = 2, goodarrow = FALSE)
+# tentative_dag <- dagitty('dag {
+# bb="-3.883,-3.983,4.105,2.663"
+# "EAT Features" [pos="2.900,-3.2"]
+# "EAT Use" [pos="-1.379,-0.537"]
+# "Emotional Awareness" [exposure,pos="-2.5,0.5"]
+# "Emotional Competence" [pos="-2.5,-3.2"]
+# "Learning" [outcome,pos="3.027,0.5"]
+# Appraisal [pos="-2.5,-1.303"]
+# Partners [pos="0.973,-3.2"]
+# Regulation [pos="0.132,0.5"]
+# Task [pos="-0.929,-3.2"]
+# "EAT Features" -> "EAT Use"
+# "EAT Features" -> Appraisal
+# "EAT Use" -> "Emotional Awareness"
+# "Emotional Awareness" -> Regulation
+# "Emotional Competence" -> "EAT Use"
+# "Emotional Competence" -> Appraisal
+# "Emotional Competence" -> Regulation
+# Appraisal -> "EAT Use"
+# Appraisal -> "Emotional Awareness"
+# Partners -> "EAT Features"
+# Partners -> "EAT Use"
+# Partners -> Appraisal
+# Partners -> Regulation
+# Partners -> Task
+# Regulation -> "Learning"
+# Task -> "EAT Use"
+# Task -> "Learning"
+# Task -> Appraisal
+# Task -> Regulation
+# }')
+
+# drawdag(tentative_dag, lwd = 2, goodarrow = FALSE)
+
+tentative_dag <- dagify(
+  EU ~ EF,
+  A ~ EF,
+  X ~ EU,
+  R ~ X,
+  EU ~ EC,
+  A ~ EC,
+  R ~ EC,
+  EU ~ A,
+  X ~ A,
+  EF ~ P,
+  EU ~ P,
+  A ~ P,
+  R ~ P,
+  T ~ P,
+  Y ~ R,
+  EU ~ T,
+  Y ~ T,
+  A ~ T,
+  R ~ T,
+  labels = c(
+    EF = "EAT\nFeatures",
+    EU = "EAT\nUse",
+    A = "Appraisal",
+    X = "Emotional\nAwareness",
+    R = "Regulation",
+    EC = "Emotional\nCompetence",
+    P = "Partner(s)",
+    T = "Task",
+    Y = "Learning"
+  ),
+  exposure = "X",
+  outcome = "Y",
+  coords = list(
+    x = c( 
+      EF = 4,
+      EU = 2,
+      A = 1,
+      X = 2,
+      R = 3,
+      EC = 1,
+      P = 3,
+      T = 2,
+      Y = 4),
+    y = c(
+      EF = -1,
+      EU = -3,
+      A = -3,
+      X = -4,
+      R = -4,
+      EC = -1,
+      P = -1,
+      T = -1,
+      Y = -4
+    )
+  )
+)
+
+ggdag(
+  tentative_dag, 
+  text = TRUE, 
+  use_labels = "label",
+  node = TRUE
+) +
+  theme_dag_blank()
 ```
 
 The SCM makes the following assumptions:
