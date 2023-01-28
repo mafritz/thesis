@@ -303,11 +303,22 @@ Being the computational model at the core of the proposed EAT, and more largely 
 
 The proposed EAT is only one way of implementing a theory-driven structure of emotion into a tool. I consider competition in science a necessity for progress, and therefore I highly encourage other scholars to continue the development of alternative tools or embark in the development of new ones. To this extent, I provide a brief list of suggestions that may be of interest for the implementation or the adoption of an EAT in computer-mediated learning environments.
 
-### Specify Which Affective Phenomenon Is Targeted
+### Specify Whether a Specific or Diffuse Affective Phenomenon Is Targeted
 
-### Explicit the Underlying Emotion Theory and the Pedagogical Interest For It
+The rise of *affectivisme* [@dukesRiseAffectivism2021]has contributed to a better understanding and some agreement on the number and kind of affective phenomena. Nonetheless, there is still considerable conceptual overlapping and differences in the use of affect-related terms [@scherer2022; @linnenbrink-garciaAdaptiveMotivationEmotion2016; @pekrunIntroductionEmotionsEducation2014]. It would be possible to clarify and categorize researches more clearly if the affective phenomenon or phenomena of interest in a contribution are identified and defined as precisely as possible. The comparative summary proposed by Scherer [-@scherer2022] in Table 1 of the original article and reproduced in Figure
+\@ref(fig:emotion-vs-other-affective-phenomena) may represent a useful reference for a preliminary discrimination.
 
-### Provide a Description of Lexicalized Emotion and a Justification for Their Choice
+At the same time, there are also positions advocating a more holistic approach to the functioning of brain and mind [@pessoaCognitiveemotionalBrainInteractions2013; @pessoaEntangledBrainHow2022; @liebermanBooConsciousnessProblem2019], with the interaction or even integration of different *functions* of the brain or mind, which are often investigated distinctly in an attempt to break up complexity [@sanderModelsEmotionAffective2013]. It would also be helpful if more *diffuse* approaches were stated explicitly.
+
+### State Whether an Underlying Emotion Theory is Adopted and Illustrate the Pedagogical Interest For It
+
+If emotion are targeted more specifically, for instance by complying to an overarching componential perspective, then it would be interesting to clearly state (1) what emotion theories has been adopted, and (2) what is the interest in pedagogical terms of such theory. As illustrated in Chapter \@ref(defining-emotion-unit), there is still no consensus over an emotion theory that has a clearer and undisputed explanatory power compared to competing theories. Under these circumstances, I think it is not sufficient to state that a certain theory is adopted, but also to provide reasons why that particular theory may provide benefits to learners.
+
+This contribution adopted appraisal theories of emotion as part of the Evalutive family of emotion theories [@scarantinoPhilosophyEmotionsIts2018; @sep-emotion] because it is considered that a cognitive evaluation of the situation may foster learners' meaning-making of the situation at hand. At the same time, there may clearly be pedagogical benefits also in theories pertaining to the Motivation or Feeling traditions (*ibid.*).
+
+### Provide a Description of Discrete Emotions and a Justification for Their Kind and Number
+
+If emotional awareness is conveyed partially or entirely through discrete representations of emotions such as lexicalized emotions, verbalization of action tendencies, or non-verbal representations, it would be helpful to provide information about their choice of format, kind, and number.
 
 ### Provide Training to Learners Before Using the Tool
 
