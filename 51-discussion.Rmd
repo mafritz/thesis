@@ -303,14 +303,16 @@ Being the computational model at the core of the proposed EAT, and more largely 
 
 The proposed EAT is only one way of implementing a theory-driven structure of emotion into a tool. I consider competition in science a necessity for progress, and therefore I highly encourage other scholars to continue the development of alternative tools or embark in the development of new ones. To this extent, I provide a brief list of suggestions that may be of interest for the implementation or the adoption of an EAT in computer-mediated learning environments.
 
--   Affective phenomenon or phenomena targeted
+### Specify Which Affective Phenomenon Is Targeted
 
--   Why a theory in pedagogical terms
+### Explicit the Underlying Emotion Theory and the Pedagogical Interest For It
 
--   Different versions of the tool
+### Provide a Description of Lexicalized Emotion and a Justification for Their Choice
 
--   Provide a description of lexicalized emotion and justification for the choice
+### Provide Training to Learners Before Using the Tool
 
--   Consider training learners before using
+### Consider Potential Variation on the Tool with Pedagogical Impact
 
--   Provide measure of usability/ux experience
+### Provide Measures of Performance with and Perception of the Tool
+
+## Summary
