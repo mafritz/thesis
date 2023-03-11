@@ -38,7 +38,7 @@ The thesis adopted an overall perspective aiming more broadly to the construct a
 
 In spite of the overall context of the thesis referring to computer-mediated learning environment, there is a clear imbalance between the *affective* and the *learning* sides of the thesis. Even though the focus on emotional awareness was anticipated and justified by the willingness to work on construct and internal validity of the concept, one may argue that those very features cannot be separated from the overall goal of improving learning processes and outcomes. In other words, emotional awareness as intended in the use of an emotional awareness tool exists only insofar as its benefit can be directly related to learning. The neglect of the learning side can be related to two main reasons.
 
-First, in the few contributions that have investigated the effect of emotional awareness on learning processes and outcomes, there is a great variability both in how emotional awareness is implemented and on which *facets* of the complex compound of *learning* was targeted: problem-solving, quality of interaction, understanding of the partner, emotion regulation, etc. [@avrySharingEmotionsContributes2020; @avryAchievementAppraisalsEmotions2020; @avryExplicitSharingEmotions2021; @eligioEmotionUnderstandingPerformance2012; @molinariEmotionFeedbackComputermediated2013; @feidakisProvidingEmotionAwareness2014; @molinariEMORELOutilReporting2016; @lavoueEmotionalDataCollection2017; @lavoueEmotionAwarenessTools2020].
+First, in the few contributions that have investigated the effect of emotional awareness on learning processes and outcomes, there is a great variability both in how emotional awareness is implemented and in which *facets* of the complex compound of *learning* were targeted: problem-solving, quality of interaction, understanding of the partner, emotion regulation, etc. [@avrySharingEmotionsContributes2020; @avryAchievementAppraisalsEmotions2020; @avryExplicitSharingEmotions2021; @eligioEmotionUnderstandingPerformance2012; @molinariEmotionFeedbackComputermediated2013; @feidakisProvidingEmotionAwareness2014; @molinariEMORELOutilReporting2016; @lavoueEmotionalDataCollection2017; @lavoueEmotionAwarenessTools2020].
 
 Second, it is hard to determine a time and learning design scale in which emotional awareness can have an effect. One again, previous studies (*ibid.*) vary greatly on the matter, ranging from relatively short tasks in a controlled environment to ecological implementation in existing courses.
 
@@ -52,23 +52,23 @@ To sum up, the subtitle *with application to computer-computer learning environm
 
 ### Contribution is Mainly Analytic
 
--   Started mainly in CSCL context following previous work
+A second main shortcoming of the thesis concerns the lack of empirical data. The first study yielded interesting data on the use of the tool, but from a limited sample size. Conversely, the second study's ecological setting was promising in sample size and duration, but fell short in the use of the tool. As a consequence, the overall claims advanced by the thesis could not really be assessed by a severe test [@mayoStatisticalInferenceSevere2018; @meehlAppraisingAmendingTheories1990; @anvariNotAllEffects2022; @scheel2020]. The contribution remains thus mainly analytic in nature, with the features and prospected benefits of the tool derived by combining affective science principles with assumptions inferred from the relatively scant literature on the role of emotion in computer-mediated learning environments. This limitation has both conceptual and practical reasons.
 
--   Planned experience could not be carried out
+From the conceptual standpoint, the thesis started with a perspective that was more tightly related to the EATMINT project presented in Chapter \@ref(dew-chapter). The scope was therefore mainly the influence of emotion on Computer-Supported Collaborative Learning [@dillenbourgSymmetryPartnerModelling2016; @molinariEmotionFeedbackComputermediated2013; @cereghettiSharingEmotionsComputermediated2015; @avrySharingEmotionsContributes2020], as it is corroborated for instance by the first study. As already mentioned, though, I then started to realize that the way emotional awareness was implemented should be determined before testing specific hypothesis [@scheel2020]. So the focus of the thesis progressively drifted towards the implementation and assessment of the EAT.
 
--   Focus on the Toolbox
+On the practical side, this shift was incidentally reinforced by the pandemic: a third study that was ready to be carried out was first stopped by the lock-down, then adapted to be conducted online, and finally postponed for in the meantime I had been focusing on the implementation of the EAT from a broader perspective.
+
+Since one of the aim of pursuing a thesis in psychology was to stop developing (which was my previous profession) and start collecting and analyzing empirical data, this limitation of the thesis is the one that is personally more deceiving.
 
 ### Few Researchers Implicated So Far
 
--   Big error from user-centered design
+The third main limitations of the thesis relates to the limited number of researchers that have adopted or contributed to the development of the tool. In spite of the user-centered approach that has been adopted throughout the thesis, few researchers were directly implicated in the process. As a consequences, the features of the EAT are once again mainly derived by the specific needs of the thesis or by reinterpreting needs and potential adoptions from the extant literature.
 
--   Researchers often seek :
+This shortcoming is to a great extent due to my personal habit to work in isolation: an habit that I fortunately came to realize to be wrong even from a scientific perspective. I nowadays value the importance of projects implicating many researchers from many different countries and backgrounds [@moshontzPsychologicalScienceAccelerator2018; @stroebeWhatCanWe2019].
 
-    -   a custom implementation of "simple" data collection
+To a lesser extent, though, the shortcoming was also determined by the fact that researchers who manifested interested for the tool were mainly looking for two types of solutions, which are different from the emotion awareness tool proposed by the thesis. The first type of solution relates to the need of a *simple* digitalized self-report tool [@mortillaroEmotionsMethodsAssessment2015]. In other words, researchers were not interested in the moment-to-moment and multi-user perspective of the tool, but rather sought the possibility to express an emotion as an induced response to a predetermined stimulus. The second type of solution refers to an ad-hoc tool that is tightly integrated with the learning environment, as is the case for affect-aware systems presented in Chapter \@ref(general-affective-background). In both cases, thus, researchers were mostly disappointed rather than intrigued by the features of the toolbox.
 
-    -   a tool that is tightly integrated with the learning environment
-
--   Is there really an interest for a decoupled tool ?
+I think it is too soon to determine whether this is the consequences of an intrinsic and stable limitation of the tool, or it is rather due by the lack of fruitful empirical examples that may encourage researchers or practitioners to switch from the two dominant perspectives. Still, one potential ironic limitation of the thesis is that by aiming for a tool that may be adopted by the many, it fall shorts of meeting anyone's needs.
 
 ## Future Perspectives
 
