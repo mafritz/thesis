@@ -80,6 +80,17 @@ The test should take into account at least two potential *persona*. On the one h
 
 ### Generative Use of the Computational Model
 
+Another future perspective concerns the use of the computational model as a generative algorithm [@mcelreathStatisticalRethinkingBayesian2020; @marsellaComputationalModelsEmotion2010; @guestHowComputationalModeling2021]. In fact, since the computational model works given any values on appraisal dimensions and any affective space as *database*, it is possible to use the algorithm to generate emotions on the basis of specific, identifiable and transparent criteria.
+
+For instance, in the aforementioned empirical contribution that was planned but not carried out, the experimental plan consisted in pairing participants with four different simulated partners, which differed according to the emotional experience they manifested during the same task as in Study 1. The four resulting conditions would have been determined by *emotional profiles* determined by a combination of high vs. low valence and high vs. low control/power. A similar manipulation was, for instance, adopted by @avrySharingEmotionsContributes2020, even though only from a dimensional perspective. To build the four different *emotional profiles* the following process was considered:
+
+1.  Take the mean and standard deviation of the Valence and Control/Power appraisals from a meta-analysis of previous contributions adopting the same task;
+2.  Add or subtract thee quarter of the standard deviation on the mean of each appraisal dimension to obtain a manipulated mean for the higher or lower condition for each appraisal;
+3.  Draw a number of appraisal evaluations consistent with the number of emotions to simulate from a normal distribution determined by the two computed means and the pooled standard deviation from the meta-analyisis;
+4.  Inject the values of the two appraisal dimensions for each emotion into the computational model and retrieve a subjective feeling that is consistent with the appraisal profile. This could be done, for instance, by adding some form of sampling within the proposed subset to avoid the prevalence of the same lexicalized emotions
+
+The following graph illustrates the result of this generative model, in which 26 emotions have been simulated. For each of the 26 emotion, the two appraisal evaluations and the lexicalized emotions are provided.
+
 ```{r simulated-emotions-manipuation}
 #| out.width="100%",
 #| fig.height=7,
@@ -87,4 +98,8 @@ The test should take into account at least two potential *persona*. On the one h
 gm.simulated_emotions.graph
 ```
 
-### Scripting vs. Awareness strategy
+Considering that the Valence x Control/Power dimensions have outlined serious overlapping, it is maybe for the better that this manipulation was eventually not carried out. But the process could still be valid with another underlying affective space. The advantage is that a simulated partner could be formally determined, so that the emotional experience can be theoretically justified, but also computationally replicated.
+
+### Scripting vs. Awareness Strategy
+
+## Final Thoughts
