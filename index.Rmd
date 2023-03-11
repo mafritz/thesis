@@ -1,7 +1,7 @@
 ---
 title: 'Implementation and Assessment of a Multipurpose Appraisal-Driven Emotion Awareness Tool Based on Self-Report. With an Application to Computer-Mediated Learning Environments.'
 author: 'Mattia A. Fritz'
-date: 'July 2022'
+date: 'March 2023'
 institution: 'Université de Genève'
 division: 'TECFA'
 advisor: 'Prof. Mireille Bétrancourt'
@@ -30,12 +30,30 @@ output:
 # (e.g., abstract, acknowledgements) below or use code similar to line 25-26 
 # for the .RMD files. If you are NOT producing a PDF, delete or silence
 # lines 25-39 in this YAML header.
-abstract: '`r if(knitr:::is_latex_output()) paste(readLines(here::here("prelims", "00-abstract.Rmd")), collapse = "\n  ")`'
+abstract: |
+  In computer-mediated learning environments, especially in remote conditions, learners often lack the socio-affective cues that are usually available in face-to-face interactions. Socio-affective phenomena are known to play a prominent role at various levels of learning processes and outcomes, spanning high-order cognitive functions, motivation, sense of belonging, and quality of interaction with colleagues. Emotions, in particular, are nowadays considered dynamic and multifaceted phenomena that serve a wide range of adaptive functions. As a result, an interdisciplinary interest has recently emerged on ways by which computer-mediated learning environments may be endowed with emotional awareness, that is, information about one's own emotions and/or the emotions of colleagues, which is instrumental to the learning task at hand. Emotion Awareness Tools are one such attempt to bestow learners with the possibility to produce and peruse emotional awareness through a dedicated interface that coexists with the overall learning environment. The thesis provides the details of the implementation and empirical assessment of an Emotion Awareness Tool with the following main characteristics. First, it is based on voluntary self-report of emotion. Second, it implements a computational structure of emotion rooted in appraisal theories of emotion, for which emotion elicitation and differentiation is a dynamic and ongoing process driven by a cognitive evaluation of the situation. Third, learners can produce and peruse emotional awareness through the tool on a moment-to-moment basis. Adopting an iterative design process, the implementation and assessment of the tool are guided by evidence gathered through empirical contributions aimed at investigating which factors -- intrinsic to the tool, deriving from the interaction between learners and the tool, between learners themselves, as well as between learners and the instructional design -- determine whether and how emotional awareness may be beneficial in computer-mediated learning environments. The main outcomes of the thesis are a toolbox that allows researchers and practitioners to configure an instance of the tool according to their own scientific or instructional goals, a structural causal model of the influence of emotional awareness on learning in computer-mediated environments, and methodological techniques or instruments that may be of interest in the investigation of the role of emotional awareness.
+  
+  \newpage
+  
+  # Resumé en français {.unlisted .unnumbered}
+  Dans les environnements d'apprentissage assisté par ordinateur, en particulier dans des contextes à distance, les apprenants manquent souvent de repères socio-affectifs qui sont généralement disponibles dans les interactions en face-à-face. On sait que les phénomènes socio-affectifs jouent un rôle prépondérant à différents niveaux dans les processus d'apprentissage tels que les fonctions cognitives de haut niveau, la motivation, le sentiment d'appartenance et la qualité de l'interaction avec les collègues. Les émotions, en particulier, sont aujourd'hui considérées comme des phénomènes dynamiques et multiformes qui remplissent un large éventail de fonctions adaptatives. Par conséquent, un intérêt interdisciplinaire s'est récemment manifesté pour les moyens permettant de doter les environnements d'apprentissage assistés par ordinateur d'awareness émotionnelle, c'est-à-dire d'informations sur ses propres émotions et/ou sur celles de ses collègues, qui sont utiles à la tâche d'apprentissage en cours. Les outils d'awareness émotionnelle sont l'une de ces tentatives visant à donner aux apprenants la possibilité d'exprimer et de consulter les émotions par le biais d'une interface dédiée qui coexiste avec l'environnement d'apprentissage. La thèse fournit les détails de la mise en œuvre et de l'évaluation empirique d'un outil d'awareness émotionnelle dont les principales caractéristiques sont les suivantes. Premièrement, il est basé sur le report volontaire des émotions. Deuxièmement, il met en œuvre une structure computationnelle de l'émotion enracinée dans les théories de l'évaluation de l'émotion, pour lesquelles l'élicitation et la différenciation de l'émotion est un processus dynamique et continu piloté par une évaluation cognitive de la situation. Troisièmement, les apprenants peuvent produire et consulter les émotions à l'aide de l'outil sur une base momentanée. Adoptant un processus de conception itératif, la mise en œuvre et l'évaluation de l'outil sont guidées par des contributions empiriques visant à étudier quels facteurs - intrinsèques à l'outil, dérivant de l'interaction entre les apprenants et l'outil, entre les apprenants eux-mêmes, ainsi qu'entre les apprenants et la conception pédagogique - déterminent si et comment l'awareness émotionnelle peut être bénéfique dans les environnements d'apprentissage assistés par ordinateur. Les principaux résultats de la thèse sont une boîte à outils qui permet aux chercheurs et aux praticiens de configurer une instance de l'outil en fonction de leurs propres objectifs scientifiques ou pédagogiques, un modèle causal structurel de l'influence de la conscience émotionnelle sur l'apprentissage dans les environnements informatisés, et des techniques ou instruments méthodologiques qui peuvent être intéressants pour l'étude de l'awareness émotionnelle.
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab 
 # is needed on the line after the `|`.
 acknowledgements: |
+  I am grateful to many people who witnessed or contributed directly or indirectly to this work.
   
+  First and foremost, I would like to thank Professor Mireille Bétrancourt for her advice and support throughout the thesis. I consider myself very fortunate for the rare combination of competence, understanding, kindness and academic humility on which I was able to rely and represented a model to aspire for my own conduct as a scholar.
+  
+  I would also like to thank the members of the committee and jury, Professors Pierre Dillenbourg, Tobias Brosch and Susan Lajoie, for their understanding in coping with unusual timing.
+  
+  I am grateful to my colleagues at TECFA, which provided a stimulating and healthy academic environment. I am glad I finally reached my colleagues who started their PhD around the same time (but finished sooner!) and shared with me most of the experience.
+  
+  The doctoral school of the Swiss Center for Affective Sciences was also very helpful in the process. I would like to thank Professor David Sander, Dr. Cristina Soriano and the education team, and Dr. Marcello Mortillaro for their help.
+  
+  Even if they did not take any active part in the thesis, I am intellectually indebted to the work and views of Professors Daniel Schneider, Klaus Scherer, Daniel Läkens, and Richard McElreath.
+  
+  Nothing of this would have been possible without the constant and mostly undeserved support of my wife Matilde.
 dedication: |
   
 preface: |
@@ -112,14 +130,15 @@ Alternatively, you can put that content in files like 00--prelim.Rmd and
 -->
 
 
-
-```{r eval=!knitr::is_latex_output(), child=here::here("prelims", "00--prelim.Rmd")}
-
-```
-
-```{r eval=!knitr::is_latex_output(), child=here::here("prelims", "00-abstract.Rmd")}
+<!--
+```{r eval=knitr::is_latex_output(), child=here::here("prelims", "00--prelim.Rmd")}
 
 ```
+
+```{r eval=knitr::is_latex_output(), child=here::here("prelims", "00-abstract.Rmd")}
+
+```
+-->
 
 <!-- The {.unnumbered} option here means that the introduction will be 
 "Chapter 0." You can also use {-} for no numbers on chapters.

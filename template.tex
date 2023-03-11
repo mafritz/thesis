@@ -186,12 +186,18 @@ $endfor$
 \begin{document}
 
 % Everything below added by CII
-$if(title)$
-  \maketitle
-$endif$
+%$if(title)$
+%  \maketitle
+%$endif$
 
 \frontmatter % this stuff will be roman-numbered
 \pagestyle{empty} % this removes page numbers from the frontmatter
+
+$if(abstract)$
+  \begin{abstract}
+    $abstract$
+  \end{abstract}
+$endif$
 
 $if(acknowledgements)$
   \begin{acknowledgements}
@@ -218,12 +224,6 @@ $endif$
 
 $if(lof)$
   \listoffigures
-$endif$
-
-$if(abstract)$
-  \begin{abstract}
-    $abstract$
-  \end{abstract}
 $endif$
 
 $if(dedication)$
