@@ -435,7 +435,7 @@ For determining the existence of a single, common factor, there is a growing con
 |--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 | 0.6        | 0.86     | 0.9            | 0.86 | 0.92  | 0.93   | 0.88      | 0.71      | 0.46   | 0.35  |
 
-: Study 2 : Reliability measures of the EAU scale
+: Study 2: Reliability measures of the EAU scale
 
 All indicators seem to converge on moderate to high values, which corroborates the reliability of the scale. For the purpose of this study, particular attention is focused on the *Uni* indicator, which is computed through the *unidim* function of the psych package (*ibid*.). The function is described as follows:
 
