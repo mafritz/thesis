@@ -286,8 +286,8 @@ s2.valid_results_description |>
     caption = "(ref:s2-descriptive-table-caption)\\label{tab:s2-descriptive-table}",
     caption.short = "Study 2: Descriptive statistics",
     longtable = FALSE,
-  ) |>
-  kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
+  )
+  # kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
 ### Measures About the Use of the EAT
@@ -305,7 +305,7 @@ In comparing the two classes, the number of emotions expressed is similar with r
 #| fig.cap="(ref:s2-graph-emotions-expressed-boxplot-caption)",
 #| fig.scap = "Study 2: Number of emotion expressed",
 #| fig.width=4, 
-#| fig.height=2.5, 
+#| fig.height=2.2, 
 s2.graph_expressed_emotions_boxplot
 ```
 
@@ -317,7 +317,7 @@ The use of the tool with respect to the longitudinal duration of the course is d
 #| fig.align="center", 
 #| fig.cap="(ref:s2-graph-expressed-emotions-over-time-caption)",
 #| fig.scap = "Study 2: Evolution of the number of emotion expressed",
-#| out.width="80%"
+#| out.width="70%"
 s2.graph_expressed_emotions_over_time
 ```
 
@@ -474,7 +474,7 @@ The diagram in Figure \@ref(fig:s2-factor-analysis-graph) reports the coefficien
 #| fig.align="left", 
 #| fig.cap="(ref:s2-factor-analysis-caption)",
 #| fig.scap = "Study 2: Factors loading of the EAU"
-omega.diagram(s2.eau.fa, main = "", marg = c(5,0,0,0))
+omega.diagram(s2.eau.fa, main = "", marg = c(0,0,0,0))
 ```
 
 ### Emotion Awareness Usefulness and Emotional Competence
