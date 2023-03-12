@@ -262,7 +262,7 @@ kable(
   kable_styling(latex_options = c("HOLD_position", "repeat_header"))
 ```
 
-The resulting unbalanced design and overall small $N$, particularly low in the *Partner-Oriented* condition, decrease the power of an already ambitious planned test and make it more exposed to violation of assumptions [@hoekstraAreAssumptionsWellKnown2012]. The interpretation of results from an hypothesis-testing perspective is nevertheless maintained, but provided from an exploratory perspective, such as a reference for future studies, rather than a confirmatory standpoint [@scheel2020; @fiedlerCycleTheoryFormation2004; @lakensTooTrueBe2017].
+The resulting unbalanced design and overall small $N$, particularly low in the *Partner-Oriented* condition, decrease the power of an already ambitious planned test and make it more exposed to violation of assumptions [@hoekstraAreAssumptionsWellKnown2012]. The interpretation of results from an hypothesis-testing perspective is nevertheless maintained, but provided from an exploratory perspective, such as a reference for future studies, rather than a confirmatory standpoint [@scheelWhyHypothesisTesters2020; @fiedlerCycleTheoryFormation2004; @lakensTooTrueBe2017].
 
 ### Differences in Expressing Emotions
 
