@@ -114,7 +114,7 @@ knitr::include_graphics(
 )
 ```
 
-### The Affective Space as a Cartesian Plane {#the-affectuve-space-as-a-cartesian-plane}
+### The Affective Space as a Cartesian Plane {#the-affective-space-as-a-cartesian-plane}
 
 When a second appraisal criteria is added, the resulting affective space can be conceptualized as a Cartesian plane, in which $P$ is represented by the coordinates $x = P_1$, and $y = P_2$. At the same time, the appraisal evaluation is also determined by coordinates $x = E_1$ and $y = E_2$. Consequently, the *k-nearest neighbors* may be determined using the Euclidean (or Pythagorean) distance, with the nearest lexicalized emotions having the smallest hypotenuse of a triangle with the length of the sides determined by the difference between $E_1$ and $P_1$, and $E_2$ and $P_2$:
 
