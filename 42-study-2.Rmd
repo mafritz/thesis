@@ -19,7 +19,7 @@ source(here("data", "study-2", "s2-export.R"), local = knitr::knit_global(), enc
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-This chapter describes the second empirical contribution of the thesis, which investigates the longitudinal use of an EAT in asynchronous and non-collaborative learning settings made by two classes of a blended Master in education technology. As for the previous chapter, the presentation of the study follows the traditional structure of empirical contributions [@sollaciIntroductionMethodsResults2004].
+This chapter describes the second empirical contribution of the thesis, which investigates the longitudinal use of an EAT in asynchronous and non-collaborative learning settings made by two classes of a blended Master in education technology.
 
 ## Study Rationale
 
@@ -431,7 +431,7 @@ Two types of analyses will be conducted to explore the structure and reliability
 For determining the existence of a single, common factor, there is a growing consensus in considering that Cronbach's $\alpha$ is not the most adequate choice [see for exemple @hayesUseOmegaRather2020; @revelleReliabilityTutorial2019; @sijtsmaUseMisuseVery2009]. In this regard, @revelleReliabilityTutorial2019 suggest that more than one indicator of the psychometric properties of the scale should be reported. The table below illustrates indicators of reliability computed using the psych R package [@revellePsychProceduresPsychological2021], used here in version `r packageVersion("psych")`.
 
 | $\omega_h$ | $\alpha$ | $\omega_{tot}$ | Uni  | r.fit | fa.fit | max.split | min.split | mean.r | med.r |
-|------------|----------|----------------|------|-------|--------|-----------|-----------|--------|-------|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 | 0.6        | 0.86     | 0.9            | 0.86 | 0.92  | 0.93   | 0.88      | 0.71      | 0.46   | 0.35  |
 
 : Study 2 : Reliability measures of the EAU scale
