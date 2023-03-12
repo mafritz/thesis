@@ -53,7 +53,7 @@ acknowledgements: |
   
   Even if they did not take any active part in the thesis, I am intellectually indebted to the work and views of Professors Daniel Schneider, Klaus Scherer, Daniel Läkens, and Richard McElreath.
   
-  Nothing of this would have been possible without the constant and mostly undeserved support of my wife Matilde.
+  Nothing of this would have been possible without the constant support of my wife Matilde.
 dedication: |
   
 preface: |
