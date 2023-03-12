@@ -98,7 +98,7 @@ s3.appraisal.descriptive |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-appraisal-descriptive-caption)\\label{tab:s3-appraisal-descriptive-table}",
-  caption.short = "Study 3: descriptive of appraisal dimensions",
+  caption.short = "Study 3: Descriptive of appraisal dimensions",
   longtable = FALSE,
  ) |>
  row_spec(3, bold = T) |>
@@ -146,7 +146,7 @@ s3.appraisal_sign_comparison |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-appraisal-combination-caption)\\label{tab:s3-appraisal-combination-table}",
-  caption.short = "Study 3: appraisal combinations",
+  caption.short = "Study 3: Appraisal combinations",
   longtable = FALSE,
  ) |> 
  pack_rows("Asynch./Indiv. (26 participants)", 1, 3) |>
@@ -174,7 +174,7 @@ s3.listed_vs_not_listed |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-feelings-cumulative-comparison-caption)\\label{tab:s3-feelings-cumulative-comparison-table}",
-  caption.short = "Study 3: listed vs. not listed feelings",
+  caption.short = "Study 3: Listed vs. not listed feelings",
   longtable = FALSE,
  ) |>
  row_spec(3, bold = T)
@@ -193,7 +193,7 @@ s3.listed_feelings_frequency |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-feelings-frequency-comparison-caption)\\label{tab:s3-feelings-frequency-comparison-table}",
-  caption.short = "Study 3: relative frequency of listed feelings",
+  caption.short = "Study 3: Relative frequency of listed feelings",
   longtable = FALSE,
  ) |> pack_rows(
   index = c(
@@ -228,7 +228,7 @@ s3.button_vs_other.descriptive |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-frequency-button-caption)\\label{tab:s3-frequency-button-table}",
-  caption.short = "Study 3: frequency of clicks on the buttons",
+  caption.short = "Study 3: Frequency of clicks on the buttons",
   longtable = FALSE,
  ) |>
  row_spec(3, bold = T) |>
@@ -261,7 +261,7 @@ s3.empirical_feelings_disposition |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-empirical-feelings-disposition-caption)\\label{tab:s3-empirical-feelings-disposition-table}",
-  caption.short = "Study 3: observed appraisal ratings in EATMINT circumplex",
+  caption.short = "Study 3: Observed appraisal ratings in EATMINT circumplex",
   longtable = FALSE,
   col.names = c("Feeling", "N", "Valence", "Contr./Pow.", "Obs. Slope", "Exp. Slope", "|Slope|")
  ) |> 
@@ -339,7 +339,7 @@ s3.sus_comparison |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-sus-overall-score-caption)\\label{tab:s3-sus-overall-score-table}",
-  caption.short = "Study 3: overall score to the SUS",
+  caption.short = "Study 3: Overall score to the SUS",
   longtable = FALSE,
   col.names = c("Condition", "N", "M", "SD")
  ) |>
@@ -357,7 +357,7 @@ s3.sus_table |>
   booktabs = TRUE,
   digits = 2,
   caption = "(ref:s3-sus-table-score-caption)\\label{tab:s3-sus-table-score}",
-  caption.short = "Study 3: score on SUS items",
+  caption.short = "Study 3: Score on SUS items",
   longtable = FALSE,
   col.names = c("Item", "Label", "A/I", "S/C", "80 BM")
  ) |>
