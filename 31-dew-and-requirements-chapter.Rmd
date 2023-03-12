@@ -315,11 +315,10 @@ The two lasting discrete emotions did not have even a partial matching. So it wa
 
 ```{r theoretical-feelings-graph}
 #| fig.align='center', 
-#| fig.height=9, 
+#| fig.height=4,
+#| fig.width=4, 
 #| fig.cap="(ref:theoretical-feelings-graph-caption)",
 #| fig.scap = "The EATMINT circumplex", 
-#| fig.pos="p",
-#| out.width="100%"
 source(here::here("./data/study-3/src/04-computational_model.R"), local = knitr::knit_global(), encoding = "UTF-8") 
 s3.theoretical_feelings_disposition_circumplex.graph +
   ggtitle("EATMINT circumplex")

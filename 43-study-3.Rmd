@@ -116,6 +116,7 @@ All things considering, though, participants in both settings seem to take advan
 ```{r s3-appraisal-density-graph}
 #| fig.align="center", 
 #| fig.cap="(ref:s3-appraisal-density-caption)",
+#| out.width="90%",
 #| fig.scap = "Study 3: Density plot of the appraisal dimensions",
 s3.appraisal_density.graph
 ```
@@ -283,9 +284,9 @@ The results highlight a wide range of differences between the expected and the o
 #| fig.align="center",
 #| fig.cap="(ref:s3-theoretical-feelings-graph-caption)",
 #| fig.scap = "Study 3: Theoretically-driven (expected) affective space", 
-#| fig.height=9, 
-#| fig.pos="p",
-#| out.width = "100%"
+#| fig.height=4,
+#| fig.width=4, 
+#| fig.pos="p"
 s3.theoretical_feelings_disposition_circumplex.graph
 ```
 
@@ -296,8 +297,8 @@ s3.theoretical_feelings_disposition_circumplex.graph
 #| fig.cap="(ref:s3-empirical-feelings-graph-caption)",
 #| fig.scap = "Study 3: Empirically-driven (observed) affective space", 
 #| fig.pos="p",
-#| fig.height=9, 
-#| out.width="100%"
+#| fig.height=4,
+#| fig.width=4
 s3.empirical_feelings_disposition_circumplex.graph
 ```
 
@@ -309,9 +310,8 @@ The phenomenon is consistent in both learning settings, with nevertheless some v
 #| fig.align='center', 
 #| fig.cap="(ref:s3-empirical-feelings-comparison-graph-caption)", 
 #| fig.scap = "Study 3: Subjective feelings empirically-driven disposition",
-#| fig.height=9, 
-#| fig.pos="p",
-#| out.width="100%"
+#| fig.height=6, 
+#| fig.width=6
 s3.empirical_space_comparison.graph
 ```
 
