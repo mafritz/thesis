@@ -441,7 +441,7 @@ s1.transitions.contrasts$contrasts |>
   mutate(p.value = round_ps_apa(p.value)) |>
   kable(
     caption.short = "Study 1: Pairwise comparison between transitions",
-    longtable = TRUE,
+    longtable = FALSE,
     booktabs = TRUE,
     linesep = c("", "", "\\addlinespace"),
     col.names = c("Comparison", "Est.", "SE", "df", "t.ratio", "p.value"),
@@ -453,8 +453,8 @@ s1.transitions.contrasts$contrasts |>
   pack_rows("Expressing to Task", 7, 9) |>
   pack_rows("Task to Expressing", 10, 12) |>
   pack_rows("Perceiving to Task", 13, 15) |>
-  pack_rows("Task to Perceiving", 16, 18) |>
-  kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
+  pack_rows("Task to Perceiving", 16, 18)
+  # kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
 All things considering, transitions may represent a more interesting measure of the perceiving-monitoring function of emotional awareness compared to information seeking and information processing adopted in the planned analyses. Even considering the shortcomings (e.g. transitions interrupted by the use of the keyboard), transitions provide a more *dynamic* outlook on how emotional information is integrated into the task. The concept of transition may even be pushed further by measuring at which moment the transition has occurred, which would provide useful information on the interest -- but also the potential distraction -- of moment-to-moment awareness. For instance, it would be possible to assess whether learners look at the emotions expressed by the partner as soon as they appear on the interface, or if they wait idle period in the task. In this regard, the next analysis focus precisely on the moment-to-moment perspective, but with respect to emotion expression-displaying.
@@ -529,11 +529,11 @@ Each meta-analysis has been conducted using the R meta package version `r packag
 The meta-analysis on the expression of emotions has been conducted on all the retained participants for both studies, since, even for participants in the *Self-Centered* condition, the overall situation in which participants have expressed their emotions are sufficiently close for an internal meta-analytic purpose. Consequently, the sample size are of $N = 14$ in Fritz (2015) and of $N = 35$ in this contribution. Results, depicted in Figure \@ref(fig:s1-forest-expressing), assess an estimated mean of `r s1.meta_analysis_expressing.summary$fixed$TE |> printnum()` [`r s1.meta_analysis_expressing.summary$fixed$lower |> printnum()`; `r s1.meta_analysis_expressing.summary$fixed$upper |> printnum()`] expressed emotions for the fixed effect model, and of `r s1.meta_analysis_expressing.summary$random$TE |> printnum()` [`r s1.meta_analysis_expressing.summary$random$lower |> printnum()`; `r s1.meta_analysis_expressing.summary$random$upper |> printnum()`] for the random effect model. The meta-analysis highlights the presence of considerable heterogeneity in the expression of emotions ($\tau^2$ = 10.29; $\tau$ = 3.21; I\^2 = 82.0% [23.9%; 95.7%]; H = 2.36 [1.15; 4.84]; $\chi^2$ = 5.55 *p* = .018). This may suggest that the different conditions of the two studies may have played a role in inflating the number of emotions expressed in Fritz (2015), where participants were explicitly asked, if possible, to express at least one emotion in each phase of the 4 enigmas (*i.e.* which would amount to 12). On the contrary, in this contribution they did not receive any guidance as of the number of emotion to express. This may be interpreted as a warning about the importance of being careful in framing how the expression of emotional information is prompted, even if the inflation of the number of emotions may not be necessarily accounted by *forced* emotions, that is, emotional episodes that are not *really* felt, but nevertheless reported. It may also be the case that prompting for emotional expression may ease participants into expressing their emotions, something they could be less prone to do otherwise.
 
 ```{r s1-forest-expressing}
-#| fig.align="left",  
+#| fig.align="center",  
 #| fig.cap="Internal meta-analysis of the number of emotions expressed in the experimental task.",
 #| fig.scap = "Study 1: Small meta-analysis of the number of emotions expressed", 
-# fig.height=2,
-#| out.width="100%"
+#| fig.height=2,
+#| out.width="70%"
 forest.meta(s1.meta_analysis_expressing, hetstat = TRUE, xlim = c(5, 25), layout = "JAMA")
 ```
 
@@ -542,11 +542,11 @@ forest.meta(s1.meta_analysis_expressing, hetstat = TRUE, xlim = c(5, 25), layout
 The internal meta-analysis on information processing has been conducted using only the participants retained for the eye-tracking analysis ($N = 12$) in Fritz (2015), and only participants in the *Partner-Oriented* and *Mutual-Modeling* conditions ($N = 23$) in this contribution, for the interface in these situations is identical or at least very similar with respect to the *social* information shared. Results, depicted in Figure \@ref(fig:s1-forest-processing), assess an estimated mean of `r s1.meta_analysis_processing.summary$fixed$TE |> printnum()` [`r s1.meta_analysis_processing.summary$fixed$lower |> printnum()`; `r s1.meta_analysis_processing.summary$fixed$upper |> printnum()`] total visit duration, in seconds, for the fixed effect model, and of `r s1.meta_analysis_processing.summary$random$TE |> printnum()` [`r s1.meta_analysis_processing.summary$random$lower |> printnum()`; `r s1.meta_analysis_processing.summary$random$upper |> printnum()`] for the random effect model. The meta-analysis does not detect heterogeneity between studies ($\tau^2$ = 40.81; $\tau$ = 6.39; I\^2 = 45.2%; H = 1.35; $\chi^2$ = 1.82 *p* = .177), which may indicate that the time spent at looking at emotional information could be determined by a balance between the primary problem-solving activity and the sustaining emotional awareness. The point estimate of total visit duration being around 1 minute over the 20 minutes of the task, it corresponds to a proportion of 5% of the total time.
 
 ```{r s1-forest-processing}
-#| fig.align="left", 
+#| fig.align="center", 
 #| fig.cap="Internal meta-analysis of the time spent at processing emotional information available on screen.",
 #| fig.scap = "Study 1: Small meta-analysis of emotion information processing", 
 #| fig.height=2,
-#| out.width="100%"
+#| out.width="70%"
 forest.meta(s1.meta_analysis_processing, hetstat = TRUE, xlim = c(30, 80), layout = "JAMA")
 ```
 
@@ -555,11 +555,11 @@ forest.meta(s1.meta_analysis_processing, hetstat = TRUE, xlim = c(30, 80), layou
 With respect to emotional information seeking, the internal meta-analyses comprise the same samples as for information processing, that is $N = 12$ in Fritz (2015) and $N = 23$ in this contribution. Results, depicted in Figure \@ref(fig:s1-forest-seeking), assess an estimated mean of `r s1.meta_analysis_seeking.summary$fixed$TE |> printnum()` [`r s1.meta_analysis_seeking.summary$fixed$lower |> printnum()`; `r s1.meta_analysis_seeking.summary$fixed$upper |> printnum()`] number of visits for the fixed effect model, and of `r s1.meta_analysis_seeking.summary$random$TE |> printnum()` [`r s1.meta_analysis_seeking.summary$random$lower |> printnum()`; `r s1.meta_analysis_seeking.summary$random$upper |> printnum()`] for the random effect model. The meta-analysis does not detect heterogeneity between studies ($\tau^2$ = 0; $\tau$ = 0; I\^2 = 0%; H = 1; $\chi^2$ = .56 *p* = .453), which may as well be due to the huge variability within studies rather than homogeneity between studies. In future studies, the number of transitions between AOI could represent a more informative measure for emotional information seeking.
 
 ```{r s1-forest-seeking}
-#| fig.align="left", 
+#| fig.align="center", 
 #| fig.cap="Internal meta-analysis of the number of times emotional information has been visited on screen.", 
 #| fig.scap = "Study 1: Small internal meta-analysis of emotion information processing",
 #| fig.height=2,
-#| out.width="100%"
+#| out.width="70%"
 forest.meta(s1.meta_analysis_seeking, hetstat = TRUE, xlim = c(50, 100), layout = "JAMA")
 ```
 
