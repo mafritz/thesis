@@ -317,7 +317,8 @@ The use of the tool with respect to the longitudinal duration of the course is d
 #| fig.align="center", 
 #| fig.cap="(ref:s2-graph-expressed-emotions-over-time-caption)",
 #| fig.scap = "Study 2: Evolution of the number of emotion expressed",
-#| out.width="70%"
+#| fig.width=5,
+#| fig.height=2.5
 s2.graph_expressed_emotions_over_time
 ```
 

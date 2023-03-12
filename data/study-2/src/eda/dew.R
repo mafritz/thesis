@@ -30,7 +30,7 @@ s2.graph_expressed_emotions_over_time <- ggplot(s2.expressed_emotions, aes(x = a
   geom_line(size = 2) +
   labs(
     x = NULL,
-    y = "Cumulative number of emotions expressed",
+    y = "Cumulative number of emotions",
     color = NULL
   ) +
   scale_colour_brewer(palette = "Dark2") +
