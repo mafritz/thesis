@@ -20,7 +20,7 @@ source(here("data", "study-1", "s1-export.R"), local = knitr::knit_global(), enc
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-This chapter describes the first empirical contribution of the thesis, which investigates to what extent a different use of, and access to emotional information can determine the concrete use of an EAT in synchronous and collaborative computer-mediated settings. The presentation of the experiment follows the traditional structure of empirical contributions [@sollaciIntroductionMethodsResults2004].
+This chapter describes the first empirical contribution of the thesis, which investigates to what extent a different use of, and access to emotional information can determine the concrete use of an EAT in synchronous and collaborative computer-mediated settings.
 
 ## Study Rationale
 
@@ -176,7 +176,7 @@ The partner with whom participants were supposed to cooperate was actually simul
 
 (ref:s1-simulated-emotions-caption) List of the emotions of the simulated partner. Time is expressed in seconds.
 
-The result is that the simulated partner acts exactly in the same way with every participant for the problem-solving part of the interface. For the emotional information, though, the expressed emotions are also exactly the same, but the information is disclosed (or not) depending on which experimental condition the participant is attributed to. 
+The result is that the simulated partner acts exactly in the same way with every participant for the problem-solving part of the interface. For the emotional information, though, the expressed emotions are also exactly the same, but the information is disclosed (or not) depending on which experimental condition the participant is attributed to.
 
 ```{r s1-simulated-partner-table}
 kable(
@@ -266,7 +266,7 @@ The resulting unbalanced design and overall small $N$, particularly low in the *
 
 ### Differences in Expressing Emotions
 
-Participants expressed a total of `r s1.dew_emotions |> nrow()` emotions, which corresponds to a mean close to 14 emotions per participants (`r maf.print_m_sd(s1.aggregated_emotions$n, TRUE, FALSE)`). As a reference, in the usability test (see Section \@ref(ux-reference-measures)) the average was of $M = 17.14$, with a similar standard deviation of $SD =$ 5.05. Participants in the *Self-Centered* condition expressed on average `r maf.print_m_sd(s1.aggregated_emotions |> filter(group == "Self") |> pull(n), FALSE, TRUE)` emotions; `r maf.print_m_sd(s1.aggregated_emotions |> filter(group == "Partner") |> pull(n), FALSE, TRUE)` in the *Partner-Oriented* condition; and `r maf.print_m_sd(s1.aggregated_emotions |> filter(group == "Mutual") |> pull(n), FALSE, TRUE)` in the *Mutual-Modeling* condition (see Figure \@ref(fig:s1-expressed-emotions-graph)).
+Emotion expression was measured by the number of times each participant expressed an emotion through the interface of the EAT. The count includes any means of expression, that is the click on the buttons, another choice from the dropdown menu, the *ad-hoc* typing of a lexicalzed emotion from the user, or the use of the "none" button. Participants expressed a total of `r s1.dew_emotions |> nrow()` emotions, which corresponds to a mean close to 14 emotions per participants (`r maf.print_m_sd(s1.aggregated_emotions$n, TRUE, FALSE)`). As a reference, in the usability test (see Section \@ref(ux-reference-measures)) the average was of $M = 17.14$, with a similar standard deviation of $SD =$ 5.05. Participants in the *Self-Centered* condition expressed on average `r maf.print_m_sd(s1.aggregated_emotions |> filter(group == "Self") |> pull(n), FALSE, TRUE)` emotions; `r maf.print_m_sd(s1.aggregated_emotions |> filter(group == "Partner") |> pull(n), FALSE, TRUE)` in the *Partner-Oriented* condition; and `r maf.print_m_sd(s1.aggregated_emotions |> filter(group == "Mutual") |> pull(n), FALSE, TRUE)` in the *Mutual-Modeling* condition (see Figure \@ref(fig:s1-expressed-emotions-graph)).
 
 (ref:s1-expressed-emotions-graph-caption) Number of emotions expressed by experimental condition. Bars represent 95% confidence intervals.
 
@@ -520,7 +520,7 @@ The data suggest that, proportionally, participants expressed more emotions whil
 
 ### Internal Meta-Analysis on Task Indicators
 
-Taking advantage of the fact that the same task was adopted, under similar conditions, in the usability test of the DEW [@fritzReinventingWheelEmotional2015], small internal meta-analyses [@gohMiniMetaAnalysisYour2016] were performed on the point-estimate means for the three dependent variables adopted in the current contribution. The interest of the meta-analyses is to provide a better assessment of the performance-based indicators of the use of the EAT, for instance as reference for future studies[^This use was actually planned for a empirical contribution initially considered as part of the thesis, but which was not carried out due to the pandemic].
+Taking advantage of the fact that the same task was adopted, under similar conditions, in the usability test of the DEW [@fritzReinventingWheelEmotional2015], small internal meta-analyses [@gohMiniMetaAnalysisYour2016] were performed on the point-estimate means for the three dependent variables adopted in the current contribution. The interest of the meta-analyses is to provide a better assessment of the performance-based indicators of the use of the EAT, for instance as reference for future studies[\^This use was actually planned for a empirical contribution initially considered as part of the thesis, but which was not carried out due to the pandemic].
 
 Each meta-analysis has been conducted using the R meta package version `r packageVersion("meta")`, adopting the inverse of the variance weighting mechanism to account for differences in the sample size of the two internal studies [@borensteinIntroductionMetaanalysis2009]. Results both for the fixed and the random models (using the DerSimonian-Laird estimator for $tau^2$) are provided.
 
@@ -552,7 +552,7 @@ forest.meta(s1.meta_analysis_processing, hetstat = TRUE, xlim = c(30, 80), layou
 
 #### Information Seeking Internal Meta-Analysis
 
-With respect to emotional information seeking, the internal meta-analyses comprise the same samples as for information processing, that is $N = 12$ in Fritz (2015) and $N = 23$ in this contribution. Results, depicted in Figure \@ref(fig:s1-forest-seeking), assess an estimated mean of `r s1.meta_analysis_seeking.summary$fixed$TE |> printnum()` [`r s1.meta_analysis_seeking.summary$fixed$lower |> printnum()`; `r s1.meta_analysis_seeking.summary$fixed$upper |> printnum()`] number of visits for the fixed effect model, and of `r s1.meta_analysis_seeking.summary$random$TE |> printnum()` [`r s1.meta_analysis_seeking.summary$random$lower |> printnum()`; `r s1.meta_analysis_seeking.summary$random$upper |> printnum()`] for the random effect model. The meta-analysis does not detect heterogeneity between studies ($\tau^2$ = 0; $\tau$ = 0; I\^2 = 0%; H = 1; $\chi^2$ = .56 *p* = .453), which is nevertheless rather due to the huge variability within studies rather than homogeneity between studies. In future studies, the number of transitions between AOI could represent a more informative measure for emotional information seeking.
+With respect to emotional information seeking, the internal meta-analyses comprise the same samples as for information processing, that is $N = 12$ in Fritz (2015) and $N = 23$ in this contribution. Results, depicted in Figure \@ref(fig:s1-forest-seeking), assess an estimated mean of `r s1.meta_analysis_seeking.summary$fixed$TE |> printnum()` [`r s1.meta_analysis_seeking.summary$fixed$lower |> printnum()`; `r s1.meta_analysis_seeking.summary$fixed$upper |> printnum()`] number of visits for the fixed effect model, and of `r s1.meta_analysis_seeking.summary$random$TE |> printnum()` [`r s1.meta_analysis_seeking.summary$random$lower |> printnum()`; `r s1.meta_analysis_seeking.summary$random$upper |> printnum()`] for the random effect model. The meta-analysis does not detect heterogeneity between studies ($\tau^2$ = 0; $\tau$ = 0; I\^2 = 0%; H = 1; $\chi^2$ = .56 *p* = .453), which may as well be due to the huge variability within studies rather than homogeneity between studies. In future studies, the number of transitions between AOI could represent a more informative measure for emotional information seeking.
 
 ```{r s1-forest-seeking}
 #| fig.align="left", 
