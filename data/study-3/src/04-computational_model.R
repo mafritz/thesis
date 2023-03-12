@@ -88,6 +88,8 @@ s3.theoretical_feelings_disposition_circumplex <- s3.empirical_feelings_disposit
   )
 
 s3.empirical_feelings_disposition_circumplex.graph <- ggplot(s3.empirical_feelings_disposition_circumplex, aes(x = pos_x, y = pos_y, label = feeling)) +
+  geom_hline(yintercept = 500, colour = "gray") +
+  geom_vline(xintercept = -500, colour = "gray") +
     geom_point(size = 7) +
     geom_text_repel(
       seed = 238769, box.padding = 0.9, 
@@ -110,6 +112,8 @@ s3.empirical_feelings_disposition_circumplex.graph <- ggplot(s3.empirical_feelin
     ggtitle("Empirical/Observed Affective Space")
 
 s3.theoretical_feelings_disposition_circumplex.graph <- ggplot(s3.theoretical_feelings_disposition_circumplex, aes(x = pos_x, y = pos_y, label = feeling)) +
+    geom_hline(yintercept = 500, colour = "gray") +
+    geom_vline(xintercept = -500, colour = "gray") +
     geom_point(size = 7) +
     geom_text_repel(
       seed = 238769, box.padding = 0.9, 

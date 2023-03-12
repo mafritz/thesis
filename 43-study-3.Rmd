@@ -20,7 +20,7 @@ source(here("data", "study-3", "s3-export.R"), local = knitr::knit_global(), enc
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-This chapter provides a general assessment of some of the fundamental features of the Emotion Awareness Tool (EAT) implemented in the thesis from a data-driven perspective. To do so, the study will merge data from the usability test [@fritzReinventingWheelEmotional2015], briefly resumed in Section \@ref(dew-ux-test), and the two empirical contributions of Chapter \@ref(study-1) and Chapter \@ref(study-2). The structure of the chapter will follow once again the traditional structure of an empirical contribution [@sollaciIntroductionMethodsResults2004].
+This chapter provides a general assessment of some of the fundamental features of the Emotion Awareness Tool (EAT) implemented in the thesis from a data-driven perspective. To do so, the study will merge data from the usability test [@fritzReinventingWheelEmotional2015], briefly resumed in Section \@ref(dew-ux-test), and the two empirical contributions of Chapter \@ref(study-1) and Chapter \@ref(study-2).
 
 ## Study Rationale
 
@@ -275,7 +275,7 @@ s3.empirical_feelings_disposition |>
   kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
-The results highlight a wide range of differences between the expected and the observed disposition of each lexicalized emotion, going from almost absolute correspondence for *Bored* (0.22°) to more than a rotation of 90° for *Annoyed* (102.59°). The empirical position of some options is computed using only a few observations, as in the case of *Empathetic* (5), *Envious* (1), or *Disgusted* (5); whereas others show a good approximation with many observations, as it is the case for the aforementioned *Bored* (0.22° with 63 observations), *Amused* (7.20° with 94 observations), *Surprised* (5.72° with 35 observations), or *Stressed* (5.11° with 35 observations). The overall disposition of the observed affective space, though, corroborates the lack of orthogonality, highlighted earlier in the chapter, in the use of the two appraisal dimensions. In fact, the comparison between the graphical representations of the theoretical/expected circumplex in Figure \@ref(fig:s3-theoretical-feelings-graph) and the empirical/observed in Figure \@ref(fig:s3-empirical-feelings-graph) confirms that most of the subjective feelings have been chosen with congruent ratings of *Valence* and *Control/Power*, that is when both appraisal dimensions are either positive or negative. When the two appraisal dimensions are orthogonal, only *Surprised* and *Empathetic* in the bottom-right quadrant, and *Envious* and *Irritated* in the top-right quadrant -- based on only a few observations, though -- have been chosen with the expected combination of the appraisal dimensions. The other lexicalized emotions supposed to appear on the orthogonal combination of appraisals *moved* in another quadrant, depending on the *Valence* rating. That is, feelings from the Positive *Valence* x Negative *Control/Power* quadrant *moved* to the quadrant with both Positive appraisal dimensions; whereas feelings from the Negative *Valence* x Positive *Control/Power* *moved* to the quadrant with both Negative appraisal dimensions.
+The results highlight a wide range of differences between the expected and the observed disposition of each lexicalized emotion, going from almost absolute correspondence for *Bored* (0.07°) to almost a 180° turn for *Envious* (164°). The empirical position of some options is computed using only a few observations, as in the case of *Empathetic* (14), *Envious* (3), or *Disgusted* (9); whereas others show a good approximation with many observations, as it is the case for the aforementioned *Bored* (0.22° with 71 observations), *Amused* (7.20° with 127 observations), *Surprised* (5.72° with 49 observations), or *Stressed* (5.11° with 41 observations). The overall disposition of the observed affective space, though, corroborates the lack of orthogonality, highlighted earlier in the chapter, in the use of the two appraisal dimensions. In fact, the comparison between the graphical representations of the theoretical/expected circumplex in Figure \@ref(fig:s3-theoretical-feelings-graph) and the empirical/observed in Figure \@ref(fig:s3-empirical-feelings-graph) confirms that most of the subjective feelings have been chosen with congruent ratings of *Valence* and *Control/Power*, that is when both appraisal dimensions are either positive or negative. When the two appraisal dimensions are orthogonal, only *Surprised* and *Empathetic* in the bottom-right quadrant, and *Envious* and *Irritated* in the top-right quadrant -- based on only a few observations, though -- have been chosen with the expected combination of the appraisal dimensions. The other lexicalized emotions supposed to appear on the orthogonal combination of appraisals *moved* in another quadrant, depending on the *Valence* rating. That is, feelings from the Positive *Valence* x Negative *Control/Power* quadrant *moved* to the quadrant with both Positive appraisal dimensions; whereas feelings from the Negative *Valence* x Positive *Control/Power* *moved* to the quadrant with both Negative appraisal dimensions.
 
 (ref:s3-theoretical-feelings-graph-caption) The theoretical/expected disposition of the EATMINT circumplex, reported from Figure \@ref(fig:theoretical-feelings-graph) in Chapter \@ref(dew-chapter).
 
@@ -323,7 +323,7 @@ On the other hand, data clearly confirm a major issue with the *Control/Power* a
 
 ### Measures About the Perceived Usability of the Tool
 
-Finally, the EAT will be appraised with respect to its usability, that is the perceived efficiency, effectiveness and satisfaction in using the tool. A usability measure, the System Usability Scale [SUS, @brookeSUSQuickDirty1996], was administered in the empirical contribution of Chapter \@ref(study-2), but not of Chapter \@ref(study-2). The SUS was nevertheless administered in the usability test in Fritz (2015), which used the same configuration and task of the Synch./Collab. setting (but without the experimental conditions). The SUS scores of the usability test ($N = 16$) will therefore be used for the Synch./Collab. setting, alongside the scores obtained in the Asynch./Indiv. of Chapter \@ref(study-2) ($N = 26$).
+Finally, the EAT will be appraised with respect to its usability, that is the perceived efficiency, effectiveness and satisfaction in using the tool. A usability measure, the System Usability Scale [SUS, @brookeSUSQuickDirty1996], was administered in the empirical contribution of Chapter \@ref(study-2), but not of Chapter \@ref(study-1). The SUS was nevertheless administered in the usability test in Fritz (2015), which used the same configuration and task of the Synch./Collab. setting (but without the experimental conditions). The SUS scores of the usability test ($N = 16$) will therefore be used for the Synch./Collab. setting, alongside the scores obtained in the Asynch./Indiv. of Chapter \@ref(study-2) ($N = 26$).
 
 The scale, using inverse rating for even items, allows to compute an overall score ranging from 0 (very poor perceived usability) to 100 (excellent perceived usability). Results of the SUS have been collected in the last decades in various published and unpublished reports. Thus, there is nowadays the possibility to better assess the overall score of the SUS, as well as of each of its ten items [@bangorDeterminingWhatIndividual2009; @lewisItemBenchmarksSystem2018; @sauroQuantifyingUserExperience2016].
 
@@ -347,22 +347,28 @@ s3.sus_comparison |>
   kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
-Furthermore, Lewis and Sauro [-@lewisItemBenchmarksSystem2018] collected data from 166 unpublished industrial usability studies or surveys, each one comprising a mean of the SUS overall score. The 166 means were computed from a total of 11'855 surveys. From these data, the authors retrieved benchmarks for each of the ten items of the SUS to reach the $M = 68$ empirical mean, or the target score of 80. As a reminder, the SUS items are the following:
+Furthermore, Lewis and Sauro [-@lewisItemBenchmarksSystem2018] collected data from 166 unpublished industrial usability studies or surveys, each one comprising a mean of the SUS overall score. The 166 means were computed from a total of 11'855 surveys. From these data, the authors retrieved benchmarks for each of the ten items of the SUS to reach the $M = 68$ empirical mean, or the target score of 80. Table \@ref(tab:s3-sus-table-score) illustrates the average and standard deviation for each of the 10 items of the SUS scale, as well as the rating expected to reach the 80 target score provided by @lewisItemBenchmarksSystem2018. To ease the comparison, even items have already been reversed, so that for each item a higher score equals a higher perceived usability. The original benchmarks refers to the 1-to-5 rating and have therefore been multiplied by a factor of 1.4 to map to the 1-to-7 scale used in both administrations of the SUS. Also the benchmarks have already been reversed for even items to ease the comparison.
 
-1.  I think that I would like to use this system frequently
-2.  I found the system unnecessarily complex
-3.  I thought the system was easy to use
-4.  I think that I would need the support of a technical person to be able to use this system
-5.  I found the various functions in this system were well integrated
-6.  I thought there was too much inconsistency in this system
-7.  I would imagine that most people would learn to use this system very quickly
-8.  I found the system very cumbersome to use
-9.  I felt very confident using the system
-10. I needed to learn a lot of things before I could get going with this system
+(ref:s3-sus-table-score-caption) Average and standard deviation of the rating on each item of the System Usability Scale stratified by setting. The benchmark rating provided by @lewisItemBenchmarksSystem2018 to reach an overall score of 80 is also provided. Both items and benchmarks have already been reversed for even items and transformed on 1-to-7 scale. $N$ = 26 for A/I and \$NS = 16 for S/C.
 
-Figure \@ref(fig:s3-sus-items-graph) depicts the score of each of the SUS items across settings. To ease the comparison, even items have already been reversed, so that for each item a higher score equals a higher perceived usability. The horizontal lines represent Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks to reach the target score of 80. The original benchmarks refers to the 1-to-5 rating and have therefore been multiplied by a factor of 1.4 to map to the 1-to-7 scale used in both administrations of the SUS. Also the benchmarks have already been reversed for even items to ease the comparison.
+```{r s3-sus-table-score}
+s3.sus_table |> 
+ kable(
+  booktabs = TRUE,
+  digits = 2,
+  caption = "(ref:s3-sus-table-score-caption)\\label{tab:s3-sus-table-score}",
+  caption.short = "Study 3: score on SUS items",
+  longtable = FALSE,
+  col.names = c("Item", "Label", "A/I", "S/C", "80 BM")
+ ) |>
+  column_spec(2, width = "7cm") |> 
+  kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
+```
 
-(ref:s3-sus-items-graph-caption) SUS scores on the single items, with the horizontal lines representing Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks to reach the target score of 80, transformed to a 1-to-7 scale. Both items and benchmarks have already been reversed for even items. Bars represent 95% confidence intervals. See the text above for the labels of each item.
+Figure \@ref(fig:s3-sus-items-graph) depicts the same data in a graph.
+Data show substantial consistency across learning settings for most of the items, with differences in items SUS1 (frequency), SUS3 (ease of use), and SUS8 (intuition). The first item in particular is the one yielding the bigger discrepancy, with participants in the Synch./Collab. setting reporting a perspective use more frequent than the Asynch./Indiv. setting, which is consistent with the observed use, for instance in terms of number of emotions expressed. All in all, though, the EAT seems to possess an *intrinsic* perceived usability that holds -- for good and for bad -- in both settings.
+
+(ref:s3-sus-items-graph-caption) SUS scores on the single items, with the horizontal lines representing Lewis and Sauro [-\@lewisItemBenchmarksSystem2018] benchmarks to reach the target score of 80, transformed to a 1-to-7 scale. Both items and benchmarks have already been reversed for even items. Bars represent 95% confidence intervals. See the table above for the labels of each item.
 
 ```{r s3-sus-items-graph}
 #| fig.align='center', 
@@ -373,11 +379,9 @@ Figure \@ref(fig:s3-sus-items-graph) depicts the score of each of the SUS items 
 s3.sus_items.graph
 ```
 
-Data show substantial consistency across learning settings for most of the items, with differences in items SUS1 (frequency), SUS3 (ease of use), and SUS8 (intuition). The first item in particular is the one yielding the bigger discrepancy, with participants in the Synch./Collab. setting reporting a perspective use more frequent than the Asynch./Indiv. setting, which is consistent with the observed use, for instance in terms of number of emotions expressed. All in all, though, the EAT seems to possess an *intrinsic* perceived usability that holds -- for good and for bad -- in both settings.
-
 Comparing the single items to Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks highlights that half of the items are on-or-above the target, and half are below. The fact that all the odd items are below, and all even items are on-or-above the target may seem peculiar, but is consistent with the pattern of the benchmarks which are more demanding for odd items. Lewis and Sauro [-@lewisItemBenchmarksSystem2018] do not mention anything specific about this pattern, but implicitly exclude it could be determined by the reversed formulation of odd items, since previous findings collected by the same authors [@sauroWhenDesigningUsability2011] seem to suggest that there is negligible impact of the formulation compared to a straight transformation of the odd items. An effect of the wording of items can nevertheless easily be tested or controlled by using a non-reversed version of the SUS, which has already been adopted (*ibid.*).
 
-According to the benchmarks, the EAT performs particularly bad in the frequency of use (SUS1) and in the confidence in the system (SUS9), which are two important dimensions of the scale. The integration of the different parts of the system (SUS5) also does not seem to convince learners, whereas ease of use (SUS3) and quickness of adoption (SUS7) remain below target, but less critically so. On the bright side, the EAT performs very well in learnability (SUS10), and well in consistency (SUS6). Furthermore, simplicity (SUS2), autonomy (SUS4), and intuition (SUS8) are aligned with the target score of 80.
+According to the benchmarks, the EAT performs particularly bad in the frequency of use (SUS1) and in the confidence in the system (SUS9), which are two important dimensions of the scale. The integration of the different parts of the system (SUS5) also does not seem to convince learners, whereas ease of use (SUS3) and quickness of adoption (SUS7) remain mostly below target, but less critically so. On the bright side, the EAT performs very well in learnability (SUS10), and well in consistency (SUS6). Furthermore, simplicity (SUS2), autonomy (SUS4), and intuition (SUS8) are aligned with the target score of 80.
 
 A more contextual comparison of the usability of the EAT can be provided with Feidakis and colleagues [-@feidakisProvidingEmotionAwareness2014], who also used the SUS score to assess the usability of the *emot-control* (see the related works in Section \@ref(ea-in-computer-mediated-environment)). The overall SUS score obtained by the *emot-control* on $N = 29$ is $M = 67.81$ ($SD$ not provided), thus around 6 points lower than the score observed for the EAT at hand. Contrary to the present results, though, learners in Feidakis and colleagues (*ibid.*) reported a higher score on the item about frequency (SUS1).
 
