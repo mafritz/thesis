@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# (PART) Concluding Remarks {.unnumbered}
+# (PART) Discussion and Conclusion {.unnumbered}
 
 # General Discussion {#general-discussion}
 
@@ -301,7 +301,7 @@ Being the computational model at the core of the proposed EAT and, more largely,
 
 ## Suggestions for the Implementation or Adoption of Emotion Awareness Tools
 
-The proposed EAT is only one way of implementing a theory-driven structure of emotion into a tool. I consider competition in science a necessity for progress, and therefore I highly encourage other scholars to continue the development of alternative tools or embark in the development of new ones. To this extent, I provide a brief list of suggestions that may be of interest for the implementation or the adoption of an EAT in computer-mediated learning environments.
+The proposed EAT is only one way of implementing a theory-driven structure of emotion into a tool. Other tools or way to adopt them may certainly contribute to a better understanding of the strengths and weaknesses of endowing computer-mediated learning environments with emotional awareness. To this extent, I provide a brief list of suggestions that may be of interest for the implementation or the adoption of an EAT in computer-mediated learning environments.
 
 ### Specify Whether a Specific or Diffuse Affective Phenomenon Is Targeted
 
