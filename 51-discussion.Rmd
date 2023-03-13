@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# (PART) Discussion and Conclusion {.unnumbered}
+# (PART) General Discussion and Conclusion {.unnumbered}
 
 # General Discussion {#general-discussion}
 
