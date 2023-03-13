@@ -30,9 +30,11 @@ The theory-driven implementation and the empirical assessment have mutually infl
 3.  A toolbox is proposed to researchers and practitioners interested in endowing computer-mediated learning environments with moment-to-moment emotional awareness. The toolbox tries to foster transparency and comparability of results in research by providing the possibility to configure the tool. The configuration itself can be leverage as an intervention/independent variable, whose effect can be measured on phenomena of interest.
 4.  In this regard, two types of measures have been proposed as useful to the overall investigation and assessment of the use of an Emotion Awareness Tool: (1) the use of gaze transitions between the tool and part of the screen when the learning task takes place, and (2) an Emotion Awareness Usefulness scale, which, to the best of my knowledge, represents a first attempt to provide a common measure to the many facets implied in the use of an EAT in computer-mediated learning environments.
 
-The thesis adopted an overall perspective aiming more broadly to the construct and internal validity of emotional awareness. Such an attempt, especially in an individual contribution at the doctoral stage, stretches over a wide domain of inter-dependent and inter-disciplinary aspects. As a consequence, the work certainly highlights a number of limitations or uncompleted steps in the process. This concluding chapter thus starts by pointing out some of the main limitations of the present work. It then provides a glimpse for future perspective. Finally, some thoughts about the overall work are proposed by the author.
+The thesis adopted an overall perspective aiming more broadly to the construct and internal validity of emotional awareness. Such an attempt, especially in an individual contribution at the doctoral stage, stretches over a wide domain of inter-dependent and inter-disciplinary aspects. As a consequence, the work certainly highlights a number of limitations or uncompleted steps in the process. This concluding chapter thus starts by pointing out three main limitations of the present work. It then provides a glimpse for three different perspectives on future development. Finally, some thoughts about the overall work are proposed by the author.
 
 ## Limitations
+
+Three main limitations are identified in the present contribution. The first relates to the absence of elements that are more prominently related to learning. The second concerns the lack of empirical data, which have fostered a more severe assessment of the tool. Finally, in spite of the interaction and user-centered approach adopted by the thesis, few researchers or pratictioners have been implicated in the process.
 
 ### Where Is Learning in All This?
 
@@ -69,6 +71,8 @@ The second type of solution refers to an *ad-hoc* tool that is tightly integrate
 In both cases, thus, researchers were mostly disappointed rather than intrigued by the features of the toolbox. I nevertheless think it is too soon to determine whether this is the consequences of an intrinsic and stable limitation of the tool, or it is rather due to the lack of fruitful empirical examples that may encourage researchers or practitioners to switch from the two dominant perspectives. Still, one potential ironic limitation of the thesis is that by aiming for a tool that may be adopted by the many, it may fall short of meeting anyone's needs.
 
 ## Future Perspectives
+
+Three main areas of future development are proposed. The first concerns a wider involvement of interested scholars in the further development of the toolbox. The second refers to the possibility to extend the use of the computational model as a generative algorithm. Finally, a potential line of inquire is identified in the empirical comparison between a scripting and an awareness strategy to provide learners with emotional awareness.
 
 ### Usability Test of the Toolbox
 
