@@ -51,7 +51,7 @@ A *study* is the element of the toolbox that glues all parts together. It is det
 ```{r dew-toolbox-study-detail}
 #| fig.align="center", 
 #| fig.cap="(ref:dew-toolbox-study-detail-caption)",
-#| fig.scap = "An instance's details in the toolbox", 
+#| fig.scap = "An instance details in the toolbox", 
 #| out.width="100%"
 knitr::include_graphics(
   here::here("./figure/dew/dew-toolbox-study-details.png")
@@ -250,7 +250,7 @@ Whereas the features illustrated in the previous section are mainly meant for re
 
 ### Data About Accesses
 
-Accesses consists in initializing a new session with the instance of the toolbox by visiting the *study*'s URL. Given the web-based nature of the toolbox, a session is consistent with a visit of a web page, which technically consists in a new HTTP request sent from the client to the server. This also includes, thus, page refresh in the browser. If the browser's window or tab remains open, though, the connection is maintained even if the window or tab are unattended by the user. A new access is tallied even when the URL comprises an *auto-login* feature through parameters specified in the URL query string (see below).
+Accesses consists in initializing a new session with the instance of the toolbox by visiting the *study* URL. Given the web-based nature of the toolbox, a session is consistent with a visit of a web page, which technically consists in a new HTTP request sent from the client to the server. This also includes, thus, page refresh in the browser. If the browser's window or tab remains open, though, the connection is maintained even if the window or tab are unattended by the user. A new access is tallied even when the URL comprises an *auto-login* feature through parameters specified in the URL query string (see below).
 
 The main interest of collecting accesses is to know when a user has accessed the instance of the toolbox. As already mentioned, there is the possibility to access the EAT, but without producing any data. So the observations alone may not be reliable in determining whether users have been *passively* using the EAT.
 

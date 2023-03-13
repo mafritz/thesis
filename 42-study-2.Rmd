@@ -606,7 +606,7 @@ The use of an appraisal-driven EAT is closely linked to the concept of emotional
 
 As already mentioned, the test is targeting more specifically working settings, but the item could be reworded relatively easily to match academic settings, both at the intra-personal and inter-personal level. The accuracy of the test may also be relaxed depending on the specific aims of the study, so that it may therefore be possible to envisage a shorter version. For instance, the recognition part based on efferent manifestations could be skipped in computer-mediated learning environments who do not aim at reproducing face-to-face interactions [@buderGroupAwarenessTools2011; @janssenCoordinatedComputerSupportedCollaborative2013].
 
-All things considering, a performance-based test about the construct of emotional competence may be a very useful instrument in investigating emotional awareness more broadly. Under the assumption that emotional competence may also be trained, the longitudinal use of an EAT under more pro-active conditions can even contribute to test potential effect on the overall competence [@brackettEnhancingAcademicPerformance2012; @hoffmannTeachingEmotionRegulation2020].
+All things considered, a performance-based test about the construct of emotional competence may be a very useful instrument in investigating emotional awareness more broadly. Under the assumption that emotional competence may also be trained, the longitudinal use of an EAT under more pro-active conditions can even contribute to test potential effect on the overall competence [@brackettEnhancingAcademicPerformance2012; @hoffmannTeachingEmotionRegulation2020].
 
 ### Questionable Procedure for Testing Emotional Experience From the EAT
 
@@ -646,7 +646,7 @@ Second, the tentative Emotional Awareness Usefulness (EAU) scale showed promisin
 
 Finally, speaking of valid instrument, the Geneva Emotional Competence (GECo) test [@schlegelGenevaEmotionalCompetence2018] provides a viable option for researchers interested in in an ability measure of this socio-affective construct. Even if the test is quite long, it provides measurement for emotion recognition, emotion understanding, emotion regulation, and emotion management, which can be related each to different facets of the use and perception of an EAT. Furthermore, the items used outside emotion recognition are situated in working conditions that have a bearing with learning in higher education. It therefore presents also some ecological potential, maintaining though the rigor of a scientific instrument.
 
-All things considering, thus, also this second empirical contribution is consistent with the thesis's general objective of focusing primarily on construct validity and internal consistency. The generalization potential and practical evidence yielded by the study are very limited, but the promising quality of the individual instruments adopted may be of interest for future studies wishing to take into account the longitudinal effect of emotional awareness.
+All things considered, thus, also this second empirical contribution is consistent with the thesis's general objective of focusing primarily on construct validity and internal consistency. The generalization potential and practical evidence yielded by the study are very limited, but the promising quality of the individual instruments adopted may be of interest for future studies wishing to take into account the longitudinal effect of emotional awareness.
 
 ### Acknowledgments
 
