@@ -164,11 +164,11 @@ knitr::include_graphics(
 )
 ```
 
-The simulation is computed by looping the $E_1$ and $E_2$ ranges so that each possible combination between the two -- that is, [-100, -100], [-100, -99], ..., [0, 0], ..., [99, 100], [100, 100] -- generates a subset of $k = 3$ or $k = 10$ subjective feelings. Figures \@ref(fig:pf-simulation-3) and \@ref(fig:pf-simulation-10) show the results of the simulation. With a $k = 3$ subset, the radial distance of the circumplex shows a more homogeneous number of appearances of each subjective feeling in the subset compared to the vector distance of the Cartesian plane. The opposite happens with $k = 10$, where the vector distance results in more homogeneous number of appearances compared to the radial distance.
+The simulation is computed by looping the $E_1$ and $E_2$ ranges so that each possible combination between the two -- that is, [-100, -100], [-100, -99], ..., [0, 0], ..., [99, 100], [100, 100] -- generates a subset of $k = 3$ or $k = 10$ subjective feelings. Figures \@ref(fig:pof-simulation-3) and \@ref(fig:pof-simulation-10) show the results of the simulation. With a $k = 3$ subset, the radial distance of the circumplex shows a more homogeneous number of appearances of each subjective feeling in the subset compared to the vector distance of the Cartesian plane. The opposite happens with $k = 10$, where the vector distance results in more homogeneous number of appearances compared to the radial distance.
 
 (ref:pof-simulation-3-caption) Results of the simulation comparing distance computed as a radial or vector distance with a subset of $k = 3$ subjective feelings.
 
-```{r pf-simulation-3}
+```{r pof-simulation-3}
 #| fig.align="center", 
 #| fig.cap="(ref:pof-simulation-3-caption)",
 #| fig.scap = "Simulation of the computational model with k = 3", 
