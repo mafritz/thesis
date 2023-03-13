@@ -41,7 +41,7 @@ The overall settings in which the study takes place can therefore contribute to 
 
 A first topic of interest concerns, bluntly, whether the EAT is used in the first place. One thing is to dispose of a tool for a limited period of time, as in the experiment of the previous chapter, where novelty and curiosity can play a prominent role. Another is to sustain the effort of producing and perusing emotional information over a longer period of time, during which resources are dedicated to the coordination of different tasks (reading learning material, design a project, debug code, etc.). The subject is particularly relevant from an awareness tool perspective, where learner are bestowed with the responsibility of adopting the tool if and when they see fit, rather than being guided by the instructional design [@millerScriptingAwarenessTools2015].
 
-The interest of a longitudinal plan also relates to the possibility that the use changes over time. Novelty and curiosity can induce the initial adoption of the tool, but, at length, the EAT may progressively be dismissed. On the contrary, it may also be envisaged that an initial reluctance can be then steered in a more convinced use after acknowledging its benefits. Question 1 (Q1) can therefore be stated in the following terms: is the EAT adopted in the first place, and does its use evolve over time? To answer this question, the number of emotion expressed and their frequency over time will be analyzed as a proxy for the concrete use of the tool.
+The interest of a longitudinal plan also relates to the possibility that the use changes over time. Novelty and curiosity can induce the initial adoption of the tool, but, at length, the EAT may progressively be dismissed. On the contrary, it may also be envisaged that an initial reluctance can be then steered in a more convinced use after acknowledging its benefits. Question 1 (Q1) can therefore be stated in the following terms: is the EAT adopted in the first place, and does its use evolve over time? To answer this question, the number of emotions expressed and their frequency over time will be analyzed as a proxy for the concrete use of the tool.
 
 ### Perception of the Usefulness of the EAT Over Time
 
@@ -303,7 +303,7 @@ In comparing the two classes, the number of emotions expressed is similar with r
 ```{r s2-graph-emotions-expressed-boxplot}
 #| fig.align="center", 
 #| fig.cap="(ref:s2-graph-emotions-expressed-boxplot-caption)",
-#| fig.scap = "Study 2: Number of emotion expressed",
+#| fig.scap = "Study 2: Number of emotions expressed",
 #| fig.width=4, 
 #| fig.height=2.2, 
 s2.graph_expressed_emotions_boxplot
@@ -316,7 +316,7 @@ The use of the tool with respect to the longitudinal duration of the course is d
 ```{r s2-graph-expressed-emotions-over-time}
 #| fig.align="center", 
 #| fig.cap="(ref:s2-graph-expressed-emotions-over-time-caption)",
-#| fig.scap = "Study 2: Evolution of the number of emotion expressed",
+#| fig.scap = "Study 2: Evolution of the number of emotions expressed",
 #| fig.width=5,
 #| fig.height=2.5
 s2.graph_expressed_emotions_over_time
@@ -421,7 +421,7 @@ s2.mlm.ea_usefulness.comparison |>
   kable_styling(latex_options = c("HOLD_position", "repeat_header")) 
 ```
 
-### Structure and Reliability of the Emotion Usefulness Scale
+### Structure and Reliability of the Emotion Awareness Usefulness Scale
 
 Even though the use of multilevel linear model is more adequate for a fine grained assessment of the tentative scale, it is worth exploring whether the Emotion Awareness Usefulness scale (EAU) proposes structural features that may be of interest for future use. In this regard, the way the scale has been administered is somehow atypical. On the one hand, participants rated the scale on multiple occasion, which is consistent with the test/re-test paradigm. On the other hand, the conditions in which the scale has been administered where obviously not the same, since the aim of the contribution was to measure the change of perception over time rather then the consistency of the scale. For an exploratory purpose, it could be informative to relax some of the habitual boundaries in reliability measures and *pretend* that each administration of the survey was unique, even when the rater was the same. This choice is warranted by two elements. First, it increases the sample size of measures compared to taking just one of the four survey in which the scale has been administered. Second, if the repeated measure of the administration is taken into consideration, there will be essential overlapping with the multilevel analysis performed above. For these reasons, all $N = `r s2.ea_usefulness_scale.all |> nrow()`$ administrations of the scale will be considered in the analysis.
 

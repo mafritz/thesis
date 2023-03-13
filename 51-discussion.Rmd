@@ -248,7 +248,7 @@ The first part concerns whether a computational model is useful in the first pla
 
 The second part of the question wonders whether the computational model should be informed by an appraisal driven-theory of emotion in the way the proposed model does. In order to answer this second part of the question, I will first briefly discuss some alternatives in the next subsection.
 
-### Alternative Computational Models Based on An Active Evaluation fo the Situation
+### Alternative Computational Models Based on An Active Evaluation of the Situation
 
 The way the interface of the proposed EAT is built makes the underlying computational model independent from the appearance of the tool. This paves the way to alternative computational models that can be implemented on the very same user interface. I identify three possible kind of computational models: theory-driven, data-driven, and scripting-driven. These are illustrated with the same conventions adopted in Chapter \@ref(computational-model):
 
