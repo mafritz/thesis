@@ -206,7 +206,7 @@ ggdag(
   theme_dag_blank()
 ```
 
-The SCM identifies Emotional Awareness as the intervention/independent variable $X$, whereas Learning Processes and Outcomes is the the outcome/dependent variable $Y$. The other variables implicated in the model are **E**motional **C**ompetence, the **T**ask at hand, the **P**artner(s), the **E**AT **F**eatures, the **A**ppraisal, the **E**AT **U**se, and the **R**egulation process. According to the DAG, the SCM makes the following overt assumptions:
+The SCM identifies Emotional Awareness as the intervention/independent variable $X$, whereas Learning Processes and Outcomes is the the outcome/dependent variable $Y$. The other variables implicated in the model are Emotional Competence, the Task at hand, the Partner(s), the EAT Features, the Appraisal, the EAT Use, and the Regulation process. According to the DAG, the SCM makes the following overt assumptions:
 
 -   There are four high-level variables, at the top of the model, which play a prominent role: (1) the EAT features, (2) learners' Emotional Competence, (3) the characteristics of the Task, and (4) the presence/characteristics of the Partner(s). Among the four high-level variables, I posit that there is an influence of the Partner(s) on the Task at hand and the EAT Features, since the presence of Partners determines what learners will do, but also how the EAT would look like (e.g. configuration according to intra-personal, inter-personal, or both form of awareness). On the contrary, there is no link between the Task and EAT Features, since the proposed EAT is meant to be multi-purpose, and therefore adapt to any task.
 
