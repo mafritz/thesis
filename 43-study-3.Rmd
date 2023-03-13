@@ -367,7 +367,7 @@ s3.sus_table |>
 
 Figure \@ref(fig:s3-sus-items-graph) depicts the same data in a graph. Data show substantial consistency across learning settings for most of the items, with differences in items SUS1 (frequency), SUS3 (ease of use), and SUS8 (intuition). The first item in particular is the one yielding the bigger discrepancy, with participants in the Synch./Collab. setting reporting a perspective use more frequent than the Asynch./Indiv. setting, which is consistent with the observed use, for instance in terms of number of emotions expressed. All in all, though, the EAT seems to possess an *intrinsic* perceived usability that holds -- for good and for bad -- in both settings.
 
-(ref:s3-sus-items-graph-caption) SUS scores on the single items, with the horizontal lines representing Lewis and Sauro [-\@lewisItemBenchmarksSystem2018] benchmarks to reach the target score of 80, transformed to a 1-to-7 scale. Both items and benchmarks have already been reversed for even items. Bars represent 95% confidence intervals. See the table above for the labels of each item.
+(ref:s3-sus-items-graph-caption) SUS scores on the single items, with the horizontal lines representing Lewis and Sauro [-@lewisItemBenchmarksSystem2018] benchmarks to reach the target score of 80, transformed to a 1-to-7 scale. Both items and benchmarks have already been reversed for even items. Bars represent 95% confidence intervals. See the table above for the labels of each item.
 
 ```{r s3-sus-items-graph}
 #| fig.align='center', 
