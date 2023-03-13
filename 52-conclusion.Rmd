@@ -25,7 +25,7 @@ In this contribution I have outlined the implementation and assessment of an Emo
 
 The theory-driven implementation and the empirical assessment have mutually influenced each other resulting in the following main contributions:
 
-1.  Following the need to better clarify the concept, an abstract model of emotional awareness in computer-mediated learning environment was first proposed as means to outline common functions of Emotion Awareness Tools more broadly. The abstract model was then transformed through the lenses of the overall contribution into a Structural Causal Model of the effect of emotional awareness on learning processes and outcomes. 
+1.  Following the need to better clarify the concept, an abstract model of emotional awareness in computer-mediated learning environment was first proposed as means to outline common functions of Emotion Awareness Tools more broadly. The abstract model was then transformed through the lenses of the overall contribution into a Structural Causal Model of the effect of emotional awareness on learning processes and outcomes.
 2.  A computational model that originally linked only two appraisal dimensions to a subjective feeling according to an underlying bidimensional affective space has been extended to an *N*-dimensional structure in an attempt to best comply with a greater number of appraisals that can contribute to emotion elicitation and differentiation. The computational principle can also be applied more widely to a componential approach to emotion as long as a form of computation of emotional responses (action tendencies, motor expressions or subjective feelings) is derived from a cognitive evaluation of the situation at hand.
 3.  A toolbox is proposed to researchers and practitioners interested in endowing computer-mediated learning environments with emotional awareness. The toolbox tries to foster transparency and comparability of results in research by providing the possibility to configure the tool. The configuration itself can be leveraged as an intervention/independent variable, whose effect can be measured on phenomena of interest.
 4.  In this regard, two types of measures have been proposed as useful to the overall investigation and assessment of the use of an Emotion Awareness Tool: (1) the use of gaze transitions between the tool and part of the screen where the learning task takes place, and (2) an Emotion Awareness Usefulness scale, which, to the best of my knowledge, represents a first attempt to provide a common measure to the many facets implied in the use of an EAT.
@@ -91,12 +91,15 @@ For instance, in the aforementioned empirical contribution that was planned but 
 3.  Draw a number of appraisal evaluations consistent with the number of emotions to simulate from a normal distribution determined by the two computed means and the pooled standard deviation from the meta-analysis;
 4.  Inject the values of the two appraisal dimensions for each emotion into the computational model and retrieve a subjective feeling that is consistent with the appraisal profile. This could be done, for instance, by adding some form of sampling within the proposed subset to avoid the prevalence of the same lexicalized emotions.
 
-The following graph illustrates the result of applying this generative model to 26 simulated emotions. For each emotion, the two appraisal values and the lexicalized emotions are provided.
+Figure \@ref(fig:simulated-emotions-manipulation) illustrates the result of applying the computational model to generate 26 simulated emotions. For each emotion, the two appraisal values and the lexicalized emotions are provided. The four normal distributions from which the appraisal values were drawn are derived from empirical data in Fritz (2015) and from Chapter \@ref(study-1). By varying the distance between the high and low values on each dimension, the emotion profiles can be manipulated to be more or less extreme. It may also be possible to adopt a time series to have a more nuanced fluctuation.
 
-```{r simulated-emotions-manipuation}
+(ref:simulated-emotions-manipulation-caption) Use of the computational model as a generative algorithm in order to simulate 26 emotions from normal distributions defined by the mean and standard deviation of previous empirical data.
+
+```{r simulated-emotions-manipulation}
 #| out.width="100%",
 #| fig.height=7,
-#| fig.cap="Simulated emotions from the computational model"
+#| fig.cap="(ref:simulated-emotions-manipulation-caption)",
+#| fig.scap="Use of the computational model as a generative algorithm"
 gm.simulated_emotions.graph
 ```
 
