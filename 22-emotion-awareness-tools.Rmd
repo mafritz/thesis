@@ -230,7 +230,7 @@ The three EATs illustrated in this section highlight some of the many choices in
 
 The information illustrated above, as well as in the previous chapters, can be integrated in an abstract model that depicts the mechanisms allegedly carried out by an EAT based on the three underlying assumptions, namely that emotional awareness is useful at the individual level, at the collective level, and that it can be fruitfully implemented in a computer-mediated learning environment. The proposed abstract model, though, does not have the pretension to be exhaustive. On the contrary, it aims at providing an organized overview of some of the many different affective, learning or human-computer interaction processes that are (or may be) assumed in the instrumentality of an EAT, as well as how design choices can sustain these processes. The model takes into account elements that are specific or particularly important from the perspective of an Emotion Awareness Tool, assuming that the general functions of an awareness tool illustrated in Section \@ref(awareness-tools) are also at stake.
 
-The model, depicted in Figure @ref(fig:thesis-scm-model), take the perspective of a learner that disposes of an EAT in its computer-mediated learning environment and comprises boxes for four main conceptual elements:
+The model, depicted in Figure \@ref(fig:thesis-scm-model), take the perspective of a learner that disposes of an EAT in its computer-mediated learning environment and comprises boxes for four main conceptual elements:
 
 -   **Learning activity**, which may broadly refer to any computer-mediated environment implementing an instructional design;
 
