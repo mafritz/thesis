@@ -173,7 +173,7 @@ The simulation is computed by looping the $E_1$ and $E_2$ ranges so that each po
 #| fig.cap="(ref:pof-simulation-3-caption)",
 #| fig.scap = "Simulation of the computational model with k = 3", 
 #| fig.align="center", 
-#| out.width="60%"
+#| out.width="70%"
 dew_rt.sim_gew_graph_3
 ```
 
