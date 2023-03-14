@@ -37,7 +37,7 @@ knitr::include_graphics(
 )
 ```
 
-From the back-end part of the toolbox, researchers and practitioners can perform mainly four actions that have scientific and/or pedagogical relevance :
+From the back-end part of the toolbox, researchers and practitioners can perform mainly four actions that have scientific and/or pedagogical relevance:
 
 1.  Access instances -- that is, specific configurations of the tool -- which are identified as *studies* in the interface. The dashboard only lists the active instances, but in the *studies* tab researchers can also find past or inactive instances.
 2.  Manage instances by creating, duplicating, modifying, removing or exporting *studies*.
