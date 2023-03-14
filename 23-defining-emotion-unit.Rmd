@@ -214,7 +214,7 @@ The action tendency component, on the other hand, is of central concern from an 
 
 In some important ways, we can derive that emotional awareness is connected to the process of inferring and, if needed, regulate action tendencies in oneself or others. At the same time, the action tendency component has received so far limited attention compared to the other components [@schererStudyingAppraisaldrivenEmotion2019; @scherer2022]. For instance, Shuman and Scherer (*ibid.*) reckon that epistemic emotions may not be associated to a particular action tendency or adaptive function.
 
-To sum up, even though the Response-Patterning module plays a prominent role in emotion differentiation and has also consequences on behavior especially through action tendencies, its intrinsic nature as well as the need for dedicated hardware and software complicate its transposition in an EAT. As a consequences, elements provided by this module may have to be inferred from contextual or background knowledge by the learner.
+To sum up, even though the Response-Patterning module plays a prominent role in emotion differentiation and has also consequences on behavior especially through action tendencies, its intrinsic nature as well as the need for dedicated hardware and software complicate its transposition in an EAT. As a consequence, elements provided by this module may have to be inferred from contextual or background knowledge by the learner.
 
 ### The Integration/Categorization Module: Subjective Feeling As Emotion Meaning Making {#cpm-integration-module}
 
