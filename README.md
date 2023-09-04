@@ -1,5 +1,5 @@
 # Computational manuscript of the thesis
-This repository includes all the files (data, scripts for analysis and graphical representations, narrative, citations, ...) to compile the final manuscript of my thesis **Implementation and Assessment of a Multipurpose Appraisal-Driven Emotion Awareness Tool Based on Self-Report**. The thesis was supervised by Prof. Mireille Bétrancourt at TECFA, Geneva University.
+This repository includes all the files (data, scripts for analysis and graphical representations, narrative, citations, ...) to compile the final manuscript of my thesis [**Implementation and Assessment of a Multipurpose Appraisal-Driven Emotion Awareness Tool Based on Self-Report**](https://archive-ouverte.unige.ch/unige:171170). The thesis was supervised by Prof. Mireille Bétrancourt at TECFA, Geneva University.
 
 ## Technology
 
